@@ -118,10 +118,10 @@ a {
 }
 
 .wordmark {
-  font-family: Fraunces, Georgia, serif;
+  font-family: Outfit, system-ui, sans-serif;
   font-weight: 700;
   font-size: 1.45rem;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: var(--paper);
   text-decoration: none;
 }
@@ -180,8 +180,8 @@ h1,
 h2,
 .studio-name,
 .studio-lead {
-  font-family: Fraunces, Georgia, serif;
-  letter-spacing: -0.03em;
+  font-family: Outfit, system-ui, sans-serif;
+  letter-spacing: -0.02em;
   font-weight: 700;
 }
 
@@ -194,13 +194,11 @@ h1 {
   line-height: 0.96;
   margin: 0 0 8px;
   max-width: 18ch;
-  font-optical-sizing: auto;
 }
 
 .hero-tagline {
-  font-family: Fraunces, Georgia, serif;
-  font-style: italic;
-  font-weight: 560;
+  font-family: Outfit, system-ui, sans-serif;
+  font-weight: 600;
   font-size: clamp(1.35rem, 3.6vw, 2rem);
   letter-spacing: -0.02em;
   color: var(--lamp);
@@ -215,9 +213,9 @@ h1 {
 }
 
 .pitch em {
-  font-family: Fraunces, Georgia, serif;
-  font-style: italic;
-  font-weight: 560;
+  font-family: Outfit, system-ui, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   color: var(--lamp);
 }
 
