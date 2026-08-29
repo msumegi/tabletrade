@@ -23,14 +23,8 @@ Pokémon and Pokémon card art belong to their owners. TableTrade is an unoffici
 
 ## GitHub Pages
 
-Static files live at the repo root (`index.html`). A GitHub Actions workflow deploys on every push to `main`.
+Static files live at the repo root (`index.html`). Pages is published from **branch `main` / root**.
 
-If the live site 404s after the first deploy:
-
-1. Repo **Settings → Pages**
-2. **Build and deployment → Source:** GitHub Actions
-   (or **Deploy from a branch** → `main` → `/ (root)`)
-3. Wait for **Deploy GitHub Pages** to finish
-4. Open https://msumegi.github.io/tabletrade/
+Live: https://msumegi.github.io/tabletrade/
 
 The address bar should say **tabletrade**, not tableping.
