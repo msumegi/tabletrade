@@ -30,6 +30,8 @@ jobs:
           if [ -d media ]; then cp -a media _site/; fi
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
