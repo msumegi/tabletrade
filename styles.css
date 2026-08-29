@@ -584,12 +584,14 @@ h1 {
   }
 
   .about-grid {
-    grid-template-columns: minmax(240px, 340px) 1fr;
+    grid-template-columns: 200px 1fr;
     column-gap: 48px;
   }
 
+  .portrait-wrap,
   .portrait {
-    max-width: none;
+    width: 200px;
+    max-width: 200px;
   }
 }
 
@@ -633,16 +635,19 @@ h1 {
 
 .portrait-wrap {
   margin: 0;
+  width: 180px;
+  max-width: 180px;
 }
 
 .portrait {
   display: block;
-  width: 100%;
-  max-width: 420px;
+  width: 180px;
+  max-width: 180px;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
-  border-radius: 22px;
+  border-radius: 12px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   background: var(--felt-deep);
