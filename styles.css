@@ -788,6 +788,13 @@ button.cta {
     inset 0 -10px 0 #d9ccb0;
 }
 
+.shop .tent-face p,
+.tent-face p {
+  color: #1c1410;
+  margin: 0;
+  font-size: inherit;
+}
+
 .tent-mark {
   margin: 0;
   font-weight: 700;
@@ -818,6 +825,18 @@ button.cta {
 .tent-scan {
   margin: 0;
   font-size: 0.88rem;
+  color: #3a3226;
+}
+
+.shop .tent-face .tent-line,
+.shop .tent-face .tent-scan,
+.tent-face .tent-line,
+.tent-face .tent-scan {
+  color: #5c4a28;
+}
+
+.shop .tent-face .tent-sub,
+.tent-face .tent-sub {
   color: #3a3226;
 }
 

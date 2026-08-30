@@ -19,6 +19,12 @@
   border: 1px dashed rgba(28, 20, 16, 0.22);
 }
 
+.legal .print-face p {
+  color: #1c1410;
+  max-width: none;
+  margin: 0;
+}
+
 .print-mark {
   margin: 0;
   font-weight: 700;
@@ -34,6 +40,11 @@
   margin: 6px 0 16px;
   font-weight: 600;
   font-size: 1.25rem;
+  color: #5c4a28;
+}
+
+.legal .print-face .print-line,
+.legal .print-face .print-scan {
   color: #5c4a28;
 }
 
