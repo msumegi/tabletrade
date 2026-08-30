@@ -1103,7 +1103,8 @@ button.cta {
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: right top;
+  /* 4:5 cover window: pin the visible right edge to the wood panel (~x=444 of 517). */
+  object-position: 43% top;
   border-radius: 12px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
