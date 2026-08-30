@@ -1103,7 +1103,7 @@ button.cta {
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
+  object-position: right top;
   border-radius: 12px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
