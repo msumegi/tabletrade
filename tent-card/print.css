@@ -1,0 +1,124 @@
+.tent-page .print-btn {
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+}
+
+.print-sheet {
+  margin: 28px 0 8px;
+  display: grid;
+  gap: 12px;
+}
+
+.print-face {
+  background: #f4ead6;
+  color: #1c1410;
+  text-align: center;
+  padding: 28px 20px 24px;
+  border-radius: 8px;
+  border: 1px dashed rgba(28, 20, 16, 0.22);
+}
+
+.print-mark {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.print-mark span {
+  color: #ff6b35;
+}
+
+.print-line {
+  margin: 6px 0 16px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #5c4a28;
+}
+
+.print-face img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto 14px;
+  background: #fff;
+}
+
+.print-sub {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.print-scan {
+  margin: 6px 0 0;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #5c4a28;
+}
+
+.print-fold {
+  text-align: center;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0.45in;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: #1c1410;
+  }
+
+  .screen-only,
+  .skip,
+  .lamp,
+  .felt-grain {
+    display: none !important;
+  }
+
+  .legal {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .print-sheet {
+    margin: 0;
+    height: 10in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .print-fold {
+    display: none;
+  }
+
+  .print-face {
+    height: 4.85in;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    break-inside: avoid;
+  }
+
+  /* Top half prints upside-down so both faces read after a half-fold tent. */
+  .print-face-a {
+    transform: rotate(180deg);
+  }
+}

@@ -18,19 +18,23 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://msumegi.github.io/tabletrade/" />
     <meta property="og:site_name" content="TableTrade" />
-    <meta property="og:image" content="https://msumegi.github.io/tabletrade/media/matt-sumegi.jpg" />
+    <meta property="og:image" content="https://msumegi.github.io/tabletrade/media/og-share.jpg" />
+    <meta property="og:image:alt" content="TableTrade — felt table, ping rings, Trade here, now." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TableTrade — Trade here, now." />
     <meta
       name="twitter:description"
       content="Immediate, in-the-room Pokémon card trades. Built by Central Alberta Technologies. Lead Developer Matt Sumegi."
     />
+    <meta name="twitter:image" content="https://msumegi.github.io/tabletrade/media/og-share.jpg" />
     <link rel="canonical" href="https://msumegi.github.io/tabletrade/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -46,6 +50,7 @@
       <a class="wordmark" href="./">Table<span>Trade</span></a>
       <nav class="nav" aria-label="Site">
         <a href="./" aria-current="page">Home</a>
+        <a href="#for-shops">Shops</a>
         <a href="about/">About</a>
       </nav>
       <a class="top-cta" href="https://msumegi.github.io/tableping/">Open TableTrade</a>
@@ -59,15 +64,16 @@
           <p class="hero-tagline">Trade here, now.</p>
         </div>
         <p class="pitch">
-          Bring your have-list and want-list into the shop. TableTrade pings when someone
-          <em>at this table</em> — <em>in this room, right now</em> — is a match.
-          Scan or search Pokémon cards. Immediate. Local. Pokémon at this table.
+          Have-list and want-list on the phone. A ping when someone
+          <em>at this table</em> is a match. Scan or search Pokémon cards.
+          Immediate. Local. Pokémon at this table.
         </p>
 
         <div class="cta-row">
-          <a class="cta" href="https://msumegi.github.io/tableping/">Open TableTrade</a>
+          <a class="cta" href="https://msumegi.github.io/tableping/">Open it at the table</a>
+          <a class="cta ghost" href="#for-shops">How shops use this</a>
           <p class="cta-note">
-            Live web app · install from Chrome on Android if you want it on the home screen
+            Live web app · <a href="#faq">Add to Home Screen</a> on iPhone or Android
           </p>
         </div>
 
@@ -78,70 +84,116 @@
           <p class="studio-lead">Matt Sumegi</p>
         </aside>
 
-        <figure class="table-art" aria-hidden="true">
-          <div class="ping-ring r1"></div>
-          <div class="ping-ring r2"></div>
-          <div class="ping-ring r3"></div>
-          <div class="fan">
-            <span class="tcg c1"><i></i></span>
-            <span class="tcg c2"><i></i></span>
-            <span class="tcg c3"><i></i></span>
-            <span class="tcg c4"><i></i></span>
-            <span class="tcg c5"><i></i></span>
+        <figure class="table-art hero-stage">
+          <div class="phones">
+            <div class="phone phone-have" role="img" aria-label="TableTrade Have list on a phone, showing Pikachu, Umbreon, and Miraidon.">
+              <div class="bezel">
+                <div class="mock">
+                  <header class="mock-top">
+                    <div>
+                      <p class="mock-brand">Table<span>Trade</span></p>
+                      <p class="mock-tag">Pokémon trades here, now — at this table</p>
+                    </div>
+                    <span class="mock-pill">Trainer</span>
+                  </header>
+                  <div class="mock-screen">
+                    <h3 class="mock-title">Have list</h3>
+                    <p class="mock-lede">Cards you’d trade here, now.</p>
+                    <div class="mock-grid">
+                      <article class="mock-tile">
+                        <img src="https://images.pokemontcg.io/base1/58.png" alt="" width="63" height="88" />
+                        <div class="mock-name">Pikachu</div>
+                        <div class="mock-meta">Base · 58</div>
+                      </article>
+                      <article class="mock-tile">
+                        <img src="https://images.pokemontcg.io/neo2/13.png" alt="" width="63" height="88" />
+                        <div class="mock-name">Umbreon</div>
+                        <div class="mock-meta">Neo Discovery · 13</div>
+                      </article>
+                      <article class="mock-tile">
+                        <img src="https://images.pokemontcg.io/sv1/80.png" alt="" width="63" height="88" />
+                        <div class="mock-name">Miraidon</div>
+                        <div class="mock-meta">Scarlet &amp; Violet · 80</div>
+                      </article>
+                    </div>
+                    <div class="mock-btn mock-btn-gold">Add a Pokémon card</div>
+                  </div>
+                  <nav class="mock-tabs" aria-hidden="true">
+                    <span class="on"><i>▣</i>Have</span>
+                    <span><i>☆</i>Want</span>
+                    <span><i>◎</i>Nearby</span>
+                    <span><i>●</i>You</span>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone phone-ping" role="img" aria-label="TableTrade match ping: Kai is at your table. You can give Pikachu and get Charizard.">
+              <div class="bezel">
+                <div class="mock mock-dim">
+                  <header class="mock-top">
+                    <div>
+                      <p class="mock-brand">Table<span>Trade</span></p>
+                      <p class="mock-tag">Pokémon trades here, now — at this table</p>
+                    </div>
+                    <span class="mock-pill ok">Ping</span>
+                  </header>
+                  <div class="mock-screen">
+                    <div class="mock-radar" aria-hidden="true"><span></span></div>
+                    <p class="mock-nearby-h">Trade here, now.</p>
+                  </div>
+                  <div class="mock-overlay">
+                    <div class="mock-sheet">
+                      <div class="mock-grab"></div>
+                      <div class="mock-radar sm" aria-hidden="true"><span></span></div>
+                      <p class="mock-kicker">Here, now</p>
+                      <p class="mock-ping-title">Kai is at your table</p>
+                      <p class="mock-lede">You can trade both ways</p>
+                      <div class="mock-pair">
+                        <div>
+                          <img src="https://images.pokemontcg.io/base1/58.png" alt="" width="63" height="88" />
+                          <p class="mock-meta">You can give</p>
+                          <strong>Pikachu</strong>
+                        </div>
+                        <span class="mock-swap">⇄</span>
+                        <div>
+                          <img src="https://images.pokemontcg.io/base1/4.png" alt="" width="63" height="88" />
+                          <p class="mock-meta">You can get</p>
+                          <strong>Charizard</strong>
+                        </div>
+                      </div>
+                      <p class="mock-meta talk">You’re here. Go talk.</p>
+                      <div class="mock-btn mock-btn-ember">Go talk</div>
+                    </div>
+                  </div>
+                  <nav class="mock-tabs" aria-hidden="true">
+                    <span><i>▣</i>Have</span>
+                    <span><i>☆</i>Want</span>
+                    <span class="on"><i>◎</i>Nearby</span>
+                    <span><i>●</i>You</span>
+                  </nav>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="dot"></div>
+          <figcaption>Have list and a match ping — stills of the live app.</figcaption>
         </figure>
       </section>
 
-      <section class="beats" aria-labelledby="beats-title">
-        <h2 id="beats-title">What Makes Us Special</h2>
-        <ul>
-          <li>
-            <span class="beat-num">01</span>
-            <h3>Have-list and want-list</h3>
-            <p>What you’d trade. What you’re hunting. Lives on the phone at the table.</p>
-          </li>
-          <li>
-            <span class="beat-num">02</span>
-            <h3>Scan or search</h3>
-            <p>Point the camera at one Pokémon card, or type a name / set. Confirm the printing. Flip to the next.</p>
-          </li>
-          <li>
-            <span class="beat-num">03</span>
-            <h3>Same table, same room</h3>
-            <p>Share a four-character table code or scan a QR across the felt. You’re already sitting together.</p>
-          </li>
-          <li>
-            <span class="beat-num">04</span>
-            <h3>A ping when it is a match</h3>
-            <p>They want a card you have, you want a card they have, or both. Full-screen ping. Then you talk.</p>
-          </li>
-          <li>
-            <span class="beat-num">05</span>
-            <h3>Shop-scale. Pokémon only.</h3>
-            <p>About a room away (~120 m). Match here, then talk.</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="night" aria-labelledby="night-title">
-        <h2 id="night-title">Here. This room. This table.</h2>
-        <p class="night-lede">
-          Someone sitting next to you has the printing you need. TableTrade is the tap that
-          finds that out <em>now</em> — so you trade here.
-        </p>
+      <section class="how" id="how" aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
         <ol>
           <li>
-            <h3>Open it at the table</h3>
-            <p>Browser or home-screen PWA. You are already at the shop.</p>
+            <h3>Open it</h3>
+            <p>Browser or home-screen app. You are already at the shop.</p>
           </li>
           <li>
             <h3>Load the lists</h3>
-            <p>Add a few haves and wants. Scan a stack one card at a time, or search <em>Pikachu</em> and tap the printing.</p>
+            <p>Add a few haves and wants. Scan one card at a time, or search a name and tap the printing.</p>
           </li>
           <li>
             <h3>Join the table</h3>
-            <p>One phone shows a QR or table code. The other scans or types it. Optional: tap “I’m at the shop” for room-scale GPS.</p>
+            <p>One phone shows a table code or QR. The other types it or scans. That is the join.</p>
           </li>
           <li>
             <h3>The ping</h3>
@@ -150,16 +202,99 @@
         </ol>
       </section>
 
+      <section class="shop" id="for-shops" aria-labelledby="shop-title">
+        <div class="shop-copy">
+          <p class="kicker">For the shop</p>
+          <h2 id="shop-title">Print a tent. You run nothing.</h2>
+          <p>
+            Put a QR tent card on the table. Players open TableTrade on their phones,
+            join with the code or QR in the app, and matches happen at that table.
+            No shop account. No software to babysit.
+          </p>
+          <ul class="shop-points">
+            <li>Print the tent card — the QR opens the live app.</li>
+            <li>Players add have-lists and want-lists on their own phones.</li>
+            <li>They join this table. The shop does not host a server.</li>
+          </ul>
+          <div class="cta-row shop-cta">
+            <a class="cta" href="tent-card/">Print a tent card</a>
+            <a class="cta ghost" href="https://msumegi.github.io/tableping/">Open the app</a>
+          </div>
+        </div>
+        <aside class="tent-preview" aria-label="Tent card preview">
+          <div class="tent-face">
+            <p class="tent-mark">Table<span>Trade</span></p>
+            <p class="tent-line">Trade here, now.</p>
+            <img class="tent-qr" src="media/qr-app.svg" alt="QR code that opens TableTrade" width="160" height="160" />
+            <p class="tent-sub">Pokémon at this table.</p>
+            <p class="tent-scan">Scan to open.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">FAQ</h2>
+        <dl>
+          <div>
+            <dt>Do I need an account?</dt>
+            <dd>No. Lists live on the phone. No password.</dd>
+          </div>
+          <div>
+            <dt>How do people join a table?</dt>
+            <dd>
+              A four-character table code or a QR from someone already in — that is the real join.
+              Optional “I’m at the shop” GPS is about a room away (~120&nbsp;m) and often fails
+              indoors or in a basement. Use the code or QR.
+            </dd>
+          </div>
+          <div>
+            <dt>iPhone — Add to Home Screen</dt>
+            <dd>
+              Open the app in Safari → tap <strong>Share</strong> →
+              <strong>Add to Home Screen</strong>. Then open TableTrade like any other app.
+            </dd>
+          </div>
+          <div>
+            <dt>Android Chrome — install</dt>
+            <dd>
+              Open the app in Chrome → tap the menu (⋮) →
+              <strong>Add to Home screen</strong> or <strong>Install app</strong>.
+            </dd>
+          </div>
+          <div>
+            <dt>What is private?</dt>
+            <dd>
+              Have-lists and want-lists stay on the device until you join a table.
+              At the table, your display name and the cards on those lists are what get matched.
+              Camera is for scanning a card or another player’s QR.
+              Location is optional and is not stored as the product.
+              <a href="privacy/">Short privacy note</a>.
+            </dd>
+          </div>
+          <div>
+            <dt>Is this official?</dt>
+            <dd>
+              No. TableTrade is an unofficial fan tool. Not affiliated with or endorsed by
+              Nintendo or The Pokémon Company.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
       <section class="close">
-        <p class="kicker">Central Alberta · hobby-shop energy</p>
+        <p class="kicker">Take this to the table</p>
         <h2>TableTrade</h2>
         <p class="hero-tagline close-tag">Trade here, now.</p>
         <p>
+          Open it on a phone. Print a tent card for the shop. Or send this page
+          to someone who runs a night.
           Built by <strong>Central Alberta Technologies</strong>.
           Lead Developer <strong>Matt Sumegi</strong>.
-          Made for a phone at a real card shop — immediate, in-the-room Pokémon trades.
         </p>
-        <a class="cta" href="https://msumegi.github.io/tableping/">Open TableTrade</a>
+        <div class="close-actions">
+          <a class="cta" href="https://msumegi.github.io/tableping/">Open it at the table</a>
+          <a class="cta ghost" href="tent-card/">Print a tent card</a>
+        </div>
       </section>
     </main>
 
@@ -171,6 +306,8 @@
       <p class="foot-credit">
         Central Alberta Technologies · Lead Developer Matt Sumegi ·
         <a href="about/">About</a> ·
+        <a href="privacy/">Privacy</a> ·
+        <a href="tent-card/">Tent card</a> ·
         <a href="https://msumegi.github.io/tableping/">Open the app</a>
       </p>
     </footer>
