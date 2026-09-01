@@ -1037,12 +1037,11 @@ button.cta {
   .share-hero {
     grid-area: art;
     margin: 0;
-    height: 100%;
-    align-self: stretch;
+    align-self: start;
   }
   .share-hero img {
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
   }
   .table-art {
     min-height: 520px;
