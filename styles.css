@@ -1203,6 +1203,14 @@ button.cta {
   font-weight: 600;
 }
 
+.portrait-wrap figcaption span {
+  display: block;
+}
+
+.portrait-wrap figcaption .co {
+  white-space: nowrap;
+}
+
 .portrait {
   display: block;
   width: 180px;
