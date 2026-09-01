@@ -1292,3 +1292,46 @@ body.theme-rr .rr-mark:hover,
 body.theme-rr .rr-mark:focus-visible {
   color: #3dff6a;
 }
+
+/* Home only: earth tones, no matrix green. Green stays in the logo image. */
+body.theme-rr.page-home {
+  --electric: #b8a484;
+  --ok: #b8a484;
+  --lamp: #e8d7b8;
+}
+
+body.theme-rr.page-home a {
+  color: var(--paper);
+}
+
+body.theme-rr.page-home .nav a[aria-current="page"] {
+  color: var(--lamp);
+}
+
+body.theme-rr.page-home .nav a:hover,
+body.theme-rr.page-home .nav a:focus-visible,
+body.theme-rr.page-home .top-cta:hover,
+body.theme-rr.page-home .top-cta:focus-visible,
+body.theme-rr.page-home .cta.ghost:hover,
+body.theme-rr.page-home .cta.ghost:focus-visible {
+  border-color: var(--paper-2);
+  color: var(--lamp);
+}
+
+body.theme-rr.page-home .kicker {
+  color: var(--muted);
+}
+
+body.theme-rr.page-home .skip {
+  background: var(--paper);
+  color: var(--ember-ink);
+}
+
+body.theme-rr.page-home .how li::before {
+  background: var(--paper-2);
+  color: #111008;
+}
+
+body.theme-rr.page-home .nav {
+  margin-left: 0;
+}
