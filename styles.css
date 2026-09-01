@@ -1231,7 +1231,7 @@ button.cta {
 }
 
 .about-copy p {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   font-size: 1.08rem;
   color: rgba(244, 234, 214, 0.88);
 }
@@ -1423,5 +1423,5 @@ body.theme-rr.page-about .nav {
 }
 
 .about .contact-block {
-  margin-top: 36px;
+  margin-top: 4px;
 }
