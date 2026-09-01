@@ -1149,3 +1149,116 @@ button.cta {
   margin-top: 10px;
   width: min(100%, 22rem);
 }
+
+/* Range Road company pages: black / sand / matrix green. TableTrade pages stay orange-felt. */
+body.theme-rr {
+  --night: #050505;
+  --felt: #0a0a0a;
+  --felt-deep: #080808;
+  --felt-rim: #1a1a1a;
+  --lamp: #d7c4a3;
+  --paper: #d7c4a3;
+  --paper-2: #b8a484;
+  --ember: #d7c4a3;
+  --ember-ink: #111008;
+  --electric: #3dff6a;
+  --ok: #3dff6a;
+  --muted: #8a7a64;
+  --line: rgba(215, 196, 163, 0.16);
+  color: var(--paper);
+  background: #050505;
+}
+
+body.theme-rr .lamp {
+  display: none;
+}
+
+body.theme-rr .felt-grain {
+  opacity: 0.04;
+}
+
+body.theme-rr .wordmark {
+  font-family: Oswald, "Arial Narrow", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+body.theme-rr .wordmark span {
+  color: var(--paper);
+}
+
+body.theme-rr .nav a[aria-current="page"],
+body.theme-rr a {
+  color: var(--electric);
+}
+
+body.theme-rr .nav a {
+  color: var(--paper);
+}
+
+body.theme-rr .nav a[aria-current="page"] {
+  color: var(--electric);
+}
+
+body.theme-rr .top-cta {
+  color: var(--paper);
+  border-color: var(--line);
+}
+
+body.theme-rr .top-cta:hover,
+body.theme-rr .top-cta:focus-visible {
+  border-color: var(--electric);
+  color: var(--electric);
+}
+
+body.theme-rr h1,
+body.theme-rr h2,
+body.theme-rr .hero-tagline {
+  font-family: Oswald, "Arial Narrow", sans-serif;
+  color: var(--paper);
+}
+
+body.theme-rr .kicker {
+  color: var(--electric);
+}
+
+body.theme-rr .cta {
+  background: var(--paper);
+  color: var(--ember-ink);
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+body.theme-rr .cta:hover,
+body.theme-rr .cta:focus-visible {
+  background: #e8d7b8;
+}
+
+body.theme-rr .cta.ghost {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--line);
+}
+
+body.theme-rr .cta.ghost:hover,
+body.theme-rr .cta.ghost:focus-visible {
+  background: rgba(215, 196, 163, 0.08);
+  border-color: var(--electric);
+  color: var(--electric);
+}
+
+body.theme-rr .how li {
+  background: #111;
+  border-color: var(--line);
+}
+
+body.theme-rr .how li::before {
+  background: var(--electric);
+  color: #050505;
+}
+
+body.theme-rr .brand-logo {
+  width: min(640px, 100%);
+  margin: 0 0 18px;
+  border-radius: 4px;
+}
