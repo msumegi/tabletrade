@@ -1236,6 +1236,17 @@ button.cta {
   color: rgba(244, 234, 214, 0.88);
 }
 
+.about-copy ul {
+  margin: 0 0 8px;
+  padding: 0 0 0 1.2rem;
+}
+
+.about-copy li {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+  color: rgba(244, 234, 214, 0.88);
+}
+
 .about-copy .source {
   font-size: 0.88rem;
   color: var(--muted);
