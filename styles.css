@@ -1345,12 +1345,15 @@ body.theme-rr.page-home .contact-block {
   margin-bottom: 2.75rem;
 }
 
-body.theme-rr.page-home .contact-mail {
+body.theme-rr.page-home .contact-mail,
+body.theme-rr.page-about .contact-mail {
   color: rgba(244, 234, 214, 0.88);
 }
 
 body.theme-rr.page-home .contact-mail:hover,
-body.theme-rr.page-home .contact-mail:focus-visible {
+body.theme-rr.page-home .contact-mail:focus-visible,
+body.theme-rr.page-about .contact-mail:hover,
+body.theme-rr.page-about .contact-mail:focus-visible {
   color: rgba(244, 234, 214, 0.88);
 }
 
