@@ -1346,12 +1346,12 @@ body.theme-rr.page-home .contact-block {
 }
 
 body.theme-rr.page-home .contact-mail {
-  color: #ffffff;
+  color: rgba(244, 234, 214, 0.88);
 }
 
 body.theme-rr.page-home .contact-mail:hover,
 body.theme-rr.page-home .contact-mail:focus-visible {
-  color: #ffffff;
+  color: rgba(244, 234, 214, 0.88);
 }
 
 body.theme-rr.page-home .about-more {
