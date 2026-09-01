@@ -189,6 +189,27 @@ h2,
   font-weight: 700;
 }
 
+h1 span,
+h2 span,
+.close h2 span {
+  color: var(--ember);
+}
+
+.rr-mark {
+  font-family: Oswald, "Arial Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d7c4a3;
+  text-decoration: none;
+}
+
+.rr-mark:hover,
+.rr-mark:focus-visible {
+  color: #3dff6a;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1261,4 +1282,13 @@ body.theme-rr .brand-logo {
   width: min(640px, 100%);
   margin: 0 0 18px;
   border-radius: 4px;
+}
+
+body.theme-rr .rr-mark {
+  color: #d7c4a3;
+}
+
+body.theme-rr .rr-mark:hover,
+body.theme-rr .rr-mark:focus-visible {
+  color: #3dff6a;
 }
