@@ -1342,9 +1342,9 @@ body.theme-rr .cta:focus-visible {
 }
 
 body.theme-rr.page-home .cta.ghost {
-  background: #2c2c2c;
+  background: transparent;
   color: var(--paper);
-  border-color: rgba(215, 196, 163, 0.35);
+  border-color: rgba(215, 196, 163, 0.45);
 }
 
 body.theme-rr .cta.ghost:hover,
