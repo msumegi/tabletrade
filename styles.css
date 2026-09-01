@@ -337,7 +337,7 @@ button.cta {
 
 .contact-mail {
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 0.95rem;
+  font-size: 1.12rem;
   font-weight: 500;
   color: var(--lamp);
   text-decoration: none;
