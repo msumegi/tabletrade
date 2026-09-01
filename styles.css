@@ -1341,6 +1341,36 @@ body.theme-rr .cta:focus-visible {
   background: #e8d7b8;
 }
 
+body.theme-rr.page-home .contact-block {
+  margin-bottom: 2.75rem;
+}
+
+body.theme-rr.page-home .contact-mail {
+  color: #ffffff;
+}
+
+body.theme-rr.page-home .contact-mail:hover,
+body.theme-rr.page-home .contact-mail:focus-visible {
+  color: #ffffff;
+}
+
+body.theme-rr.page-home .about-more {
+  margin: 0 0 28px;
+}
+
+body.theme-rr.page-home .about-more a {
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+body.theme-rr.page-home .about-more a:hover,
+body.theme-rr.page-home .about-more a:focus-visible {
+  color: var(--lamp);
+  text-decoration: underline;
+}
+
 body.theme-rr.page-home .cta.ghost {
   background: transparent;
   color: var(--paper);
