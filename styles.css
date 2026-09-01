@@ -323,6 +323,32 @@ button.cta {
   color: var(--lamp);
 }
 
+.contact-block {
+  margin: 0 0 8px;
+  max-width: 38rem;
+}
+
+.contact-punch {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: var(--paper);
+}
+
+.contact-mail {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--lamp);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.contact-mail:hover,
+.contact-mail:focus-visible {
+  text-decoration: underline;
+}
+
 .studio {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1023,6 +1049,7 @@ button.cta {
       "title art"
       "pitch art"
       "cta art"
+      "contact art"
       "studio art";
     column-gap: 36px;
     align-items: start;
@@ -1033,6 +1060,7 @@ button.cta {
   .hero-titles { grid-area: title; }
   .pitch { grid-area: pitch; }
   .cta-row { grid-area: cta; }
+  .contact-block { grid-area: contact; }
   .studio { grid-area: studio; }
   .share-hero {
     grid-area: art;
