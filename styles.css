@@ -207,7 +207,7 @@ h2 span,
 
 .rr-mark:hover,
 .rr-mark:focus-visible {
-  color: #3dff6a;
+  color: #e8d7b8;
 }
 
 .sr-only {
@@ -1171,19 +1171,19 @@ button.cta {
   width: min(100%, 22rem);
 }
 
-/* Range Road company pages: black / sand / matrix green. TableTrade pages stay orange-felt. */
+/* Range Road company pages: black and earth. TableTrade pages stay orange-felt. */
 body.theme-rr {
   --night: #050505;
   --felt: #0a0a0a;
   --felt-deep: #080808;
   --felt-rim: #1a1a1a;
-  --lamp: #d7c4a3;
+  --lamp: #e8d7b8;
   --paper: #d7c4a3;
   --paper-2: #b8a484;
   --ember: #d7c4a3;
   --ember-ink: #111008;
-  --electric: #3dff6a;
-  --ok: #3dff6a;
+  --electric: #c4b08c;
+  --ok: #c4b08c;
   --muted: #8a7a64;
   --line: rgba(215, 196, 163, 0.16);
   color: var(--paper);
@@ -1210,7 +1210,7 @@ body.theme-rr .wordmark span {
 
 body.theme-rr .nav a[aria-current="page"],
 body.theme-rr a {
-  color: var(--electric);
+  color: var(--paper);
 }
 
 body.theme-rr .nav a {
@@ -1218,7 +1218,7 @@ body.theme-rr .nav a {
 }
 
 body.theme-rr .nav a[aria-current="page"] {
-  color: var(--electric);
+  color: var(--lamp);
 }
 
 body.theme-rr .top-cta {
@@ -1228,8 +1228,8 @@ body.theme-rr .top-cta {
 
 body.theme-rr .top-cta:hover,
 body.theme-rr .top-cta:focus-visible {
-  border-color: var(--electric);
-  color: var(--electric);
+  border-color: var(--paper-2);
+  color: var(--lamp);
 }
 
 body.theme-rr h1,
@@ -1240,7 +1240,7 @@ body.theme-rr .hero-tagline {
 }
 
 body.theme-rr .kicker {
-  color: var(--electric);
+  color: var(--muted);
 }
 
 body.theme-rr .cta {
@@ -1264,8 +1264,8 @@ body.theme-rr .cta.ghost {
 body.theme-rr .cta.ghost:hover,
 body.theme-rr .cta.ghost:focus-visible {
   background: rgba(215, 196, 163, 0.08);
-  border-color: var(--electric);
-  color: var(--electric);
+  border-color: var(--paper-2);
+  color: var(--lamp);
 }
 
 body.theme-rr .how li {
@@ -1274,8 +1274,8 @@ body.theme-rr .how li {
 }
 
 body.theme-rr .how li::before {
-  background: var(--electric);
-  color: #050505;
+  background: var(--paper-2);
+  color: #111008;
 }
 
 body.theme-rr .brand-logo {
@@ -1290,46 +1290,12 @@ body.theme-rr .rr-mark {
 
 body.theme-rr .rr-mark:hover,
 body.theme-rr .rr-mark:focus-visible {
-  color: #3dff6a;
+  color: #e8d7b8;
 }
 
-/* Home only: earth tones, no matrix green. Green stays in the logo image. */
-body.theme-rr.page-home {
-  --electric: #b8a484;
-  --ok: #b8a484;
-  --lamp: #e8d7b8;
-}
-
-body.theme-rr.page-home a {
-  color: var(--paper);
-}
-
-body.theme-rr.page-home .nav a[aria-current="page"] {
-  color: var(--lamp);
-}
-
-body.theme-rr.page-home .nav a:hover,
-body.theme-rr.page-home .nav a:focus-visible,
-body.theme-rr.page-home .top-cta:hover,
-body.theme-rr.page-home .top-cta:focus-visible,
-body.theme-rr.page-home .cta.ghost:hover,
-body.theme-rr.page-home .cta.ghost:focus-visible {
-  border-color: var(--paper-2);
-  color: var(--lamp);
-}
-
-body.theme-rr.page-home .kicker {
-  color: var(--muted);
-}
-
-body.theme-rr.page-home .skip {
+body.theme-rr .skip {
   background: var(--paper);
   color: var(--ember-ink);
-}
-
-body.theme-rr.page-home .how li::before {
-  background: var(--paper-2);
-  color: #111008;
 }
 
 body.theme-rr.page-home .nav {
