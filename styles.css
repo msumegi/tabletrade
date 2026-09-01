@@ -1236,6 +1236,12 @@ button.cta {
   color: rgba(244, 234, 214, 0.88);
 }
 
+.about-copy .contact-punch {
+  color: var(--paper);
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
 .about-copy ul {
   margin: 0 0 8px;
   padding: 0 0 0 1.2rem;
