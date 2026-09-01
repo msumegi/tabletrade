@@ -1347,6 +1347,11 @@ body.theme-rr .skip {
   color: var(--ember-ink);
 }
 
-body.theme-rr.page-home .nav {
+body.theme-rr.page-home .nav,
+body.theme-rr.page-about .nav {
   margin-left: 0;
+}
+
+.about .contact-block {
+  margin-top: 36px;
 }
