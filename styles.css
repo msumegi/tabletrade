@@ -1405,7 +1405,7 @@ body.theme-rr .how li::before {
 
 body.theme-rr .brand-logo {
   width: min(640px, 100%);
-  margin: 0 0 18px;
+  margin: 0 0 8px;
   border-radius: 4px;
 }
 
@@ -1426,6 +1426,13 @@ body.theme-rr .skip {
 body.theme-rr.page-home .nav,
 body.theme-rr.page-about .nav {
   margin-left: 0;
+}
+
+@media (min-width: 760px) {
+  body.theme-rr.page-home .hero {
+    display: block;
+    padding: 10px 0 36px;
+  }
 }
 
 .about .contact-block {
