@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Range Road Technologies</title>
+  <desc id="desc">RANGE ROAD over a strip that turns from dirt road to pavement to green code, with TECHNOLOGIES underneath.</desc>
+  <defs>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;display=swap");
+    </style>
+    <linearGradient id="asphalt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a3b2e"/>
+      <stop offset="28%" stop-color="#2f2d2c"/>
+      <stop offset="62%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#050506"/>
+    </linearGradient>
+    <linearGradient id="gravel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6a5340"/>
+      <stop offset="70%" stop-color="#4a3b2e"/>
+      <stop offset="100%" stop-color="#4a3b2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fadeCode" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.88"/>
+    </linearGradient>
+    <pattern id="stones" width="28" height="16" patternUnits="userSpaceOnUse">
+      <ellipse cx="6" cy="5" rx="5" ry="2.4" fill="#8a6a4e"/>
+      <ellipse cx="18" cy="11" rx="6" ry="2.2" fill="#5a4636"/>
+      <ellipse cx="22" cy="4" rx="4" ry="1.8" fill="#c4a882"/>
+      <ellipse cx="10" cy="12" rx="3.5" ry="1.6" fill="#4a382c"/>
+    </pattern>
+    <clipPath id="band">
+      <rect x="24" y="166" width="952" height="66" rx="3"/>
+    </clipPath>
+  </defs>
+  <text x="500" y="126" text-anchor="middle" fill="#d7c4a3" font-family="Oswald, Arial Narrow, Impact, sans-serif" font-size="94" font-weight="700" letter-spacing="-2.5">RANGE ROAD</text>
+  <g clip-path="url(#band)">
+    <rect x="24" y="166" width="952" height="66" fill="url(#asphalt)"/>
+    <rect x="24" y="166" width="360" height="66" fill="url(#gravel)"/>
+    <rect x="24" y="166" width="340" height="66" fill="url(#stones)" opacity="0.85"/>
+    <line x1="300" y1="199" x2="650" y2="199" stroke="#e6c35c" stroke-width="4" stroke-dasharray="20 14"/>
+    <g font-family="Consolas, IBM Plex Mono, monospace" font-size="15" font-weight="700">
+      <text x="640" y="186" fill="#3dff6a">01001101 01101110</text>
+      <text x="656" y="202" fill="#3dff6a" fill-opacity="0.72">01100101 01110010</text>
+      <text x="672" y="218" fill="#3dff6a" fill-opacity="0.38">01100100 01100001</text>
+    </g>
+    <rect x="24" y="166" width="952" height="66" fill="url(#fadeCode)"/>
+  </g>
+  <text x="500" y="294" text-anchor="middle" fill="#d7c4a3" font-family="Oswald, Arial Narrow, sans-serif" font-size="28" font-weight="500" letter-spacing="16">TECHNOLOGIES</text>
+</svg>
