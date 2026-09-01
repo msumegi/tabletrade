@@ -159,7 +159,8 @@ a {
 .close,
 .about,
 .legal,
-.foot {
+.foot,
+.table-art {
   position: relative;
   z-index: 1;
   width: min(1080px, calc(100% - 40px));
@@ -357,9 +358,23 @@ button.cta {
   color: var(--lamp);
 }
 
+.share-hero {
+  margin: 28px 0 0;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(244, 234, 214, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.share-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .table-art {
   position: relative;
-  margin: 40px 0 0;
+  margin: 40px auto 0;
   min-height: 420px;
   padding: 28px 16px 20px;
   border-radius: 28px 28px 8px 8px;
@@ -1019,11 +1034,18 @@ button.cta {
   .pitch { grid-area: pitch; }
   .cta-row { grid-area: cta; }
   .studio { grid-area: studio; }
-  .table-art {
+  .share-hero {
     grid-area: art;
-    height: 100%;
-    min-height: 520px;
     margin: 0;
+    height: 100%;
+    align-self: stretch;
+  }
+  .share-hero img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .table-art {
+    min-height: 520px;
     display: flex;
     flex-direction: column;
     justify-content: center;
