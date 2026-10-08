@@ -1,6 +1,6 @@
 # Range Road Technologies — marketing site
 
-Public site for **Range Road Technologies**. Lead / founder **Matthew Sumegi**.
+Public site for **Range Road Technologies**.
 
 This project is the company website. It is **not** the TableTrade web app.
 
