@@ -126,6 +126,15 @@ a {
   letter-spacing: -0.02em;
   color: var(--paper);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wordmark img {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
 }
 
 .wordmark span {
@@ -334,6 +343,14 @@ button.cta {
 
 .cta-note a {
   color: var(--lamp);
+}
+
+html.from-app .top-cta.soon,
+html.from-app .cta.soon,
+html.from-app .cta-note,
+html.from-app #get,
+html.from-app .close {
+  display: none;
 }
 
 .contact-block {
@@ -1101,7 +1118,7 @@ button.cta {
   }
 
   .how ol {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
 
@@ -1243,11 +1260,13 @@ body.theme-rr .cta:focus-visible {
   background: #e8d7b8;
 }
 
-body.theme-rr.page-home .contact-block {
-  margin-bottom: 2.75rem;
+body.theme-rr.page-home .hero-tagline {
+  margin: 4px 0 18px;
 }
 
 body.theme-rr.page-home .contact-mail {
+  display: inline-block;
+  margin-bottom: 2.75rem;
   color: rgba(244, 234, 214, 0.88);
 }
 
