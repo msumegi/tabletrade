@@ -9,7 +9,6 @@ This project is the company website. It is **not** the TableTrade web app.
 | Company home | `/` |
 | Apps | `/apps/` |
 | TableTrade (product marketing) | `/apps/tabletrade/` |
-| About us | `/about/` |
 | Privacy | `/privacy/` |
 
 | | URL |
