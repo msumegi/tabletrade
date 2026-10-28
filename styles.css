@@ -157,7 +157,6 @@ a {
 .shop,
 .faq,
 .close,
-.about,
 .legal,
 .foot,
 .table-art {
@@ -1123,21 +1122,6 @@ button.cta {
     grid-template-columns: 1fr 1fr;
     max-width: 32rem;
   }
-
-  .about {
-    padding-top: 48px;
-  }
-
-  .about-grid {
-    grid-template-columns: 200px 1fr;
-    column-gap: 48px;
-  }
-
-  .portrait-wrap,
-  .portrait {
-    width: 200px;
-    max-width: 200px;
-  }
 }
 
 @media (max-width: 560px) {
@@ -1173,110 +1157,6 @@ button.cta {
     animation: none;
     opacity: 0.28;
   }
-}
-
-.about {
-  padding: 28px 0 48px;
-}
-
-.about h1 {
-  font-size: clamp(2.2rem, 7vw, 3.8rem);
-  max-width: 18ch;
-}
-
-.about-role {
-  margin: 0 0 28px;
-}
-
-.about-grid {
-  display: grid;
-  gap: 28px;
-  align-items: start;
-}
-
-.portrait-wrap {
-  margin: 0;
-  width: 180px;
-  max-width: 180px;
-}
-
-.portrait-wrap figcaption {
-  margin: 10px 0 0;
-  font-size: 0.88rem;
-  line-height: 1.35;
-  color: var(--muted);
-}
-
-.portrait-wrap figcaption strong {
-  display: block;
-  font-size: 1rem;
-  color: var(--paper);
-  font-weight: 600;
-}
-
-.portrait-wrap figcaption span {
-  display: block;
-}
-
-.portrait-wrap figcaption .co {
-  white-space: nowrap;
-  color: rgba(244, 234, 214, 0.88);
-}
-
-.portrait {
-  display: block;
-  width: 180px;
-  max-width: 180px;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  /* 4:5 cover window: pin the visible right edge to the wood panel (~x=444 of 517). */
-  object-position: 43% top;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  background: var(--felt-deep);
-}
-
-.about-copy {
-  max-width: 38rem;
-}
-
-.about-copy p {
-  margin: 0 0 10px;
-  font-size: 1.12rem;
-  font-weight: 450;
-  font-family: inherit;
-  line-height: 1.45;
-  color: rgba(244, 234, 214, 0.88);
-}
-
-.about-copy .contact-punch {
-  color: var(--paper);
-  font-size: 1.12rem;
-  font-weight: 450;
-  font-family: inherit;
-}
-
-.about-copy ul {
-  margin: 0 0 8px;
-  padding: 0 0 0 1.2rem;
-}
-
-.about-copy li {
-  margin: 0 0 8px;
-  font-size: 1.08rem;
-  color: rgba(244, 234, 214, 0.88);
-}
-
-.about-copy .source {
-  font-size: 0.88rem;
-  color: var(--muted);
-}
-
-.about-copy .cta {
-  margin-top: 10px;
-  width: min(100%, 22rem);
 }
 
 /* Range Road company pages: black and earth. TableTrade pages stay orange-felt. */
@@ -1367,33 +1247,13 @@ body.theme-rr.page-home .contact-block {
   margin-bottom: 2.75rem;
 }
 
-body.theme-rr.page-home .contact-mail,
-body.theme-rr.page-about .contact-mail {
+body.theme-rr.page-home .contact-mail {
   color: rgba(244, 234, 214, 0.88);
 }
 
 body.theme-rr.page-home .contact-mail:hover,
-body.theme-rr.page-home .contact-mail:focus-visible,
-body.theme-rr.page-about .contact-mail:hover,
-body.theme-rr.page-about .contact-mail:focus-visible {
+body.theme-rr.page-home .contact-mail:focus-visible {
   color: rgba(244, 234, 214, 0.88);
-}
-
-body.theme-rr.page-home .about-more {
-  margin: 0 0 28px;
-}
-
-body.theme-rr.page-home .about-more a {
-  color: var(--paper);
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-body.theme-rr.page-home .about-more a:hover,
-body.theme-rr.page-home .about-more a:focus-visible {
-  color: var(--lamp);
-  text-decoration: underline;
 }
 
 body.theme-rr.page-home .cta.ghost {
@@ -1439,8 +1299,7 @@ body.theme-rr .skip {
   color: var(--ember-ink);
 }
 
-body.theme-rr.page-home .nav,
-body.theme-rr.page-about .nav {
+body.theme-rr.page-home .nav {
   margin-left: 0;
 }
 
@@ -1449,8 +1308,4 @@ body.theme-rr.page-about .nav {
     display: block;
     padding: 10px 0 36px;
   }
-}
-
-.about .contact-block {
-  margin-top: 4px;
 }
