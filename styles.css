@@ -30,9 +30,17 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: var(--night);
+}
+
 html,
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
   min-height: 100%;
   background: var(--night);
 }
@@ -41,6 +49,14 @@ body {
   min-height: 100dvh;
   position: relative;
   overflow-x: hidden;
+  font-size: 16px;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -171,7 +187,8 @@ a {
 .table-art {
   position: relative;
   z-index: 1;
-  width: min(1080px, calc(100% - 40px));
+  width: calc(100% - 40px);
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -233,7 +250,8 @@ h2 span,
 
 .brand-logo {
   display: block;
-  width: min(720px, 100%);
+  width: 100%;
+  max-width: 720px;
   height: auto;
   margin: 0 0 10px -8px;
 }
@@ -252,7 +270,7 @@ h1 {
 .hero-tagline {
   font-family: Outfit, system-ui, sans-serif;
   font-weight: 600;
-  font-size: clamp(1.35rem, 3.6vw, 2rem);
+  font-size: clamp(1.35rem, 1.1rem + 1.6vw, 2rem);
   letter-spacing: -0.02em;
   color: var(--lamp);
   margin: 0;
@@ -372,7 +390,7 @@ html.from-app .close {
   font-weight: 500;
   color: var(--lamp);
   text-decoration: none;
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .contact-mail:hover,
@@ -477,7 +495,8 @@ html.from-app .close {
 }
 
 .phone {
-  width: min(214px, 44vw);
+  width: 44vw;
+  max-width: 214px;
   filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.45));
 }
 
@@ -889,7 +908,8 @@ html.from-app .close {
 }
 
 .tent-face {
-  width: min(260px, 80vw);
+  width: 80vw;
+  max-width: 260px;
   padding: 22px 18px 20px;
   text-align: center;
   background: var(--paper);
@@ -1017,7 +1037,7 @@ html.from-app .close {
 .foot {
   padding: 8px 0 calc(28px + env(safe-area-inset-bottom));
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
 }
 
 .foot p {
@@ -1071,7 +1091,7 @@ html.from-app .close {
   100% { opacity: 0; scale: 1.15; }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 660px) {
   .hero {
     display: grid;
     grid-template-columns: 1.05fr 1fr;
@@ -1085,6 +1105,10 @@ html.from-app .close {
     column-gap: 36px;
     align-items: start;
     padding-top: 48px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 4.5vw, 4.6rem);
   }
 
   .kicker { grid-area: kicker; }
@@ -1103,10 +1127,29 @@ html.from-app .close {
     height: auto;
   }
   .table-art {
-    min-height: 520px;
+    min-height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .phones {
+    min-height: 360px;
+  }
+
+  .phone {
+    width: 32vw;
+    max-width: 228px;
+  }
+
+  .faq dl {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 980px) {
+  .table-art {
+    min-height: 520px;
   }
 
   .phones {
@@ -1125,10 +1168,6 @@ html.from-app .close {
   .shop {
     grid-template-columns: 1.2fr 0.8fr;
     column-gap: 40px;
-  }
-
-  .faq dl {
-    grid-template-columns: 1fr 1fr;
   }
 
   .close {
@@ -1159,7 +1198,8 @@ html.from-app .close {
   }
 
   .phone {
-    width: min(240px, 72vw);
+    width: 72vw;
+    max-width: 240px;
   }
 
   .phone-have,
@@ -1298,8 +1338,13 @@ body.theme-rr .how li::before {
   color: #111008;
 }
 
+html.theme-rr {
+  background: #050505;
+}
+
 body.theme-rr .brand-logo {
-  width: min(640px, 100%);
+  width: 100%;
+  max-width: 640px;
   margin: 0 0 8px;
   border-radius: 4px;
 }
@@ -1322,9 +1367,15 @@ body.theme-rr.page-home .nav {
   margin-left: 0;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 660px) {
   body.theme-rr.page-home .hero {
     display: block;
     padding: 10px 0 36px;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 1040px) {
+  body.theme-rr.page-home .brand-logo {
+    max-width: 100%;
   }
 }
