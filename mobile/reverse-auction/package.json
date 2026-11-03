@@ -1,0 +1,13 @@
+{
+  "name": "reverse-auction-marketing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Android shell for the Reverse Auction Marketing demo.",
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/core": "8.6.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0"
+  }
+}
