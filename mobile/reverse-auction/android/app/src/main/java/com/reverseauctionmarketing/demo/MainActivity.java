@@ -1,6 +1,9 @@
 package com.reverseauctionmarketing.demo;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
@@ -19,10 +22,12 @@ import com.getcapacitor.WebViewListener;
  */
 public class MainActivity extends BridgeActivity {
     private Insets lastBars = Insets.NONE;
+    private boolean openerAttached;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        attachExternalOpener();
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         View decor = getWindow().getDecorView();
         WindowInsetsControllerCompat controller = new WindowInsetsControllerCompat(getWindow(), decor);
@@ -40,6 +45,7 @@ public class MainActivity extends BridgeActivity {
             getBridge().addWebViewListener(new WebViewListener() {
                 @Override
                 public void onPageLoaded(WebView webView) {
+                    attachExternalOpener();
                     applyInsets();
                 }
             });
@@ -61,5 +67,34 @@ public class MainActivity extends BridgeActivity {
 
     private String px(int pixels, float density) {
         return (pixels / density) + "px";
+    }
+
+    private void attachExternalOpener() {
+        if (openerAttached || getBridge() == null || getBridge().getWebView() == null) return;
+        getBridge().getWebView().addJavascriptInterface(new ExternalSite(), "RamAndroid");
+        openerAttached = true;
+    }
+
+    /**
+     * Opens https://rangeroadtech.com/ in the phone's browser. The WebView does not load it.
+     */
+    private class ExternalSite {
+        @android.webkit.JavascriptInterface
+        public void openExternal(String url) {
+            if (url == null) return;
+            Uri parsed = Uri.parse(url);
+            String host = parsed.getHost();
+            if (!"https".equalsIgnoreCase(String.valueOf(parsed.getScheme())) || host == null || !host.equalsIgnoreCase("rangeroadtech.com")) {
+                return;
+            }
+            Intent intent = new Intent(Intent.ACTION_VIEW, parsed);
+            runOnUiThread(() -> {
+                try {
+                    startActivity(intent);
+                } catch (ActivityNotFoundException ignored) {
+                    /* no browser on this device */
+                }
+            });
+        }
     }
 }

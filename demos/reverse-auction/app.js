@@ -40,6 +40,8 @@ const ui = {
   bid: {},
   sell: null,
   calc: null,
+  welcome: false,
+  tour: null,
 };
 let route = { name: "catalogue" };
 let playTimer = 0;
@@ -65,6 +67,106 @@ function persist() {
 function esc(value) {
   return String(value ?? "").replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
 }
+
+function isNativeApp() {
+  return !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+}
+
+function info(label, tip) {
+  return `<span class="help"><button type="button" class="info" aria-expanded="false" aria-label="Help: ${esc(label)}">i</button><span class="tip" role="tooltip" hidden>${esc(tip)}</span></span>`;
+}
+
+function screenHelp(hint, tip) {
+  return `<p class="screen-hint">${esc(hint)} ${info("About this screen", tip)}</p>`;
+}
+
+function fieldBlock({ id, label, hint, tip, control, wide = false }) {
+  return `<div class="field${wide ? " wide" : ""}">
+    <div class="field-name"><label for="${esc(id)}">${esc(label)}</label> ${info(label, tip)}</div>
+    ${control}
+    <p class="field-hint">${esc(hint)}</p>
+  </div>`;
+}
+
+const TOUR_KEY = "ram.prototype.tourSeen";
+
+function tourSeen() {
+  try {
+    return localStorage.getItem(TOUR_KEY) === "1";
+  } catch (err) {
+    return false;
+  }
+}
+
+function markTourSeen() {
+  try {
+    localStorage.setItem(TOUR_KEY, "1");
+  } catch (err) {
+    /* private mode */
+  }
+}
+
+const TOUR = [
+  {
+    title: "You are viewing as someone",
+    body: "There is no login. This menu picks a sample person. Morgan sells wholesale. Jordan runs a shop and can bid on those lots.",
+    target: "role",
+    hash: "#/",
+  },
+  {
+    title: "The catalogue",
+    body: "Every card is a lot of the same item. Most are wholesalers selling to shops. Open a card to see the price and how much time is left.",
+    target: "catalogue",
+    hash: "#/",
+  },
+  {
+    title: "Start with the shop towels",
+    body: "Open Shop towel cases, then press Play the price clock. The price starts at $100 and steps down as sample bids come in.",
+    target: "start",
+    hash: "#/",
+  },
+  {
+    title: "The price clock",
+    body: "The big number is the price right now. It drops when more units are claimed. The boxes show the price at each quantity. Press Play the price clock to watch it move.",
+    target: "clock",
+    hash: "#/listing/lot-example",
+  },
+  {
+    title: "Placing a bid",
+    body: "You are now Jordan, a shop owner. Enter how many you want and the most you will pay per unit. If that is at least the price on the clock, you are in right away.",
+    target: "bid",
+    hash: "#/listing/lot-example",
+    user: "u-jordan",
+  },
+  {
+    title: "Pending bids",
+    body: "A lower bid waits. On the glove lot, some bids are waiting. If enough waiting bids reach their price together, they all get in and the price drops. If time runs out first, they do not get the item.",
+    target: "pending",
+    hash: "#/listing/lot-gloves",
+    user: "u-jordan",
+  },
+  {
+    title: "Sellers list a lot",
+    body: "You are Morgan again. A seller sets how many, the high price, the lowest price, who may buy, and shipping. The unit cost stays private.",
+    target: "sell",
+    hash: "#/sell",
+    user: "u-morgan",
+  },
+  {
+    title: "The profit calculator",
+    body: "Only the seller sees this. It estimates the final price, the profit per day, and what happens if 20% fewer units sell. The figures are a sample, not a forecast.",
+    target: "calc",
+    hash: "#/calculator/lot-example",
+    user: "u-morgan",
+  },
+  {
+    title: "The wish list",
+    body: "Buyers write what they want and how many. Sellers see the same counts. When a matching lot appears, a buyer who asked for an alert gets one.",
+    target: "wishlist",
+    hash: "#/wishlist",
+    user: "u-morgan",
+  },
+];
 
 function money(n) {
   return roundMoney(n).toLocaleString("en-US", { style: "currency", currency: "USD" });
@@ -182,7 +284,7 @@ function wishMatches(listing, wish) {
 
 function publicUrl(hash) {
   const path = hash || "#/";
-  const native = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+  const native = isNativeApp();
   if (native) return `https://rangeroadtech.com/demos/reverse-auction/${path}`;
   let base = location.pathname;
   if (base.endsWith(".html")) base = base.replace(/[^/]+$/, "");
@@ -362,8 +464,60 @@ function routeOf() {
   if (head === "listing" && parts[1]) return { name: "listing", id: parts[1] };
   if (head === "label" && parts[1] && parts[2]) return { name: "label", listingId: parts[1], userId: parts[2] };
   if (head === "calculator") return { name: "calculator", id: parts[1] || "" };
-  if (["wishlist", "sell", "orders"].includes(head)) return { name: head };
+  if (["wishlist", "sell", "orders", "how"].includes(head)) return { name: head };
   return { name: "catalogue" };
+}
+
+function developerSiteLink() {
+  const external = isNativeApp() ? "" : ` target="_blank" rel="noopener noreferrer"`;
+  return `<a class="developer-link" href="https://rangeroadtech.com/"${external} data-action="developer-site">Range Road Technologies</a>`;
+}
+
+function openDeveloperSite() {
+  const url = "https://rangeroadtech.com/";
+  if (window.RamAndroid && typeof window.RamAndroid.openExternal === "function") {
+    window.RamAndroid.openExternal(url);
+    return;
+  }
+  window.location.assign(url);
+}
+
+function applyTourStep() {
+  const step = TOUR[ui.tour.step];
+  if (step.user && state.activeUserId !== step.user) {
+    state.activeUserId = step.user;
+    ui.sell = null;
+    ui.calc = null;
+    persist();
+  }
+  const hash = step.hash || "#/";
+  if (location.hash !== hash) {
+    location.hash = hash;
+    return;
+  }
+  render({ tour: true });
+}
+
+function startTour() {
+  markTourSeen();
+  ui.welcome = false;
+  ui.tour = { step: 0, returnUser: me().id };
+  applyTourStep();
+}
+
+function endTour() {
+  const back = ui.tour && ui.tour.returnUser;
+  ui.tour = null;
+  ui.welcome = false;
+  markTourSeen();
+  if (back) {
+    state.activeUserId = back;
+    ui.sell = null;
+    ui.calc = null;
+    persist();
+  }
+  if ((location.hash || "#/") !== "#/") location.hash = "#/";
+  else render();
 }
 
 function mark() {
@@ -376,12 +530,14 @@ function shell(title, body) {
   const unread = state.notifications.filter((note) => note.userId === user.id && !note.read);
   const seller = user.role === "seller";
   const nav = [
+    ["how", "#/how", "How it works"],
     ["catalogue", "#/", "Catalogue"],
     ["wishlist", "#/wishlist", "Wish list"],
     seller ? ["sell", "#/sell", "Sell"] : null,
     ["orders", "#/orders", "Orders"],
     seller ? ["calculator", "#/calculator", "Calculator"] : null,
   ].filter(Boolean);
+  const step = ui.tour ? TOUR[ui.tour.step] : null;
   const groups = [
     ["Sellers", state.users.filter((row) => row.switchable && row.role === "seller")],
     ["Buyers", state.users.filter((row) => row.switchable && row.role === "buyer")],
@@ -392,30 +548,53 @@ function shell(title, body) {
       <div class="topbar-main">
         <a class="brand" href="#/">${mark()}<span><span class="brand-name">Reverse Auction Marketing</span></span></a>
         <div class="top-actions">
-          <label class="role">Viewing as
-            <select id="role-switch" aria-label="Demo role">
+          <div class="role" data-tour="role">
+            <span class="role-label"><label for="role-switch">You are viewing as</label> ${info("You are viewing as", "Pick a sample person. There is no password. Example: Jordan Blake owns a shop and can bid on Canadian wholesale lots. Morgan Hale is the wholesaler who listed most of them.")}</span>
+            <select id="role-switch" aria-label="You are viewing as">
               ${groups.map(([label, rows]) => `<optgroup label="${label}">${rows.map((row) => `<option value="${esc(row.id)}"${row.id === user.id ? " selected" : ""}>${esc(row.name)} · ${esc(row.company)} · ${esc(row.role === "seller" ? SELLER_LABEL[row.sellerType] : BUYER_LABEL[row.buyerType])}</option>`).join("")}</optgroup>`).join("")}
             </select>
-          </label>
+          </div>
           <div class="notif-pop">
             <button type="button" class="icon-btn" data-action="notifs" aria-expanded="${ui.notifOpen ? "true" : "false"}">Alerts${unread.length ? `<span class="count">${unread.length}</span>` : ""}</button>
             ${ui.notifOpen ? `<div class="notif-list">${notes.length ? notes.map((note) => `<a class="${note.read ? "" : "unread"}" href="#/listing/${esc(note.listingId)}" data-action="read-note" data-id="${esc(note.id)}"><strong>${esc(note.title)}</strong><br />${esc(note.body)}</a>`).join("") : `<p>No alerts yet. A buyer is notified when a wish matches a new lot.</p>`}${notes.some((note) => !note.read) ? `<button type="button" class="btn small" data-action="read-all">Mark all read</button>` : ""}</div>` : ""}
           </div>
+          <button type="button" class="icon-btn" data-action="tour-start">Take the tour</button>
           <div class="reset-pop">
             ${ui.resetArmed ? `<div class="reset-confirm"><p>Restore the original sample lots and bids?</p><button type="button" class="btn small primary" data-action="reset-confirm">Reset demo</button> <button type="button" class="btn small" data-action="reset-cancel">Cancel</button></div>` : `<button type="button" class="icon-btn" data-action="reset-arm">Reset demo</button>`}
           </div>
         </div>
       </div>
       <p class="prototype">Prototype for a live demonstration · Sample sellers, buyers, and bids · No real payments or shipments</p>
-      <nav class="nav" aria-label="Demo">${nav.map(([name, href, label]) => `<a href="${href}"${route.name === name ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
+      <nav class="nav" aria-label="Demo">${nav.map(([name, href, label]) => `<a class="${name === "how" ? "nav-how" : ""}" href="${href}"${route.name === name ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
     </header>
     <main id="main">${body}</main>
     <footer class="foot">
-      <p>Platform developed by Range Road Technologies.</p>
+      <p>Platform developed by ${developerSiteLink()}.</p>
       <p>Illustrative fees and profit figures are not a quote. Nothing on this demo charges a card or books a shipment.</p>
     </footer>
   </div>
-  <div id="toast" class="toast" role="status">${esc(ui.toast)}</div>`;
+  <div id="toast" class="toast" role="status">${esc(ui.toast)}</div>
+  ${ui.welcome ? `<div class="tour-backdrop"><div class="welcome" role="dialog" aria-labelledby="welcome-title">
+    <p class="kicker">First visit</p>
+    <h2 id="welcome-title">See how a lot gets cheaper</h2>
+    <p>The price starts high. It drops as more units are claimed. Everyone who gets one pays that same final price. Nothing here is a real payment.</p>
+    <div class="btn-row">
+      <button type="button" class="btn primary" data-action="tour-start">Take the tour</button>
+      <button type="button" class="btn" data-action="tour-dismiss">Skip for now</button>
+      <button type="button" class="btn" data-action="tour-read">Read how it works</button>
+    </div>
+  </div></div>` : ""}
+  ${step ? `<div id="tour-ring" class="tour-ring" hidden></div>
+    <div class="tour-card" role="dialog" aria-labelledby="tour-title">
+      <p class="kicker">Step ${ui.tour.step + 1} of ${TOUR.length}</p>
+      <h2 id="tour-title">${esc(step.title)}</h2>
+      <p>${esc(step.body)}</p>
+      <div class="btn-row">
+        <button type="button" class="btn" data-action="tour-back"${ui.tour.step === 0 ? " disabled" : ""}>Back</button>
+        <button type="button" class="btn primary" data-action="tour-next">${ui.tour.step === TOUR.length - 1 ? "Done" : "Next"}</button>
+        <button type="button" class="btn" data-action="tour-skip">Close tour</button>
+      </div>
+    </div>` : ""}`;
 }
 
 function unique(key) {
@@ -426,24 +605,66 @@ function selectOptions(values, current, anyLabel) {
   return [`<option value="">${esc(anyLabel)}</option>`].concat(values.map((value) => `<option value="${esc(value)}"${value === current ? " selected" : ""}>${esc(value)}</option>`)).join("");
 }
 
+function howView() {
+  return `<h1 class="page-title">How it works</h1>
+    ${screenHelp("The price starts high, drops as more units are claimed, and everyone pays the final price.", "Read this once, then open Shop towel cases and press Play the price clock. You can also take the tour from the header.")}
+    <div class="guide">
+      <section class="panel">
+        <h2>The price falls as the lot fills</h2>
+        <p>A seller offers a set of the same item. The price starts at the top. Each time more units are claimed, the price can step down. When the sale ends, everyone who got units pays that one lowest price. You never pay more than the most you offered.</p>
+      </section>
+      <section class="panel">
+        <h2>Ten units, from $100 down to $70</h2>
+        <p>This is the sample used on the shop-towel lot. The price depends on how many units are claimed.</p>
+        <ol class="bands" aria-label="Price for each quantity">
+          <li class="band on"><span class="price">$100</span><span class="seller-line">1 unit</span></li>
+          <li class="band"><span class="price">$90</span><span class="seller-line">2 to 4</span></li>
+          <li class="band"><span class="price">$80</span><span class="seller-line">5 to 8</span></li>
+          <li class="band"><span class="price">$70</span><span class="seller-line">9 or 10</span></li>
+        </ol>
+        <p>If 5 units sell, everyone who got one pays $80. If all 10 sell, everyone pays $70. Press play on the live lot to watch it happen.</p>
+        <p><a class="btn primary" href="#/listing/lot-example">Open the shop-towel lot</a></p>
+      </section>
+      <section class="panel">
+        <h2>A bid now, or a bid that waits</h2>
+        <p><strong>Immediate.</strong> Your top price is at least the price on the clock. You are in right away. If the price later falls, you pay the lower price too.</p>
+        <p><strong>Pending.</strong> Your top price is lower than the clock. You wait. If enough waiting bids together reach that price, they are all taken and the price drops. One buyer can even take the whole lot at the lowest price and end it at once. If the sale ends before the price falls that far, a waiting bid does not get the item.</p>
+        <p>Higher offers are filled first. If two offers match, the earlier one is first.</p>
+      </section>
+      <section class="panel">
+        <h2>What a seller sets</h2>
+        <p>How many units, how they are packed, the high price, the lowest price they will take, and the steps in between. Also when it starts, how long it runs, who may buy, where it ships, the shipping choices, the warranty, and an optional thank-you for the first bidder if the lot sells out at the lowest price. The seller’s own cost is private. There is no fee to list.</p>
+      </section>
+      <section class="panel">
+        <h2>What a buyer does</h2>
+        <p>Look through the catalogue. Check the lowest price before you bid. Enter a quantity and the most you will pay. Shipping and insurance are shown first, then added to the final price. You can also list what you want. Sellers see how many people asked, and you can be told when a match is listed.</p>
+      </section>
+      <section class="panel">
+        <h2>Why both sides use it</h2>
+        <p>Buyers pool their orders and are not afraid of overpaying: the price only goes down, and never above the max they set. Sellers move a group of units at once, choose who they sell to, and can check the profit before they publish.</p>
+        <p><button type="button" class="btn" data-action="tour-start">Take the tour</button></p>
+      </section>
+    </div>`;
+}
+
 function catalogue() {
   const rows = filtered();
   const wholesale = state.listings.filter((listing) => listing.audienceId === "wh-retail").length;
   return `<h1 class="page-title">Catalogue</h1>
-    <p class="lede">Most of the floor is wholesale lots aimed at retailers (${wholesale} of ${state.listings.length} sample lots). A few manufacturer and individual listings are mixed in so the audience rules are visible.</p>
-    <details class="how" open>
-      <summary>How the price clock works</summary>
-      <p>A lot opens at its high price and steps down as more units are filled. Every buyer who is filled pays that same final price. A bid at the current price is taken immediately. A lower bid waits. Waiting bids are judged together: if they reach a price they will all pay, the clock drops and the lot can sell out at once.</p>
-    </details>
+    ${screenHelp(`Most of these ${state.listings.length} lots are wholesale goods for shops (${wholesale} of them).`, "Each card is one lot. Live cards show the price now, how many are left, the time left, and the next lower price. Use the filters to narrow by maker, brand, model, or seller.")}
+    <aside class="start-here" data-tour="start">
+      <p><strong>Start here.</strong> Open the shop-towel lot and press Play the price clock. The price starts at $100 and steps down toward $70.</p>
+      <div class="btn-row"><a class="btn small primary" href="#/listing/lot-example">Open shop towels</a><a class="btn small" href="#/how">How it works</a></div>
+    </aside>
     <div class="filters">
-      <label class="field">Search<input id="filter-q" data-filter="q" value="${esc(ui.q)}" placeholder="Brand, model, seller…" /></label>
-      <label class="field">Manufacturer<select id="filter-manufacturer" data-filter="manufacturer">${selectOptions(unique("manufacturer"), ui.manufacturer, "All")}</select></label>
-      <label class="field">Brand<select id="filter-brand" data-filter="brand">${selectOptions(unique("brand"), ui.brand, "All")}</select></label>
-      <label class="field">Model<select id="filter-model" data-filter="model">${selectOptions(unique("model"), ui.model, "All")}</select></label>
-      <label class="field">Seller type<select id="filter-sellerType" data-filter="sellerType"><option value="">All</option>${Object.entries(SELLER_LABEL).map(([key, label]) => `<option value="${key}"${ui.sellerType === key ? " selected" : ""}>${label}</option>`).join("")}</select></label>
-      <label class="field">Status<select id="filter-status" data-filter="status"><option value="">All</option>${[["live", "Live"], ["upcoming", "Upcoming"], ["closed", "Closed"]].map(([key, label]) => `<option value="${key}"${ui.status === key ? " selected" : ""}>${label}</option>`).join("")}</select></label>
+      ${fieldBlock({ id: "filter-q", label: "Search", hint: "Type a name, brand, or seller.", tip: "What to enter: any word from the title, brand, model, or seller. Example: Millhouse. Why it matters: it hides lots that do not match.", control: `<input id="filter-q" data-filter="q" value="${esc(ui.q)}" placeholder="Brand, model, seller…" />` })}
+      ${fieldBlock({ id: "filter-manufacturer", label: "Manufacturer", hint: "The company that made the goods.", tip: "What to choose: a maker, or All. Example: Millhouse Paper. Why it matters: the catalogue is indexed by maker, brand, and model.", control: `<select id="filter-manufacturer" data-filter="manufacturer">${selectOptions(unique("manufacturer"), ui.manufacturer, "All")}</select>` })}
+      ${fieldBlock({ id: "filter-brand", label: "Brand", hint: "The name printed on the goods.", tip: "What to choose: a brand, or All. Example: MedPro. Why it matters: buyers often search by the brand they already stock.", control: `<select id="filter-brand" data-filter="brand">${selectOptions(unique("brand"), ui.brand, "All")}</select>` })}
+      ${fieldBlock({ id: "filter-model", label: "Model", hint: "The model code.", tip: "What to choose: a model, or All. Example: GL-200. Why it matters: a wish list can match this exact model.", control: `<select id="filter-model" data-filter="model">${selectOptions(unique("model"), ui.model, "All")}</select>` })}
+      ${fieldBlock({ id: "filter-sellerType", label: "Seller type", hint: "Who is selling.", tip: "What to choose: Manufacturer, Wholesaler, Retailer, Individual, or All. Example: Wholesaler. Why it matters: the audience rules depend on the seller.", control: `<select id="filter-sellerType" data-filter="sellerType"><option value="">All</option>${Object.entries(SELLER_LABEL).map(([key, label]) => `<option value="${key}"${ui.sellerType === key ? " selected" : ""}>${label}</option>`).join("")}</select>` })}
+      ${fieldBlock({ id: "filter-status", label: "Status", hint: "Live, not started, or finished.", tip: "What to choose: Live to bid now, Upcoming to see a future start, or Closed to see a finished sale. Example: Live. Why it matters: only a live lot has a moving price.", control: `<select id="filter-status" data-filter="status"><option value="">All</option>${[["live", "Live"], ["upcoming", "Upcoming"], ["closed", "Closed"]].map(([key, label]) => `<option value="${key}"${ui.status === key ? " selected" : ""}>${label}</option>`).join("")}</select>` })}
     </div>
-    ${rows.length ? `<div class="grid">${rows.map(card).join("")}</div>` : `<p class="empty">No lots match those filters.</p>`}`;
+    ${rows.length ? `<div class="grid" data-tour="catalogue">${rows.map(card).join("")}</div>` : `<p class="empty" data-tour="catalogue">No lots match. Clear the search and filters, or <a href="#/listing/lot-example">open the shop-towel lot</a> and press Play the price clock.</p>`}`;
 }
 
 function filtered() {
@@ -508,7 +729,7 @@ function card(listing) {
 
 function listingView(id) {
   const listing = findListing(id);
-  if (!listing) return `<p class="empty">That lot isn't in the sample catalogue. <a href="#/">Back to the catalogue</a></p>`;
+  if (!listing) return `<h1 class="page-title">Lot not found</h1>${screenHelp("This link is not in the sample catalogue.", "Go back and open Shop towel cases. That lot is the $100 to $70 example. Press Play the price clock.")}<p class="empty">Start here: <a href="#/listing/lot-example">open the shop-towel lot</a>.</p>`;
   const seller = userById(listing.sellerId);
   const audience = audienceById(listing.audienceId);
   const phase = phaseOf(listing);
@@ -528,9 +749,10 @@ function listingView(id) {
   const table = listing.example ? exampleTable(listing, book, isOwnListing(listing)) : "";
   return `<p class="kicker"><a href="#/">Catalogue</a> · ${esc(audience.label)}</p>
     <h1 class="page-title">${esc(listing.title)}</h1>
+    ${screenHelp(listing.example ? "This is the $100 to $70 example. Press Play the price clock." : "The big price is what a filled buyer would pay right now.", "The price starts high and can only step down. Everyone who is filled pays the same final price. A bid at the current price is taken now. A lower bid waits.")}
     <p class="lede">${esc(listing.manufacturer)} · ${esc(listing.brand)} · <span class="model">${esc(listing.model)}</span> · ${esc(listing.packaging)}</p>
     <div class="listing-layout">
-      <section class="clock-card">
+      <section class="clock-card" data-tour="clock">
         <div class="card-top"><span class="pill ${phase}">${phase === "live" ? "Live" : phase === "upcoming" ? "Upcoming" : "Closed"}</span><span class="seller-line">${esc(seller.company)}</span></div>
         ${phase === "live" ? `<p class="kicker">Current price</p><p class="now-price" id="clock-price">${money(book.clockPrice)}</p>` : ""}
         ${phase === "upcoming" ? `<p class="kicker">Opens at</p><p class="now-price">${money(listing.schedule[0].price)}</p>` : ""}
@@ -551,7 +773,7 @@ function listingView(id) {
         ${phase === "live" ? demoBar(listing, book) : ""}
         ${share}
       </section>
-      <aside class="bid-card">${bidBox(listing, phase, book)}</aside>
+      <aside class="bid-card" data-tour="bid">${bidBox(listing, phase, book)}</aside>
       <section class="detail-card">
         <h2 class="section-title">Lot details</h2>
         <p>${esc(listing.description)}</p>
@@ -567,8 +789,11 @@ function listingView(id) {
         </dl>
         ${isOwnListing(listing) ? `<p class="private">Your private unit cost is ${money(listing.unitCost)}. Buyers do not see this. <a href="#/calculator/${esc(listing.id)}">Open the profit calculator</a>.</p>` : ""}
         ${table}
-        <h2 class="section-title">Bids</h2>
-        ${bidHistory(listing, book, phase)}
+        <div data-tour="pending">
+          <h2 class="section-title">Bids ${info("Bids on this lot", "Filled bids are in. Pending bids are waiting for a lower price. Example: a $70 bid on the shop-towel lot waits until 9 units are claimed. Why it matters: waiting bids can drop the price together and even end the sale at once.")}</h2>
+          <p class="field-hint">Higher offers fill first. The same offer goes to whoever bid earlier.</p>
+          ${bidHistory(listing, book, phase)}
+        </div>
         ${comments.length ? `<h2 class="section-title">Comments</h2>${comments.map((row) => `<p class="comment"><span class="stars">${stars(row.stars)}</span> ${esc(userById(row.fromUserId)?.name || "Buyer")} — ${esc(row.comment)}</p>`).join("")}` : ""}
         ${phase === "closed" ? orderBlock(listing) : ""}
       </section>
@@ -616,10 +841,10 @@ function bidDraft(listing) {
 
 function bidBox(listing, phase, book) {
   const user = me();
-  if (phase === "upcoming") return `<h2 class="section-title">Bidding opens later</h2><p>The floor is ${money(listing.floorPrice)}. You can see it before you decide. Shipping is quoted once the lot is live.</p>`;
-  if (phase === "closed") return `<h2 class="section-title">This lot has closed</h2><p>${book.units ? `${book.units} units cleared at ${money(book.clockPrice)}.` : "No bids cleared."} ${book.soldOut ? "It sold out." : "The clock ran out."}</p><p><a href="#/orders">Order summaries</a></p>`;
+  if (phase === "upcoming") return `<h2 class="section-title">Bidding opens later</h2><p class="field-hint">You can read the lowest price now. Bids open when the start time arrives.</p><p>The lowest price is ${money(listing.floorPrice)}. Shipping is quoted once the lot is live.</p>`;
+  if (phase === "closed") return `<h2 class="section-title">This lot has closed</h2><p class="field-hint">No more bids. Filled buyers all pay the final price.</p><p>${book.units ? `${book.units} units sold at ${money(book.clockPrice)}.` : "No bids were filled."} ${book.soldOut ? "It sold out." : "Time ran out."}</p><p><a href="#/orders">See the orders</a></p>`;
   if (user.role !== "buyer") {
-    return `<h2 class="section-title">You are viewing as the seller</h2><p>Switch to a buyer to bid. Jordan Blake is a Calgary retailer and can bid on Canadian wholesale lots. The pitch controls on the left add sample bidders either way.</p>`;
+    return `<h2 class="section-title">You are viewing as the seller</h2><p class="field-hint">Sellers do not bid on their own lot.</p><p>Choose Jordan Blake under You are viewing as. Jordan runs a shop in Calgary and can bid on Canadian wholesale lots. Or press Play the price clock and watch sample bids move the price.</p>`;
   }
   const audienceOk = buyerMayEnter(listing.audienceId, user.buyerType);
   const geoOk = buyerInGeo(listing.geo, user);
@@ -639,10 +864,10 @@ function bidBox(listing, phase, book) {
     ${!audienceOk ? `<p class="warn">This audience is ${esc(audienceById(listing.audienceId).label)}. A ${esc(BUYER_LABEL[user.buyerType]).toLowerCase()} can't enter it.</p>` : ""}
     ${!geoOk ? `<p class="warn">The seller limited this lot to ${esc(geoText(listing.geo))}. Your profile is ${esc(user.city)}, ${esc(user.region)}, ${esc(user.country)}.</p>` : ""}
     <form data-form="bid" data-listing="${esc(listing.id)}" class="stack" autocomplete="off">
-      <label class="field">Quantity<input id="bid-qty" data-bid="${esc(listing.id)}" data-field="quantity" inputmode="numeric" type="number" min="1" step="1" value="${esc(draft.quantity)}" /></label>
-      <label class="field">Your maximum, per unit<input id="bid-max" data-bid="${esc(listing.id)}" data-field="maxPrice" inputmode="decimal" type="number" min="${listing.floorPrice}" max="${listing.schedule[0].price}" step="0.01" value="${esc(draft.maxPrice)}" /></label>
-      <label class="field">Shipping<select id="bid-ship" data-bid="${esc(listing.id)}" data-field="shippingMethodId">${listing.shipping.map((method) => `<option value="${esc(method.id)}"${method.id === draft.shippingMethodId ? " selected" : ""}>${esc(method.name)} · ${money(method.cost)} · ${esc(method.eta)}</option>`).join("")}</select></label>
-      ${listing.extended ? `<label class="check"><input id="bid-warranty" data-bid="${esc(listing.id)}" data-field="extendedWarranty" type="checkbox"${draft.extendedWarranty ? " checked" : ""} /> Add ${esc(listing.extended.label)} (${money(listing.extended.perUnit)} / unit)</label>` : ""}
+      ${fieldBlock({ id: "bid-qty", label: "Quantity", hint: "How many units you want.", tip: "What to enter: a whole number, at least 1. Example: 2. Why it matters: you might get fewer if the lot runs out. You will not pay more than your max for each unit you get.", control: `<input id="bid-qty" data-bid="${esc(listing.id)}" data-field="quantity" inputmode="numeric" type="number" min="1" step="1" value="${esc(draft.quantity)}" />` })}
+      ${fieldBlock({ id: "bid-max", label: "Your maximum, per unit", hint: `Between ${money(listing.floorPrice)} and ${money(listing.schedule[0].price)}.`, tip: `What to enter: the most you will pay for one unit. Example: ${money(book.clockPrice)} is the price right now, so that bid is taken immediately. A lower number, still at least ${money(listing.floorPrice)}, waits. Why it matters: you never pay more than this, and you may pay less.`, control: `<input id="bid-max" data-bid="${esc(listing.id)}" data-field="maxPrice" inputmode="decimal" type="number" min="${listing.floorPrice}" max="${listing.schedule[0].price}" step="0.01" value="${esc(draft.maxPrice)}" />` })}
+      ${fieldBlock({ id: "bid-ship", label: "Shipping", hint: "Added to the goods. Shown before you bid.", tip: "What to choose: a method the seller offers. Example: Ground. Why it matters: the cost and insurance are added after the final unit price, so you can see the total first.", control: `<select id="bid-ship" data-bid="${esc(listing.id)}" data-field="shippingMethodId">${listing.shipping.map((method) => `<option value="${esc(method.id)}"${method.id === draft.shippingMethodId ? " selected" : ""}>${esc(method.name)} · ${money(method.cost)} · ${esc(method.eta)}</option>`).join("")}</select>` })}
+      ${listing.extended ? `<div class="field"><div class="check"><input id="bid-warranty" data-bid="${esc(listing.id)}" data-field="extendedWarranty" type="checkbox"${draft.extendedWarranty ? " checked" : ""} /> <span>Add ${esc(listing.extended.label)} (${money(listing.extended.perUnit)} / unit)</span> ${info("Extended warranty", `What to choose: leave it off, or add ${esc(listing.extended.label)} at ${money(listing.extended.perUnit)} per unit. Example: turn it on for one extra year. Why it matters: the cost is added to your order if you are filled.`)}</div><p class="field-hint">Optional. Added only if you are filled.</p></div>` : ""}
       <div class="quote">
         <p>${immediate ? `<span class="ok">Immediate bid.</span> Your maximum meets the current ${money(book.clockPrice)}.` : `<span class="warn">Pending bid.</span> It waits until the clock reaches ${money(maxPrice)}.`}</p>
         <p>Most the goods can cost: ${money(atMax.gross)} at your maximum.</p>
@@ -663,7 +888,7 @@ function bidHistory(listing, book, phase) {
   });
   if (!visible.length) {
     const hidden = rows.some((row) => row.status === "pending") && !canSeePending(listing);
-    return `<p class="empty">${hidden ? "Pending bids are hidden on this lot." : "No bids yet. The clock is still at the start price."}</p>`;
+    return `<p class="empty">${hidden ? "The seller hid the waiting bids. Your own waiting bid still shows here." : "No bids yet. If this lot is live, press Play the price clock, or place a bid if you are viewing as a buyer."}</p>`;
   }
   return `<ul class="bid-list">${visible.map((row) => {
     const bid = state.bids.find((item) => item.id === row.bidId);
@@ -675,7 +900,7 @@ function bidHistory(listing, book, phase) {
 
 function orderBlock(listing) {
   const orders = ordersFor(listing);
-  if (!orders.length) return `<h2 class="section-title">Orders</h2><p class="empty">Nothing filled, so there is no order to ship.</p>`;
+  if (!orders.length) return `<h2 class="section-title">Orders</h2><p class="empty">Nothing was filled, so there is nothing to ship. Open a live lot, such as the shop towels, if you want to see a sale finish.</p>`;
   const mine = isOwnListing(listing) ? orders : orders.filter((order) => order.buyer.id === me().id);
   if (!mine.length) return "";
   return `<h2 class="section-title">${isOwnListing(listing) ? "Orders to ship" : "Your order"}</h2>${mine.map((order) => orderCard(listing, order)).join("")}`;
@@ -704,8 +929,8 @@ function ratingForm(listing, order) {
     const existing = state.ratings.find((row) => row.listingId === listing.id && row.fromUserId === user.id && row.toUserId === target.id);
     if (existing) return `<p class="comment">Your rating: <span class="stars">${stars(existing.stars)}</span> ${esc(existing.comment)}</p>`;
     return `<form data-form="rate" data-listing="${esc(listing.id)}" data-to="${esc(target.id)}" class="stack" style="margin-top:8px">
-      <label class="field">${label}<select name="stars">${[5, 4, 3, 2, 1].map((n) => `<option value="${n}">${n} star${n > 1 ? "s" : ""}</option>`).join("")}</select></label>
-      <label class="field">Comment<textarea name="comment" maxlength="280" placeholder="What should the other party know?"></textarea></label>
+      ${fieldBlock({ id: `stars-${listing.id}-${target.id}`, label, hint: "1 is poor, 5 is excellent.", tip: "What to choose: 1 to 5 stars. Example: 5. Why it matters: the average shows on the seller’s lots, with the comment.", control: `<select id="stars-${listing.id}-${target.id}" name="stars">${[5, 4, 3, 2, 1].map((n) => `<option value="${n}">${n} star${n > 1 ? "s" : ""}</option>`).join("")}</select>` })}
+      ${fieldBlock({ id: `comment-${listing.id}-${target.id}`, label: "Comment", hint: "A sentence the other person will see.", tip: "What to enter: a short note, at least a few words. Example: The cases arrived sealed. Why it matters: ratings without a comment are not saved.", control: `<textarea id="comment-${listing.id}-${target.id}" name="comment" maxlength="280" placeholder="What should the other party know?"></textarea>` })}
       <button class="btn small primary" type="submit">Save rating</button>
     </form>`;
   }).join("");
@@ -766,82 +991,80 @@ function ensureSell() {
 }
 
 function sellView() {
-  if (me().role !== "seller") return `<h1 class="page-title">Sell</h1><p class="empty">Switch to a seller to list a lot. Morgan Hale is the demo wholesaler.</p>`;
+  if (me().role !== "seller") return `<h1 class="page-title">Sell</h1>${screenHelp("Only a seller can list a lot.", "Choose Morgan Hale under You are viewing as. Morgan is the sample wholesaler. Elena lists as a manufacturer, Pat as a person, and Rene as a shop.")}<p class="empty">Start here: switch to Morgan Hale, then fill in the lot. Or <a href="#/how">read how it works</a> first.</p>`;
   const draft = ensureSell();
   const choices = audiencesForSeller(me().sellerType);
   const snapshot = sellSnapshot(draft);
   return `<h1 class="page-title">List a lot</h1>
-    <p class="lede">You set the quantity, the price clock, who may buy, and your private cost. There is no listing fee. Buyers never see the cost.</p>
+    ${screenHelp("Set the high price, the lowest price, and who may buy. There is no fee to list.", "Buyers never see your unit cost. The price they pay starts high and can only step down. Example: 10 units, start at $100, floor at $70.")}
     ${draft.errors.length ? `<div class="errors" id="sell-errors">${draft.errors.map((error) => `<p>${esc(error)}</p>`).join("")}</div>` : ""}
-    <form data-form="sell" class="form-grid" autocomplete="off" style="margin-top:12px">
-      <label class="field">Title<input id="sell-title" data-sell="title" value="${esc(draft.title)}" placeholder="Nitrile exam gloves" /></label>
-      <label class="field">Packaging<input id="sell-packaging" data-sell="packaging" value="${esc(draft.packaging)}" /></label>
-      <label class="field">Manufacturer<input id="sell-manufacturer" data-sell="manufacturer" value="${esc(draft.manufacturer)}" /></label>
-      <label class="field">Brand<input id="sell-brand" data-sell="brand" value="${esc(draft.brand)}" /></label>
-      <label class="field">Model<input id="sell-model" data-sell="model" value="${esc(draft.model)}" /></label>
-      <label class="field">Quantity<input id="sell-quantity" data-sell="quantity" type="number" min="1" step="1" value="${esc(draft.quantity)}" /></label>
-      <label class="field wide">Description<textarea id="sell-description" data-sell="description">${esc(draft.description)}</textarea></label>
-      <label class="field">Start price<input id="sell-start" data-sell="startPrice" type="number" min="0" step="0.01" value="${esc(draft.startPrice)}" /></label>
-      <label class="field">Floor price<input id="sell-floor" data-sell="floorPrice" type="number" min="0" step="0.01" value="${esc(draft.floorPrice)}" /></label>
+    <form data-form="sell" data-tour="sell" class="form-grid" autocomplete="off" style="margin-top:12px">
+      ${fieldBlock({ id: "sell-title", label: "Title", hint: "The name on the catalogue card.", tip: "What to enter: a plain product name. Example: Shop towel cases. Why it matters: this is what buyers see first.", control: `<input id="sell-title" data-sell="title" value="${esc(draft.title)}" placeholder="Shop towel cases" />` })}
+      ${fieldBlock({ id: "sell-packaging", label: "Packaging", hint: "How one unit is packed.", tip: "What to enter: the pack, not the whole lot. Example: Case of 12 rolls. Why it matters: buyers bid on units, and the pack tells them what one unit is.", control: `<input id="sell-packaging" data-sell="packaging" value="${esc(draft.packaging)}" />` })}
+      ${fieldBlock({ id: "sell-manufacturer", label: "Manufacturer", hint: "Who made it.", tip: "What to enter: the maker’s name. Example: Millhouse Paper. Why it matters: the catalogue can be filtered by maker.", control: `<input id="sell-manufacturer" data-sell="manufacturer" value="${esc(draft.manufacturer)}" />` })}
+      ${fieldBlock({ id: "sell-brand", label: "Brand", hint: "The brand on the package.", tip: "What to enter: the brand buyers already know. Example: Millhouse. Why it matters: wish lists match on brand.", control: `<input id="sell-brand" data-sell="brand" value="${esc(draft.brand)}" />` })}
+      ${fieldBlock({ id: "sell-model", label: "Model", hint: "The model code.", tip: "What to enter: the code on the carton. Example: ST-12. Why it matters: a buyer who asked for ST-12 is told when you list it.", control: `<input id="sell-model" data-sell="model" value="${esc(draft.model)}" />` })}
+      ${fieldBlock({ id: "sell-quantity", label: "Quantity", hint: "How many units are for sale.", tip: "What to enter: a whole number, at least 1. Example: 10. Why it matters: the price steps are tied to how many of these units are claimed.", control: `<input id="sell-quantity" data-sell="quantity" type="number" min="1" step="1" value="${esc(draft.quantity)}" />` })}
+      ${fieldBlock({ id: "sell-description", label: "Description", hint: "A sentence or two. Say if it is new and sealed.", tip: "What to enter: condition, size, and what is in the pack. Example: Bleached shop towels in sealed cases. Why it matters: buyers decide from this before they bid.", wide: true, control: `<textarea id="sell-description" data-sell="description">${esc(draft.description)}</textarea>` })}
+      ${fieldBlock({ id: "sell-start", label: "Start price", hint: "The high price, before any units are claimed.", tip: "What to enter: a price above the floor. Example: 100. Why it matters: the clock opens here. Bids at this price are taken immediately.", control: `<input id="sell-start" data-sell="startPrice" type="number" min="0" step="0.01" value="${esc(draft.startPrice)}" />` })}
+      ${fieldBlock({ id: "sell-floor", label: "Floor price", hint: "The lowest price you will take.", tip: "What to enter: a price below the start. Example: 70. Why it matters: the sale never goes under this. If every unit sells, this is the price everyone pays.", control: `<input id="sell-floor" data-sell="floorPrice" type="number" min="0" step="0.01" value="${esc(draft.floorPrice)}" />` })}
       <fieldset class="wide" style="border:0;padding:0;margin:0">
-        <legend class="kicker">Price steps</legend>
-        <label class="check"><input type="radio" name="stepMode" data-sell="stepMode" value="linear"${draft.stepMode === "linear" ? " checked" : ""} /> Linear thresholds</label>
-        <label class="check"><input type="radio" name="stepMode" data-sell="stepMode" value="custom"${draft.stepMode === "custom" ? " checked" : ""} /> Custom quantity thresholds</label>
-        ${draft.stepMode === "linear" ? `<label class="field">Number of downward steps<input id="sell-steps" data-sell="stepCount" type="number" min="1" max="12" step="1" value="${esc(draft.stepCount)}" /></label>` : stepEditor(draft)}
+        <legend class="kicker">Price steps ${info("Price steps", "Linear spaces the drops evenly from the high price to the floor. Custom lets you pick the quantity for each drop. Example: drop to $90 at 2 units, $80 at 5, and $70 at 9. Why it matters: this is the clock buyers watch.")}</legend>
+        <p class="field-hint">Even steps, or your own quantities.</p>
+        <label class="check"><input type="radio" name="stepMode" data-sell="stepMode" value="linear"${draft.stepMode === "linear" ? " checked" : ""} /> Even steps</label>
+        <label class="check"><input type="radio" name="stepMode" data-sell="stepMode" value="custom"${draft.stepMode === "custom" ? " checked" : ""} /> My own quantity thresholds</label>
+        ${draft.stepMode === "linear" ? fieldBlock({ id: "sell-steps", label: "Number of downward steps", hint: "How many times the price drops.", tip: "What to enter: 1 to 12. Example: 3 drops $100 toward $70. Why it matters: more steps mean smaller drops.", control: `<input id="sell-steps" data-sell="stepCount" type="number" min="1" max="12" step="1" value="${esc(draft.stepCount)}" />` }) : stepEditor(draft)}
       </fieldset>
       <div class="wide">${schedulePreview(draft)}</div>
-      <label class="field">Start time<input id="sell-start-time" data-sell="start" type="datetime-local" value="${esc(draft.start)}" /></label>
-      <label class="field">Duration in hours<input id="sell-hours" data-sell="hours" type="number" min="0.5" max="336" step="0.5" value="${esc(draft.hours)}" /></label>
+      ${fieldBlock({ id: "sell-start-time", label: "Start time", hint: "When bids can begin.", tip: "What to enter: a date and time. Example: 15 minutes from now. Why it matters: before this, buyers can look but not bid. After it starts, the length cannot be changed unless the lot sells out.", control: `<input id="sell-start-time" data-sell="start" type="datetime-local" value="${esc(draft.start)}" />` })}
+      ${fieldBlock({ id: "sell-hours", label: "Duration in hours", hint: "How long the sale stays open.", tip: "What to enter: hours, from 0.5 to 336. Example: 24 for one day. Why it matters: the sale ends when this time is up, or sooner if every unit is claimed.", control: `<input id="sell-hours" data-sell="hours" type="number" min="0.5" max="336" step="0.5" value="${esc(draft.hours)}" />` })}
       <fieldset class="wide" style="border:0;padding:0">
-        <legend class="kicker">Who can buy</legend>
+        <legend class="kicker">Who can buy ${info("Who can buy", "There are seven choices, depending on who you are. A wholesaler can sell to shops only, or to people. A manufacturer can sell to wholesalers, to shops, or to people. Example: Wholesaler to retailer only. Why it matters: other buyer types will see the lot but cannot bid.")}</legend>
+        <p class="field-hint">Switch seller in the header to see the other choices.</p>
         ${choices.map((choice) => `<label class="check"><input type="radio" name="audience" data-sell="audienceId" value="${esc(choice.id)}"${draft.audienceId === choice.id ? " checked" : ""} /> ${esc(choice.label)}</label>`).join("")}
         <p class="seller-line">The seven audiences in the concept are split by seller type. Switch seller in the header to see the others. A retailer seller sees Retailer → Individual. A manufacturer sees the three manufacturer audiences.</p>
       </fieldset>
       <fieldset class="wide" style="border:0;padding:0">
-        <legend class="kicker">Geographic limit</legend>
+        <legend class="kicker">Where it can ship ${info("Where it can ship", "Leave the countries unchecked for no country limit. Example: check Canada only, and type Alberta if you want just that province. Why it matters: a buyer outside the area cannot bid.")}</legend>
+        <p class="field-hint">Leave both countries unchecked for no country limit.</p>
         ${["Canada", "United States"].map((country) => `<label class="check"><input type="checkbox" data-sell="country" value="${esc(country)}"${draft.countries.includes(country) ? " checked" : ""} /> ${esc(country)}</label>`).join("")}
-        <p class="seller-line">Leave both unchecked for no country limit.</p>
         <div class="form-grid">
-          <label class="field">Provinces or states, comma separated<input id="sell-regions" data-sell="regions" value="${esc(draft.regions)}" placeholder="Alberta" /></label>
-          <label class="field">Cities, comma separated<input id="sell-cities" data-sell="cities" value="${esc(draft.cities)}" /></label>
+          ${fieldBlock({ id: "sell-regions", label: "Provinces or states", hint: "Optional. Separate with commas.", tip: "What to enter: names, or leave blank. Example: Alberta. Why it matters: a blank list does not limit the province.", control: `<input id="sell-regions" data-sell="regions" value="${esc(draft.regions)}" placeholder="Alberta" />` })}
+          ${fieldBlock({ id: "sell-cities", label: "Cities", hint: "Optional. Separate with commas.", tip: "What to enter: city names, or leave blank. Example: Calgary. Why it matters: a blank list does not limit the city.", control: `<input id="sell-cities" data-sell="cities" value="${esc(draft.cities)}" />` })}
         </div>
       </fieldset>
       <div class="wide stack">
-        <p class="kicker">Shipping methods</p>
+        <p class="kicker">Shipping methods ${info("Shipping", "Buyers see these choices before they bid. Example: Ground, $12, 4–7 days. Why it matters: shipping is added on top of the final unit price. It is not part of your profit in the calculator.")}</p>
+        <p class="field-hint">At least one method. The buyer picks one.</p>
         ${draft.shipping.map((method, index) => `<div class="ship-row">
-          <label class="field">Method<input id="ship-${index}-name" data-ship="${index}" data-ship-field="name" value="${esc(method.name)}" /></label>
-          <label class="field">Cost<input id="ship-${index}-cost" data-ship="${index}" data-ship-field="cost" type="number" min="0" step="0.01" value="${esc(method.cost)}" /></label>
-          <label class="field">Timing<input id="ship-${index}-eta" data-ship="${index}" data-ship-field="eta" value="${esc(method.eta)}" /></label>
+          ${fieldBlock({ id: `ship-${index}-name`, label: "Method", hint: "A name the buyer will recognize.", tip: "What to enter: Ground or Express. Example: Ground. Why it matters: this is the label on the bid form.", control: `<input id="ship-${index}-name" data-ship="${index}" data-ship-field="name" value="${esc(method.name)}" />` })}
+          ${fieldBlock({ id: `ship-${index}-cost`, label: "Cost", hint: "What the buyer pays to ship.", tip: "What to enter: a dollar amount, zero or more. Example: 12. Why it matters: it is added to the order, with insurance.", control: `<input id="ship-${index}-cost" data-ship="${index}" data-ship-field="cost" type="number" min="0" step="0.01" value="${esc(method.cost)}" />` })}
+          ${fieldBlock({ id: `ship-${index}-eta`, label: "Timing", hint: "How long delivery usually takes.", tip: "What to enter: a short range. Example: 4–7 days. Why it matters: buyers see it before they bid.", control: `<input id="ship-${index}-eta" data-ship="${index}" data-ship-field="eta" value="${esc(method.eta)}" />` })}
           <button type="button" class="btn small" data-action="remove-ship" data-index="${index}"${draft.shipping.length === 1 ? " disabled" : ""}>Remove</button>
         </div>`).join("")}
         <button type="button" class="btn small" data-action="add-ship">Add a method</button>
       </div>
-      <label class="field">Insurance percent<input id="sell-insure" data-sell="insuranceRate" type="number" min="0" step="0.1" value="${esc(draft.insuranceRate)}" /></label>
-      <label class="field">Insurance minimum<input id="sell-insure-min" data-sell="insuranceMin" type="number" min="0" step="0.01" value="${esc(draft.insuranceMin)}" /></label>
-      <label class="field wide">Warranty<textarea id="sell-warranty" data-sell="warranty">${esc(draft.warranty)}</textarea></label>
-      <label class="field">Optional extended warranty name<input id="sell-ext-name" data-sell="extendedLabel" value="${esc(draft.extendedLabel)}" placeholder="Third-party 1-year extension" /></label>
-      <label class="field">Extended price per unit<input id="sell-ext-price" data-sell="extendedPerUnit" type="number" min="0" step="0.01" value="${esc(draft.extendedPerUnit)}" /></label>
-      <label class="field">First-bidder bonus<select id="sell-bonus" data-sell="bonusType">
-        <option value="none"${draft.bonusType === "none" ? " selected" : ""}>None</option>
-        <option value="free-unit"${draft.bonusType === "free-unit" ? " selected" : ""}>First unit free if it sells out at the floor</option>
-        <option value="amount"${draft.bonusType === "amount" ? " selected" : ""}>Fixed amount off</option>
-        <option value="percent"${draft.bonusType === "percent" ? " selected" : ""}>Extra percent off</option>
-      </select></label>
-      ${draft.bonusType === "amount" ? `<label class="field">Bonus amount<input id="sell-bonus-amt" data-sell="bonusAmount" type="number" min="0" step="0.01" value="${esc(draft.bonusAmount)}" /></label>` : ""}
-      ${draft.bonusType === "percent" ? `<label class="field">Bonus percent<input id="sell-bonus-pct" data-sell="bonusPercent" type="number" min="0" step="1" value="${esc(draft.bonusPercent)}" /></label>` : ""}
-      <label class="check wide"><input id="sell-pending" data-sell="showPending" type="checkbox"${draft.showPending ? " checked" : ""} /> Show buyers how many units are pending</label>
-      <label class="field">Private unit cost<input id="sell-cost" data-sell="unitCost" type="number" min="0" step="0.01" value="${esc(draft.unitCost)}" placeholder="Only you see this" /></label>
-      <label class="field">Expected units for the snapshot<input id="sell-units" data-sell="expectedUnits" type="number" min="0" step="1" value="${esc(draft.expectedUnits)}" /></label>
-      <label class="field">Expected days<input id="sell-days" data-sell="expectedDays" type="number" min="0.25" step="0.25" value="${esc(draft.expectedDays)}" /></label>
+      ${fieldBlock({ id: "sell-insure", label: "Insurance percent", hint: "A percent of the goods, paid by the buyer.", tip: "What to enter: a percent. Example: 2 means 2%. Why it matters: insurance is added to the order, on top of shipping.", control: `<input id="sell-insure" data-sell="insuranceRate" type="number" min="0" step="0.1" value="${esc(draft.insuranceRate)}" />` })}
+      ${fieldBlock({ id: "sell-insure-min", label: "Insurance minimum", hint: "The least the buyer pays for insurance.", tip: "What to enter: a dollar amount. Example: 1.50. Why it matters: small orders still have a minimum cover charge.", control: `<input id="sell-insure-min" data-sell="insuranceMin" type="number" min="0" step="0.01" value="${esc(draft.insuranceMin)}" />` })}
+      ${fieldBlock({ id: "sell-warranty", label: "Warranty", hint: "The maker’s warranty, in plain words.", tip: "What to enter: what is covered and for how long. Example: Manufacturer warranty, 1 year, on new sealed goods. Why it matters: buyers see this before they bid.", wide: true, control: `<textarea id="sell-warranty" data-sell="warranty">${esc(draft.warranty)}</textarea>` })}
+      ${fieldBlock({ id: "sell-ext-name", label: "Optional extra warranty", hint: "Leave blank if you do not offer one.", tip: "What to enter: the name of a third-party plan. Example: Third-party 1-year extension. Why it matters: buyers can add it per unit when they bid.", control: `<input id="sell-ext-name" data-sell="extendedLabel" value="${esc(draft.extendedLabel)}" placeholder="Third-party 1-year extension" />` })}
+      ${fieldBlock({ id: "sell-ext-price", label: "Extra warranty price per unit", hint: "Charged only if the buyer adds it.", tip: "What to enter: dollars per unit. Example: 4. Why it matters: it is added to that buyer’s order, not to the unit price.", control: `<input id="sell-ext-price" data-sell="extendedPerUnit" type="number" min="0" step="0.01" value="${esc(draft.extendedPerUnit)}" />` })}
+      ${fieldBlock({ id: "sell-bonus", label: "First-bidder bonus", hint: "Pays only if the lot sells out at the floor.", tip: "What to choose: none, one unit free, a fixed amount off, or an extra percent off. Example: $15 off. Why it matters: it rewards the earliest bid when the sale reaches the lowest price and sells out.", control: `<select id="sell-bonus" data-sell="bonusType"><option value="none"${draft.bonusType === "none" ? " selected" : ""}>None</option><option value="free-unit"${draft.bonusType === "free-unit" ? " selected" : ""}>First unit free if it sells out at the floor</option><option value="amount"${draft.bonusType === "amount" ? " selected" : ""}>Fixed amount off</option><option value="percent"${draft.bonusType === "percent" ? " selected" : ""}>Extra percent off</option></select>` })}
+      ${draft.bonusType === "amount" ? fieldBlock({ id: "sell-bonus-amt", label: "Bonus amount", hint: "Dollars off the first bidder’s goods.", tip: "What to enter: a dollar amount. Example: 15. Why it matters: it is subtracted from that buyer’s merchandise if the bonus pays.", control: `<input id="sell-bonus-amt" data-sell="bonusAmount" type="number" min="0" step="0.01" value="${esc(draft.bonusAmount)}" />` }) : ""}
+      ${draft.bonusType === "percent" ? fieldBlock({ id: "sell-bonus-pct", label: "Bonus percent", hint: "Extra percent off the first bidder’s goods.", tip: "What to enter: a percent. Example: 10. Why it matters: it comes off that buyer’s merchandise only if the lot sells out at the floor.", control: `<input id="sell-bonus-pct" data-sell="bonusPercent" type="number" min="0" step="1" value="${esc(draft.bonusPercent)}" />` }) : ""}
+      <div class="field wide"><div class="check"><input id="sell-pending" data-sell="showPending" type="checkbox"${draft.showPending ? " checked" : ""} /> <span>Show buyers how many units are waiting</span> ${info("Show waiting bids", "What to choose: on or off. Example: leave it on so buyers see “6 units waiting”. Why it matters: you can hide the count. Buyers still see their own bid.")}</div><p class="field-hint">You always see the count. Buyers see it only if this is on.</p></div>
+      ${fieldBlock({ id: "sell-cost", label: "Private unit cost", hint: "Only you see this. Buyers never do.", tip: "What to enter: what one unit cost you. Example: 50. Why it matters: the profit calculator uses it. It is not shown on the catalogue.", control: `<input id="sell-cost" data-sell="unitCost" type="number" min="0" step="0.01" value="${esc(draft.unitCost)}" placeholder="Only you see this" />` })}
+      ${fieldBlock({ id: "sell-units", label: "Expected units for the snapshot", hint: "How many you think will sell.", tip: "What to enter: a number up to the quantity. Example: 10 if you expect a full sale. Why it matters: the small profit note on this form uses it. The full calculator can compare other guesses.", control: `<input id="sell-units" data-sell="expectedUnits" type="number" min="0" step="1" value="${esc(draft.expectedUnits)}" />` })}
+      ${fieldBlock({ id: "sell-days", label: "Expected days", hint: "How long you think the sale will take.", tip: "What to enter: days, such as 1. Example: 1 for the shop-towel story. Why it matters: profit per day divides the profit by these days.", control: `<input id="sell-days" data-sell="expectedDays" type="number" min="0.25" step="0.25" value="${esc(draft.expectedDays)}" />` })}
       <div class="wide">${snapshot}</div>
       <div class="wide"><button class="btn primary" type="submit">Publish listing</button></div>
     </form>`;
 }
 
 function stepEditor(draft) {
-  return `<div class="stack">${draft.schedule.map((row, index) => `<div class="step-row">
-      <label class="field">At quantity<input id="step-${index}-qty" data-step="${index}" data-step-field="qty" type="number" min="0" step="1" value="${esc(row.qty)}"${index === 0 ? " disabled" : ""} /></label>
-      <label class="field">Price<input id="step-${index}-price" data-step="${index}" data-step-field="price" type="number" min="0" step="0.01" value="${esc(row.price)}" /></label>
+  return `<div class="stack"><p class="field-hint">The first row is the start price, at zero units. The last row is the floor. Example: quantity 2 at $90.</p>${draft.schedule.map((row, index) => `<div class="step-row">
+      ${fieldBlock({ id: `step-${index}-qty`, label: index === 0 ? "Starting quantity" : "At quantity", hint: index === 0 ? "Stays at 0. The high price applies before any sale." : "Units claimed before this price applies.", tip: index === 0 ? "Leave this at 0. Example: 0 units means the sale has not started filling. Why it matters: the clock opens at the start price." : "What to enter: a higher quantity than the row above. Example: 2, then 5, then 9. Why it matters: this is when the price drops.", control: `<input id="step-${index}-qty" data-step="${index}" data-step-field="qty" type="number" min="0" step="1" value="${esc(row.qty)}"${index === 0 ? " disabled" : ""} />` })}
+      ${fieldBlock({ id: `step-${index}-price`, label: "Price", hint: "Lower than the row above.", tip: "What to enter: the unit price at this quantity. Example: 90. Why it matters: every filled buyer pays the price for the final quantity, not the price on their own row.", control: `<input id="step-${index}-price" data-step="${index}" data-step-field="price" type="number" min="0" step="0.01" value="${esc(row.price)}" />` })}
       ${index > 0 && index < draft.schedule.length - 1 ? `<button type="button" class="btn small" data-action="remove-step" data-index="${index}">Remove</button>` : `<span></span>`}
     </div>`).join("")}
     <button type="button" class="btn small" data-action="add-step">Add a threshold</button></div>`;
@@ -1041,15 +1264,15 @@ function rebuildColumn(column) {
 }
 
 function calculatorView() {
-  if (me().role !== "seller") return `<h1 class="page-title">Profit calculator</h1><p class="empty">This is private to sellers. Switch to Morgan Hale, Elena Voss, Pat Morgan, or Rene Alvarez.</p>`;
+  if (me().role !== "seller") return `<h1 class="page-title">Profit calculator</h1>${screenHelp("Only the seller of a lot can open this.", "Choose Morgan Hale, Elena Voss, Pat Morgan, or Rene Alvarez under You are viewing as. Buyers never see the unit cost.")}<p class="empty">Start here: switch to Morgan, then open the shop-towel lot’s calculator.</p>`;
   const calc = ensureCalc();
-  if (!calc) return `<h1 class="page-title">Profit calculator</h1><p class="empty">Publish a lot first. The calculator uses that lot's cost and clock.</p>`;
+  if (!calc) return `<h1 class="page-title">Profit calculator</h1>${screenHelp("The calculator needs a lot you listed.", "Publish a lot first. Then come back. The sample shop-towel lot is already on Morgan’s account.")}<p class="empty">No lot yet. <a href="#/sell">List one</a>, or switch to Morgan Hale.</p>`;
   const mine = state.listings.filter((listing) => listing.sellerId === me().id);
   return `<h1 class="page-title">Private profit calculator</h1>
-    <p class="lede">Illustrative only — not a forecast. Expected clearing price, profit per day, a 20% volume miss, capital tied up, and the sample platform fee. Your unit cost stays in this browser.</p>
-    <div class="calc-head">
-      <label class="field">Lot<select id="calc-listing">${mine.map((listing) => `<option value="${esc(listing.id)}"${listing.id === calc.listingId ? " selected" : ""}>${esc(listing.title)}</option>`).join("")}</select></label>
-      <label class="field">Next-best alternative, annual return %<input id="calc-annual" data-calc-global="annual" type="number" min="0" step="0.5" value="${esc(calc.annual)}" /></label>
+    ${screenHelp("A sample estimate of the final price, profit per day, and a 20% miss. Not a forecast.", "Compare up to three setups. Your unit cost stays in this browser. There is no fee to list. The fee in the result is a sample percent of the goods, higher on small prices.")}
+    <div class="calc-head" data-tour="calc">
+      ${fieldBlock({ id: "calc-listing", label: "Lot", hint: "One of your listings.", tip: "What to choose: a lot you sell. Example: Shop towel cases. Why it matters: the first column starts from that lot’s prices and your private cost.", control: `<select id="calc-listing">${mine.map((listing) => `<option value="${esc(listing.id)}"${listing.id === calc.listingId ? " selected" : ""}>${esc(listing.title)}</option>`).join("")}</select>` })}
+      ${fieldBlock({ id: "calc-annual", label: "Next-best alternative, annual return %", hint: "What this money could earn somewhere else.", tip: "What to enter: a yearly percent. Example: 8. Why it matters: the page turns that into dollars per day and compares it with the profit per day.", control: `<input id="calc-annual" data-calc-global="annual" type="number" min="0" step="0.5" value="${esc(calc.annual)}" />` })}
       <div class="btn-row">
         <button type="button" class="btn" data-action="calc-listing">Compare variants of this lot</button>
         <button type="button" class="btn" data-action="calc-paper">Load the three paper strategies</button>
@@ -1095,17 +1318,18 @@ function calcCard(column, index, annual) {
       <p class="seller-line">${scheduleLine(column.schedule, quantity)}</p>`;
   }
   return `<article class="calc-card panel">
-    <label class="field">Configuration<input id="calc-${index}-name" data-calc="${index}" data-field="name" value="${esc(column.name)}" /></label>
+    ${fieldBlock({ id: `calc-${index}-name`, label: "Configuration", hint: "A name for this column.", tip: "What to enter: a short label. Example: Faster turnover. Why it matters: you are comparing two or three ideas side by side.", control: `<input id="calc-${index}-name" data-calc="${index}" data-field="name" value="${esc(column.name)}" />` })}
     <div class="form-grid">
-      <label class="field">Start<input id="calc-${index}-start" data-calc="${index}" data-field="startPrice" type="number" step="0.01" value="${esc(column.startPrice)}" /></label>
-      <label class="field">Floor<input id="calc-${index}-floor" data-calc="${index}" data-field="floorPrice" type="number" step="0.01" value="${esc(column.floorPrice)}" /></label>
-      <label class="field">Steps<input id="calc-${index}-steps" data-calc="${index}" data-field="stepCount" type="number" min="1" max="12" step="1" value="${esc(column.stepCount)}" /></label>
-      <label class="field">Quantity<input id="calc-${index}-qty" data-calc="${index}" data-field="quantity" type="number" min="1" step="1" value="${esc(column.quantity)}" /></label>
-      <label class="field">Unit cost<input id="calc-${index}-cost" data-calc="${index}" data-field="unitCost" type="number" min="0" step="0.01" value="${esc(column.unitCost)}" /></label>
-      <label class="field">Expected units<input id="calc-${index}-units" data-calc="${index}" data-field="expectedUnits" type="number" min="0" step="1" value="${esc(column.expectedUnits)}" /></label>
-      <label class="field">Days<input id="calc-${index}-days" data-calc="${index}" data-field="expectedDays" type="number" min="0.25" step="0.25" value="${esc(column.expectedDays)}" /></label>
+      ${fieldBlock({ id: `calc-${index}-start`, label: "Start", hint: "High price.", tip: "What to enter: the opening price. Example: 100. Why it matters: changing it rebuilds even steps down to the floor.", control: `<input id="calc-${index}-start" data-calc="${index}" data-field="startPrice" type="number" step="0.01" value="${esc(column.startPrice)}" />` })}
+      ${fieldBlock({ id: `calc-${index}-floor`, label: "Floor", hint: "Lowest price.", tip: "What to enter: a price below the start. Example: 70. Why it matters: the estimate will not go under this.", control: `<input id="calc-${index}-floor" data-calc="${index}" data-field="floorPrice" type="number" step="0.01" value="${esc(column.floorPrice)}" />` })}
+      ${fieldBlock({ id: `calc-${index}-steps`, label: "Steps", hint: "How many drops.", tip: "What to enter: 1 to 12. Example: 3. Why it matters: the preview spaces those drops across the quantity.", control: `<input id="calc-${index}-steps" data-calc="${index}" data-field="stepCount" type="number" min="1" max="12" step="1" value="${esc(column.stepCount)}" />` })}
+      ${fieldBlock({ id: `calc-${index}-qty`, label: "Quantity", hint: "Units in the lot.", tip: "What to enter: at least 1. Example: 10. Why it matters: capital tied up is your cost times this quantity.", control: `<input id="calc-${index}-qty" data-calc="${index}" data-field="quantity" type="number" min="1" step="1" value="${esc(column.quantity)}" />` })}
+      ${fieldBlock({ id: `calc-${index}-cost`, label: "Unit cost", hint: "Private. Only you see it.", tip: "What to enter: your cost for one unit. Example: 50. Why it matters: profit is the selling price minus this cost, then minus the sample fee.", control: `<input id="calc-${index}-cost" data-calc="${index}" data-field="unitCost" type="number" min="0" step="0.01" value="${esc(column.unitCost)}" />` })}
+      ${fieldBlock({ id: `calc-${index}-units`, label: "Expected units", hint: "How many you think will sell.", tip: "What to enter: 0 up to the quantity. Example: 10. Why it matters: that quantity picks the price on the clock.", control: `<input id="calc-${index}-units" data-calc="${index}" data-field="expectedUnits" type="number" min="0" step="1" value="${esc(column.expectedUnits)}" />` })}
+      ${fieldBlock({ id: `calc-${index}-days`, label: "Days", hint: "How long until it sells.", tip: "What to enter: days, at least 0.25. Example: 1. Why it matters: profit per day divides the profit by these days.", control: `<input id="calc-${index}-days" data-calc="${index}" data-field="expectedDays" type="number" min="0.25" step="0.25" value="${esc(column.expectedDays)}" />` })}
     </div>
-    <label class="check"><input id="calc-${index}-unsold" data-calc="${index}" data-field="unsold" type="checkbox"${column.unsold ? " checked" : ""} /> Assume it does not sell</label>
+    <div class="check"><input id="calc-${index}-unsold" data-calc="${index}" data-field="unsold" type="checkbox"${column.unsold ? " checked" : ""} /> <span>Assume it does not sell</span> ${info("Assume it does not sell", "What to choose: turn this on to see a sale that fails. Example: the patient strategy that never clears. Why it matters: profit becomes zero, but the money is still tied up.")}</div>
+    <p class="field-hint">Turn this on if you want the “nothing sold” case.</p>
     ${body}
   </article>`;
 }
@@ -1122,17 +1346,17 @@ function wishlistView() {
   const user = me();
   const groups = demandGroups();
   return `<h1 class="page-title">Wish list</h1>
-    <p class="lede">Buyers post what they want and how many. Sellers see the same demand counts and can list against them. A buyer who asked to be notified gets an alert when a match appears.</p>
+    ${screenHelp(user.role === "buyer" ? "Write what you want and how many. Sellers see the same count." : "Buyers and sellers see the same demand counts.", "A match uses the brand and model when you fill them in. Example: MedPro and GL-200 matches the glove lot. Leave the alert on if you want a notice in the bell. Share buttons send friends to that lot.")}
     ${user.role === "buyer" ? `<form data-form="wish" class="form-grid panel" autocomplete="off" style="padding:14px;margin-bottom:16px">
-      <label class="field">Item<input name="name" required placeholder="Nitrile exam gloves" /></label>
-      <label class="field">Quantity<input name="quantity" type="number" min="1" step="1" value="1" required /></label>
-      <label class="field">Manufacturer<input name="manufacturer" /></label>
-      <label class="field">Brand<input name="brand" /></label>
-      <label class="field">Model<input name="model" /></label>
-      <label class="check"><input name="notify" type="checkbox" checked /> Notify me when a match is listed</label>
+      ${fieldBlock({ id: "wish-name", label: "Item", hint: "What you want to buy.", tip: "What to enter: a product name. Example: Nitrile exam gloves. Why it matters: if brand and model are blank, the name is used to look for a match.", control: `<input id="wish-name" name="name" required placeholder="Nitrile exam gloves" />` })}
+      ${fieldBlock({ id: "wish-qty", label: "Quantity", hint: "How many you would buy.", tip: "What to enter: a whole number, at least 1. Example: 30. Why it matters: sellers see the total units, not only how many people asked.", control: `<input id="wish-qty" name="quantity" type="number" min="1" step="1" value="1" required />` })}
+      ${fieldBlock({ id: "wish-mfr", label: "Manufacturer", hint: "Optional.", tip: "What to enter: the maker, if you know it. Example: MedPro. Why it matters: it helps you remember the item. Matching mainly uses brand and model.", control: `<input id="wish-mfr" name="manufacturer" />` })}
+      ${fieldBlock({ id: "wish-brand", label: "Brand", hint: "Optional, but better for a match.", tip: "What to enter: the brand. Example: MedPro. Why it matters: a new lot with that brand can notify you.", control: `<input id="wish-brand" name="brand" />` })}
+      ${fieldBlock({ id: "wish-model", label: "Model", hint: "Optional model code.", tip: "What to enter: the model. Example: GL-200. Why it matters: with the brand, this is how a listing is recognized.", control: `<input id="wish-model" name="model" />` })}
+      <div class="field wide"><div class="check"><input id="wish-notify" name="notify" type="checkbox" checked /> <span>Notify me when a match is listed</span> ${info("Notify me", "What to choose: leave it checked to get an alert in the bell. Example: Jordan asked for MedPro GL-200, so the glove lot already raised an alert. Why it matters: sellers see the demand count, not a private message.")}</div><p class="field-hint">The alert shows under the bell for your sample person.</p></div>
       <div class="wide"><button class="btn primary" type="submit">Add to wish list</button></div>
-    </form>` : `<p class="private">You're a seller, so this page is the demand board. Switch to a buyer to add a wish.</p>`}
-    <div class="orders">${groups.map((group) => {
+    </form>` : `<p class="private">You are a seller, so this page is the demand board. Switch to a buyer, such as Jordan Blake, to add a wish.</p>`}
+    <div class="orders" data-tour="wishlist">${groups.length ? groups.map((group) => {
       const match = state.listings.find((listing) => phaseOf(listing) !== "closed" && group.wishes.some((wish) => wishMatches(listing, wish)));
       const shareTarget = match ? publicUrl(`#/listing/${match.id}`) : publicUrl("#/");
       const text = match ? `${match.title} on Reverse Auction Marketing` : `Looking for ${group.units} × ${group.sample.name} on Reverse Auction Marketing`;
@@ -1141,9 +1365,10 @@ function wishlistView() {
         <p>${esc(group.sample.name)}</p>
         <ul class="bid-list">${group.wishes.map((wish) => `<li>${esc(userById(wish.userId)?.company || "Buyer")} · ${wish.quantity} units${wish.userId === user.id ? ` <button type="button" class="btn small" data-action="remove-wish" data-id="${esc(wish.id)}">Remove</button>` : ""}</li>`).join("")}</ul>
         ${match ? `<p class="ok"><a href="#/listing/${esc(match.id)}">Open the matching lot</a></p>` : `<p class="seller-line">No open lot matches this yet.</p>`}
+        <p class="field-hint">Share so more people can bid. Facebook, X, or copy the link.</p>
         ${shareRow(shareTarget, text)}
       </article>`;
-    }).join("")}</div>`;
+    }).join("") : `<p class="empty">No wishes yet. If you are a buyer, add an item and a quantity above. Sellers will see the count here.</p>`}</div>`;
 }
 
 function demandGroups() {
@@ -1165,25 +1390,25 @@ function ordersView() {
   const buyerOrders = closed.flatMap((listing) => ordersFor(listing).filter((order) => order.buyer.id === user.id).map((order) => ({ listing, order })));
   const liveBids = state.bids.filter((bid) => bid.userId === user.id && phaseOf(findListing(bid.listingId)) === "live");
   return `<h1 class="page-title">Orders</h1>
-    <p class="lede">${user.role === "seller" ? "After a lot closes, each filled buyer gets an order with shipping and insurance. Open a sample label for the mailer." : "Your filled lots, with shipping and insurance added to the clearing price."}</p>
+    ${screenHelp(user.role === "seller" ? "Finished sales, with shipping and insurance, and a sample mailing label." : "Your filled bids, with shipping and insurance added to the final price.", "Nothing here is a real shipment. Example: the copy-paper lot is already closed, so Morgan can open a label and both sides can leave a rating. A live bid stays in the list above until the lot ends.")}
     ${liveBids.length ? `<h2 class="section-title">Live bids</h2><ul class="bid-list">${liveBids.map((bid) => {
       const listing = findListing(bid.listingId);
       const book = bookOf(listing);
       const row = settlement({ closed: false, book, bids: [bid] })[0];
       return `<li><a href="#/listing/${esc(listing.id)}">${esc(listing.title)}</a> · ${bid.quantity} units · ${esc(row.status)} · max ${money(bid.maxPrice)}</li>`;
     }).join("")}</ul>` : ""}
-    <div class="orders" style="margin-top:12px">${(user.role === "seller" ? sellerOrders : buyerOrders).map(({ listing, order }) => `<div><p class="kicker">${esc(listing.title)}</p>${orderCard(listing, order)}</div>`).join("") || `<p class="empty">No filled orders yet. The copy-paper lot is already closed if you need a label and a rating.</p>`}</div>`;
+    <div class="orders" style="margin-top:12px">${(user.role === "seller" ? sellerOrders : buyerOrders).map(({ listing, order }) => `<div><p class="kicker">${esc(listing.title)}</p>${orderCard(listing, order)}</div>`).join("") || `<p class="empty">No filled orders yet. ${user.role === "seller" ? "The copy-paper lot is already closed if you want a label and a rating." : "Bid on a live lot, or switch to Jordan Blake to see his finished copy-paper order. To watch a price move, open the shop-towel lot and press Play the price clock."}</p>`}</div>`;
 }
 
 function labelView() {
   const listing = findListing(route.listingId);
-  if (!listing) return `<p class="empty">Unknown lot.</p>`;
-  if (me().id !== listing.sellerId) return `<p class="empty">Mailing labels are only for the seller of this lot.</p>`;
+  if (!listing) return `<h1 class="page-title">Label</h1><p class="empty">That lot is not in the sample. Go back to <a href="#/orders">Orders</a>.</p>`;
+  if (me().id !== listing.sellerId) return `<h1 class="page-title">Label</h1>${screenHelp("Only the seller of this lot can open the label.", "Switch to the seller under You are viewing as. For the copy-paper lot, that is Morgan Hale.")}<p class="empty">This sample label is for the seller.</p>`;
   const order = ordersFor(listing).find((row) => row.buyer.id === route.userId);
-  if (!order) return `<p class="empty">That buyer has no filled order on this lot.</p>`;
+  if (!order) return `<h1 class="page-title">Label</h1><p class="empty">That buyer was not filled on this lot, so there is no address to print.</p>`;
   const seller = userById(listing.sellerId);
   const ref = `${listing.id}-${order.buyer.id}`.toUpperCase();
-  return `<p class="no-print"><a href="#/orders">Orders</a> · <button type="button" class="btn small primary" data-action="print">Print</button></p>
+  return `${screenHelp("A sample mailing label. It does not book a shipment.", "Check the ship-to address, the quantity, and the total with shipping and insurance. Example: Jordan Blake's copy-paper order. Press Print to see only the label.")}<p class="no-print"><a href="#/orders">Orders</a> · <button type="button" class="btn small primary" data-action="print">Print</button></p>
     <article class="label-sheet">
       <div class="label-banner"><strong>Reverse Auction Marketing</strong><span>SAMPLE — not a shipment</span></div>
       <div class="label-cols">
@@ -1277,10 +1502,89 @@ function addWish(form) {
   render();
 }
 
+function placeTour(shouldScroll) {
+  const ring = document.getElementById("tour-ring");
+  if (!ui.tour || !ring) return;
+  const step = TOUR[ui.tour.step];
+  const target = document.querySelector(`[data-tour="${step.target}"]`);
+  if (!target) {
+    ring.hidden = true;
+    return;
+  }
+  if (shouldScroll) target.scrollIntoView({ block: "start", inline: "nearest" });
+  const rect = target.getBoundingClientRect();
+  const pad = 8;
+  ring.hidden = false;
+  ring.style.top = `${Math.max(4, rect.top - pad)}px`;
+  ring.style.left = `${Math.max(4, rect.left - pad)}px`;
+  ring.style.width = `${Math.min(window.innerWidth - 8, rect.width + pad * 2)}px`;
+  ring.style.height = `${rect.height + pad * 2}px`;
+}
+
+function closeTips() {
+  document.querySelectorAll(".help .tip").forEach((node) => node.setAttribute("hidden", ""));
+  document.querySelectorAll(".info").forEach((node) => node.setAttribute("aria-expanded", "false"));
+}
+
 function onClick(event) {
+  const infoBtn = event.target.closest(".info");
+  if (infoBtn) {
+    event.preventDefault();
+    event.stopPropagation();
+    const tip = infoBtn.parentElement.querySelector(".tip");
+    const willOpen = tip.hasAttribute("hidden");
+    closeTips();
+    if (willOpen) {
+      tip.removeAttribute("hidden");
+      infoBtn.setAttribute("aria-expanded", "true");
+    }
+    return;
+  }
+  if (!event.target.closest(".help")) closeTips();
   const el = event.target.closest("[data-action]");
   if (!el) return;
   const action = el.dataset.action;
+  if (action === "developer-site") {
+    if (!isNativeApp()) return;
+    event.preventDefault();
+    openDeveloperSite();
+    return;
+  }
+  if (action === "tour-start") {
+    startTour();
+    return;
+  }
+  if (action === "tour-dismiss" || action === "tour-skip") {
+    if (action === "tour-dismiss") {
+      ui.welcome = false;
+      markTourSeen();
+      render();
+    } else endTour();
+    return;
+  }
+  if (action === "tour-read") {
+    ui.welcome = false;
+    ui.tour = null;
+    markTourSeen();
+    if (location.hash !== "#/how") location.hash = "#/how";
+    else render();
+    return;
+  }
+  if (action === "tour-next") {
+    if (!ui.tour) return;
+    if (ui.tour.step >= TOUR.length - 1) endTour();
+    else {
+      ui.tour.step += 1;
+      applyTourStep();
+    }
+    return;
+  }
+  if (action === "tour-back") {
+    if (!ui.tour || ui.tour.step === 0) return;
+    ui.tour.step -= 1;
+    applyTourStep();
+    return;
+  }
   if (action === "notifs") {
     ui.notifOpen = !ui.notifOpen;
     ui.resetArmed = false;
@@ -1540,6 +1844,9 @@ function render(options = {}) {
   } else if (route.name === "calculator") {
     title = "Profit calculator";
     body = calculatorView();
+  } else if (route.name === "how") {
+    title = "How it works";
+    body = howView();
   } else body = catalogue();
   document.getElementById("app").innerHTML = shell(title, body);
   if (options.scroll === "errors") document.getElementById("sell-errors")?.scrollIntoView({ block: "center" });
@@ -1555,6 +1862,7 @@ function render(options = {}) {
   }
   lastSig = signature();
   updateClocks();
+  if (options.tour || ui.tour) placeTour(!!options.tour);
 }
 
 const root = document.getElementById("app");
@@ -1564,10 +1872,13 @@ root.addEventListener("change", onField);
 root.addEventListener("submit", onSubmit);
 window.addEventListener("hashchange", () => {
   if (routeOf().name !== "listing") stopPlay();
-  render();
+  render(ui.tour ? { tour: true } : undefined);
 });
 if (!location.hash) history.replaceState(null, "", "#/");
+ui.welcome = !tourSeen();
 render();
+window.addEventListener("resize", () => placeTour(false));
+window.addEventListener("scroll", () => placeTour(false), { passive: true });
 window.setInterval(() => {
   updateClocks();
   const sig = signature();
