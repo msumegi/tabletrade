@@ -1050,6 +1050,19 @@ html.from-app .close {
   max-width: 46rem;
 }
 
+.foot-place {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.foot-serve {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  text-wrap: balance;
+}
+
 .foot-credit {
   color: var(--paper-2);
 }
