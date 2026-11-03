@@ -1324,7 +1324,9 @@ body.theme-rr.page-home .hero-tagline {
 
 body.theme-rr.page-home .pitch {
   margin: 0 0 22px;
-  max-width: 36rem;
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(0.7rem, 3.45vw, 1.12rem);
 }
 
 body.theme-rr.page-home .contact-form {
