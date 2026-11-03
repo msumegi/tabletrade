@@ -1,0 +1,11 @@
+{
+  "appId": "com.reverseauctionmarketing.demo",
+  "appName": "Reverse Auction Marketing",
+  "webDir": "www",
+  "android": {
+    "path": "android"
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

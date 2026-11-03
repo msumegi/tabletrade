@@ -1,0 +1,90 @@
+name: Reverse Auction Marketing demo APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "demos/reverse-auction/**"
+      - "mobile/reverse-auction/**"
+      - ".github/workflows/ram-demo-apk.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ram-demo-apk
+  cancel-in-progress: false
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up the Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install compile SDK 36
+        run: sdkmanager --install "platforms;android-36" "build-tools;35.0.0"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: mobile/reverse-auction/package-lock.json
+
+      - name: Install the Android shell
+        working-directory: mobile/reverse-auction
+        run: npm ci
+
+      - name: Copy the web demo into the shell
+        run: |
+          rm -rf mobile/reverse-auction/www
+          mkdir -p mobile/reverse-auction/www
+          cp -a demos/reverse-auction/. mobile/reverse-auction/www/
+          rm -rf mobile/reverse-auction/www/tests
+
+      - name: Sync Capacitor
+        working-directory: mobile/reverse-auction
+        run: npx cap sync android
+
+      - name: Build the debug APK
+        working-directory: mobile/reverse-auction/android
+        run: chmod +x ./gradlew && ./gradlew assembleDebug --stacktrace
+
+      - name: Name the APK
+        run: |
+          cp mobile/reverse-auction/android/app/build/outputs/apk/debug/app-debug.apk \
+            reverse-auction-marketing.apk
+
+      - name: Drop the previous asset so the filename stays stable
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view ram-demo-apk >/dev/null 2>&1; then
+            gh release delete-asset ram-demo-apk reverse-auction-marketing.apk --yes || true
+          fi
+
+      - name: Publish the debug APK
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ram-demo-apk
+          name: Reverse Auction Marketing demo (Android)
+          prerelease: true
+          make_latest: false
+          body: |
+            Debug-signed prototype of Reverse Auction Marketing for a phone demo.
+            Sample data only. No real payments.
+            This file is replaced in place when the demo is rebuilt.
+          files: reverse-auction-marketing.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
