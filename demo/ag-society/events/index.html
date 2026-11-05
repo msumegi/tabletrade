@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#1c1210" />
+    <meta name="description" content="Example events calendar for the fictional North Coulee Agricultural Society, with month and list views." />
+    <title>Events — North Coulee Agricultural Society</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <p class="ribbon"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">Example website by Range Road Technologies (demo content)</a></p>
+    <header class="site-header" data-header>
+      <div class="wrap header-bar">
+        <a class="brand" href="../">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40V10M24 18c-6-1-9-6-9-6s1 7 9 8M24 26c6-1 9-6 9-6s-1 7-9 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span><span class="brand-name">North Coulee</span><span class="brand-sub">Agricultural Society</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="sr-only">Menu</span><span></span><span></span><span></span></button>
+        <nav id="site-nav" class="nav" data-nav aria-label="Primary">
+          <a href="../hall/">Hall</a>
+          <a href="./" aria-current="page">Events</a>
+          <a href="../membership/">Membership</a>
+          <a href="../book/">Book</a>
+          <a href="../contact/">Contact</a>
+          <a class="nav-call" href="tel:+14035550176">Call</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="hero-media">
+          <img src="../media/rows-1280.webp" srcset="../media/rows-720.webp 720w, ../media/rows-1280.webp 1280w" sizes="100vw" width="1280" height="800" alt="Long rows of a green crop running toward a low horizon" fetchpriority="high" decoding="async" />
+        </div>
+        <div class="hero-scrim"></div>
+        <div class="hero-inner">
+          <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a> <span aria-hidden="true">/</span> Events</nav>
+          <p class="kicker">September 2026 – February 2027</p>
+          <h1>The year,<br />on one page.</h1>
+          <p class="lede">Example events only. Switch between a month grid and a list. Days with something on them can be tapped. Nothing here is a real booking.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap" data-calendar>
+          <div class="cal-toolbar">
+            <button type="button" data-cal-prev aria-label="Previous month">‹</button>
+            <h2 class="cal-title" data-cal-label>Events</h2>
+            <button type="button" data-cal-next aria-label="Next month">›</button>
+          </div>
+          <div class="view-toggle" role="group" aria-label="Calendar view">
+            <button type="button" data-view-month aria-pressed="true">Month</button>
+            <button type="button" data-view-list aria-pressed="false">List</button>
+          </div>
+          <p class="sr-only" aria-live="polite" data-cal-live></p>
+          <div class="cal-layout">
+            <div>
+              <div class="cal-bleed"><div class="cal-grid" data-cal-grid hidden></div></div>
+              <button type="button" class="text-btn" data-cal-clear hidden>Show the whole month</button>
+            </div>
+            <div>
+              <section class="month-block" data-month="2026-09">
+                <h3 class="sr-only">September 2026</h3>
+                <article class="event" id="ev-fair" data-date="2026-09-05" data-time="9:00 am" data-where="Grounds">
+                  <p class="when">Sat 5 Sep · all weekend · Grounds</p>
+                  <h3>Fair weekend</h3>
+                  <p>Gates at 9. Hall, arena, and the grass between them. The 2026 fair is part of the sample year.</p>
+                </article>
+                <article class="event" id="ev-fair-sun" data-date="2026-09-06" data-time="10:00 am" data-where="Grounds">
+                  <p class="when">Sun 6 Sep · Grounds</p>
+                  <h3>Fair weekend, second day</h3>
+                  <p>Livestock show in the morning. Supper leftovers in the hall if the kitchen committee says so.</p>
+                </article>
+                <article class="event" id="ev-derby" data-date="2026-09-12" data-time="9:00 am" data-where="Agriplex">
+                  <p class="when">Sat 12 Sep · Agriplex</p>
+                  <h3>Fall riding derby</h3>
+                  <p>Practice at 9, first class at 10. Spectators in the stands. Example event.</p>
+                </article>
+                <article class="event" id="ev-private-sep" data-date="2026-09-19" data-time="2:00 pm" data-where="Hall">
+                  <p class="when">Sat 19 Sep · Hall</p>
+                  <h3>Private booking</h3>
+                  <p>The hall is spoken for. No names — it is just a blocked day on a demo calendar.</p>
+                </article>
+                <article class="event" id="ev-potluck" data-date="2026-09-26" data-time="6:00 pm" data-where="Hall">
+                  <p class="when">Sat 26 Sep · Hall</p>
+                  <h3>Community potluck</h3>
+                  <p>Bring a dish that travels. Plates from 6. The meeting room stays open for the kids’ table.</p>
+                </article>
+              </section>
+
+              <section class="month-block" data-month="2026-10">
+                <h3 class="sr-only">October 2026</h3>
+                <article class="event" id="ev-footing" data-date="2026-10-03" data-time="9:00 am" data-where="Agriplex">
+                  <p class="when">Sat 3 Oct · Agriplex</p>
+                  <h3>Arena footing work bee</h3>
+                  <p>Rakes, a tractor, and coffee from the warming room. Members and anyone willing.</p>
+                </article>
+                <article class="event" id="ev-horseclub" data-date="2026-10-10" data-time="10:00 am" data-where="Agriplex">
+                  <p class="when">Sat 10 Oct · Agriplex</p>
+                  <h3>Youth horse club</h3>
+                  <p>Practice for the younger riders. Helmets. A parent in the stands.</p>
+                </article>
+                <article class="event" id="ev-harvest" data-date="2026-10-17" data-time="5:30 pm" data-where="Hall">
+                  <p class="when">Sat 17 Oct · Hall</p>
+                  <h3>Harvest supper</h3>
+                  <p>The earlier of the two big suppers. Tickets at the door in this story, members first.</p>
+                </article>
+                <article class="event" id="ev-private-oct" data-date="2026-10-24" data-time="4:00 pm" data-where="Hall">
+                  <p class="when">Sat 24 Oct · Hall</p>
+                  <h3>Private booking</h3>
+                  <p>Hall held. The arena stays free for evening practice.</p>
+                </article>
+                <article class="event" id="ev-bonfire" data-date="2026-10-31" data-time="7:00 pm" data-where="Grounds">
+                  <p class="when">Sat 31 Oct · Grounds</p>
+                  <h3>Community bonfire</h3>
+                  <p>West of the parking lot, away from the hall siding. Hot chocolate, not a show.</p>
+                </article>
+              </section>
+
+              <section class="month-block" data-month="2026-11">
+                <h3 class="sr-only">November 2026</h3>
+                <article class="event" id="ev-fall-supper" data-date="2026-11-07" data-time="5:30 pm" data-where="Hall">
+                  <p class="when">Sat 7 Nov · Hall · 5:30 pm</p>
+                  <h3>Fall supper and pie auction</h3>
+                  <p>Doors at 5. Supper at 5:30. Pies go to the highest nod. Bring a pie if you can spare one.</p>
+                </article>
+                <article class="event" id="ev-open-ride" data-date="2026-11-08" data-time="1:00 pm" data-where="Agriplex">
+                  <p class="when">Sun 8 Nov · Agriplex</p>
+                  <h3>Open ride</h3>
+                  <p>Member hour. Non-members pay the public rate. Footing was worked the weekend before, in the story.</p>
+                </article>
+                <article class="event" id="ev-beef" data-date="2026-11-14" data-time="7:00 pm" data-where="Meeting room">
+                  <p class="when">Sat 14 Nov · Meeting room</p>
+                  <h3>Youth beef club</h3>
+                  <p>Club night in the meeting room. The main hall stays dark.</p>
+                </article>
+                <article class="event" id="ev-gymkhana" data-date="2026-11-15" data-time="10:00 am" data-where="Agriplex">
+                  <p class="when">Sun 15 Nov · Agriplex</p>
+                  <h3>Gymkhana practice</h3>
+                  <p>Barrels and poles. Not a show. Spectators welcome in the stands.</p>
+                </article>
+                <article class="event" id="ev-dance" data-date="2026-11-21" data-time="8:00 pm" data-where="Hall">
+                  <p class="when">Sat 21 Nov · Hall · 8 pm</p>
+                  <h3>Community dance</h3>
+                  <p>Local players. Lunch at midnight. Floor cleared by 1. Example evening.</p>
+                </article>
+                <article class="event" id="ev-bake" data-date="2026-11-28" data-time="10:00 am" data-where="Hall">
+                  <p class="when">Sat 28 Nov · Hall · 10–3</p>
+                  <h3>Craft and bake sale</h3>
+                  <p>Tables down the hall. Kitchen for the coffee. Vendors are neighbours in this fiction, not brands.</p>
+                </article>
+              </section>
+
+              <section class="month-block" data-month="2026-12">
+                <h3 class="sr-only">December 2026</h3>
+                <article class="event" id="ev-concert" data-date="2026-12-05" data-time="7:00 pm" data-where="Hall">
+                  <p class="when">Sat 5 Dec · Hall · 7 pm</p>
+                  <h3>Christmas concert</h3>
+                  <p>School and community numbers. Doors at 6:30. Members sit free in this telling.</p>
+                </article>
+                <article class="event" id="ev-private-dec" data-date="2026-12-06" data-time="1:00 pm" data-where="Hall">
+                  <p class="when">Sun 6 Dec · Hall</p>
+                  <h3>Private booking</h3>
+                  <p>A held day. The calendar shows the block without inventing a host.</p>
+                </article>
+                <article class="event" id="ev-skate" data-date="2026-12-12" data-time="1:00 pm" data-where="Outdoor rink">
+                  <p class="when">Sat 12 Dec · Outdoor rink</p>
+                  <h3>Kids’ skate and hot chocolate</h3>
+                  <p>Weather permitting. Chocolate in the warming room. Helmets for anyone under 12.</p>
+                </article>
+                <article class="event" id="ev-carols" data-date="2026-12-19" data-time="6:00 pm" data-where="Hall">
+                  <p class="when">Sat 19 Dec · Hall</p>
+                  <h3>Carol sing and potluck</h3>
+                  <p>Song sheets on the chairs. Bring something warm in a pot you can carry.</p>
+                </article>
+                <article class="event" id="ev-nye" data-date="2026-12-31" data-time="6:00 pm" data-where="Hall">
+                  <p class="when">Thu 31 Dec · Hall</p>
+                  <h3>New Year’s lease</h3>
+                  <p>Private. Music down at midnight is still the house rule.</p>
+                </article>
+              </section>
+
+              <section class="month-block" data-month="2027-01">
+                <h3 class="sr-only">January 2027</h3>
+                <article class="event" id="ev-board" data-date="2027-01-10" data-time="7:00 pm" data-where="Meeting room">
+                  <p class="when">Sun 10 Jan · Meeting room</p>
+                  <h3>Board meeting</h3>
+                  <p>Open to members. The agenda is the fair, the rink, and the AGM packet.</p>
+                </article>
+                <article class="event" id="ev-agm" data-date="2027-01-16" data-time="1:00 pm" data-where="Hall">
+                  <p class="when">Sat 16 Jan · Hall · 1 pm</p>
+                  <h3>Annual general meeting</h3>
+                  <p>Members in good standing vote. Memberships can be paid at the door. Example meeting.</p>
+                </article>
+                <article class="event" id="ev-clinic" data-date="2027-01-24" data-time="9:00 am" data-where="Agriplex">
+                  <p class="when">Sat 24 Jan · Agriplex</p>
+                  <h3>Winter riding clinic</h3>
+                  <p>A clinician from inside the district, in the story. Limited riders. Spectators free.</p>
+                </article>
+                <article class="event" id="ev-family-skate" data-date="2027-01-31" data-time="1:00 pm" data-where="Outdoor rink">
+                  <p class="when">Sat 31 Jan · Outdoor rink</p>
+                  <h3>Family skate</h3>
+                  <p>If the ice is in. If it is not, the warming room still has coffee and the date moves.</p>
+                </article>
+              </section>
+
+              <section class="month-block" data-month="2027-02">
+                <h3 class="sr-only">February 2027</h3>
+                <article class="event" id="ev-drive" data-date="2027-02-06" data-time="11:00 am" data-where="Hall">
+                  <p class="when">Sat 6 Feb · Hall</p>
+                  <h3>Membership drive</h3>
+                  <p>Cards for the year, coffee, and a look at the arena schedule. Example fees on the membership page.</p>
+                </article>
+                <article class="event" id="ev-sweet" data-date="2027-02-14" data-time="6:00 pm" data-where="Hall">
+                  <p class="when">Sun 14 Feb · Hall</p>
+                  <h3>Sweetheart supper</h3>
+                  <p>A short sitting. Not a dance. Tickets from the hall desk in the week before.</p>
+                </article>
+                <article class="event" id="ev-speaking" data-date="2027-02-20" data-time="1:00 pm" data-where="Hall">
+                  <p class="when">Sat 20 Feb · Hall</p>
+                  <h3>Youth public speaking</h3>
+                  <p>The meeting room if the crowd is small, the main hall if it is not. Families welcome.</p>
+                </article>
+                <article class="event" id="ev-workbee" data-date="2027-02-28" data-time="9:00 am" data-where="Agriplex">
+                  <p class="when">Sun 28 Feb · Agriplex</p>
+                  <h3>Arena work bee</h3>
+                  <p>End-of-winter tidy. Footing, boards, and the light that has been out since January.</p>
+                </article>
+              </section>
+            </div>
+          </div>
+          <p class="note" style="margin-top:1.2rem">Private bookings are blocked time, not real hosts. To ask about a free day, use the enquiry form — it will not send.</p>
+          <div class="actions"><a class="btn btn-primary" href="../book/">Booking enquiry</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div><p class="foot-brand">North Coulee</p><p class="fine">Example calendar. Demo only.</p></div>
+        <div class="footer-links"><a href="../">Home</a><a href="../hall/">Hall</a><a href="./">Events</a><a href="../membership/">Membership</a><a href="../book/">Book</a></div>
+        <div><a href="tel:+14035550176">(403) 555-0176</a></div>
+      </div>
+      <div class="wrap"><p class="colophon">Example website by <a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">Range Road Technologies</a> (demo content). Photographs from Unsplash and Pexels under their free licences.</p></div>
+    </footer>
+    <div class="sticky-bar"><a href="tel:+14035550176">Call</a><a href="../book/">Book the hall</a></div>
+    <script src="../assets/site.js"></script>
+    <script src="../assets/calendar.js"></script>
+  </body>
+</html>
