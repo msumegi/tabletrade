@@ -730,7 +730,8 @@ p { margin: 0 0 0.9rem; }
 
 @media (max-width: 859px) {
   body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
-  .hero-inner { padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
+  .hero, .page-hero { min-height: calc(100svh - 11rem); }
+  .hero-inner { padding-bottom: 1.25rem; }
 }
 
 a[href^="tel:"] { display: inline-flex; align-items: center; min-height: 44px; }

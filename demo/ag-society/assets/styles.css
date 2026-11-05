@@ -240,7 +240,7 @@ button.cal-day.is-on i { background: var(--straw); }
 .fine { color: rgba(246,239,230,.74); }
 .footer-links a, .site-footer > .wrap a.tel { display: flex; align-items: center; min-height: 44px; min-width: 44px; text-decoration: none; padding-right: 8px; }
 .site-footer a:hover { text-decoration: underline; text-underline-offset: 3px; }
-a[href^="tel:"] { display: inline-flex; align-items: center; min-height: 44px; }
+a[href^="tel:"], a[href^="mailto:"] { display: inline-flex; align-items: center; min-height: 44px; overflow-wrap: anywhere; }
 .site-footer a { display: inline-flex; align-items: center; min-height: 44px; }
 .colophon { margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .92rem; color: rgba(246,239,230,.8); }
 .colophon a { display: inline-block; min-height: 44px; padding: .65rem .1rem; text-decoration: underline; text-underline-offset: 3px; }
@@ -280,7 +280,8 @@ a[href^="tel:"] { display: inline-flex; align-items: center; min-height: 44px; }
 }
 @media (max-width: 859px) {
   body { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
-  .hero-inner { padding-bottom: calc(5rem + env(safe-area-inset-bottom)); }
+  .hero, .page-hero { min-height: calc(100svh - 11rem); }
+  .hero-inner { padding-bottom: 1.25rem; }
 }
 @media (min-width: 860px) {
   .cal-toolbar, .view-toggle { max-width: 460px; }
