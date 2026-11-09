@@ -1,23 +1,21 @@
 Product photographs are self-hosted and used under the Unsplash License or the Pexels License.
-They were chosen because the subject matches the lot. Four lots have a drawn mark instead, because no licensed photo showed the actual goods.
+A drawn mark is used when no licensed photo showed the actual goods.
 
 Unsplash License (https://unsplash.com/license):
-- images/paint-*       photo-1516962080544-eac695c93791   paint roller and frame
 - images/cases-*       photo-1535469145415-8e49c30eae75   phone cases
 - images/batteries-*   photo-1662817153904-068b7d8e0e98   alkaline batteries
-- images/oil-*         photo-1720468750623-39e9a09f5067   bottles of cooking oil
-- images/paper-*       photo-1612538498488-226257115cc4   white paper sheets
-- images/bottles-*     photo-1602143407151-7111542de6e8   stainless bottle
+- images/bottles-*     photo-1748614934595-470ae4cdee6b   three stainless bottles, full product
 - images/mugs-*        photo-1514228742587-6b1558fcca3d   white ceramic mug
 - images/lamp-*        photo-1507473885765-e6ed057f782c   desk lamp
-- images/earbuds-*     photo-1572569511254-d8f925fe2cbb   wireless earbuds (cropped so no logo shows)
+- images/earbuds-*     photo-1771707164842-5d706fb4216a   stemless wireless earbuds, no brand mark
 - images/headphones-*  photo-1505740420928-5e560c06d30e   over-ear headphones
 
-Pexels License (https://www.pexels.com/license/):
-- images/gloves-*      photo 17686808                   blue nitrile glove
-
 Drawn marks (not photographs), navy field with the brand initials:
-- images/towels-*      shop towels (no licensed pack shot matched bleached shop towels)
+- images/towels-*      shop towels
+- images/gloves-*      nitrile gloves (no licensed box or carton shot)
 - images/lights-*      LED high-bay lights
+- images/paint-*       paint rollers (no licensed shot of a new roller or a pack)
+- images/oil-*         canola oil (no licensed shot of a plain commercial jug)
 - images/filters-*     pleated HVAC filters
+- images/paper-*       copy paper (no licensed shot of a ream or a case)
 - images/tumbler-*     enamel tumbler

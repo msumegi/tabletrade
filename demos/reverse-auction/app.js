@@ -20,6 +20,7 @@ import {
   validateSchedule,
 } from "./engine.js";
 import { createSeed } from "./seed.js";
+import { TONES } from "./images/tones.js";
 
 const KEY = "ram.prototype.v1";
 const TOUR_KEY = "ram.prototype.tourSeen";
@@ -38,19 +39,19 @@ const AUDIENCE_SHORT = {
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const LOT_MEDIA = {
   "lot-example": ["towels", "Drawn mark for Millhouse shop towels"],
-  "lot-gloves": ["gloves", "A blue nitrile exam glove"],
+  "lot-gloves": ["gloves", "Drawn mark for MedPro nitrile gloves"],
   "lot-lights": ["lights", "Drawn mark for Northbeam shop lights"],
-  "lot-paint": ["paint", "A paint roller and metal frame"],
+  "lot-paint": ["paint", "Drawn mark for paint roller kits"],
   "lot-cases": ["cases", "Silicone phone cases in several colours"],
   "lot-batteries": ["batteries", "Alkaline batteries in a case"],
-  "lot-oil": ["oil", "Bottles of yellow cooking oil"],
+  "lot-oil": ["oil", "Drawn mark for Prairie Gold canola oil"],
   "lot-filters": ["filters", "Drawn mark for Airlane HVAC filters"],
-  "lot-closed": ["paper", "Stacks of white copy paper"],
-  "lot-bottles": ["bottles", "A matte stainless water bottle"],
+  "lot-closed": ["paper", "Drawn mark for Millhouse copy paper"],
+  "lot-bottles": ["bottles", "Three stainless water bottles, shown in full"],
   "lot-mugs": ["mugs", "A plain white ceramic mug"],
   "lot-lamp": ["lamp", "A metal desk lamp"],
   "lot-tumbler": ["tumbler", "Drawn mark for a Harbor enamel tumbler"],
-  "lot-earbuds": ["earbuds", "White wireless earbuds in an open case"],
+  "lot-earbuds": ["earbuds", "White stemless wireless earbuds in an open case"],
   "lot-headphones": ["headphones", "Black over-ear headphones"],
 };
 
@@ -216,8 +217,13 @@ function wishMatches(listing, wish) {
 }
 
 function unitSpan(from, to) {
-  if (from === to) return from === 1 ? "1 unit" : `${from} units`;
+  if (from === to) return countUnits(from);
   return `${from}–${to} units`;
+}
+
+function countUnits(n) {
+  const value = Math.max(0, Math.floor(Number(n) || 0));
+  return value === 1 ? "1 unit" : `${value} units`;
 }
 
 function publicUrl(hash) {
@@ -255,19 +261,21 @@ function mark() {
   return `<svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#172033"/><path d="M14 20h36L32 38 14 20z" fill="#c9853a"/><path d="M22 42h20M26 48h12" stroke="#f4efe6" stroke-width="3" stroke-linecap="round"/></svg>`;
 }
 
-function picture(listing, sizes, eager) {
+function picture(listing, sizes, eager, frame) {
   const media = LOT_MEDIA[listing.id];
   if (!media) {
     const initials = String(listing.brand || listing.title || "RAM").split(/\s+/).slice(0, 2).map((word) => word[0] || "").join("").toUpperCase() || "RAM";
-    return `<div class="ph" role="img" aria-label="${esc(listing.title)}"><span>${esc(initials)}</span></div>`;
+    return `<div class="${frame} ph" role="img" aria-label="${esc(listing.title)}"><span>${esc(initials)}</span></div>`;
   }
   const [file, alt] = media;
+  const tone = TONES[file] || { color: "#e7e1d6", blur: "" };
+  const style = `background-color:${tone.color}${tone.blur ? `;background-image:url(&quot;${tone.blur}&quot;)` : ""}`;
   const set = (ext) => [480, 800, 1200].map((w) => `images/${file}-${w}.${ext} ${w}w`).join(", ");
-  return `<picture>
+  return `<div class="${frame} shot" style="${style}"><picture>
     <source type="image/avif" srcset="${set("avif")}" sizes="${sizes}">
     <source type="image/webp" srcset="${set("webp")}" sizes="${sizes}">
-    <img src="images/${file}-800.webp" alt="${esc(alt)}" width="1200" height="900" decoding="async"${eager ? "" : " loading=\"lazy\""}>
-  </picture>`;
+    <img class="shot-img" src="images/${file}-800.webp" alt="${esc(alt)}" width="1200" height="900" decoding="async"${eager ? "" : " loading=\"lazy\""}>
+  </picture></div>`;
 }
 
 function fieldBlock({ id, label, hint, control, wide = false }) {
@@ -737,7 +745,7 @@ function card(listing, first) {
       ? `<div><dt>Opens</dt><dd>${esc(stamp(listing.start))}</dd></div><div><dt>Closes</dt><dd>${esc(stamp(listing.end))}</dd></div><div><dt>Quantity</dt><dd>${listing.quantity}</dd></div><div><dt>Start / floor</dt><dd>${money(listing.schedule[0].price)} / ${money(listing.floorPrice)}</dd></div>`
       : `<div><dt>Cleared</dt><dd>${money(book.clockPrice)}</dd></div><div><dt>Filled</dt><dd>${book.units} of ${listing.quantity}</dd></div><div><dt>Closed</dt><dd>${esc(stamp(listing.end))}</dd></div><div><dt>Floor</dt><dd>${money(listing.floorPrice)}</dd></div>`;
   return `<a class="card" href="#/listing/${esc(listing.id)}"${first ? ' data-tour="catalogue"' : ""}>
-    <div class="card-photo">${picture(listing, "(min-width: 1100px) 360px, (min-width: 700px) 46vw, 100vw", first)}</div>
+    ${picture(listing, "(min-width: 1100px) 360px, (min-width: 700px) 46vw, 100vw", first, "card-photo")}
     <div class="card-body">
       <div class="card-top"><p class="kicker">${esc(AUDIENCE_SHORT[listing.audienceId] || "")}</p><span class="pill ${phase}">${phase}</span></div>
       <h2>${esc(listing.title)}</h2>
@@ -745,7 +753,7 @@ function card(listing, first) {
       <p class="price">${money(shown)}</p>
       <p class="seller-line">${esc(seller.company)} · ${esc(SELLER_LABEL[seller.sellerType])}${rating ? ` · <span class="stars" aria-label="${rating.toFixed(1)} stars">${stars(rating)}</span>` : ""}</p>
       <dl class="meta">${facts}</dl>
-      ${phase === "live" && canSeePending(listing) && pendingUnits(listing, book) ? `<p class="seller-line">${pendingUnits(listing, book)} units waiting below the clock</p>` : ""}
+      ${phase === "live" && canSeePending(listing) && pendingUnits(listing, book) ? `<p class="seller-line">${countUnits(pendingUnits(listing, book))} waiting below the clock</p>` : ""}
     </div>
   </a>`;
 }
@@ -775,7 +783,7 @@ function listingView(id) {
     ${pageHead(listing.title)}
     <p class="screen-hint">${listing.example ? "This is the $100 to $70 example. Press Play the price clock." : "The big price is what a filled buyer would pay right now."}</p>
     <p class="lede">${esc(listing.manufacturer)} · ${esc(listing.brand)} · <span class="model">${esc(listing.model)}</span> · ${esc(listing.packaging)}</p>
-    <div class="listing-hero">${picture(listing, "(min-width: 800px) 720px, 100vw", true)}</div>
+    ${picture(listing, "(min-width: 800px) 720px, 100vw", true, "listing-hero")}
     <div class="listing-layout">
       <section class="clock-card">
         <div class="card-top"><span class="pill ${phase}">${phase === "live" ? "Live" : phase === "upcoming" ? "Upcoming" : "Closed"}</span><span class="seller-line">${esc(seller.company)}</span></div>
@@ -788,12 +796,12 @@ function listingView(id) {
           <div><dt>Quantity</dt><dd>${listing.quantity} · ${esc(listing.packaging)}</dd></div>
           <div><dt>Start price</dt><dd>${money(listing.schedule[0].price)}</dd></div>
           <div><dt>Floor</dt><dd>${money(listing.floorPrice)}</dd></div>
-          ${phase === "live" ? `<div><dt>Left</dt><dd id="qty-left">${left}</dd></div><div><dt>Time left</dt><dd><time data-clock data-phase="live" data-start="${listing.start}" data-end="${listing.end}">${esc(clockText("live", listing.start, listing.end))}</time></dd></div><div><dt>Next step</dt><dd id="next-step">${upcoming ? `${money(upcoming.price)} · ${upcoming.unitsNeeded} more` : "Floor reached"}</dd></div>` : ""}
+          ${phase === "live" ? `<div><dt>Left</dt><dd id="qty-left">${left}</dd></div><div><dt>Time left</dt><dd><time data-clock data-phase="live" data-start="${listing.start}" data-end="${listing.end}">${esc(clockText("live", listing.start, listing.end))}</time></dd></div><div><dt>Next step</dt><dd id="next-step">${upcoming ? `${money(upcoming.price)} · ${upcoming.unitsNeeded === 1 ? "1 more" : `${upcoming.unitsNeeded} more`}` : "Floor reached"}</dd></div>` : ""}
           ${phase === "upcoming" ? `<div><dt>Opens in</dt><dd><time data-clock data-phase="upcoming" data-start="${listing.start}" data-end="${listing.end}">${esc(clockText("upcoming", listing.start, listing.end))}</time></dd></div>` : ""}
           ${phase === "closed" ? `<div><dt>Filled</dt><dd>${book.units} of ${listing.quantity}</dd></div><div><dt>Reason</dt><dd>${book.soldOut ? "Sold out" : "Time expired"}</dd></div>` : ""}
         </dl>
         <ol class="bands">${bandHtml}</ol>
-        <p id="clock-status" class="seller-line" aria-live="polite">${phase === "live" ? `${book.units} filled · ${canSeePending(listing) ? `${pendingUnits(listing, book)} units pending` : "Pending count hidden by the seller"}` : ""}</p>
+        <p id="clock-status" class="seller-line" aria-live="polite">${phase === "live" ? `${countUnits(book.units)} filled · ${canSeePending(listing) ? `${countUnits(pendingUnits(listing, book))} pending` : "Pending count hidden by the seller"}` : ""}</p>
         ${phase === "live" && showDemo(listing) ? demoBar(listing, book) : ""}
         ${shareRow(publicUrl(`#/listing/${listing.id}`), `${listing.brand} ${listing.model} — ${listing.title} on Reverse Auction Marketing`)}
       </section>
@@ -847,9 +855,7 @@ function demoBar(listing, book) {
   const upcoming = nextStep(listing.schedule, book.units);
   const stepQty = listing.example || !upcoming ? 1 : Math.min(listing.quantity - book.units, Math.max(1, upcoming.unitsNeeded));
   const stopped = !playing && bidsFor(listing).some((bid) => bid.simulated);
-  const line = stepQty === 1
-    ? "These bids are pretend shoppers, not you. Each step adds one unit so you can see the price fall."
-    : `These bids are pretend shoppers, not you. Each step adds ${stepQty} units so you can see the price fall.`;
+  const line = `These bids are pretend shoppers, not you. Each step adds ${countUnits(stepQty)} so you can see the price fall.`;
   return `<div class="demo-bar">
     <p><strong>Watch a sample sale.</strong> ${line}</p>
     ${stopped ? `<p id="playback-note">Playback stopped. Press Play to continue from here.</p>` : ""}
@@ -907,7 +913,7 @@ function bidQuoteInner(listing, phase, book) {
 function bidBox(listing, phase, book) {
   const user = me();
   if (phase === "upcoming") return `<h2 class="section-title">Bidding opens later</h2><p class="field-hint">You can read the lowest price now. Bids open when the start time arrives.</p><p>The lowest price is ${money(listing.floorPrice)}. Shipping is quoted once the lot is live.</p>`;
-  if (phase === "closed") return `<h2 class="section-title">This lot has closed</h2><p class="field-hint">No more bids. Filled buyers all pay the final price.</p><p>${book.units ? `${book.units} units sold at ${money(book.clockPrice)}.` : "No bids were filled."} ${book.soldOut ? "It sold out." : "Time ran out."}</p><p><a href="#/orders">See the orders</a></p>`;
+  if (phase === "closed") return `<h2 class="section-title">This lot has closed</h2><p class="field-hint">No more bids. Filled buyers all pay the final price.</p><p>${book.units ? `${countUnits(book.units)} sold at ${money(book.clockPrice)}.` : "No bids were filled."} ${book.soldOut ? "It sold out." : "Time ran out."}</p><p><a href="#/orders">See the orders</a></p>`;
   if (user.role !== "buyer") {
     const who = suggestEntrant(listing);
     return `<h2 class="section-title">You are viewing as the seller</h2><p>Sellers do not bid on their own lot. Switch to ${esc(personLine(who))}. Or press Play the price clock and watch sample bids move the price.</p>`;
@@ -958,7 +964,7 @@ function bidHistory(listing, book, phase) {
     const showPrice = row.status !== "pending" || isOwnListing(listing) || bid.userId === me().id;
     const pendingMark = index === 0 || row.status === "pending" ? ' data-tour="pending"' : "";
     const useMark = row.status === "pending" && !visible.slice(0, index).some((item) => item.status === "pending");
-    return `<li${useMark || (index === 0 && !visible.some((item) => item.status === "pending")) ? pendingMark : ""}><strong>${esc(buyer?.name || "Buyer")}</strong> · ${esc(buyer?.company || "")}<br />${row.quantity || bid.quantity} units · ${esc(row.status)}${showPrice ? ` · max ${money(bid.maxPrice)}` : ""} · ${esc(stamp(bid.time))}${bid.simulated ? " · sample" : ""}</li>`;
+    return `<li${useMark || (index === 0 && !visible.some((item) => item.status === "pending")) ? pendingMark : ""}><strong>${esc(buyer?.name || "Buyer")}</strong> · ${esc(buyer?.company || "")}<br />${countUnits(row.quantity || bid.quantity)} · ${esc(row.status)}${showPrice ? ` · max ${money(bid.maxPrice)}` : ""} · ${esc(stamp(bid.time))}${bid.simulated ? " · sample" : ""}</li>`;
   }).join("")}</ul>`;
 }
 
@@ -1199,7 +1205,7 @@ function sellSnapshot(draft) {
     return `<div class="private"><strong>Private snapshot.</strong> Enter a unit cost and a valid clock to see an illustrative profit. The full comparison is on the calculator after you publish.</div>`;
   }
   const projection = projectSale({ unitCost: Number(draft.unitCost), schedule, quantity, expectedUnits: Number(draft.expectedUnits), expectedDays: Number(draft.expectedDays) });
-  return `<div class="private"><strong>Illustrative, only you see this.</strong> At ${projection.units} units the clock would be ${money(projection.clearingPrice)}. Profit after the sample fee is ${money(projection.profit)} · ${money(projection.profitPerDay)} per day. Fee ${money(projection.fees)} (${pct(projection.feeRate)}). No listing fee.</div>`;
+  return `<div class="private"><strong>Illustrative, only you see this.</strong> At ${countUnits(projection.units)} the clock would be ${money(projection.clearingPrice)}. Profit after the sample fee is ${money(projection.profit)} · ${money(projection.profitPerDay)} per day. Fee ${money(projection.fees)} (${pct(projection.feeRate)}). No listing fee.</div>`;
 }
 
 function syncLinear(draft) {
@@ -1349,7 +1355,7 @@ function calculatorView() {
     <div class="calc-grid">${calc.columns.map((column, index) => calcCard(column, index, Number(calc.annual) || 0)).join("")}</div>`;
 }
 
-function calcCard(column, index, annual) {
+function calcResult(column, annual) {
   const quantity = Math.floor(Number(column.quantity)) || 0;
   const broken = !(Number(column.startPrice) > Number(column.floorPrice)) || quantity < 1;
   let body = `<p class="warn">Start price has to stay above the floor, and quantity has to be at least 1.</p>`;
@@ -1374,10 +1380,14 @@ function calcCard(column, index, annual) {
       <p>${base.profitPerDay >= alt ? `This configuration earns ${money(base.profitPerDay - alt)} more per day than parking the capital at ${annual}%.` : `The alternative earns ${money(alt - base.profitPerDay)} more per day than this configuration.`}</p>
       ${concept ? `<p class="ok">This is the concept sheet's case: $50 cost, 10 units, $70 clear, $200 before fees in a day.</p>` : ""}
       ${paper ? `<p class="ok">Matches the discussion paper's ${money(paper.paperPerUnitPerDay)} per unit per day, before fees.</p>` : ""}
-      <div class="sens">${column.unsold || units === 0 ? "Treated as unsold: profit is zero, and the capital is still tied up." : check.priceStepped ? `If volume is 20% lower (${check.lower.units} units), the price steps to the next level, ${money(check.lower.clearingPrice)}. Profit per day becomes ${money(check.lower.profitPerDay)}.` : `If volume is 20% lower (${check.lower.units} units), the clock stays ${money(check.lower.clearingPrice)}. Profit per day becomes ${money(check.lower.profitPerDay)}.`}
+      <div class="sens">${column.unsold || units === 0 ? "Treated as unsold: profit is zero, and the capital is still tied up." : check.priceStepped ? `If volume is 20% lower (${countUnits(check.lower.units)}), the price steps to the next level, ${money(check.lower.clearingPrice)}. Profit per day becomes ${money(check.lower.profitPerDay)}.` : `If volume is 20% lower (${countUnits(check.lower.units)}), the clock stays ${money(check.lower.clearingPrice)}. Profit per day becomes ${money(check.lower.profitPerDay)}.`}
       </div>
       <p class="seller-line">${scheduleLine(column.schedule, quantity)}</p>`;
   }
+  return body;
+}
+
+function calcCard(column, index, annual) {
   return `<article class="calc-card panel">
     ${fieldBlock({ id: `calc-${index}-name`, label: "Configuration", hint: "A name for this column.", control: `<input id="calc-${index}-name" data-calc="${index}" data-field="name" value="${esc(column.name)}" />` })}
     <div class="form-grid">
@@ -1391,7 +1401,7 @@ function calcCard(column, index, annual) {
     </div>
     <label class="check" for="calc-${index}-unsold"><input id="calc-${index}-unsold" data-calc="${index}" data-field="unsold" type="checkbox"${column.unsold ? " checked" : ""} /><span>Assume it does not sell</span></label>
     <p class="field-hint">Turn this on if you want the “nothing sold” case.</p>
-    ${body}
+    <div id="calc-out-${index}" class="calc-out">${calcResult(column, annual)}</div>
   </article>`;
 }
 
@@ -1419,9 +1429,9 @@ function wishlistView() {
       const shareTarget = match ? publicUrl(`#/listing/${match.id}`) : publicUrl("#/");
       const text = match ? `${match.title} on Reverse Auction Marketing` : `Looking for ${group.units} × ${group.sample.name} on Reverse Auction Marketing`;
       return `<article class="panel"${user.role !== "buyer" && index === 0 ? ' data-tour="wishlist"' : ""}>
-        <div class="spread"><h2 class="section-title">${esc(group.sample.brand || group.sample.name)} ${esc(group.sample.model || "")}</h2><strong>${group.wishes.length} buyer${group.wishes.length === 1 ? "" : "s"} · ${group.units} units</strong></div>
+        <div class="spread"><h2 class="section-title">${esc(group.sample.brand || group.sample.name)} ${esc(group.sample.model || "")}</h2><strong>${group.wishes.length === 1 ? "1 buyer" : `${group.wishes.length} buyers`} · ${countUnits(group.units)}</strong></div>
         <p>${esc(group.sample.name)}</p>
-        <ul class="bid-list">${group.wishes.map((wish) => `<li>${esc(userById(wish.userId)?.company || "Buyer")} · ${wish.quantity} units${wish.userId === user.id ? ` <button type="button" class="btn" data-action="remove-wish" data-id="${esc(wish.id)}">Remove</button>` : ""}</li>`).join("")}</ul>
+        <ul class="bid-list">${group.wishes.map((wish) => `<li>${esc(userById(wish.userId)?.company || "Buyer")} · ${countUnits(wish.quantity)}${wish.userId === user.id ? ` <button type="button" class="btn" data-action="remove-wish" data-id="${esc(wish.id)}">Remove</button>` : ""}</li>`).join("")}</ul>
         ${match ? `<p class="ok"><a href="#/listing/${esc(match.id)}">Open the matching lot</a></p>` : `<p class="seller-line">No open lot matches this yet.</p>`}
         <p class="field-hint">Share so more people can bid. Facebook, X, or copy the link.</p>
         ${shareRow(shareTarget, text)}
@@ -1453,7 +1463,7 @@ function ordersView() {
       const listing = findListing(bid.listingId);
       const book = bookOf(listing);
       const row = settlement({ closed: false, book, bids: [bid] })[0];
-      return `<li><a href="#/listing/${esc(listing.id)}">${esc(listing.title)}</a> · ${bid.quantity} units · ${esc(row.status)} · max ${money(bid.maxPrice)}</li>`;
+      return `<li><a href="#/listing/${esc(listing.id)}">${esc(listing.title)}</a> · ${countUnits(bid.quantity)} · ${esc(row.status)} · max ${money(bid.maxPrice)}</li>`;
     }).join("")}</ul>` : ""}
     <div class="orders" style="margin-top:12px">${(user.role === "seller" ? sellerOrders : buyerOrders).map(({ listing, order }) => `<div><p class="kicker">${esc(listing.title)}</p>${orderCard(listing, order)}</div>`).join("") || `<p class="empty">No filled orders yet. ${user.role === "seller" ? "The copy-paper lot is already closed if you want a label and a rating." : "Bid on a live lot, or switch to Jordan Blake to see the finished copy-paper order."}</p>`}</div>`;
 }
@@ -1830,6 +1840,16 @@ function patchSell() {
   if (!draft.errors.length) document.getElementById("sell-errors")?.remove();
 }
 
+function patchCalc() {
+  const calc = ensureCalc();
+  if (!calc) return;
+  const annual = Number(calc.annual) || 0;
+  calc.columns.forEach((column, index) => {
+    const node = document.getElementById(`calc-out-${index}`);
+    if (node) node.innerHTML = calcResult(column, annual);
+  });
+}
+
 function onField(event) {
   const el = event.target;
   if (!(el instanceof HTMLElement)) return;
@@ -1861,8 +1881,8 @@ function onField(event) {
     if (draft.stepMode === "custom" && el.dataset.sell === "startPrice" && draft.schedule[0]) draft.schedule[0].price = roundMoney(el.value);
     if (draft.stepMode === "custom" && el.dataset.sell === "floorPrice") draft.schedule[draft.schedule.length - 1].price = roundMoney(el.value);
     if (el.dataset.sell === "stepMode" && el.value === "linear") syncLinear(draft);
-    if (structural) render({ keepScroll: true, restore: el.id });
-    else patchSell();
+    patchSell();
+    if (structural && event.type !== "input") render({ keepScroll: true, restore: el.id });
     return;
   }
   if (el.dataset.step != null) {
@@ -1889,7 +1909,7 @@ function onField(event) {
   }
   if (el.dataset.calcGlobal) {
     ensureCalc().annual = el.value;
-    render({ keepScroll: true });
+    patchCalc();
     return;
   }
   if (el.dataset.calc != null) {
@@ -1897,7 +1917,7 @@ function onField(event) {
     if (el.type === "checkbox") column[el.dataset.field] = el.checked;
     else column[el.dataset.field] = el.value;
     if (["startPrice", "floorPrice", "stepCount", "quantity"].includes(el.dataset.field)) rebuildColumn(column);
-    render({ keepScroll: true });
+    patchCalc();
   }
 }
 
@@ -1941,16 +1961,8 @@ function render(options = {}) {
   const header = document.querySelector(".topbar");
   if (header) document.documentElement.style.setProperty("--header", `${header.offsetHeight}px`);
   const navEl = document.querySelector(".nav");
-  if (navEl) {
-    const current = navEl.querySelector("[aria-current='page']");
-    if (current) {
-      const left = current.offsetLeft - (navEl.clientWidth - current.offsetWidth) / 2;
-      navEl.scrollLeft = Math.max(0, left);
-    }
-    const overflow = navEl.scrollWidth > navEl.clientWidth + 2;
-    const atEnd = navEl.scrollLeft + navEl.clientWidth >= navEl.scrollWidth - 2;
-    navEl.classList.toggle("nav-more", overflow && !atEnd);
-  }
+  if (navEl) alignNav(navEl);
+  armPhotos();
   window.scrollTo(0, y);
   if (focusId) {
     const next = document.getElementById(focusId);
@@ -2001,7 +2013,44 @@ document.addEventListener("keydown", (event) => {
     first.focus();
   }
 });
+function alignNav(navEl) {
+  const current = navEl.querySelector("[aria-current='page']");
+  if (!current) return;
+  const viewOf = () => navEl.getBoundingClientRect();
+  const max = Math.max(0, navEl.scrollWidth - navEl.clientWidth);
+  const delta = current.getBoundingClientRect().left - viewOf().left;
+  navEl.scrollLeft = Math.max(0, Math.min(max, navEl.scrollLeft + delta));
+  const view = viewOf();
+  let clipLeft = 0;
+  let clipRight = 0;
+  for (const chip of navEl.querySelectorAll("a")) {
+    const rect = chip.getBoundingClientRect();
+    if (rect.right <= view.left + 0.5) continue;
+    if (rect.left < view.left - 0.5 && rect.right > view.left + 0.5) clipLeft = rect.right - view.left;
+    else if (rect.left < view.right - 0.5 && rect.right > view.right + 0.5) {
+      clipRight = view.right - rect.left;
+      break;
+    }
+  }
+  navEl.style.clipPath = clipLeft > 0.5 || clipRight > 0.5
+    ? `inset(0px ${Math.max(0, clipRight)}px 0px ${Math.max(0, clipLeft)}px)`
+    : "";
+}
+
+function armPhotos() {
+  document.querySelectorAll(".shot-img").forEach((img) => {
+    const ready = () => img.classList.add("is-ready");
+    if (img.complete && img.naturalWidth) ready();
+    else {
+      img.addEventListener("load", ready, { once: true });
+      img.addEventListener("error", ready, { once: true });
+    }
+  });
+}
+
 window.addEventListener("hashchange", () => {
+  ui.toast = "";
+  window.clearTimeout(toastTimer);
   if (routeOf().name !== "listing") stopPlay();
   render(ui.tour ? { tour: true, top: true } : { top: true });
 });
