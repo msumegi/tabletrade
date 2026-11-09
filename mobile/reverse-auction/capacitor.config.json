@@ -1,6 +1,6 @@
 {
   "appId": "com.reverseauctionmarketing.demo",
-  "appName": "Reverse Auction Marketing",
+  "appName": "RAM",
   "webDir": "www",
   "android": {
     "path": "android"
