@@ -4,202 +4,136 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="theme-color" content="#1c1210" />
-    <meta name="description" content="North Coulee Agricultural Society. Community hall, agriplex, and the district calendar." />
+    <meta name="theme-color" content="#173028" />
+    <meta name="description" content="North Coulee Agricultural Society. The community hall, the arena, and the year that runs through them." />
     <title>North Coulee Agricultural Society</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
-    <p class="ribbon"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">Demo provided by Range Road Technologies</a></p>
-    <header class="site-header" data-header>
-      <div class="wrap header-bar">
-        <a class="brand" href="./">
-          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40V10M24 18c-6-1-9-6-9-6s1 7 9 8M24 26c6-1 9-6 9-6s-1 7-9 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          <span><span class="brand-name">North Coulee</span><span class="brand-sub">Agricultural Society</span></span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span class="sr-only">Menu</span><span></span><span></span><span></span></button>
-        <nav id="site-nav" class="nav" data-nav aria-label="Primary">
-          <a href="hall/">Hall</a>
-          <a href="events/">Events</a>
-          <a href="membership/">Membership</a>
-          <a href="book/">Book</a>
-          <a href="contact/">Contact</a>
+    <div class="top" data-top>
+      <p class="ribbon"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">Demo provided by Range Road Technologies</a></p>
+      <header class="site-header">
+        <div class="wrap bar">
+          <a class="brand" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 26V7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M16 11c-3.4.6-5.2 3.2-5.2 3.2s1.6-3.6 5.2-3.8M16 16c3.4.6 5.2 3.2 5.2 3.2s-1.6-3.6-5.2-3.8M16 21c-3.4.6-5.2 3.2-5.2 3.2s1.6-3.6 5.2-3.8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span><span class="brand-name">North Coulee</span><span class="brand-sub">Agricultural Society</span></span></a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+            <span class="sr-only">Menu</span>
+            <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <nav id="site-nav" class="nav" data-nav aria-label="Primary">
+          <a href="./" aria-current="page">Home</a>
+          <a href="hall-rental/">Hall</a>
+          <a href="gallery/">Gallery</a>
+          <a href="about/">About</a>
+          <a href="booking/">Booking</a>
           <a class="nav-call" href="tel:+14035550176">Call</a>
-        </nav>
-      </div>
-    </header>
-    <main id="main">
-      <section class="hero">
-        <div class="hero-media">
-          <img src="media/hero-1280.webp" srcset="media/hero-720.webp 720w, media/hero-1280.webp 1280w, media/hero-1920.webp 1920w" sizes="100vw" width="1280" height="720" alt="A wheat field at sunrise, sun flaring over a distant tree line" data-parallax fetchpriority="high" decoding="async" />
+          </nav>
         </div>
-        <div class="hero-scrim"></div>
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="hero-inner">
-          <p class="kicker">North Coulee, Alberta · since 1956</p>
-          <h1>Where the<br />district<br />gathers.</h1>
-          <p class="lede">The agricultural society keeps the community hall, the agriplex, and the calendar. Suppers, clinics, funerals, weddings, and the meeting that runs long.</p>
+      </header>
+    </div>
+
+    <main id="main">
+      <section class="mast">
+        <div class="mast-photo">
+          <img src="media/hero-1280.webp" srcset="media/hero-720.webp 720w, media/hero-1280.webp 1280w, media/hero-1920.webp 1920w" sizes="100vw" width="1280" height="720" alt="A wheat field at sunrise, the sun low over a distant tree line" fetchpriority="high" decoding="async">
+        </div>
+        <div class="mast-copy">
+          <p class="eyebrow">Since 1956</p>
+          <h1>The hall and the arena.</h1>
+          <p class="lede">Suppers, clinics, and the rooms the district books.</p>
           <div class="actions">
-            <a class="btn btn-straw" href="hall/">Hall &amp; arena</a>
-            <a class="btn btn-ghost" href="events/">See the calendar</a>
+            <a class="btn btn-solid" href="hall-rental/">Hall &amp; arena</a>
+            <a class="btn btn-line" href="booking/">Ask for a date</a>
           </div>
-          <ul class="meta-row">
-            <li><span class="dot"></span> Hall seats 180</li>
-            <li><span class="dot"></span> Arena seats 220</li>
-            <li><span class="dot"></span> Members welcome</li>
-          </ul>
         </div>
       </section>
 
       <section class="section">
         <div class="wrap">
-          <div class="intro reveal">
-            <p class="kicker kicker-barn">On the books</p>
-            <h2>Coming up.</h2>
-            <p>The next gatherings on the district calendar. The full month can be flipped or read as a list.</p>
-          </div>
-          <div class="cards three" style="margin-top:1.2rem">
-            <article class="event-card reveal">
-              <p class="when">Sat 7 Nov · Hall</p>
-              <h3>Fall supper &amp; pie auction</h3>
-              <p>Doors at 5. Supper at 5:30. The pies are the second half of the evening.</p>
-              <a class="more" href="events/#ev-fall-supper">On the calendar</a>
-            </article>
-            <article class="event-card reveal">
-              <p class="when">Sat 21 Nov · Hall</p>
-              <h3>Community dance</h3>
-              <p>Local players, lunch served at midnight, and the floor cleared by 1.</p>
-              <a class="more" href="events/#ev-dance">On the calendar</a>
-            </article>
-            <article class="event-card reveal">
-              <p class="when">Sat 5 Dec · Hall</p>
-              <h3>Christmas concert</h3>
-              <p>School and community numbers. Seats from 6:30. No charge for members.</p>
-              <a class="more" href="events/#ev-concert">On the calendar</a>
-            </article>
+          <div class="venues">
+            <a class="venue reveal" href="hall-rental/#hall">
+              <img src="media/venue-1280.webp" srcset="media/venue-720.webp 720w, media/venue-1280.webp 1280w, media/venue-1920.webp 1920w" sizes="(min-width: 800px) 46vw, 100vw" width="1280" height="854" alt="A white barn-style hall on a green rise, with a wide stair to the doors" loading="lazy" decoding="async">
+              <div>
+                <p class="eyebrow">Hall</p>
+                <h2>Supper for 180.</h2>
+                <p>Saturday example rate $450. Members pay 15% less.</p>
+              </div>
+            </a>
+            <a class="venue reveal" href="hall-rental/#arena">
+              <img src="media/horse-1280.webp" srcset="media/horse-720.webp 720w, media/horse-1280.webp 1280w" sizes="(min-width: 800px) 46vw, 100vw" width="1280" height="852" alt="A white horse in motion across a sunlit pasture" loading="lazy" decoding="async">
+              <div>
+                <p class="eyebrow">Arena</p>
+                <h2>80 by 180 feet.</h2>
+                <p>Seating for 220. Clinics, shows, and winter practice.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       <section class="section section-cream">
         <div class="wrap split">
-          <div class="frame reveal">
-            <img src="media/front-1280.webp" srcset="media/front-720.webp 720w, media/front-1280.webp 1280w" sizes="(min-width: 860px) 48vw, 100vw" width="1280" height="853" alt="A white community building with a burgundy door, picket fence, and autumn trees" loading="lazy" decoding="async" />
-          </div>
           <div class="reveal">
-            <p class="kicker kicker-barn">01 — The hall</p>
-            <h2>The white building with the burgundy door.</h2>
-            <p>Banquet for 180. A meeting room for 28. A kitchen that has fed the fall supper since the society was young. Weekday, evening, and weekend rates are on the hall page.</p>
-            <ul class="stats">
-              <li class="stat"><strong>180</strong><span>Banquet seats</span></li>
-              <li class="stat"><strong>250</strong><span>Reception, standing</span></li>
-              <li class="stat"><strong>$450</strong><span>Saturday hall</span></li>
-              <li class="stat"><strong>15%</strong><span>Member discount</span></li>
+            <p class="eyebrow">On the books</p>
+            <h2>Coming up.</h2>
+            <ul class="agenda">
+              <li><time datetime="2026-11-07">7 Nov</time><div><strong>Fall supper and pie auction</strong><span>Hall · doors at 5</span></div></li>
+              <li><time datetime="2026-11-21">21 Nov</time><div><strong>Community dance</strong><span>Hall · lunch at midnight</span></div></li>
+              <li><time datetime="2026-12-05">5 Dec</time><div><strong>Christmas concert</strong><span>Hall · seats from 6:30</span></div></li>
+              <li><time datetime="2027-09-04">September</time><div><strong>Fair weekend</strong><span>First weekend of September, every year</span></div></li>
             </ul>
-            <div class="actions"><a class="btn btn-primary" href="hall/">Rates &amp; floor plan</a></div>
           </div>
+          <figure class="frame reveal">
+            <img src="media/supper-1280.webp" srcset="media/supper-720.webp 720w, media/supper-1280.webp 1280w" sizes="(min-width: 860px) 46vw, 100vw" width="1280" height="854" alt="Long tables set for a community supper in a bright hall" loading="lazy" decoding="async">
+          </figure>
         </div>
       </section>
 
       <section class="section">
-        <div class="wrap split flip">
-          <div class="frame reveal">
-            <img src="media/horse-1280.webp" srcset="media/horse-720.webp 720w, media/horse-1280.webp 1280w" sizes="(min-width: 860px) 48vw, 100vw" width="1280" height="853" alt="A white horse in motion across a sunlit pasture" loading="lazy" decoding="async" />
-          </div>
-          <div class="reveal">
-            <p class="kicker kicker-barn">02 — The agriplex</p>
-            <h2>Footing for clinics. Boards for winter.</h2>
-            <p>An 80 by 180 foot floor, seating for 220, and a seasonal outdoor rink when the weather agrees. Riding practice, stock shows, and the kids’ skate all live on the same grounds.</p>
-            <div class="actions">
-              <a class="btn btn-primary" href="hall/#arena">Arena rates</a>
-              <a class="btn btn-line" href="book/">Enquire</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="wash section">
-        <div class="wrap split">
-          <div>
-            <p class="kicker">The fair</p>
-            <h2>First weekend of September. Every year.</h2>
-            <p class="lead">The 2026 fair has wrapped. The 2027 dates are set at the annual general meeting in January. Grounds, hall, and arena all turn over for two days.</p>
-            <a class="btn btn-straw" href="events/#ev-fair">See the fair on the calendar</a>
-          </div>
-          <div class="frame">
-            <img src="media/barns-1280.webp" srcset="media/barns-720.webp 720w, media/barns-1280.webp 1280w" sizes="(min-width: 860px) 46vw, 100vw" width="1280" height="853" alt="White barns standing in a ripe wheat field under a wide sky" loading="lazy" decoding="async" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap">
-          <div class="intro reveal">
-            <p class="kicker kicker-barn">Sponsors</p>
-            <h2>The businesses behind the year.</h2>
-            <p>They back the fair, the suppers, and the work bees.</p>
-          </div>
-          <ul class="sponsors reveal">
-            <li class="sponsor"><span class="wm wm-serif">Coulee Grain <small>&amp; Seed</small></span></li>
-            <li class="sponsor"><span class="wm wm-sans">Milepost</span></li>
-            <li class="sponsor"><span class="wm wm-italic">Rosebend Cattle</span></li>
-            <li class="sponsor"><span class="wm wm-stack">Wheatline Mutual</span></li>
-            <li class="sponsor"><span class="wm wm-serif">Aspen Ferry <small>Mercantile</small></span></li>
-            <li class="sponsor"><span class="wm wm-italic">Harrow &amp; Howe</span></li>
-            <li class="sponsor"><span class="wm wm-sans">Benchland Creamery</span></li>
-            <li class="sponsor"><span class="wm wm-stack">Lantern Supply</span></li>
+        <div class="wrap reveal">
+          <p class="eyebrow">Membership</p>
+          <h2>A card, and the member rate.</h2>
+          <p>Pay at the desk. The card votes at the AGM and takes 15% off the hall and the arena.</p>
+          <ul class="fees">
+            <li><strong>$10</strong><span>Youth</span></li>
+            <li><strong>$25</strong><span>Individual</span></li>
+            <li><strong>$40</strong><span>Family</span></li>
           </ul>
+          <div class="actions"><a class="btn btn-line" href="about/">The society</a></div>
         </div>
       </section>
 
-      <section class="section section-field">
+      <section class="section section-pine">
         <div class="wrap split">
-          <div>
-            <p class="kicker">Membership</p>
-            <h2>A family card is the price of a supper.</h2>
-            <p>Family $40, individual $25, youth $10. Members vote at the AGM and take the member rate on the hall and the arena.</p>
-            <div class="actions">
-              <a class="btn btn-straw" href="membership/">Join, volunteer, or read the board</a>
-            </div>
-          </div>
-          <div class="frame">
-            <img src="media/wheat-960.webp" srcset="media/wheat-640.webp 640w, media/wheat-960.webp 960w" sizes="(min-width: 860px) 40vw, 100vw" width="960" height="1200" alt="Ripe wheat heads against a clear blue sky" loading="lazy" decoding="async" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap split">
-          <div class="map-card" aria-hidden="true">
-            <svg viewBox="0 0 640 420">
-              <rect width="640" height="420" rx="14" fill="#1d3128"/>
-              <path d="M40 250 H600" stroke="#e4c27a" stroke-width="3"/>
-              <path d="M220 40 V390" stroke="#c9b48a" stroke-width="2" stroke-dasharray="4 6"/>
-              <rect x="250" y="180" width="90" height="58" rx="4" fill="#f6f1e6"/>
-              <rect x="400" y="150" width="120" height="70" rx="4" fill="#6e2622"/>
-              <circle cx="150" cy="250" r="7" fill="#e4c27a"/>
-              <g fill="#f6f1e6" font-family="Georgia, serif" font-size="18">
-                <text x="248" y="270">Hall</text>
-                <text x="408" y="250">Agriplex</text>
-                <text x="40" y="230">Society Road</text>
-                <text x="168" y="120">Elevator</text>
-              </g>
-            </svg>
-          </div>
-          <div>
-            <p class="kicker kicker-barn">Find the grounds</p>
+          <div class="reveal">
+            <p class="eyebrow">Find the grounds</p>
             <h2>480 Society Road.</h2>
-            <p>South of the elevator, west side of Society Road. The white hall with the burgundy door. Gravel parking to the north.</p>
-            <p><a class="more" href="tel:+14035550176">(403) 555-0176</a><br /><a class="more" href="contact/">Contact and directions</a></p>
+            <p>South of the elevator, west side of the road. Gravel parking to the north. Hall desk weekdays, 9 to 5.</p>
+            <p><a class="btn btn-brass" href="tel:+14035550176">(403) 555-0176</a></p>
+          </div>
+          <figure class="frame reveal">
+            <img src="media/barns-1280.webp" srcset="media/barns-720.webp 720w, media/barns-1280.webp 1280w" sizes="(min-width: 860px) 46vw, 100vw" width="1280" height="853" alt="White farm buildings standing in a ripe wheat field" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <div class="cta reveal">
+            <div>
+              <h2>Ask before the date is gone.</h2>
+              <p>Saturday hall days go first. The desk answers on the next weekday.</p>
+            </div>
+            <div class="actions">
+              <a class="btn btn-brass" href="booking/">Booking inquiry</a>
+              <a class="btn btn-line" href="hall-rental/">See example rates</a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div>
@@ -207,19 +141,23 @@
           <p class="fine">Agricultural Society<br />480 Society Road<br />North Coulee, Alberta</p>
         </div>
         <div class="footer-links">
-          <a href="hall/">Hall &amp; arena</a>
-          <a href="events/">Events</a>
-          <a href="membership/">Membership</a>
-          <a href="book/">Book</a>
-          <a href="contact/">Contact</a>
+          <a href="./">Home</a>
+          <a href="hall-rental/">Hall &amp; arena</a>
+          <a href="gallery/">Gallery</a>
+          <a href="about/">About</a>
+          <a href="booking/">Booking</a>
         </div>
         <div>
           <a href="tel:+14035550176">(403) 555-0176</a>
-          <p class="fine">Hall desk, weekdays 9–5.<br />hall@northcouleeags.ca</p>
+          <p class="fine">Hall desk, weekdays 9–5.</p>
+          <a href="mailto:hall@northcouleeags.ca">hall@northcouleeags.ca</a>
         </div>
       </div>
     </footer>
-    <div class="sticky-bar"><a href="tel:+14035550176">Call</a><a href="book/">Book the hall</a></div>
+    <div class="dock">
+      <a href="tel:+14035550176">Call</a>
+      <a href="booking/">Book</a>
+    </div>
     <script src="assets/site.js"></script>
   </body>
 </html>
