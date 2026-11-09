@@ -1,0 +1,448 @@
+(function () {
+  "use strict";
+
+  var KEY = "rangepath.progress";
+  var LESSONS = 5;
+
+  function empty() {
+    return { learnerName: "", councilName: "", courses: {} };
+  }
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return empty();
+      var data = JSON.parse(raw);
+      if (!data || typeof data !== "object") return empty();
+      data.courses = data.courses || {};
+      data.learnerName = data.learnerName || "";
+      data.councilName = data.councilName || "";
+      return data;
+    } catch (err) {
+      return empty();
+    }
+  }
+
+  function save(data) {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(data));
+    } catch (err) {
+      /* Private mode can block storage. The page still works. */
+    }
+  }
+
+  function courseOf(data, id) {
+    if (!data.courses[id]) data.courses[id] = { lessons: {}, final: null };
+    if (!data.courses[id].lessons) data.courses[id].lessons = {};
+    return data.courses[id];
+  }
+
+  function today() {
+    var d = new Date();
+    var z = function (n) { return String(n).padStart(2, "0"); };
+    return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate());
+  }
+
+  function percent(correct, total) {
+    if (!total) return 0;
+    return Math.round((correct / total) * 100);
+  }
+
+  function coursePercent(data, id) {
+    var course = data.courses[id];
+    if (!course) return 0;
+    var done = 0;
+    var lessons = course.lessons || {};
+    for (var i = 1; i <= LESSONS; i++) {
+      if (lessons[i] && lessons[i].done) done += 1;
+    }
+    if (course.final && course.final.passed) done += 1;
+    return Math.round((done / (LESSONS + 1)) * 100);
+  }
+
+  function nextHref(data, id, base) {
+    var course = data.courses[id] || { lessons: {} };
+    var lessons = course.lessons || {};
+    for (var i = 1; i <= LESSONS; i++) {
+      if (!lessons[i] || !lessons[i].done) return base + "lesson-" + i + "/";
+    }
+    if (!course.final || !course.final.passed) return base + "final/";
+    return base + "../../certificate/?course=" + encodeURIComponent(id);
+  }
+
+  function paintProgress() {
+    var data = load();
+    document.querySelectorAll("[data-pct]").forEach(function (el) {
+      var id = el.getAttribute("data-pct");
+      var pct = coursePercent(data, id);
+      el.textContent = pct + "% done";
+      var bar = document.querySelector('[data-bar="' + id + '"]');
+      var fill = bar ? bar.querySelector(":scope > span") : null;
+      if (!fill && bar) fill = bar.querySelector("span");
+      if (fill) fill.style.width = pct + "%";
+      if (bar) bar.setAttribute("aria-valuenow", String(pct));
+    });
+    document.querySelectorAll("[data-status]").forEach(function (el) {
+      var parts = el.getAttribute("data-status").split(":");
+      var course = (data.courses[parts[0]] || {}).lessons || {};
+      var row = course[parts[1]];
+      el.textContent = row && row.done ? "Quiz saved · " + row.percent + "%" : "Not started";
+    });
+    var cont = document.querySelector("[data-continue]");
+    if (cont) {
+      var id = cont.getAttribute("data-continue");
+      var base = cont.getAttribute("data-base") || "";
+      var href = nextHref(data, id, base);
+      cont.setAttribute("href", href);
+      var course = data.courses[id];
+      var any = course && course.lessons && Object.keys(course.lessons).length;
+      if (course && course.final && course.final.passed && href.indexOf("certificate") !== -1) {
+        cont.textContent = "Open the sample certificate";
+      } else if (any) {
+        cont.textContent = "Continue";
+      }
+    }
+    var finalNote = document.querySelector("[data-final-note]");
+    if (finalNote) {
+      var fid = finalNote.getAttribute("data-final-note");
+      var fin = data.courses[fid] && data.courses[fid].final;
+      if (fin && fin.passed) {
+        finalNote.textContent = "Final quiz passed on this device (" + fin.percent + "% on " + fin.date + ").";
+      }
+    }
+  }
+
+  function setupNav() {
+    var toggle = document.querySelector(".nav-toggle");
+    var nav = document.querySelector("#site-nav");
+    if (!toggle || !nav) return;
+    var mq = window.matchMedia("(min-width: 860px)");
+
+    function close() {
+      if (mq.matches) return;
+      nav.classList.add("is-collapsed");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+
+    function open() {
+      nav.classList.remove("is-collapsed");
+      toggle.setAttribute("aria-expanded", "true");
+    }
+
+    function sync() {
+      if (mq.matches) {
+        nav.classList.remove("is-collapsed");
+        toggle.setAttribute("aria-expanded", "false");
+      } else if (toggle.getAttribute("aria-expanded") !== "true") {
+        nav.classList.add("is-collapsed");
+      }
+    }
+
+    sync();
+    if (mq.addEventListener) mq.addEventListener("change", sync);
+    toggle.addEventListener("click", function () {
+      if (toggle.getAttribute("aria-expanded") === "true") {
+        close();
+        toggle.focus();
+      } else {
+        open();
+      }
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        close();
+        toggle.focus();
+      }
+    });
+  }
+
+  function setupQuiz() {
+    var form = document.querySelector("[data-quiz]");
+    if (!form) return;
+    var items = Array.prototype.slice.call(form.querySelectorAll(".q"));
+    var checkBtn = form.querySelector("[data-check]");
+    var nextBtn = form.querySelector("[data-next]");
+    var live = form.querySelector(".quiz-result");
+    var nowEl = form.querySelector("[data-qnow]");
+    var index = 0;
+    var correct = 0;
+    var courseId = form.getAttribute("data-course");
+    var part = form.getAttribute("data-part");
+    var partId = form.getAttribute("data-id");
+    var nextUrl = form.getAttribute("data-next-url") || "";
+    var certUrl = form.getAttribute("data-cert-url") || "";
+
+  form.addEventListener("submit", function (event) { event.preventDefault(); });
+
+  function show(i) {
+    items.forEach(function (item, n) {
+      if (n === i) item.removeAttribute("hidden");
+      else item.setAttribute("hidden", "");
+    });
+    if (nowEl) nowEl.textContent = String(i + 1);
+    checkBtn.hidden = false;
+    nextBtn.hidden = true;
+    var picked = items[i].querySelector("input:checked");
+    if (items[i].getAttribute("data-locked") === "true") {
+      checkBtn.hidden = true;
+      nextBtn.hidden = false;
+    }
+    if (picked) picked.focus();
+  }
+
+  show(0);
+
+  checkBtn.addEventListener("click", function () {
+    var item = items[index];
+    if (item.getAttribute("data-locked") === "true") return;
+    var chosen = item.querySelector("input:checked");
+    var box = item.querySelector(".feedback");
+    if (!box) {
+      box = document.createElement("p");
+      box.className = "feedback";
+      box.setAttribute("role", "status");
+      item.appendChild(box);
+    }
+    if (!chosen) {
+      box.className = "feedback is-bad";
+      box.textContent = "Choose an answer, then check it.";
+      var first = item.querySelector("input");
+      if (first) first.focus();
+      return;
+    }
+    var answer = item.getAttribute("data-answer");
+    var explainEl = item.querySelector(".explain");
+    var explain = explainEl ? explainEl.textContent.trim() : "";
+    var rightLabel = item.querySelector('input[value="' + answer + '"]');
+    var rightText = rightLabel ? rightLabel.parentElement.querySelector("span").textContent.trim() : answer;
+      var ok = chosen.value === answer;
+      if (ok) correct += 1;
+      box.className = ok ? "feedback is-good" : "feedback is-bad";
+      box.textContent = (ok ? "Correct. " : "Not quite. The better answer is: " + rightText + ". ") + explain;
+      item.querySelectorAll("input").forEach(function (input) { input.disabled = true; });
+      item.setAttribute("data-locked", "true");
+      checkBtn.hidden = true;
+      nextBtn.hidden = false;
+      nextBtn.textContent = index === items.length - 1 ? "See my score" : "Next question";
+      nextBtn.focus();
+    });
+
+    nextBtn.addEventListener("click", function () {
+      if (index < items.length - 1) {
+        index += 1;
+        show(index);
+        return;
+      }
+      finish();
+    });
+
+    function finish() {
+      var total = items.length;
+      var pct = percent(correct, total);
+      var data = load();
+      var course = courseOf(data, courseId);
+      var passed = correct / total >= 0.7;
+      if (part === "final") {
+        var prev = course.final || {};
+        var nowPassed = prev.passed || passed;
+        course.final = {
+          correct: Math.max(correct, prev.correct || 0),
+          total: total,
+          percent: Math.max(pct, prev.percent || 0),
+          passed: nowPassed,
+          date: prev.passed ? prev.date : (passed ? today() : "")
+        };
+      } else {
+        course.lessons[partId] = { correct: correct, total: total, percent: pct, done: true };
+      }
+      save(data);
+      paintProgress();
+
+      items.forEach(function (item) { item.removeAttribute("hidden"); });
+      form.querySelector(".quiz-progress").hidden = true;
+      checkBtn.hidden = true;
+      nextBtn.hidden = true;
+
+      var heading = document.createElement("h2");
+      heading.textContent = "You scored " + correct + " out of " + total + " (" + pct + "%).";
+      var note = document.createElement("p");
+      var actions = document.createElement("div");
+      actions.className = "actions";
+
+      if (part === "final") {
+        if (passed || (course.final && course.final.passed)) {
+          note.textContent = "That meets the 70% mark. You can open a sample certificate. It confirms completion only and is not accredited.";
+          var link = document.createElement("a");
+          link.className = "btn";
+          link.href = certUrl;
+          link.textContent = "Open the sample certificate";
+          actions.appendChild(link);
+        } else {
+          note.textContent = "You need 70% (at least 5 out of 7) for a certificate. Review the lessons and try again. Your score stays on this device.";
+        }
+      } else {
+        note.textContent = "Quiz saved on this device. The next step is ready when you are.";
+        if (nextUrl) {
+          var next = document.createElement("a");
+          next.className = "btn";
+          next.href = nextUrl;
+          next.textContent = form.getAttribute("data-next-label") || "Continue";
+          actions.appendChild(next);
+        }
+      }
+
+      var retry = document.createElement("button");
+      retry.type = "button";
+      retry.className = "btn btn-secondary";
+      retry.textContent = "Try this quiz again";
+      retry.addEventListener("click", function () { window.location.reload(); });
+      actions.appendChild(retry);
+
+      live.replaceChildren(heading, note, actions);
+      heading.tabIndex = -1;
+      heading.focus();
+    }
+  }
+
+  function setupWalkthrough() {
+    var form = document.querySelector("#walkthrough-form");
+    if (!form) return;
+    var thanks = document.querySelector("#walkthrough-thanks");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      form.reset();
+      form.hidden = true;
+      thanks.hidden = false;
+      var title = thanks.querySelector("h2");
+      if (title) {
+        title.tabIndex = -1;
+        title.focus();
+      }
+    });
+  }
+
+  function setupCertificate() {
+    var card = document.querySelector(".certificate");
+    if (!card) return;
+    var learner = document.querySelector("#learner-name");
+    var council = document.querySelector("#council-name");
+    var coursePick = document.querySelector("#cert-course");
+    var learnerOut = document.querySelector("#cert-learner");
+    var councilOut = document.querySelector("#cert-council");
+    var titleOut = document.querySelector("#cert-title");
+    var dateOut = document.querySelector("#cert-date");
+    var state = document.querySelector("#cert-state");
+    var data = load();
+
+    if (learner && data.learnerName) learner.value = data.learnerName;
+    if (council && data.councilName) council.value = data.councilName;
+
+    var params = new URLSearchParams(window.location.search);
+    var wanted = params.get("course");
+    if (wanted && coursePick) {
+      coursePick.value = wanted;
+    }
+
+    function paint() {
+      var name = (learner && learner.value.trim()) || "Sample Learner";
+      var org = (council && council.value.trim()) || "EXAMPLE Community Adult Learning";
+      if (learnerOut) learnerOut.textContent = name;
+      if (councilOut) councilOut.textContent = org;
+      var id = coursePick ? coursePick.value : "";
+      var option = coursePick ? coursePick.options[coursePick.selectedIndex] : null;
+      if (titleOut && option) titleOut.textContent = option.textContent;
+      var fin = data.courses[id] && data.courses[id].final;
+      if (fin && fin.passed && fin.date) {
+        if (dateOut) dateOut.textContent = fin.date;
+        if (state) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";
+      } else {
+        if (dateOut) dateOut.textContent = today();
+        if (state) state.textContent = "Sample preview. Pass the final quiz (70%) on this device to record a completion. Not accredited.";
+      }
+      data.learnerName = learner && learner.value.trim() ? learner.value.trim() : data.learnerName;
+      data.councilName = council && council.value.trim() ? council.value.trim() : data.councilName;
+      if (learner && learner.value.trim()) data.learnerName = learner.value.trim();
+      else if (learner && !learner.value.trim()) data.learnerName = "";
+      if (council) data.councilName = council.value.trim();
+      save(data);
+    }
+
+    ["input", "change"].forEach(function (type) {
+      if (learner) learner.addEventListener(type, paint);
+      if (council) council.addEventListener(type, paint);
+      if (coursePick) coursePick.addEventListener(type, paint);
+    });
+    paint();
+
+    var printBtn = document.querySelector("#print-cert");
+    if (printBtn) printBtn.addEventListener("click", function () { window.print(); });
+  }
+
+  function setupAdmin() {
+    var tabs = document.querySelectorAll("[data-tab]");
+    if (!tabs.length) return;
+    function select(id) {
+      tabs.forEach(function (tab) {
+        var on = tab.getAttribute("data-tab") === id;
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+        tab.tabIndex = on ? 0 : -1;
+      });
+      document.querySelectorAll("[data-panel]").forEach(function (panel) {
+        if (panel.getAttribute("data-panel") === id) panel.removeAttribute("hidden");
+        else panel.setAttribute("hidden", "");
+      });
+    }
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () { select(tab.getAttribute("data-tab")); });
+    });
+    select("learners");
+
+    var openBtn = document.querySelector("#open-draft");
+    var dialog = document.querySelector("#draft-dialog");
+    if (openBtn && dialog && typeof dialog.showModal === "function") {
+      openBtn.addEventListener("click", function () { dialog.showModal(); });
+      dialog.querySelectorAll("[data-close]").forEach(function (btn) {
+        btn.addEventListener("click", function () { dialog.close(); });
+      });
+    }
+    var copyBtn = document.querySelector("#copy-draft");
+    var draft = document.querySelector("#draft-text");
+    var copyStatus = document.querySelector("#copy-status");
+    if (copyBtn && draft) {
+      copyBtn.addEventListener("click", function () {
+        var text = draft.value;
+        var done = function () {
+          if (copyStatus) copyStatus.textContent = "Draft copied. It stays on this device until you paste it somewhere else.";
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(function () {
+            draft.focus();
+            draft.select();
+            if (copyStatus) copyStatus.textContent = "Select the draft and copy it from there.";
+          });
+        } else {
+          draft.focus();
+          draft.select();
+          if (copyStatus) copyStatus.textContent = "Select the draft and copy it from there.";
+        }
+      });
+    }
+    var reset = document.querySelector("#restore-sample");
+    var resetStatus = document.querySelector("#restore-status");
+    if (reset) {
+      reset.addEventListener("click", function () {
+        select("learners");
+        if (resetStatus) resetStatus.textContent = "Sample data restored. These names are fictional and built into the page.";
+      });
+    }
+  }
+
+  document.documentElement.classList.add("js");
+  setupNav();
+  setupQuiz();
+  setupWalkthrough();
+  setupCertificate();
+  setupAdmin();
+  paintProgress();
+})();
