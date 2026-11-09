@@ -1,12 +1,8 @@
-Photographs, free to use under the Unsplash or Pexels licence.
+Photographs, free to use under the Unsplash or Pexels licence. Each file was checked against its source page.
 
-hero — Unsplash photo-1500382017468-9049fed747ef
-venue — Pexels 29781785, Steven Van Elk
-pavilion — Pexels 30838286, Coral Grandbois
-supper — Unsplash photo-1464366400600-7168b8af9bc3
-horse — Unsplash photo-1553284965-83fd3e82fa5a
-horse-hill — Pexels 635499
-shed — Pexels 38979314
-redbarn — Pexels 235725
-buffet — Unsplash photo-1555244162-803834f70033
-barns, front, rows — carried from the previous demo media set (free-licence stock)
+hero — Unsplash photo-1500382017468-9049fed747ef. Wheat field at sunrise, low tree line, no mountains.
+rows — carried from the previous demo media set (free-licence stock). Crop rows to a tree line, no mountains.
+supper — Unsplash photo-1464366400600-7168b8af9bc3. Long tables set inside a community hall.
+arena — Pexels 34301905, Calvin Seng. Indoor riding arena, sand floor, metal building.
+rink — Pexels 6220146, Antoni Shkraba. Indoor curling sheet with boards.
+kitchen — Pexels 28704740, Bruno Makori. Commercial kitchen, stock pot on the stove.

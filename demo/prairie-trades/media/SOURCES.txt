@@ -1,15 +1,12 @@
-Photographs, free to use under the Unsplash or Pexels licence.
+Photographs, free to use under the Pexels licence. Each file was checked against its Pexels page.
 
-hero — Unsplash photo-1600585154340-be6161a56a0c
-timber — Unsplash photo-1600566753190-17f0baa2a6c3
-bath-dark — Unsplash photo-1600566752355-35792bedcfea
-bath — Unsplash photo-1584622650111-993a426fbf0a
-kitchen — Unsplash photo-1556912173-46c336c7fd55
-kitchen-white — Pexels 2724749
-white-house — Pexels 1115804
-fittings — Pexels 6419128, Anıl Karakaya
-copper — Pexels 3721272, Magda Ehlers
-bench — Pexels 39885416, Yudi Ding
-wall — Pexels 8488035, Kindel Media
-tile — Pexels 7601096, Curtis Adams
-acreage — carried from the previous demo media set (free-licence stock)
+hero — Pexels 20186042, Kevin Kleber. A farmhouse and outbuildings in a winter field, rural Ontario.
+house — Pexels 20186045, Kevin Kleber. A red farmhouse beside a frozen field, Caledonia, Ontario.
+shop — Pexels 15603042. A workshop parts shelf with fittings and pipe stock.
+heat — Pexels 34938439. A technician working inside a heating unit beside a storage tank.
+manifold — Pexels 7937299, Pavel Danilyuk. A hydronic heating manifold.
+hvac — Pexels 32497161, Kathleen Austin Kuhn. A technician at an outdoor heat-pump unit beside a house.
+rad — Pexels 29226620, Sergei Starostin. Hands fitting a radiator valve.
+fittings — Pexels 6419128, Anıl Karakaya. Hands on brass and steel pipe fittings.
+wall — Pexels 8488035, Kindel Media. Supply lines opened in a plaster wall.
+bench — Pexels 39885416, Yudi Ding. Copper pipe in a bench vise.
