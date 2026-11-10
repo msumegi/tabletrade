@@ -213,7 +213,8 @@ p { margin: 0 0 0.85rem; }
   text-transform: uppercase;
   color: var(--copper);
 }
-.hero .eyebrow { color: #e7b08a; }
+.hero .eyebrow,
+.page-hero .eyebrow { color: #e7b08a; }
 
 .lede { font-size: 1.08rem; max-width: 38rem; }
 .hero .lede { color: rgba(246, 243, 238, 0.92); }
@@ -265,7 +266,11 @@ p { margin: 0 0 0.85rem; }
 }
 .hero-shade {
   background:
-    linear-gradient(180deg, rgba(10, 12, 10, 0.2) 0%, rgba(10, 12, 10, 0.05) 34%, rgba(8, 10, 8, 0.78) 78%, rgba(8, 10, 8, 0.9) 100%);
+    linear-gradient(180deg, rgba(10, 12, 10, 0.22) 0%, rgba(10, 12, 10, 0.28) 28%, rgba(8, 10, 8, 0.74) 46%, rgba(8, 10, 8, 0.9) 62%, rgba(8, 10, 8, 0.94) 100%);
+}
+.page-hero .hero-shade {
+  background:
+    linear-gradient(180deg, rgba(10, 12, 10, 0.22) 0%, rgba(8, 10, 8, 0.42) 42%, rgba(8, 10, 8, 0.86) 56%, rgba(8, 10, 8, 0.92) 100%);
 }
 .hero-copy {
   position: relative;
