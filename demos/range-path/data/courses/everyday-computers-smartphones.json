@@ -529,5 +529,14 @@
     "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not a tech-support contract, and it is not legal, financial, or privacy advice. Screens and menus can look different on each device. Do not type real passwords into this course. Always check official help pages, or ask staff at your adult learning council, if you are unsure.",
     "builderNotes": "- Emphasise the disclaimer on every lesson footer. Do not collect real passwords, PINs, or Wi-Fi keys in the course.\n- Link out to Get Cyber Safe and Microsoft Support; do not paste long official passages.\n- Windows Wi-Fi steps differ slightly between Windows 10 and Windows 11 — both are described on the cited Microsoft page.\n- This is device basics, not a repeat of *Email & Online Safety Basics in Canada*. Keep scam content light and point to that course.\n- No Ed2Go / Cengage material. Canadian spelling (centre, practise as a verb, colour in our text). Microsoft buttons may say “Color.”\n- Not a tech-support contract.",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-computers.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a laptop and a phone."
   }
 }

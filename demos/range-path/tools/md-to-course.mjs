@@ -3,10 +3,13 @@
  * Convert a Range Path course markdown file into data/courses/<slug>.json.
  *
  * Usage:
- *   node tools/md-to-course.mjs path/to/course.md
+ *   node tools/md-to-course.mjs path/to/course.md --before email-online-safety --short "Short name" --nav "Nav"
+ *   node tools/build-pages.mjs
  *
- * The writer does not edit data/registry.json. Add the printed slug there,
- * then run tools/build-pages.mjs.
+ * Pass --before email-online-safety to place the course after the newer
+ * courses and before the original Email, SIN, and Winter courses. Pass
+ * --after <slug> when it belongs beside a particular course. Without either
+ * flag, the registry is left unchanged.
  */
 import fs from "fs";
 import path from "path";

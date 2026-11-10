@@ -501,5 +501,14 @@
     "sourceDisclaimer": "This course is general information only. It is not tax advice, accounting advice, audit advice, payroll advice, or a bookkeeping or software licence. It will not tell you whether you must register for GST/HST, which rate to charge, which expenses you may deduct, or how to file a return or claim a credit. Rules can change. For your own situation, use official CRA pages or speak with a qualified professional. The earlier course Bookkeeping Fundamentals in Canada covers what bookkeeping is and how long to keep records; this course focuses on invoices, expense documents, and GST/HST details on those papers.",
     "builderNotes": "- Do not repeat the bookkeeping course’s BDC definition of bookkeeping or its full receipt-field lesson. Point back instead.\n- Date-sensitive figures (re-check before a later rebuild): invoice information thresholds under $100 / $100–$499.99 / $500+; six-year retention; Registry rule that numbers appear on papers for taxable sales of $100 or more. These come from CRA pages opened 2026-11-10 and are not the same list as the income-tax receipt “business number when $100 or more before tax” rule.\n- Do not teach provincial GST/HST rates, place-of-supply examples as instructions, ITC calculation, expense deductibility, or software brands.\n- No Ed2Go / Cengage / QuickBooks help text. Canadian spelling (cheque, practise as a verb).",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-invoices.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an invoice with a total line."
   }
 }

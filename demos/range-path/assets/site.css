@@ -623,13 +623,13 @@ footer.site {
 
 @media (min-width: 800px) {
   .cards.cols-3 { grid-template-columns: 1fr 1fr; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stats { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
   main { padding-top: 1.75rem; }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1100px) {
   .matrix-head,
-  .matrix-row { grid-template-columns: 1.15fr 1fr 1fr 1fr; align-items: center; }
+  .matrix-row { grid-template-columns: 1.25fr repeat(4, 1fr); align-items: center; }
   .matrix-head {
     display: grid;
     background: transparent;

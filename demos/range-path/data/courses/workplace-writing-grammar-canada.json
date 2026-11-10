@@ -1,8 +1,8 @@
 {
   "slug": "workplace-writing-grammar-canada",
   "title": "Workplace Writing and Grammar (Canadian Spelling)",
-  "summary": "By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check a few Canadian word forms from fetched official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.",
-  "goals": "By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check a few Canadian word forms from fetched official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.",
+  "summary": "By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check common Canadian spellings (cheque, colour, centre, practise) on official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.",
+  "goals": "By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check common Canadian spellings (cheque, colour, centre, practise) on official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.",
   "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential.",
   "lessons": [
     {
@@ -85,11 +85,31 @@
     {
       "number": 2,
       "title": "Canadian spelling and word forms",
-      "html": "<p>The Canada.ca Content Style Guide says Government of Canada content must reflect <strong>Canadian writing conventions</strong> in English and French. It also says its techniques work together with <strong>Writing Tips Plus</strong>, a searchable Government of Canada tool for English grammar, punctuation, and writing conventions. If you are not sure how to spell a workplace word in Canadian English, look it up there rather than copying a spelling from another country.</p>\n<p>This course teaches only word forms we could open on official pages this session (November 2026). The Canada.ca Content Style Guide says:</p>\n<ul>\n<li><strong>its</strong> shows possession (belonging to it). <strong>it’s</strong> means <em>it is</em>. Do not mix them up.</li>\n<li><strong>they’re</strong> means <em>they are</em>. <strong>their</strong> shows possession.</li>\n<li>Write <strong>email</strong> (not <em>e-mail</em>), <strong>website</strong> (not <em>web site</em>), <strong>web page</strong> (not <em>webpage</em>), and <strong>online</strong> (not <em>on line</em>).</li>\n<li>Do <strong>not</strong> write a whole word in ALL CAPITAL LETTERS.</li>\n</ul>\n<p>Other Canadian-versus-American pairs (for example some <em>-our</em> or <em>-re</em> words) appear in Writing Tips Plus. Because some Language Portal pages could not be opened reliably from this writing session, those extra pairs are <strong>not</strong> taught as facts here. Look them up in Writing Tips Plus when you need them.</p>\n<p>A computer spell checker may suggest a U.S. spelling. If your workplace follows Canadian English, check the official tool.</p>",
+      "html": "<p>The Canada.ca Content Style Guide says Government of Canada content must reflect <strong>Canadian writing conventions</strong> in English and French. It also says its techniques work together with <strong>Writing Tips Plus</strong>, a searchable Government of Canada tool for English grammar, punctuation, and writing conventions. If you are not sure how to spell a workplace word in Canadian English, look it up there rather than copying a spelling from another country.</p>\n<p>This course teaches only word forms we could open on official pages this session (November 2026). The Canada.ca Content Style Guide says:</p>\n<ul>\n<li><strong>its</strong> shows possession (belonging to it). <strong>it’s</strong> means <em>it is</em>. Do not mix them up.</li>\n<li><strong>they’re</strong> means <em>they are</em>. <strong>their</strong> shows possession.</li>\n<li>Write <strong>email</strong> (not <em>e-mail</em>), <strong>website</strong> (not <em>web site</em>), <strong>web page</strong> (not <em>webpage</em>), and <strong>online</strong> (not <em>on line</em>).</li>\n<li>Do <strong>not</strong> write a whole word in ALL CAPITAL LETTERS.</li>\n</ul>\n<p><strong>Common Canadian spellings</strong> (from Writing Tips Plus, a Government of Canada tool, checked November 2026):</p>\n<ul>\n<li><strong>cheque</strong> is the Canadian spelling for the bank order. <em>Check</em> is the U.S. spelling.</li>\n<li><strong>practice</strong> (with a <em>c</em>) is the noun: &quot;hockey practice.&quot; <strong>practise</strong> (with an <em>s</em>) is the verb: &quot;I practise every day.&quot;</li>\n<li><strong>colour</strong>: Canadians generally prefer the <em>-our</em> ending in words like colour, not <em>-or</em> (color).</li>\n<li><strong>centre, fibre, theatre</strong>: Canadian spelling uses <em>-re</em> for these nouns. <em>Center, fiber, theater</em> are American.</li>\n<li><strong>metre</strong> is the unit of length. A <strong>meter</strong> is a measuring device.</li>\n</ul>\n<p>A computer spell checker may suggest a U.S. spelling. If your workplace follows Canadian English, check the official tool.</p>",
       "sources": [
         {
           "label": "Canada.ca Content Style Guide",
           "url": "https://design.canada.ca/style-guide/"
+        },
+        {
+          "label": "Writing Tips Plus, check/cheque",
+          "url": "https://our-languages.canada.ca/en/writing-tips-plus/check-cheque"
+        },
+        {
+          "label": "Writing Tips Plus, practice/practise",
+          "url": "https://our-languages.canada.ca/en/writing-tips-plus/practice-practise"
+        },
+        {
+          "label": "Writing Tips Plus, colour",
+          "url": "https://our-languages.canada.ca/en/writing-tips-plus/colour-colourful-coloration"
+        },
+        {
+          "label": "Writing Tips Plus, spelling, international variations",
+          "url": "https://our-languages.canada.ca/en/writing-tips-plus/spelling-international-variations"
+        },
+        {
+          "label": "Writing Tips Plus, spelling, SI/metric units",
+          "url": "https://our-languages.canada.ca/en/writing-tips-plus/spelling-si-metric-units"
         }
       ],
       "quiz": [
@@ -495,7 +515,16 @@
   },
   "keptBack": {
     "sourceDisclaimer": "This course is general information about clear workplace writing in Canadian English. It is not a diploma, professional editing credential, or official Translation Bureau certificate. It does not replace a conversation class (see Everyday and Work English Practice) and it does not teach Outlook buttons or email sending steps (see Microsoft Outlook and Workplace Email Habits).",
-    "builderNotes": "- Do not repeat the English-practice course’s listening/speaking drills or IRCC/LINC content.\n- Do not repeat Outlook Reply/Reply All/To/Cc/Bcc/signature steps.\n- Language Portal / Writing Tips Plus article URLs and the TERMIUM Plus Canadian Style page could not be verified as live HTTP 200 from this session (security-check or blocked fetch). Teach only spellings verified on the Canada.ca Content Style Guide, and point learners to Writing Tips Plus by name because that style guide names it. Re-try Language Portal URLs before a later rebuild.\n- No Ed2Go / commercial grammar curriculum. Canadian spelling in the course body follows the fetched official forms (email, website, it’s/its).\n- A later spelling section belongs in this same file. Add another object to the lessons array (title, html, sources, quiz), then run tools/build-pages.mjs. Do not split spelling into a second course file.",
+    "builderNotes": "- Do not repeat the English-practice course’s listening/speaking drills or IRCC/LINC content.\n- Do not repeat Outlook Reply/Reply All/To/Cc/Bcc/signature steps.\n- Canadian spelling pairs (cheque, practice/practise, colour, centre/fibre/theatre, metre/meter) were verified in a browser on 2026-11-10 on Writing Tips Plus (our-languages.canada.ca). Scripted fetches get a security check (HTTP 403), so re-check these in a browser before a rebuild.\n- No Ed2Go / commercial grammar curriculum. Canadian spelling in the course body follows the fetched official forms (email, website, it’s/its).",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-writing.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a note and a pencil."
   }
 }

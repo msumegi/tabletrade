@@ -521,5 +521,14 @@
     "sourceDisclaimer": "This course is general information about skills for learning, including online courses. It is not an accredited study-skills diploma, college credit, or a promise that you will pass another program. Study-time tips come from official Government of Canada and Alberta pages and may not match every workplace or school rule. Ask staff at your adult learning council if you want extra support.",
     "builderNotes": "- Do not invent Pomodoro timers, LMS jargon, or “learning style” theories. Alis Careerinsite “multiple intelligences” material was not used.\n- Dropped as the wrong fit for this short self-paced course: alis post-secondary “40+ hours a week” and “2 to 3 hours of study per class hour” figures.\n- Re-check Alberta Supports (1-877-644-9992) and Foundational Learning unit (1-800-222-6485) numbers if rebuilt.\n- No Ed2Go / Cengage study-skills text. Canadian spelling (practise as a verb).",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-learn.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an open notebook and a clock."
   }
 }

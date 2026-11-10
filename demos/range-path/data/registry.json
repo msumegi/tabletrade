@@ -26,12 +26,6 @@
       "featured": true
     },
     {
-      "slug": "how-to-learn-online",
-      "shortTitle": "Learn online",
-      "navLabel": "Learning",
-      "featured": true
-    },
-    {
       "slug": "outlook-workplace-email",
       "shortTitle": "Outlook email",
       "navLabel": "Outlook",
@@ -47,6 +41,12 @@
       "slug": "invoices-expenses-gst-canada",
       "shortTitle": "Invoices and GST",
       "navLabel": "Invoices",
+      "featured": true
+    },
+    {
+      "slug": "how-to-learn-online",
+      "shortTitle": "Learn online",
+      "navLabel": "Learning",
       "featured": true
     },
     {

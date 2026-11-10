@@ -596,5 +596,14 @@
     "sourceDisclaimer": "This course is general information about finding official grant and funding pages in Canada and reading them before you write. It is not a promise that you or your organization will receive money. It is not a grant-consultant credential, not legal, tax, or financial advice, and not a substitute for a program’s own guidelines. Grant amounts, deadlines, and rules change. Always check the live official page before you apply.",
     "builderNotes": "- Staff-and-volunteer track: label it so learners do not confuse it with foundational literacy.\n- Do not promise funding. Do not present this as a consultant credential.\n- CIP dollar amount ($75,000) and next deadline (February 15, 2027) were verified live on 2026-11-10 and date-stamped in Lesson 3. Do not put those figures in quiz answers; they go stale. Re-check https://www.alberta.ca/cip-project-grant before any rebuild.\n- CIP matching (“equal to or exceeding the amount requested”) and the 50% Government of Alberta funding cap are CIP rules, not universal Canadian grant rules.\n- Innovation Canada’s note that many business programs expect the applicant to contribute (and may typically award 20–30% of eligible costs) is a business-funding generalization. Do not apply it to CIP or to every community grant.\n- Do not teach CIP donated-labour hourly rates as a general rule; point learners to the live CIP page.\n- The Business Benefits Finder tool URL (`innovation.ised-isde.canada.ca/...`) did not return a usable page from this session’s writing tools (connection failure / HTTP 500). Learners are sent to the verified Innovation Canada homepage and the official how-to page instead. Do not cite `https://www.canada.ca/en/services/business/grants.html`; it redirected to that unreachable Finder address.\n- `https://www.canada.ca/en/services/business/start/support-financing.html` returned the live page on GET and WebFetch this session (title: “Getting business support and financing”); a HEAD request redirected to `canada.ca/errors/404.html`. Verify with GET before rebuilds.\n- Point to Grant Writing 101 and Front Office videos on Alberta.ca; do not copy webinar or sample-application content.\n- Point to the workplace-writing course for plain language; do not repeat Outlook button training.\n- No Ed2Go or Cengage grant-writing text.",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-grants.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a blank application form."
   }
 }

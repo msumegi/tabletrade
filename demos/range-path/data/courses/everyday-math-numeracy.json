@@ -513,5 +513,14 @@
     "sourceDisclaimer": "This course is general numeracy practice — using numbers in daily life and at work. It is not tax advice, lending advice, investment advice, or budgeting advice, and it is not a high-school or CAEC math credit. A later money-skills module may use more FCAC tools. This course will not tell you how to borrow, invest, file taxes, or build a personal budget.",
     "builderNotes": "- Do not teach how to build a budget, choose credit, or calculate income tax, even though some FCAC and self-assessment pages mention those topics.\n- Do not invent metric conversion factors that were not printed as numbers on the fetched pages.\n- Date-sensitive: Quebec-only mandatory unit pricing (Office of Consumer Affairs page opened 2026-11-10).\n- No Ed2Go anatomy/algebra sequence. Canadian spelling (litre, metre in unit names as used on the official pages).",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-math.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of two price tags."
   }
 }

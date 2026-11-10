@@ -43,16 +43,6 @@ window.RANGE_PATH = {
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice."
     },
     {
-      "id": "how-to-learn-online",
-      "title": "How to Learn Online (Skills for Learning)",
-      "shortTitle": "Learn online",
-      "navLabel": "Learning",
-      "lessons": 5,
-      "featured": true,
-      "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program."
-    },
-    {
       "id": "outlook-workplace-email",
       "title": "Microsoft Outlook and Workplace Email Habits",
       "shortTitle": "Outlook email",
@@ -81,6 +71,16 @@ window.RANGE_PATH = {
       "featured": true,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, software certification, or tax, accounting, payroll, or audit advice."
+    },
+    {
+      "id": "how-to-learn-online",
+      "title": "How to Learn Online (Skills for Learning)",
+      "shortTitle": "Learn online",
+      "navLabel": "Learning",
+      "lessons": 5,
+      "featured": true,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program."
     },
     {
       "id": "everyday-work-english",

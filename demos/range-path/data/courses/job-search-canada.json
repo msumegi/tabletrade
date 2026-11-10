@@ -513,5 +513,14 @@
     "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not a promise of a job, licensed career counselling, or legal, immigration, or Employment Insurance (EI) advice. Job postings and tools change. Always follow the official Job Bank, Alberta, or employer instructions for your situation, and ask staff at your adult learning council if you want extra help.",
     "builderNotes": "- Emphasise the disclaimer on every lesson footer. Do not collect SINs, dates of birth, or resumes in the course.\n- Job Bank account rules and Resume Builder templates can change — re-check the cited pages before a later rebuild.\n- Do not mix Alberta Public Service application-length tips with general alis resume advice.\n- No immigration or EI advice; point unsettled status questions to official pages or settlement/council staff.\n- No Ed2Go / Cengage material. Canadian spelling (practise as a verb, centre). Job Bank uses “resume”; alis often uses “resumé.”",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-jobs.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a short list of jobs."
   }
 }

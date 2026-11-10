@@ -308,7 +308,7 @@
     {
       "number": 5,
       "title": "GST/HST records, and when to get help",
-      "html": "<p><strong>GST</strong> and <strong>HST</strong> are sales taxes administered by the CRA. Some businesses must register, collect the tax, and file GST/HST returns. <strong>This course will not tell you whether you must register or how to file.</strong> Those decisions depend on your situation. Use the official GST/HST pages on Canada.ca or ask a qualified professional.</p>\n<p>If GST/HST records apply to you, the CRA says you must keep records that support your returns and claims. Those records include <strong>sales and purchase invoices</strong> and other records related to your business operations and the GST/HST. If you file electronically, also keep your working copies of returns. You do not have to send receipts in with an electronic GST/HST filing, but you must keep them in case the CRA asks to see them.</p>\n<p>Usually you must keep those records for <strong>six years</strong> from the end of the year they relate to (CRA page checked November 2026).</p>\n<p>A later Range Path course in the catalogue plan looks more closely at invoices, expenses, and GST records. For now, remember:</p>\n<ul>\n<li>write things down when they happen</li>\n<li>keep proof (invoices, receipts, bank records)</li>\n<li>store them safely for the period the CRA describes</li>\n<li>ask for help before you guess</li>\n</ul>\n<p>Help can mean your adult learning council (for a referral), a bookkeeper or accountant, or the CRA’s own pages and enquiry lines listed on Canada.ca. Guessing on a tax form is not a good substitute for official advice.</p>",
+      "html": "<p><strong>GST</strong> and <strong>HST</strong> are sales taxes administered by the CRA. Some businesses must register, collect the tax, and file GST/HST returns. <strong>This course will not tell you whether you must register or how to file.</strong> Those decisions depend on your situation. Use the official GST/HST pages on Canada.ca or ask a qualified professional.</p>\n<p>If GST/HST records apply to you, the CRA says you must keep records that support your returns and claims. Those records include <strong>sales and purchase invoices</strong> and other records related to your business operations and the GST/HST. If you file electronically, also keep your working copies of returns. You do not have to send receipts in with an electronic GST/HST filing, but you must keep them in case the CRA asks to see them.</p>\n<p>Usually you must keep those records for <strong>six years</strong> from the end of the year they relate to (CRA page checked November 2026).</p>\n<p>The course <a href=\"../../invoices-expenses-gst-canada/\">Invoices, Expenses and GST Records (Canada)</a> looks more closely at invoices, expenses, and GST records. For now, remember:</p>\n<ul>\n<li>write things down when they happen</li>\n<li>keep proof (invoices, receipts, bank records)</li>\n<li>store them safely for the period the CRA describes</li>\n<li>ask for help before you guess</li>\n</ul>\n<p>Help can mean your adult learning council (for a referral), a bookkeeper or accountant, or the CRA’s own pages and enquiry lines listed on Canada.ca. Guessing on a tax form is not a good substitute for official advice.</p>",
       "sources": [
         {
           "label": "GST/HST records to keep — CRA",
@@ -501,5 +501,14 @@
     "sourceDisclaimer": "This course is general information only. It is not tax advice, accounting advice, audit advice, payroll advice, or a bookkeeping licence. It will not tell you how to file a return, whether you must register for GST/HST, or which expenses you may deduct. Rules can change. For your own situation, use official CRA pages or speak with a qualified professional. Range Path does not keep your books or file taxes for you.",
     "builderNotes": "- Emphasise the strong tax-advice disclaimer on every lesson footer.\n- Date-sensitive figures to re-check: six-year retention; $100 (before tax) business-number detail on receipts (both from CRA pages opened 2026-11-10).\n- Do not invent a GST/HST registration threshold; that was not taught here.\n- Software-agnostic: no QuickBooks/Sage/Wave certification claims.\n- No Ed2Go / Cengage material. Canadian spelling (cheque, practise as a verb).",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-books.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an open ledger."
   }
 }

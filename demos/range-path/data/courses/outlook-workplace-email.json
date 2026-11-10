@@ -501,5 +501,14 @@
     "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or legal advice. Outlook menus can look different in classic Outlook, new Outlook, web, or mobile. Do not type real workplace passwords into this course. For scam messages, see also Email & Online Safety Basics in Canada.",
     "builderNotes": "- Emphasise the disclaimer on every lesson footer. Do not collect real passwords or workplace mail.\n- Outlook UI differs across classic, new, web, and mobile — the lessons note that.\n- Keep scam content light and point to the existing email-safety PoC.\n- Not MOS / not college credit. No Ed2Go / Cengage material.\n- Re-check Microsoft Support URLs if a later rebuild finds a redirect change.",
     "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-outlook.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an envelope and a message."
   }
 }
