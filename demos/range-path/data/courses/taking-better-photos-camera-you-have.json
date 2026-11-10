@@ -1,0 +1,498 @@
+{
+  "slug": "taking-better-photos-camera-you-have",
+  "title": "Taking Better Photos with the Camera You Have",
+  "summary": "By the end, learners can name a clear subject, use the rule of thirds, look for symmetry and new angles, use softer natural light when they can, and follow Parks Canada’s wildlife-distance and no-drone rules — using the camera or phone they already have.",
+  "goals": "By the end, learners can name a clear subject, use the rule of thirds, look for symmetry and new angles, use softer natural light when they can, and follow Parks Canada’s wildlife-distance and no-drone rules — using the camera or phone they already have.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional photography licence, or an endorsement of any camera or phone brand.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Decide what the photo is about",
+      "html": "<p>You do not need a new camera to take a better photo. Parks Canada says you can capture strong wildlife photos from a safe distance with gear such as binoculars or a telephoto lens, <strong>or even your phone</strong>. This course uses the camera you already have, including a phone. It does not tell you which brand to buy.</p>\n<p>Parks Canada’s first tip is: <strong>identify your subject</strong>. Focus on what you want to highlight — a mountain peak, a bird, an historic site, or something closer to home, such as a person at a community table, a handmade sign, or a garden — and make it the star of the shot.</p>\n<p>Before you press the button, pause and ask: “What is this photo about?” If you cannot answer in one short sentence, the picture may have too many things competing for attention.</p>\n<p>Move closer only when it is safe and respectful to do so, or crop with your feet by taking a step to the side so the main thing fills more of the frame. Parks Canada’s video about these tips says to identify your subject <strong>and make it stand out</strong>.</p>\n<p>Practise with three photos of the same scene. In the first, include everything around you. In the second, choose one subject and make it clearer. In the third, try again. Compare them on your screen. The “better” photo is often the one where a viewer can tell right away what you wanted them to see.</p>\n<p>This habit works at a national park, at the hall, or in your yard.</p>",
+      "sources": [
+        {
+          "label": "Photography tips with Parks Canada",
+          "url": "https://parks.canada.ca/voyage-travel/conseils-tips/trucs-photo-tips"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Parks Canada’s first tip is to identify your subject and make it the star of the shot.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course says you must buy a new camera brand to improve.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Parks Canada notes that you can take photos with your phone from a safe distance.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A photo is often clearer when a viewer can tell what you wanted them to see.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Use the rule of thirds",
+      "html": "<p>Parks Canada’s second tip is to use the <strong>rule of thirds</strong>. Divide your image into thirds to create a balanced composition.</p>\n<p>Imagine two lines across the picture and two lines down it, like a tic-tac-toe board. You now have nine smaller rectangles and four places where the lines cross. Parks Canada’s photo-tips video says to compose with the rule of thirds <strong>and on their intersections</strong>. That means the important thing in the photo does not always have to sit dead-centre. It can sit along a line, or where two lines meet.</p>\n<p>On many phones you can turn on a grid in the camera settings so you can see those lines while you shoot. If your camera has no grid, imagine the lines before you take the picture.</p>\n<p>Try this: photograph a person, a doorway, or a tree. First put the subject in the exact middle. Then move the camera so the subject sits on a left or right third, or on an intersection. Compare the two photos. Neither is “wrong,” but the off-centre version often feels more balanced, which is what Parks Canada is pointing to.</p>\n<p>The rule of thirds is a guide, not a law. If a circular fountain or a face looks best in the centre, you may keep it there. The skill is to choose on purpose, not by accident.</p>\n<p>Practise ten photos this week using the grid. You are training your eye, not buying new equipment.</p>",
+      "sources": [
+        {
+          "label": "Photography tips with Parks Canada",
+          "url": "https://parks.canada.ca/voyage-travel/conseils-tips/trucs-photo-tips"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The rule of thirds means dividing the image into thirds to help balance the composition.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Parks Canada’s video also mentions placing important parts on the intersections of those lines.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Every photo must put the subject in the exact centre.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "You need a professional camera before you can try the rule of thirds.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Look for symmetry and try a new angle",
+      "html": "<p>Parks Canada’s third tip is to look for <strong>natural symmetry</strong>. Nature is full of it — reflections in lakes, rows of trees, or mountain ridges. You can use those shapes to make a stronger picture.</p>\n<p>You can practise the same idea close to home. A puddle after rain, a window reflection, a row of chairs, or two matching doorways can give you that balanced, repeated shape. Stand still until the reflection or the row is clear, then take the photo.</p>\n<p>The fourth tip is to <strong>try new perspectives</strong>. Change your angle. Parks Canada suggests shooting from ground level or looking through natural frames such as branches or arches. The video shows pictures taken close to the ground or close to the water.</p>\n<p>You do not need a special lens to change your point of view. Bend your knees. Hold the phone lower. Step to one side. Look through a doorway or a window so the opening frames your subject. Then take the same scene from standing height and compare.</p>\n<p>Be safe while you do this. Do not lie in a roadway, lean over a drop, or step onto ice to “get the shot.” A new angle should still be a safe place to stand.</p>\n<p>Take two versions of one subject today: one from your usual standing height, and one from a clearly different angle. Keep the one where the subject is easier to read.</p>",
+      "sources": [
+        {
+          "label": "Photography tips with Parks Canada",
+          "url": "https://parks.canada.ca/voyage-travel/conseils-tips/trucs-photo-tips"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Reflections in lakes and rows of trees are examples of natural symmetry on the Parks Canada page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Trying a new perspective can mean shooting from ground level or through a natural frame.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should put yourself in danger to find a better angle.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Changing your angle requires buying a new lens.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Use natural light when you can",
+      "html": "<p>Parks Canada’s fifth tip is to <strong>use natural light</strong>. Early morning and late afternoon light — called the <strong>golden hours</strong> on that page — add warmth and depth to your photos. Avoid harsh midday sun when you can.</p>\n<p>You do not control the sun, but you can choose when and where you stand. If a face looks harshly lit at noon, turn the person so the sun is not straight in their eyes, or wait for a bit of shade, or try again later in the day. If you are photographing a building or a field, the same scene often looks softer near the beginning or end of the day.</p>\n<p>Parks Canada’s video says to use natural light conditions to your advantage. That includes noticing what the light is doing: is it coming from the side, from behind you, or from behind your subject? Side light can show shape. Light straight from above at midday can make strong, unflattering shadows.</p>\n<p>You do not need extra lights or a studio for this course. A window on a cloudy day can be gentle indoor light for a photo of an object on a table. Step nearer to the window rather than turning on a mixed set of lamps if the colours look odd — and if that still does not work, try again at a different time.</p>\n<p>Practise by photographing the same outdoor subject twice: once near the middle of the day and once in the early morning or late afternoon. Compare which version feels warmer and easier to look at.</p>",
+      "sources": [
+        {
+          "label": "Photography tips with Parks Canada",
+          "url": "https://parks.canada.ca/voyage-travel/conseils-tips/trucs-photo-tips"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Parks Canada calls early morning and late afternoon light the golden hours.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The official tip says to avoid harsh midday sun when possible.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course requires you to buy studio lights.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The same scene can look different at noon and in late afternoon.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Stay safe and follow the rules",
+      "html": "<p>A good photo is never worth harm to you, to wildlife, or to a protected place. Parks Canada asks you to capture moments safely, respectfully, and sustainably.</p>\n<p>When you photograph animals, give them space. Parks Canada says that being discreet and respectful helps wildlife survive and keeps you safer. As of 10 November 2026 (America/Regina), the page said:</p>\n<ul>\n<li>Never take photos of people or selfies with wildlife in the background.</li>\n<li>Stay at least <strong>30 metres</strong> (about 3 bus lengths) from large animals such as deer, moose, and elk.</li>\n<li>Stay at least <strong>100 metres</strong> (about 10 bus lengths) from bears, wolves, coyotes, and cougars.</li>\n<li>Do not approach wildlife or dens, and do not let wildlife approach you. If your presence causes them to move, you are too close.</li>\n</ul>\n<p>You can still take the photo from that safe distance, including with your phone.</p>\n<p><strong>Drones are prohibited</strong> in all Parks Canada locations. They can disturb wildlife and create a risk of injury.</p>\n<p>Each Parks Canada location may have its own photography guidelines. Commercial filming and photography need business licensing and permits. Before you visit, check that destination’s website and follow the rules that protect the place.</p>\n<p>These safety ideas also travel: do not startle farm animals, and do not step into traffic for a picture. This course is not a permit to film for money, and it is not a brand advertisement. Use the camera you have, keep people and animals safe, and enjoy the practice.</p>",
+      "sources": [
+        {
+          "label": "Photography tips with Parks Canada",
+          "url": "https://parks.canada.ca/voyage-travel/conseils-tips/trucs-photo-tips"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Parks Canada says you should never take photos of people or selfies with wildlife in the background.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If an animal moves because you are there, you are too close.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Drones are allowed in all Parks Canada locations as long as you are careful.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a commercial filming permit.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have.",
+    "questions": [
+      {
+        "prompt": "This course says you must buy a certain camera brand.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      },
+      {
+        "prompt": "Parks Canada’s first tip is to identify your subject and make it the star.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      },
+      {
+        "prompt": "The rule of thirds means dividing the image to help balance the composition.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      },
+      {
+        "prompt": "Trying a new perspective can mean changing your angle, such as shooting from ground level.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      },
+      {
+        "prompt": "Early morning and late afternoon light are called the golden hours on the Parks Canada page.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      },
+      {
+        "prompt": "Drones are prohibited in all Parks Canada locations.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      },
+      {
+        "prompt": "You should take selfies with wildlife in the background if the animal looks calm.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Choose a clear subject, try the rule of thirds, look for symmetry and new angles, use softer natural light when you can, and follow Parks Canada’s distance and no-drone rules. Use the camera you already have."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about taking clearer photos, based on official Parks Canada photography tips. It is not a photography licence or a product endorsement. It does not recommend a camera brand, a phone brand, or extra gear you must buy. Parks rules can differ by location and can change. Check the live page for the place you are visiting.",
+    "builderNotes": "- Official source is Parks Canada’s photography tips page, verified live on 10 November 2026 (America/Regina). No brand pitches. Phone is explicitly allowed on that page.\n- Wildlife distances (30 m / 100 m) and the drone ban were date-stamped. Re-check https://parks.canada.ca/voyage-travel/conseils-tips/trucs-photo-tips before rebuilds. Do not put the metre figures in a quiz item that must never be updated.\n- Do not teach aperture, shutter speed, or ISO; those were not on the Parks page (a Canadian Conservation Institute museum-object page exists but was not used).\n- Do not invent copyright or model-release law.\n- Canadian spelling: *metre*, *practise* (verb), *colour*.\n- No Ed2Go SLR/mirrorless text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-taking-better-photos-camera-you-have.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a camera."
+  }
+}

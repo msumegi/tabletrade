@@ -1,0 +1,510 @@
+{
+  "slug": "excel-next-steps-canada",
+  "title": "Excel Next Steps (Tables, Charts, and Simple Functions)",
+  "summary": "By the end, learners can turn a list into an Excel table, sort or filter with the header arrows, create a chart from selected data, and use AVERAGE, MIN, MAX, and COUNT — without treating this course as a MOS exam or a repeat of Excel basics.",
+  "goals": "By the end, learners can turn a list into an Excel table, sort or filter with the header arrows, create a chart from selected data, and use AVERAGE, MIN, MAX, and COUNT — without treating this course as a MOS exam or a repeat of Excel basics.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is an Excel table?",
+      "html": "<p>The Excel basics course showed you cells, simple formulas, AutoSum (<strong>SUM</strong>), and how to save. This course adds three next steps: <strong>tables</strong>, <strong>charts</strong>, and a few more <strong>functions</strong>.</p>\n<p>Microsoft says that to make managing and analyzing a group of related data easier, you can turn a range of cells into an <strong>Excel table</strong> (once also called an Excel list). Do not confuse this with the separate “data tables” used for what-if analysis. This course uses the everyday table you create from a list.</p>\n<p>A table can include:</p>\n<ul>\n<li>A <strong>header row</strong>. By default a table has one. Each column header has filtering turned on so you can filter or sort quickly.</li>\n<li><strong>Banded rows</strong> (alternate shading) to help you see the lines.</li>\n<li>A <strong>total row</strong> you can add later, with a drop-down list of functions such as SUM and AVERAGE.</li>\n<li>A <strong>sizing handle</strong> in the lower-right corner so you can drag the table larger.</li>\n</ul>\n<p>You can create more than one table on a sheet. Use a clear header row, such as Item, Quantity, and Amount, and sample numbers only.</p>\n<p>This is not tax or bookkeeping advice. Keep real payroll or client files out of class practise.</p>",
+      "sources": [
+        {
+          "label": "Overview of Excel tables — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/overview-of-excel-tables"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Microsoft says an Excel table helps you manage a group of related data.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "By default, a table header row has filtering so you can sort or filter quickly.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course repeats how to open Excel and type in cell A1.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a MOS exam.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Create a table",
+      "html": "<p>First type a small list with a header row, the way you already can from Excel basics. Then turn that list into a table.</p>\n<p>Microsoft’s steps to create a table quickly:</p>\n<ol>\n<li>Select the cell or the range that holds your data.</li>\n<li>Select <strong>Home</strong> &gt; <strong>Format as Table</strong>.</li>\n<li>Pick a table style.</li>\n<li>In the Format as Table dialog box, select the checkbox <strong>My table as headers</strong> if you want the first row to be the header row, then click <strong>OK</strong>.</li>\n</ol>\n<p>After you click OK, Excel formats the range as a table. You should see header arrows and, usually, banded rows.</p>\n<p>If your first row is labels such as Item and Amount, keep <strong>My table as headers</strong> selected so those words stay labels, not data. If you forget, the first row of numbers may be treated as a header.</p>\n<p>Practise with sample rows only — for example, a pretend list of hall-rental supplies. Do not use another person’s private spreadsheet.</p>\n<p>If you cannot find Format as Table, look on the Home tab. Some versions also let you create a table from the Insert tab; this lesson follows Microsoft’s Home &gt; Format as Table steps.</p>\n<p>You do not need SharePoint, structured reference names, or data validation for this course.</p>",
+      "sources": [
+        {
+          "label": "Overview of Excel tables — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/overview-of-excel-tables"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Microsoft’s quick steps start with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Home, then Format as Table"
+            },
+            {
+              "id": "B",
+              "text": "File, then Delete"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Select “My table as headers” when the first row contains column labels.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should practise on someone else’s private client list.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A table can have a header row and banded rows.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Sort, filter, and a total row",
+      "html": "<p>Once your list is a table, you can work with it faster.</p>\n<p>Microsoft says every table column has filtering enabled in the header row so you can <strong>filter</strong> or <strong>sort</strong> quickly. Click the small arrow on a header.</p>\n<ul>\n<li><strong>Sort</strong> changes the order, such as A to Z or smallest to largest.</li>\n<li><strong>Filter</strong> hides rows that do not match what you chose, such as showing only one item name.</li>\n</ul>\n<p>The hidden rows are still in the file. Clearing the filter brings them back. Try this on sample data so you can see the difference.</p>\n<p>You can also add a <strong>total row</strong>. Microsoft says that once you add a total row, Excel gives you an AutoSum drop-down list with functions such as <strong>SUM</strong> and <strong>AVERAGE</strong>. When you pick one, the table converts it to a <strong>SUBTOTAL</strong> function that, by default, ignores rows hidden by a filter.</p>\n<p>You already used SUM in Excel basics. Here, the useful new idea is that the total row can show an average as well as a sum, and that a filtered table’s total can ignore hidden rows.</p>\n<p>You do not need to write the SUBTOTAL formula by hand for this lesson. Use the drop-down on the total row.</p>\n<p>If you resize the table, Microsoft describes a sizing handle in the lower-right corner.</p>",
+      "sources": [
+        {
+          "label": "Overview of Excel tables — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/overview-of-excel-tables"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Table headers include arrows so you can sort or filter.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Filtering hides rows that do not match your choice; the data is still in the file.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A total row can use functions such as SUM and AVERAGE.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You must type the word SUBTOTAL yourself to use a total row.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Make a chart from your data",
+      "html": "<p>Microsoft says charts help you visualize data in a way that can have a clear impact. A chart turns numbers into a picture, such as columns or slices, so a group can see a pattern faster than by reading every cell.</p>\n<p><strong>To create a chart</strong> (Microsoft’s Windows steps):</p>\n<ol>\n<li>Select the data for the chart, including the header labels if you have them.</li>\n<li>Select <strong>Insert</strong> &gt; <strong>Recommended Charts</strong>.</li>\n<li>Select a chart on the Recommended Charts tab to preview it.</li>\n<li>If you do not see one you like, select the <strong>All Charts</strong> tab to see more types.</li>\n<li>Select a chart, then select <strong>OK</strong>.</li>\n</ol>\n<p>Microsoft notes that you can also select data and press <strong>Alt+F1</strong> to create a chart right away, but it might not be the best type for your data. Recommended Charts is the safer first choice.</p>\n<p>Keep the chart simple. One small table of sample categories and amounts is enough. After the chart appears, you can click it and add a title if your version shows that option. You do not need trendlines, 3-D pie effects, or advanced formatting for this course.</p>\n<p>If the numbers in the table change, many charts update when the selected data changes. Check that you selected the right cells before you insert the chart.</p>\n<p>This lesson is not a statistics class and not financial advice.</p>",
+      "sources": [
+        {
+          "label": "Create a chart from start to finish — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/get-started/create-a-chart-from-start-to-finish"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To create a chart, Microsoft’s Windows steps include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Select the data, then Insert, then Recommended Charts"
+            },
+            {
+              "id": "B",
+              "text": "File, then Close, then guess"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Recommended Charts lets you preview a chart before you click OK.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson requires you to add a trendline.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Charts can help people see a pattern in numbers.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "AVERAGE, MIN, MAX, and COUNT",
+      "html": "<p>You already know that a formula starts with <strong>=</strong> and that <strong>SUM</strong> adds numbers. These four functions answer other everyday questions.</p>\n<p><strong>AVERAGE</strong> returns the average (the arithmetic mean) of its arguments. Microsoft’s example: if A1:A20 contains numbers, <code>=AVERAGE(A1:A20)</code> returns the average of those numbers. You can also use a shorter range, such as <code>=AVERAGE(B2:B6)</code>.</p>\n<p><strong>MIN</strong> returns the smallest number in a set of values. Example: <code>=MIN(B2:B6)</code>.</p>\n<p><strong>MAX</strong> returns the largest value in a set of values. Example: <code>=MAX(B2:B6)</code>.</p>\n<p><strong>COUNT</strong> counts how many cells contain numbers. Microsoft’s example: <code>=COUNT(A1:A20)</code>. Empty cells and most text are not counted. If you need to count text as well, Microsoft points to other functions such as COUNTA; this lesson stays with COUNT.</p>\n<p>Type the formula in an empty cell next to or below your sample list, then press Enter. If the result looks wrong, click the cell and check the range in the formula bar.</p>\n<p>You can use the same functions on a total row (Lesson 3) or by typing them yourself. Use sample volunteer hours or supply amounts — not real payroll.</p>\n<p>This course still does not file taxes or choose a bookkeeping system.</p>",
+      "sources": [
+        {
+          "label": "AVERAGE function — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/functions/average-function"
+        },
+        {
+          "label": "MIN function — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/functions/min-function"
+        },
+        {
+          "label": "MAX function — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/functions/max-function"
+        },
+        {
+          "label": "COUNT function — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/excel/functions/count-function"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "=AVERAGE(B2:B6) returns:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The average of the numbers in B2 through B6"
+            },
+            {
+              "id": "B",
+              "text": "The name of the file"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "MIN returns the smallest number in a set of values.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "MAX returns the largest value in a set of values.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "COUNT counts cells that contain numbers.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential.",
+    "questions": [
+      {
+        "prompt": "An Excel table is a formatted range that can include a header row with filter arrows.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "You create a table with Home, then Format as Table.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "You can sort or filter a table from the header arrows.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "Insert > Recommended Charts is a way to create a chart from selected data.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "AVERAGE returns the average of the numbers you point to.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "COUNT counts cells that contain numbers.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "This course is a MOS exam and a repeat of Excel basics.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Turn a list into a table, chart the numbers, and try AVERAGE, MIN, MAX, and COUNT. Completion only — not a Microsoft credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about Excel tables, charts, and a few extra functions. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or tax, payroll, bookkeeping, or financial advice. It does not repeat the Excel basics course (cells, typing data, simple formatting, formulas that start with =, AutoSum, and saving). Menus can look a little different in Windows, Mac, or Excel for the web. Practise on sample data — not on someone else’s private files.",
+    "builderNotes": "- Do not repeat Excel basics: opening a workbook, typing in cells, basic formatting, `=B2+B3`, AutoSum as the main topic, or save/print as a lesson.\n- Dropped: SharePoint export; what-if data tables; structured references in depth; data validation; trendlines and the full chart-type catalogue; COUNTA/COUNTIF except a one-line pointer; Alt+F1 as the recommended method.\n- Function pages verified live (curl GET 200) at the `/excel/functions/` URLs cited above.\n- No Ed2Go Excel text. Not MOS. Not financial advice.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-excel-next-steps-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a grid and a rising line."
+  }
+}

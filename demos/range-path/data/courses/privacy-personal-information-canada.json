@@ -1,0 +1,510 @@
+{
+  "slug": "privacy-personal-information-canada",
+  "title": "Privacy and Your Personal Information in Canada",
+  "summary": "By the end, learners can say what personal information is under PIPEDA, name key rights such as consent, limited collection, access, and correction, make a written access request in plain steps, raise a concern with an organization and, if needed, complain to the OPC, and know when Alberta’s PIPA and the provincial commissioner may apply instead — without treating this as legal advice, and without repeating email-scam or AI-chatbot lessons.",
+  "goals": "By the end, learners can say what personal information is under PIPEDA, name key rights such as consent, limited collection, access, and correction, make a written access request in plain steps, raise a concern with an organization and, if needed, complain to the OPC, and know when Alberta’s PIPA and the provincial commissioner may apply instead — without treating this as legal advice, and without repeating email-scam or AI-chatbot lessons.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, privacy-officer licence, or legal advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What PIPEDA protects",
+      "html": "<p>When you do business with a company, you do more than pay for a product or service. The Office of the Privacy Commissioner of Canada (OPC) says you may also leave a trail of personal information — for example your name, address, credit card number, and spending habits.</p>\n<p>Sharing that information does not mean giving up control over it. Privacy laws in Canada give you a meaningful say in how your personal data is collected, used, and disclosed.</p>\n<p>Canada’s federal private-sector privacy law is the <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong>. It sets the ground rules for handling personal information in the course of commercial activities. It applies to small and big businesses, whether they operate from a building or only online.</p>\n<p>PIPEDA applies to private enterprises across Canada, except in provinces that have adopted substantially similar privacy legislation, namely Québec, British Columbia, and <strong>Alberta</strong>. Even in those provinces, PIPEDA still applies to federally regulated organizations such as radio and television stations, airports and airlines, railways, and telecommunication companies. It also applies to personal data that flows across provincial or national borders in commercial transactions covered by the Act.</p>\n<p>PIPEDA protects information about an identifiable individual. Official examples include your name, e-mail address, age, medical records, income, banking information, credit or debit card data, and your Social Insurance Number or other identification numbers.</p>\n<p>This course is not legal advice. It does not teach scam emails, passwords, or how to use an AI chatbot. It explains your privacy rights when a business holds information about you.</p>",
+      "sources": [
+        {
+          "label": "Businesses and your personal information (OPC)",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/businesses-and-your-personal-information/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "PIPEDA is Canada’s federal private-sector privacy law for commercial activities.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Personal information under PIPEDA is information about an identifiable individual.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is legal advice from a lawyer.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Even in Alberta, PIPEDA still applies to some federally regulated organizations, such as airlines and telecommunication companies.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Your rights when a business has your information",
+      "html": "<p>PIPEDA requires private-sector organizations to collect, use, or disclose your personal information by fair and lawful means, with your consent, and only for stated, reasonable purposes.</p>\n<p>An organization may only collect personal information that is essential to the business transaction. If it asks for more, you are entitled to ask why and to decline it if you are not satisfied with the answer. The OPC says you should still be able to complete the transaction even if you refuse extra information that is not warranted.</p>\n<p>Organizations must protect your personal information with appropriate security measures and destroy it when it is no longer needed for the original purposes. You have the right to expect the information they hold about you to be accurate, complete, and up to date. That means you have a right to see it, and to ask for corrections if they got it wrong.</p>\n<p>PIPEDA is built on 10 fair information principles. In plain language, organizations should:</p>\n<ul>\n<li>appoint someone responsible for privacy and make their privacy policies available</li>\n<li>say why they are collecting your information, at or before the time they collect it</li>\n<li>inform you clearly and obtain consent</li>\n<li>collect only what is necessary</li>\n<li>use, share, and keep it only as needed for that purpose, unless you consent otherwise</li>\n<li>keep it accurate</li>\n<li>safeguard it against loss or theft</li>\n<li>make their privacy practices easy to find</li>\n<li>give you access to your information</li>\n<li>offer a simple way to complain</li>\n</ul>\n<p>There are exceptions. For example, police who show they need information for an investigation or during an emergency may not have to obtain consent. PIPEDA also does not apply to an employee’s name, title, and business contact details used only to communicate about their work, or to information used solely for personal, journalistic, artistic, or literary purposes.</p>",
+      "sources": [
+        {
+          "label": "Businesses and your personal information (OPC)",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/businesses-and-your-personal-information/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Under PIPEDA, a business should collect, use, or disclose your personal information with your consent and only for stated, reasonable purposes.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You may ask why extra information is requested and decline it if you are not satisfied with the answer.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You have a right to see the personal information a business holds about you and to ask for corrections if it is wrong.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A business may collect as much extra personal information as it likes, with no need to explain why.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Ask to see your personal information",
+      "html": "<p>PIPEDA gives people a right to access personal information businesses subject to the law hold about them. The OPC says you need to put your request <strong>in writing</strong>.</p>\n<p>Send the request to the address the organization has designated for access requests or privacy issues, if there is one. That address is often in a privacy policy in the website footer. Ask for the privacy officer or the person responsible for privacy compliance.</p>\n<p>Be clear and specific. Describe the information you want. A narrower request — for example, a topic or a date range — can lead to a quicker response. Include details so they can identify your records, such as your name, address, and an account number if you have one.</p>\n<p>It should cost little or nothing. An organization may charge only a minimal fee if it has told you the approximate cost up front and you agree to proceed.</p>\n<p>The organization is supposed to give you access within <strong>30 calendar days</strong>, or tell you within 30 days that it does not have the information. In some cases it may extend the time by up to 30 more days — for example if the deadline would unreasonably interfere with its activities, or it needs time for consultations. It must advise you of the delay within the first 30 days and explain why.</p>\n<p>If you find a factual error or omission, you may request a correction. You typically need to provide some evidence. If you cannot agree on a change, you have the right to have your concerns recorded.</p>\n<p>Ordinarily you may only request information about yourself. A company can deny access in some circumstances set out in law. If you feel it is withholding more than it should, try to resolve that with the organization first. You may then complain to the OPC.</p>",
+      "sources": [
+        {
+          "label": "Accessing your personal information – businesses (OPC)",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/accessing-personal-information/api_bus/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Under PIPEDA, you need to make an access request in writing.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An organization is generally supposed to respond within 30 calendar days.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An organization may charge any fee it likes without telling you the cost first.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "If you find a factual error, you may request a correction.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Raise a concern and complain if you need to",
+      "html": "<p>If you have concerns about how a business has handled your personal information, the OPC says your first step should generally be to raise the concern directly with the organization. In many cases you may be able to resolve the issue quickly.</p>\n<p>Contact the privacy officer at the business. Businesses should take your concerns seriously and work with you to resolve them. Always try this step before you report a concern to the OPC or another privacy office. If you skip it, the OPC may not be able to accept your complaint.</p>\n<p>If you have spoken with the organization and you are not satisfied, you have the right to file a complaint with the Office of the Privacy Commissioner of Canada.</p>\n<p>You do not need to hire a consultant or lawyer to help you file a complaint. As of 10 November 2026 (America/Regina), the OPC said that if you have questions about your privacy rights or the complaints process, you can contact its Information Officers by calling <strong>1-800-282-1376</strong>. Review the live “Guide to the PIPEDA complaint process” on the OPC website before you lodge a complaint.</p>\n<p>A complaint about a business is not the same as a concern about a government office. Federal government institutions have Access to Information and Privacy (ATIP) co-ordinators. A concern about a provincial, territorial, or municipal government does not fall under the OPC’s mandate. Those governments have their own privacy officers. The OPC’s complaint tool can help you find the right office.</p>\n<p>This course cannot decide your case. It is general information only.</p>",
+      "sources": [
+        {
+          "label": "Businesses and your personal information (OPC)",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/businesses-and-your-personal-information/"
+        },
+        {
+          "label": "How to raise your privacy concern with an organization (OPC)",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/raise-privacy-concern/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You should generally try to resolve a privacy concern with the organization before complaining to the OPC.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If that does not resolve the issue, you may file a complaint with the Office of the Privacy Commissioner of Canada.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You must hire a lawyer before the OPC will look at a PIPEDA complaint.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A concern about a provincial or municipal government does not fall under the OPC’s mandate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Alberta’s PIPA, when the provincial law applies",
+      "html": "<p>Alberta has its own private-sector privacy law: the <strong>Personal Information Protection Act (PIPA)</strong>. Alberta says PIPA applies to provincially regulated private-sector organizations, businesses, and, in some instances, non-profits.</p>\n<p>The federal law, PIPEDA, still applies to federally regulated businesses such as banks, airlines, and telecommunication companies. The Alberta page notes that the Office of the Privacy Commissioner of Canada reviews privacy complaints for that federal private sector — for example banks (but not Alberta credit unions), airlines, and telecommunications companies. If you are not sure which office to contact, the OPC says this can be complicated and points to its tool for choosing the right organization.</p>\n<p>Under PIPA, you have a right to access your personal information held by an organization and to ask the organization to correct it. You must make the request <strong>in writing</strong>. Many organizations have a privacy officer who receives requests.</p>\n<p>Organizations can charge fees for access under PIPA, but not to correct your information and not if you request personal employee information. Fees must be reasonable and follow the regulations.</p>\n<p>If the organization refuses to provide your information, does not respond within <strong>45 days</strong> unless it appropriately extends the time, or you feel it is not following PIPA, you may complain to Alberta’s <strong>Office of the Information and Privacy Commissioner (OIPC)</strong>.</p>\n<p>Some information may be withheld, such as information collected for a legal proceeding. Organizations must never provide information that could threaten another person’s life or security, reveal another individual’s personal information, or reveal the identity of someone who gave a confidential opinion about another person without that person’s consent.</p>\n<p>If you want information held by a public body, such as a government department or a municipality, that is a different law (the Protection of Privacy Act). This course does not teach that process.</p>",
+      "sources": [
+        {
+          "label": "Personal Information Protection Act (Government of Alberta)",
+          "url": "https://www.alberta.ca/personal-information-protection-act"
+        },
+        {
+          "label": "Accessing your personal information (Government of Alberta)",
+          "url": "https://www.alberta.ca/accessing-your-personal-information"
+        },
+        {
+          "label": "Businesses and your personal information (OPC)",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/businesses-and-your-personal-information/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "PIPA is Alberta’s private-sector privacy law for many provincially regulated organizations.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Under PIPA, you must make an access or correction request in writing.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If an organization does not respond within 45 days (unless it appropriately extends the time), you may complain to Alberta’s OIPC.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Banks, airlines, and telecommunication companies are always handled only by Alberta’s PIPA, never by federal PIPEDA.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA.",
+    "questions": [
+      {
+        "prompt": "PIPEDA protects information about an identifiable individual in many commercial activities.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      },
+      {
+        "prompt": "This course is legal advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      },
+      {
+        "prompt": "You have a right to see personal information a business holds about you and to ask for corrections.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      },
+      {
+        "prompt": "A PIPEDA access request should be made in writing.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      },
+      {
+        "prompt": "You should generally raise a concern with the organization before complaining to the OPC.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      },
+      {
+        "prompt": "You must hire a lawyer to file a PIPEDA complaint.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      },
+      {
+        "prompt": "Alberta’s PIPA gives you a right to request access to your personal information held by many provincial private-sector organizations.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. PIPEDA sets federal private-sector privacy rules. You can ask why extra information is collected, request access in writing, ask for corrections, and complain to the OPC after trying the organization first. In Alberta, PIPA often applies to provincially regulated private organizations; federally regulated businesses still fall under PIPEDA."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about privacy rights under Canada’s federal private-sector privacy law (PIPEDA) and a pointer to Alberta’s PIPA, based on official pages from the Office of the Privacy Commissioner of Canada and the Government of Alberta. It is not legal advice, not a privacy-officer credential, and not a substitute for advice from a qualified advisor or the privacy commissioner. Which law applies to a given organization can be complicated. Always check the live official page for your situation.",
+    "builderNotes": "- Sources verified live on 10 November 2026 (America/Regina): OPC “Businesses and your personal information,” “Accessing your personal information – businesses,” and “How to raise your privacy concern with an organization”; Alberta.ca PIPA and “Accessing your personal information.”\n- OPC Information Officers number 1-800-282-1376 is date-stamped. PIPEDA access timeline (30 days, possible 30-day extension) and PIPA 45-day complaint pointer are also date-sensitive — re-check before rebuilds.\n- Do **not** repeat the email/online-safety course (phishing, passwords, CRA scams, CAFC reporting) or the What is AI course (chatbots, pasting personal information into AI, AI-enabled scams).\n- Do not paste the OPC sample access letter verbatim; the lesson summarizes the steps.\n- Do not teach public-sector FOIP/POPA/ATIA request steps beyond the pointer that public bodies follow a different law.\n- Do not invent which exact businesses fall under PIPA vs PIPEDA beyond what the official pages state (federally regulated examples; Alberta credit unions called out as not in the federal bank example).\n- Not legal advice. No Ed2Go HIPAA text.\n- Canadian spelling: *practise* (verb) if used; *licence* as noun if used.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-privacy-personal-information-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a lock."
+  }
+}

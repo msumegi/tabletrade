@@ -1,0 +1,514 @@
+{
+  "slug": "wordpress-small-site-basics-community-group",
+  "title": "WordPress or Small-Site Basics for a Community Group",
+  "summary": "By the end, learners can plan a few pages for a community group, log in to the WordPress dashboard, tell a Page from a Post, create and publish a simple page with blocks, and add those pages to a navigation menu when their theme still uses the Menus screen — without treating this course as hosting, plugin, or design advice.",
+  "goals": "By the end, learners can plan a few pages for a community group, log in to the WordPress dashboard, tell a Page from a Post, create and publish a simple page with blocks, and add those pages to a navigation menu when their theme still uses the Menus screen — without treating this course as hosting, plugin, or design advice.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional web-design certification, or an endorsement of any host, theme, or plugin.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Plan a small site for your group",
+      "html": "<p>WordPress is software that can run a blog, a website, or a site that includes both. Official WordPress.org documentation says learning a few basics before you change things can save time.</p>\n<p>This course is for people who already have a WordPress site, or who will be given a login by their council or community group. It does not tell you which company should host the site, and it does not walk through installation. Those choices belong to whoever looks after the technical side.</p>\n<p>WordPress.org asks you to make a plan. For a community group, start with a short list of <strong>Pages</strong> — information that stays useful over time. The documentation gives examples such as About, Contact, and Events. You might also want a page that says who you are, when you meet, and how to reach you.</p>\n<p>Then decide whether you also need <strong>Posts</strong>. Posts are dated items that, in a default setup, appear in reverse chronological order, like news or “what happened this month.”</p>\n<p>Write the words for each page on paper first, in plain language. You do not need to design a new look yet. WordPress.org notes that a <strong>theme</strong> controls the appearance of the site — the framing and style of the content. You can leave the current theme alone until the words are in place.</p>\n<p>This is not a course in building a page from HTML files. If you only need one simple file on your own computer, use the Range Path course on building a very simple web page instead.</p>",
+      "sources": [
+        {
+          "label": "Get started with WordPress — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/get-started-with-wordpress/"
+        },
+        {
+          "label": "Create pages — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/create-pages/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "WordPress can be used to create a blog, a website, or a site that includes both.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you which company should host your site.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "About, Contact, and Events are examples of Pages you might plan.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should write the words for a page before you worry about a new design.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Log in and look around",
+      "html": "<p>WordPress.org’s first-steps guide says you begin by logging into the administration area, also called the back end. Visit your site’s login page by adding <code>wp-admin</code> after the site address (for example, <code>http://example.com/wp-admin</code>). Some themes also show a login link on the public site. Use the username and password you were given.</p>\n<p>After you log in, you land on the main administration screen called the <strong>Dashboard</strong>. This is where you organize the site. At the top is the <strong>toolbar</strong>. Click your site name there to see the public site, then come back to the Dashboard.</p>\n<p>WordPress.org suggests you look at the public site before you change much. Notice the header (often the title and tagline), any menu, the main content in the middle, and the footer. The look you see comes from the <strong>theme</strong>.</p>\n<p>On the left of the Dashboard is the main navigation. WordPress.org lists items such as Dashboard, Posts, Media, Pages, Comments, Appearance, Plugins, Users, Tools, and Settings. Move your mouse down the list to see the sub-menus.</p>\n<p>Click <strong>Users</strong>, then <strong>Your Profile</strong>, if you want to add your name or other profile details and save them with Update Profile. Do not change anyone else’s account unless that is your job.</p>\n<p>You do not need the Plugins screen for this course. This course does not recommend any add-on.</p>",
+      "sources": [
+        {
+          "label": "First steps with WordPress (Block Editor) — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/first-steps-with-wordpress-block-editor/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You can often reach the login screen by adding wp-admin after the site address.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Dashboard is the main administration screen after you log in.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course asks you to install a plugin as soon as you log in.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Clicking the site name in the toolbar shows you the public site.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Pages stay; posts are dated news",
+      "html": "<p>In WordPress you can add content as a <strong>Post</strong> or a <strong>Page</strong>. They both have a title and content, but they are used differently.</p>\n<p>WordPress.org says a Post is a regular blog entry. In a default setup, posts appear in reverse chronological order on the blog’s home page. Use posts for news, a monthly update, or “photos from Saturday’s supper.”</p>\n<p>A Page is for content that is not tied to a date in the same way. Pages live outside the normal blog timeline. They often present information that stays relevant, such as About or Contact. You can add as many pages as you like and update them whenever you need to. You can even have a WordPress site that uses only pages.</p>\n<p>To create a page:</p>\n<ol>\n<li>Log in to the admin screen.</li>\n<li>Click <strong>Pages &gt; Add New</strong> in the left sidebar (or use Add New on the Pages screen).</li>\n<li>Add a title.</li>\n<li>Add the body content.</li>\n<li>When the page is ready, click <strong>Publish</strong>.</li>\n</ol>\n<p>You can organize pages into parent pages and subpages. For example, an About page could have a subpage for the board or for meeting times. You do not have to use subpages on a very small site.</p>\n<p>After you publish a page, visitors still need a way to find it. The next lessons cover writing with blocks and adding the page to a menu.</p>",
+      "sources": [
+        {
+          "label": "Create pages — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/create-pages/"
+        },
+        {
+          "label": "Get started with WordPress — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/get-started-with-wordpress/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Posts are dated items that, in a default setup, appear in reverse chronological order.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Pages are a good place for timeless information such as About or Contact.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You create a new page from Pages > Add New, then publish it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A Page and a Post are exactly the same thing.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Write with blocks, not HTML",
+      "html": "<p>When you add a page or a post, WordPress opens the <strong>block editor</strong>. WordPress.org says each piece of content in that editor is a <strong>block</strong>. Blocks are the building pieces of the page. You can add blocks for paragraphs, images, headings, lists, and more.</p>\n<p>You do not need to write HTML tags. That is a different skill from the simple web-page course.</p>\n<p>WordPress.org describes three common ways to add a block:</p>\n<ol>\n<li>Use the Block Inserter <strong>+</strong> icon in the top toolbar.</li>\n<li>Select the Add block <strong>+</strong> icon in the content area.</li>\n<li>Type <code>/</code> and then the block name, such as <code>/heading</code> or <code>/image</code>.</li>\n</ol>\n<p>Most blocks include the words or picture you are editing, a toolbar when the block is selected, and extra settings in the sidebar. You can move a block with the up and down arrows or the drag handle. Hover over a toolbar icon to see its name.</p>\n<p>To make a simple community page, start with a heading, a few short paragraphs, and a list if you need one (for example, what to bring). Add an image only if you have the right to use it. When you are done, click <strong>Publish</strong>, then confirm if WordPress asks you a second time.</p>\n<p>You can view the result by clicking your site name in the toolbar. If something looks wrong, open the page again from <strong>Pages</strong> and edit it. Settings and toolbars can differ a little depending on your theme.</p>",
+      "sources": [
+        {
+          "label": "Work with blocks — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/work-with-blocks/"
+        },
+        {
+          "label": "First steps with WordPress (Block Editor) — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/first-steps-with-wordpress-block-editor/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In the block editor, each piece of content is a block.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You can add a block by clicking + or by typing / and the block name.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson teaches you to write HTML tags for headings and lists.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "After you write a test post or page, you click Publish (and may need to confirm).",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Help people find the page",
+      "html": "<p>A published page is not helpful if visitors cannot find it. WordPress.org says that after you create a page, you can add it to the site’s navigation menu.</p>\n<p>On many sites you still open <strong>Appearance &gt; Menus</strong>. WordPress.org’s steps are:</p>\n<ol>\n<li>Go to the Dashboard, then Appearance &gt; Menus.</li>\n<li>Click <strong>Create a new menu</strong>, type a name, and click <strong>Create Menu</strong>.</li>\n<li>In the Pages pane, choose <strong>View All</strong>, tick the pages you want, and click <strong>Add to Menu</strong>.</li>\n<li>Drag items up or down to change the order. Drag an item slightly to the right to make it a sub-item.</li>\n<li>Under Menu Settings, choose a display location if your theme lists one, then click <strong>Save Menu</strong>.</li>\n</ol>\n<p>Keep the menu simple so people are not confused. About, Events, and Contact are enough for many groups.</p>\n<p>WordPress.org notes that WordPress 5.9 was the last version to include the Appearance Menus screen for all sites by default. On WordPress 6.0 and later, a <strong>block theme</strong> may manage navigation with a Navigation block instead. If you do not see Appearance &gt; Menus, do not guess. Ask the person who set up the site, or read the current WordPress.org documentation for your theme.</p>\n<p>This course does not recommend a theme or a plugin to “fix” menus. When the words are clear and the menu points to the right pages, your group’s small site is doing its job.</p>",
+      "sources": [
+        {
+          "label": "Appearance Menus Screen — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/appearance-menus-screen/"
+        },
+        {
+          "label": "Create pages — WordPress.org",
+          "url": "https://wordpress.org/documentation/article/create-pages/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A navigation menu helps visitors find pages on the site.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the Appearance > Menus screen, you can add published pages and then save the menu.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Every WordPress site, including every newer block theme, still uses Appearance > Menus in the same way.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "WordPress.org says it is important to keep a navigation menu simple so visitors are not confused.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen.",
+    "questions": [
+      {
+        "prompt": "This course is a hosting or plugin recommendation.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      },
+      {
+        "prompt": "WordPress can run a blog, a website, or both.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      },
+      {
+        "prompt": "You often log in by adding wp-admin to the site address.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      },
+      {
+        "prompt": "Pages are best for timeless information such as About or Contact.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      },
+      {
+        "prompt": "Posts and pages are exactly the same.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      },
+      {
+        "prompt": "In the block editor, you add content with blocks, not by writing HTML.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      },
+      {
+        "prompt": "A navigation menu should stay simple so visitors can find pages.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan the pages your group needs, log in, use Pages for lasting information and Posts for dated news, write with blocks, and add a simple menu when your theme offers that screen."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about using WordPress to add pages, posts, and a simple menu, based on official WordPress.org documentation. It is not a web-designer or developer credential. It does not recommend a hosting company, a paid plan, a theme, or a plugin. It does not teach you how to install WordPress or write HTML. Screens and menus can change with your theme and WordPress version. Check the live WordPress.org documentation and the site you actually use.",
+    "builderNotes": "- Do not teach installation, FTP, hosting, or wp-config. Do not recommend a host, theme, or plugin (including Akismet or the Classic Editor).\n- Do not repeat the HTML file course (`poc-course-building-very-simple-web-page-2026-11-10.md`). Point to it only as a different path.\n- Appearance > Menus is not on every site. WordPress.org (updated 2026-07-28) says WordPress 5.9 was the last version to include that screen for all sites by default; block themes may use a Navigation block instead. The course states that clearly and does not invent Navigation-block click steps.\n- Theme name Twenty Twenty-Two appears in official first-steps screenshots; do not pitch it or any other theme.\n- Canadian spelling in learner prose: *organise* is not required; Government of Canada often uses *organize*. Use *practise* (verb) if needed.\n- No Ed2Go or Cengage web-design text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-wordpress-small-site-basics-community-group.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a website with a side menu."
+  }
+}

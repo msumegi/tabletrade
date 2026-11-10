@@ -1,0 +1,542 @@
+{
+  "slug": "medical-words-plain-language",
+  "title": "Medical Words in Plain Language",
+  "summary": "By the end, learners can use official words for kinds of care (primary care, family doctor, nurse practitioner, walk-in clinic, emergency), explain Health Canada terms such as prescription, dose, side effect, allergy, and interaction, list questions to ask a doctor or pharmacist, and choose trustworthy Canadian sources — without treating this course as medical advice.",
+  "goals": "By the end, learners can use official words for kinds of care (primary care, family doctor, nurse practitioner, walk-in clinic, emergency), explain Health Canada terms such as prescription, dose, side effect, allergy, and interaction, list questions to ask a doctor or pharmacist, and choose trustworthy Canadian sources — without treating this course as medical advice.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, clinical certification, or medical advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Why health words matter",
+      "html": "<p>Health information is easier to use when the words are clear. Health Canada and the Public Health Agency of Canada publish a series called <strong>It’s Your Health</strong>: more than 150 easy-to-understand articles to help people make informed decisions about health and safety. That series is a place to read official, plain-language articles. It is not a diagnosis of your own health.</p>\n<p>This course teaches words you may hear at a clinic or see on a medicine label. It does not train you to work in a medical office, code a bill, or give care to someone else.</p>\n<p>Health Canada’s page on using medications safely says prescription and non-prescription medications can help treat diseases and conditions, but taking them correctly is important. All medications carry some risk. The page uses the words <strong>side effects</strong> (also called <strong>adverse reactions</strong>) for unwanted effects that can happen even when a product is used correctly. Examples it gives include a mild rash or a severe allergic reaction.</p>\n<p>If a provider uses a word you do not know, ask them to say it in everyday language. Write the word down. You can also call <strong>811</strong> in Alberta for nurse advice, or <strong>911</strong> in a medical emergency. Those numbers come from official Alberta pages, not from this course guessing what you should do.</p>\n<p>Do not use random websites or social media posts as your only source. Lesson 5 points to official Canadian pages.</p>",
+      "sources": [
+        {
+          "label": "Medical Information (It’s Your Health) — Health Canada / PHAC",
+          "url": "https://www.canada.ca/en/health-canada/services/healthy-living/your-health/medical-information.html"
+        },
+        {
+          "label": "Using medications safely — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/using-medications-safely.html"
+        },
+        {
+          "label": "Know Your Options — Alberta.ca",
+          "url": "https://www.alberta.ca/know-your-options"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course can diagnose your illness.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Health Canada uses “side effects” (also called adverse reactions) for unwanted effects of a medication.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "It’s Your Health is described as easy-to-understand official articles about health and safety.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a medical-office or billing credential.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Words for kinds of care",
+      "html": "<p>Official Alberta pages use several care words. Learning them helps you choose the right door — without this course choosing it for you.</p>\n<p><strong>Primary care</strong> is described by Primary Care Alberta as the first step for most health concerns. It includes family doctors, nurse practitioners, and other providers who help with everyday needs such as checkups, advice when you are sick or injured, prescriptions and refills, long-term conditions, mental health concerns, and referrals for specialists, tests, or other services.</p>\n<p>Alberta Find a Provider says:</p>\n<ul>\n<li>A <strong>family doctor</strong> provides ongoing, complete care for people of all ages, and supports specialist or hospital care when needed.</li>\n<li>A <strong>nurse practitioner</strong> can assess, diagnose, treat illnesses, prescribe medications, and provide ongoing care.</li>\n<li><strong>Walk-in clinics</strong> provide non-emergency medical care without an appointment for minor illnesses, injuries, and general health.</li>\n</ul>\n<p><strong>Diagnose</strong>, on that official description, is part of what a nurse practitioner can do: figure out an illness so it can be treated. <strong>Treat</strong> means providing care for the illness. <strong>Prescribe</strong> means authorizing a medication. This course still cannot diagnose or treat you.</p>\n<p>Alberta’s Know Your Options page says to call <strong>911</strong> for a medical emergency. If you are unsure where to go, call <strong>811</strong> for advice on your <strong>symptoms</strong> (what you feel or notice) and care options.</p>\n<p>These words help you understand a poster or a receptionist. They do not replace a clinician.</p>",
+      "sources": [
+        {
+          "label": "Information for newcomers to Alberta — Primary Care Alberta",
+          "url": "https://www.primarycarealberta.ca/page14150.aspx"
+        },
+        {
+          "label": "Alberta Find a Provider",
+          "url": "https://albertafindaprovider.ca/"
+        },
+        {
+          "label": "Know Your Options — Alberta.ca",
+          "url": "https://www.alberta.ca/know-your-options"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Primary care is described as the first step for most everyday health concerns.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On Alberta Find a Provider, a nurse practitioner can:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Assess, diagnose, treat illnesses, and prescribe medications"
+            },
+            {
+              "id": "B",
+              "text": "Only sell furniture"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Walk-in clinics are described as non-emergency care without an appointment.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson lets you diagnose another person.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Words on a medicine label",
+      "html": "<p>Health Canada talks about both <strong>prescription</strong> medications (you get them with a prescriber’s order) and <strong>non-prescription</strong> medications (you can buy them without that order). Always use medication as directed by your doctor or pharmacist: when to take it, how often, and for how long. Always read the product label.</p>\n<p>A <strong>dose</strong> is how much you take at one time. Health Canada says you should also know what to do if you miss a dose, and when you should stop a medication. Do not guess. Ask the pharmacist.</p>\n<p>A <strong>side effect</strong> or <strong>adverse reaction</strong> is an unwanted effect. It can be mild or severe. Health Canada says to report a side effect to your healthcare professional, and you can also report it to Health Canada.</p>\n<p>Tell your provider about <strong>allergies</strong> and <strong>sensitivities</strong>, your other health conditions, and all medications you take, including <strong>natural health products</strong> such as vitamins and herbal remedies. An <strong>interaction</strong> is when a medication does not mix safely with certain foods, drinks, vitamins, or other products. Health Canada gives grapefruit juice as one example of a drink to ask about.</p>\n<p>Keep medicines in their original containers, out of the reach of children, and return expired medicine to a pharmacy or local disposal depot. If you think someone has taken too much, get emergency help — do not use this course as poison-control advice. MyHealth Alberta lists the Poison and Drug Information Service (PADIS) at <strong>1-800-332-1414</strong>, and 911 for emergencies.</p>",
+      "sources": [
+        {
+          "label": "Using medications safely — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/using-medications-safely.html"
+        },
+        {
+          "label": "Medication chart — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/medication-chart.html"
+        },
+        {
+          "label": "Important Phone Numbers — MyHealth Alberta",
+          "url": "https://myhealth.alberta.ca/Pages/Emergency-Phone-Numbers.aspx"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A dose is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "How much medicine you take at one time"
+            },
+            {
+              "id": "B",
+              "text": "The name of your province"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A side effect (adverse reaction) is an unwanted effect of a medication.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should tell your provider about allergies and all medications you take, including natural health products.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson tells you which pill to take for a headache.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Questions to ask, and a simple medicine list",
+      "html": "<p>Clear questions protect you. Health Canada’s “using medications safely” page says to talk with your doctor, pharmacist, or other healthcare professional about all aspects of your medication. Ask:</p>\n<ul>\n<li>why you are being prescribed the medication</li>\n<li>how it should work</li>\n<li>whether you will need regular check-ups or tests</li>\n<li>how to reduce the risk of side effects and interactions with food, drinks, vitamins, or herbal supplements</li>\n<li>when you should expect to start feeling better</li>\n<li>if and when you should go back to your doctor</li>\n<li>what to do if you miss a dose</li>\n</ul>\n<p>Ask your pharmacist for written information about the medications you take. Health Canada authorizes a <strong>Patient Medication Information</strong> section in a drug’s product monograph, written in plain language so it is easier to understand. A one-page pharmacy printout is not always the same as that authorized information, so ask if you want the official patient information.</p>\n<p>Health Canada offers a <strong>medication chart</strong> to track:</p>\n<ul>\n<li>the name (brand name and ingredients)</li>\n<li>the dosage</li>\n<li>the time you take it</li>\n<li>the reason you take it</li>\n<li>side effects you notice</li>\n</ul>\n<p>Include prescription medicines, non-prescription medicines, and natural health products. Share the list with your doctor and pharmacist. Using the same pharmacy, Health Canada says, helps the pharmacist see possible harmful interactions.</p>\n<p>Mention if you are pregnant, breastfeeding, or planning a pregnancy, and mention trouble swallowing pills or remembering doses. This is so your provider can advise you — not so this course can.</p>",
+      "sources": [
+        {
+          "label": "Using medications safely — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/using-medications-safely.html"
+        },
+        {
+          "label": "Medication chart — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/medication-chart.html"
+        },
+        {
+          "label": "Product monographs: Frequently asked questions — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/applications-submissions/guidance-documents/product-monograph/frequently-asked-questions-product-monographs-posted-health-canada-website.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Health Canada says you should ask why a medication is prescribed and how it should work.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A medication chart can list the name, dosage, time, reason, and side effects.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should share your medicine list with your doctor and pharmacist.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Patient Medication Information replaces the need to ask your pharmacist any questions.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Where to find trustworthy Canadian health information",
+      "html": "<p>When you look up a health word, start with official Canadian pages:</p>\n<ul>\n<li><strong>Health Canada</strong> and <strong>It’s Your Health</strong> articles on Canada.ca, for easy-to-understand health and safety information</li>\n<li><strong>Alberta.ca</strong> pages such as Know Your Options, AHCIP, and health cards, for how care works in Alberta</li>\n<li><strong>Primary Care Alberta</strong> and <strong>Alberta Find a Provider</strong>, for what primary care, family doctors, nurse practitioners, and walk-in clinics are</li>\n<li><strong>MyHealth Alberta</strong> official phone-number lists, including 911 and 811</li>\n</ul>\n<p>These sources will not replace a conversation with a clinician. They can help you prepare questions and check that a word means what you think it means.</p>\n<p>Be careful with:</p>\n<ul>\n<li>social media tips that do not name an official source</li>\n<li>sites from another country that may describe different drugs, doses, or systems (this course does not use those as source pages)</li>\n<li>anyone, including this course, who claims to diagnose you from a word list</li>\n</ul>\n<p>If you feel unwell and do not know where to go, call <strong>811</strong>. If it is a medical emergency, call <strong>911</strong>. If you need AHCIP or a health card, go back to the Alberta health-care basics course and the live Alberta.ca pages.</p>\n<p>Finishing this course does not make you a nurse, medical office assistant, or billing specialist. It helps you ask clearer questions.</p>",
+      "sources": [
+        {
+          "label": "Medical Information (It’s Your Health) — Health Canada / PHAC",
+          "url": "https://www.canada.ca/en/health-canada/services/healthy-living/your-health/medical-information.html"
+        },
+        {
+          "label": "Using medications safely — Health Canada",
+          "url": "https://www.canada.ca/en/health-canada/services/drugs-medical-devices/using-medications-safely.html"
+        },
+        {
+          "label": "Know Your Options — Alberta.ca",
+          "url": "https://www.alberta.ca/know-your-options"
+        },
+        {
+          "label": "Alberta Find a Provider",
+          "url": "https://albertafindaprovider.ca/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A trustworthy first stop for plain Canadian health articles is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Health Canada’s It’s Your Health series"
+            },
+            {
+              "id": "B",
+              "text": "An unsigned social media rumour"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a medical licence.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "If you are unsure where to go for care in Alberta, official pages say you can call 811.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should still ask a clinician about your own health, even after you learn the words.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice.",
+    "questions": [
+      {
+        "prompt": "This course can diagnose you or tell you which medicine to take.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      },
+      {
+        "prompt": "A side effect is an unwanted effect of a medication.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      },
+      {
+        "prompt": "Primary care is described as the first step for most everyday health concerns.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      },
+      {
+        "prompt": "A dose is how much medicine you take at one time.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      },
+      {
+        "prompt": "You should tell your provider about allergies and other medications you take.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      },
+      {
+        "prompt": "A medication chart can help you track name, dosage, time, reason, and side effects.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      },
+      {
+        "prompt": "This course is a clinical or medical-billing credential.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Learn the official words, ask questions, and use Canadian government and Alberta health-system pages. A clinician still gives medical advice."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course explains everyday health words using official Canadian government and Alberta health-system pages. It is not medical advice, not a diagnosis or treatment, not a clinical or medical-office (CMAA) credential, and not a billing course. It cannot tell you what is wrong with you or which medicine to take. If you are having a medical emergency, call 911. For health advice, Albertans can call Health Link 811.",
+    "builderNotes": "- Official Canadian / Alberta sources only. Do not add MedlinePlus, WebMD, Mayo Clinic, or MyHealth Healthwise topic pages.\n- Do not invent dictionary definitions that were not on a fetched page. “Diagnose / treat / prescribe” are used as Alberta Find a Provider uses them for nurse practitioners.\n- Health Canada’s child-prescription questions page (2010) was opened but not used as a main learner source, so this course does not become a pediatric-medicine lesson.\n- PADIS 1-800-332-1414 was verified on MyHealth Alberta’s numbers page this session; re-check before rebuilds.\n- No Ed2Go medical-terminology word-association text and no US billing codes.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-medical-words-plain-language.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a page of plain words."
+  }
+}

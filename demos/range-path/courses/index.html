@@ -49,9 +49,24 @@
   <label for="learner-name-courses">Name for certificate (stays on this device)</label>
   <input id="learner-name-courses" name="learner" type="text" autocomplete="name">
 </section>
+<!-- range-path:filters -->
+<div class="filters" data-course-filters role="group" aria-label="Course topics">
+  <button type="button" data-filter="all" aria-pressed="true">All courses</button>
+  <button type="button" data-filter="Computers" aria-pressed="false">Computers</button>
+  <button type="button" data-filter="Work" aria-pressed="false">Work</button>
+  <button type="button" data-filter="Money" aria-pressed="false">Money</button>
+  <button type="button" data-filter="Learning" aria-pressed="false">Learning</button>
+  <button type="button" data-filter="Community" aria-pressed="false">Community</button>
+  <button type="button" data-filter="Safety" aria-pressed="false">Safety</button>
+  <button type="button" data-filter="Languages" aria-pressed="false">Languages</button>
+  <button type="button" data-filter="Health and home" aria-pressed="false">Health and home</button>
+</div>
+<p class="meta" id="filter-status">Showing every course. The first four are a good place to start.</p>
+<!-- /range-path:filters -->
 <div class="cards cols-3" id="catalogue-main">
   <!-- range-path:catalogue -->
-<article class="card">
+<article class="card" data-category="Computers">
+  <p class="pill">Start here</p>
   <div class="frame frame-wide"><img src="../media/course-computers.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a laptop and a phone." loading="lazy" decoding="async"></div>
   <h3><a href="everyday-computers-smartphones/">Everyday Computers and Smartphones</a></h3>
   <p>By the end, learners can name everyday digital devices, use basic on-screen actions, find files in folders, connect to Wi-Fi with more care, and describe simple habits that help keep a computer or phone safer.</p>
@@ -59,7 +74,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="everyday-computers-smartphones">0% done</span></p><div class="bar" data-bar="everyday-computers-smartphones" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="everyday-computers-smartphones/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Computers">
+  <p class="pill">Start here</p>
   <div class="frame frame-wide"><img src="../media/course-excel.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a spreadsheet grid." loading="lazy" decoding="async"></div>
   <h3><a href="excel-basics-canada/">Microsoft Excel Basics (Canada)</a></h3>
   <p>By the end, learners can open a blank workbook, enter text and numbers in cells, apply simple formatting, write a basic formula that starts with an equal sign, use AutoSum, and save or print their work.</p>
@@ -67,7 +83,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="excel-basics-canada">0% done</span></p><div class="bar" data-bar="excel-basics-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="excel-basics-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Computers">
+  <p class="pill">Start here</p>
   <div class="frame frame-wide"><img src="../media/course-word.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a page with a heading and lines of writing." loading="lazy" decoding="async"></div>
   <h3><a href="word-basics-canada/">Microsoft Word Basics (Canada)</a></h3>
   <p>By the end, learners can start Word, type and select text, apply basic formatting from the Home tab, use a style for a heading, save and reopen a document, preview before printing, and set the language Word uses to check spelling.</p>
@@ -75,7 +92,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="word-basics-canada">0% done</span></p><div class="bar" data-bar="word-basics-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="word-basics-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Work">
+  <p class="pill">Start here</p>
   <div class="frame frame-wide"><img src="../media/course-jobs.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a short list of jobs." loading="lazy" decoding="async"></div>
   <h3><a href="job-search-canada/">Job Search and Employment Readiness in Canada</a></h3>
   <p>By the end, learners can search for jobs on Job Bank, describe what belongs in a resume and a cover letter, tailor an application to one posting, use a Job Bank account with care, and prepare for an interview using official Canadian and Alberta tips.</p>
@@ -83,7 +101,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="job-search-canada">0% done</span></p><div class="bar" data-bar="job-search-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="job-search-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Computers">
+  
   <div class="frame frame-wide"><img src="../media/course-outlook.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of an envelope and a message." loading="lazy" decoding="async"></div>
   <h3><a href="outlook-workplace-email/">Microsoft Outlook and Workplace Email Habits</a></h3>
   <p>By the end, learners can open Outlook Mail and Calendar, write and send a message, choose Reply, Reply All, or Forward with care, use To, Cc, Bcc, and attachments, follow Microsoft’s basic professional-email habits, and create a simple appointment or meeting.</p>
@@ -91,7 +110,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="outlook-workplace-email">0% done</span></p><div class="bar" data-bar="outlook-workplace-email" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="outlook-workplace-email/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Money">
+  
   <div class="frame frame-wide"><img src="../media/course-books.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of an open ledger." loading="lazy" decoding="async"></div>
   <h3><a href="bookkeeping-fundamentals-canada/">Bookkeeping Fundamentals in Canada</a></h3>
   <p>By the end, learners can explain what bookkeeping is, list everyday records the CRA describes, describe what should appear on a business receipt, know the usual six-year keeping period (as stated by the CRA as of November 2026), and know that GST/HST record rules exist without treating this course as personal tax help.</p>
@@ -99,7 +119,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="bookkeeping-fundamentals-canada">0% done</span></p><div class="bar" data-bar="bookkeeping-fundamentals-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="bookkeeping-fundamentals-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Money">
+  
   <div class="frame frame-wide"><img src="../media/course-invoices.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of an invoice with a total line." loading="lazy" decoding="async"></div>
   <h3><a href="invoices-expenses-gst-canada/">Invoices, Expenses and GST Records (Canada)</a></h3>
   <p>By the end, learners can tell a sales invoice from a purchase invoice or receipt, list what the CRA says customers should see about GST/HST on a bill, check whether an invoice has the details the CRA describes for different sale amounts (as of November 2026), and use the CRA’s free GST/HST Registry to look up a number — without treating this course as personal tax help.</p>
@@ -107,7 +128,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="invoices-expenses-gst-canada">0% done</span></p><div class="bar" data-bar="invoices-expenses-gst-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="invoices-expenses-gst-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Learning">
+  
   <div class="frame frame-wide"><img src="../media/course-learn.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of an open notebook and a clock." loading="lazy" decoding="async"></div>
   <h3><a href="how-to-learn-online/">How to Learn Online (Skills for Learning)</a></h3>
   <p>By the end, learners can name official “skills for learning,” set a simple study goal and schedule, use everyday digital habits to take an online course safely, and know where Albertans can look for more foundational learning help.</p>
@@ -115,7 +137,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="how-to-learn-online">0% done</span></p><div class="bar" data-bar="how-to-learn-online" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="how-to-learn-online/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Learning">
+  
   <div class="frame frame-wide"><img src="../media/course-english.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of two speech bubbles." loading="lazy" decoding="async"></div>
   <h3><a href="everyday-work-english/">Everyday and Work English Practice</a></h3>
   <p>By the end, learners can describe official communication, reading, and writing skills, practise everyday listening and speaking habits, read simple forms and instructions more carefully, write a short clear note or form answer, and find official places in Canada and Alberta that offer more English learning.</p>
@@ -123,7 +146,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="everyday-work-english">0% done</span></p><div class="bar" data-bar="everyday-work-english" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="everyday-work-english/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Learning">
+  
   <div class="frame frame-wide"><img src="../media/course-writing.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a note and a pencil." loading="lazy" decoding="async"></div>
   <h3><a href="workplace-writing-grammar-canada/">Workplace Writing and Grammar (Canadian Spelling)</a></h3>
   <p>By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check common Canadian spellings (cheque, colour, centre, practise) on official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.</p>
@@ -131,7 +155,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="workplace-writing-grammar-canada">0% done</span></p><div class="bar" data-bar="workplace-writing-grammar-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="workplace-writing-grammar-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Learning">
+  
   <div class="frame frame-wide"><img src="../media/course-math.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of two price tags." loading="lazy" decoding="async"></div>
   <h3><a href="everyday-math-numeracy/">Everyday Math and Numeracy</a></h3>
   <p>By the end, learners can describe official numeracy skills, do everyday calculations and estimates, compare grocery value using unit prices, read gross and net pay as numbers on a stub, and check whether an answer makes sense.</p>
@@ -139,7 +164,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="everyday-math-numeracy">0% done</span></p><div class="bar" data-bar="everyday-math-numeracy" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="everyday-math-numeracy/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Work">
+  
   <div class="frame frame-wide"><img src="../media/course-projects.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a checklist." loading="lazy" decoding="async"></div>
   <h3><a href="project-management-basics/">Project Management Basics (Not a PMP Exam)</a></h3>
   <p>By the end, learners can tell a project from ongoing daily work, name goals, deliverables, scope, and roles, make a simple task-and-schedule plan, describe risk in plain language, and close a small project by checking the result — without treating this course as a PMP exam.</p>
@@ -147,7 +173,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="project-management-basics">0% done</span></p><div class="bar" data-bar="project-management-basics" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="project-management-basics/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Community">
+  
   <div class="frame frame-wide"><img src="../media/course-grants.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a blank application form." loading="lazy" decoding="async"></div>
   <h3><a href="writing-simple-grant-application-canada/">Writing a Simple Grant Application in Canada</a></h3>
   <p>By the end, learners can tell a grant from other kinds of government support, find official program lists (including Innovation Canada’s Business Benefits Finder and Alberta’s non-profit grant pages), read eligibility and expense rules before they write, gather common documents, write clear and honest answers to the questions asked, and describe what happens after they apply — without treating this course as a consultant licence or a guarantee of funding.</p>
@@ -155,7 +182,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="writing-simple-grant-application-canada">0% done</span></p><div class="bar" data-bar="writing-simple-grant-application-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="writing-simple-grant-application-canada/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Safety">
+  
   <div class="frame frame-person"><img src="../media/phone-1280.webp" srcset="../media/phone-720.webp 720w, ../media/phone-1280.webp 1280w, ../media/phone-1920.webp 1920w" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="1600" alt="An older adult looks at a phone while sitting at home." loading="lazy" decoding="async"></div>
   <h3><a href="email-online-safety/">Email &amp; Online Safety Basics in Canada</a></h3>
   <p>Spot common scams, choose safer passwords, and know where to report fraud in Canada.</p>
@@ -163,7 +191,8 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="email-online-safety">0% done</span></p><div class="bar" data-bar="email-online-safety" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="email-online-safety/">Open course</a>
 </article>
-<article class="card">
+<article class="card" data-category="Money">
+  
   <div class="frame frame-wide frame-slip"><img src="../media/notes-1280.webp" srcset="../media/notes-720.webp 720w, ../media/notes-1280.webp 1280w, ../media/notes-1920.webp 1920w" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A sample pay advice for a fictional Alberta employer. No real name or SIN is shown." loading="lazy" decoding="async"></div>
   <h3><a href="sin-cra-getting-paid/">Your SIN, CRA My Account &amp; Getting Paid in Canada</a></h3>
   <p>Learn what a SIN is for, how to protect it, and the official paths for CRA My Account and direct deposit.</p>
@@ -171,13 +200,240 @@
   <p class="progress-line"><span>Your progress</span><span data-pct="sin-cra-getting-paid">0% done</span></p><div class="bar" data-bar="sin-cra-getting-paid" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="sin-cra-getting-paid/">Open course</a>
 </article>
+<article class="card" data-category="Languages">
+  
+  <div class="frame frame-wide"><img src="../media/course-conversational-spanish-beginners.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of two speech bubbles." loading="lazy" decoding="async"></div>
+  <h3><a href="conversational-spanish-beginners/">Conversational Spanish for Beginners</a></h3>
+  <p>By the end, learners can explain why a few Spanish phrases can be useful in Canada, greet someone and introduce themselves, use courtesy words and simple questions, count from one to ten and ask a basic shopping or direction question, and practise a short conversation — without treating this course as a language credential.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="conversational-spanish-beginners">0% done</span></p><div class="bar" data-bar="conversational-spanish-beginners" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="conversational-spanish-beginners/">Open course</a>
+</article>
+<article class="card" data-category="Languages">
+  
+  <div class="frame frame-wide"><img src="../media/course-signed-language-awareness-asl-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of two hands." loading="lazy" decoding="async"></div>
+  <h3><a href="signed-language-awareness-asl-canada/">Signed Language Awareness (ASL in a Canadian Context)</a></h3>
+  <p>By the end, learners can name the signed languages recognized in federal accessibility law, explain that ASL and LSQ are real languages, describe why a qualified interpreter is different from a friend who “knows some signs,” outline what Canada’s Video Relay Service is for, and find official places to learn more — without treating this course as interpreter training.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="signed-language-awareness-asl-canada">0% done</span></p><div class="bar" data-bar="signed-language-awareness-asl-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="signed-language-awareness-asl-canada/">Open course</a>
+</article>
+<article class="card" data-category="Money">
+  
+  <div class="frame frame-wide"><img src="../media/course-canadian-banking-budgeting-credit-reports.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a bank card and a short list." loading="lazy" decoding="async"></div>
+  <h3><a href="canadian-banking-budgeting-credit-reports/">Canadian Banking, Budgeting and Credit Reports</a></h3>
+  <p>By the end, learners can tell a chequing account from a savings account, describe official rights and identification steps when opening a personal account, find low-cost or no-cost account information, make a simple budget with FCAC’s Budget Planner, and explain what a credit report and credit score are — without treating this course as personal money advice.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="canadian-banking-budgeting-credit-reports">0% done</span></p><div class="bar" data-bar="canadian-banking-budgeting-credit-reports" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="canadian-banking-budgeting-credit-reports/">Open course</a>
+</article>
+<article class="card" data-category="Health and home">
+  
+  <div class="frame frame-wide"><img src="../media/course-alberta-renting-tenant-rights.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a house." loading="lazy" decoding="async"></div>
+  <h3><a href="alberta-renting-tenant-rights/">Alberta Renting and Tenant Rights (RTA and RTDRS)</a></h3>
+  <p>By the end, learners can name the Residential Tenancies Act as Alberta’s main renting law, list core landlord and tenant responsibilities from the official page, describe fixed-term and periodic agreements and security-deposit basics, find official rules about ending a tenancy and inspections, and locate RTDRS and the Consumer Contact Centre — without treating this course as legal advice.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="alberta-renting-tenant-rights">0% done</span></p><div class="bar" data-bar="alberta-renting-tenant-rights" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="alberta-renting-tenant-rights/">Open course</a>
+</article>
+<article class="card" data-category="Health and home">
+  
+  <div class="frame frame-wide"><img src="../media/course-alberta-health-care-basics.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a health cross." loading="lazy" decoding="async"></div>
+  <h3><a href="alberta-health-care-basics/">Alberta Health Care Basics (AHCIP, 811, and Finding a Provider)</a></h3>
+  <p>By the end, learners can describe what AHCIP is, point to the official eligibility and application pages without deciding their own coverage, explain how to apply through a registry agent, show a health card with photo identification, find providers on Alberta Find a Provider, and choose 911 for a medical emergency and 811 for 24/7 health advice.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="alberta-health-care-basics">0% done</span></p><div class="bar" data-bar="alberta-health-care-basics" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="alberta-health-care-basics/">Open course</a>
+</article>
+<article class="card" data-category="Health and home">
+  
+  <div class="frame frame-wide"><img src="../media/course-medical-words-plain-language.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a page of plain words." loading="lazy" decoding="async"></div>
+  <h3><a href="medical-words-plain-language/">Medical Words in Plain Language</a></h3>
+  <p>By the end, learners can use official words for kinds of care (primary care, family doctor, nurse practitioner, walk-in clinic, emergency), explain Health Canada terms such as prescription, dose, side effect, allergy, and interaction, list questions to ask a doctor or pharmacist, and choose trustworthy Canadian sources — without treating this course as medical advice.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="medical-words-plain-language">0% done</span></p><div class="bar" data-bar="medical-words-plain-language" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="medical-words-plain-language/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-powerpoint-basics-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a presentation slide." loading="lazy" decoding="async"></div>
+  <h3><a href="powerpoint-basics-canada/">Microsoft PowerPoint Basics (Canada)</a></h3>
+  <p>By the end, learners can start a presentation with a theme, add slides and type in placeholders, insert a picture from their device, save their file, and start or leave a slide show.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="powerpoint-basics-canada">0% done</span></p><div class="bar" data-bar="powerpoint-basics-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="powerpoint-basics-canada/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-google-workspace-basics.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of three file folders." loading="lazy" decoding="async"></div>
+  <h3><a href="google-workspace-basics/">Google Workspace Basics</a></h3>
+  <p>By the end, learners can name the main Google Workspace apps, open Google Drive, create a Google Doc and a Google Sheet, and share a file with Viewer, Commenter, or Editor access — without treating this course as a Google credential.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="google-workspace-basics">0% done</span></p><div class="bar" data-bar="google-workspace-basics" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="google-workspace-basics/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-excel-next-steps-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a grid and a rising line." loading="lazy" decoding="async"></div>
+  <h3><a href="excel-next-steps-canada/">Excel Next Steps (Tables, Charts, and Simple Functions)</a></h3>
+  <p>By the end, learners can turn a list into an Excel table, sort or filter with the header arrows, create a chart from selected data, and use AVERAGE, MIN, MAX, and COUNT — without treating this course as a MOS exam or a repeat of Excel basics.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="excel-next-steps-canada">0% done</span></p><div class="bar" data-bar="excel-next-steps-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="excel-next-steps-canada/">Open course</a>
+</article>
+<article class="card" data-category="Work">
+  
+  <div class="frame frame-wide"><img src="../media/course-starting-small-activity-micro-business-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a small shop." loading="lazy" decoding="async"></div>
+  <h3><a href="starting-small-activity-micro-business-canada/">Starting a Small Activity or Micro-Business in Canada</a></h3>
+  <p>By the end, learners can open the Canada.ca starting-a-business map, name the common business structures without choosing one for someone else, explain when the CRA says a business number is needed, find Alberta registry and business-licence pages, and use BizPaL as a permit-and-licence search — without treating this course as permission to operate or as a promise of income.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="starting-small-activity-micro-business-canada">0% done</span></p><div class="bar" data-bar="starting-small-activity-micro-business-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="starting-small-activity-micro-business-canada/">Open course</a>
+</article>
+<article class="card" data-category="Work">
+  
+  <div class="frame frame-wide"><img src="../media/course-supervision-working-with-people-at-work.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of three people standing together." loading="lazy" decoding="async"></div>
+  <h3><a href="supervision-working-with-people-at-work/">Supervision and Working with People at Work</a></h3>
+  <p>By the end, learners can describe what Alberta OHS means by a supervisor, name key supervisor and worker health-and-safety duties, list workers’ three health-and-safety rights and the official steps for refusing dangerous work, find Alberta employment standards pages (including hours of work and rest), and use Skills for Success collaboration and communication as everyday ways to work with people — without treating this course as HR or legal advice.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="supervision-working-with-people-at-work">0% done</span></p><div class="bar" data-bar="supervision-working-with-people-at-work" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="supervision-working-with-people-at-work/">Open course</a>
+</article>
+<article class="card" data-category="Learning">
+  
+  <div class="frame frame-wide"><img src="../media/course-caec-study-skills-support.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a study checklist." loading="lazy" decoding="async"></div>
+  <h3><a href="caec-study-skills-support/">CAEC Study-Skills Support</a></h3>
+  <p>By the end, learners can explain what the CAEC is on Alberta’s official page, find official study and registration pointers (including sample tests and test outcomes), make a simple study plan that fits adult life, practise reading, writing, and numeracy habits without treating this course as exam coaching, and know where to get official help — without claiming this course will make them pass or earn the credential.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="caec-study-skills-support">0% done</span></p><div class="bar" data-bar="caec-study-skills-support" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="caec-study-skills-support/">Open course</a>
+</article>
+<article class="card" data-category="Safety">
+  
+  <div class="frame frame-wide"><img src="../media/course-what-is-ai-plain-language.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a chat box." loading="lazy" decoding="async"></div>
+  <h3><a href="what-is-ai-plain-language/">What Is AI, in Plain Language</a></h3>
+  <p>By the end, learners can explain in plain language what generative AI is, check AI answers against trusted sources before using them, protect personal information when using a chatbot, spot common AI-related scam warnings from official Canadian pages, and use everyday cyber-safety habits — without treating this course as a product endorsement or a professional credential.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="what-is-ai-plain-language">0% done</span></p><div class="bar" data-bar="what-is-ai-plain-language" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="what-is-ai-plain-language/">Open course</a>
+</article>
+<article class="card" data-category="Community">
+  
+  <div class="frame frame-wide"><img src="../media/course-simple-graphics-community-notices.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a community notice." loading="lazy" decoding="async"></div>
+  <h3><a href="simple-graphics-community-notices/">Simple Graphics for Community Notices</a></h3>
+  <p>By the end, learners can write the key facts for a community notice in plain language, choose readable fonts and colours, add and format text in a simple design tool, use images as a support (not a replacement) for words, and download or share a file — without treating this course as a Canva or designer certification.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="simple-graphics-community-notices">0% done</span></p><div class="bar" data-bar="simple-graphics-community-notices" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="simple-graphics-community-notices/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-building-very-simple-web-page.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a small web page." loading="lazy" decoding="async"></div>
+  <h3><a href="building-very-simple-web-page/">Building a Very Simple Web Page</a></h3>
+  <p>By the end, learners can plan a tiny one-page site, explain that HTML is a markup language that structures content, create a basic index.html file with a title, heading, and paragraph, add a list and a link, and add an image with alternative text — then open the file in a browser.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="building-very-simple-web-page">0% done</span></p><div class="bar" data-bar="building-very-simple-web-page" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="building-very-simple-web-page/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-wordpress-small-site-basics-community-group.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a website with a side menu." loading="lazy" decoding="async"></div>
+  <h3><a href="wordpress-small-site-basics-community-group/">WordPress or Small-Site Basics for a Community Group</a></h3>
+  <p>By the end, learners can plan a few pages for a community group, log in to the WordPress dashboard, tell a Page from a Post, create and publish a simple page with blocks, and add those pages to a navigation menu when their theme still uses the Menus screen — without treating this course as hosting, plugin, or design advice.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="wordpress-small-site-basics-community-group">0% done</span></p><div class="bar" data-bar="wordpress-small-site-basics-community-group" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="wordpress-small-site-basics-community-group/">Open course</a>
+</article>
+<article class="card" data-category="Community">
+  
+  <div class="frame frame-wide"><img src="../media/course-taking-better-photos-camera-you-have.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a camera." loading="lazy" decoding="async"></div>
+  <h3><a href="taking-better-photos-camera-you-have/">Taking Better Photos with the Camera You Have</a></h3>
+  <p>By the end, learners can name a clear subject, use the rule of thirds, look for symmetry and new angles, use softer natural light when they can, and follow Parks Canada’s wildlife-distance and no-drone rules — using the camera or phone they already have.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="taking-better-photos-camera-you-have">0% done</span></p><div class="bar" data-bar="taking-better-photos-camera-you-have" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="taking-better-photos-camera-you-have/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-keyboarding-typing-practice.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of keyboard keys." loading="lazy" decoding="async"></div>
+  <h3><a href="keyboarding-typing-practice/">Keyboarding and Typing Practice</a></h3>
+  <p>By the end, learners can describe keyboarding as part of the Skills for Success Digital skill, plan short practice using Adaptability habits, turn on built-in Windows keyboard supports such as Sticky Keys or the On-Screen Keyboard if they need them, and use a few official keyboard shortcuts — without chasing a words-per-minute target or buying extra typing software.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="keyboarding-typing-practice">0% done</span></p><div class="bar" data-bar="keyboarding-typing-practice" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="keyboarding-typing-practice/">Open course</a>
+</article>
+<article class="card" data-category="Safety">
+  
+  <div class="frame frame-wide"><img src="../media/course-privacy-personal-information-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a lock." loading="lazy" decoding="async"></div>
+  <h3><a href="privacy-personal-information-canada/">Privacy and Your Personal Information in Canada</a></h3>
+  <p>By the end, learners can say what personal information is under PIPEDA, name key rights such as consent, limited collection, access, and correction, make a written access request in plain steps, raise a concern with an organization and, if needed, complain to the OPC, and know when Alberta’s PIPA and the provincial commissioner may apply instead — without treating this as legal advice, and without repeating email-scam or AI-chatbot lessons.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="privacy-personal-information-canada">0% done</span></p><div class="bar" data-bar="privacy-personal-information-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="privacy-personal-information-canada/">Open course</a>
+</article>
+<article class="card" data-category="Work">
+  
+  <div class="frame frame-wide"><img src="../media/course-alberta-employment-standards-information.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a pay information page." loading="lazy" decoding="async"></div>
+  <h3><a href="alberta-employment-standards-information/">Alberta Employment Standards (Information Only)</a></h3>
+  <p>By the end, learners can describe, in plain language, Alberta’s worker-side minimums for pay, overtime hours, vacation and general holidays, job-protected leaves, and notice when a job ends, and know how to make an employment-standards complaint — without treating this course as legal advice, and without repeating another course’s hours-of-rest pointer.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="alberta-employment-standards-information">0% done</span></p><div class="bar" data-bar="alberta-employment-standards-information" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="alberta-employment-standards-information/">Open course</a>
+</article>
+<article class="card" data-category="Work">
+  
+  <div class="frame frame-wide"><img src="../media/course-customer-service-workplace-communication.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a person and a speech bubble." loading="lazy" decoding="async"></div>
+  <h3><a href="customer-service-workplace-communication/">Customer Service and Workplace Communication</a></h3>
+  <p>By the end, learners can describe Skills for Success communication and collaboration in a customer-facing workplace, listen and confirm what a person needs, speak clearly and adapt their words to the audience, work with coworkers to solve a request, and handle a difficult interaction respectfully — without repeating email, grammar, or supervisor-leadership lessons.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="customer-service-workplace-communication">0% done</span></p><div class="bar" data-bar="customer-service-workplace-communication" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="customer-service-workplace-communication/">Open course</a>
+</article>
+<article class="card" data-category="Languages">
+  
+  <div class="frame frame-wide"><img src="../media/course-introductory-french-daily-life-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of two language cards." loading="lazy" decoding="async"></div>
+  <h3><a href="introductory-french-daily-life-canada/">Introductory French for Daily Life in Canada</a></h3>
+  <p>By the end, learners can say that Canada has two official languages, name everyday reasons to practise French here, notice French on official federal pages and in communities across the country, and find official next steps for learning — without treating this course as a phrasebook or a certificate of fluency.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="introductory-french-daily-life-canada">0% done</span></p><div class="bar" data-bar="introductory-french-daily-life-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="introductory-french-daily-life-canada/">Open course</a>
+</article>
+<article class="card" data-category="Computers">
+  
+  <div class="frame frame-wide"><img src="../media/course-data-spreadsheet-lists-charts-plain.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a list and three bars." loading="lazy" decoding="async"></div>
+  <h3><a href="data-spreadsheet-lists-charts-plain/">Data in a Spreadsheet: Lists and Simple Charts (Very Plain)</a></h3>
+  <p>By the end, learners can explain what data is in plain language, tell a row from a column, read a value where a row and column meet, check a table’s title, headings, units, and source, and read a simple chart for comparison, change over time, or parts of a whole.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="data-spreadsheet-lists-charts-plain">0% done</span></p><div class="bar" data-bar="data-spreadsheet-lists-charts-plain" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="data-spreadsheet-lists-charts-plain/">Open course</a>
+</article>
+<article class="card" data-category="Safety">
+  
+  <div class="frame frame-wide"><img src="../media/course-online-safety-next-steps-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a phone with a lock." loading="lazy" decoding="async"></div>
+  <h3><a href="online-safety-next-steps-canada/">Online Safety Next Steps</a></h3>
+  <p>By the end, learners can turn on multi-factor authentication, follow official steps to recover an account, change default home-router settings and set up a guest network, use a simple checklist for kids’ devices and parental controls, and back up important files.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="online-safety-next-steps-canada">0% done</span></p><div class="bar" data-bar="online-safety-next-steps-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="online-safety-next-steps-canada/">Open course</a>
+</article>
+<article class="card" data-category="Community">
+  
+  <div class="frame frame-wide"><img src="../media/course-nonprofit-volunteer-group-basics-canada.svg" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A simple drawing of a small group and a shared box." loading="lazy" decoding="async"></div>
+  <h3><a href="nonprofit-volunteer-group-basics-canada/">Nonprofit and Volunteer-Group Basics in Canada</a></h3>
+  <p>By the end, learners can tell an informal volunteer group from an Alberta society, a CRA registered charity, and an Alberta “charitable organization,” describe what a society can and cannot do, outline the official map for incorporating a society, and know that only a CRA registered charity can issue official donation tax receipts.</p>
+  <p class="meta">5 short lessons</p>
+  <p class="progress-line"><span>Your progress</span><span data-pct="nonprofit-volunteer-group-basics-canada">0% done</span></p><div class="bar" data-bar="nonprofit-volunteer-group-basics-canada" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+  <a class="btn" href="nonprofit-volunteer-group-basics-canada/">Open course</a>
+</article>
 <!-- /range-path:catalogue -->
 </div>
 <!-- range-path:catalogue-extra -->
+<div id="catalogue-extra">
 <h2 class="section">Demo extra</h2>
 <p>Still in this demo, after the main courses. Not featured on the home page.</p>
 <div class="cards cols-3">
-<article class="card">
+<article class="card" data-category="">
+  
   <div class="frame frame-wide"><img src="../media/drive-1280.webp" srcset="../media/drive-720.webp 720w, ../media/drive-1280.webp 1280w, ../media/drive-1920.webp 1920w" sizes="(max-width: 900px) 100vw, 960px" width="1280" height="853" alt="A car approaches on a snow-covered two-lane road between fenced fields. No licence plate is readable." loading="lazy" decoding="async"></div>
   <h3><a href="winter-safety-rural-alberta/">Winter Safety &amp; Driving in Rural Alberta</a></h3>
   <p>Plan a rural winter trip, pack a kit, and know safer habits for ice, snow, and getting stranded.</p>
@@ -186,11 +442,8 @@
   <a class="btn" href="winter-safety-rural-alberta/">Open course</a>
 </article>
 </div>
+</div>
 <!-- /range-path:catalogue-extra -->
-<h2 class="section">Not in this demo</h2>
-<ul class="check">
-  <li>Online banking basics</li>
-</ul>
 <p><a class="btn" href="../walkthrough/">Request a walkthrough</a></p>
     </div>
   </main>

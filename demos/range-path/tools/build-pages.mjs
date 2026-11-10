@@ -253,7 +253,7 @@ ${lessonItems}
   course.lessons.forEach((lesson, index) => {
     const number = index + 1;
     const width = Math.round((number / count) * 100);
-    const lessonMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span>Lesson ${number}</span></p>
+    const lessonMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span class="crumb-here">Lesson ${number}</span></p>
 <p class="step-label">Lesson ${number} of ${count}</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="${count}" aria-valuenow="${number}" aria-label="Lesson ${number} of ${count}"><span style="width:${width}%"></span></div>
 <h1>${esc(lesson.title)}</h1>
@@ -276,7 +276,7 @@ ${sourceList(lesson.sources)}
     );
 
     const last = number === count;
-    const quizMain = `<p class="crumbs"><a href="../../../../">Home</a><a href="../../../../courses/">Courses</a><a href="../../">${esc(course.title)}</a><a href="../">Lesson ${number}</a><span>Quiz</span></p>
+    const quizMain = `<p class="crumbs"><a href="../../../../">Home</a><a href="../../../../courses/">Courses</a><a href="../../">${esc(course.title)}</a><a class="crumb-here" href="../">Lesson ${number}</a><span class="crumb-here">Quiz</span></p>
 <p class="step-label">Quiz · Lesson ${number} of ${count}</p>
 <h1>${esc(lesson.title)}</h1>
 <p>Choose an answer, then check it. Your score stays on this device.</p>
@@ -303,7 +303,7 @@ ${quizForm({
     );
   });
 
-  const finalMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span>Final quiz</span></p>
+  const finalMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span class="crumb-here">Final quiz</span></p>
 <p class="step-label">Final quiz · ${finalCount} questions · pass at ${passLabel}</p>
 <h1>Final quiz</h1>
 <p>${esc(course.title)}</p>
@@ -333,7 +333,9 @@ ${quizForm({
 
 function homeCard(course) {
   const count = course.lessons.length;
+  const image = imageTag(course.media, "", false);
   return `<article class="card">
+      ${image}
       <h3><a href="courses/${esc(course.slug)}/">${esc(course.title)}</a></h3>
       <p>${esc(course.summary || course.goals || "")}</p>
       <p class="meta">${count} lessons · final quiz · certificate at 70%</p>
@@ -341,10 +343,13 @@ function homeCard(course) {
     </article>`;
 }
 
-function catalogueCard(course) {
+function catalogueCard(course, entry) {
   const count = course.lessons.length;
   const image = imageTag(course.media, "../", false);
-  return `<article class="card">
+  const category = entry && entry.category ? entry.category : "";
+  const pitch = entry && entry.pitch ? `<p class="pill">Start here</p>` : "";
+  return `<article class="card" data-category="${esc(category)}">
+  ${pitch}
   ${image}
   <h3><a href="${esc(course.slug)}/">${esc(course.title)}</a></h3>
   <p>${esc(course.summary || course.goals || "")}</p>
@@ -408,12 +413,28 @@ function main() {
 
   const catalogueFile = path.join(demoRoot, "courses", "index.html");
   let catalogueHtml = fs.readFileSync(catalogueFile, "utf8");
-  catalogueHtml = replaceMarked(catalogueHtml, "catalogue", mainCourses.map(({ course }) => catalogueCard(course)).join("\n"));
+  const categories = [];
+  mainCourses.forEach(({ entry }) => {
+    if (entry.category && categories.indexOf(entry.category) === -1) categories.push(entry.category);
+  });
+  const filters = categories.length
+    ? `<div class="filters" data-course-filters role="group" aria-label="Course topics">
+  <button type="button" data-filter="all" aria-pressed="true">All courses</button>
+${categories.map((category) => `  <button type="button" data-filter="${esc(category)}" aria-pressed="false">${esc(category)}</button>`).join("\n")}
+</div>
+<p class="meta" id="filter-status">Showing every course. The first four are a good place to start.</p>`
+    : "";
+  if (catalogueHtml.includes("<!-- range-path:filters -->")) {
+    catalogueHtml = replaceMarked(catalogueHtml, "filters", filters);
+  }
+  catalogueHtml = replaceMarked(catalogueHtml, "catalogue", mainCourses.map(({ entry, course }) => catalogueCard(course, entry)).join("\n"));
   const extraHtml = extras.length
-    ? `<h2 class="section">Demo extra</h2>
+    ? `<div id="catalogue-extra">
+<h2 class="section">Demo extra</h2>
 <p>Still in this demo, after the main courses. Not featured on the home page.</p>
 <div class="cards cols-3">
-${extras.map(({ course }) => catalogueCard(course)).join("\n")}
+${extras.map(({ entry, course }) => catalogueCard(course, entry)).join("\n")}
+</div>
 </div>`
     : "";
   catalogueHtml = replaceMarked(catalogueHtml, "catalogue-extra", extraHtml);

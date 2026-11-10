@@ -1,0 +1,506 @@
+{
+  "slug": "nonprofit-volunteer-group-basics-canada",
+  "title": "Nonprofit and Volunteer-Group Basics in Canada",
+  "summary": "By the end, learners can tell an informal volunteer group from an Alberta society, a CRA registered charity, and an Alberta “charitable organization,” describe what a society can and cannot do, outline the official map for incorporating a society, and know that only a CRA registered charity can issue official donation tax receipts.",
+  "goals": "By the end, learners can tell an informal volunteer group from an Alberta society, a CRA registered charity, and an Alberta “charitable organization,” describe what a society can and cannot do, outline the official map for incorporating a society, and know that only a CRA registered charity can issue official donation tax receipts.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, legal opinion, tax opinion, or an audit or assurance product.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "A volunteer group is not automatically a charity",
+      "html": "<p>Many community projects start as a few neighbours who want to run a supper, a rink, or a fundraiser. That informal group can do a great deal. It is not, by itself, a legal society or a registered charity.</p>\n<p>The Government of Alberta says the words <strong>non-profit</strong> and <strong>charity</strong> are often used as if they mean the same thing, but they do not. Incorporating as a non-profit, being a <strong>registered charity</strong> with the Canada Revenue Agency, and being a <strong>charitable organization</strong> registered in Alberta are not the same. They require different processes. A group may choose one of these statuses, or more than one.</p>\n<p>Before you start a new organization, Alberta asks you to consider a few questions. Has another group already taken on this problem? What value would a new organization add? Have you looked at the need? Could you partner with a group that already exists? How would the organization be supported financially? There may already be an organization you could join or work with.</p>\n<p>In Alberta, groups that want to incorporate can do so under different provincial or federal acts. Alberta’s <strong>Societies Act</strong> is one of the most common choices for becoming a society. Incorporation has costs and paperwork, but it can give the group a legal identity, some protection for board members who act properly, and better access to grants that must be awarded to an incorporated organization rather than to individual board members.</p>\n<p>This course maps those official differences. It does not tell you which structure to choose, and it does not write your documents for you.</p>",
+      "sources": [
+        {
+          "label": "Non-profit, charities and charitable organizations (Government of Alberta)",
+          "url": "https://www.alberta.ca/non-profit-charities-and-charitable-organizations"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In Alberta, “non-profit,” “CRA registered charity,” and “charitable organization” are not the same thing.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An informal volunteer group is automatically a registered charity.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta suggests asking whether another organization already does this work before you start a new one.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is legal advice about which structure you must choose.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "What an Alberta society is",
+      "html": "<p>A <strong>society</strong> is an independent legal entity — a corporate “person” that exists separate from its members. Because of that, Alberta says the members cannot be held personally responsible for the debts of the society.</p>\n<p>Societies are similar to non-profit companies. They must direct any profits back into fulfilling the objectives of the organization. You should get legal advice if you are not sure whether a society or a non-profit company is best for your group’s purposes.</p>\n<p>Five or more people can form a society for purposes such as social activities, recreation, culture, or charity. You cannot form a society to carry out trade or business.</p>\n<p>A society can buy, sell, and own property, including land. It can enter into contracts. It can sue others, and it can be sued.</p>\n<p>A society cannot issue shares, declare dividends for members, or distribute property among the members during the lifetime of the society.</p>\n<p>If your society plans to register as a charity under the Income Tax Act, you need to make sure the society’s objectives or purposes meet Canada Revenue Agency requirements. Becoming a society does not automatically make you a CRA registered charity.</p>\n<p>These rules exist to keep the group’s money and property aimed at its purpose, not at paying members. They are minimum legal facts from the official page, not a full guide to running a board.</p>\n<p>If you only need a short-term volunteer project, you may not need a society at all. If you will hold land, sign contracts, or apply for grants in the group’s name, the official page is the place to read next — and a qualified advisor is the person to ask.</p>",
+      "sources": [
+        {
+          "label": "Incorporate a society (Government of Alberta)",
+          "url": "https://www.alberta.ca/incorporate-a-society"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A society is a legal entity separate from its members.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Five or more people can form a society for purposes such as recreation, culture, or charity.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You can form a society in order to carry out a trade or business.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Forming a society automatically registers the group as a CRA charity.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The official map for incorporating a society",
+      "html": "<p>Alberta publishes the steps to incorporate a society. This lesson is a map, not a do-it-yourself legal kit. Always use the live page and the current forms.</p>\n<p>As of 10 November 2026 (America/Regina), the incorporation fee was <strong>$53.05</strong>. The page said to make your cheque payable to “Government of Alberta” and <strong>not</strong> to send a credit card number in the mail.</p>\n<p><strong>Step 1 — Choose a name.</strong> A society’s name has three parts: a distinctive element (something unique, often a place or word), a descriptive element (what the society does), and a legal element. Accepted legal elements include Society, Association, Club, Fellowship, Guild, Foundation, Institute, League, Committee, Council, Board, Centre, and Bureau. Alberta’s example is “Smith Falls White Water Rafting Association.”</p>\n<p><strong>Step 2 — Get an Alberta NUANS report.</strong> Review it to make sure no other society has an identical name. Identical names are not allowed. The report reserves the proposed name for 90 days and must be submitted with the incorporation details while it is still valid.</p>\n<p><strong>Step 3 — Fill out the forms</strong> named on the page, including an application to form a society, bylaws, and notices of address and directors.</p>\n<p><strong>Step 4 — Submit</strong> signed duplicates of the completed forms, the NUANS report, and the fee to Corporate Registry at the address on the live page.</p>\n<p>If the information meets requirements, Corporate Registry mails a certificate of incorporation. You will receive an email when a federal business number is issued.</p>\n<p>This course does not write your bylaws or choose your name. Fees and addresses can change — check the live page before you send anything.</p>",
+      "sources": [
+        {
+          "label": "Incorporate a society (Government of Alberta)",
+          "url": "https://www.alberta.ca/incorporate-a-society"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "As of 10 November 2026, the official incorporation fee on the page was $53.05.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A society’s name needs a distinctive part, a descriptive part, and a legal element such as Society or Association.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course writes your bylaws for you.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A NUANS report is used to check that the proposed name is not identical to another society’s name.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "A CRA registered charity is different from a non-profit",
+      "html": "<p>The Canada Revenue Agency says registered charities and non-profit organizations (NPOs) both operate without the intention of making a profit, but they are not the same.</p>\n<p>A <strong>registered charity</strong> is a type of qualified donee under the Income Tax Act. It may issue official donation receipts. It is established and operated for exclusively charitable purposes, and it does not pay income tax. It must use all of its resources for charitable activities that advance those purposes.</p>\n<p>Charitable purposes fit these categories:</p>\n<ul>\n<li>relief of poverty</li>\n<li>advancement of education</li>\n<li>advancement of religion</li>\n<li>other purposes that benefit the community</li>\n</ul>\n<p>CRA examples include food banks, schools, places of worship, animal shelters, libraries, and volunteer fire departments.</p>\n<p>An <strong>NPO</strong> is an association, club, or society organized and operated exclusively for social welfare, civic improvement, pleasure, recreation, or any other purpose except profit. An NPO is not a qualified donee and <strong>cannot</strong> issue official donation receipts. CRA examples include some gardening clubs, book clubs, amateur sports groups, and festival organizations.</p>\n<p>An NPO is not registered with the CRA as a charity and does not receive a charitable registration number. A registered charity must apply to become one and is issued a number. If you are operating as a charity, CRA says you cannot be considered an NPO.</p>\n<p>Both kinds of organization generally cannot use their income to personally benefit their members (with a narrow exception on the CRA page for certain amateur-athletics groups).</p>\n<p>Wanting to help the community is not the same as being allowed to issue a tax receipt. Only a CRA registered charity has that authority.</p>",
+      "sources": [
+        {
+          "label": "Differences between a registered charity and a non-profit organization (CRA)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/charities-giving/about-registered-charities/what-difference-between-a-registered-charity-a-non-profit-organization.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A registered charity and a non-profit organization are not the same.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Only a CRA registered charity can issue official donation receipts.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An NPO automatically receives a charitable registration number.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Relief of poverty and advancement of education are examples of charitable purposes on the CRA page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Alberta’s “charitable organization” is yet another status",
+      "html": "<p>Alberta also uses the phrase <strong>charitable organization</strong>. That status is easy to confuse with a CRA registered charity, but Alberta says they are not the same.</p>\n<p>Registration as a charitable organization in Alberta is done under the <strong>Charitable Fund-raising Act</strong>. It should not be confused with being a registered charity with the CRA. Alberta says this provincial registration provides a charitable registration number but does <strong>not</strong> allow the organization to write charitable donation tax receipts. Charitable status for tax purposes is granted only by the CRA.</p>\n<p>A charitable organization must be registered under that Alberta Act if:</p>\n<ul>\n<li>it uses a fundraising business, or</li>\n<li>it intends to raise more than <strong>$25,000</strong> in gross contributions in its financial year from solicitations to individuals in Alberta, or</li>\n<li>during or after a campaign it finds it has raised more than $25,000 — in that case it must register within 45 days after contributions reach $25,000.</li>\n</ul>\n<p>Those dollar figures were on the official page as of 10 November 2026 (America/Regina). Check the live page before you rely on them.</p>\n<p>If your group later wants to become a CRA registered charity, go back to Lesson 2: the society’s purposes must meet CRA requirements, and you must apply to the CRA. Advantages Alberta lists for CRA registration include official tax receipts, income-tax exemption, and the ability to receive gifts from other registered charities.</p>\n<p>This course cannot file your paperwork, review your purposes, or tell you that your fundraiser is “fine.” It is a map of official differences so volunteer groups do not mix up three different statuses. For a real decision, read the live pages and get legal or tax advice.</p>",
+      "sources": [
+        {
+          "label": "Non-profit, charities and charitable organizations (Government of Alberta)",
+          "url": "https://www.alberta.ca/non-profit-charities-and-charitable-organizations"
+        },
+        {
+          "label": "Incorporate a society (Government of Alberta)",
+          "url": "https://www.alberta.ca/incorporate-a-society"
+        },
+        {
+          "label": "Differences between a registered charity and a non-profit organization (CRA)",
+          "url": "https://www.canada.ca/en/revenue-agency/services/charities-giving/about-registered-charities/what-difference-between-a-registered-charity-a-non-profit-organization.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Alberta’s “charitable organization” registration is not the same as being a CRA registered charity.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Alberta registration under the Charitable Fund-raising Act does not allow official donation tax receipts.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "As of 10 November 2026, intending to raise more than $25,000 from solicitations in Alberta was one trigger for that provincial registration.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course can approve your group as a charity.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file.",
+    "questions": [
+      {
+        "prompt": "“Non-profit,” “CRA registered charity,” and Alberta “charitable organization” are not the same.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      },
+      {
+        "prompt": "Five or more people can form an Alberta society for purposes such as recreation or culture.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      },
+      {
+        "prompt": "You can form a society to carry out a trade or business.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      },
+      {
+        "prompt": "Only a CRA registered charity can issue official donation receipts.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      },
+      {
+        "prompt": "Forming a society automatically makes the group a CRA charity.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      },
+      {
+        "prompt": "Alberta’s Charitable Fund-raising Act registration does not by itself allow tax receipts.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      },
+      {
+        "prompt": "This course is legal advice for your group.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. An informal group, a society, a CRA registered charity, and an Alberta charitable organization are different. A society is a separate legal person with set purposes. Only the CRA can grant tax-receipt authority. Check live pages and get advice before you file."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about Alberta societies, non-profit groups, and Canada Revenue Agency (CRA) registered charities, based on official Government of Alberta and CRA pages. It is not legal advice, not tax advice, not an audit or assurance product, and not a promise that your group will be approved. Rules can change. If a page differs from the legislation, follow the law and get qualified advice for your situation.",
+    "builderNotes": "- Sources verified live on 10 November 2026 (America/Regina): https://www.alberta.ca/non-profit-charities-and-charitable-organizations ; https://www.alberta.ca/incorporate-a-society ; CRA differences page.\n- Date-stamp before rebuilds: society incorporation fee $53.05; Alberta fundraising registration threshold $25,000 / 45 days.\n- Not legal or tax advice. Do not draft bylaws, choose a name, or complete forms for a real group inside this course.\n- Do not confuse or omit the three-way distinction (incorporated non-profit / society, CRA registered charity, Alberta Charitable Fund-raising Act registration).\n- Standing brand rule: not an “audit” or assurance product. No US 501(c)(3) text. No Ed2Go nonprofit-management text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-nonprofit-volunteer-group-basics-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a small group and a shared box."
+  }
+}

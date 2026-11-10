@@ -1,0 +1,530 @@
+{
+  "slug": "alberta-renting-tenant-rights",
+  "title": "Alberta Renting and Tenant Rights (RTA and RTDRS)",
+  "summary": "By the end, learners can name the Residential Tenancies Act as Alberta’s main renting law, list core landlord and tenant responsibilities from the official page, describe fixed-term and periodic agreements and security-deposit basics, find official rules about ending a tenancy and inspections, and locate RTDRS and the Consumer Contact Centre — without treating this course as legal advice.",
+  "goals": "By the end, learners can name the Residential Tenancies Act as Alberta’s main renting law, list core landlord and tenant responsibilities from the official page, describe fixed-term and periodic agreements and security-deposit basics, find official rules about ending a tenancy and inspections, and locate RTDRS and the Consumer Contact Centre — without treating this course as legal advice.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What this course is, and what the RTA is",
+      "html": "<p>If you rent the place where you live in Alberta, a provincial law called the <strong>Residential Tenancies Act (RTA)</strong> sets minimum standards for landlords and tenants. The official Alberta.ca page on rights and responsibilities says the RTA is a framework for how the two sides must treat each other.</p>\n<p>When a landlord and tenant agree to rent a home, they enter a <strong>residential tenancy agreement</strong>. Alberta.ca says this agreement can be written, oral, or implied, but it should be written so both sides have a record. A later page on starting a tenancy says an agreement cannot take away rights set out in the RTA. Anything in an agreement that tries to waive those rights is void.</p>\n<p>This course is a map of official pages. It does not tell you what to do in your dispute. It does not write your notice or fill in an RTDRS form. The Centre for Public Legal Education Alberta (CPLEA) also publishes <em>Renting 101</em> and related pages. CPLEA says that guide provides <strong>general legal information on Alberta law only</strong>. Use it as extra reading, not as a replacement for Alberta.ca or for advice about your own case.</p>\n<p>If you rent only the land under a mobile home, a different law (the Mobile Home Sites Tenancies Act) may apply. Read the official page for that situation.</p>\n<p>For questions, Alberta’s Consumer Contact Centre is listed on the official contact page (see Lesson 5).</p>",
+      "sources": [
+        {
+          "label": "Landlords and tenants – Rights and responsibilities — Alberta.ca",
+          "url": "https://www.alberta.ca/rights-and-responsibilities"
+        },
+        {
+          "label": "Starting a tenancy — Alberta.ca",
+          "url": "https://www.alberta.ca/starting-a-tenancy"
+        },
+        {
+          "label": "Renting Rights & Responsibilities — CPLEA",
+          "url": "https://www.cplea.ca/housing/renting-rights-responsibilities/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course is legal advice about your own rental dispute.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The Residential Tenancies Act (RTA):",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Sets minimum standards for landlords and tenants in Alberta"
+            },
+            {
+              "id": "B",
+              "text": "Is a federal income-tax form"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta.ca says a tenancy agreement can be written, oral, or implied, but it should be written.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An agreement can take away rights that the RTA gives a tenant.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Responsibilities of tenants and landlords",
+      "html": "<p>Even if a duty is not written in your rental agreement, Alberta.ca says landlords and tenants must still meet the RTA.</p>\n<p><strong>Tenants must:</strong></p>\n<ul>\n<li>pay rent on time</li>\n<li>be considerate of the landlord and other tenants</li>\n<li>not endanger other tenants</li>\n<li>not perform illegal acts or conduct illegal business on the rental premises</li>\n<li>keep the rental premises reasonably clean</li>\n<li>prevent damage to the rental premises</li>\n<li>move out when the rental agreement ends</li>\n<li>follow the rules in the agreement that do not conflict with the RTA</li>\n</ul>\n<p><strong>Landlords must:</strong></p>\n<ul>\n<li>make the rental premises available on the date the agreement takes effect</li>\n<li>give the tenant a written “notice of landlord” within 7 days of the tenant moving in, or post that notice in a visible place in a common area</li>\n<li>not disturb the tenant’s peaceful enjoyment of the premises (for example, not bother the tenant beyond what is needed to do the landlord’s business)</li>\n<li>keep the premises <strong>habitable</strong> at the start and throughout the tenancy (the page gives examples such as no bed bugs and working heat)</li>\n</ul>\n<p>“Habitable,” on that page, means the premises meet the Minimum Housing and Health Standards under the Public Health Act and Housing Regulation.</p>\n<p>Required notices must be delivered in person or by registered mail, unless the official page’s other service rules apply. Tenants should use the mailing address on the notice of landlord.</p>\n<p>This list is general information from the live page, not a judgment about your building. If the premises do not feel safe or healthy, the official contact page also points tenants to Alberta Environmental Public Health. This course does not file that complaint for you.</p>",
+      "sources": [
+        {
+          "label": "Landlords and tenants – Rights and responsibilities — Alberta.ca",
+          "url": "https://www.alberta.ca/rights-and-responsibilities"
+        },
+        {
+          "label": "Contact – Landlord and tenant issues — Alberta.ca",
+          "url": "https://www.alberta.ca/contact-landlord-and-tenant-issues"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Paying rent on time is listed as a tenant responsibility.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Landlords must keep the rental premises habitable throughout the tenancy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A landlord must give a written notice of landlord within 7 days of move-in, or post it in a visible common area.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson decides who is at fault in your building.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Agreements, deposits, and inspection reports",
+      "html": "<p>Alberta has two main kinds of rental agreements. A <strong>fixed-term</strong> tenancy begins and ends on specific dates. A <strong>periodic</strong> tenancy has a start date but no end date (often month-to-month). Either side may end a periodic tenancy by giving notice, following the official rules.</p>\n<p>Landlords usually ask for a <strong>security deposit</strong> (sometimes called a damage deposit). As of November 2026, Alberta.ca said the deposit cannot be more than <strong>one month’s rent</strong> at the time the tenancy starts. It cannot be increased later if the rent goes up. Landlords must put the deposit into an interest-bearing trust account in Alberta within <strong>2 banking days</strong> of collecting it. Tenants can ask for a receipt. Check the live page; these details can change.</p>\n<p>When the tenancy ends, tenants have the right to get the deposit back, with any interest owing, if there is no damage beyond <strong>normal wear and tear</strong>, the place has been properly cleaned if the agreement requires it, and no rent or other costs are owing. Normal wear and tear means deterioration that happens over time with use, even with reasonable care.</p>\n<p>Move-in and move-out <strong>inspection reports</strong> are mandatory. They describe the condition of the home when you move in and when you move out. You can use them to show you did not cause damage that was already there. If the inspection-report rules are not met, the landlord cannot deduct damages or cleaning costs from the deposit (the landlord may still try to recover costs another way). Keep copies.</p>\n<p>This course does not calculate your deposit or complete your inspection form.</p>",
+      "sources": [
+        {
+          "label": "Starting a tenancy — Alberta.ca",
+          "url": "https://www.alberta.ca/starting-a-tenancy"
+        },
+        {
+          "label": "Ending a tenancy — Alberta.ca",
+          "url": "https://www.alberta.ca/ending-a-tenancy"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A periodic tenancy:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Has a start date but no set end date"
+            },
+            {
+              "id": "B",
+              "text": "Is a type of driver’s licence"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the Alberta.ca page checked for this course, a security deposit cannot be more than one month’s rent when the tenancy starts.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Move-in and move-out inspection reports are mandatory.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Normal wear and tear means damage you caused on purpose.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Ending a tenancy and getting a deposit back",
+      "html": "<p>How a tenancy ends depends on the type of agreement. A <strong>fixed-term</strong> tenancy ends on the date in the agreement. Alberta.ca says neither side needs to give notice to end it on that date (though telling each other early is described as a good practice, not a legal requirement). Unless you both agree otherwise, the tenant must move out by noon on that end date.</p>\n<p>To end a <strong>periodic</strong> tenancy, written notice is required. The notice must include the address, the date the tenancy will end, and the signature of the person giving notice. Landlords must also include their reasons. The amount of notice depends on who is giving it and whether the tenancy is weekly, monthly, or yearly. As of November 2026, the page said a tenant ending a month-to-month tenancy must give one full tenancy month of notice, and a landlord must give three full tenancy months. Weekly and yearly tenancies have different times. Always check the live “Ending a tenancy” page. Those times can change, and other rules apply to evictions and “substantial breach.”</p>\n<p>Alberta.ca also says tenants cannot withhold rent to force a landlord to do something such as making repairs. The landlord is entitled to have the rent paid in full when it is due.</p>\n<p>If there are no deductions, the landlord must return the full deposit plus interest within <strong>10 days</strong> after the tenant gave up possession. If there are deductions, the page describes other 10-day and 30-day steps. Date-stamp: November 2026. Provide a forwarding address in writing and keep copies of your papers for 3 years.</p>\n<p>This lesson does not draft your notice or tell you whether an eviction notice you received is valid.</p>",
+      "sources": [
+        {
+          "label": "Ending a tenancy — Alberta.ca",
+          "url": "https://www.alberta.ca/ending-a-tenancy"
+        },
+        {
+          "label": "Starting a tenancy — Alberta.ca",
+          "url": "https://www.alberta.ca/starting-a-tenancy"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A fixed-term tenancy:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ends on the date stated in the agreement, unless both sides agree to end it sooner"
+            },
+            {
+              "id": "B",
+              "text": "Never ends"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Written notice is required to end a periodic tenancy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta.ca says tenants cannot withhold rent to force a landlord to make repairs.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course can tell you whether your eviction notice is valid.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Getting help and the RTDRS",
+      "html": "<p>If you have a problem, Alberta.ca says to try to resolve it before filing a complaint or applying for a formal remedy. Talk calmly, write down what was said, and keep copies of letters or emails. State facts. Do not include threats.</p>\n<p>If you believe a landlord has committed an RTA offence, you can contact the Service Alberta / Consumer Contact Centre to ask about an investigation. As of November 2026, the contact page listed: 780-427-4088, toll-free <strong>1-877-427-4088</strong>, and rta@gov.ab.ca, weekdays 8:15 am to 4:30 pm (closed statutory holidays).</p>\n<p>If the issue is still not resolved, a tenant or a landlord may apply to the <strong>Residential Tenancy Dispute Resolution Service (RTDRS)</strong>, or they may go to court. RTDRS can deal with concerns such as ending a tenancy, unpaid rent or utilities, security deposits, damages, repairs, and other common disagreements. As of November 2026, the overview said you can apply within <strong>2 years</strong> from the date the claim or loss first came to your attention, if the claim is under <strong>$100,000</strong>. Hearings are by telephone. You must file an application, serve the other party, take part in the hearing, and enforce any order. This course cannot predict the result and does not file the application for you.</p>\n<p>RTDRS contact listed on that page: 780-644-3000 and rtdrs@gov.ab.ca. The page says RTDRS does <strong>not</strong> accept applications or evidence at that email address.</p>\n<p>CPLEA’s renting pages are extra general information. For a live dispute, get help from official contacts or a legal clinic.</p>",
+      "sources": [
+        {
+          "label": "Resolving tenancy disputes — Alberta.ca",
+          "url": "https://www.alberta.ca/resolving-tenancy-disputes"
+        },
+        {
+          "label": "RTDRS – Overview — Alberta.ca",
+          "url": "https://www.alberta.ca/rtdrs-overview"
+        },
+        {
+          "label": "Contact – Landlord and tenant issues — Alberta.ca",
+          "url": "https://www.alberta.ca/contact-landlord-and-tenant-issues"
+        },
+        {
+          "label": "Renting Rights & Responsibilities — CPLEA",
+          "url": "https://www.cplea.ca/housing/renting-rights-responsibilities/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Alberta.ca says you should try to resolve a dispute before applying to RTDRS or court.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Both a tenant and a landlord can apply to RTDRS about issues the official page lists, such as deposits or unpaid rent.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course can tell you who will win at RTDRS.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The Consumer Contact Centre is listed on Alberta.ca for landlord and tenant information.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer.",
+    "questions": [
+      {
+        "prompt": "This course is legal advice about your own tenancy.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      },
+      {
+        "prompt": "The RTA sets minimum standards for landlords and tenants in Alberta.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      },
+      {
+        "prompt": "Paying rent on time is listed as a tenant responsibility.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      },
+      {
+        "prompt": "Inspection reports at move-in and move-out are mandatory.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      },
+      {
+        "prompt": "A fixed-term tenancy ends on the date in the agreement unless both sides agree otherwise.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      },
+      {
+        "prompt": "Both landlords and tenants may apply to RTDRS.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      },
+      {
+        "prompt": "This course can draft your notice or predict an RTDRS result.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5 and the live Alberta.ca pages. This course is a map, not a lawyer."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general legal information about Alberta’s residential tenancy system. It is not legal advice, not a prediction of what will happen in your dispute, and not help drafting a notice, application, or court or RTDRS filing. Laws and dollar limits change. Always read the live pages on Alberta.ca, or speak with the Consumer Contact Centre or a legal clinic, about your own situation.",
+    "builderNotes": "- General legal information only. Do not add “what you should do in your dispute” steps.\n- Date-stamp and re-check: security deposit maximum (one month’s rent); 2 banking days to deposit in trust; periodic notice periods (including one / three months for month-to-month); deposit return 10 / 30 days; RTDRS $100,000 and 2-year window; Consumer Contact and RTDRS phone numbers. Keep exact days and dollar limits out of most quiz answers where possible; Lesson 3 Q2 names “one month’s rent” because that is the live definition — re-check before rebuilds.\n- Do not teach condo-corporation owner deposits, sub-meters, or every eviction notice type (24-hour / 48-hour / 14-day) as learner instructions; point to the ending-a-tenancy page.\n- CPLEA is supplementary public legal education, not a substitute for Alberta.ca. Do not copy the Renting 101 booklet.\n- No US landlord-tenant or Ed2Go real-estate-law text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-alberta-renting-tenant-rights.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a house."
+  }
+}

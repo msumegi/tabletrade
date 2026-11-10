@@ -1,0 +1,514 @@
+{
+  "slug": "data-spreadsheet-lists-charts-plain",
+  "title": "Data in a Spreadsheet: Lists and Simple Charts (Very Plain)",
+  "summary": "By the end, learners can explain what data is in plain language, tell a row from a column, read a value where a row and column meet, check a table’s title, headings, units, and source, and read a simple chart for comparison, change over time, or parts of a whole.",
+  "goals": "By the end, learners can explain what data is in plain language, tell a row from a column, read a value where a row and column meet, check a table’s title, headings, units, and source, and read a simple chart for comparison, change over time, or parts of a whole.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, data-analyst certificate, statistics credit, or a Microsoft Office Specialist credential.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What counts as data?",
+      "html": "<p>Data is information we collect so we can understand something — how many people came to a supper, how much a program cost, or how a number has changed over time. You do not need a special computer program to start thinking about data.</p>\n<p>Canada’s Skills for Success include <strong>Numeracy</strong>: your ability to find, understand, use, and report mathematical information presented through words, numbers, symbols, and graphics. We use this skill to perform calculations, manage budgets, and make sense of numbers we see.</p>\n<p>They also include <strong>Digital</strong> skill: using digital technology and tools to find, manage, apply, create, and share information and content. Organizing information in a clear list is part of that work, whether the list lives on paper, in a notes app, or in a spreadsheet.</p>\n<p>Statistics Canada describes a <strong>data journey</strong> with steps: define, find, and gather data; explore, clean, describe, and understand it; analyze it; and tell the story the data show. A foundation of quality and clear labels supports every step.</p>\n<p>This course stays at the beginning of that journey. You will learn to read a table and a simple chart, and to keep a list clean enough that someone else can understand it. You will not learn spreadsheet formulas, sort buttons, or how to insert a chart in Excel. Those are different courses.</p>\n<p>When you see a number, pause and ask: What is this about? What time period is it for? Where did it come from?</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Numeracy and Digital)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Analysis 101: How to read a table (Statistics Canada)",
+          "url": "https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062023002"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Numeracy includes finding, understanding, using, and reporting mathematical information in words, numbers, symbols, and graphics.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Statistics Canada describes a data journey that includes gathering, cleaning, analyzing, and telling the story.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course teaches you how to insert a chart in Microsoft Excel.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "When you see a number, it helps to ask what it is about and where it came from.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Rows, columns, and the cell where they meet",
+      "html": "<p>Statistics Canada says a <strong>data table</strong> is a structured arrangement of data in <strong>rows</strong> and <strong>columns</strong>. It is used to display a large amount of numerical information in an organized way.</p>\n<p>Think of a simple list of community suppers:</p>\n<ul>\n<li>A <strong>column</strong> runs up and down. Each column has a header that names one kind of information, such as “Date,” “Meal,” or “Tickets sold.”</li>\n<li>A <strong>row</strong> runs left to right. Each row is usually one item or one group, such as one supper or one age group.</li>\n<li>A <strong>cell</strong> is the box where a row and a column meet. The number or words in that box belong to that row and that heading.</li>\n</ul>\n<p>Statistics Canada’s steps for reading a table start with the <strong>title</strong>. The title should tell you what the table is about, who or where it covers, and often the time period. Next, identify the <strong>column headers</strong>. Then check the <strong>source</strong> and any notes. Then identify the <strong>row stubs</strong> — the labels down the side that name each row.</p>\n<p>To find one fact, locate the row you care about and the column you care about, and read the cell where they intersect. In Statistics Canada’s example, the prevalence of disability for people aged 45 to 64 is found where that age-group row meets the “Prevalence of disability” column.</p>\n<p>Tables can also help you compare numbers and notice patterns. They are a foundation for charts and other pictures of data. You can keep a table in any tool — or even on paper. The idea of rows, columns, and cells does not belong to one brand of software.</p>",
+      "sources": [
+        {
+          "label": "Analysis 101: How to read a table (Statistics Canada)",
+          "url": "https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062023002"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A data table is a structured arrangement of data in rows and columns.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A cell is where a row and a column meet.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The first reading step Statistics Canada names is to look at the title.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Rows, columns, and cells exist only in Microsoft Excel.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Keep a clean, readable list",
+      "html": "<p>A list is easier to trust when it is tidy. Statistics Canada’s table-reading steps are also a good checklist when you <strong>make</strong> a list.</p>\n<p>Give the list a <strong>title</strong> that matches what is inside it. Note the <strong>time period</strong> — a week, a month, or a year — so nobody mixes old numbers with new ones. Use clear <strong>column headings</strong>. Put the same kind of information under each heading. If one column is “Tickets sold,” do not put a person’s phone number in that column.</p>\n<p>Watch the <strong>units</strong>. Statistics Canada reminds readers to check whether numbers are in ones, thousands, or millions, and whether a value is a total or an average. If your list is about dollars, say so. If it is about people, say so. Write totals on a separate row so they are not confused with a single item.</p>\n<p><strong>Name your source</strong>, or note that you collected the numbers yourself. Statistics Canada says you should not trust a table that does not clearly show where the data came from. Checking the reliability of a source is part of reading data well.</p>\n<p>The official data journey includes a step to <strong>explore, clean, describe, and understand</strong> the data before you analyze it. Cleaning, in plain language, means fixing obvious problems: a missing heading, a date written two different ways, or a blank that should have been a zero or a note.</p>\n<p>Skills for Success Digital includes storing and organizing digital information in a logical way with files, folders, and labels. Give your list a clear file name and keep it where you and your group can find it.</p>\n<p>You do not need Excel’s sort or filter buttons for this lesson. A clean list on paper or in any app is enough.</p>",
+      "sources": [
+        {
+          "label": "Analysis 101: How to read a table (Statistics Canada)",
+          "url": "https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062023002"
+        },
+        {
+          "label": "Learn about the Skills (Skills for Success — Digital)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A clear title and a noted time period help people understand a list.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should check whether numbers are totals or averages, and what units they use.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Statistics Canada says you should not trust a table that does not clearly show its source.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson requires you to use Excel’s sort and filter arrows.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Read a simple chart",
+      "html": "<p>Statistics Canada says <strong>data visualization</strong> is the graphical representation of information and data. Charts, graphs, and maps can make trends and patterns that are hidden in a large set of numbers easier to understand. The brain often absorbs visual information quickly, so a picture of the data can help — if it is the right picture.</p>\n<p>You do not need to create a chart in spreadsheet software to read one.</p>\n<p>A few common types, from Statistics Canada’s introduction:</p>\n<ul>\n<li>A <strong>bar chart</strong> is useful when you want to compare different groups. Taller or longer bars usually mean a larger number for that group.</li>\n<li>A <strong>line graph</strong> is a good way to show how something changes over time.</li>\n<li>A <strong>pie chart</strong> shows the composition of a whole, or how parts add up to 100%.</li>\n<li>A <strong>table</strong> can show many categories and provide more detail and precision than many pictures.</li>\n</ul>\n<p>When you read a chart, start the same way you start a table: read the title, check what each axis or slice represents, look at the units, and look for a source and date. Then ask what the picture is trying to compare, show over time, or break into parts.</p>\n<p>A chart can make a pattern clear, but it can also hide detail. If you need an exact number, a table is often more precise. If two bars look almost the same height, do not guess — go back to the numbers if they are given.</p>\n<p>This course does not teach you which Excel button makes a chart. It teaches you to read the chart in front of you.</p>",
+      "sources": [
+        {
+          "label": "Data Visualization: An introduction (Statistics Canada)",
+          "url": "https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020014"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Data visualization is the graphical representation of information and data.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A bar chart is useful for comparing different groups.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A line graph is a good way to show how something changes over time.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course teaches the Excel clicks that insert a chart.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Put the pieces together",
+      "html": "<p>You now have a simple way to approach any list, table, or chart, in any program or on paper.</p>\n<ol>\n<li>Read the title. What is this about, and for what time and place?</li>\n<li>Read the headings (or the labels on a chart). What kind of information is in each column or on each axis?</li>\n<li>Check the units and whether a number is a total or an average.</li>\n<li>Check the source and any notes or quality marks. Statistics Canada, for example, uses letters such as <strong>E</strong> to mean an estimate should be interpreted with caution, and <strong>F</strong> to mean an estimate is too unreliable to publish. Other tables may use different notes.</li>\n<li>Find the cell — or the bar, line, or slice — that answers your question.</li>\n<li>Look for a pattern, but do not invent a story the numbers do not support.</li>\n</ol>\n<p>Skills for Success numeracy includes identifying the question you need to answer and checking whether a result makes sense. If a total looks far too big or too small, look again before you share it.</p>\n<p>When you keep your own list, use the same habits: a clear title, consistent headings, noted units and dates, and a source. Save the file with a name that will still make sense next month.</p>\n<p>This is not a data-analyst course, not a statistics credit, and not a repeat of Excel basics or Excel next steps. Those Excel courses teach cells, tables, sort and filter, and creating charts in that program. Use them if you want the software steps. Use this course when you need to understand the data itself.</p>",
+      "sources": [
+        {
+          "label": "Analysis 101: How to read a table (Statistics Canada)",
+          "url": "https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062023002"
+        },
+        {
+          "label": "Data Visualization: An introduction (Statistics Canada)",
+          "url": "https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020014"
+        },
+        {
+          "label": "Learn about the Skills (Skills for Success — Numeracy)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Reading a title, headings, units, and source should come before you pick out a single number.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A quality mark on a Statistics Canada table can tell you to interpret an estimate with caution.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a Microsoft Office Specialist exam.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Excel next steps is a different course if you want software steps for tables, sort, filter, and creating charts.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses.",
+    "questions": [
+      {
+        "prompt": "A data table arranges information in rows and columns.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      },
+      {
+        "prompt": "A cell is where a row and a column meet.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      },
+      {
+        "prompt": "You should not trust a table that does not clearly show its source.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      },
+      {
+        "prompt": "A bar chart is useful for comparing groups.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      },
+      {
+        "prompt": "A line graph is a good way to show change over time.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      },
+      {
+        "prompt": "This course teaches Excel’s chart button.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      },
+      {
+        "prompt": "This course is a data-analyst credential.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Data can live in any list or table. Read the title, headings, units, and source. Find the cell where a row and column meet. Use a chart to see comparisons or change over time. Software steps belong to other courses."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about reading data in lists, tables, and simple charts. It is app-neutral: it does not teach Microsoft Excel, Google Sheets, or any other spreadsheet program’s buttons. Other Range Path courses cover Excel cells, tables, sort and filter, and creating charts. This course is not a data-analyst, statistics, or MOS credential.",
+    "builderNotes": "- Kept because it is meaningfully different from Excel basics (cells, formulas, save/print) and Excel next steps (Excel tables, sort/filter, creating charts, AVERAGE/MIN/MAX/COUNT). This course is app-neutral and about reading data.\n- Sources verified live on 10 November 2026 (America/Regina): Skills for Success understanding-individuals.html (already opened this lineage); Statistics Canada “Analysis 101: How to read a table” and “Data Visualization: An introduction” (video transcripts).\n- An older StatsCan “Reading statistical tables” page exists but is archived; it was not used as a primary source.\n- Do not add Excel click-paths, table styles, sort arrows, or chart-insert steps.\n- No Ed2Go SQL or data-analytics text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-data-spreadsheet-lists-charts-plain.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a list and three bars."
+  }
+}

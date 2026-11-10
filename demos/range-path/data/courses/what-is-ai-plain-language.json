@@ -1,0 +1,530 @@
+{
+  "slug": "what-is-ai-plain-language",
+  "title": "What Is AI, in Plain Language",
+  "summary": "By the end, learners can explain in plain language what generative AI is, check AI answers against trusted sources before using them, protect personal information when using a chatbot, spot common AI-related scam warnings from official Canadian pages, and use everyday cyber-safety habits — without treating this course as a product endorsement or a professional credential.",
+  "goals": "By the end, learners can explain in plain language what generative AI is, check AI answers against trusted sources before using them, protect personal information when using a chatbot, spot common AI-related scam warnings from official Canadian pages, and use everyday cyber-safety habits — without treating this course as a product endorsement or a professional credential.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, cyber-security certification, or vendor AI certificate. It does not endorse any AI product.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What people mean by “AI”",
+      "html": "<p><strong>Artificial intelligence (AI)</strong> is a name for computer systems that do tasks people often use thinking for, such as making sense of spoken language, learning from examples, or solving problems. A Government of Canada guide on generative AI uses that kind of plain description.</p>\n<p><strong>Generative AI</strong> is a type of AI that makes new content. The Canadian Centre for Cyber Security (Cyber Centre) says it creates unique content by learning from large sets of data that were fed into the model. That content can be text, images, audio, video, or computer code. Older, more traditional AI systems often recognize patterns or sort existing content. Generative AI can create something new.</p>\n<p>You use generative AI by giving it a short instruction, called a <strong>prompt</strong> or query. The Government of Canada guide explains that many of these tools produce the next words or images that are statistically likely, based on their training data. The result can look as though a person made it. That does not mean a person checked it, and it does not mean it is true.</p>\n<p>People use these tools for everyday things such as drafting a note, summarizing a long page, or making an image. Organizations also use AI in many kinds of work. This course does not say you must use AI, and it does not name or recommend a product.</p>\n<p>This course is not a technical certificate. It will not teach you how to build an AI system. The next lessons focus on three practical skills: checking answers, protecting your privacy, and watching for scams.</p>",
+      "sources": [
+        {
+          "label": "Generative artificial intelligence - ITSAP.00.041 — Canadian Centre for Cyber Security",
+          "url": "https://www.cyber.gc.ca/en/guidance/generative-artificial-intelligence-ai-itsap00041"
+        },
+        {
+          "label": "Guide on the use of generative artificial intelligence — Government of Canada",
+          "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/generative-ai/guide-use-generative-ai.html"
+        },
+        {
+          "label": "The next generation: Spotting content created with artificial intelligence — Get Cyber Safe",
+          "url": "https://www.getcybersafe.gc.ca/en/next-generation-spotting-content-created-with-artificial-intelligence"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Generative AI can create new content such as text, images, audio, or video.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If AI content looks like a person wrote it, it has been checked by a person and is always true.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a vendor or technical AI certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A prompt is the instruction or question you give to a generative AI tool.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Check AI answers before you use them",
+      "html": "<p>Generative AI can sound confident even when it is wrong. The Cyber Centre says you should be cautious with information that comes from AI. Its outputs:</p>\n<ul>\n<li>can be incorrect</li>\n<li>might not make sense</li>\n<li>might not take certain factors into account</li>\n<li>can be biased</li>\n</ul>\n<p>The Cyber Centre also says you should analyze AI content before you act on it or use it, and you should validate your sources to check whether the content is accurate.</p>\n<p>A Government of Canada guide on generative AI gives the same kind of warning. These tools can produce content that looks well developed and reasonable but is inaccurate, incomplete, or not consistent with the facts. The guide calls some of that content a <strong>hallucination</strong>. Training data can also be out of date or leave out many views, so the answer may be biased or missing important context.</p>\n<p>Useful habits from those official pages:</p>\n<ol>\n<li>Do not treat an AI answer as the final word.</li>\n<li>Check important facts against a trusted source, such as an official government page, your council, your school, or another source you already trust.</li>\n<li>If the tool does not show sources you can open and check, do not use it as if it were a search engine.</li>\n<li>If you cannot tell whether the answer is right, do not use it for a decision that matters — money, health, legal questions, or someone else’s rights.</li>\n</ol>\n<p>Get Cyber Safe notes that AI tools often present their content as true facts even when it is not. That can lead people to spread false information without meaning to. Pause, check, and then decide.</p>\n<p>This course cannot check an answer for you. You stay responsible for what you send, post, or act on.</p>",
+      "sources": [
+        {
+          "label": "Generative artificial intelligence - ITSAP.00.041 — Canadian Centre for Cyber Security",
+          "url": "https://www.cyber.gc.ca/en/guidance/generative-artificial-intelligence-ai-itsap00041"
+        },
+        {
+          "label": "Guide on the use of generative artificial intelligence — Government of Canada",
+          "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/generative-ai/guide-use-generative-ai.html"
+        },
+        {
+          "label": "The next generation: Spotting content created with artificial intelligence — Get Cyber Safe",
+          "url": "https://www.getcybersafe.gc.ca/en/next-generation-spotting-content-created-with-artificial-intelligence"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "AI outputs can be incorrect, incomplete, or biased.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should analyze AI content and check sources before you act on it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If an AI answer sounds confident, you can treat it as a trusted official source.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A “hallucination,” in the Government of Canada guide, is content that can look reasonable but be inaccurate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Protect your privacy with AI chatbots",
+      "html": "<p>An <strong>AI chatbot</strong> is a tool that answers in writing (or sometimes by voice) after you type or speak a prompt. The Office of the Privacy Commissioner of Canada (OPC) says the information you put into a chatbot may be collected and stored. Put your privacy first.</p>\n<p>The OPC’s key tips are:</p>\n<ul>\n<li>Limit the personal information you share about yourself.</li>\n<li>Do not share sensitive or identifiable personal information.</li>\n<li>Change personal details if you must give an example — for instance, use a made-up name and change anything that could identify a real person.</li>\n<li>If the chatbot allows it, consider deleting your chat history.</li>\n<li>Review and adjust your privacy settings, and use strong passwords.</li>\n<li>Do not share personal information about other people.</li>\n<li>Never share pictures or personal information of minors (children and young people under 18).</li>\n</ul>\n<p>The OPC also lists risks. The information may be stored. The company may not clearly explain how it is used, stored, or shared. It may be used to train the AI system further. It may be used to create profiles about you or to make decisions about you. Future uses may not be clear. A chatbot could even disclose information it has learned about you to other users.</p>\n<p>The Cyber Centre adds a similar warning: people may put sensitive personal information into AI prompts without thinking. Threat actors could use that information to impersonate someone or spread false information. Do not share private information with an AI tool unless you understand what it does with your data. Avoid putting personally identifiable information into prompts. See whether the tool lets you delete your prompt history.</p>\n<p>This course does not tell you which chatbot to use. If you do use one, share as little as you can.</p>",
+      "sources": [
+        {
+          "label": "Your privacy and AI chatbots — Office of the Privacy Commissioner of Canada",
+          "url": "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/ai-chatbots_ind/"
+        },
+        {
+          "label": "Generative artificial intelligence - ITSAP.00.041 — Canadian Centre for Cyber Security",
+          "url": "https://www.cyber.gc.ca/en/guidance/generative-artificial-intelligence-ai-itsap00041"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Information you type into an AI chatbot may be collected and stored.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The OPC says you should never share pictures or personal information of minors with an AI chatbot.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "It is fine to paste someone else’s address or health details into a chatbot if you are only “trying it out.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "If a chatbot allows it, you can consider deleting your chat history.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "AI can make scams look more real",
+      "html": "<p>Threat actors use AI in scams. The Cyber Centre says content that is not clearly labelled as AI-generated can spread false information and confusion. AI also helps criminals write phishing messages more often, more automatically, and in a more polished way. A realistic scam message can lead to identity theft, financial fraud, or other cybercrime.</p>\n<p>Get Cyber Safe says phishing is still a common way criminals trick people. AI can make those messages look more legitimate, with fewer of the spelling mistakes people used to watch for. It can also use details from social media to make a message feel personal. Red flags that still matter include requests for money, suspicious links or attachments, and email addresses or web names that do not look right.</p>\n<p>Get Cyber Safe also describes <strong>vishing</strong>, or voice phishing. AI can copy the sound of a real person’s voice, including a family member or friend. The page says more of these calls have been reported in Canada, including calls that pretend a loved one is in trouble and needs money or information right away. Stay calm. If anyone calls with an urgent demand for money or personal information, check who they are through another method — for example, hang up and call the person or the organization using a number you already trust. Get Cyber Safe says no law enforcement or government organization in Canada will demand money or sensitive information over the phone. Your bank will not email or call to ask for your password, one-time passcode, card number, or similar secrets.</p>\n<p>AI can also create new images and videos that do not exist anywhere else, so an old “search for this picture” check may not prove they are real. If something seems too good to be true, it probably is.</p>",
+      "sources": [
+        {
+          "label": "Generative artificial intelligence - ITSAP.00.041 — Canadian Centre for Cyber Security",
+          "url": "https://www.cyber.gc.ca/en/guidance/generative-artificial-intelligence-ai-itsap00041"
+        },
+        {
+          "label": "How cyber criminals are using artificial intelligence (AI) for online threats — Get Cyber Safe",
+          "url": "https://www.getcybersafe.gc.ca/en/blogs/cyber-criminals-are-using-artificial-intelligence-ai-online-threats"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "AI can make phishing messages look more polished and personal.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A message with perfect spelling is always safe.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Get Cyber Safe says no law enforcement or government organization in Canada will demand money or sensitive information over the phone.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If a call sounds exactly like a family member who says they need money right now, you should still check through another trusted method.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Everyday habits that help you stay safer",
+      "html": "<p>You do not need to become a cyber-security expert. Official Canadian pages point to simple habits.</p>\n<p>The Cyber Centre says individuals should practise basic cyber security hygiene: stay informed, use strong passwords, turn on multi-factor authentication (MFA), keep software up to date, use antivirus software, and avoid public Wi-Fi networks. It also suggests posting less personal information online, not opening attachments or links from unknown sources, and using another verified way to communicate if something feels off.</p>\n<p>When you look at pictures, videos, or text, Get Cyber Safe lists signs that content may have been made by AI:</p>\n<ul>\n<li>Images: missing or misplaced objects or body parts (especially hands), odd shadows or lighting, text that does not make sense, or skin and fabric that look unusually smooth or glossy. Some tools add a watermark or small logo.</li>\n<li>Videos: unnatural movement, people who do not blink, strange shadows, blurs, or light flickers, and voices that sound flat, choppy, or paired with odd background noise.</li>\n<li>Text: a dry, “robotic” tone, information that is out of date, or the same words repeated again and again.</li>\n</ul>\n<p>These signs are clues, not proof. AI is changing, and some fakes will be hard to spot. Always check the source. If a message asks you to send money, click a link, or share personal information, pause.</p>\n<p>Do not treat this course as approval to use any one AI product. Check answers, protect privacy, and verify unexpected requests. If you want more practice on email and passwords, your council may also offer the Range Path course on email and online safety.</p>",
+      "sources": [
+        {
+          "label": "Generative artificial intelligence - ITSAP.00.041 — Canadian Centre for Cyber Security",
+          "url": "https://www.cyber.gc.ca/en/guidance/generative-artificial-intelligence-ai-itsap00041"
+        },
+        {
+          "label": "The next generation: Spotting content created with artificial intelligence — Get Cyber Safe",
+          "url": "https://www.getcybersafe.gc.ca/en/next-generation-spotting-content-created-with-artificial-intelligence"
+        },
+        {
+          "label": "How cyber criminals are using artificial intelligence (AI) for online threats — Get Cyber Safe",
+          "url": "https://www.getcybersafe.gc.ca/en/blogs/cyber-criminals-are-using-artificial-intelligence-ai-online-threats"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Strong passwords and multi-factor authentication are part of the Cyber Centre’s basic safety habits for individuals.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Missing or misplaced hands and unusually smooth skin can be clues that an image was made by AI.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you see one possible AI clue, you can be 100% sure the content is fake.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course recommends one company’s AI product.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential.",
+    "questions": [
+      {
+        "prompt": "This course is a technical or vendor AI certificate.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      },
+      {
+        "prompt": "Generative AI creates new content, such as text or images, from a prompt.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      },
+      {
+        "prompt": "You should check AI answers against a trusted source before you act on them.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      },
+      {
+        "prompt": "It is safe to type another person’s private details into a chatbot to test it.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      },
+      {
+        "prompt": "AI can make scam messages and fake voices sound more real.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      },
+      {
+        "prompt": "A Canadian government or police service will demand money or sensitive information over the phone.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      },
+      {
+        "prompt": "This course endorses a specific AI product.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Generative AI can invent content that looks human. Check answers, share as little personal information as you can, and verify unexpected requests for money or data. This course is not a product endorsement or a professional credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about artificial intelligence (AI), privacy, and online safety, based on official Government of Canada pages. It is not a technical certificate, a vendor certificate, or cyber-security training. It does not recommend any company’s AI product. It is not legal, privacy, or financial advice. AI tools and scams change. Always check the live official page, and pause before you share information, send money, or trust an answer.",
+    "builderNotes": "- Not a technical or vendor certification. Do not name or recommend ChatGPT, Copilot, Gemini, or any other product in learner-facing text. The official CCCS and Canada.ca pages list vendor examples; this course leaves those names out on purpose.\n- The Canada.ca generative-AI guide is written for federal institutions. Use it for definitions and for “check the answer” / hallucination / do-not-treat-as-authoritative guidance. Do not teach the FASTER principles, the Directive on Automated Decision-Making, or public-servant rules as if they apply to learners.\n- CCCS page ITSAP.00.041 is dated December 2025 and was verified live on 10 November 2026 (America/Regina). Re-check before rebuilds.\n- Do not put survey percentages or “how many Canadians…” figures in lessons or quizzes.\n- Do not teach healthcare diagnosis or treatment uses as learner takeaways (CCCS lists sector examples; those are easy to misread as medical advice).\n- Get Cyber Safe names reverse-image-search products; this course refers to the idea only, without product endorsements.\n- Companion course: `poc-course-email-online-safety-canada-2026-11-09.md`. Do not duplicate that whole course.\n- Canadian spelling: *practise* (verb), *programme* is not needed here; use *program*, *centre*.\n- No Ed2Go or Cengage AI text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-what-is-ai-plain-language.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a chat box."
+  }
+}

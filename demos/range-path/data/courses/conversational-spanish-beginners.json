@@ -1,0 +1,506 @@
+{
+  "slug": "conversational-spanish-beginners",
+  "title": "Conversational Spanish for Beginners",
+  "summary": "By the end, learners can explain why a few Spanish phrases can be useful in Canada, greet someone and introduce themselves, use courtesy words and simple questions, count from one to ten and ask a basic shopping or direction question, and practise a short conversation — without treating this course as a language credential.",
+  "goals": "By the end, learners can explain why a few Spanish phrases can be useful in Canada, greet someone and introduce themselves, use courtesy words and simple questions, count from one to ten and ask a basic shopping or direction question, and practise a short conversation — without treating this course as a language credential.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or language certification. It is not a promise of fluency.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Why practise Spanish, and how to say hello",
+      "html": "<p>Canada’s two official languages are English and French. Many other languages are also part of daily life. Statistics Canada, using the 2021 Census, reported that Spanish was the non-official language spoken by the most people in Canada (about 1,171,000 speakers). That figure comes from a Statistics Canada page released on January 22, 2025. Numbers can be updated in later censuses — check the live page.</p>\n<p>You may hear Spanish at work, in a shop, at a community event, or from a neighbour. A few clear phrases can help you greet someone with respect. This course does not measure your language level and does not replace an English or French class.</p>\n<p>Skills for Success <strong>communication</strong> means receiving, understanding, considering, and sharing information by speaking, listening, and interacting. Practise out loud. Listen for the rhythm. Spanish uses upside-down punctuation at the start of questions and exclamations: ¿ and ¡.</p>\n<p>Useful greetings:</p>\n<ul>\n<li><strong>Hola</strong> — Hello</li>\n<li><strong>Buenos días</strong> — Good morning</li>\n<li><strong>Buenas tardes</strong> — Good afternoon</li>\n<li><strong>Buenas noches</strong> — Good evening or good night</li>\n<li><strong>Adiós</strong> — Goodbye</li>\n<li><strong>Hasta luego</strong> — See you later</li>\n</ul>\n<p>Say <em>Hola</em> with a clear “o” sound, like “OH-lah.” Smile and speak at a calm pace. Spanish words and greetings can vary from country to country. These are widely understood starting points, not the only “correct” Spanish in the world.</p>",
+      "sources": [
+        {
+          "label": "Language diversity in Canada — Statistics Canada (2021 Census data; page dated January 22, 2025)",
+          "url": "https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2025007-eng.htm"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course is an official Spanish language diploma.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Statistics Canada reported that, in the 2021 Census, Spanish was:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The non-official language spoken by the most people in Canada"
+            },
+            {
+              "id": "B",
+              "text": "Canada’s only official language"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Buenos días is used as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A morning greeting"
+            },
+            {
+              "id": "B",
+              "text": "The word for “ten”"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Skills for Success communication includes speaking, listening, and interacting.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Courtesy words and introducing yourself",
+      "html": "<p>Courtesy words help a short conversation feel respectful.</p>\n<ul>\n<li><strong>Por favor</strong> — Please</li>\n<li><strong>Gracias</strong> — Thank you</li>\n<li><strong>De nada</strong> — You’re welcome</li>\n<li><strong>Perdón</strong> — Sorry, or “excuse me” if you bump into someone</li>\n<li><strong>Con permiso</strong> — Excuse me, when you need to pass by</li>\n<li><strong>Sí</strong> — Yes</li>\n<li><strong>No</strong> — No</li>\n</ul>\n<p>To introduce yourself:</p>\n<ul>\n<li><strong>Me llamo [your name].</strong> — My name is [your name].</li>\n<li><strong>¿Cómo te llamas?</strong> — What is your name? (informal, with someone you know well)</li>\n<li><strong>¿Cómo se llama usted?</strong> — What is your name? (more formal)</li>\n<li><strong>Mucho gusto.</strong> — Nice to meet you.</li>\n<li><strong>Igualmente.</strong> — Likewise.</li>\n</ul>\n<p>Spanish has a more formal “you” (<strong>usted</strong>) and a more informal “you” (<strong>tú</strong>). With a customer, an older person, or someone you have just met, <em>usted</em> is often the safer, more respectful choice. With a close friend, <em>tú</em> is common. If you are not sure, start formal.</p>\n<p>Try this out loud:</p>\n<p><em>Hola. Me llamo Alex. ¿Cómo se llama usted?</em> <em>Mucho gusto.</em></p>\n<p>Skills for Success communication includes adapting to your audience. A workplace or shop greeting is usually calmer and more formal than a chat with a close friend. Speak clearly. You do not need a perfect accent to be understood.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Gracias means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Thank you"
+            },
+            {
+              "id": "B",
+              "text": "Goodbye"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Me llamo Sam means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "My name is Sam"
+            },
+            {
+              "id": "B",
+              "text": "How much does it cost?"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Usted is generally:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A more formal way to say “you”"
+            },
+            {
+              "id": "B",
+              "text": "The Spanish word for “ten”"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Por favor means “please.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Simple questions and asking for help",
+      "html": "<p>A good next step is asking how someone is, and asking for help when you do not understand.</p>\n<ul>\n<li><strong>¿Cómo está usted?</strong> — How are you? (formal)</li>\n<li><strong>¿Cómo estás?</strong> — How are you? (informal)</li>\n<li><strong>Bien, gracias.</strong> — Fine, thank you.</li>\n<li><strong>Más o menos.</strong> — So-so.</li>\n<li><strong>Mal.</strong> — Not well.</li>\n<li><strong>¿Y usted?</strong> — And you?</li>\n</ul>\n<p>When you need help with the language itself:</p>\n<ul>\n<li><strong>No entiendo.</strong> — I don’t understand.</li>\n<li><strong>Más despacio, por favor.</strong> — More slowly, please.</li>\n<li><strong>¿Puede repetir, por favor?</strong> — Can you repeat that, please?</li>\n<li><strong>¿Habla inglés?</strong> — Do you speak English?</li>\n<li><strong>Un poco.</strong> — A little.</li>\n</ul>\n<p>Skills for Success communication includes listening with intention: pay attention, notice gestures, and ask questions to confirm what you heard. If you miss a word, it is better to say <em>No entiendo</em> than to guess and nod.</p>\n<p>You can mix a Spanish courtesy word with a plain request: <em>Perdón. No entiendo. Más despacio, por favor.</em></p>\n<p>Practise the question mark at both ends: <strong>¿</strong> at the start and <strong>?</strong> at the end. That written mark tells the reader a question is coming.</p>\n<p>These phrases will not make you fluent. They give you a polite way to slow the conversation down and keep talking.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "No entiendo means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "I don’t understand"
+            },
+            {
+              "id": "B",
+              "text": "See you later"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Más despacio, por favor asks someone to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Speak more slowly"
+            },
+            {
+              "id": "B",
+              "text": "Count to ten"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "¿Cómo está usted? is a way to ask:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "How are you? (more formal)"
+            },
+            {
+              "id": "B",
+              "text": "Where is the washroom?"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you miss a word, a useful phrase is No entiendo.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Numbers and useful everyday phrases",
+      "html": "<p>Numbers help in a shop, a market, or when you are counting items.</p>\n<ul>\n<li><strong>uno</strong> — one</li>\n<li><strong>dos</strong> — two</li>\n<li><strong>tres</strong> — three</li>\n<li><strong>cuatro</strong> — four</li>\n<li><strong>cinco</strong> — five</li>\n<li><strong>seis</strong> — six</li>\n<li><strong>siete</strong> — seven</li>\n<li><strong>ocho</strong> — eight</li>\n<li><strong>nueve</strong> — nine</li>\n<li><strong>diez</strong> — ten</li>\n</ul>\n<p>Useful phrases:</p>\n<ul>\n<li><strong>¿Cuánto cuesta?</strong> — How much does it cost?</li>\n<li><strong>¿Dónde está…?</strong> — Where is…?</li>\n<li><strong>el baño</strong> — the washroom</li>\n<li><strong>el agua</strong> — water</li>\n<li><strong>ayuda</strong> — help</li>\n<li><strong>¿Me puede ayudar, por favor?</strong> — Can you help me, please?</li>\n</ul>\n<p>Example: <em>¿Dónde está el baño, por favor?</em> Example: <em>¿Cuánto cuesta?</em> (you can point to the item)</p>\n<p>In Canada you will still see prices in dollars. You do not need to change the currency words to use <em>¿Cuánto cuesta?</em> The other person can show you the price or say it in English.</p>\n<p>Say the numbers out loud several times. Pair them with your fingers if that helps you remember. Skills for Success communication includes speaking with clarity — a slow, clear <em>uno, dos, tres</em> is better than a rushed guess.</p>\n<p>This lesson is phrase practice, not a math course and not shopping or tax advice.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Diez means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ten"
+            },
+            {
+              "id": "B",
+              "text": "Please"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "¿Cuánto cuesta? asks:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "How much does it cost?"
+            },
+            {
+              "id": "B",
+              "text": "What is your name?"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "¿Dónde está el baño? asks where the washroom is.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Cinco means five.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Put a short conversation together",
+      "html": "<p>Now join the pieces. Imagine you meet someone at a community hall or in a shop.</p>\n<p>You: <em>Buenos días. Me llamo Jordan. ¿Cómo está usted?</em> Them: <em>Bien, gracias. ¿Y usted?</em> You: <em>Bien, gracias. Mucho gusto.</em> Them: <em>Igualmente.</em></p>\n<p>If you need something in the shop:</p>\n<p>You: <em>Hola. ¿Cuánto cuesta? ¿Me puede ayudar, por favor?</em> If you get lost in the words: <em>No entiendo. Más despacio, por favor. ¿Habla inglés?</em></p>\n<p>Practise the whole exchange out loud two or three times. Record yourself on your phone if you like, then listen. Skills for Success communication includes both speaking with purpose and listening to understand.</p>\n<p>Remember:</p>\n<ul>\n<li>Spanish varies by country and region. A neighbour from Mexico, Spain, or Colombia may use a slightly different word. The greetings in this course are still a polite start.</li>\n<li>Finishing this course does not make you fluent and is not a language credential.</li>\n<li>Keep practising with a class, a tutor, a language-exchange partner, or short daily review. A real conversation class gives you listening practice this page cannot give.</li>\n<li>Official languages in Canada are English and French. Learning a few Spanish phrases is extra help for daily life, not a replacement for English or French skills you may also be building.</li>\n</ul>\n<p>Use the phrases you know. Be willing to say <em>No entiendo.</em> That is real communication.</p>",
+      "sources": [
+        {
+          "label": "Language diversity in Canada — Statistics Canada",
+          "url": "https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2025007-eng.htm"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A polite way to start a first meeting is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Buenos días. Me llamo [name]. ¿Cómo está usted?"
+            },
+            {
+              "id": "B",
+              "text": "Only shouting English words"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you do not follow what someone said, you can say No entiendo.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Completing this course makes you a certified Spanish interpreter or teacher.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Spanish greetings can vary from country to country.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential.",
+    "questions": [
+      {
+        "prompt": "This course is an official Spanish language diploma.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      },
+      {
+        "prompt": "Statistics Canada reported Spanish as the non-official language spoken by the most people in the 2021 Census.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      },
+      {
+        "prompt": "Gracias means “thank you.”",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      },
+      {
+        "prompt": "No entiendo means “I don’t understand.”",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      },
+      {
+        "prompt": "¿Cuánto cuesta? asks how much something costs.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      },
+      {
+        "prompt": "Usted is generally a more formal way to say “you.”",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      },
+      {
+        "prompt": "Finishing this course makes you fluent.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Practise greetings, courtesy words, simple questions, and numbers out loud. A few phrases are a start, not a credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general practice with beginner Spanish phrases. It is not a language diploma, not a DELE or SIELE exam, and not a promise that you will become fluent or get a job. It does not replace a conversation class or a tutor. The English parts of this course use Canadian spelling. Phrase meanings below are original teaching examples, not copied from any commercial Spanish course.",
+    "builderNotes": "- Original phrase teaching; do not copy Ed2Go “Speed Spanish” or any commercial syllabus.\n- StatsCan speaker figure (about 1,171,000; Spanish as the most-spoken non-official language) is from the 2021 Census as presented on a page dated January 22, 2025. Re-check before rebuilds. Do not put the exact headcount in quiz answers.\n- Do not claim this course measures CLB or awards DELE/SIELE.\n- Canadian spelling in the English frames (*practise* as a verb, *program*).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-conversational-spanish-beginners.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of two speech bubbles."
+  }
+}

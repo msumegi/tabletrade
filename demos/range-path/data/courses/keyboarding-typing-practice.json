@@ -1,0 +1,510 @@
+{
+  "slug": "keyboarding-typing-practice",
+  "title": "Keyboarding and Typing Practice",
+  "summary": "By the end, learners can describe keyboarding as part of the Skills for Success Digital skill, plan short practice using Adaptability habits, turn on built-in Windows keyboard supports such as Sticky Keys or the On-Screen Keyboard if they need them, and use a few official keyboard shortcuts — without chasing a words-per-minute target or buying extra typing software.",
+  "goals": "By the end, learners can describe keyboarding as part of the Skills for Success Digital skill, plan short practice using Adaptability habits, turn on built-in Windows keyboard supports such as Sticky Keys or the On-Screen Keyboard if they need them, and use a few official keyboard shortcuts — without chasing a words-per-minute target or buying extra typing software.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, Microsoft Office Specialist credential, typing-speed certificate, or an endorsement of any typing-tutor product.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Keyboarding is a digital skill",
+      "html": "<p>Skills for Success are skills that help you in work, learning, and life. The Government of Canada says they help you get a job, progress at your current job, change jobs, take part in your community, and succeed in learning. This course focuses on one of those skills: <strong>Digital</strong>.</p>\n<p>Digital skill is your ability to use digital technology and tools to find, manage, apply, create, and share information and content. The official page says most jobs now use digital skills, and you also need them when you apply other skills such as reading, writing, and numeracy.</p>\n<p>One Digital component is to <strong>use digital devices</strong>, including computers, tablets, smartphones, and other handheld devices. That includes identifying the goal of a digital task, using basic functions that are common to most devices, and knowing basic terms. Typing on a keyboard — on a laptop, a plugged-in keyboard, or a tablet — is one of those basic functions. You use it to write a notice, fill in a form, or search for information.</p>\n<p>Another Digital component is to <strong>use common digital tools to complete tasks</strong>. The Government of Canada page lists examples such as word-processing or spreadsheet software. This course does not tell you which brand to buy. The same component says to keep digital tools up to date, for example by downloading updates, and to use digital tools that enhance accessibility when you need them, such as a screen magnifier or other assistive technologies.</p>\n<p>You do not need a new computer to start. Practise with the device you already have. This course is not a speed test and it does not promise a job.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Digital)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success are meant to help with work, learning, and life.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Government of Canada’s Digital skill includes using devices and knowing basic functions common to most devices.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is an official typing-speed certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The Digital skill page says you can use tools that enhance accessibility, such as a screen magnifier.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Practise with a plan, then keep going",
+      "html": "<p>Getting more comfortable on a keyboard takes repeated practice. Skills for Success also names <strong>Adaptability</strong>: your ability to achieve or adjust goals and behaviours when change occurs, by planning, staying focused, persisting, and overcoming setbacks. The page says strong adaptability skills help you learn new skills and behaviours when needed, stay focused on your responsibilities and goals, and not give up when situations are difficult.</p>\n<p>Use those habits when you practise typing.</p>\n<p><strong>Plan and prioritize.</strong> Define a small task and choose an order. For example: “Today I will type a short community notice of five sentences.” You do not need a long list of drills.</p>\n<p><strong>Manage your time.</strong> Adaptability includes managing time to show you understand limited resources — for example, punctuality and not wasting time. Set a short block, such as 10 or 15 minutes, and stay with that task. Focus your attention and minimize distractions.</p>\n<p><strong>Persist.</strong> The official components include identifying when to keep trying and when to adapt your approach. If a word is hard, try it again slowly. If your hands get tired, pause and come back later. Learn from mistakes instead of stopping for the week.</p>\n<p><strong>Seek self-improvement.</strong> Reflect on your own skill. What felt easier than last time? What still feels awkward? Find a next small opportunity, such as typing a grocery list or a thank-you note.</p>\n<p>There is no official words-per-minute target in this course, and no special typing website you must buy or join. Type something useful to you. Accuracy and comfort matter more here than speed.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Adaptability)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Adaptability includes planning, staying focused, persisting, and overcoming setbacks.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course sets an official words-per-minute score you must reach.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Adaptability includes seeking self-improvement by reflecting on your skills and finding chances to improve.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should stop practising for good the first time a word feels hard.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Make the keyboard easier to use",
+      "html": "<p>Windows includes built-in settings that can make a keyboard easier to use. You do not have to buy extra software for these tools. Microsoft’s help page explains how to find them.</p>\n<p>On <strong>Windows 11</strong>, press the Windows logo key + U, or select Start &gt; Settings &gt; Accessibility, then select <strong>Keyboard</strong>. On <strong>Windows 10</strong>, select Start &gt; Settings &gt; Ease of Access &gt; Keyboard.</p>\n<p>Microsoft lists these options:</p>\n<ul>\n<li><strong>Sticky Keys</strong> — turn this on if you have trouble pressing two keys at the same time. Sticky Keys let you press commands that use multiple keys (such as Ctrl + S) one key at a time.</li>\n<li><strong>Toggle Keys</strong> — play a sound whenever you press Caps lock, Num lock, or Scroll lock. That sound can tell you if you turned capitals on by accident.</li>\n<li><strong>Filter Keys</strong> — set the sensitivity of the keyboard so it can ignore brief or repeated keystrokes. This can help if a key repeats when you only meant to press it once.</li>\n<li><strong>On-screen keyboard</strong> — select keys with a mouse or another pointing device. Lesson 5 covers this in more detail.</li>\n</ul>\n<p>You can also turn on a setting that underlines access keys when they are available, or use the Print Screen key to open screen snipping.</p>\n<p>Try one change at a time so you can tell what helped. If a setting does not suit you, turn it off again on the same screen.</p>\n<p>If you use a different operating system, look in that system’s Settings or Accessibility help. Do not guess at another computer’s click steps from this Windows page.</p>",
+      "sources": [
+        {
+          "label": "Make your mouse, keyboard, and other input devices easier to use (Microsoft)",
+          "url": "https://support.microsoft.com/en-us/accessibility/windows/make-your-mouse-keyboard-and-other-input-devices-easier-to-use"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Sticky Keys let you press a multi-key command one key at a time.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Filter Keys can ignore brief or repeated keystrokes.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You must buy extra software before Windows can offer Sticky Keys.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Toggle Keys can play a sound when you press Caps lock, Num lock, or Scroll lock.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "A few official keyboard shortcuts",
+      "html": "<p>Microsoft says keyboard shortcuts are keys or combinations of keys that provide an alternative way to do something you would typically do with a mouse. Learning a few of them can make typing and editing faster. The behaviour of some shortcuts may vary in different applications, and some applications may change them. The list below uses the default Windows shortcuts from Microsoft’s official page.</p>\n<p>Text-editing shortcuts you can practise:</p>\n<ul>\n<li><strong>Ctrl + C</strong> (or Ctrl + Insert) — copy the selected text.</li>\n<li><strong>Ctrl + X</strong> — cut the selected text.</li>\n<li><strong>Ctrl + V</strong> (or Shift + Insert) — paste.</li>\n<li><strong>Ctrl + Z</strong> — undo the last typing (or undo the previous action).</li>\n<li><strong>Ctrl + Y</strong> — redo typing that was undone with Ctrl + Z.</li>\n<li><strong>Ctrl + A</strong> — select all text (or select all items in a window).</li>\n</ul>\n<p>Other useful shortcuts from the same official pages:</p>\n<ul>\n<li><strong>Alt + Tab</strong> — switch between open windows. Hold Alt and press Tab more than once to cycle through them.</li>\n<li><strong>Windows key</strong> — open or close the Start menu.</li>\n<li><strong>Windows key + I</strong> — open Settings.</li>\n<li><strong>Windows key + U</strong> — open Accessibility settings (Windows 11) or the Ease of Access area (older wording on the same help family).</li>\n</ul>\n<p>Practise with a short paragraph you typed in Lesson 2. Select a sentence, copy it, paste it, then undo if you need to. If holding two keys at once is hard, use Sticky Keys from Lesson 3.</p>\n<p>You do not need to memorise Microsoft’s full list. Choose a few you will actually use this week.</p>",
+      "sources": [
+        {
+          "label": "Keyboard shortcuts in Windows (Microsoft)",
+          "url": "https://support.microsoft.com/en-us/accessibility/windows/keyboard-shortcuts-in-windows"
+        },
+        {
+          "label": "Make your mouse, keyboard, and other input devices easier to use (Microsoft)",
+          "url": "https://support.microsoft.com/en-us/accessibility/windows/make-your-mouse-keyboard-and-other-input-devices-easier-to-use"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A keyboard shortcut is a key or combination that can do something you would typically do with a mouse.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the official Windows list, Ctrl + C copies the selected text.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Ctrl + Z undoes the last typing or the previous action.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Every application must use every Windows shortcut in exactly the same way.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Type with built-in help, then keep your skills current",
+      "html": "<p>Windows has a built-in Accessibility tool called the <strong>On-Screen Keyboard (OSK)</strong>. Microsoft says you can use it instead of a physical keyboard. You do not need a touchscreen. The OSK shows a visual keyboard with the standard keys, and you can use a mouse or another pointing device to select keys.</p>\n<p>To open it on Windows 11, go to Start &gt; Settings &gt; Accessibility &gt; Keyboard, and turn on the On-Screen Keyboard switch. On Windows 10, use Start &gt; Settings &gt; Ease of Access &gt; Keyboard and turn on Use the On-Screen Keyboard. Microsoft also says you can press the Windows logo key + Ctrl + O to turn it on. From the sign-in screen, select the Accessibility (or Ease of Access) button in the lower-right corner, then select On-Screen Keyboard.</p>\n<p>The keyboard stays on the screen until you close it. An Options key lets you hear a click, show a numeric keypad, click keys, hover over keys, or scan through keys. You do not have to use every option.</p>\n<p>The same Accessibility settings can make the text cursor thicker or add a colourful indicator, and can make the mouse pointer larger or a different colour if that helps you see where you are.</p>\n<p>Skills for Success Digital also says to keep digital tools up to date, for example by downloading updates, and to <strong>update and upgrade digital skills</strong> by using what you already know to learn the next skill you need. Come back to short practice sessions. This course does not endorse a typing-tutor product, and it is not a speed certificate.</p>",
+      "sources": [
+        {
+          "label": "Use the On-Screen Keyboard (OSK) to type (Microsoft)",
+          "url": "https://support.microsoft.com/en-us/accessibility/windows/use-the-on-screen-keyboard-osk-to-type"
+        },
+        {
+          "label": "Make your mouse, keyboard, and other input devices easier to use (Microsoft)",
+          "url": "https://support.microsoft.com/en-us/accessibility/windows/make-your-mouse-keyboard-and-other-input-devices-easier-to-use"
+        },
+        {
+          "label": "Learn about the Skills (Skills for Success — Digital)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You need a touchscreen to use the Windows On-Screen Keyboard.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "You can open the On-Screen Keyboard from Settings > Accessibility (or Ease of Access) > Keyboard.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Skills for Success Digital includes keeping digital tools up to date, such as downloading updates.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course endorses a paid typing-tutor website.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date.",
+    "questions": [
+      {
+        "prompt": "Skills for Success Digital includes using devices and basic functions common to most devices.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      },
+      {
+        "prompt": "This course is a words-per-minute certificate.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      },
+      {
+        "prompt": "Adaptability includes planning, persisting, and seeking self-improvement.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      },
+      {
+        "prompt": "Sticky Keys let you press a multi-key command one key at a time.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      },
+      {
+        "prompt": "On the official Windows list, Ctrl + V pastes.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      },
+      {
+        "prompt": "You need a touchscreen to use the On-Screen Keyboard.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      },
+      {
+        "prompt": "This course says you must buy extra typing software.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Keyboarding is part of the Digital skill. Practise in short, planned sessions and persist. Use built-in Windows keyboard supports if you need them, learn a few official shortcuts, and keep tools and skills up to date."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about using a keyboard as part of Canada’s Skills for Success Digital skill, plus official Windows keyboard and accessibility help. It is not a typing-speed certificate, a Microsoft Office Specialist credential, or an endorsement of any typing-tutor website or software. Keyboard layouts and settings screens can differ by computer and by Windows version. Check the live help for the system you use.",
+    "builderNotes": "- Sources verified live on 10 November 2026 (America/Regina): Skills for Success understanding-individuals.html (Digital + Adaptability); Microsoft “Make your mouse, keyboard, and other input devices easier to use”; “Keyboard shortcuts in Windows”; “Use the On-Screen Keyboard (OSK) to type.”\n- Do not invent home-row / ASDF finger placement or words-per-minute targets — no official page used here states them.\n- Do not endorse Typesy, Typing.com, GCF Global, or any other typing-tutor product.\n- SFS Digital names Word, Excel, PowerPoint, Google search, Zoom, and similar tools as examples. The learner text paraphrases “word-processing or spreadsheet software” to avoid a product pitch. Do not turn those names into required software.\n- SFS Digital also lists passwords, phishing, and virus protection. Do not expand those here; they belong in other courses (email/online safety, later privacy and online-safety next steps).\n- The older Microsoft URL with a GUID (`…/windows/make-your-mouse-keyboard-and-other-input-devices-easier-to-use-38b4bca5-…`) returned 404; cite the live `/accessibility/windows/` path.\n- Windows key + U opens Accessibility on Windows 11; older Microsoft wording on the same help family says Ease of Access. Teach both paths as the official pages do.\n- Do not teach Ctrl + S as “Save.” Microsoft’s Sticky Keys example mentions Ctrl + S but the shortcuts page maps Windows key + S to Search, not Save.\n- Do not invent Apple/macOS click steps.\n- Canadian spelling: *practise* (verb), *practice* (noun), *colourful*.\n- No Ed2Go keyboarding text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-keyboarding-typing-practice.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of keyboard keys."
+  }
+}

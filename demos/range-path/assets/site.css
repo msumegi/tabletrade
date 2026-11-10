@@ -325,6 +325,27 @@ a.btn:focus-visible, button.btn:focus-visible { color: #fff; }
 .steps h3 { margin-top: 0.45rem; }
 .steps p { grid-column: 2; margin-top: 0; }
 
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+}
+.filters button {
+  min-height: 44px;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 2px solid var(--spruce);
+  background: var(--paper);
+  color: var(--spruce-ink);
+  font: inherit;
+  font-weight: 700;
+}
+.filters button[aria-pressed="true"] {
+  background: var(--spruce);
+  color: #fff;
+}
+
 .cards { display: grid; gap: 0.9rem; }
 .card { padding: 0.85rem 0.85rem 1rem; }
 .card h3 { font-size: 1.28rem; }
@@ -425,14 +446,27 @@ textarea { min-height: 8rem; resize: vertical; }
 .field-echo { margin: 0.35rem 0 0; font-weight: 700; }
 .hint { color: var(--muted); font-weight: 500; font-size: 0.98rem; }
 
-.crumbs { margin: 0 0 0.8rem; font-size: 0.98rem; }
-.crumbs a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0.35rem 0.15rem 0.35rem 0;
+.crumbs {
+  margin: 0 0 0.8rem;
+  font-size: 0.98rem;
+  line-height: 1.35;
 }
-.crumbs a::after { content: " /"; }
+.crumbs a,
+.crumbs span {
+  display: inline-block;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.55rem 0.2rem 0.55rem 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.crumbs > * + *::before {
+  content: "/\00a0";
+}
+.crumbs .crumb-here {
+  width: auto;
+  white-space: nowrap;
+}
 
 .step-label { font-weight: 700; margin-bottom: 0.35rem; }
 .lesson-list { list-style: none; margin: 0; padding: 0; max-width: 100%; }

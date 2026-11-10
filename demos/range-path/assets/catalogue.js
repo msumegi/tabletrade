@@ -153,6 +153,256 @@ window.RANGE_PATH = {
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice."
     },
     {
+      "id": "conversational-spanish-beginners",
+      "title": "Conversational Spanish for Beginners",
+      "shortTitle": "Spanish",
+      "navLabel": "Spanish",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or language certification. It is not a promise of fluency."
+    },
+    {
+      "id": "signed-language-awareness-asl-canada",
+      "title": "Signed Language Awareness (ASL in a Canadian Context)",
+      "shortTitle": "Signed language",
+      "navLabel": "Signing",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or sign-language interpreter certification."
+    },
+    {
+      "id": "canadian-banking-budgeting-credit-reports",
+      "title": "Canadian Banking, Budgeting and Credit Reports",
+      "shortTitle": "Banking",
+      "navLabel": "Banking",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or financial, investment, tax, or debt-settlement advice."
+    },
+    {
+      "id": "alberta-renting-tenant-rights",
+      "title": "Alberta Renting and Tenant Rights (RTA and RTDRS)",
+      "shortTitle": "Renting",
+      "navLabel": "Renting",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal advice."
+    },
+    {
+      "id": "alberta-health-care-basics",
+      "title": "Alberta Health Care Basics (AHCIP, 811, and Finding a Provider)",
+      "shortTitle": "Health care",
+      "navLabel": "Health",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or medical, emergency, or immigration advice."
+    },
+    {
+      "id": "medical-words-plain-language",
+      "title": "Medical Words in Plain Language",
+      "shortTitle": "Medical words",
+      "navLabel": "Medical",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, clinical certification, or medical advice."
+    },
+    {
+      "id": "powerpoint-basics-canada",
+      "title": "Microsoft PowerPoint Basics (Canada)",
+      "shortTitle": "PowerPoint",
+      "navLabel": "Slides",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification."
+    },
+    {
+      "id": "google-workspace-basics",
+      "title": "Google Workspace Basics",
+      "shortTitle": "Google Workspace",
+      "navLabel": "Google",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Google certification."
+    },
+    {
+      "id": "excel-next-steps-canada",
+      "title": "Excel Next Steps (Tables, Charts, and Simple Functions)",
+      "shortTitle": "Excel next steps",
+      "navLabel": "Tables",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification."
+    },
+    {
+      "id": "starting-small-activity-micro-business-canada",
+      "title": "Starting a Small Activity or Micro-Business in Canada",
+      "shortTitle": "Small business",
+      "navLabel": "Business",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, business licence, or registry filing. It is not legal, tax, or licensing advice, and it is not a promise of income or funding."
+    },
+    {
+      "id": "supervision-working-with-people-at-work",
+      "title": "Supervision and Working with People at Work",
+      "shortTitle": "Supervision",
+      "navLabel": "Supervision",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or human-resources or management certification. It is not legal or HR advice."
+    },
+    {
+      "id": "caec-study-skills-support",
+      "title": "CAEC Study-Skills Support",
+      "shortTitle": "CAEC study skills",
+      "navLabel": "CAEC",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not the Canadian Adult Education Credential (CAEC), not a GED® credential, not a college diploma, and not a promise that the learner will pass any test."
+    },
+    {
+      "id": "what-is-ai-plain-language",
+      "title": "What Is AI, in Plain Language",
+      "shortTitle": "What is AI",
+      "navLabel": "AI",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, cyber-security certification, or vendor AI certificate. It does not endorse any AI product."
+    },
+    {
+      "id": "simple-graphics-community-notices",
+      "title": "Simple Graphics for Community Notices",
+      "shortTitle": "Community notices",
+      "navLabel": "Notices",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional design licence, or vendor certificate (including Canva)."
+    },
+    {
+      "id": "building-very-simple-web-page",
+      "title": "Building a Very Simple Web Page",
+      "shortTitle": "Simple web page",
+      "navLabel": "Web page",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, or professional web-developer certification."
+    },
+    {
+      "id": "wordpress-small-site-basics-community-group",
+      "title": "WordPress or Small-Site Basics for a Community Group",
+      "shortTitle": "Small websites",
+      "navLabel": "WordPress",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional web-design certification, or an endorsement of any host, theme, or plugin."
+    },
+    {
+      "id": "taking-better-photos-camera-you-have",
+      "title": "Taking Better Photos with the Camera You Have",
+      "shortTitle": "Better photos",
+      "navLabel": "Photos",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional photography licence, or an endorsement of any camera or phone brand."
+    },
+    {
+      "id": "keyboarding-typing-practice",
+      "title": "Keyboarding and Typing Practice",
+      "shortTitle": "Keyboarding",
+      "navLabel": "Typing",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, Microsoft Office Specialist credential, typing-speed certificate, or an endorsement of any typing-tutor product."
+    },
+    {
+      "id": "privacy-personal-information-canada",
+      "title": "Privacy and Your Personal Information in Canada",
+      "shortTitle": "Privacy",
+      "navLabel": "Privacy",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, privacy-officer licence, or legal advice."
+    },
+    {
+      "id": "alberta-employment-standards-information",
+      "title": "Alberta Employment Standards (Information Only)",
+      "shortTitle": "Employment standards",
+      "navLabel": "Pay rules",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, HR certificate, or legal advice."
+    },
+    {
+      "id": "customer-service-workplace-communication",
+      "title": "Customer Service and Workplace Communication",
+      "shortTitle": "Customer service",
+      "navLabel": "Service",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, customer-service licence, or language credential."
+    },
+    {
+      "id": "introductory-french-daily-life-canada",
+      "title": "Introductory French for Daily Life in Canada",
+      "shortTitle": "French",
+      "navLabel": "French",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, TEF or DELF result, fluency certificate, or an official language assessment."
+    },
+    {
+      "id": "data-spreadsheet-lists-charts-plain",
+      "title": "Data in a Spreadsheet: Lists and Simple Charts (Very Plain)",
+      "shortTitle": "Spreadsheet lists",
+      "navLabel": "Data",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, data-analyst certificate, statistics credit, or a Microsoft Office Specialist credential."
+    },
+    {
+      "id": "online-safety-next-steps-canada",
+      "title": "Online Safety Next Steps",
+      "shortTitle": "Online safety next",
+      "navLabel": "Accounts",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, or cybersecurity professional certificate, and it does not guarantee that an account cannot be hacked."
+    },
+    {
+      "id": "nonprofit-volunteer-group-basics-canada",
+      "title": "Nonprofit and Volunteer-Group Basics in Canada",
+      "shortTitle": "Nonprofits",
+      "navLabel": "Groups",
+      "lessons": 5,
+      "featured": false,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, legal opinion, tax opinion, or an audit or assurance product."
+    },
+    {
       "id": "winter-safety-rural-alberta",
       "title": "Winter Safety & Driving in Rural Alberta",
       "shortTitle": "Winter safety",

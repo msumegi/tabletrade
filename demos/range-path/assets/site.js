@@ -603,8 +603,37 @@
     }
   }
 
+  function setupFilters() {
+    var bar = document.querySelector("[data-course-filters]");
+    if (!bar) return;
+    var status = document.querySelector("#filter-status");
+    var cards = Array.prototype.slice.call(document.querySelectorAll("#catalogue-main [data-category]"));
+    var extra = document.querySelector("#catalogue-extra");
+    bar.addEventListener("click", function (event) {
+      var button = event.target.closest("button[data-filter]");
+      if (!button || !bar.contains(button)) return;
+      var value = button.getAttribute("data-filter");
+      Array.prototype.slice.call(bar.querySelectorAll("button[data-filter]")).forEach(function (item) {
+        item.setAttribute("aria-pressed", item === button ? "true" : "false");
+      });
+      var shown = 0;
+      cards.forEach(function (card) {
+        var match = value === "all" || card.getAttribute("data-category") === value;
+        card.hidden = !match;
+        if (match) shown += 1;
+      });
+      if (extra) extra.hidden = value !== "all";
+      if (status) {
+        status.textContent = value === "all"
+          ? "Showing every course. The first four are a good place to start."
+          : "Showing " + shown + " " + value + " courses.";
+      }
+    });
+  }
+
   document.documentElement.classList.add("js");
   setupNav();
+  setupFilters();
   setupQuiz();
   setupWalkthrough();
   setupCertificate();

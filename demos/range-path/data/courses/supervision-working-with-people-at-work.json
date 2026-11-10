@@ -1,0 +1,522 @@
+{
+  "slug": "supervision-working-with-people-at-work",
+  "title": "Supervision and Working with People at Work",
+  "summary": "By the end, learners can describe what Alberta OHS means by a supervisor, name key supervisor and worker health-and-safety duties, list workers’ three health-and-safety rights and the official steps for refusing dangerous work, find Alberta employment standards pages (including hours of work and rest), and use Skills for Success collaboration and communication as everyday ways to work with people — without treating this course as HR or legal advice.",
+  "goals": "By the end, learners can describe what Alberta OHS means by a supervisor, name key supervisor and worker health-and-safety duties, list workers’ three health-and-safety rights and the official steps for refusing dangerous work, find Alberta employment standards pages (including hours of work and rest), and use Skills for Success collaboration and communication as everyday ways to work with people — without treating this course as HR or legal advice.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or human-resources or management certification. It is not legal or HR advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What “supervisor” means on an Alberta work site",
+      "html": "<p>This course is for people who lead a small team, fill in as a lead hand, or want to work better with others at work. It is not an HR course. It does not teach you how to hire, fire, or discipline someone. It is not legal advice.</p>\n<p>Alberta’s occupational health and safety (OHS) law uses the idea of an <strong>internal responsibility system</strong>. The Government of Alberta says every person on a work site is responsible for working toward a healthy and safe workplace, and every work site party is accountable for workplace health and safety.</p>\n<p>In OHS language, a <strong>supervisor</strong> is a person who is in charge of a work site or has authority over one or more workers. The title on a name badge is not what decides this. If you tell other people what to do, or you are in charge of a site, Alberta’s supervisor duties can apply to you.</p>\n<p>An <strong>employer</strong> includes a person who employs or engages one or more workers. Employers must make sure workers are supervised by supervisors who are competent and familiar with the OHS rules that apply to the work. They must also make workers aware of their rights and responsibilities under OHS legislation.</p>\n<p>A <strong>worker</strong> is any person engaged in an occupation. That can include a volunteer who performs or supplies services for an organization or employer. Some people, such as unpaid students in a learning activity, are not considered workers on that page.</p>\n<p>If you are unsure who the supervisor is on your site, ask your employer. If something feels unsafe, you can also contact the OHS Contact Centre. As of 10 November 2026 (America/Regina), Alberta listed 780-415-8690 in Edmonton and toll free 1-866-415-8690.</p>",
+      "sources": [
+        {
+          "label": "Obligations of work site parties — Government of Alberta",
+          "url": "https://www.alberta.ca/obligations-work-site-parties"
+        },
+        {
+          "label": "Your Health and Safety Rights at Work — ALIS (Government of Alberta)",
+          "url": "https://alis.alberta.ca/succeed-at-work/be-safe-at-work/your-health-and-safety-rights-at-work/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Under Alberta OHS, a supervisor is defined by the job title on a name badge.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A supervisor is a person who is in charge of a work site or has authority over one or more workers.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a licence to manage human resources.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta’s internal responsibility system says every work site party is accountable for workplace health and safety.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Supervisor and worker health-and-safety duties",
+      "html": "<p>Everyone on a work site has duties. This lesson names the ones Alberta lists for supervisors and workers. It does not replace the official guide or the law.</p>\n<p>Supervisors are responsible for:</p>\n<ul>\n<li>protecting the health and safety of the workers they supervise</li>\n<li>making sure those workers work in a healthy and safe manner, follow OHS legislation, and are not subject to or participating in harassment and violence</li>\n<li>advising their workers of all known or reasonably foreseeable work hazards</li>\n<li>reporting health and safety concerns and conditions to their employer</li>\n<li>cooperating with any person who is exercising a duty under the OHS legislation</li>\n</ul>\n<p>If you supervise people, a plain way to remember this is: tell people about hazards you know or can reasonably foresee, help them work safely, do not ignore harassment or violence, and tell your employer when something is wrong.</p>\n<p>Workers also have duties. They must protect their own health and safety and that of others at or near the work site. They must cooperate with their employer or supervisor by following the health and safety rules for the job. They must use hazard controls and wear the personal protective equipment the employer designates or the law requires. They must not cause or take part in harassment and violence. They must report health and safety concerns to their employer or supervisor, take part in training the employer provides, and cooperate with anyone exercising an OHS duty.</p>\n<p>ALIS, a Government of Alberta site, adds that supervisors should take action to protect workers, including from violence and harassment, make sure people can do the work safely, and report concerns to the right people.</p>\n<p>These duties go both ways. A supervisor who only “gives orders” and never listens to a safety concern is not meeting the official picture.</p>",
+      "sources": [
+        {
+          "label": "Obligations of work site parties — Government of Alberta",
+          "url": "https://www.alberta.ca/obligations-work-site-parties"
+        },
+        {
+          "label": "Your Health and Safety Rights at Work — ALIS (Government of Alberta)",
+          "url": "https://alis.alberta.ca/succeed-at-work/be-safe-at-work/your-health-and-safety-rights-at-work/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Supervisors must advise workers of all known or reasonably foreseeable work hazards.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Workers do not need to report health and safety concerns if they are busy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Supervisors must report health and safety concerns to their employer.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Only employers have any health and safety duties on an Alberta work site.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Workers’ rights and refusing dangerous work",
+      "html": "<p>ALIS says workers have three fundamental health and safety rights under Alberta’s Occupational Health and Safety Act:</p>\n<ol>\n<li>The right to refuse unsafe work</li>\n<li>The right to know about workplace hazards</li>\n<li>The right to participate in health and safety decisions</li>\n</ol>\n<p>The right to know means workers should be told about hazards and about what is being done to control or eliminate them. The right to participate means workers can take part in decisions that affect their health and safety. Many workplaces have a health and safety committee or a representative who speaks for workers.</p>\n<p>The official OHS page “Refuse dangerous work” explains the right to refuse in more detail. Workers on provincially regulated work sites can refuse work if they reasonably think there is an <strong>undue hazard</strong>. An undue hazard is a serious and immediate threat to health and safety that the refusing worker actually observes or experiences at the work site.</p>\n<p>Workers are protected from reprisal for exercising this right. Employers cannot take or threaten disciplinary action against a worker for exercising their rights and duties under the legislation.</p>\n<p>If you refuse work you think is dangerous:</p>\n<ol>\n<li>Do not do that work.</li>\n<li>Tell your employer, supervisor, or another designated person as soon as you can what you are refusing and why.</li>\n<li>As much as possible, make sure your refusal does not endanger others.</li>\n<li>Your employer must look into the hazard and take action.</li>\n<li>You can do other work your employer assigns if you can reasonably do it and it is safe.</li>\n</ol>\n<p>If your employer will not stop work you think is dangerous, contact the OHS Contact Centre (1-866-415-8690 as of 10 November 2026, America/Regina). This course cannot decide a real refusal for you.</p>",
+      "sources": [
+        {
+          "label": "Refuse dangerous work — Government of Alberta",
+          "url": "https://www.alberta.ca/refuse-dangerous-work"
+        },
+        {
+          "label": "Your Health and Safety Rights at Work — ALIS (Government of Alberta)",
+          "url": "https://alis.alberta.ca/succeed-at-work/be-safe-at-work/your-health-and-safety-rights-at-work/"
+        },
+        {
+          "label": "Obligations of work site parties — Government of Alberta",
+          "url": "https://www.alberta.ca/obligations-work-site-parties"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "One of workers’ fundamental health and safety rights is the right to know about workplace hazards.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An undue hazard, on the official refuse page, is a serious and immediate threat that the refusing worker actually observes or experiences.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A worker who refuses dangerous work should stay silent so nobody gets in trouble.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Employers cannot take or threaten disciplinary action against a worker for exercising OHS rights and duties.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Employment standards pointers, not HR advice",
+      "html": "<p>Health and safety rules are not the only official rules at work. <strong>Employment standards</strong> set out rights and obligations of employers and employees in Alberta, including minimum standards employers must provide. The Alberta Employment Standards page is the starting map. It points to rules about minimum wage, overtime, holidays, leaves, vacations, hours of work, earnings, youth workers, and termination. This course does not teach those topics in full, and it does not tell you what to pay someone.</p>\n<p>One page many new supervisors look up is “Hours of work and rest.” As of 10 November 2026 (America/Regina), that page said:</p>\n<ul>\n<li>An employee’s work must stay within 12 consecutive hours a day, unless an exception applies (for example, an accident, urgent work, or a variance).</li>\n<li>For a shift of more than 5 hours but less than 10 hours, the employee is entitled to at least one 30-minute break.</li>\n<li>For a shift of 10 hours or more, the employee is entitled to two 30-minute breaks.</li>\n<li>A shift of 5 hours or less has no break entitlement on that page.</li>\n<li>Employees are entitled to at least one day of rest each work week.</li>\n</ul>\n<p>The same page lists exceptions and exempt occupations, including managers, supervisors, and people employed in a confidential capacity. If your role is called “supervisor,” do not guess which rules apply. Read the live page. If the page differs from the legislation, Alberta says the legislation is considered correct.</p>\n<p>To ask a question, use the official contact page. As of 10 November 2026 (America/Regina), Employment Standards listed 780-427-3731 in the Edmonton area and toll free 1-877-427-3731 in Alberta. Online questions receive a response within 3 business days. That form cannot be used to make a complaint.</p>",
+      "sources": [
+        {
+          "label": "Employment standards — Government of Alberta",
+          "url": "https://www.alberta.ca/employment-standards"
+        },
+        {
+          "label": "Employment standards rules – Hours of work and rest — Government of Alberta",
+          "url": "https://www.alberta.ca/hours-work-rest"
+        },
+        {
+          "label": "Contact Employment Standards — Government of Alberta",
+          "url": "https://www.alberta.ca/contact-employment-standards"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Employment standards set minimum standards that employers must provide to employees in Alberta.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you the exact wage you must pay every worker.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Some occupations, including some manager and supervisor roles, have special rules or exemptions on the hours-of-work page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The official Employment Standards contact page is the place to ask a question about the rules.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Skills for working with people, including leading a small group",
+      "html": "<p>Safety rules and employment standards tell you what the law expects. Day-to-day work also depends on how people treat one another. Canada’s <strong>Skills for Success</strong> describe skills that help you at work, in learning, and in life. Two skills matter a great deal when you supervise or work beside others: <strong>collaboration</strong> and <strong>communication</strong>.</p>\n<p><strong>Collaboration</strong> is your ability to contribute and support others to achieve a common goal. The official components include:</p>\n<ul>\n<li>working well with other people, such as being on time and encouraging cooperative behaviour</li>\n<li>valuing diversity and inclusivity, and responding without judging people for different opinions</li>\n<li>managing difficult interactions in a sensitive and helpful way</li>\n<li>acknowledging the roles of yourself and others</li>\n<li>supporting others through coaching, mentoring, and motivating</li>\n<li>taking responsibility for your own tasks, sharing information, and making sure others have a chance to contribute</li>\n<li>reflecting on how the team did and using feedback in a constructive way</li>\n</ul>\n<p>Skills for Success does not list a separate skill called “leadership.” Supporting others through coaching, mentoring, and motivating is part of collaboration. That is the official leadership pointer in this course.</p>\n<p><strong>Communication</strong> is your ability to receive, understand, consider, and share information by speaking, listening, and interacting. Useful parts include listening with attention, asking questions to confirm what you heard, speaking clearly and with a purpose, and adapting your words to the people you are talking with.</p>\n<p>These skills help a lead hand or new supervisor work with people. They do not replace OHS or employment standards, and they do not make you an HR manager. Practise them at work, and check official pages when a safety or pay question comes up.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success, Government of Canada",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Collaboration is the ability to contribute and support others to achieve a common goal.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Skills for Success lists “leadership” as its own separate skill, apart from collaboration.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Supporting others through coaching, mentoring, and motivating is part of collaboration.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Strong communication includes listening with attention and asking questions to confirm understanding.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice.",
+    "questions": [
+      {
+        "prompt": "This course is legal or HR advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      },
+      {
+        "prompt": "Under Alberta OHS, a supervisor is a person in charge of a work site or with authority over one or more workers.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      },
+      {
+        "prompt": "Supervisors must advise workers of known or reasonably foreseeable work hazards.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      },
+      {
+        "prompt": "Workers have a right to refuse dangerous work and are protected from reprisal for exercising that right.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      },
+      {
+        "prompt": "Employment standards pages are only for employers, not for employees.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      },
+      {
+        "prompt": "Collaboration includes supporting others through coaching, mentoring, and motivating.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      },
+      {
+        "prompt": "Finishing this course makes you a licensed manager.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. A supervisor is defined by authority, not a job title. Know OHS duties and worker rights, point people to employment standards pages, and use collaboration and communication at work. This course is not HR or legal advice."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about working with people at work in Alberta, using official occupational health and safety (OHS) pages, employment standards pages, and Canada’s Skills for Success. It is not legal advice, human-resources (HR) advice, or a management licence. It does not tell you how to hire, fire, discipline, or pay someone. Rules change. Always check the live official page, and get help from Alberta OHS, Alberta Employment Standards, or a qualified advisor if you have a real workplace problem.",
+    "builderNotes": "- Not HR or legal advice. Do not add hiring, firing, discipline, or payroll how-to.\n- Hours-of-work numbers (12-hour day, break lengths, one day of rest) were verified live on 2026-11-10 from https://www.alberta.ca/hours-work-rest and date-stamped in Lesson 4. Do not put those figures in quiz answers; they can change. Re-check before any rebuild.\n- The hours page lists managers, supervisors, and people employed in a confidential capacity among exempt occupations. Teach that as “check the live page,” not as a full legal opinion about a learner’s job.\n- Use the official OHS definition of *undue hazard* from https://www.alberta.ca/refuse-dangerous-work. Do not use ALIS wording that there is “no one definition of dangerous work.”\n- Skills for Success has no separate skill named leadership. The coaching / mentoring / motivating language lives under collaboration.\n- Date-stamped contacts (as of 10 November 2026, America/Regina): OHS Contact Centre 780-415-8690 / 1-866-415-8690; Employment Standards 780-427-3731 / 1-877-427-3731. Online ES questions: response within 3 business days; that form cannot file a complaint.\n- Canadian spelling: *practise* (verb), *practice* (noun), *program*, *centre*.\n- No Ed2Go or Cengage supervision-series text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-supervision-working-with-people-at-work.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of three people standing together."
+  }
+}
