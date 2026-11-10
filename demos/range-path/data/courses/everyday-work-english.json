@@ -1,0 +1,514 @@
+{
+  "slug": "everyday-work-english",
+  "title": "Everyday and Work English Practice",
+  "summary": "By the end, learners can describe official communication, reading, and writing skills, practise everyday listening and speaking habits, read simple forms and instructions more carefully, write a short clear note or form answer, and find official places in Canada and Alberta that offer more English learning.",
+  "goals": "By the end, learners can describe official communication, reading, and writing skills, practise everyday listening and speaking habits, read simple forms and instructions more carefully, write a short clear note or form answer, and find official places in Canada and Alberta that offer more English learning.",
+  "certificateNote": "It is not a college diploma, degree, CLB certificate, LINC completion, or CELPIP, IELTS, or TOEFL preparation, and it is not immigration or citizenship advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Communication, reading, and writing",
+      "html": "<p>The Government of Canada’s <strong>Skills for Success</strong> model names skills that help in work, learning, and life. Three of them are language skills you can practise every day:</p>\n<ul>\n<li><strong>Communication</strong> — receiving, understanding, considering, and sharing information and ideas by speaking, listening, and interacting. Official examples include listening to instructions, serving customers, and discussing ideas.</li>\n<li><strong>Reading</strong> — finding, understanding, and using information in words, symbols, and images. Official examples include forms, emails, reports, news, and instructions. The page also notes that reading helps you learn other skills, including from online lessons.</li>\n<li><strong>Writing</strong> — sharing information with written words, symbols, and images. Official examples include filling out forms and applications and writing emails, reports, or posts.</li>\n</ul>\n<p>Immigration, Refugees and Citizenship Canada (IRCC) says Canada has two official languages, English and French, and that stronger language skills help with getting a job, going to school, using services, helping children with school work, and meeting people. Which language people use most depends on where they live. In much of Alberta, English is the language you will hear most often at work and in shops, but French services also exist.</p>\n<p>This course is written at about <strong>CLB 4–5</strong> reading level so it is easier to follow. That does <strong>not</strong> mean the course measures your CLB level or gives a CLB certificate. IRCC explains that government-funded newcomer classes use the Canadian Language Benchmarks as national standards — those classes are separate (see Lesson 5).</p>\n<p><a href=\"../../workplace-writing-grammar-canada/\">Workplace Writing and Grammar (Canadian Spelling)</a> looks more closely at workplace writing and grammar. Here the goal is practice, not a grammar exam.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Improving your English and French — IRCC",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success communication includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Speaking, listening, and interacting with others"
+            },
+            {
+              "id": "B",
+              "text": "Only typing secret codes"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Official examples of reading include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Forms, emails, and instructions"
+            },
+            {
+              "id": "B",
+              "text": "Ignoring every sign you see"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course issues an official CLB certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "IRCC says stronger English or French can help with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Work, school, services, and talking with people"
+            },
+            {
+              "id": "B",
+              "text": "Skipping every conversation on purpose"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Everyday listening and speaking",
+      "html": "<p>Skills for Success says strong communication helps you share information so others can understand you, and helps you listen, pay attention, and understand other people. These skills matter at work with co-workers and clients, including people from different backgrounds.</p>\n<p>Official communication components you can practise this week:</p>\n<ul>\n<li><strong>Listen with intention.</strong> Pay attention. Notice words and simple non-verbal cues (for example, whether someone looks toward you). Use body language that shows you are listening — the official page mentions keeping focus on the speaker. <strong>Ask questions to confirm you understand.</strong> Repeat the key point in your own words when you need to.</li>\n<li><strong>Listen to understand.</strong> Think about the speaker’s purpose. What do they want you to <em>do</em>?</li>\n<li><strong>Speak with clarity and purpose.</strong> Use simple, clear sentences. State why you are speaking (to explain, to ask, or to give information).</li>\n<li><strong>Adapt to the situation.</strong> Choose a polite tone for a clinic, a shop, a workplace, or a neighbour.</li>\n</ul>\n<p><strong>Try these (your own words are fine):</strong></p>\n<ul>\n<li>“Could you please say that again more slowly?”</li>\n<li>“I think you asked me to [step]. Is that right?”</li>\n<li>“Hello, I would like to book an appointment for Tuesday morning.”</li>\n<li>“Excuse me, could you help me find [aisle / form / office]?”</li>\n</ul>\n<p>These sample lines are practice only. They do not come from a government phrasebook, and they are not magic words that every Canadian must use.</p>\n<p>If you cannot hear someone (a noisy shop, a phone call, a mask), it is acceptable to say so and ask them to repeat. That is communication, not failure.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A Skills for Success listening habit is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Asking questions to confirm you understand"
+            },
+            {
+              "id": "B",
+              "text": "Pretending you heard when you did not"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Speaking with purpose means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Making it clear what you want the listener to understand or do"
+            },
+            {
+              "id": "B",
+              "text": "Speaking as fast as possible so no one can answer"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you cannot hear someone, a useful step is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Politely ask them to repeat"
+            },
+            {
+              "id": "B",
+              "text": "Walk away without a word every time"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The sample sentences in this lesson are official IRCC test answers.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Reading everyday and work texts",
+      "html": "<p>Skills for Success says reading helps you work safely and efficiently and learn other skills — including by reading online lessons. Official reading steps you can use on a form, email, poster, or set of instructions:</p>\n<ol>\n<li><strong>Know why you are reading.</strong> What do you need to find or do?</li>\n<li><strong>Find the key information.</strong> Look at headings, bold words, dates, times, amounts, and names. The official skill includes scanning and skimming to locate what matters in articles, tables, charts, and other documents.</li>\n<li><strong>Connect the parts.</strong> How does one sentence relate to the next? Is it a problem and a solution, or a list of steps?</li>\n<li><strong>Use what you read.</strong> Follow the instruction, fill the correct line, or choose the right action.</li>\n<li><strong>Think about the source</strong>, especially online. Is the page relevant and trustworthy? Prefer official sites such as Canada.ca, Alberta.ca, or your employer’s own page for rules.</li>\n</ol>\n<p><strong>Practice ideas:</strong></p>\n<ul>\n<li>Read a medicine label, a bus or clinic notice, or a workplace safety sign. What is the most important instruction?</li>\n<li>Open a simple email or letter. Who sent it, what do they want, and by when?</li>\n<li>On a form, find the lines for your name, date, and signature before you write.</li>\n</ul>\n<p>Read the whole question on a form before you answer. <a href=\"../../workplace-writing-grammar-canada/\">Workplace Writing and Grammar (Canadian Spelling)</a> spends more time on writing style. Here, the win is finding the right information and not guessing.</p>\n<p>If a word is new, circle it and look it up or ask someone you trust.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Before you read a long page, it helps to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Know why you are reading and what you need to find"
+            },
+            {
+              "id": "B",
+              "text": "Skip every heading"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Scanning and skimming are official reading methods used to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Locate key information"
+            },
+            {
+              "id": "B",
+              "text": "Delete the document"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "For rules about a government program, a safer source is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The official Canada.ca or Alberta.ca page"
+            },
+            {
+              "id": "B",
+              "text": "A random unmarked message that asks for a fee"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Reading a form carefully before you write can help you put answers on the correct lines.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "English at work: notes, forms, and short messages",
+      "html": "<p>At work you use all three language skills. Skills for Success says communication helps you listen to instructions, serve customers, and discuss ideas. Writing skill includes filling out workplace papers such as timesheets or report forms, choosing a tone that fits the reader, and <strong>reviewing</strong> what you wrote for spelling, meaning, and tone.</p>\n<p><strong>Listening at work.</strong> If a supervisor gives several steps, write them down. Repeat the steps back: “First I will… then I will… Is that correct?” Asking a question is better than doing the wrong task.</p>\n<p><strong>Serving a customer or client (practice).</strong> Greet the person, listen to the request, say what you can do, and check that you understood. If you cannot help, say so clearly and offer to find someone who can, when that is allowed at your workplace.</p>\n<p><strong>Short written messages.</strong> Skills for Success writing steps are: know your purpose and your reader, plan what to include, write clearly, choose a polite tone, pick a simple format (short paragraphs or a numbered list), then reread.</p>\n<p>A workplace note might look like this (practice only, not an official template):</p>\n<p>&gt; Hello Sam, &gt; I cannot come to my shift on Thursday morning because I have a medical appointment. I can work Friday afternoon if that helps. &gt; Thank you, &gt; [Your name]</p>\n<p>Keep private information off group chats and public boards. Do not share a SIN, a password, or health details you would not want widely read.</p>\n<p><a href=\"../../workplace-writing-grammar-canada/\">Workplace Writing and Grammar (Canadian Spelling)</a> covers Canadian spelling and workplace grammar in more depth.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "If you receive several work instructions, a useful habit is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Write them down and repeat them back to check"
+            },
+            {
+              "id": "B",
+              "text": "Guess and hope"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Skills for Success writing includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Knowing your purpose and reader, then reviewing what you wrote"
+            },
+            {
+              "id": "B",
+              "text": "Sending the first draft in ALL CAPS without reading it"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A short workplace message should usually be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Clear about what you need and polite in tone"
+            },
+            {
+              "id": "B",
+              "text": "A secret written in another person’s name"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is official CELPIP or IELTS training.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Keep practising, and where to find more help",
+      "html": "<p>Language skill grows with regular practice: listen, speak, read, and write a little often. IRCC notes that governments fund language classes, that you should get an assessment before a formal class, and that private classes are ones you pay for. IRCC also lists tests such as IELTS, CELPIP, and TOEFL that some jobs or schools ask for. <strong>This course does not prepare you for those tests</strong> and is not a certificate for them.</p>\n<p><strong>Free government-funded newcomer classes.</strong> IRCC says that if you are a <strong>permanent resident or a protected person</strong>, you can take Language Instruction for Newcomers to Canada (<strong>LINC</strong>) at no cost (or CLIC for French). Classes may be online or in person, full-time or part-time, and they use the Canadian Language Benchmarks. To start, visit an organization that helps newcomers and ask for a language assessment. <strong>This course cannot decide if you are eligible</strong> and is not immigration advice.</p>\n<p><strong>Other English learning in Alberta.</strong> You do not have to be a newcomer to practise English. Alberta.ca says English as an Additional Language (EAL) is offered by community adult learning providers, school boards, post-secondary schools, and other providers, full-time or part-time. A non-credit community class may fit if you want flexible hours and a welcoming local place. The Community Adult Learning Program overview says local providers may help with English, literacy, and skills for learning. Ask your adult learning council what they offer.</p>\n<p>Alberta.ca’s “Going back to school as an adult” page says Alberta Supports can help you choose a path, and it lists the Foundational Learning and Skills Development Unit (toll free <strong>1-800-222-6485</strong>, weekdays).</p>",
+      "sources": [
+        {
+          "label": "Improving your English and French — IRCC",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        },
+        {
+          "label": "Language classes funded by the Government of Canada — IRCC",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills/classes.html"
+        },
+        {
+          "label": "Going back to school as an adult — Alberta.ca",
+          "url": "https://www.alberta.ca/going-back-school-adult"
+        },
+        {
+          "label": "Community Adult Learning Program overview — Alberta.ca",
+          "url": "https://www.alberta.ca/community-adult-learning-program-overview"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "IRCC says free LINC classes are for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Permanent residents or protected persons (after an assessment)"
+            },
+            {
+              "id": "B",
+              "text": "Anyone in the world, with no questions asked, including this online quiz"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before many formal language classes, IRCC says you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Get a language assessment"
+            },
+            {
+              "id": "B",
+              "text": "Memorize a passport number out loud"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "In Alberta, EAL classes may be offered by:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Community adult learning providers, school boards, and post-secondary schools"
+            },
+            {
+              "id": "B",
+              "text": "Only hidden unpaid pop-up shops with no name"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course replaces a conversation class and is immigration advice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one.",
+    "questions": [
+      {
+        "prompt": "Skills for Success includes communication, reading, and writing.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      },
+      {
+        "prompt": "Asking a speaker to repeat or confirming what you heard is a useful listening habit.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      },
+      {
+        "prompt": "Scanning a page for headings and key facts can help you find information faster.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      },
+      {
+        "prompt": "This course is official CELPIP, IELTS, or CLB certification.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      },
+      {
+        "prompt": "A short workplace note should be clear about the request and polite in tone.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      },
+      {
+        "prompt": "IRCC says LINC is a free program for permanent residents or protected persons.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      },
+      {
+        "prompt": "This course is immigration advice and a replacement for a conversation class.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general English practice for everyday and work situations in Canada. It is a self-paced supplement, not a replacement for a conversation class or a tutor. It is not Language Instruction for Newcomers to Canada (LINC), not a Canadian Language Benchmarks (CLB) certificate, and not CELPIP, IELTS, or TOEFL preparation. It is not immigration, citizenship, or legal advice. This course cannot decide which language program or test you should take.",
+    "builderNotes": "- Keep sample sentences clearly labelled as practice, not government phrasing.\n- Do not teach citizenship language-score rules (IRCC mentions CLB 4 speaking/listening for citizenship — omitted here to avoid immigration advice).\n- Do not coach IELTS/CELPIP. Mention that IRCC lists those tests only so learners know this course is not that training.\n- A later Phase 1 course covers workplace writing and grammar; keep grammar light here.\n- No Ed2Go / commercial ESL curriculum. Canadian spelling (practise as a verb, centre).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-english.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of two speech bubbles."
+  }
+}

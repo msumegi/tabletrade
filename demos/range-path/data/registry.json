@@ -1,0 +1,102 @@
+{
+  "passMark": 0.7,
+  "courses": [
+    {
+      "slug": "everyday-computers-smartphones",
+      "shortTitle": "Everyday computers",
+      "navLabel": "Devices",
+      "featured": true
+    },
+    {
+      "slug": "excel-basics-canada",
+      "shortTitle": "Excel basics",
+      "navLabel": "Excel",
+      "featured": true
+    },
+    {
+      "slug": "word-basics-canada",
+      "shortTitle": "Word basics",
+      "navLabel": "Word",
+      "featured": true
+    },
+    {
+      "slug": "job-search-canada",
+      "shortTitle": "Job search",
+      "navLabel": "Job search",
+      "featured": true
+    },
+    {
+      "slug": "outlook-workplace-email",
+      "shortTitle": "Outlook email",
+      "navLabel": "Outlook",
+      "featured": true
+    },
+    {
+      "slug": "bookkeeping-fundamentals-canada",
+      "shortTitle": "Bookkeeping",
+      "navLabel": "Bookkeeping",
+      "featured": true
+    },
+    {
+      "slug": "invoices-expenses-gst-canada",
+      "shortTitle": "Invoices and GST",
+      "navLabel": "Invoices",
+      "featured": true
+    },
+    {
+      "slug": "how-to-learn-online",
+      "shortTitle": "Learn online",
+      "navLabel": "Learning",
+      "featured": true
+    },
+    {
+      "slug": "everyday-work-english",
+      "shortTitle": "Work English",
+      "navLabel": "English",
+      "featured": true
+    },
+    {
+      "slug": "workplace-writing-grammar-canada",
+      "shortTitle": "Workplace writing",
+      "navLabel": "Writing",
+      "featured": true
+    },
+    {
+      "slug": "everyday-math-numeracy",
+      "shortTitle": "Everyday math",
+      "navLabel": "Numeracy",
+      "featured": true
+    },
+    {
+      "slug": "project-management-basics",
+      "shortTitle": "Project basics",
+      "navLabel": "Projects",
+      "featured": true
+    },
+    {
+      "slug": "writing-simple-grant-application-canada",
+      "shortTitle": "Grant writing",
+      "navLabel": "Grants",
+      "featured": true
+    },
+    {
+      "slug": "email-online-safety",
+      "shortTitle": "Email & Online Safety",
+      "navLabel": "Email safety",
+      "featured": true
+    },
+    {
+      "slug": "sin-cra-getting-paid",
+      "shortTitle": "SIN, CRA & getting paid",
+      "navLabel": "SIN and pay",
+      "featured": true
+    },
+    {
+      "slug": "winter-safety-rural-alberta",
+      "shortTitle": "Winter safety",
+      "navLabel": "Winter safety",
+      "featured": false,
+      "extra": true
+    }
+  ]
+}

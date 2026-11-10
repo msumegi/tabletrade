@@ -1,0 +1,527 @@
+{
+  "slug": "email-online-safety",
+  "title": "Email & Online Safety Basics in Canada",
+  "summary": "Spot common scams, choose safer passwords, and know where to report fraud in Canada.",
+  "goals": "Spot common scams, choose safer passwords, and know where to report fraud in Canada.",
+  "introHtml": "<p class=\"lede\">Spot common scams, choose safer passwords, and know where to report fraud in Canada.</p>\n<p>By the end, learners can: spot common CRA and phishing scams; choose safer password habits; know when not to click; and report fraud to the Canadian Anti-Fraud Centre (CAFC) and, when needed, the CRA.</p>",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
+  "media": {
+    "frameClass": "frame frame-person",
+    "src": "media/phone-1280.webp",
+    "srcset": "media/phone-720.webp 720w, media/phone-1280.webp 1280w, media/phone-1920.webp 1920w",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 1600,
+    "alt": "An older adult looks at a phone while sitting at home."
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is a scam message?",
+      "html": "<p>A scam message tries to trick you into giving money or private information. It can arrive as a phone call, text, email, or chat. Scammers often pretend to be a bank, a delivery company, or the <strong>Canada Revenue Agency (CRA)</strong>.</p>\n<p>Common warning signs:</p>\n<ul>\n<li>The message says you must act <strong>right now</strong> or something bad will happen.</li>\n<li>It asks for gift cards, cryptocurrency, or an Interac e-Transfer to a person you do not know.</li>\n<li>It asks you to click a link and “sign in” to fix a problem.</li>\n<li>The spelling or grammar looks odd — but some scams now look very real.</li>\n</ul>\n<p>The CRA publishes a clear list of things it will <strong>not</strong> do. For example, the CRA will not send refunds by e-Transfer or text, will not ask for payment by gift card or cryptocurrency, and will not threaten to arrest or deport you in an aggressive call. If a “CRA” caller does these things, hang up. Look up a real CRA phone number yourself later, or sign in only through official pages that start with <strong>canada.ca</strong>.</p>\n<p class=\"remember\"><strong>Remember:</strong> Feeling scared or rushed is a tool scammers use. Slow down. Ask a trusted person or your adult learning centre before you send money or personal details.</p>",
+      "sources": [
+        {
+          "label": "CRA — Recognize a scam",
+          "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+        },
+        {
+          "label": "CRA — Be scam smart",
+          "url": "https://www.canada.ca/en/revenue-agency/campaigns/fraud-scams/quiz.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A caller says they are from the CRA and demands gift cards right now or police will come. What should you do?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Buy the gift cards"
+            },
+            {
+              "id": "B",
+              "text": "Hang up; this matches scam behaviour the CRA warns about"
+            },
+            {
+              "id": "C",
+              "text": "Give your SIN to prove who you are"
+            }
+          ],
+          "answer": "B",
+          "explain": "The CRA says it will not demand gift cards or use that kind of threat. Hang up and use official channels later."
+        },
+        {
+          "prompt": "True or false: Every scam email has bad spelling.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "Many scams look professional. Use CRA warning signs, not spelling alone."
+        },
+        {
+          "prompt": "Official CRA web pages usually:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Start with canada.ca or end in cra-arc.gc.ca"
+            },
+            {
+              "id": "B",
+              "text": "End in .info or .su"
+            },
+            {
+              "id": "C",
+              "text": "Use random short links only"
+            }
+          ],
+          "answer": "A",
+          "explain": "CRA guidance: trust addresses that start with canada.ca or end in cra-arc.gc.ca."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "CRA phone and text scams",
+      "html": "<p>Scammers love to pretend they are the CRA because many people worry about taxes and benefits.</p>\n<p><strong>Phone scams:</strong> Someone may call and say you owe money, or that you will be arrested. They may even make the caller ID look like a real number (“spoofing”). The CRA may contact people for real reasons, but it will not use the extreme threats and payment methods listed on its scam pages. If you did not expect the call, hang up. Later, find the CRA contact page on canada.ca and call that number yourself — or sign in to your CRA account through canada.ca.</p>\n<p><strong>Text and chat scams:</strong> The CRA says it does <strong>not</strong> start tax conversations by text or by apps like WhatsApp. Texts for multi-factor sign-in are different and only happen if you set that up. A text that offers a refund, asks you to reply “YES,” or sends a “deposit” link is a red flag.</p>\n<p><strong>What the CRA emails look like (high level):</strong> If you signed up for email notifications, the CRA may email to say you have mail <strong>inside</strong> your CRA account. Those emails should not ask you to reply with passwords or to enter banking details in the email itself. When in doubt, type <strong>canada.ca</strong> in your browser and sign in from there. Do not click the link in a surprise message.</p>\n<p>If you already shared information or see strange changes on your tax account, report it using the CRA’s scam/identity theft reporting page and also tell the Canadian Anti-Fraud Centre.</p>",
+      "sources": [
+        {
+          "label": "CRA — Recognize a scam",
+          "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+        },
+        {
+          "label": "CRA — Report a scam or identity theft",
+          "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/report-scam.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The safest way to check a surprise “CRA” text about a refund is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Click the link in the text"
+            },
+            {
+              "id": "B",
+              "text": "Reply with your SIN"
+            },
+            {
+              "id": "C",
+              "text": "Open a browser, go to canada.ca yourself, and sign in or call a number from that site"
+            }
+          ],
+          "answer": "C",
+          "explain": ""
+        },
+        {
+          "prompt": "Caller ID shows a CRA-looking number. Does that prove the call is real?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Yes"
+            },
+            {
+              "id": "B",
+              "text": "No — numbers can be spoofed"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Which payment demand is a scam warning sign for “CRA” calls?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Gift cards"
+            },
+            {
+              "id": "B",
+              "text": "Following official CRA online payment options after you verify the debt yourself"
+            },
+            {
+              "id": "C",
+              "text": "Pay with gift cards after you look up the number yourself."
+            }
+          ],
+          "answer": "A",
+          "explain": "Gift cards, crypto, or pressure e-Transfers to strangers are classic scam demands per CRA guidance."
+        },
+        {
+          "prompt": "True or false: The CRA will never contact anyone by phone for any reason.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "The CRA may contact people, but you should know the scam warning signs and verify through official channels."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Phishing emails and fake websites",
+      "html": "<p><strong>Phishing</strong> means a fake message that tries to get your passwords, SIN, banking details, or to make you install harmful software. The Canadian Anti-Fraud Centre (CAFC) warns that phishing can look like a bank, a store, or a government agency.</p>\n<p>Typical tricks:</p>\n<ul>\n<li>“Your package could not be delivered — click here.”</li>\n<li>“Your account will close today — update now.”</li>\n<li>“You have a tax refund waiting — sign in.”</li>\n<li>A QR code in a surprise email or poster that leads to a fake sign-in page.</li>\n</ul>\n<p><strong>Fake websites</strong> often use look-alike addresses: extra words, odd endings (.info, .su), or small spelling changes. CRA guidance: official pages start with <strong>canada.ca</strong> or end with <strong>cra-arc.gc.ca</strong>. When unsure, <strong>do not click</strong>. Type the address yourself.</p>\n<p><strong>Quick habits:</strong></p>\n<ol>\n<li>Do not click links or open attachments in surprise messages.</li>\n<li>Do not “confirm” passwords by email or text.</li>\n<li>Hover or long-press a link on your phone to preview the address (still be careful).</li>\n<li>If you clicked by mistake, change your password on the <strong>real</strong> site, turn on stronger sign-in if available, and watch your accounts. Report the attempt.</li>\n</ol>\n<p>Reporting helps others. CAFC wants reports even if you did not lose money.</p>",
+      "sources": [
+        {
+          "label": "CAFC — Phishing",
+          "url": "https://www.antifraudcentre-centreantifraude.ca/scams-fraudes/phishing-hameconnage-eng.htm"
+        },
+        {
+          "label": "CRA — Recognize a scam (fake websites)",
+          "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Phishing is mainly about:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Fixing your printer"
+            },
+            {
+              "id": "B",
+              "text": "Tricking you into giving information or clicking a harmful link"
+            },
+            {
+              "id": "C",
+              "text": "Free computer upgrades from the government by e-Transfer"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A site named cra-login-canada.com is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Always safe"
+            },
+            {
+              "id": "B",
+              "text": "A look-alike style CRA warns about — treat as suspicious"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "You get an email with a QR code to “unlock your refund.” Best action?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Scan it right away"
+            },
+            {
+              "id": "B",
+              "text": "Ignore the email; use canada.ca if you need your real account"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "True or false: You should only report a scam if you lost money.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "CRA and CAFC guidance encourages reporting attempts too."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Strong passwords and passphrases",
+      "html": "<p>Your password is a key to email, banking, and government accounts. Get Cyber Safe (Government of Canada) recommends <strong>unique</strong> passwords or passphrases for each important account.</p>\n<p><strong>Passphrase tip:</strong> Use <strong>four or more random words</strong> and at least about <strong>15 characters</strong> when you can (for example, a made-up phrase you can picture). Random words are stronger than a pet’s name or your birthday.</p>\n<p>If you must use a shorter password style, aim for length, a mix of character types, and something that is not a common word.</p>\n<p><strong>Do:</strong></p>\n<ul>\n<li>Use a different password for email and banking.</li>\n<li>Consider a password manager if you and your tutor are comfortable with one.</li>\n<li>Turn on multi-factor authentication (a second step, like a code) when the site offers it.</li>\n</ul>\n<p><strong>Do not:</strong></p>\n<ul>\n<li>Share passwords.</li>\n<li>Send a password by email or text because someone asked.</li>\n<li>Reuse the same password everywhere — one breach can open many doors.</li>\n</ul>\n<p>If a site is breached, change that password and any other site where you reused it. Practise creating a passphrase on paper first (keep the paper private), then type it into a real account only when you are ready.</p>",
+      "sources": [
+        {
+          "label": "Get Cyber Safe — Passphrases, passwords and PINs",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-accounts/passphrases-passwords-and-pins"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A strong passphrase is often:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Your dog’s name"
+            },
+            {
+              "id": "B",
+              "text": "Four or more random words (longer is better)"
+            },
+            {
+              "id": "C",
+              "text": "“123456”"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Why unique passwords matter:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "They look nicer"
+            },
+            {
+              "id": "B",
+              "text": "If one account is stolen, others are harder to open"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Someone emails “send your password so we can upgrade your account.” You should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Send it"
+            },
+            {
+              "id": "B",
+              "text": "Not send it — legitimate services do not ask this way"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Multi-factor authentication adds:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A second check beyond the password"
+            },
+            {
+              "id": "B",
+              "text": "Free gift cards"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "How to report fraud in Canada",
+      "html": "<p>If you spot a scam — or you already shared information — reporting helps you and your community.</p>\n<p><strong>1. Canadian Anti-Fraud Centre (CAFC)</strong><br>Report online or call toll-free <a href=\"tel:+18884958501\">1-888-495-8501</a>. Report even if you did not lose money. Keep notes: date, phone numbers, emails, screenshots, and what they asked for.</p>\n<p><strong>2. Canada Revenue Agency (CRA)</strong><br>If the scam involved your tax or benefits account, or you see unauthorized changes, use the CRA’s report-a-scam / identity theft options (online form or phone). They can help place protections on your account.</p>\n<p><strong>3. Local police</strong><br>Especially important if you lost money. Ask for a file number and keep it.</p>\n<p><strong>4. Your bank or credit union</strong><br>Call them quickly if you sent money or shared banking passwords. Ask about next steps and monitoring.</p>\n<p><strong>5. Credit bureaus (if identity theft is a concern)</strong><br>Canada has national credit bureaus (Equifax Canada and TransUnion Canada). Fraud reporting guidance often includes checking your credit report and asking about a fraud alert.</p>\n<p>Also tell a trusted person and your adult learning staff if you want support while you report. You are not alone — scams are common, and calm reporting is the goal.</p>\n<p>Bookmark: antifraudcentre.ca and the CRA scam pages on canada.ca.</p>",
+      "sources": [
+        {
+          "label": "CRA — Report a scam or identity theft",
+          "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/report-scam.html"
+        },
+        {
+          "label": "Competition Bureau — How to report fraud and scams",
+          "url": "https://competition-bureau.canada.ca/en/fraud-and-scams/tips-and-advice/how-report-fraud-and-scams-canada"
+        },
+        {
+          "label": "Canadian Anti-Fraud Centre",
+          "url": "https://www.antifraudcentre-centreantifraude.ca/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "CAFC toll-free reporting line listed in public guidance:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "911 only"
+            },
+            {
+              "id": "B",
+              "text": "1-888-495-8501"
+            },
+            {
+              "id": "C",
+              "text": "Your neighbour’s number"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "You should report a CRA-looking scam even if you hung up in time.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If money left your account, a useful early call is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Your bank or credit union"
+            },
+            {
+              "id": "B",
+              "text": "A random Facebook group only"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Screenshots and notes of scam messages are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Useless"
+            },
+            {
+              "id": "B",
+              "text": "Helpful evidence when you report"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "",
+    "questions": [
+      {
+        "prompt": "Best first move on a threatening “CRA gift card” call? Hang up and verify later on canada.ca.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Refunds and account changes belong on official CRA channels, not surprise links."
+      },
+      {
+        "prompt": "Official CRA sites start with canada.ca or end in cra-arc.gc.ca.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Trust addresses that start with canada.ca or end in cra-arc.gc.ca."
+      },
+      {
+        "prompt": "Phishing tries to trick you into giving information or clicking.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "That is what phishing is for."
+      },
+      {
+        "prompt": "Reusing one password everywhere is safe.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "One breach can open many accounts. Use a unique password or passphrase."
+      },
+      {
+        "prompt": "CAFC wants reports only after large losses.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Report even if you did not lose money."
+      },
+      {
+        "prompt": "A passphrase of four random words can be stronger than a short common password.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Length and random words are the idea behind a passphrase."
+      },
+      {
+        "prompt": "Clicking a surprise refund link is the recommended way to get CRA payments.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Type canada.ca yourself. Do not use a surprise link."
+      }
+    ]
+  }
+}

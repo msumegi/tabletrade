@@ -1,0 +1,514 @@
+{
+  "slug": "invoices-expenses-gst-canada",
+  "title": "Invoices, Expenses and GST Records (Canada)",
+  "summary": "By the end, learners can tell a sales invoice from a purchase invoice or receipt, list what the CRA says customers should see about GST/HST on a bill, check whether an invoice has the details the CRA describes for different sale amounts (as of November 2026), and use the CRA’s free GST/HST Registry to look up a number — without treating this course as personal tax help.",
+  "goals": "By the end, learners can tell a sales invoice from a purchase invoice or receipt, list what the CRA says customers should see about GST/HST on a bill, check whether an invoice has the details the CRA describes for different sale amounts (as of November 2026), and use the CRA’s free GST/HST Registry to look up a number — without treating this course as personal tax help.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, software certification, or tax, accounting, payroll, or audit advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Invoices, receipts, and expense papers",
+      "html": "<p>A <strong>sales invoice</strong> is the bill you give (or send) when you sell goods or services. It lists what was sold and what the buyer should pay. A <strong>purchase invoice</strong> is the bill you receive when you buy something for the activity you are tracking. A <strong>receipt</strong> often shows that money was paid. The CRA groups invoices, receipts, contracts, cash-register slips, and other business papers together as records of a sale or purchase.</p>\n<p>This is different from the bookkeeping course, which explained day-to-day recording and what a purchase receipt should show for income-tax records. Here the focus is the papers themselves: how to read them, what to put on a bill you send, and how they connect to GST/HST.</p>\n<p><strong>A simple habit:</strong></p>\n<ul>\n<li>Keep <strong>sales</strong> papers (invoices you send, copies of receipts you give) in one place.</li>\n<li>Keep <strong>purchase and expense</strong> papers (invoices and receipts you receive) in another place.</li>\n<li>Write the date on anything that does not already show one clearly.</li>\n<li>Do not guess missing numbers.</li>\n</ul>\n<p>An <strong>estimate</strong> or quote is not the same as an invoice. An estimate is a planned price before the work is done. After the work or sale, the invoice (or receipt) is the record of what was actually charged.</p>\n<p>The CRA says that if GST/HST applies to a sale, you must let customers know — on a receipt, invoice, contract, or even a posted sign. Lesson 2 explains that wording. This lesson does not tell you whether your activity must charge tax.</p>\n<p>Ask your adult learning council if you want help practising a simple invoice layout on paper or in a spreadsheet. This course does not certify any software.</p>",
+      "sources": [
+        {
+          "label": "Charge and collect the GST/HST — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html"
+        },
+        {
+          "label": "GST/HST records to keep — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/gst-hst-records-keep.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A sales invoice is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The bill you give when you sell goods or services"
+            },
+            {
+              "id": "B",
+              "text": "A secret code the CRA emails to every household"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Purchase invoices and expense receipts are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Papers you receive when you buy something for the activity you are tracking"
+            },
+            {
+              "id": "B",
+              "text": "The same as a driver’s licence"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An estimate or quote is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A planned price before the work is finished, not the same as the final invoice"
+            },
+            {
+              "id": "B",
+              "text": "Always a GST/HST return"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you which expenses you may deduct on a tax return.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "What customers should see about GST/HST",
+      "html": "<p>If GST/HST applies to a sale, the CRA says you must let customers know:</p>\n<ul>\n<li>that GST/HST is being applied</li>\n<li>whether the tax is <strong>included in the price</strong> or <strong>added separately</strong></li>\n</ul>\n<p>You can do this on cash-register receipts, invoices, contracts, or posted signs.</p>\n<p>The CRA also says you have to show:</p>\n<ul>\n<li>the <strong>GST/HST rate</strong> that applies to the supply (the sale)</li>\n<li>the amount paid or payable <strong>and</strong> the GST/HST amount as <strong>separate lines</strong>, <strong>or</strong> a clear statement that the total includes GST/HST</li>\n</ul>\n<p>If <strong>HST</strong> applies, show the <strong>total HST rate</strong>. Do not split it into a federal part and a provincial part on the invoice.</p>\n<p><strong>This course will not tell you</strong> which rate to charge. The CRA says the rate depends on where the sale is made (the <em>place of supply</em>) and on the type of supply. Some things are zero-rated (taxed at 0%) or exempt. Use the official CRA pages or a qualified professional for your own sales.</p>\n<p>A clear invoice might show a subtotal, a GST or HST line, and a total — or one total with a sentence such as “Price includes GST/HST.” Follow the live CRA wording, not a neighbour’s template from another country (United States sales-tax forms are not Canadian GST/HST records).</p>\n<p>If you are not sure whether you must register or charge tax, stop and get official help. Do not invent a rate.</p>",
+      "sources": [
+        {
+          "label": "Charge and collect the GST/HST — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "If GST/HST applies, the CRA says customers should know:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Whether the tax is included in the price or added separately"
+            },
+            {
+              "id": "B",
+              "text": "Your personal banking password"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On an invoice, the CRA says you should show:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The GST/HST rate, and either separate tax and price lines or a clear note that the total includes GST/HST"
+            },
+            {
+              "id": "B",
+              "text": "Only a drawing of the item, with no prices"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If HST applies, the CRA says to show:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The total HST rate, not the federal and provincial parts as two separate rates"
+            },
+            {
+              "id": "B",
+              "text": "A made-up percentage from a different country"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course decides which GST/HST rate you must charge.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Extra details on invoices of different amounts",
+      "html": "<p>The CRA says suppliers have to put specific information on the invoices, receipts, contracts, or other papers they use when they sell taxable property or services to a buyer who is registered for GST/HST. The buyer needs those details to support official claims. <strong>This course will not tell you whether you can claim an input tax credit (ITC) or how to calculate one.</strong> It only explains what the CRA chart says should appear, so your papers are complete.</p>\n<p>On the CRA page checked in <strong>November 2026</strong>, the details depend on the <strong>total sale</strong>:</p>\n<p><strong>Every amount (including under $100):</strong></p>\n<ul>\n<li>the supplier’s business or trading name</li>\n<li>the invoice date (or, if there is no invoice, the date the GST/HST is paid or payable)</li>\n<li>the total amount paid or payable</li>\n</ul>\n<p><strong>Total sale of $100 to $499.99</strong> — all of the above, plus:</p>\n<ul>\n<li>the total GST/HST charged, <strong>or</strong> a note that each taxable amount includes GST/HST at the applicable rate</li>\n<li>if the invoice mixes taxable and exempt items, an indication of the status of each</li>\n<li>the supplier’s (or intermediary’s) <strong>GST/HST registration number</strong></li>\n</ul>\n<p><strong>Total sale of $500 or more</strong> — all of the above, plus:</p>\n<ul>\n<li>the buyer’s name or trading name (or authorized agent)</li>\n<li>a brief description of the property or services</li>\n<li>the <strong>terms of payment</strong> (when and how the buyer should pay)</li>\n</ul>\n<p>These dollar amounts can change. Always follow the live CRA chart. They are not the same list as the income-tax receipt details in the bookkeeping course.</p>\n<p>Even if you never claim a credit, putting these details on a bill you send helps the buyer and keeps your copy useful.</p>",
+      "sources": [
+        {
+          "label": "Input tax credits (records you need to support your claim) — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html"
+        },
+        {
+          "label": "Charge and collect the GST/HST — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "On the CRA chart checked in November 2026, every invoice amount should show:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The supplier’s name, the date, and the total amount"
+            },
+            {
+              "id": "B",
+              "text": "Only the seller’s favourite colour"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "For a total sale of $100 to $499.99, the CRA chart also asks for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The GST/HST charged or a note that the price includes it, and the supplier’s GST/HST number"
+            },
+            {
+              "id": "B",
+              "text": "A photo of the seller’s pet"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "For a total sale of $500 or more, the CRA chart also asks for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The buyer’s name, a brief description, and the terms of payment"
+            },
+            {
+              "id": "B",
+              "text": "The buyer’s SIN"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson teaches you how to calculate and claim an input tax credit.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Checking expense documents and GST/HST numbers",
+      "html": "<p>When you keep purchase invoices and expense receipts, look at them the same day if you can. Ask: does this paper show the name, date, and total? If the amount is $100 or more, does it show GST/HST (or say the price includes it) and a GST/HST registration number? If the amount is $500 or more, does it also name the buyer and describe what was bought?</p>\n<p>If something important is missing, ask the supplier for a more complete invoice or receipt while the sale is still easy to remember.</p>\n<p>The CRA provides a free <strong>GST/HST Registry</strong> so you can confirm that a business charging GST/HST is registered. The CRA says this helps make sure official claims include only tax charged by someone who is registered.</p>\n<p>To use the Registry you need:</p>\n<ul>\n<li>the first <strong>nine digits</strong> of the GST/HST account number (do not type the letters)</li>\n<li>the supplier’s legal, operating, or trading name</li>\n<li>the <strong>transaction date</strong> on the receipt or invoice</li>\n</ul>\n<p>The CRA says a supplier must include the GST/HST account number on papers for taxable goods or services of <strong>$100 or more</strong>. If you cannot find the number, contact the supplier. If the supplier does not provide it, the CRA says you can call the Business enquiries line at <strong>1-800-959-5525</strong> to confirm whether the business is registered.</p>\n<p>The CRA suggests printing the Search Details screen if you use the lookup. This course will not tell you whether to claim a credit.</p>\n<p>Do not type other people’s GST/HST numbers into this course.</p>",
+      "sources": [
+        {
+          "label": "Confirming a GST/HST account number — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/confirming-a-gst-hst-account-number.html"
+        },
+        {
+          "label": "Input tax credits — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The CRA’s GST/HST Registry is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A free tool to confirm that a GST/HST number is registered"
+            },
+            {
+              "id": "B",
+              "text": "A store that sells invoice paper"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To search the Registry, the CRA says you need:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The first nine digits of the number, the business name, and the transaction date"
+            },
+            {
+              "id": "B",
+              "text": "The supplier’s SIN and home address"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The CRA Business enquiries number listed on the Registry page is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "1-800-959-5525"
+            },
+            {
+              "id": "B",
+              "text": "911"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should type a real supplier’s GST/HST number into this quiz.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Organizing and storing invoice and GST records",
+      "html": "<p>The CRA says you must keep records that support GST/HST returns and claims. Those records include <strong>sales and purchase invoices</strong> and other records related to the business and the GST/HST. If someone files electronically, they should also keep working copies of returns. You do <strong>not</strong> have to send receipts or supporting documents when GST/HST information is filed electronically, but you must keep them in case the CRA asks to see them.</p>\n<p>The CRA also says records must let a person calculate the GST/HST collected, the GST/HST paid or payable on eligible purchases and expenses, and any amount to be refunded, rebated, or deducted from net tax. Records should describe goods and services in enough detail to tell whether GST/HST applies. <strong>This course will not do those calculations for you</strong> or tell you how to file.</p>\n<p>Usually, the CRA says to keep records for <strong>six years</strong> from the end of the year they relate to (page checked November 2026). The CRA may ask you to keep them longer. The bookkeeping course explains the six-year rule and where to store records in Canada in more detail.</p>\n<p>A simple filing habit: keep sales papers apart from purchase papers, and keep them in date order — on paper, in folders on a computer, or both. Use any clear system; this course does not require a brand of software.</p>\n<p>If you collect GST/HST, the CRA says you hold that money until you send it to the CRA. Ask a professional how that works in your case.</p>",
+      "sources": [
+        {
+          "label": "GST/HST records to keep — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/gst-hst-records-keep.html"
+        },
+        {
+          "label": "Charge and collect the GST/HST — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The CRA says GST/HST records include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Sales and purchase invoices and related business records"
+            },
+            {
+              "id": "B",
+              "text": "Only a drawing of your shop"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "When GST/HST information is filed electronically, receipts:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Must still be kept in case the CRA asks to see them"
+            },
+            {
+              "id": "B",
+              "text": "Should be thrown out the same morning"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the CRA pages checked in November 2026, records are usually kept:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "For six years from the end of the year they relate to"
+            },
+            {
+              "id": "B",
+              "text": "For six minutes after a sale"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course files your GST/HST return for you.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions.",
+    "questions": [
+      {
+        "prompt": "A sales invoice is the bill you give when you sell goods or services.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      },
+      {
+        "prompt": "If GST/HST applies, customers should be able to see whether the tax is included or added separately.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      },
+      {
+        "prompt": "For every invoice amount, the November 2026 CRA chart asks for the supplier’s name, the date, and the total.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      },
+      {
+        "prompt": "This course tells you which GST/HST rate to charge and how to claim an input tax credit.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      },
+      {
+        "prompt": "The CRA’s GST/HST Registry can confirm that a nine-digit GST/HST number is registered.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      },
+      {
+        "prompt": "Sales and purchase invoices should be kept even if a return is filed electronically.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      },
+      {
+        "prompt": "This course is tax advice and a bookkeeping licence.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information only. It is not tax advice, accounting advice, audit advice, payroll advice, or a bookkeeping or software licence. It will not tell you whether you must register for GST/HST, which rate to charge, which expenses you may deduct, or how to file a return or claim a credit. Rules can change. For your own situation, use official CRA pages or speak with a qualified professional. The earlier course Bookkeeping Fundamentals in Canada covers what bookkeeping is and how long to keep records; this course focuses on invoices, expense documents, and GST/HST details on those papers.",
+    "builderNotes": "- Do not repeat the bookkeeping course’s BDC definition of bookkeeping or its full receipt-field lesson. Point back instead.\n- Date-sensitive figures (re-check before a later rebuild): invoice information thresholds under $100 / $100–$499.99 / $500+; six-year retention; Registry rule that numbers appear on papers for taxable sales of $100 or more. These come from CRA pages opened 2026-11-10 and are not the same list as the income-tax receipt “business number when $100 or more before tax” rule.\n- Do not teach provincial GST/HST rates, place-of-supply examples as instructions, ITC calculation, expense deductibility, or software brands.\n- No Ed2Go / Cengage / QuickBooks help text. Canadian spelling (cheque, practise as a verb).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-invoices.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an invoice with a total line."
+  }
+}

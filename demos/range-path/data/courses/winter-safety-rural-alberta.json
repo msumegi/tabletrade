@@ -1,0 +1,526 @@
+{
+  "slug": "winter-safety-rural-alberta",
+  "title": "Winter Safety & Driving in Rural Alberta",
+  "summary": "Plan a rural winter trip, pack a kit, and know safer habits for ice, snow, and getting stranded.",
+  "goals": "Plan a rural winter trip, pack a kit, and know safer habits for ice, snow, and getting stranded.",
+  "introHtml": "<p class=\"lede\">Plan a rural winter trip, pack a kit, and know safer habits for ice, snow, and getting stranded.</p>\n<p>Learners can prepare a vehicle and trip plan for rural winter travel, list emergency-kit basics, describe safer speed and following-distance habits, recognise ice and low-visibility risks, and know when to stay home or call for help.</p>\n<p><strong>This is not driver training.</strong> It is general safety information. It does not replace the Alberta Driver’s Guide or a qualified instructor.</p>",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/drive-1280.webp",
+    "srcset": "media/drive-720.webp 720w, media/drive-1280.webp 1280w, media/drive-1920.webp 1920w",
+    "sizes": "(max-width: 900px) 100vw, 960px",
+    "width": 1280,
+    "height": 853,
+    "alt": "A car approaches on a snow-covered two-lane road between fenced fields. No licence plate is readable."
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Plan before you go",
+      "html": "<p>Rural Alberta winters can bring cold, wind, ice, and sudden storms. Alberta’s safer-winter-highways guidance says to <strong>stay off the road during winter storms unless travel is necessary</strong>. If roads are closed, <strong>do not travel</strong>.</p>\n<p>Before a rural trip:</p>\n<ol>\n<li><strong>Check road and weather conditions</strong> — use official tools such as <strong>511 Alberta</strong> (511.alberta.ca) and weather forecasts.</li>\n<li><strong>Tell someone</strong> your route, destination, and when you expect to arrive (AMA rural advice stresses this).</li>\n<li><strong>Ask:</strong> Can this wait until conditions improve?</li>\n<li><strong>Charge your phone</strong> and pack a charger or power bank.</li>\n<li>Know that some foothills and valley areas can have weak GPS or mobile signal — AMA notes carrying a paper map as backup and watching road markers and landmarks.</li>\n</ol>\n<p>Pack patience. Arriving late is better than not arriving. Your adult learning council may also share local tips (for example, which highways drift first) — ask staff.</p>\n<p>This course does not replace checking <strong>today’s</strong> conditions. Make “check 511” a habit every winter morning you plan to drive.</p>",
+      "sources": [
+        {
+          "label": "Alberta.ca — Safer winter highways",
+          "url": "https://www.alberta.ca/safer-winter-highways"
+        },
+        {
+          "label": "511 Alberta",
+          "url": "https://511.alberta.ca/"
+        },
+        {
+          "label": "AMA — Safe winter driving on rural roads",
+          "url": "https://amainsider.com/our-best-advice-for-safe-winter-driving-on-rural-roads/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "If highways are closed for a winter storm, Alberta guidance says:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drive faster to beat the storm"
+            },
+            {
+              "id": "B",
+              "text": "Do not travel"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A useful pre-trip habit is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Tell someone your route and expected arrival time"
+            },
+            {
+              "id": "B",
+              "text": "Keep your plans secret from everyone"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "511 Alberta is mainly for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ordering pizza"
+            },
+            {
+              "id": "B",
+              "text": "Road and travel condition information"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Weak mobile signal on some rural routes means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "You never need a backup plan"
+            },
+            {
+              "id": "B",
+              "text": "A paper map and noting landmarks can help"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Winterize the vehicle and pack a kit",
+      "html": "<p>Alberta.ca recommends checking tires (including the spare), battery, belts and hoses, antifreeze, brakes, heater, defroster, and wipers. <strong>Winter tires</strong> are designed for cold, snow, and ice and can grip better than all-season tires in deep cold.</p>\n<p>Keep the fuel tank <strong>more than half full</strong> when you can. That reduces moisture problems in the fuel system and helps if you get stuck.</p>\n<p><strong>Clear the vehicle</strong> before you drive: windows, mirrors, lights, licence plates, and snow from the roof. Driving with blocked windows is unsafe and can be against the law.</p>\n<p><strong>Emergency kit ideas</strong> (from Alberta.ca and AMA-style rural advice):</p>\n<ul>\n<li>blanket, extra warm clothes, boots</li>\n<li>shovel, ice scraper, brush</li>\n<li>flashlight and batteries</li>\n<li>first aid supplies</li>\n<li>booster cables</li>\n<li>snack food that will not spoil, water if it will not freeze solid in your storage plan</li>\n<li>sand, road salt, or non-clumping kitty litter for traction</li>\n<li>candle in a deep tin and waterproof matches (use with extreme care for ventilation)</li>\n<li>phone charger</li>\n</ul>\n<p>AMA also suggests reflective triangles, hand warmers, and enough supplies for everyone in the vehicle. Buy a kit or build one before the first big storm.</p>",
+      "sources": [
+        {
+          "label": "Alberta.ca — Safer winter highways",
+          "url": "https://www.alberta.ca/safer-winter-highways"
+        },
+        {
+          "label": "AMA — Safe winter driving on rural roads",
+          "url": "https://amainsider.com/our-best-advice-for-safe-winter-driving-on-rural-roads/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Winter tires are discussed by Alberta.ca because they:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Are only for show"
+            },
+            {
+              "id": "B",
+              "text": "Can provide better traction in cold, snowy, and icy conditions"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Before driving, you should clear snow and ice from:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Windows, lights, mirrors, and plates"
+            },
+            {
+              "id": "B",
+              "text": "Only the driver’s side mirror"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Keeping the tank over half full in winter is suggested to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Help if you become stranded and reduce fuel-system moisture issues"
+            },
+            {
+              "id": "B",
+              "text": "Make the car louder"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A blanket and shovel in the car are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Reasonable emergency-kit items"
+            },
+            {
+              "id": "B",
+              "text": "Illegal in Alberta"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Drive to conditions",
+      "html": "<p>Posted speed limits assume <strong>ideal</strong> roads. Alberta.ca states you must drive according to conditions — and you can get a ticket if you do not. Slow down on ice, snow, and in poor visibility.</p>\n<p><strong>Following distance:</strong> On slick roads, Alberta.ca advises allowing <strong>at least three times</strong> the normal following distance. AMA rural advice suggests thinking in seconds — for example doubling a three-second gap toward about six seconds when roads are treacherous.</p>\n<p><strong>Smooth inputs:</strong> Avoid sudden steering or braking that can cause a skid. Do <strong>not</strong> use cruise control in winter conditions (Alberta.ca).</p>\n<p><strong>Lights:</strong> Use headlights so others see your taillights — do not rely only on daytime running lights. In snow or fog, use <strong>low beams</strong>; high beams can create glare (AMA and general winter guidance).</p>\n<p><strong>Snowplows:</strong> Stay back until they let you pass. Do not drive into the snow cloud. Older Alberta travel tips also stress patience on two-lane highways.</p>\n<p><strong>Bridges and hills:</strong> Bridge decks often get slick sooner. Gear choices and gentle braking matter — learn your vehicle with a qualified instructor if you are a new driver; this course is not behind-the-wheel training.</p>",
+      "sources": [
+        {
+          "label": "Alberta.ca — Safer winter highways",
+          "url": "https://www.alberta.ca/safer-winter-highways"
+        },
+        {
+          "label": "AMA — Handling winter conditions",
+          "url": "https://amainsider.com/use-caution-handling-winter-driving-conditions-alberta/"
+        },
+        {
+          "label": "AMA — Rural roads",
+          "url": "https://amainsider.com/our-best-advice-for-safe-winter-driving-on-rural-roads/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "On icy roads you should generally:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Drive the posted limit no matter what"
+            },
+            {
+              "id": "B",
+              "text": "Slow down for conditions"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Cruise control in winter is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Recommended by Alberta.ca"
+            },
+            {
+              "id": "B",
+              "text": "Something Alberta.ca says never to use in winter conditions"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "In falling snow, high beams usually:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Help by reflecting off flakes and causing glare — prefer low beams"
+            },
+            {
+              "id": "B",
+              "text": "Are always best"
+            }
+          ],
+          "answer": "A",
+          "explain": "AMA: high beams reflect off snowflakes and cause glare."
+        },
+        {
+          "prompt": "Following distance on slick roads should be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Shorter than normal"
+            },
+            {
+              "id": "B",
+              "text": "Much longer than normal (for example about 3 times or more)"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Ice, black ice, fog, and wildlife",
+      "html": "<p><strong>Black ice</strong> is clear ice that can look like wet or shiny pavement. Alberta and AMA guidance: if the road looks shiny and black instead of grey-white, slow down gently. Intersections often ice up from braking and exhaust. Bridges and overpasses freeze sooner.</p>\n<p><strong>Freezing rain</strong> can be so dangerous that waiting is safer than driving.</p>\n<p><strong>Fog / ice fog:</strong> Use low beams or fog lights if equipped — not high beams.</p>\n<p><strong>Wildlife:</strong> Rural roads expose you to animals on the right-of-way, especially at dawn and dusk. Slow down in posted wildlife zones and scan the ditches. A collision with a large animal is a serious rural risk.</p>\n<p><strong>If you start to skid (overview only):</strong> Alberta.ca describes taking your foot off the brake, steering where you want to go, then braking firmly and smoothly when grip returns. Practise only in safe, legal training settings — not on busy highways for the first time.</p>\n<p>When visibility drops so you cannot see safely, pull fully off the road if you can do so safely, and wait.</p>",
+      "sources": [
+        {
+          "label": "Alberta.ca — Safer winter highways",
+          "url": "https://www.alberta.ca/safer-winter-highways"
+        },
+        {
+          "label": "AMA — Handling winter conditions",
+          "url": "https://amainsider.com/use-caution-handling-winter-driving-conditions-alberta/"
+        },
+        {
+          "label": "AMA — Rural roads",
+          "url": "https://amainsider.com/our-best-advice-for-safe-winter-driving-on-rural-roads/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Black ice is often:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Easy to see as bright blue paint"
+            },
+            {
+              "id": "B",
+              "text": "Hard to see; shiny black pavement can be a clue"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Bridge decks in winter are often:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Slicker sooner than other road parts"
+            },
+            {
+              "id": "B",
+              "text": "Always dry"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "In fog, prefer:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "High beams"
+            },
+            {
+              "id": "B",
+              "text": "Low beams"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Seeing wildlife risk on rural roads means you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Speed up through the zone"
+            },
+            {
+              "id": "B",
+              "text": "Slow down and scan carefully"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "If you become stranded or need help",
+      "html": "<p><strong>Injuries or immediate danger:</strong> Call <a href=\"tel:911\">911</a>.</p>\n<p><strong>Unharmed but need a tow / roadside help:</strong> AMA members can call AMA; others should use their roadside plan or local towing. Give clear location details — road markers, nearby towns, landmarks — because GPS pins can fail.</p>\n<p><strong>If you stay with the vehicle</strong> (common advice when it is safer than walking in a storm):</p>\n<ul>\n<li>Run the engine only as needed for heat.</li>\n<li>Keep the <strong>tailpipe clear of snow</strong> so carbon monoxide does not enter the cabin (AMA rural advice).</li>\n<li>Open a window slightly for fresh air when the engine runs.</li>\n<li>Use blankets and spare clothes.</li>\n<li>Make the vehicle visible with lights or markers if safe.</li>\n</ul>\n<p>Do not walk away from the vehicle in a blizzard unless you can see a safe building very close. Walking in deep cold and wind can be deadly.</p>\n<p>After you are safe, tell the person who had your trip plan that you arrived or that you needed help. Review what to add to your kit before the next trip.</p>\n<p>Remember: staying home is a valid safety choice.</p>",
+      "sources": [
+        {
+          "label": "AMA — Safe winter driving on rural roads",
+          "url": "https://amainsider.com/our-best-advice-for-safe-winter-driving-on-rural-roads/"
+        },
+        {
+          "label": "Alberta.ca — Safer winter highways",
+          "url": "https://www.alberta.ca/safer-winter-highways"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "If someone is injured in a crash, first call:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "911"
+            },
+            {
+              "id": "B",
+              "text": "A food delivery app"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "When running the engine for heat while stopped in snow, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ignore the tailpipe"
+            },
+            {
+              "id": "B",
+              "text": "Keep the tailpipe clear of snow and ventilate carefully"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Walking long distances away from a vehicle in a blizzard is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Usually safest"
+            },
+            {
+              "id": "B",
+              "text": "Often dangerous — staying with the vehicle is commonly safer"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Choosing not to drive in a bad storm is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A valid safety decision"
+            },
+            {
+              "id": "B",
+              "text": "Never allowed"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "",
+    "questions": [
+      {
+        "prompt": "Closed roads mean you should not travel.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "Checking 511 Alberta before a rural winter trip is a good habit.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "Cruise control is recommended on ice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Alberta.ca says not to use cruise control in winter conditions."
+      },
+      {
+        "prompt": "Following distance should increase on slick roads.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "High beams are best in heavy falling snow.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "High beams can glare off snow. Prefer low beams."
+      },
+      {
+        "prompt": "A stranded driver should keep the tailpipe clear of snow if the engine runs.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "This course replaces professional driver training.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "It is general safety information, not a driving lesson."
+      }
+    ]
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "slug": "outlook-workplace-email",
+  "title": "Microsoft Outlook and Workplace Email Habits",
+  "summary": "By the end, learners can open Outlook Mail and Calendar, write and send a message, choose Reply, Reply All, or Forward with care, use To, Cc, Bcc, and attachments, follow Microsoft’s basic professional-email habits, and create a simple appointment or meeting.",
+  "goals": "By the end, learners can open Outlook Mail and Calendar, write and send a message, choose Reply, Reply All, or Forward with care, use To, Cc, Bcc, and attachments, follow Microsoft’s basic professional-email habits, and create a simple appointment or meeting.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What Outlook is and how to start a message",
+      "html": "<p><strong>Microsoft Outlook</strong> is a program that keeps email, calendars, contacts, and tasks in one place. Microsoft’s basic-tasks guide says that after you set up an account you can send and receive email, use the calendar, save contacts, and work with tasks.</p>\n<p>The first time you start Outlook, it may ask for your name, email address, and password. That is often enough. If setup fails, Outlook may ask for more details, such as a mail server name, which your email provider can give you. You can add another account later from <strong>File &gt; Add Account</strong>. Do not enter a real password into this course — practise only on an account your tutor or workplace has approved.</p>\n<p>A <strong>quick access</strong> or navigation area lets you move among <strong>Mail</strong>, <strong>Calendar</strong>, <strong>People</strong>, and <strong>Tasks</strong>.</p>\n<p><strong>To write a new email</strong> (Microsoft):</p>\n<ol>\n<li>From a mail folder such as your <strong>Inbox</strong>, choose <strong>New Email</strong>. (A keyboard shortcut Microsoft lists is Ctrl+Shift+M.)</li>\n<li>Add recipients, a subject, and your message.</li>\n<li>Choose <strong>Send</strong> when you are done.</li>\n</ol>\n<p>The <strong>Inbox</strong> is where new mail usually arrives. Click a message to read it in the reading pane or open it fully.</p>\n<p>If Outlook is not on the computer in front of you, ask your adult learning council which version they have. This course is not MOS training and not a tech-support contract.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Outlook",
+          "url": "https://support.microsoft.com/en-us/outlook/basic-tasks-in-outlook"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Outlook can organize:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Email, calendars, contacts, and tasks"
+            },
+            {
+              "id": "B",
+              "text": "Only printed newspapers"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To start a new message from the Inbox, Microsoft’s basic steps say to choose:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "New Email"
+            },
+            {
+              "id": "B",
+              "text": "Delete Folder"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should type your real workplace password into this quiz.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The Inbox is usually where:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "New messages arrive"
+            },
+            {
+              "id": "B",
+              "text": "The computer stores only printer ink"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Reply, Reply All, or Forward",
+      "html": "<p>When you receive a message, Microsoft lists three common actions:</p>\n<ul>\n<li><strong>Reply</strong> sends your new message <strong>only to the original sender</strong>. Attachments from the original message are not included.</li>\n<li><strong>Reply All</strong> sends your new message to the original sender <strong>and</strong> everyone on the original <strong>To</strong> and <strong>Cc</strong> lines. Attachments are not included.</li>\n<li><strong>Forward</strong> lets you send the message to new people. Attachments from the original message are included automatically.</li>\n</ul>\n<p>You will find <strong>Reply</strong>, <strong>Reply All</strong>, and <strong>Forward</strong> on the ribbon, beside the message, or at the top of the reading pane, depending on your screen and Outlook version.</p>\n<p>Microsoft asks you to think before you choose Reply All, especially if the message went to many people. It is often better to choose Reply and then add only the people who truly need your answer. If you do use Reply All, remove anyone who does not need the message.</p>\n<p>After you choose an option:</p>\n<ol>\n<li>Write your message.</li>\n<li>Add or remove names in the To, Cc, or Bcc boxes if needed.</li>\n<li>Check the subject line. A reply usually starts with <strong>RE:</strong> and a forward with <strong>FW:</strong> — you can change the subject if you want.</li>\n<li>Select <strong>Send</strong>.</li>\n</ol>\n<p>If you reply and later need to send a file, attach it yourself. If you need to pass the original files to someone new, Forward is the action that keeps those attachments.</p>",
+      "sources": [
+        {
+          "label": "Reply to or forward an email message",
+          "url": "https://support.microsoft.com/en-us/outlook/reply-to-or-forward-an-email-message"
+        },
+        {
+          "label": "Basic tasks in Outlook",
+          "url": "https://support.microsoft.com/en-us/outlook/basic-tasks-in-outlook"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Reply sends your message:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Only to the original sender"
+            },
+            {
+              "id": "B",
+              "text": "To everyone in your company automatically"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Reply All includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The sender and the other people on the To and Cc lines"
+            },
+            {
+              "id": "B",
+              "text": "Only people you have never met"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "When you Forward a message, original attachments:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Are usually included"
+            },
+            {
+              "id": "B",
+              "text": "Are never allowed"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Microsoft suggests that before Reply All you:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ask whether everyone truly needs your reply"
+            },
+            {
+              "id": "B",
+              "text": "Always add more people “just in case”"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "To, Cc, Bcc, and attachments",
+      "html": "<p>The address boxes tell Outlook who should get the message.</p>\n<p>Microsoft’s “write great email” guidance says:</p>\n<ul>\n<li>Put people who need to <strong>respond or take action</strong> on the <strong>To</strong> line.</li>\n<li>Put people who need to be <strong>informed</strong> on the <strong>Cc</strong> line.</li>\n<li>Limit the message to people who need to read it.</li>\n</ul>\n<p><strong>Bcc</strong> means <em>blind carbon copy</em>. When you put someone on the Bcc line, they receive a copy, but other recipients do not see that person’s name. In new Outlook, Microsoft’s steps include Options &gt; Show fields &gt; Show Bcc. In classic Outlook, you can choose <strong>Options &gt; Bcc</strong> (or Bcc on the ribbon if you are writing in the reading pane).</p>\n<p>Microsoft also warns: a Bcc recipient might reply to everyone by mistake and reveal they were copied. Do not use Bcc to secretly copy a manager on a sensitive note — Microsoft says it is safer to <strong>forward</strong> the sent message afterward if that person needs to know.</p>\n<p><strong>To attach a file</strong> (Microsoft):</p>\n<ol>\n<li>Create a message, or choose Reply, Reply All, or Forward.</li>\n<li>Choose <strong>Attach File</strong> (on the Message tab in some views).</li>\n<li>Pick the file, then Send.</li>\n</ol>\n<p>To save an attachment you receive, select it and choose <strong>Save As</strong> (or right-click and Save As). Open unexpected attachments with care — see the Range Path email-safety course if a file looks suspicious.</p>\n<p>Never attach something you would not want a wider group to see.</p>",
+      "sources": [
+        {
+          "label": "Outlook Best Practices: Write great email",
+          "url": "https://support.microsoft.com/en-us/outlook/outlook-best-practices-write-great-email"
+        },
+        {
+          "label": "Show, hide, and view the Bcc field",
+          "url": "https://support.microsoft.com/en-us/outlook/mail/show-hide-and-view-the-bcc-blind-carbon-copy-field-in-outlook-for-windows"
+        },
+        {
+          "label": "Basic tasks in Outlook",
+          "url": "https://support.microsoft.com/en-us/outlook/basic-tasks-in-outlook"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Microsoft’s workplace tip is to put people who must take action:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "On the To line"
+            },
+            {
+              "id": "B",
+              "text": "Nowhere, so nobody can reply"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Bcc means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The person gets a copy, but other recipients do not see their name"
+            },
+            {
+              "id": "B",
+              "text": "The message is deleted forever"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To share a file, Microsoft’s basic steps include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Attach File"
+            },
+            {
+              "id": "B",
+              "text": "Shouting the file name down the hallway only"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you want a manager to know about a sensitive sent message, Microsoft suggests:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Forwarding the message after you send it, rather than a hidden Bcc that they might expose"
+            },
+            {
+              "id": "B",
+              "text": "Posting it on a public bulletin board"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Write a clear, professional message",
+      "html": "<p>Knowing the buttons is only half the skill. Microsoft publishes “do’s and don’ts” for professional email in Outlook.</p>\n<p><strong>Do:</strong></p>\n<ul>\n<li>Read your message before you send it.</li>\n<li>Write a <strong>descriptive, action-oriented subject</strong>, such as who it is for and what you need. Useful openings Microsoft mentions include “FYI:” and “Action Required.”</li>\n<li>If the topic of a long conversation changes, change the subject.</li>\n<li>Keep messages <strong>short and to the point</strong>. Put the most important information first.</li>\n<li>Put questions or action items on their own lines so they stand out.</li>\n<li>Use a signature when it fits, but keep it simple, short, and professional.</li>\n<li>If you cannot give a full answer yet, send a short note that you are looking into it and will reply by a certain time.</li>\n</ul>\n<p><strong>Don’t (from the same Microsoft list):</strong></p>\n<ul>\n<li>Write in <strong>ALL CAPS</strong>.</li>\n<li>Send a message while you are angry — better to save a draft and come back later.</li>\n<li>Mark every message as High Importance; people will start to ignore it.</li>\n<li>Use sarcasm, which is easy to misunderstand.</li>\n<li>Write something you would not want others at work to read.</li>\n<li>Reply All to a large group only to ask to be removed from a list.</li>\n</ul>\n<p>These are workplace habits, not law. Your employer may have extra rules. When in doubt, keep the note short, polite, and clear.</p>\n<p>If a problem needs a fast answer, Microsoft notes that a phone call or instant message can work better than a long email.</p>",
+      "sources": [
+        {
+          "label": "Outlook Best Practices: Write great email",
+          "url": "https://support.microsoft.com/en-us/outlook/outlook-best-practices-write-great-email"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A helpful subject line is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Descriptive and action-oriented"
+            },
+            {
+              "id": "B",
+              "text": "Blank, so people must guess"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Microsoft says you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Read the message before you send it"
+            },
+            {
+              "id": "B",
+              "text": "Send the first draft without looking"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Writing a whole message in ALL CAPS is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "On Microsoft’s “don’t” list"
+            },
+            {
+              "id": "B",
+              "text": "Required by Canadian law"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you feel angry, Microsoft suggests:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Saving a draft and returning later"
+            },
+            {
+              "id": "B",
+              "text": "Sending the message to everyone you know immediately"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Calendar, meetings, and your signature",
+      "html": "<p>Outlook’s <strong>Calendar</strong> helps you track your time. Microsoft makes a clear difference:</p>\n<ul>\n<li>An <strong>appointment</strong> is something you put on your own calendar that does <strong>not</strong> invite other people or book a room. In a Calendar folder, choose <strong>New Appointment</strong> (or right-click a time and choose New Appointment).</li>\n<li>A <strong>meeting</strong> includes other people and can include a room or other resources. Choose <strong>New Meeting</strong>. Replies to the meeting request arrive in your Inbox.</li>\n</ul>\n<p>You can set a <strong>reminder</strong> so a notice appears before the appointment or meeting. Open the item and choose how much time before it you want the reminder — or choose None to turn it off.</p>\n<p><strong>To create a signature</strong> (Microsoft):</p>\n<ol>\n<li>In a new message, choose <strong>Signature &gt; Signatures</strong>.</li>\n<li>On the Email Signature tab, choose <strong>New</strong>, type a name, and choose OK.</li>\n<li>You can set a default signature for new messages and, if you want, for replies and forwards.</li>\n<li>Under Edit signature, type the text and choose OK.</li>\n</ol>\n<p>Microsoft’s professional-email guidance says to keep a signature simple, short, professional, and, if possible, free of large graphics.</p>\n<p>A simple workplace signature might be your name, job title, and phone number — only details your workplace is comfortable sharing.</p>\n<p>When you finish class, sign out if you are on a shared computer. Ask staff before you change settings on a learning-centre account.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Outlook",
+          "url": "https://support.microsoft.com/en-us/outlook/basic-tasks-in-outlook"
+        },
+        {
+          "label": "Outlook Best Practices: Write great email",
+          "url": "https://support.microsoft.com/en-us/outlook/outlook-best-practices-write-great-email"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In Outlook, an appointment:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Does not invite other people"
+            },
+            {
+              "id": "B",
+              "text": "Always books every room in the building"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A meeting:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Includes other people (and can include a room)"
+            },
+            {
+              "id": "B",
+              "text": "Can only be written on paper"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A reminder in Outlook is meant to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Alert you before an appointment or meeting"
+            },
+            {
+              "id": "B",
+              "text": "Delete your Inbox each night"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Microsoft says a signature should be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Simple, short, and professional"
+            },
+            {
+              "id": "B",
+              "text": "As long as a novel, with many large pictures"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential.",
+    "questions": [
+      {
+        "prompt": "Outlook can hold email, a calendar, contacts, and tasks.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "Reply All sends your answer only to the original sender.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "People who must take action usually belong on the To line.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "Bcc hides a recipient’s name from the other people who get the message.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "A clear, action-oriented subject line is a Microsoft “do.”",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "An Outlook meeting is the same as an appointment that never invites anyone.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "This course is an official MOS exam.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Choose Reply All carefully, write clear subjects, and know appointment versus meeting. Completion only — not a Microsoft credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or legal advice. Outlook menus can look different in classic Outlook, new Outlook, web, or mobile. Do not type real workplace passwords into this course. For scam messages, see also Email & Online Safety Basics in Canada.",
+    "builderNotes": "- Emphasise the disclaimer on every lesson footer. Do not collect real passwords or workplace mail.\n- Outlook UI differs across classic, new, web, and mobile — the lessons note that.\n- Keep scam content light and point to the existing email-safety PoC.\n- Not MOS / not college credit. No Ed2Go / Cengage material.\n- Re-check Microsoft Support URLs if a later rebuild finds a redirect change.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-outlook.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an envelope and a message."
+  }
+}

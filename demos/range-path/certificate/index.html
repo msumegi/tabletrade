@@ -43,10 +43,25 @@
 <div id="cert-locked">
   <h1>Finish the final quiz first</h1>
   <p id="cert-locked-lead">A certificate opens on this device after you score 70% or more on a course final. Nothing is sent off this phone.</p>
-  <ul class="check">
-    <li><a href="../courses/email-online-safety/final/">Email &amp; Online Safety final quiz</a></li>
-    <li><a href="../courses/sin-cra-getting-paid/final/">SIN, CRA &amp; getting paid final quiz</a></li>
-    <li><a href="../courses/winter-safety-rural-alberta/final/">Winter safety final quiz</a></li>
+  <ul class="check" id="cert-course-links">
+    <!-- range-path:cert-links -->
+<li><a href="../courses/everyday-computers-smartphones/final/">Everyday Computers and Smartphones final quiz</a></li>
+<li><a href="../courses/excel-basics-canada/final/">Microsoft Excel Basics (Canada) final quiz</a></li>
+<li><a href="../courses/word-basics-canada/final/">Microsoft Word Basics (Canada) final quiz</a></li>
+<li><a href="../courses/job-search-canada/final/">Job Search and Employment Readiness in Canada final quiz</a></li>
+<li><a href="../courses/outlook-workplace-email/final/">Microsoft Outlook and Workplace Email Habits final quiz</a></li>
+<li><a href="../courses/bookkeeping-fundamentals-canada/final/">Bookkeeping Fundamentals in Canada final quiz</a></li>
+<li><a href="../courses/invoices-expenses-gst-canada/final/">Invoices, Expenses and GST Records (Canada) final quiz</a></li>
+<li><a href="../courses/how-to-learn-online/final/">How to Learn Online (Skills for Learning) final quiz</a></li>
+<li><a href="../courses/everyday-work-english/final/">Everyday and Work English Practice final quiz</a></li>
+<li><a href="../courses/workplace-writing-grammar-canada/final/">Workplace Writing and Grammar (Canadian Spelling) final quiz</a></li>
+<li><a href="../courses/everyday-math-numeracy/final/">Everyday Math and Numeracy final quiz</a></li>
+<li><a href="../courses/project-management-basics/final/">Project Management Basics (Not a PMP Exam) final quiz</a></li>
+<li><a href="../courses/writing-simple-grant-application-canada/final/">Writing a Simple Grant Application in Canada final quiz</a></li>
+<li><a href="../courses/email-online-safety/final/">Email &amp; Online Safety Basics in Canada final quiz</a></li>
+<li><a href="../courses/sin-cra-getting-paid/final/">Your SIN, CRA My Account &amp; Getting Paid in Canada final quiz</a></li>
+<li><a href="../courses/winter-safety-rural-alberta/final/">Winter Safety &amp; Driving in Rural Alberta final quiz</a></li>
+<!-- /range-path:cert-links -->
   </ul>
   <div id="cert-passed-links"></div>
 </div>
@@ -62,9 +77,24 @@
   <p class="field-echo" id="council-echo">EXAMPLE Community Adult Learning</p>
   <label for="cert-course">Course</label>
   <select id="cert-course">
-    <option value="email-online-safety">Email &amp; Online Safety Basics in Canada</option>
-<option value="sin-cra-getting-paid">Your SIN, CRA My Account &amp; Getting Paid in Canada</option>
-<option value="winter-safety-rural-alberta">Winter Safety &amp; Driving in Rural Alberta</option>
+    <!-- range-path:cert-options -->
+<option value="everyday-computers-smartphones" data-note="It is not a college diploma, degree, trade ticket, professional licence, or legal, financial, or technical-support contract.">Everyday Computers and Smartphones</option>
+<option value="excel-basics-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or tax, payroll, or financial advice.">Microsoft Excel Basics (Canada)</option>
+<option value="word-basics-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or legal, career, or immigration advice.">Microsoft Word Basics (Canada)</option>
+<option value="job-search-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice.">Job Search and Employment Readiness in Canada</option>
+<option value="outlook-workplace-email" data-note="It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification.">Microsoft Outlook and Workplace Email Habits</option>
+<option value="bookkeeping-fundamentals-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, or tax, accounting, payroll, or audit advice.">Bookkeeping Fundamentals in Canada</option>
+<option value="invoices-expenses-gst-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, software certification, or tax, accounting, payroll, or audit advice.">Invoices, Expenses and GST Records (Canada)</option>
+<option value="how-to-learn-online" data-note="It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program.">How to Learn Online (Skills for Learning)</option>
+<option value="everyday-work-english" data-note="It is not a college diploma, degree, CLB certificate, LINC completion, or CELPIP, IELTS, or TOEFL preparation, and it is not immigration or citizenship advice.">Everyday and Work English Practice</option>
+<option value="workplace-writing-grammar-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential.">Workplace Writing and Grammar (Canadian Spelling)</option>
+<option value="everyday-math-numeracy" data-note="It is not a high-school or CAEC credit, and it is not tax, lending, investment, or budgeting advice.">Everyday Math and Numeracy</option>
+<option value="project-management-basics" data-note="It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification.">Project Management Basics (Not a PMP Exam)</option>
+<option value="writing-simple-grant-application-canada" data-note="It is not a college diploma, degree, trade ticket, professional licence, or grant-consultant certification. It is not a promise of funding.">Writing a Simple Grant Application in Canada</option>
+<option value="email-online-safety" data-note="It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.">Email &amp; Online Safety Basics in Canada</option>
+<option value="sin-cra-getting-paid" data-note="It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.">Your SIN, CRA My Account &amp; Getting Paid in Canada</option>
+<option value="winter-safety-rural-alberta" data-note="It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.">Winter Safety &amp; Driving in Rural Alberta</option>
+<!-- /range-path:cert-options -->
   </select>
   <p class="field-echo" id="course-echo">Email &amp; Online Safety Basics in Canada</p>
 </form>
@@ -73,7 +103,7 @@
   <h2>Certificate of Completion</h2>
   <p>This certifies that <strong id="cert-learner">Sample Learner</strong> completed the course “<strong id="cert-title">Email &amp; Online Safety Basics in Canada</strong>” on <strong id="cert-date"></strong>.</p>
   <p><strong>This certificate confirms course completion only and is not an accredited credential.</strong></p>
-  <p>It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice. Employers and agencies should verify skills separately.</p>
+  <p><span id="cert-limit">It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.</span> Employers and agencies should verify skills separately.</p>
   <p>Issued through <strong id="cert-council">EXAMPLE Community Adult Learning</strong> · Range Path (a Range Road Tech product).</p>
 </article>
 <p class="actions no-print"><button type="button" class="btn" id="print-cert">Print or save as PDF</button></p>
@@ -87,6 +117,7 @@
       <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="../privacy/">Privacy</a></p>
     </div>
   </footer>
+  <script src="../assets/catalogue.js"></script>
   <script src="../assets/site.js"></script>
 </body>
 </html>

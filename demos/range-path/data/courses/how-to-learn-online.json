@@ -1,0 +1,534 @@
+{
+  "slug": "how-to-learn-online",
+  "title": "How to Learn Online (Skills for Learning)",
+  "summary": "By the end, learners can name official “skills for learning,” set a simple study goal and schedule, use everyday digital habits to take an online course safely, and know where Albertans can look for more foundational learning help.",
+  "goals": "By the end, learners can name official “skills for learning,” set a simple study goal and schedule, use everyday digital habits to take an online course safely, and know where Albertans can look for more foundational learning help.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Skills that help you learn",
+      "html": "<p>The Government of Canada’s <strong>Skills for Success</strong> model describes skills that help people in work, learning, and life. The official page says these skills help you get a job, progress at work, change jobs, take part in your community, and <strong>succeed in learning</strong>. They are for everyone — not only students in a full-time school.</p>\n<p>Three of those skills matter a great deal when you learn online:</p>\n<ul>\n<li><strong>Adaptability</strong> — reaching or adjusting your goals when things change, by planning, staying focused, persisting, and overcoming setbacks. Official examples include learning how to use new tools and improving through feedback.</li>\n<li><strong>Digital</strong> — using digital technology to find, manage, apply, create, and share information. Official examples include using common devices and tools, storing files, and practising safe habits online.</li>\n<li><strong>Problem solving</strong> — identifying an issue, gathering information, thinking of options, and learning from the result. The official list includes asking other people for help when you need it.</li>\n</ul>\n<p>In Alberta, the government’s <strong>Community Adult Learning Program (CALP)</strong> funds local organizations that offer part-time, non-formal learning close to where you live. Alberta.ca says those providers may help with literacy, numeracy, English language skills, basic digital skills, and <strong>skills for learning</strong>, in safe and welcoming places.</p>\n<p>This short course is itself practice: you will set a goal, plan a study time, and try digital habits. It does not replace a tutor or a longer program, and the certificate at the end is completion only.</p>\n<p>If a word on a website is new, write it down and ask council staff.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Community Adult Learning Program overview — Alberta.ca",
+          "url": "https://www.alberta.ca/community-adult-learning-program-overview"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success are official Government of Canada skills that help with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Work, learning, and life"
+            },
+            {
+              "id": "B",
+              "text": "Painting only"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Adaptability includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Planning, staying focused, persisting, and overcoming setbacks"
+            },
+            {
+              "id": "B",
+              "text": "Never changing a plan, even when it cannot work"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta’s Community Adult Learning Program may help with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Literacy, numeracy, English, basic digital skills, and skills for learning"
+            },
+            {
+              "id": "B",
+              "text": "Issuing Canadian passports"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This Range Path course is a college diploma in study skills.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Set a goal and a simple plan",
+      "html": "<p>Skills for Success says adaptability includes setting or adjusting goals based on your skills, resources, and supports, and <strong>planning and prioritizing</strong>: define tasks and milestones, then choose an order that fits your situation.</p>\n<p>Alberta’s official careers site, <strong>alis</strong>, says studying well takes motivation, organization, time, and practice — including when you also have work and family responsibilities. Alis suggests:</p>\n<ul>\n<li>Set <strong>realistic</strong> long-term and short-term goals (for example, finish two lessons this week), not only a far-away finish line.</li>\n<li>Write due dates and plans on a <strong>calendar</strong>, agenda book, phone, or other tool you will actually look at.</li>\n<li>Make monthly and weekly plans and a <strong>daily to-do list</strong>.</li>\n<li>Keep the schedule <strong>flexible</strong>. Unexpected events happen. Review the plan and change it when you need to.</li>\n<li>Do not “steal” from study time if you can help it. Alis suggests using small bits of found time (waiting, travel) if you need more minutes.</li>\n</ul>\n<p>Another alis page, written for adults going back to learning, adds: decide what is most important, put everything in <strong>one</strong> calendar, set deadlines for each task, and give yourself a small reward when you finish on time. It also says you will be happier and more successful if you let go of the need to be perfect.</p>\n<p>Alberta.ca’s “Going back to school as an adult” page asks you to think first: <em>Why am I learning? What do I need to learn? How do I learn best?</em> Online study on a computer is one of the ways it lists, along with a classroom, a tutor, or correspondence.</p>\n<p>Try this now: write one goal for this course and the day and time you will do the next lesson.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "How to Study Effectively — alis",
+          "url": "https://alis.alberta.ca/explore-education-and-training/how-to-study-effectively"
+        },
+        {
+          "label": "Going Back to School: Fitting Everything In — alis",
+          "url": "https://alis.alberta.ca/explore-education-and-training/going-back-to-school-fitting-everything-in/"
+        },
+        {
+          "label": "Going back to school as an adult — Alberta.ca",
+          "url": "https://www.alberta.ca/going-back-school-adult"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success says planning includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Defining tasks and choosing an order that fits your situation"
+            },
+            {
+              "id": "B",
+              "text": "Waiting until the last night and hoping for the best"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alis suggests writing your plan:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "On a calendar, agenda, or phone you will actually check"
+            },
+            {
+              "id": "B",
+              "text": "Only in a place you will never look"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alis says your schedule should be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Flexible enough to change when unexpected events happen"
+            },
+            {
+              "id": "B",
+              "text": "Impossible to change, even in an emergency"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You must be perfect at every lesson or you should quit.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "Alis tells adults going back to learning that it helps to let go of the need to be perfect."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Study habits that fit adult life",
+      "html": "<p>Alis says shorter, regular study periods work better than long “marathon” sessions, and that frequent breaks help. On its “How to Study Effectively” page, alis suggests planning a <strong>short break every 50 minutes or so</strong>. If you study longer than two hours, try switching to a different subject every hour. Study at the time of day when you are most alert when you can. Studying when you are exhausted or distracted is much harder.</p>\n<p>On “Fitting Everything In,” alis suggests frequent short study periods and, when you must study longer, a <strong>15-minute break for every 60 to 90 minutes</strong> of study time. Leave some flexibility for unexpected demands. Aim for balance: eat properly, rest, and get some exercise.</p>\n<p><strong>To make it easier to start</strong>, alis recommends:</p>\n<ul>\n<li>a quiet place with a table or desk, a comfortable chair, and good lighting</li>\n<li>tools you need kept handy</li>\n<li>shorter but more frequent sessions if it is hard to focus at first</li>\n</ul>\n<p>To avoid putting work off (<strong>procrastinating</strong>), alis says to notice excuses such as “it can wait” or “I’ll just finish this show first,” and to break large tasks into smaller ones you can finish in a short time.</p>\n<p>Skills for Success adaptability adds everyday actions that match those tips: focus on the current task, minimize distractions, and manage your time (for example, be on time and do not waste time). Persist when something does not go as planned, or change your approach when that is the wiser choice.</p>\n<p>You do not need a special app to use these habits. A paper list and a quiet corner of the table can be enough.</p>",
+      "sources": [
+        {
+          "label": "How to Study Effectively — alis",
+          "url": "https://alis.alberta.ca/explore-education-and-training/how-to-study-effectively"
+        },
+        {
+          "label": "Going Back to School: Fitting Everything In — alis",
+          "url": "https://alis.alberta.ca/explore-education-and-training/going-back-to-school-fitting-everything-in/"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Alis says shorter, regular study periods are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "More effective than long marathon sessions"
+            },
+            {
+              "id": "B",
+              "text": "A waste of time"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On “How to Study Effectively,” alis suggests a short break:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "About every 50 minutes"
+            },
+            {
+              "id": "B",
+              "text": "Only once a year"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If focusing is hard at first, alis suggests:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Starting with shorter but more frequent sessions"
+            },
+            {
+              "id": "B",
+              "text": "Studying only when you are exhausted"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Breaking a large task into smaller pieces can make it easier to start.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Digital habits for an online course",
+      "html": "<p>Skills for Success describes <strong>digital</strong> skill as using technology to find, manage, apply, create, and share information. Official components that help in an online course include:</p>\n<ul>\n<li>Using common <strong>devices</strong> (a computer, tablet, or smartphone) and knowing basic on-screen actions.</li>\n<li><strong>Navigating</strong> a page: scrolling, using Back and Next, and knowing which part of a site to open.</li>\n<li>Using <strong>search</strong> to find information (for example, a search box on a page).</li>\n<li><strong>Storing and organizing</strong> files in folders with clear names, such as saving a worksheet into a “Courses” folder.</li>\n<li>Using <strong>online forms</strong> (signing in, quizzes, applications).</li>\n<li>Practising <strong>safe habits</strong>: create a password to protect your information, know what personal details you should not share, and be careful with risky messages.</li>\n</ul>\n<p>Do <strong>not</strong> type your real course password into this lesson. If you learn on a shared computer, sign out when you finish.</p>\n<p>If an email or pop-up asks for a password or a gift-card payment to “unlock” a lesson, stop. That is not how this course works. See also <em>Email &amp; Online Safety Basics in Canada</em> for phishing and scam messages. Skills for Success specifically lists knowing how to avoid phishing emails as part of safe digital practice.</p>\n<p>When information on the internet disagrees, Skills for Success reading skill says to think about whether an online source is relevant and trustworthy. Prefer official pages (such as Canada.ca or Alberta.ca) for rules and government programs.</p>\n<p>If a button or video will not open, write down what you clicked and ask council staff. That is problem solving, not failure.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success digital skill includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Finding, managing, creating, and sharing information with digital tools"
+            },
+            {
+              "id": "B",
+              "text": "Never touching a computer"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A safe habit listed in Skills for Success is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Protecting personal information and being careful with risky messages"
+            },
+            {
+              "id": "B",
+              "text": "Sharing your password with anyone who asks"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should type your real course password into this quiz.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "If a page will not open, a useful next step is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Write down what you tried and ask staff for help"
+            },
+            {
+              "id": "B",
+              "text": "Throw the computer away immediately"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "When you get stuck, and where to get help",
+      "html": "<p>Everyone gets stuck sometimes. Skills for Success says adaptability includes identifying when to keep trying and when to change your approach, learning from setbacks and mistakes, and staying calm enough to continue. Problem solving includes gathering information, breaking a problem into smaller parts, and <strong>seeking help from others if needed</strong>.</p>\n<p>Alis says that if you need help with study skills — for example, how to take notes or remember what you read — you can ask about resources at the place you are learning or speak with a librarian. On the same pages, alis lists the <strong>Alberta Supports Contact Centre</strong> at <strong>1-877-644-9992</strong> (toll free).</p>\n<p>In Alberta you can also:</p>\n<ul>\n<li>Ask staff at your <strong>adult learning council</strong> (many are Community Adult Learning Program providers). Alberta.ca says about 80 organizations offer these local opportunities. The CALP overview page includes a link to find a provider near you.</li>\n<li>Read <strong>Going back to school as an adult</strong> on Alberta.ca for classroom, tutor, correspondence, and online options, including literacy, numeracy, English, digital skills, and life skills. That page says Alberta Supports can help if you are not sure which program fits, and it lists the Foundational Learning and Skills Development Unit (toll free <strong>1-800-222-6485</strong>, weekdays).</li>\n</ul>\n<p>This course cannot choose a program or funding for you, and it is not a promise of a job or a diploma.</p>\n<p>If a lesson feels too hard, pause, review the official source link, try a smaller piece, then ask a person. That <em>is</em> learning.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "How to Study Effectively — alis",
+          "url": "https://alis.alberta.ca/explore-education-and-training/how-to-study-effectively"
+        },
+        {
+          "label": "Community Adult Learning Program overview — Alberta.ca",
+          "url": "https://www.alberta.ca/community-adult-learning-program-overview"
+        },
+        {
+          "label": "Going back to school as an adult — Alberta.ca",
+          "url": "https://www.alberta.ca/going-back-school-adult"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success problem solving includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Seeking help from others if needed"
+            },
+            {
+              "id": "B",
+              "text": "Never asking a question"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Alberta Supports number listed on alis is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "1-877-644-9992"
+            },
+            {
+              "id": "B",
+              "text": "411 only"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Community adult learning in Alberta is meant to be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Part-time, local, and welcoming"
+            },
+            {
+              "id": "B",
+              "text": "A replacement for a Canadian passport office"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Completing this course guarantees you a job or a college seat.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support.",
+    "questions": [
+      {
+        "prompt": "Skills for Success are meant to help with work, learning, and life.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      },
+      {
+        "prompt": "Adaptability includes planning, staying focused, and persisting through setbacks.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      },
+      {
+        "prompt": "Alis says one long marathon study session is better than shorter, regular periods.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      },
+      {
+        "prompt": "A calendar and a simple to-do list are official alis planning tools.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      },
+      {
+        "prompt": "Safe digital practice includes protecting passwords and personal information.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      },
+      {
+        "prompt": "Asking for help when you are stuck is part of official problem-solving skill.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      },
+      {
+        "prompt": "This course is an accredited study-skills diploma.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about skills for learning, including online courses. It is not an accredited study-skills diploma, college credit, or a promise that you will pass another program. Study-time tips come from official Government of Canada and Alberta pages and may not match every workplace or school rule. Ask staff at your adult learning council if you want extra support.",
+    "builderNotes": "- Do not invent Pomodoro timers, LMS jargon, or “learning style” theories. Alis Careerinsite “multiple intelligences” material was not used.\n- Dropped as the wrong fit for this short self-paced course: alis post-secondary “40+ hours a week” and “2 to 3 hours of study per class hour” figures.\n- Re-check Alberta Supports (1-877-644-9992) and Foundational Learning unit (1-800-222-6485) numbers if rebuilt.\n- No Ed2Go / Cengage study-skills text. Canadian spelling (practise as a verb).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-learn.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of an open notebook and a clock."
+  }
+}

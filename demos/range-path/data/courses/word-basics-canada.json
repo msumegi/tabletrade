@@ -1,0 +1,502 @@
+{
+  "slug": "word-basics-canada",
+  "title": "Microsoft Word Basics (Canada)",
+  "summary": "By the end, learners can start Word, type and select text, apply basic formatting from the Home tab, use a style for a heading, save and reopen a document, preview before printing, and set the language Word uses to check spelling.",
+  "goals": "By the end, learners can start Word, type and select text, apply basic formatting from the Home tab, use a style for a heading, save and reopen a document, preview before printing, and set the language Word uses to check spelling.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or legal, career, or immigration advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Start Word and look around",
+      "html": "<p><strong>Microsoft Word</strong> is a program for writing documents: letters, lists, resumes, notes, and workplace forms. Microsoft’s guide for new users walks through how to start the program, find the main parts of the window, save your work, and format text.</p>\n<p><strong>To start Word on a Windows computer</strong> (Microsoft’s steps):</p>\n<ol>\n<li>Click the <strong>Start</strong> button, or press the Windows key, to open the Start menu.</li>\n<li>Find <strong>Word</strong> in the list of applications and click it.</li>\n</ol>\n<p>The first time you start Word, a licence agreement might appear. Follow the on-screen choices with help from a tutor if you need it.</p>\n<p><strong>Useful parts of the window</strong> (from Microsoft’s tour):</p>\n<ul>\n<li>The <strong>title bar</strong> shows the file name and the Word name, plus minimize, restore, and close.</li>\n<li>The <strong>Quick Access Toolbar</strong> holds frequent commands such as Save, Undo, and Redo.</li>\n<li>The <strong>File</strong> tab has commands that act on the whole document: New, Open, Save As, Print, and Close.</li>\n<li>The <strong>ribbon</strong> holds the tools you use while writing. The <strong>Home</strong> tab is where you will find most text formatting.</li>\n<li>The large white area is the <strong>edit window</strong>, where you type.</li>\n<li>A <strong>scroll bar</strong> moves the page, and a <strong>zoom</strong> control changes how large the page looks.</li>\n</ul>\n<p>To quit Word, click the <strong>X</strong> in the upper-right corner. If you changed the document since the last save, Word asks if you want to save. Click <strong>Yes</strong> to save, <strong>No</strong> to quit without saving, or <strong>Cancel</strong> if you clicked X by mistake.</p>\n<p>This course is not MOS training and not a promise of a job.</p>",
+      "sources": [
+        {
+          "label": "Word for new users",
+          "url": "https://support.microsoft.com/en-us/word/word-for-new-users"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "One official way to start Word is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Open the Start menu and click Word"
+            },
+            {
+              "id": "B",
+              "text": "Shake the monitor"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The File tab is for commands such as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "New, Open, Save As, Print, and Close"
+            },
+            {
+              "id": "B",
+              "text": "Changing the building’s street address"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The ribbon is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Where many writing tools sit, including the Home tab"
+            },
+            {
+              "id": "B",
+              "text": "The power cable"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you click X and Word asks about saving, Cancel:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Means you clicked X by mistake and want to stay"
+            },
+            {
+              "id": "B",
+              "text": "Formats the hard drive"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Type and select text",
+      "html": "<p>Click in the white page and start typing. Word wraps the text to the next line when you reach the end of a line, so you do not need to press Enter at the end of every line. Press <strong>Enter</strong> when you want a new paragraph.</p>\n<p><strong>Undo</strong> lives on the Quick Access Toolbar (Microsoft lists Undo and Redo there). If you delete something by mistake, try Undo right away.</p>\n<p><strong>To change text, select it first.</strong> Microsoft’s steps:</p>\n<ol>\n<li>Place the cursor at the beginning of the text you want to change.</li>\n<li>Press and hold the left mouse button.</li>\n<li>Drag to the right across the words. The selected text gets a coloured background.</li>\n</ol>\n<p>Then you can delete the selection, type replacement words, or apply formatting (Lesson 3). To remove the selection, click once somewhere else on the page.</p>\n<p><strong>Practice ideas</strong> (your own words):</p>\n<ul>\n<li>Write three short sentences about your week.</li>\n<li>Write a two-line greeting, such as “Hello,” and your name.</li>\n<li>Press Enter to start a new paragraph and add one more sentence.</li>\n</ul>\n<p>Use Canadian spelling as you practise: <em>centre</em>, <em>colour</em>, <em>cheque</em>, <em>favour</em>. You will learn how to ask Word to check spelling in Lesson 5.</p>\n<p>Do not type passwords, SINs, or other private numbers into a practice file on a shared computer.</p>\n<p>If the page looks too small or too large, Microsoft’s tour includes a zoom control to change the view without changing the printed size of the words.</p>",
+      "sources": [
+        {
+          "label": "Word for new users",
+          "url": "https://support.microsoft.com/en-us/word/word-for-new-users"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Before you format or replace a group of words, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Select the text by dragging across it"
+            },
+            {
+              "id": "B",
+              "text": "Unplug the keyboard"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Press Enter when you want to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Start a new paragraph"
+            },
+            {
+              "id": "B",
+              "text": "Turn off the building lights"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Undo is useful when you:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Want to reverse a recent change"
+            },
+            {
+              "id": "B",
+              "text": "Want to email your password to a stranger"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On a shared computer, you should avoid typing:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Practice sentences"
+            },
+            {
+              "id": "B",
+              "text": "Passwords, SINs, or other private numbers"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Format text on the Home tab",
+      "html": "<p>Formatting changes how text looks so a letter or notice is easier to read.</p>\n<p>Microsoft says most text formatting tools are on the <strong>Home</strong> tab, in the <strong>Font</strong> group. First select the text, then click a button.</p>\n<p>Useful Font-group tools Microsoft lists:</p>\n<ul>\n<li><strong>Font</strong> and <strong>Font Size</strong> change the typeface and size.</li>\n<li><strong>Bold</strong> makes text thicker.</li>\n<li><strong>Italic</strong> slants the text.</li>\n<li><strong>Underline</strong> draws a line under the text.</li>\n<li><strong>Font Color</strong> changes the text colour.</li>\n<li><strong>Text Highlight Color</strong> looks like a highlighter pen.</li>\n<li><strong>Clear All Formatting</strong> removes extra formatting and leaves plain text.</li>\n</ul>\n<p>Use formatting for a reason. A heading might be larger and bold. Important dates can be bold. Long stretches of coloured or underlined text are harder to read.</p>\n<p><strong>Styles</strong> apply a ready-made look to titles and headings. Microsoft’s steps:</p>\n<ol>\n<li>Highlight the text.</li>\n<li>On the <strong>Home</strong> tab, in the <strong>Styles</strong> group, point at a style to preview it.</li>\n<li>Click the style you want. Use the More arrow if you need to see more styles.</li>\n</ol>\n<p>You can also change the look of the whole document from the <strong>Design</strong> tab, in Document Formatting, by pointing at a style set and then clicking it.</p>\n<p>For line and paragraph spacing, Microsoft says to open the <strong>Design</strong> tab and choose <strong>Paragraph Spacing</strong>, preview a choice, then click it.</p>\n<p>Save after you format so you keep the look you chose.</p>",
+      "sources": [
+        {
+          "label": "Word for new users",
+          "url": "https://support.microsoft.com/en-us/word/word-for-new-users"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Most everyday text formatting buttons sit on the:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Home tab, in the Font group"
+            },
+            {
+              "id": "B",
+              "text": "Back of the chair"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before you click Bold, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Select the text you want to make bold"
+            },
+            {
+              "id": "B",
+              "text": "Restart the printer’s ink delivery truck"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Styles are useful for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Quickly formatting headings and titles"
+            },
+            {
+              "id": "B",
+              "text": "Charging your phone"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Clear All Formatting:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Leaves plain text"
+            },
+            {
+              "id": "B",
+              "text": "Deletes the last ten years of files"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Save, open, and print",
+      "html": "<p>You must save a document if you want to close Word without losing your writing. Microsoft says that when you save, the document is stored as a file on your computer or on a network location. Later you can open it, change it, and print it.</p>\n<p><strong>To save</strong> (Microsoft):</p>\n<ol>\n<li>Click the <strong>Save</strong> button on the Quick Access Toolbar.</li>\n<li>If you have saved this file before, Word saves it with the same name and you are done.</li>\n<li>If this is the first save, a Save As or “Save this file” window appears. Choose a location, type a name in the <strong>File name</strong> box, and click <strong>Save</strong>.</li>\n</ol>\n<p>Use a clear name, such as <code>cover-letter-practice</code> or <code>thank-you-note</code>. Many people save into <strong>Documents</strong>. Microsoft notes that files may also sit in OneDrive or another location, depending on the computer’s setup.</p>\n<p><strong>To open a document later:</strong></p>\n<ul>\n<li>Open File Explorer, go to Documents (or the folder you used), and double-click the file, or</li>\n<li>In Word, click the <strong>File</strong> tab, then <strong>Open</strong>. Recently saved files may appear under <strong>Recent</strong>.</li>\n</ul>\n<p><strong>To preview and print</strong> (Microsoft):</p>\n<ol>\n<li>Click the <strong>File</strong> tab.</li>\n<li>Click <strong>Print</strong> to see a preview.</li>\n<li>Review the settings.</li>\n<li>When the preview looks right, click <strong>Print</strong>.</li>\n</ol>\n<p>Preview first. Ask learning-centre staff which printer to use. Saving often is safer than hoping you will remember at the end of class.</p>",
+      "sources": [
+        {
+          "label": "Word for new users",
+          "url": "https://support.microsoft.com/en-us/word/word-for-new-users"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Saving a document:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Stores it as a file you can open later"
+            },
+            {
+              "id": "B",
+              "text": "Always posts it to social media"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The first time you save, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Choose a location and type a file name"
+            },
+            {
+              "id": "B",
+              "text": "Leave the name blank so nobody can find it"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "File > Print is useful because:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "You can preview the page before you print"
+            },
+            {
+              "id": "B",
+              "text": "It deletes your document"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You can reopen a file from:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "File Explorer or Word’s File > Open"
+            },
+            {
+              "id": "B",
+              "text": "The microwave"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Check spelling the Canadian way",
+      "html": "<p>This course uses Canadian spelling, such as <em>centre</em>, <em>colour</em>, <em>cheque</em>, and <em>favour</em>. Word can check spelling, but only in the language it is set to use.</p>\n<p>Microsoft says you can manage the languages that check spelling and grammar.</p>\n<p><strong>For selected text:</strong></p>\n<ol>\n<li>Select the words (or click in the paragraph).</li>\n<li>Go to the <strong>Review</strong> tab.</li>\n<li>Choose <strong>Language</strong>, then <strong>Set Proofing Language</strong>.</li>\n<li>Choose the language you want Word to use for that text.</li>\n</ol>\n<p>Microsoft notes that languages already in use appear at the top of the list, and languages with downloaded proofing tools show a check mark. If you do not want Word to mark errors in selected text, you can choose not to check spelling or grammar for that selection.</p>\n<p><strong>To add a language or change the default:</strong></p>\n<ol>\n<li>Go to <strong>Review &gt; Language &gt; Language preferences</strong>, or open <strong>File &gt; Options &gt; Language</strong>.</li>\n<li>Under authoring and proofing languages, you can add a language. If proofing tools are available, Microsoft shows a note such as <strong>Proofing available</strong> or <strong>Proofing installed</strong>.</li>\n<li>Follow the prompts to add the language and, if needed, get proofing tools.</li>\n<li>You can set a preferred authoring language.</li>\n</ol>\n<p>Look for a <strong>Canadian English</strong> option if it appears on your computer. If you do not see it, ask a tutor — extra language or proofing tools may need to be installed.</p>\n<p>If you write in more than one language, Microsoft describes a <strong>Detect language automatically</strong> check box under Review &gt; Language &gt; Set Proofing Language.</p>\n<p>A spelling checker is a helper, not a judge. Read the suggestions before you accept them. This course is not an English-test credential.</p>",
+      "sources": [
+        {
+          "label": "Set up or change the languages used to check spelling and grammar",
+          "url": "https://support.microsoft.com/en-us/word/set-up-or-change-the-languages-used-to-check-spelling-and-grammar"
+        },
+        {
+          "label": "Add an editing or authoring language or set language preferences in Office",
+          "url": "https://support.microsoft.com/en-us/office/languages/add-an-editing-or-authoring-language-or-set-language-preferences-in-office"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To set the language used to check selected text, Microsoft’s path is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Review > Language > Set Proofing Language"
+            },
+            {
+              "id": "B",
+              "text": "The recycle bin"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Canadian spelling in this course includes words such as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "centre, colour, cheque"
+            },
+            {
+              "id": "B",
+              "text": "Only US spellings"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If a language shows “Proofing installed,” it means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Spelling and grammar tools for that language are ready"
+            },
+            {
+              "id": "B",
+              "text": "The printer is out of paper"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The spelling checker:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Always replaces every word without asking, and that is required by law"
+            },
+            {
+              "id": "B",
+              "text": "Offers suggestions you should read before you accept"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential.",
+    "questions": [
+      {
+        "prompt": "You can start Word from the Start menu on a Windows computer.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      },
+      {
+        "prompt": "The File tab includes New, Open, Save As, Print, and Close.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      },
+      {
+        "prompt": "You should select text before you apply Bold or a new font size.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      },
+      {
+        "prompt": "Styles are only for drawing circles in the margin.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      },
+      {
+        "prompt": "Saving stores your document as a file you can open later.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      },
+      {
+        "prompt": "Review > Language > Set Proofing Language lets you choose the language used to check spelling.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      },
+      {
+        "prompt": "This course is an official MOS exam and a guaranteed job.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Save often, format after you select text, and set the proofing language for Canadian writing. Completion only — not a Microsoft or college credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or legal, career, or immigration advice. Word menus can look a little different depending on your version. Use Canadian spelling in your practice documents.",
+    "builderNotes": "- Emphasise the disclaimer on every lesson footer.\n- Cite Microsoft Support; do not paste long help articles.\n- We did **not** find the exact menu label “English (Canada)” on the fetched Microsoft pages, so the lesson tells learners to look for a Canadian English option *if it appears*, rather than inventing the label.\n- Microsoft buttons may say Color; our learner text uses Canadian *colour*.\n- Not MOS / not college credit. No Ed2Go / Cengage material.\n- Re-check Microsoft Support URLs if a later rebuild finds a redirect change.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-word.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a page with a heading and lines of writing."
+  }
+}
