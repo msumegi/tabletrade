@@ -1,0 +1,498 @@
+{
+  "slug": "customer-service-workplace-communication",
+  "title": "Customer Service and Workplace Communication",
+  "summary": "By the end, learners can describe Skills for Success communication and collaboration in a customer-facing workplace, listen and confirm what a person needs, speak clearly and adapt their words to the audience, work with coworkers to solve a request, and handle a difficult interaction respectfully — without repeating email, grammar, or supervisor-leadership lessons.",
+  "goals": "By the end, learners can describe Skills for Success communication and collaboration in a customer-facing workplace, listen and confirm what a person needs, speak clearly and adapt their words to the audience, work with coworkers to solve a request, and handle a difficult interaction respectfully — without repeating email, grammar, or supervisor-leadership lessons.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, customer-service licence, or language credential.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Listen so you understand the request",
+      "html": "<p>Skills for Success are skills that help you in work, learning, and life. One of them is <strong>Communication</strong>: your ability to receive, understand, consider, and share information and ideas through speaking, listening, and interacting with others. The Government of Canada says we use this skill to listen to instructions, <strong>serve customers</strong>, and discuss ideas.</p>\n<p>Strong communication helps you share information so others can understand it. It also helps you listen, pay attention, and understand other people. In every job, these skills matter for good working relationships with coworkers and clients, including people from different backgrounds and cultures.</p>\n<p>When you serve someone — at a shop counter, a community-hall desk, a clinic reception window, or on the phone — start by listening. Official communication components include <strong>listening with intention</strong> (paying attention) and <strong>listening to understand</strong>.</p>\n<p>Listening with intention means interpreting the other person’s meaning while you consider language, gesture, and emphasis. It also means using appropriate body language to show you are paying attention — for example, not fidgeting and keeping your focus on the speaker. Ask questions to confirm your understanding. Be ready to summarize or paraphrase the key points when needed.</p>\n<p>Listening to understand means detecting the speaker’s purpose. What do they want: information, a change, or help with a problem? Understanding that purpose is the first step in good customer service.</p>\n<p>This lesson is not an English class and not an email lesson. It is about the way you listen when a real person is in front of you or on the phone.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Communication)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Communication includes receiving, understanding, considering, and sharing information by speaking, listening, and interacting.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Government of Canada lists serving customers as one way people use communication skills.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Listening with intention includes asking questions to confirm what you heard.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is an English grammar class.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Speak clearly and adapt to the person in front of you",
+      "html": "<p>After you understand the request, you need to answer in a way the other person can follow. Skills for Success communication includes <strong>speaking with clarity</strong> and <strong>speaking with purpose</strong>.</p>\n<p>Speaking with clarity means using grammar, pronunciation (even with an accent), and a pace that fit the situation. You do not need a “perfect” accent. You do need the other person to be able to follow you.</p>\n<p>Speaking with purpose means choosing examples, facts, content, and structure that match your goal — for example, to convey or summarize information, to explain something, or to persuade. The listener should understand the purpose of your message.</p>\n<p>You also need to <strong>adapt to your audience and context</strong>. Identify the needs, preferences, and interests of the people you are talking with, including different communication styles that may come from culture or ability. Then choose content, tone, language, gesture, and approach that fit that audience and that setting.</p>\n<p>A short, plain answer works well when someone asks, “What time does the supper start?” A slower explanation, with one idea at a time, works better when someone is upset or is hearing the information for the first time. If you do not know the answer, say so clearly and offer the next step: “I will ask my coworker and come back to you.”</p>\n<p>Do not hide behind jargon. If you must use a workplace word, explain it. This is not a lesson in writing workplace email, and it is not a spelling drill. It is spoken service: clear words, a clear purpose, and a tone that fits the person in front of you.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Communication)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Speaking with purpose means choosing content and structure that match your goal, so the listener understands why you are speaking.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Adapting to your audience includes considering their needs and choosing an appropriate tone and approach.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should use as much workplace jargon as possible so you sound official.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson teaches how to format an Outlook email.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Serve people by working with others",
+      "html": "<p>Customer service is rarely a one-person job. Someone greets the visitor, someone else knows the schedule, and a third person may have the key or the form. Skills for Success <strong>Collaboration</strong> is your ability to contribute and support others to achieve a common goal.</p>\n<p>Useful collaboration components at a service desk include:</p>\n<ul>\n<li><strong>working well with other people</strong>, such as being on time and encouraging cooperative behaviour</li>\n<li><strong>valuing diversity and inclusivity</strong>, and understanding that people from different cultures, backgrounds, and abilities can have different customs and ways of thinking</li>\n<li><strong>responding without judging</strong> people for different opinions, ideas, and views</li>\n<li><strong>taking responsibility</strong> to complete your own tasks</li>\n<li><strong>consulting and sharing</strong> with others when needed</li>\n<li><strong>making sure others have a chance to contribute</strong></li>\n</ul>\n<p>When a customer’s request is bigger than your role, collaboration means you do not guess and you do not leave the person stranded. You share the facts you heard, ask the coworker who can help, and close the loop so the customer gets one clear answer.</p>\n<p>Valuing diversity matters at the counter as much as in a staff meeting. A customer may speak with an accent, use a different greeting, or need more time. Collaboration asks you to acknowledge those differences and adapt your interaction style when it is possible and appropriate.</p>\n<p>This is not a lesson in supervising or coaching a team. Another course covers working with people when you lead a small group. Here the common goal is the customer’s request, and your job is to help the team meet it.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Collaboration)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Collaboration is the ability to contribute and support others to achieve a common goal.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Being on time and sharing information when needed are part of working well with other people.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Valuing diversity includes responding without judging people for different opinions.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a supervisor-leadership credential.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Handle a difficult interaction with care",
+      "html": "<p>Not every customer or coworker will be calm. Skills for Success collaboration includes <strong>managing difficult interactions with other people</strong>: having productive discussions, addressing interpersonal barriers, and discussing, negotiating, and resolving those interactions in a sensitive and helpful manner.</p>\n<p>Communication skills support that work. Listen first. Ask questions to confirm what the person needs. Detect their purpose — are they asking for a refund of time, a correction, or simply to be heard? Then speak with purpose: name the problem in plain words, say what you can do, and say what you cannot do.</p>\n<p>Stay respectful even if the other person is frustrated. Collaboration also asks you to engage in trust-building behaviour and to use cooperative language. You do not have to accept abuse. If you need help, that is another moment for collaboration: ask a coworker or a lead to join the conversation.</p>\n<p>A simple pattern you can practise:</p>\n<ol>\n<li>Listen without interrupting.</li>\n<li>Confirm: “I hear that you waited and the door was locked. Is that right?”</li>\n<li>Offer the next step you can actually take: “I will check with the coordinator and call you back today.”</li>\n<li>If you and the person cannot agree, stay calm and ask for help rather than inventing a promise.</li>\n</ol>\n<p>This pattern is for in-person or phone conversations. It is not a script for writing complaint emails, and it is not legal advice about refusing service. If safety is at risk, follow your workplace’s safety process.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Communication and Collaboration)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Managing difficult interactions includes resolving them in a sensitive and helpful way.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Confirming what you heard is part of listening with intention.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should invent a promise if it will make an upset person leave faster.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson is a script for writing complaint emails in Outlook.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Practise serving someone this week",
+      "html": "<p>Skills improve when you use them. Communication includes adapting to other people’s communication modes and choosing the content and approach that fit the tool you are using. Collaboration includes reflecting on how the team did and making constructive suggestions.</p>\n<p>Practise with a real, small request this week — at work, as a volunteer, or in a role-play with a classmate. Pick a situation such as answering a question about hours, helping someone find a form, or explaining where to wait. Then:</p>\n<ul>\n<li>Listen with attention and confirm the request in your own words.</li>\n<li>Speak clearly, with a purpose the other person can hear.</li>\n<li>Adapt your tone if the person is rushed, new to the place, or hard of hearing.</li>\n<li>If you cannot finish the request alone, share what you know with a coworker and close the loop.</li>\n<li>Afterward, reflect: What did you understand well? What would you ask sooner next time?</li>\n</ul>\n<p>The official entry-level description of communication is speaking and listening about a narrow range of familiar, factual topics, often one-on-one. That is enough for many front-line roles. You do not need a special certificate before you practise.</p>\n<p>This course does not replace English-language learning, and it does not teach inbox habits. If you want more help with grammar or with workplace email, use those other Range Path courses. Come back to these listening, speaking, and teamwork habits whenever you serve the public.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills (Skills for Success — Communication and Collaboration)",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A useful practice is to confirm a request in your own words before you answer.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Collaboration includes reflecting on how the team did.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You need a customer-service licence before you can practise these skills.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course replaces the workplace-email and English courses.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course.",
+    "questions": [
+      {
+        "prompt": "Serving customers is one way the Government of Canada says people use communication skills.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      },
+      {
+        "prompt": "Listening with intention includes asking questions to confirm understanding.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      },
+      {
+        "prompt": "Adapting to your audience means using the same tone with every person no matter the situation.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      },
+      {
+        "prompt": "Collaboration is the ability to contribute and support others to achieve a common goal.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      },
+      {
+        "prompt": "Managing difficult interactions includes resolving them in a sensitive and helpful way.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      },
+      {
+        "prompt": "This course is an Outlook email lesson.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      },
+      {
+        "prompt": "You should invent a promise if a customer is upset.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Listen and confirm, speak clearly for a purpose, adapt to the person in front of you, work with coworkers to finish the request, and handle friction respectfully. This is not an email, grammar, or supervisor course."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about workplace communication and serving customers, based on Canada’s Skills for Success Communication and Collaboration skills. It is not a customer-service licence, a call-centre certificate, or a language credential. It does not teach email software or English grammar. Those topics are covered in other Range Path courses.",
+    "builderNotes": "- Source verified earlier this session and reused: Skills for Success understanding-individuals.html (Communication and Collaboration).\n- Do **not** repeat the Outlook course (To/Cc/Bcc, Reply All, calendar, professional email format) or the Everyday Work English / workplace-writing courses (English-language practice, grammar, spelling, writing notes and forms). Point to them only as different paths.\n- Do **not** repeat the supervision course’s Lesson 5 framing (collaboration as a leadership/coaching pointer for lead hands). This course uses the same official skill names but aims them at serving customers and the public.\n- Do not invent a separate “customer service” government standard beyond what SFS states (it explicitly names “serve customers” under Communication).\n- No product or call-centre endorsements. No Ed2Go customer-service text.\n- Canadian spelling: *practise* (verb), *practice* (noun).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-customer-service-workplace-communication.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a person and a speech bubble."
+  }
+}

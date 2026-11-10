@@ -1,0 +1,518 @@
+{
+  "slug": "canadian-banking-budgeting-credit-reports",
+  "title": "Canadian Banking, Budgeting and Credit Reports",
+  "summary": "By the end, learners can tell a chequing account from a savings account, describe official rights and identification steps when opening a personal account, find low-cost or no-cost account information, make a simple budget with FCAC’s Budget Planner, and explain what a credit report and credit score are — without treating this course as personal money advice.",
+  "goals": "By the end, learners can tell a chequing account from a savings account, describe official rights and identification steps when opening a personal account, find low-cost or no-cost account information, make a simple budget with FCAC’s Budget Planner, and explain what a credit report and credit score are — without treating this course as personal money advice.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or financial, investment, tax, or debt-settlement advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Everyday accounts: chequing and savings",
+      "html": "<p>The Financial Consumer Agency of Canada (FCAC) is the federal agency that explains banking rights and money tools for consumers. This course points you to those official pages. It does not tell you which bank to choose.</p>\n<p>A <strong>chequing account</strong> is for everyday money tasks. FCAC says people typically use one to deposit pay or other income, pay bills, make debit-card purchases, withdraw cash from an automated teller machine (ATM), and transfer money. Chequing accounts support frequent transactions. They may include a debit card and usually do not earn interest.</p>\n<p>A <strong>savings account</strong> lets you set money aside to use later. FCAC says savings accounts are generally designed for storing money and earning interest rather than for everyday transactions. Frequent use may mean higher transaction fees. Many people use a chequing account for day-to-day spending and a savings account to set money aside.</p>\n<p>Interest on a savings account may be <strong>compound interest</strong>: you earn interest on your deposits, the institution adds that interest to the balance, and then you can earn interest on the new total. How often interest is added, and whether a minimum balance is required, depends on the account agreement. Read that agreement. This course does not calculate a return for you and is not investment advice.</p>\n<p>Compare the total cost of an account, not only one fee. Besides a monthly fee, you may pay for extra transactions, some ATM withdrawals, overdraft, or non-sufficient funds (NSF) items. FCAC’s bank-account pages explain those words in more detail.</p>",
+      "sources": [
+        {
+          "label": "Chequing accounts — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/chequing-accounts.html"
+        },
+        {
+          "label": "Savings accounts — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/savings-account.html"
+        },
+        {
+          "label": "Bank accounts — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A chequing account is typically used for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Everyday tasks such as paying bills and using a debit card"
+            },
+            {
+              "id": "B",
+              "text": "Only buying stocks"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "FCAC says savings accounts are generally designed to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Store money and possibly earn interest, not handle every daily purchase"
+            },
+            {
+              "id": "B",
+              "text": "Replace your SIN"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you which bank you must use.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Compound interest means you can earn interest on interest that has already been added to the balance.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Opening an account and your rights",
+      "html": "<p>You have rights when you open a personal account at a bank, an authorized foreign bank, or a federal credit union. FCAC says you have the right to open a personal bank account if you meet certain conditions and provide acceptable identification.</p>\n<p>The bank must confirm your identity. You must provide <strong>original</strong> identification, not copies. FCAC describes two options. Option 1: two documents from its list — one showing your name and address, and one showing your name and date of birth. That list includes government-issued identification, recent tax-assessment notices, recent government benefit statements, recent Canadian utility bills, recent bank or credit-card statements, and foreign passports. Option 2: one document showing your name and date of birth, plus identity confirmation from a person described on the page (for example, a customer in good standing with the bank, or a person of good standing in the community). Banks may accept other identification in some circumstances — read the live page.</p>\n<p>Before opening the account, the bank must obtain your express consent, enter into an agreement with you, and give you a copy of the account agreement. It must also give you key written information, including charges, how interest is calculated if it applies, maximum cheque-hold periods, and when it will send electronic alerts.</p>\n<p>A bank may refuse to open an account in the situations FCAC lists, such as suspected illegal use, false information, or a history of illegal or fraudulent activity with financial service providers in the last seven years. If it refuses, it must tell you in writing and share its complaint process, Ombudsman for Banking Services and Investments (OBSI) details, and FCAC contact information.</p>\n<p>This is general information, not a promise that a particular branch will open an account for you.</p>",
+      "sources": [
+        {
+          "label": "Opening a bank account — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/opening-bank-account.html"
+        },
+        {
+          "label": "Opening a personal bank account: your rights — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/rights-responsibilities/rights-banking/accounts-rights-responsibilities.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To open an account, FCAC says you must provide:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Original identification that meets the bank’s accepted options"
+            },
+            {
+              "id": "B",
+              "text": "Only a photocopy of a library card"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before opening the account, the bank must obtain your express consent and give you the account agreement.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If a bank refuses to open a personal account, FCAC says it must:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Inform you in writing"
+            },
+            {
+              "id": "B",
+              "text": "Say nothing"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson guarantees that every branch will open an account for you.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Low-cost and no-cost accounts",
+      "html": "<p>Some financial institutions offer <strong>low-cost</strong> and <strong>no-cost</strong> accounts with basic features.</p>\n<p>As of November 2026, FCAC’s page said a low-cost account has a monthly fee of <strong>$4 or less</strong>. The institution cannot require you to keep a minimum balance in that kind of account. Low-cost accounts are available to all Canadians. Some other accounts may also cost $4 or less without meeting the official low-cost definition — ask the institution.</p>\n<p>A <strong>no-cost</strong> account has the same features and services as low-cost accounts, but no monthly fee. FCAC listed these eligibility groups: 18 years old or younger; a student; a senior who receives the Guaranteed Income Supplement (GIS); a Registered Disability Savings Plan (RDSP) beneficiary; and a newcomer to Canada (eligible for the first year in Canada). The page also said you may qualify if you are Indigenous, a recipient of the Disability Tax Credit, or a recipient of social assistance payments from select provincial or territorial programs. Check the live page; these groups can change.</p>\n<p>Low-cost and no-cost accounts include at least <strong>18 debit transactions</strong> per month. Confirm with the institution which transactions count. FCAC also says these accounts must include other features at no extra cost, such as free digital monthly statements or cheque-writing privileges.</p>\n<p>Use FCAC’s Account Comparison Tool, linked from that page, instead of guessing. Look at your total yearly costs, including ATM, overdraft, NSF, and foreign-transaction fees — not only the monthly fee.</p>\n<p>This course does not pick an institution for you.</p>",
+      "sources": [
+        {
+          "label": "Opening a low-cost or no-cost bank account — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/low-cost-no-cost.html"
+        },
+        {
+          "label": "Chequing accounts — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/banking/bank-accounts/chequing-accounts.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "FCAC says low-cost accounts:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Are available to all Canadians and cannot require a minimum balance"
+            },
+            {
+              "id": "B",
+              "text": "Are only for banks outside Canada"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Low-cost and no-cost accounts include at least 18 debit transactions per month.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should compare the total cost of banking, not only one monthly fee.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course recommends one specific bank.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Making a simple budget",
+      "html": "<p>FCAC says a <strong>budget</strong> is a plan that helps you manage your money. It helps you see how much money you get, spend, and save. A budget can help you balance income with savings and expenses and guide spending toward your goals.</p>\n<p>Before you build one, FCAC suggests you think about short-term and long-term goals and include saving for those goals. It also suggests creating an emergency fund that could cover living expenses for <strong>3 to 6 months</strong>, while noting that amount can feel out of reach — so start with a small amount on a regular basis. That is general guidance from FCAC, not a personal plan for your household.</p>\n<p>Next, know where your money is going. Try tracking what you spend for one or two months, including bills. FCAC suggests dividing expenses into <strong>needs</strong> and <strong>wants</strong>. A need is necessary, such as housing, clothing, food, or medication. A want is something you would like but do not necessarily need, such as restaurant meals. Needs and wants are not the same for everyone and can change over time.</p>\n<p>FCAC’s <strong>Budget Planner</strong> is a free official tool. You enter income, savings, and expenses, review results, and save the budget online. The tool may compare your categories with average ranges and suggest next steps. Use it on the making-a-budget page. Tips for staying with a budget include keeping receipts, updating the plan when income or bills change, and comparing the plan with what you actually spent at the end of the month.</p>\n<p>This lesson is not tax advice, not lending advice, and not a copy of any community workbook. If numbers feel hard, the Range Path everyday-math course practises numeracy separately.</p>",
+      "sources": [
+        {
+          "label": "Making a budget — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/make-budget.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "FCAC describes a budget as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A plan that helps you see money coming in, going out, and being saved"
+            },
+            {
+              "id": "B",
+              "text": "A guaranteed investment"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A “need,” in FCAC’s examples, is something necessary, such as housing, food, or medication.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "FCAC offers a Budget Planner tool you can save online.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson is personalized investment advice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Credit reports and credit scores",
+      "html": "<p>Your <strong>credit report</strong> is a summary of how you have used credit in the past. Credit bureaus create it when you first borrow money or apply for credit. It can include credit cards, loans, and mortgages, how much you owe, and whether you pay on time. Lenders use the report, and FCAC notes it can also affect renting a home.</p>\n<p>Your <strong>credit score</strong> is a three-digit number from your credit report. It is meant to show how likely you are to repay borrowed money. As of November 2026, FCAC said scores usually range from <strong>300 to 900</strong>, and a higher score is better. Your score can rise when you pay bills on time and use credit carefully, and fall when you miss payments or carry too much debt. Exact formulas are not public.</p>\n<p>Canada’s two main credit bureaus are <strong>Equifax</strong> and <strong>TransUnion</strong>. They collect credit activity in Canada. You can access your credit report online for free from both. You can also request a free copy by mail, or in person in some provinces, using the steps on FCAC’s page. Checking your own report or score does <strong>not</strong> affect your credit score.</p>\n<p>As of November 2026, FCAC said the Equifax score is free online in all provinces and territories. A TransUnion score was free if you live in Quebec or Ontario (as part of your Consumer Disclosure). Alberta learners should read the live page before assuming both scores are free.</p>\n<p>Fraudsters may pretend to offer free reports. Use official bureau sites linked from FCAC, look for <strong>https</strong>, and do not give personal details to a company you have not checked.</p>\n<p>If you find a mistake, FCAC says you can ask the bureau to correct it. This course does not repair your credit or settle debts.</p>",
+      "sources": [
+        {
+          "label": "Credit report and score basics — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score/credit-report-score-basics.html"
+        },
+        {
+          "label": "Getting your credit report and credit score — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/credit-reports-score/order-credit-report.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A credit report is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A summary of how you have used credit in the past"
+            },
+            {
+              "id": "B",
+              "text": "A diploma"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Checking your own credit report or score, according to FCAC:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Does not affect your credit score"
+            },
+            {
+              "id": "B",
+              "text": "Always destroys your score"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Canada’s two main credit bureaus named by FCAC are Equifax and TransUnion.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course will settle your debts or pick a loan for you.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus.",
+    "questions": [
+      {
+        "prompt": "This course is personalized investment or debt-settlement advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      },
+      {
+        "prompt": "A chequing account is typically used for everyday payments and deposits.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      },
+      {
+        "prompt": "You should provide original identification when you open an account.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      },
+      {
+        "prompt": "FCAC describes low-cost and no-cost accounts that include basic features such as a set number of debit transactions.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      },
+      {
+        "prompt": "A budget is a plan for money coming in, going out, and being saved.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      },
+      {
+        "prompt": "Checking your own credit report does not affect your credit score.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      },
+      {
+        "prompt": "This course tells you which bank to join.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5 and the live FCAC pages. Learn the words, compare costs, make a plan, and check your own credit report through official bureaus."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general financial literacy from official Financial Consumer Agency of Canada (FCAC) pages. It is not personalized financial, investment, tax, or debt-settlement advice, and it does not recommend a bank, credit union, or product. It is not a substitute for the free Money Matters workshops some councils already host, and it does not copy those workbooks. Always read the live FCAC page for your situation.",
+    "builderNotes": "- Official-link practice module. Do not copy ABC Money Matters workbooks. Do not recommend a bank or product.\n- Date-stamp and re-check: low-cost fee of $4 or less; credit-score range 300–900; Equifax score free in all provinces; TransUnion score free in Quebec or Ontario. Do not treat the TransUnion score rule as true for Alberta unless the live page still says so.\n- The $4 figure stays in the lesson body with a November 2026 date-stamp and is kept out of quiz answers.\n- Emergency-fund “3 to 6 months” is FCAC general guidance; not used as a quiz number.\n- NSF fee caps and the $100 default alert threshold were left out of quizzes; point builders to the live chequing and alerts pages if those lessons are expanded.\n- Do not repeat the everyday-math unit-price module, bookkeeping, GST invoices, or SIN/CRA tax-filing steps.\n- No Ed2Go or Cengage money-course text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-canadian-banking-budgeting-credit-reports.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a bank card and a short list."
+  }
+}

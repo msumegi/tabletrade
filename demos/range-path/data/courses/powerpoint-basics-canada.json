@@ -1,0 +1,498 @@
+{
+  "slug": "powerpoint-basics-canada",
+  "title": "Microsoft PowerPoint Basics (Canada)",
+  "summary": "By the end, learners can start a presentation with a theme, add slides and type in placeholders, insert a picture from their device, save their file, and start or leave a slide show.",
+  "goals": "By the end, learners can start a presentation with a theme, add slides and type in placeholders, insert a picture from their device, save their file, and start or leave a slide show.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is PowerPoint, and how do you start?",
+      "html": "<p><strong>Microsoft PowerPoint</strong> is a program for slide shows. Microsoft’s basic-tasks guide says that to convey a message or a story, you break it down into <strong>slides</strong>. Think of each slide as a blank canvas for the pictures and words that help you tell your story.</p>\n<p>When you open PowerPoint, you will see some built-in <strong>themes</strong> and templates. Microsoft says a theme is a slide design that contains matching colours, fonts, and special effects such as shadows and reflections.</p>\n<p><strong>To start with a theme</strong> (Microsoft’s Windows steps):</p>\n<ol>\n<li>On the <strong>File</strong> tab of the Ribbon, select <strong>New</strong>, and then choose a theme. PowerPoint shows a preview, with colour variations on the right.</li>\n<li>Click <strong>Create</strong>, or pick a colour variation and then click <strong>Create</strong>.</li>\n</ol>\n<p>In PowerPoint for the web, Microsoft says you can select <strong>Browse templates</strong> to choose a theme.</p>\n<p>People in Canada use slides for many everyday jobs: a short talk at a community hall, a volunteer orientation, or a simple update at work. This course uses Canadian spelling in the lesson text. On the screen, some buttons may still say “Color” because that is how the software is labelled.</p>\n<p>This course is not a design diploma and not a MOS exam. If PowerPoint is not on the computer in front of you, ask your adult learning council which version they have. Do not buy software because this lesson mentioned it.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks for creating a PowerPoint presentation — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/powerpoint/basic-tasks-for-creating-a-powerpoint-presentation"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Microsoft says a PowerPoint presentation works like:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A slide show made of separate slides"
+            },
+            {
+              "id": "B",
+              "text": "A tax return"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A theme is described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A slide design with matching colours, fonts, and effects"
+            },
+            {
+              "id": "B",
+              "text": "A type of printer ink"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To start with a theme, Microsoft’s Windows steps begin on the:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "File tab, then New"
+            },
+            {
+              "id": "B",
+              "text": "Recycle Bin"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is an official Microsoft Office Specialist exam.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Add slides and type your words",
+      "html": "<p>After the first slide, you add more slides for the rest of your story.</p>\n<p>Microsoft’s steps:</p>\n<ol>\n<li>In the slide thumbnail pane on the left, select the slide that you want your new slide to follow.</li>\n<li>On the <strong>Home</strong> tab, select the lower half (or bottom half) of <strong>New Slide</strong>.</li>\n<li>From the menu, select the <strong>layout</strong> you want. The new slide is inserted.</li>\n<li>Click inside a <strong>placeholder</strong> and begin adding content.</li>\n</ol>\n<p>A layout is the arrangement of boxes on the slide, such as a title box and a content box. Different layouts suit different slides: a title slide, a list of points, or a slide with a picture.</p>\n<p><strong>To add text</strong>, Microsoft says: select a text placeholder, and begin typing.</p>\n<p>Keep the words short. Microsoft’s tips for an effective presentation say you want the audience to listen to you, instead of reading the screen. Use bullets or short sentences, and try to keep each item to one line. Microsoft also says to keep the number of slides to a minimum so the message stays clear.</p>\n<p>A simple practise set (sample only): slide 1, “Saturday soup lunch”; slide 2, “Where and when”; slide 3, “How to help.” Type your own sample words. Do not put other people’s private information on a slide.</p>\n<p>If the menus look a little different, look for <strong>New Slide</strong> on the Home tab and click a placeholder to type.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks for creating a PowerPoint presentation — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/powerpoint/basic-tasks-for-creating-a-powerpoint-presentation"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To add a slide, Microsoft says to use:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Home, then New Slide, then a layout"
+            },
+            {
+              "id": "B",
+              "text": "Only the computer’s power button"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A placeholder is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A box on the slide where you click to add content"
+            },
+            {
+              "id": "B",
+              "text": "A type of lock"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Microsoft’s tips say to keep slide text simple, with bullets or short sentences.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should put other people’s private details on a practise slide.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Add a picture",
+      "html": "<p>A picture can help people remember your message. Microsoft says pictures and other visuals provide cues for the audience, but you should avoid putting too many visual aids on one slide.</p>\n<p><strong>To add a picture from your computer</strong> (Microsoft’s steps):</p>\n<ol>\n<li>On the <strong>Insert</strong> tab, select <strong>Pictures</strong>.</li>\n<li>Choose <strong>This Device</strong> (a picture saved on your computer or an internal server), browse for the picture, and choose <strong>Insert</strong>.</li>\n</ol>\n<p>In PowerPoint for the web, after you insert the picture you can select it and drag to move it, and drag a corner handle to resize it. On Windows desktop, Microsoft also lists <strong>Stock Images</strong> (for Microsoft 365 subscribers) and <strong>Online Pictures</strong>. You do not need those extras for this lesson. Use a picture you have permission to use, such as a photo you took or a file your instructor gives you.</p>\n<p>Do not copy a picture from a random website unless you know you may use it. This course is not copyright advice; when you are unsure, use your own photo or a file from class.</p>\n<p>You can also add a simple <strong>shape</strong>. Microsoft’s steps: on the Insert tab, select <strong>Shapes</strong>, pick a shape, then click and drag on the slide to draw it. Then use the Shape Format (or Format) tab and the Shape Styles gallery if you want a colour or style.</p>\n<p>One clear photo and a few words are enough for a community announcement slide.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks for creating a PowerPoint presentation — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/powerpoint/basic-tasks-for-creating-a-powerpoint-presentation"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To insert a picture from your computer, Microsoft says to go to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Insert, then Pictures, then This Device"
+            },
+            {
+              "id": "B",
+              "text": "File, then Delete"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "After you insert a picture in PowerPoint for the web, you can drag a corner handle to resize it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Microsoft says to avoid including too many visual aids on one slide.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson requires you to buy Stock Images.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Speaker notes and a clear look",
+      "html": "<p>Slides work best when you do not cram in too much information. Microsoft says you can put helpful facts in <strong>speaker notes</strong> and refer to them as you present.</p>\n<p><strong>To add speaker notes</strong> on Windows:</p>\n<ol>\n<li>At the bottom of the window, click <strong>Notes</strong>.</li>\n<li>Click inside the Notes pane below the slide and type.</li>\n</ol>\n<p>In PowerPoint for the web, Microsoft says to go to the <strong>View</strong> tab, select <strong>Notes</strong>, then click in the pane and type. You can drag the top border of the pane to make it larger.</p>\n<p>Microsoft also offers these tips:</p>\n<ul>\n<li>Choose an audience-friendly font size. Generally speaking, a font size smaller than 30 might be too difficult for the audience to see from a distance.</li>\n<li>Apply a subtle, consistent theme so the background does not take attention away from your message. Built-in themes set contrast between a light background with dark text, or a dark background with light text.</li>\n<li>Always check the spelling and grammar.</li>\n</ul>\n<p>That font-size note is Microsoft’s general tip, not a law. Check how the slide looks from the back of the room if you can.</p>\n<p>To change text colour or size in PowerPoint for the web, Microsoft says to select the text and use the Font options on the Home tab (including Font Color, Increase Font Size, Bold, Italic, and Underline). On Windows desktop, the basic-tasks page also describes Shape Format and WordArt tools. Look for the Home tab first.</p>\n<p>Save as you go (Lesson 5) so you do not lose the notes you typed.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks for creating a PowerPoint presentation — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/powerpoint/basic-tasks-for-creating-a-powerpoint-presentation"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Speaker notes are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Extra words you can type below the slide and refer to while you present"
+            },
+            {
+              "id": "B",
+              "text": "A kind of tax slip"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On Windows, Microsoft says you can open the notes pane by clicking Notes at the bottom of the window.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Microsoft’s tips say to check spelling and grammar.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should fill every slide with long paragraphs so nobody has to listen.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Save and show your slides",
+      "html": "<p>Save often so you do not lose your work.</p>\n<p><strong>To save</strong> (Microsoft’s Windows steps):</p>\n<ol>\n<li>On the <strong>File</strong> tab, choose <strong>Save</strong>.</li>\n<li>Pick or browse to a folder.</li>\n<li>In the <strong>File name</strong> box, type a name, then choose <strong>Save</strong>.</li>\n</ol>\n<p>Microsoft also says to press <strong>Ctrl+S</strong> often, or save the file to OneDrive and let AutoSave help. AutoSave is not a reason to skip saving yourself if you are working on a computer that does not use it. In PowerPoint for the web, Microsoft says work is saved automatically to OneDrive; you can click the file name in the title bar to rename it.</p>\n<p>A clear name helps later, such as <code>soup-lunch-slides</code> or <code>volunteer-orientation-practise</code>.</p>\n<p><strong>To give your presentation:</strong></p>\n<ul>\n<li>On the <strong>Slide Show</strong> tab, click <strong>From Beginning</strong> to start at the first slide.</li>\n<li>Click <strong>From Current Slide</strong> if you want to start from the slide you are on.</li>\n</ul>\n<p>To move through the slides, Microsoft says you can click the mouse or press the spacebar. Arrow keys can also move forward and back. To leave Slide Show view at any time, press <strong>Esc</strong>. You return to the editing view.</p>\n<p>This course does not require presenting online or broadcasting to a remote audience. Practise once with Esc so you know how to leave full screen.</p>\n<p>Finishing this course does not make you a MOS-certified presenter.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks for creating a PowerPoint presentation — Microsoft Support",
+          "url": "https://support.microsoft.com/en-us/powerpoint/basic-tasks-for-creating-a-powerpoint-presentation"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To save on Windows, Microsoft says to use:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "File, then Save, then a folder and a file name"
+            },
+            {
+              "id": "B",
+              "text": "Only the printer’s cancel button"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To start at the first slide, use Slide Show, then From Beginning.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To leave Slide Show view, press Esc.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Completing this course gives you a MOS certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential.",
+    "questions": [
+      {
+        "prompt": "A PowerPoint presentation is made of slides that hold words and pictures.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "A theme is a slide design with matching colours and fonts.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "You add a slide from Home, then New Slide, then a layout.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "Insert > Pictures > This Device adds a picture from your computer.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "Speaker notes go in the Notes pane and are for you while you present.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "Esc leaves Slide Show view.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      },
+      {
+        "prompt": "This course is a Microsoft Office Specialist exam.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Start with a theme, add short text, insert a picture you may use, save, then show the slides. Completion only — not a Microsoft credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about everyday slides in Microsoft PowerPoint. It is not an accredited Microsoft Office Specialist (MOS) credential or college credit. Menus can look a little different in Windows, Mac, or PowerPoint for the web. Practise on sample slides — not on someone else’s private files.",
+    "builderNotes": "- Based on Microsoft’s “Basic tasks for creating a PowerPoint presentation” page (Windows steps as the main path; web differences noted where the same page describes them).\n- Do not require Stock Images, Online Pictures, or Present Online / broadcast.\n- Microsoft’s “font size smaller than 30” note is a general tip in the lesson, not a quiz fact.\n- Canadian spelling in lesson text (*colour*, *practise*); the software may still say Color.\n- No Ed2Go PowerPoint text. Not MOS.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-powerpoint-basics-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a presentation slide."
+  }
+}

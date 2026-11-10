@@ -1,0 +1,518 @@
+{
+  "slug": "introductory-french-daily-life-canada",
+  "title": "Introductory French for Daily Life in Canada",
+  "summary": "By the end, learners can say that Canada has two official languages, name everyday reasons to practise French here, notice French on official federal pages and in communities across the country, and find official next steps for learning — without treating this course as a phrasebook or a certificate of fluency.",
+  "goals": "By the end, learners can say that Canada has two official languages, name everyday reasons to practise French here, notice French on official federal pages and in communities across the country, and find official next steps for learning — without treating this course as a phrasebook or a certificate of fluency.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, TEF or DELF result, fluency certificate, or an official language assessment.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Canada has two official languages",
+      "html": "<p>Canada has two official languages: English and French. Immigration, Refugees and Citizenship Canada (IRCC) says English is the most commonly spoken language in most provinces and territories.</p>\n<p>French is the main language spoken in Quebec and in some areas of Ontario, New Brunswick, and Manitoba. There are also francophone communities in <strong>all</strong> provinces and territories across Canada, including here in the West. Quebec has a large minority of residents who speak English.</p>\n<p>The Government of Canada offers all official federal government services, publications, and documents in both English and French. That is one reason you will see both languages on many government websites, forms, and signs.</p>\n<p>Canadian Heritage says its Official Languages Branch works to promote French and English in Canadian society, and to encourage the development of Francophone and Anglophone communities in minority situations. The bilingual character of the country is described as a fundamental part of Canada’s national identity.</p>\n<p>This course will not make you fluent. Fluency takes time, practice, and often a class with a teacher. The aim here is to help you notice French in daily Canadian life and know where official help exists if you want to learn more.</p>\n<p>You do not need to choose between English and French as if only one mattered. Both are official.</p>",
+      "sources": [
+        {
+          "label": "Improving your English and French (IRCC)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        },
+        {
+          "label": "About official languages and bilingualism (Canadian Heritage)",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/official-languages-bilingualism/about.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Canada has two official languages: English and French.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Francophone communities exist in all provinces and territories across Canada.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Official federal government services, publications, and documents are offered in both English and French.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course promises that you will become fluent in French.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Why French can help in daily life",
+      "html": "<p>IRCC says English or French language skills are very important to help you settle in Canada. You may choose to focus on learning or improving one or the other. That often depends on which of the two languages most people speak where you live.</p>\n<p>Strong English or French skills will help with:</p>\n<ul>\n<li>getting a job</li>\n<li>going to school</li>\n<li>accessing services</li>\n<li>helping your children with school work</li>\n<li>meeting and talking to people</li>\n<li>getting your Canadian citizenship</li>\n</ul>\n<p>If you already speak one official language, IRCC says you should think about learning the other. In many parts of Canada, being able to speak both is an advantage for finding a job and taking part in your community.</p>\n<p>Even in a community where English is more common, a little French can help you greet a francophone neighbour, read the other side of a bilingual federal page, or support a child who is learning French in school. Canadian Heritage’s work with provinces and territories includes helping official-language minority communities receive services in their own language, and helping young Canadians learn French and English as a second language.</p>\n<p>Language skills for some regulated jobs and trades may need to be stronger than the skills used to immigrate. Those jobs may require fluency and knowledge of work-related language, including phrases unique to Canada. This course does not meet those job-language requirements, and it does not replace a test or a professional language class.</p>\n<p>Start where you are. A few minutes of noticing French around you is a real step, even if you are not ready for a full course.</p>",
+      "sources": [
+        {
+          "label": "Improving your English and French (IRCC)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        },
+        {
+          "label": "About official languages and bilingualism (Canadian Heritage)",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/official-languages-bilingualism/about.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "IRCC says strong English or French skills can help with getting a job, going to school, and accessing services.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you already speak one official language, IRCC suggests thinking about learning the other.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course meets the language requirements for every regulated trade in Canada.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Being able to speak both official languages can be an advantage for finding a job and taking part in your community.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Notice French in the Canada around you",
+      "html": "<p>You do not have to wait for a classroom to meet French. Because federal services and publications are offered in both official languages, many pages you already use have a French version. Look for a language button that says <strong>Français</strong>. Open a page you know well — for example a weather, benefits, or parks page — and switch it to French. See which words you recognize.</p>\n<p>You will also see French beside English on many federal forms and signs. That pairing is part of how the government offers services in both languages. Try reading the French line after you read the English one. You are training your eye, not taking a test.</p>\n<p>Canadian Heritage says the bilingual character of the country is a fundamental part of national identity. It emphasizes the advantages of that bilingual character, helps voluntary organizations reflect it in their own activities, and encourages activities that foster mutual understanding between Anglophones and Francophones.</p>\n<p>Heritage also supports official-language minority communities so they can take part in the economic, cultural, and social life of the country. In practical terms, that means French is not only “a Quebec language.” Francophone communities exist across Canada, including in Alberta.</p>\n<p>Listen for French at a community event, on a radio station, or when a neighbour greets you. You do not need to answer in full sentences yet. Noticing the language is the habit this lesson asks for.</p>\n<p>This course does not invent a list of phrases. Learn words from official bilingual pages you already trust, rather than from a random website.</p>",
+      "sources": [
+        {
+          "label": "Improving your English and French (IRCC)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        },
+        {
+          "label": "About official languages and bilingualism (Canadian Heritage)",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/official-languages-bilingualism/about.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Official federal services and publications are available in both English and French.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Switching a federal web page you already know to Français is one way to notice French in daily life.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Francophone communities exist only in Quebec.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a complete phrasebook of spoken French.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Official places to start learning more",
+      "html": "<p>IRCC points to the <strong>Language Portal of Canada</strong> as a place with a variety of tools and resources to improve your language skills. This course does not replace that portal, and it does not copy its quizzes. If you want official writing and learning tools, start from the IRCC page and follow its link, or search for the Language Portal of Canada on Canada.ca.</p>\n<p>You can also take language classes to learn English or French once you are in Canada. IRCC says federal, provincial, and territorial governments across Canada fund language classes. You will need to pay for private language classes. To find provincial or territorial programs, ask an organization that helps newcomers in your area, or visit the newcomers website for the province or territory where you live.</p>\n<p>Before you start a funded class, IRCC says you must get tested to find out your current language skills. Visit a language assessment centre and say you are interested in taking language classes. This Range Path course is not that assessment, and finishing it does not place you in a funded class.</p>\n<p>There are official tests that measure French, such as the Test d’évaluation de français (TEF) and the Diplôme d’études en langue française (DELF). People sometimes need a test result for a job or for college. This course does <strong>not</strong> prepare you for those tests and does not give you a certificate you can use in their place.</p>\n<p>Canadian Heritage’s Official Languages pages also collect learning and funding information at a government level. Use those pages to see what the government supports. Do not treat a volunteer conversation group, an app, or this course as an official language credential.</p>",
+      "sources": [
+        {
+          "label": "Improving your English and French (IRCC)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        },
+        {
+          "label": "Official languages and bilingualism (Canadian Heritage)",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/official-languages-bilingualism.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "IRCC says the Language Portal of Canada has tools and resources to improve language skills.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Governments in Canada fund some language classes, while private classes are ones you pay for.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Completing this course places you in a funded language class.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course prepares you to pass the TEF or DELF.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Keep practising, without a fluency promise",
+      "html": "<p>IRCC encourages people to take steps to improve French or English as soon as they can. You do not have to wait until you feel “ready.” A small, regular habit is more useful than waiting for perfect study time.</p>\n<p>Try this weekly practice:</p>\n<ol>\n<li>Open one federal web page you already use and switch it to Français. Write down three words you recognized and three you did not.</li>\n<li>Say those new words out loud once. You are practising sound as well as sight.</li>\n<li>If you have a child in school, ask what French words they are learning and practise one of them together. IRCC lists helping children with school work as a reason language skills matter.</li>\n<li>If you want a class, ask a local newcomer organization or your adult learning council how to find a language assessment centre.</li>\n</ol>\n<p>Canadian Heritage promotes French and English in Canadian society and encourages activities that foster mutual understanding between Anglophones and Francophones. Your practice is part of that larger picture, even if your first sentences are short.</p>\n<p>Be kind to yourself. This course is an introduction to French in daily Canadian life. It is not a promise that you will become fluent, get a job, or pass a language test. Fluency, when someone reaches it, comes from much more practice than five short lessons.</p>\n<p>If a word on an official page is hard, look at the English version of the same page. Using both languages side by side is one advantage of bilingual federal services.</p>",
+      "sources": [
+        {
+          "label": "Improving your English and French (IRCC)",
+          "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/settle-canada/language-skills.html"
+        },
+        {
+          "label": "About official languages and bilingualism (Canadian Heritage)",
+          "url": "https://www.canada.ca/en/canadian-heritage/services/official-languages-bilingualism/about.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A small, regular practice habit can be a useful way to start.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Helping children with school work is one reason IRCC gives for building language skills.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course guarantees that you will become fluent.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Bilingual federal pages let you compare the English and French versions of the same information.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential.",
+    "questions": [
+      {
+        "prompt": "Canada has two official languages: English and French.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      },
+      {
+        "prompt": "Francophone communities exist in all Canadian provinces and territories.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      },
+      {
+        "prompt": "This course promises fluency in French.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      },
+      {
+        "prompt": "IRCC says language skills can help with work, school, services, and citizenship.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      },
+      {
+        "prompt": "Official federal services and publications are offered in both English and French.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      },
+      {
+        "prompt": "Completing this course is the same as passing the TEF or DELF.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      },
+      {
+        "prompt": "If you already speak one official language, IRCC suggests thinking about learning the other.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Canada has two official languages. French is part of daily life across the country, including on federal pages. Practise by noticing French around you and using official learning paths. This course is not a fluency or test credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about French as one of Canada’s two official languages, and about official places to start practising. It is not a fluency promise, not a TEF or DELF preparation course, and not a language credential. It does not replace government-funded language classes. French spoken in Canada varies by region. Always check the live official page.",
+    "builderNotes": "- Sources verified live on 10 November 2026 (America/Regina): IRCC “Improving your English and French”; Canadian Heritage “About official languages and bilingualism” and the Official languages and bilingualism hub.\n- Language Portal of Canada pages (`our-languages.canada.ca` and `noslangues-ourlanguages.gc.ca`) returned Cloudflare 403 on fetch this session. Do not invent Portal quizzes, TERMIUM steps, or the “10 practical tips” blog content. The course mentions the Portal only as IRCC names it.\n- Do not invent a phrasebook (no unsourced *bonjour / s’il vous plaît* list). Learners are directed to official bilingual federal pages.\n- No fluency promise. Not TEF/DELF prep. Not a funded-class placement.\n- No Ed2Go conversational-French text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-introductory-french-daily-life-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of two language cards."
+  }
+}

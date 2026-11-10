@@ -5,91 +5,285 @@
       "slug": "everyday-computers-smartphones",
       "shortTitle": "Everyday computers",
       "navLabel": "Devices",
-      "featured": true
+      "featured": true,
+      "category": "Computers",
+      "pitch": true
     },
     {
       "slug": "excel-basics-canada",
       "shortTitle": "Excel basics",
       "navLabel": "Excel",
-      "featured": true
+      "featured": true,
+      "category": "Computers",
+      "pitch": true
     },
     {
       "slug": "word-basics-canada",
       "shortTitle": "Word basics",
       "navLabel": "Word",
-      "featured": true
+      "featured": true,
+      "category": "Computers",
+      "pitch": true
     },
     {
       "slug": "job-search-canada",
       "shortTitle": "Job search",
       "navLabel": "Job search",
-      "featured": true
+      "featured": true,
+      "category": "Work",
+      "pitch": true
     },
     {
       "slug": "outlook-workplace-email",
       "shortTitle": "Outlook email",
       "navLabel": "Outlook",
-      "featured": true
+      "featured": true,
+      "category": "Computers"
     },
     {
       "slug": "bookkeeping-fundamentals-canada",
       "shortTitle": "Bookkeeping",
       "navLabel": "Bookkeeping",
-      "featured": true
+      "featured": true,
+      "category": "Money"
     },
     {
       "slug": "invoices-expenses-gst-canada",
       "shortTitle": "Invoices and GST",
       "navLabel": "Invoices",
-      "featured": true
+      "featured": true,
+      "category": "Money"
     },
     {
       "slug": "how-to-learn-online",
       "shortTitle": "Learn online",
       "navLabel": "Learning",
-      "featured": true
+      "featured": true,
+      "category": "Learning"
     },
     {
       "slug": "everyday-work-english",
       "shortTitle": "Work English",
       "navLabel": "English",
-      "featured": true
+      "featured": true,
+      "category": "Learning"
     },
     {
       "slug": "workplace-writing-grammar-canada",
       "shortTitle": "Workplace writing",
       "navLabel": "Writing",
-      "featured": true
+      "featured": true,
+      "category": "Learning"
     },
     {
       "slug": "everyday-math-numeracy",
       "shortTitle": "Everyday math",
       "navLabel": "Numeracy",
-      "featured": true
+      "featured": true,
+      "category": "Learning"
     },
     {
       "slug": "project-management-basics",
       "shortTitle": "Project basics",
       "navLabel": "Projects",
-      "featured": true
+      "featured": true,
+      "category": "Work"
     },
     {
       "slug": "writing-simple-grant-application-canada",
       "shortTitle": "Grant writing",
       "navLabel": "Grants",
-      "featured": true
+      "featured": true,
+      "category": "Community"
     },
     {
       "slug": "email-online-safety",
       "shortTitle": "Email & Online Safety",
       "navLabel": "Email safety",
-      "featured": true
+      "featured": true,
+      "category": "Safety"
     },
     {
       "slug": "sin-cra-getting-paid",
       "shortTitle": "SIN, CRA & getting paid",
       "navLabel": "SIN and pay",
-      "featured": true
+      "featured": true,
+      "category": "Money"
+    },
+    {
+      "slug": "conversational-spanish-beginners",
+      "shortTitle": "Spanish",
+      "navLabel": "Spanish",
+      "featured": false,
+      "category": "Languages"
+    },
+    {
+      "slug": "signed-language-awareness-asl-canada",
+      "shortTitle": "Signed language",
+      "navLabel": "Signing",
+      "featured": false,
+      "category": "Languages"
+    },
+    {
+      "slug": "canadian-banking-budgeting-credit-reports",
+      "shortTitle": "Banking",
+      "navLabel": "Banking",
+      "featured": false,
+      "category": "Money"
+    },
+    {
+      "slug": "alberta-renting-tenant-rights",
+      "shortTitle": "Renting",
+      "navLabel": "Renting",
+      "featured": false,
+      "category": "Health and home"
+    },
+    {
+      "slug": "alberta-health-care-basics",
+      "shortTitle": "Health care",
+      "navLabel": "Health",
+      "featured": false,
+      "category": "Health and home"
+    },
+    {
+      "slug": "medical-words-plain-language",
+      "shortTitle": "Medical words",
+      "navLabel": "Medical",
+      "featured": false,
+      "category": "Health and home"
+    },
+    {
+      "slug": "powerpoint-basics-canada",
+      "shortTitle": "PowerPoint",
+      "navLabel": "Slides",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "google-workspace-basics",
+      "shortTitle": "Google Workspace",
+      "navLabel": "Google",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "excel-next-steps-canada",
+      "shortTitle": "Excel next steps",
+      "navLabel": "Tables",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "starting-small-activity-micro-business-canada",
+      "shortTitle": "Small business",
+      "navLabel": "Business",
+      "featured": false,
+      "category": "Work"
+    },
+    {
+      "slug": "supervision-working-with-people-at-work",
+      "shortTitle": "Supervision",
+      "navLabel": "Supervision",
+      "featured": false,
+      "category": "Work"
+    },
+    {
+      "slug": "caec-study-skills-support",
+      "shortTitle": "CAEC study skills",
+      "navLabel": "CAEC",
+      "featured": false,
+      "category": "Learning"
+    },
+    {
+      "slug": "what-is-ai-plain-language",
+      "shortTitle": "What is AI",
+      "navLabel": "AI",
+      "featured": false,
+      "category": "Safety"
+    },
+    {
+      "slug": "simple-graphics-community-notices",
+      "shortTitle": "Community notices",
+      "navLabel": "Notices",
+      "featured": false,
+      "category": "Community"
+    },
+    {
+      "slug": "building-very-simple-web-page",
+      "shortTitle": "Simple web page",
+      "navLabel": "Web page",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "wordpress-small-site-basics-community-group",
+      "shortTitle": "Small websites",
+      "navLabel": "WordPress",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "taking-better-photos-camera-you-have",
+      "shortTitle": "Better photos",
+      "navLabel": "Photos",
+      "featured": false,
+      "category": "Community"
+    },
+    {
+      "slug": "keyboarding-typing-practice",
+      "shortTitle": "Keyboarding",
+      "navLabel": "Typing",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "privacy-personal-information-canada",
+      "shortTitle": "Privacy",
+      "navLabel": "Privacy",
+      "featured": false,
+      "category": "Safety"
+    },
+    {
+      "slug": "alberta-employment-standards-information",
+      "shortTitle": "Employment standards",
+      "navLabel": "Pay rules",
+      "featured": false,
+      "category": "Work"
+    },
+    {
+      "slug": "customer-service-workplace-communication",
+      "shortTitle": "Customer service",
+      "navLabel": "Service",
+      "featured": false,
+      "category": "Work"
+    },
+    {
+      "slug": "introductory-french-daily-life-canada",
+      "shortTitle": "French",
+      "navLabel": "French",
+      "featured": false,
+      "category": "Languages"
+    },
+    {
+      "slug": "data-spreadsheet-lists-charts-plain",
+      "shortTitle": "Spreadsheet lists",
+      "navLabel": "Data",
+      "featured": false,
+      "category": "Computers"
+    },
+    {
+      "slug": "online-safety-next-steps-canada",
+      "shortTitle": "Online safety next",
+      "navLabel": "Accounts",
+      "featured": false,
+      "category": "Safety"
+    },
+    {
+      "slug": "nonprofit-volunteer-group-basics-canada",
+      "shortTitle": "Nonprofits",
+      "navLabel": "Groups",
+      "featured": false,
+      "category": "Community"
     },
     {
       "slug": "winter-safety-rural-alberta",

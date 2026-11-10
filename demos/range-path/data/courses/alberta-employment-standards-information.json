@@ -1,0 +1,514 @@
+{
+  "slug": "alberta-employment-standards-information",
+  "title": "Alberta Employment Standards (Information Only)",
+  "summary": "By the end, learners can describe, in plain language, Alberta’s worker-side minimums for pay, overtime hours, vacation and general holidays, job-protected leaves, and notice when a job ends, and know how to make an employment-standards complaint — without treating this course as legal advice, and without repeating another course’s hours-of-rest pointer.",
+  "goals": "By the end, learners can describe, in plain language, Alberta’s worker-side minimums for pay, overtime hours, vacation and general holidays, job-protected leaves, and notice when a job ends, and know how to make an employment-standards complaint — without treating this course as legal advice, and without repeating another course’s hours-of-rest pointer.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, HR certificate, or legal advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Getting paid at least the minimum",
+      "html": "<p>Alberta’s Employment Standards Code sets minimum standards that employers must provide to employees. This lesson is for people who are paid to work, not for people who are writing payroll rules.</p>\n<p>As of 10 November 2026 (America/Regina), Alberta’s minimum-wage page said employers must pay at least the minimum wage. The general minimum wage for most employees was <strong>$15 an hour</strong>. A lower student rate of <strong>$13 an hour</strong> can apply to students under 18, with restrictions. Separate weekly or monthly minimums apply to some salespersons and to some domestic employees. Wages do not include tips or expense money.</p>\n<p>Employers must also follow payment-of-earnings rules. They must pay at least once a month, or on a daily, weekly, bi-weekly, or semi-monthly pay period. They must pay you within <strong>10 consecutive days</strong> after the end of the pay period, unless employment has ended. You must be paid in Canadian currency, by cash, cheque, or direct deposit into an account of your choice. You are not considered paid until you have received the funds.</p>\n<p>At the end of each pay period, your employer must give you a statement of earnings. That statement should show the period, regular and overtime hours, wage and overtime rates, each kind of earning listed separately (such as wages, overtime, general holiday pay, and vacation pay), deductions and the reason for each one, and any hours taken off instead of overtime.</p>\n<p>These figures can change. Check the live pages before you rely on a number.</p>",
+      "sources": [
+        {
+          "label": "Employment standards rules – Minimum wage",
+          "url": "https://www.alberta.ca/minimum-wage"
+        },
+        {
+          "label": "Employment standards rules – Payment of earnings",
+          "url": "https://www.alberta.ca/payment-earnings"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "As of 10 November 2026, Alberta’s general minimum wage on the official page was $15 an hour for most employees.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Tips count as wages when an employer checks the minimum wage.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Employers must usually pay you within 10 consecutive days after the end of the pay period.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is legal advice about your exact paycheque.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Overtime hours and overtime pay",
+      "html": "<p>Hours of work matter for what you are owed. Daily maximums, rest breaks, and days of rest are set out on Alberta’s “Hours of work and rest” page. Another Range Path course already maps those rest-and-break rules for people who supervise. This lesson does not repeat that list. If you need breaks or a weekly day of rest, read the live hours page.</p>\n<p>This lesson covers <strong>overtime</strong>, which that other course did not teach.</p>\n<p>As of 10 November 2026 (America/Regina), Alberta’s overtime page said overtime is all hours worked over <strong>8 hours a day</strong> or <strong>44 hours a week</strong>, whichever is greater. That is called the <strong>8/44 rule</strong>. Most employees, including people paid a salary, are entitled to overtime pay. There are exemptions for some industries and professions — check the live page rather than guessing.</p>\n<p>Except where there is a written overtime agreement, an employer must pay overtime of at least <strong>1.5 times</strong> your regular wage rate for overtime hours. Instead of paying that money, an employer may give time off with pay (banked overtime) at a rate of at least one hour off for each overtime hour, but only as part of an overtime agreement. Banked time must usually be used within 6 months of the end of the pay period in which you earned it, unless a collective agreement says otherwise.</p>\n<p>Employers and employees cannot make an agreement that pays less than the Code’s minimum overtime. If your workplace uses an averaging arrangement or is in an industry with different overtime rules, read those pages before you do the math.</p>",
+      "sources": [
+        {
+          "label": "Employment standards rules – Overtime hours and overtime pay",
+          "url": "https://www.alberta.ca/overtime-hours-overtime-pay"
+        },
+        {
+          "label": "Employment standards rules – Hours of work and rest (for rest and daily maximums, not repeated here)",
+          "url": "https://www.alberta.ca/hours-work-rest"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Under Alberta’s basic 8/44 rule, overtime is hours over 8 in a day or 44 in a week, whichever is greater.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Overtime pay must be at least 1.5 times the regular wage rate unless a written overtime agreement applies.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course repeats the full rest-break table from the supervision course.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Some industries and professions have different overtime rules or exemptions.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Vacation and general holidays",
+      "html": "<p>Most employees — full-time and part-time — are entitled to vacation time and vacation pay. As of 10 November 2026 (America/Regina), Alberta’s vacation page said you must usually work for <strong>one year</strong> before you are entitled to vacation time. After that, the minimums are:</p>\n<ul>\n<li><strong>2 weeks</strong> with pay after each of the first 4 years of employment</li>\n<li><strong>3 weeks</strong> with pay after 5 consecutive years of employment</li>\n</ul>\n<p>For people paid hourly, weekly, or by commission, vacation pay is generally <strong>4%</strong> of wages for the 2-week entitlement and <strong>6%</strong> after 5 years. If employment ends before 12 months, the employer must pay 4% of the wages you earned. Time on a job-protected leave counts toward your length of employment for vacation.</p>\n<p>Employers must give vacation, and employees must take it. It should be one unbroken period unless you ask in writing to split it. If you cannot agree on dates, the employer can decide, but must give at least 2 weeks’ written notice of the start date.</p>\n<p>Alberta has <strong>9 general holidays</strong>, also called statutory holidays: New Year’s Day, Alberta Family Day, Good Friday, Victoria Day, Canada Day, Labour Day, Thanksgiving Day, Remembrance Day, and Christmas Day. Employers may choose to recognize extra days, such as Heritage Day or the National Day for Truth and Reconciliation.</p>\n<p>You are generally eligible for general holiday pay if you have worked for the same employer for at least <strong>30 workdays</strong> in the 12 months before the holiday. What you are owed then depends on whether the holiday is a regular day of work for you and whether you work that day. The official page explains those calculations. This course does not walk through every formula.</p>",
+      "sources": [
+        {
+          "label": "Employment standards rules – Vacations and vacation pay",
+          "url": "https://www.alberta.ca/vacation-pay"
+        },
+        {
+          "label": "Employment standards – Alberta general holidays",
+          "url": "https://www.alberta.ca/alberta-general-holidays"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "After one year, most employees are entitled to at least 2 weeks of vacation with pay, rising to 3 weeks after 5 consecutive years.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta has 9 general holidays, and employers may recognize additional days.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You usually need to have worked at least 30 workdays in the 12 months before a general holiday to be eligible for holiday pay.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Vacation pay percentages on the official page never change with length of service.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Job-protected leaves and ending employment",
+      "html": "<p><strong>Job-protected leaves</strong> give you time off to deal with life events without losing your job. As of 10 November 2026 (America/Regina), Alberta said employees are eligible for most of these leaves after <strong>90 days</strong> with the same employer. The leaves are unpaid, though Employment Insurance may provide income support in some cases.</p>\n<p>Alberta lists leaves such as bereavement, compassionate care, critical illness, domestic violence, long-term illness and injury, maternity and parental leave, personal and family responsibility, and others. Each leave has its own length and notice rules. Read the page for the leave that applies to you before you give notice.</p>\n<p><strong>Ending a job</strong> also has written-notice rules. Notice is not required if employment is 90 days or less. If you resign after that, you must usually give <strong>1 week</strong> of written notice if you have worked less than 2 years, or <strong>2 weeks</strong> if you have worked 2 years or more.</p>\n<p>If the employer ends the job — and it is not just cause or another listed exception — written notice grows with your service: 1 week (more than 90 days but less than 2 years), 2 weeks (2 to less than 4 years), 4 weeks (4 to less than 6), 5 weeks (6 to less than 8), 6 weeks (8 to less than 10), or 8 weeks (10 years or more). The employer may pay termination pay instead of notice, or use a mix of both.</p>\n<p>During a notice period, the employer cannot reduce your earnings or require you to use vacation or banked overtime. Final earnings must be paid within 10 calendar days after the end of the pay period in which the job ended, or 31 calendar days after your last day. This course does not advise anyone on dismissing a person or on common-law severance.</p>",
+      "sources": [
+        {
+          "label": "Job-protected leaves",
+          "url": "https://www.alberta.ca/job-protected-leaves"
+        },
+        {
+          "label": "Employment standards – Termination and lay-off",
+          "url": "https://www.alberta.ca/employment-standards-termination-and-lay-off"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Most job-protected leaves are available after 90 days with the same employer and are unpaid.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Notice is not required when employment has lasted 90 days or less.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "After 10 years of service, the employer notice period on the official table is 8 weeks (unless an exception applies).",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells an employer how to dismiss someone for just cause.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "How to make an employment standards complaint",
+      "html": "<p>If you think your employer is not following the Employment Standards Code, you can make a complaint. Talk to your employer first. Alberta says that is the first step in trying to resolve the issue.</p>\n<p>You may complain while you are still employed, or at any time up to <strong>6 months</strong> after your last day of employment. Complaints can be submitted online at no cost. They must be truthful. Your employer cannot terminate your employment because you make, or are about to make, a complaint.</p>\n<p>A formal complaint can lead to pay you are owed or to other issues being resolved. Your name will be associated with the complaint and shared with the employer. That is different from an anonymous tip, which does not use your name and will not update you on the result.</p>\n<p>Employment Standards can look at issues the Code covers, such as wages, overtime, minimum wage, vacation, general holiday pay, pay statements, unauthorized deductions, hours of work and rest, job-protected leaves, and termination. It does not handle Records of Employment, Employment Insurance, occupational health and safety, WCB claims, human-rights complaints, or tax deductions. Those belong to other offices.</p>\n<p>Before you start, wait one pay period if the issue is about wages or other earnings, in case the next pay statement fixes it. Waiting is not required for urgent matters such as job-protected leaves. Gather documents that help, such as your wage, the employer’s address, two ways to contact you, timesheets, and your employment contract if you have one.</p>\n<p>You need an Alberta.ca Account to submit the online complaint. Work must have been performed in Alberta, in a provincially regulated industry, by an employee (not a contractor). If you are in a union, issues are often handled through a grievance, not this complaint.</p>",
+      "sources": [
+        {
+          "label": "Make an employment standards complaint",
+          "url": "https://www.alberta.ca/file-employment-standards-complaint"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Talking with your employer is the first step before submitting a complaint.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You may file a complaint while you still work there, or up to 6 months after your last day.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "There is no cost to submit an employment standards complaint online.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An employer may fire you because you are about to make an employment standards complaint.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving.",
+    "questions": [
+      {
+        "prompt": "This course is legal advice about your specific job.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      },
+      {
+        "prompt": "As of 10 November 2026, Alberta’s general minimum wage on the official page was $15 an hour for most employees.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      },
+      {
+        "prompt": "The basic overtime rule is hours over 8 in a day or 44 in a week, whichever is greater.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      },
+      {
+        "prompt": "After one year, most employees are entitled to at least 2 weeks of vacation, and 3 weeks after 5 consecutive years.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      },
+      {
+        "prompt": "Most job-protected leaves become available after 90 days and are unpaid.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      },
+      {
+        "prompt": "Notice is not required when employment has lasted 90 days or less.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      },
+      {
+        "prompt": "You have only 6 days after leaving a job to make an employment standards complaint.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Check live pages for current dollar figures and tables. Know the 8/44 overtime rule, vacation and holiday basics, 90-day leave eligibility, notice when a job ends, and that you can complain online at no cost within 6 months of leaving."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information for workers about Alberta employment standards, based on official Government of Alberta pages. It is not legal advice, not an HR course, and not a guide for supervisors on how to hire, discipline, or dismiss someone. Rules can change, and some jobs have exceptions. If a page differs from the legislation, Alberta says the legislation is considered correct. Always check the live official page, and get help from Alberta Employment Standards or a qualified advisor if you have a real workplace problem.",
+    "builderNotes": "- Sources verified live on 10 November 2026 (America/Regina): alberta.ca pages for minimum wage, payment of earnings, overtime, vacation-pay, general holidays, job-protected leaves, termination and lay-off, and file-employment-standards-complaint.\n- Date-stamp before rebuilds: $15 / $13 minimum wage; 8/44 overtime and 1.5x; vacation 2 weeks/4% and 3 weeks/6%; 9 named general holidays and 30-workday eligibility; 90-day leave rule; employee and employer notice tables; 10-day / 31-day final-pay options; 6-month complaint window.\n- Do **not** repeat the supervision course’s Lesson 4 pointer: the 12-hour day / 30-minute break / one-day-of-rest list, manager-supervisor hour exemptions as the teaching example, or the Employment Standards question-line numbers (780-427-3731 / 1-877-427-3731) and “online question form cannot file a complaint.” Point to hours-of-work-rest without reciting that table.\n- Dropped as too detailed or off-scope: holiday 5-of-9 calculations and all pay-formula options; full industry-exemption lists; student-wage 28-hour rule; meal and lodging deduction amounts ($3.35 / $4.41); constructive dismissal; just-cause catalogue; group terminations of 50+; temporary layoff 90-in-120 days; common-law severance (one line that it is not required under the Code would be enough if rebuilt); individual leave medical-certificate and notice details beyond the overview page.\n- Worker-side only. Not an employer how-to on hiring, discipline, or dismissal.\n- No Ed2Go US employment-law text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-alberta-employment-standards-information.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a pay information page."
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "slug": "alberta-health-care-basics",
+  "title": "Alberta Health Care Basics (AHCIP, 811, and Finding a Provider)",
+  "summary": "By the end, learners can describe what AHCIP is, point to the official eligibility and application pages without deciding their own coverage, explain how to apply through a registry agent, show a health card with photo identification, find providers on Alberta Find a Provider, and choose 911 for a medical emergency and 811 for 24/7 health advice.",
+  "goals": "By the end, learners can describe what AHCIP is, point to the official eligibility and application pages without deciding their own coverage, explain how to apply through a registry agent, show a health card with photo identification, find providers on Alberta Find a Provider, and choose 911 for a medical emergency and 811 for 24/7 health advice.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or medical, emergency, or immigration advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Finding the right door: 911, 811, and AHCIP",
+      "html": "<p>Alberta’s public health plan is the <strong>Alberta Health Care Insurance Plan (AHCIP)</strong>. The official AHCIP page says it is a publicly funded program that provides eligible Alberta residents with coverage for medically necessary physician and hospital services in Alberta and in other Canadian provinces. Residents must register to receive those services. The page also says AHCIP does not cover everything. Albertans often need extra insurance for expenses such as prescription drugs, dental care, and vision care.</p>\n<p>This course does not tell you which clinic to visit for a symptom, and it does not treat you.</p>\n<p>Alberta’s “Know Your Options” page says: if you are unsure where to go for care, call <strong>Health Link 811</strong> for 24/7 advice on your symptoms and care options. The same page says to call <strong>911</strong> if you or someone you know is having a medical emergency. MyHealth Alberta’s important-numbers page lists <strong>911</strong> for ambulance, fire, and police, and <strong>811</strong> for free nurse advice and general health information, both 24 hours.</p>\n<p>Primary Care Alberta’s newcomers page says that for most health concerns, <strong>primary care</strong> is the first step. That includes family doctors, nurse practitioners, and other providers who help with everyday needs such as checkups, prescriptions, long-term conditions, mental health concerns, and referrals.</p>\n<p>If you are in crisis because of suicide, the Know Your Options page also lists <strong>988</strong> for immediate suicide crisis supports. That is separate from 811.</p>",
+      "sources": [
+        {
+          "label": "Alberta Health Care Insurance Plan (AHCIP) — Alberta.ca",
+          "url": "https://www.alberta.ca/ahcip"
+        },
+        {
+          "label": "Know Your Options — Alberta.ca",
+          "url": "https://www.alberta.ca/know-your-options"
+        },
+        {
+          "label": "Important Phone Numbers — MyHealth Alberta",
+          "url": "https://myhealth.alberta.ca/Pages/Emergency-Phone-Numbers.aspx"
+        },
+        {
+          "label": "Information for newcomers to Alberta — Primary Care Alberta",
+          "url": "https://www.primarycarealberta.ca/page14150.aspx"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "If you are having a medical emergency, official pages say to call:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "911"
+            },
+            {
+              "id": "B",
+              "text": "Only a social media group"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Health Link 811 is described as 24/7 advice on symptoms and care options.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "AHCIP covers every possible health cost, including all dental and vision bills.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course can diagnose your symptoms.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Eligibility is decided on the official application",
+      "html": "<p>To get a health card and be covered for insured services, you must be registered with AHCIP. The apply page says <strong>eligibility cannot be determined</strong> until your application and required documents are received and reviewed. This course cannot decide if you qualify.</p>\n<p>The official eligibility page (as of November 2026) listed that you are eligible if you are legally entitled to be in and remain in Canada and make your permanent home in Alberta; are committed to being physically present in Alberta for at least <strong>183 days</strong> in any 12-month period; are not claiming residency or benefits as a resident of another province, territory, or country; and are not excluded by the rules about tourists, transients, or visitors. The page also lists groups who are described as not eligible, and it has separate information for people moving to Alberta, temporary residents, and refugees. Read that live page. Do not use this lesson as immigration advice.</p>\n<p>When you move to Alberta from another province or country, the page says there <strong>may be a waiting period</strong> before you become eligible. It does not give one number for every situation on that page, so this course does not invent one.</p>\n<p>If coverage is denied or cancelled, the eligibility page explains how to request an eligibility review by writing to the AHCIP office. That is an official process, not something this course can do for you.</p>\n<p>Dependants and family registration rules are also on that page. Ask a registry agent or read the live text if your family situation is complicated.</p>",
+      "sources": [
+        {
+          "label": "Apply for AHCIP coverage — Alberta.ca",
+          "url": "https://www.alberta.ca/ahcip-apply"
+        },
+        {
+          "label": "AHCIP eligibility — Alberta.ca",
+          "url": "https://www.alberta.ca/ahcip-eligibility"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course can decide whether you are eligible for AHCIP.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Official pages say eligibility cannot be determined until the application and documents are reviewed.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The eligibility page is the place to read who is described as eligible or not eligible.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson is immigration advice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "How to apply",
+      "html": "<p>All new and returning eligible Alberta residents must register for AHCIP to receive a personal health card and insured hospital and health services.</p>\n<p>As of November 2026, the “How to apply” page listed these steps:</p>\n<ol>\n<li>Read the eligibility requirements.</li>\n<li>Complete the Application form for AHCIP Coverage (forms are also available from a registry agent). There is a different form for some Canadian children of parents who are not eligible — use it only if the page says it fits your situation.</li>\n<li>Gather original supporting documents that prove <strong>Alberta residency</strong>, <strong>identity</strong>, and <strong>legal entitlement to be in and remain in Canada</strong>. The page lists examples such as an Alberta driver’s licence or a rental agreement for residency, and a passport or other government identity documents. If required documents are missing, the application cannot be processed.</li>\n<li>Bring the completed form and your <strong>original</strong> documents to a <strong>registry agent</strong>. The page said there is <strong>no charge</strong> for this service. Processing time can take <strong>up to 5 days</strong>. Paper cards are mailed to your home, so give a current mailing address.</li>\n</ol>\n<p>Coverage begins once your application has been approved and you are registered. If you need care before you have your card, you may be asked to pay or be billed if you do not have other insurance. <strong>You will not be refused emergency care.</strong></p>\n<p>When you use services, you will need to show your personal health card (paper or mobile) along with photo identification.</p>\n<p>This course does not fill in the form or choose documents for you.</p>",
+      "sources": [
+        {
+          "label": "How to apply for AHCIP — Alberta.ca",
+          "url": "https://www.alberta.ca/ahcip-how-to-apply"
+        },
+        {
+          "label": "Apply for AHCIP coverage — Alberta.ca",
+          "url": "https://www.alberta.ca/ahcip-apply"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You apply for AHCIP by taking your form and original documents to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A registry agent"
+            },
+            {
+              "id": "B",
+              "text": "Any grocery checkout"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Official pages say you will not be refused emergency care while you wait for a card.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Coverage begins once the application is approved and you are registered.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course can complete the AHCIP form for you.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Your health card and finding a provider",
+      "html": "<p>After you register, you receive a personal health card. The health-cards page says the card is proof you are eligible for medically necessary physician services, insured hospital services, and some dental and oral surgical services under AHCIP.</p>\n<p>Alberta describes more than one card type: an <strong>integrated card</strong> (a driver’s licence or ID card with your personal health number on the back), a <strong>mobile health card</strong> in Alberta Wallet, and a <strong>standalone</strong> paper card. All of them provide access to insured services.</p>\n<p>If you have a standalone or mobile card, always present it with valid <strong>photo identification</strong> when you visit a doctor, hospital, or other health facility in Alberta, or while visiting another province or territory.</p>\n<p>As of November 2026, the page said that effective July 2, 2026, new health cards include an expiry date. Coverage stays valid if the card is not expired and you still live in Alberta and meet eligibility rules. You must revalidate at a registry agent on or before the expiry date. Check the live page for your card type.</p>\n<p>To find someone taking patients, Primary Care Alberta and Alberta Find a Provider point you to <strong>albertafindaprovider.ca</strong>. You can look for a clinic, family doctor, or nurse practitioner taking patients near you. The site also describes walk-in clinics as non-emergency care without an appointment for minor illnesses, injuries, and general health. Having a regular family doctor or team is described there as helpful for ongoing care.</p>\n<p>This course does not book your appointment.</p>",
+      "sources": [
+        {
+          "label": "Health cards — Alberta.ca",
+          "url": "https://www.alberta.ca/health-cards"
+        },
+        {
+          "label": "How to apply for AHCIP — Alberta.ca",
+          "url": "https://www.alberta.ca/ahcip-how-to-apply"
+        },
+        {
+          "label": "Alberta Find a Provider",
+          "url": "https://albertafindaprovider.ca/"
+        },
+        {
+          "label": "Information for newcomers to Alberta — Primary Care Alberta",
+          "url": "https://www.primarycarealberta.ca/page14150.aspx"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "When you visit a doctor or hospital with a standalone or mobile health card, official pages say to also show:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Valid photo identification"
+            },
+            {
+              "id": "B",
+              "text": "Your social media password"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta Find a Provider is a place to see if a clinic, family doctor, or nurse practitioner is taking patients.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Walk-in clinics, on the Find a Provider site, are described as non-emergency care without an appointment.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course will book your doctor appointment.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Health Link 811 and language access",
+      "html": "<p><strong>Health Link 811</strong> is Alberta’s 24-hour health-advice line. Primary Care Alberta says that for free health advice 24/7, you can call 811 and speak with a <strong>registered nurse</strong>. Alberta’s Know Your Options page says to call 811 if you are unsure where to go, for advice on your symptoms and care options.</p>\n<p>The newcomers page also says you can call 811 <strong>24 hours a day, 365 days a year</strong> to receive health advice in your language. Say the language you need when the call is answered, and a medical interpreter will be added to translate.</p>\n<p>811 is advice and navigation. It is not the same as calling <strong>911</strong> for a medical emergency. If you are not sure which number to use, the official “unsure where to go” instruction is to call 811 — unless it is an emergency, in which case call 911.</p>\n<p>MyHealth Alberta’s numbers page also lists other lines, including <strong>211</strong> for community and social services and the Poison and Drug Information Service (<strong>PADIS</strong>) at 1-800-332-1414. Use those official listings; this course is not a poison-control class.</p>\n<p>If you want information in writing, Primary Care Alberta notes that some health-system resources are translated into languages commonly used in Alberta.</p>\n<p>Keep your health card and photo ID together. Register or update your AHCIP information at a registry agent, not by emailing this course.</p>",
+      "sources": [
+        {
+          "label": "Information for newcomers to Alberta — Primary Care Alberta",
+          "url": "https://www.primarycarealberta.ca/page14150.aspx"
+        },
+        {
+          "label": "Know Your Options — Alberta.ca",
+          "url": "https://www.alberta.ca/know-your-options"
+        },
+        {
+          "label": "Important Phone Numbers — MyHealth Alberta",
+          "url": "https://myhealth.alberta.ca/Pages/Emergency-Phone-Numbers.aspx"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Primary Care Alberta says that when you call 811 you can speak with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A registered nurse"
+            },
+            {
+              "id": "B",
+              "text": "A weather reporter"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You can ask 811 for health advice in your language by saying the language you need.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "811 replaces 911 during a medical emergency.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is medical advice about your symptoms.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go.",
+    "questions": [
+      {
+        "prompt": "This course can diagnose you or decide your AHCIP eligibility.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      },
+      {
+        "prompt": "For a medical emergency, official pages say to call 911.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      },
+      {
+        "prompt": "Health Link 811 offers 24/7 health advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      },
+      {
+        "prompt": "You apply for AHCIP through a registry agent with original documents.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      },
+      {
+        "prompt": "Coverage begins once the application is approved and you are registered.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      },
+      {
+        "prompt": "Alberta Find a Provider helps you look for clinics or providers taking patients.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      },
+      {
+        "prompt": "AHCIP covers every dental, vision, and prescription-drug bill.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Register on the official pages, call 911 in an emergency, and call 811 when you need health advice or help choosing where to go."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is navigation only. It explains how to find official Alberta health-coverage and care-access pages. It is not medical advice, not a diagnosis, not treatment, and not emergency instruction. It cannot decide whether you are eligible for the Alberta Health Care Insurance Plan (AHCIP). If you are having a medical emergency, call 911. For health advice about symptoms or where to go, official pages say to call Health Link 811. This is not immigration advice.",
+    "builderNotes": "- Navigation only. Never diagnose, treat, or decide eligibility.\n- Date-stamp and re-check: 183-day presence wording; “up to 5 days” processing; no charge at registry agents; July 2, 2026 health-card expiry change; PADIS 1-800-332-1414. Do not invent a waiting-period length when moving from another province (the eligibility page said only that there may be a waiting period).\n- Do not expand into refugee, Canadian Armed Forces, or other status lists as immigration advice; point to the live eligibility page.\n- Do not list emergency symptoms (chest pain, and so on) unless a fetched official page lists them.\n- No MedlinePlus or other US consumer encyclopedias.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-alberta-health-care-basics.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a health cross."
+  }
+}

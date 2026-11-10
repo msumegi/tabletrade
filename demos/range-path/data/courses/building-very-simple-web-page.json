@@ -1,0 +1,506 @@
+{
+  "slug": "building-very-simple-web-page",
+  "title": "Building a Very Simple Web Page",
+  "summary": "By the end, learners can plan a tiny one-page site, explain that HTML is a markup language that structures content, create a basic index.html file with a title, heading, and paragraph, add a list and a link, and add an image with alternative text — then open the file in a browser.",
+  "goals": "By the end, learners can plan a tiny one-page site, explain that HTML is a markup language that structures content, create a basic index.html file with a title, heading, and paragraph, add a list and a link, and add an image with alternative text — then open the file in a browser.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, or professional web-developer certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Plan a tiny page first",
+      "html": "<p>A web page is a file your browser can show. This course helps you make one simple page on your own computer. It is not training to become a professional web developer.</p>\n<p>MDN Web Docs, the official learning site from Mozilla, says you should plan before you write code. For a first try, keep things simple. MDN starts with a page that has a heading, an image, and a few paragraphs.</p>\n<p>Answer these questions, in your own words:</p>\n<ol>\n<li>What is the page about? For this course, pick something small and local, such as a community supper, a library hour, or a hobby.</li>\n<li>What information will you present? Write a title and a few short paragraphs. Think of one picture you would like to show.</li>\n<li>What should it look like in simple terms? A plain background and a clear font are enough.</li>\n</ol>\n<p>MDN also suggests sketching the page on paper. You do not need to be an artist. A few boxes for the title, the picture, and the words will help you see the order.</p>\n<p>Write your sentences first, just as you would for a community notice. Use common words. Include the facts a reader needs. You will turn those sentences into a web page in the next lessons.</p>\n<p>Do not worry yet about colours, menus, or online shops. A first page that opens on your computer is a complete success for this course.</p>",
+      "sources": [
+        {
+          "label": "What will your website look like? — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/What_will_your_website_look_like"
+        },
+        {
+          "label": "HTML: Creating the content — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "MDN recommends planning a first page before you write code.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A good first project is a huge online store with many pages.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a professional web-developer credential.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A first simple page can have a heading, some paragraphs, and one image.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "What HTML is",
+      "html": "<p><strong>HTML</strong> stands for HyperText Markup Language. MDN says it is the code used to structure a web page and its content. HTML is a <strong>markup</strong> language: you wrap pieces of text in <strong>elements</strong> so the browser knows what each piece is — a heading, a paragraph, a list, and so on.</p>\n<p>Most HTML elements have three parts:</p>\n<ul>\n<li>an <strong>opening tag</strong>, such as <code>&lt;p&gt;</code></li>\n<li>the content (the words)</li>\n<li>a <strong>closing tag</strong>, such as <code>&lt;/p&gt;</code></li>\n</ul>\n<p>Together they make an element: <code>&lt;p&gt;Friday supper at the hall.&lt;/p&gt;</code>. The letter <code>p</code> stands for paragraph.</p>\n<p>Some elements also have <strong>attributes</strong>. An attribute adds extra information inside the opening tag. You will use attributes later for links and pictures.</p>\n<p>If you type a list of words with no HTML, the browser may show them all in one block. When you wrap them in the right elements, the browser can show a paragraph and separate list items.</p>\n<p>HTML can also make a word into a link, place an image on the page, or build a table. This course stays with the basics: headings, paragraphs, lists, one link, and one image.</p>\n<p>You do not need special paid software. A plain text editor that can save a file, plus a web browser, is enough. Save the file with a name that ends in <code>.html</code>.</p>\n<p>This is not a secret language for experts only. It is a set of labels you put around your own words.</p>",
+      "sources": [
+        {
+          "label": "HTML: Creating the content — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "HTML is a markup language that structures a web page and its content.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A paragraph element uses an opening tag and a closing tag around the words.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You must buy professional coding software to try HTML.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "An attribute adds extra information inside an opening tag.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Create your first HTML file",
+      "html": "<p>MDN walks beginners through a first file called <code>index.html</code>. You can make a folder on your computer, create that file, and type a small page. Then open the file in your web browser to see it.</p>\n<p>A basic page has this kind of structure (this sample is original wording for a community page, not copied from MDN’s demo text):</p>\n<p><code></code><code> &lt;!doctype html&gt; &lt;html lang=&quot;en&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;title&gt;Community supper&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Community supper&lt;/h1&gt; &lt;p&gt;Friday at 6:00 p.m. at the hall.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt; </code><code></code></p>\n<p>MDN explains the main pieces:</p>\n<ul>\n<li><code>&lt;!doctype html&gt;</code> tells the browser this is an HTML page.</li>\n<li><code>&lt;html&gt;</code> wraps the whole page. The <code>lang</code> attribute sets the main language. Use <code>en</code> or <code>fr</code> (or <code>en-CA</code>) to match your words.</li>\n<li><code>&lt;head&gt;</code> holds information that is not the main story on the page, such as the character set and the title.</li>\n<li><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code> helps the browser show letters and accents correctly.</li>\n<li><code>&lt;title&gt;</code> is the name that appears in the browser tab.</li>\n<li><code>&lt;body&gt;</code> holds what people see: headings, paragraphs, pictures, and links.</li>\n</ul>\n<p>Type carefully. A missing <code>&gt;</code> or a forgotten closing tag can change how the page looks. Save the file, then open <code>index.html</code> in your browser. You should see your heading and paragraph. If you do not, compare your file with the structure above.</p>\n<p>You have now made a real web page on your computer. That is the goal of this lesson.</p>",
+      "sources": [
+        {
+          "label": "HTML: Creating the content — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The <body> of an HTML page holds the content people see.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The <title> text appears in the browser tab.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should save the file with a name that ends in .html and open it in a browser.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The <head> is where you put the main story people read on the page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Headings, paragraphs, and lists",
+      "html": "<p>Once the file opens, add more of your own words using the elements MDN teaches.</p>\n<p><strong>Headings</strong> mark titles and subtitles. HTML has six heading levels, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. MDN says people often use only three or four levels. Use <code>&lt;h1&gt;</code> for the main title of the page. Use <code>&lt;h2&gt;</code> for a section under that title. Do not skip around without a reason.</p>\n<p><strong>Paragraphs</strong> go in <code>&lt;p&gt; ... &lt;/p&gt;</code>. Put each short paragraph in its own pair of tags.</p>\n<p><strong>Lists</strong> need two kinds of tags. For a list where order does not matter, such as what to bring, use an unordered list:</p>\n<p><code></code><code> &lt;ul&gt; &lt;li&gt;Your own mug&lt;/li&gt; &lt;li&gt;A warm coat&lt;/li&gt; &lt;/ul&gt; </code><code></code></p>\n<p><code>&lt;ul&gt;</code> starts the list. Each <code>&lt;li&gt;</code> is one item. For a list where order does matter, such as steps, use <code>&lt;ol&gt;</code> instead of <code>&lt;ul&gt;</code>. The browser will number those items for you.</p>\n<p>After each change, save the file and refresh the browser (or open the file again). That is how you check your work.</p>\n<p>Keep the page short. A heading, two or three paragraphs, and one list is plenty for this course. You are practising structure, not filling a long report.</p>\n<p>If something does not show up, look for a tag you opened but did not close.</p>",
+      "sources": [
+        {
+          "label": "HTML: Creating the content — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "<h1> is the main title heading on the page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An unordered list uses <ul> and <li>.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An ordered list, which numbers the steps, uses <ol> instead of <ul>.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should type a long report with no headings for your first page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Add a link and a picture with alternative text",
+      "html": "<p>Links are what turn pages into a “web.” MDN says you make a link with an <code>&lt;a&gt;</code> element (for “anchor”). Wrap the words people will click, then add an <code>href</code> attribute with the web address:</p>\n<p><code></code><code> &lt;a href=&quot;https://www.canada.ca&quot;&gt;Government of Canada&lt;/a&gt; </code><code></code></p>\n<p>Include the <code>https://</code> part at the start of the address. MDN warns that leaving off that protocol can send the browser to the wrong place. After you add a link, click it to check that it goes where you meant.</p>\n<p>Pictures use an <code>&lt;img&gt;</code> element. It is an empty element: it has no closing tag. It needs a <code>src</code> attribute (the path to the image file) and an <code>alt</code> attribute (a short description). MDN says alternative text helps people who cannot see the image, including people who use a screen reader, and it also appears if the picture file cannot be found.</p>\n<p>Write <code>alt</code> text that describes what the picture shows. “My test image” is not helpful. “Volunteers setting tables in the community hall” is better.</p>\n<p>A simple way to organize files, following MDN’s beginner pattern, is to put the picture in a folder named <code>images</code> beside your <code>index.html</code> file. Then the path looks like <code>images/hall.jpg</code> if that is your file name.</p>\n<p>Use only a photo you took or one you have permission to use. MDN notes that many images on the web are protected by copyright.</p>\n<p>Open the page in your browser again. You should see your words, your list, your link, and your picture. That completes this first page. Publishing the file on the public internet is a later skill and is not part of this course.</p>",
+      "sources": [
+        {
+          "label": "HTML: Creating the content — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+        },
+        {
+          "label": "What will your website look like? — MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/What_will_your_website_look_like"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A link uses an <a> element and an href attribute.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should include https:// at the start of a web address in href.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The alt attribute should describe what the picture shows.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course teaches you how to buy a domain and put the page on the public internet.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential.",
+    "questions": [
+      {
+        "prompt": "This course is a professional web-developer credential.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      },
+      {
+        "prompt": "HTML structures a page by wrapping content in elements.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      },
+      {
+        "prompt": "The <body> holds the content people see.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      },
+      {
+        "prompt": "You should plan a simple first page before you write a lot of code.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      },
+      {
+        "prompt": "An unordered list uses <ul> and <li>.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      },
+      {
+        "prompt": "Image alternative text is optional and can just say “image.”",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      },
+      {
+        "prompt": "A first page you open in a browser on your own computer is enough for this course.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan a tiny page, mark it up with HTML, and open the file in a browser. Add a list, a link with https://, and an image with useful alt text. This is not a professional coding credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is a first look at making a simple page you can open in a web browser. It is not a professional web-developer credential, a college coding course, or a promise that you can build or sell a website for a client. It does not teach how to buy a domain name or put a site on the public internet. Follow official documentation such as MDN Web Docs for current details.",
+    "builderNotes": "- Not a professional web-dev credential. Do not teach domains, hosting, JavaScript, CSS frameworks, or WordPress (WordPress is a later catalogue item).\n- Sample HTML in Lesson 3 is original community-supper wording, not copied from MDN’s “My test page” / Firefox-logo demo. The element names and structure follow MDN’s beginner explanation.\n- MDN’s planning page mentions Google Images, Google Fonts, and a colour picker. Those walkthroughs were not taught, to avoid product-endorsement and copyright traps. Lesson 5 tells learners to use a photo they took or have permission to use, which matches MDN’s copyright caution.\n- Viewport meta and CSS sizing were dropped as extra to a first CLB 4–5 page.\n- Official sources verified live on 10 November 2026 (America/Regina).\n- Canadian spelling in learner prose: *practise* if used, *colour* if used; HTML attribute names stay in English code as `lang`, `charset`, and so on.\n- No Ed2Go or Cengage web-design text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-building-very-simple-web-page.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a small web page."
+  }
+}

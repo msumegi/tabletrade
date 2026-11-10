@@ -1,0 +1,514 @@
+{
+  "slug": "online-safety-next-steps-canada",
+  "title": "Online Safety Next Steps",
+  "summary": "By the end, learners can turn on multi-factor authentication, follow official steps to recover an account, change default home-router settings and set up a guest network, use a simple checklist for kids’ devices and parental controls, and back up important files.",
+  "goals": "By the end, learners can turn on multi-factor authentication, follow official steps to recover an account, change default home-router settings and set up a guest network, use a simple checklist for kids’ devices and parental controls, and back up important files.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, or cybersecurity professional certificate, and it does not guarantee that an account cannot be hacked.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Add a second lock: multi-factor authentication",
+      "html": "<p>A password or passphrase is important, but Get Cyber Safe says even the strongest password cannot be 100% foolproof. <strong>Multi-factor authentication (MFA)</strong> adds an extra step when you sign in. If a cyber criminal ever gets your password, another defence is in place to stop them.</p>\n<p>Get Cyber Safe says MFA is more secure because it focuses on things that are unique to you:</p>\n<ul>\n<li><strong>What you know:</strong> a PIN, password, or security question</li>\n<li><strong>What you have:</strong> your phone or a fob</li>\n<li><strong>What you are:</strong> your fingerprint, your face, your eyes, or your voice</li>\n</ul>\n<p>The Canadian Centre for Cyber Security gives the same three kinds of factors. It says two or more <strong>different</strong> factors are needed to unlock a device or sign in. Something you know can be easy to compromise, which is why the Cyber Centre strongly recommends adding another factor when you can.</p>\n<p>Two-factor authentication (2FA) is a type of MFA that uses two different kinds of factors. A code sent to your phone is an example of “something you have.” A fingerprint is “something you are.”</p>\n<p>Most social media sites and many devices offer MFA in their security settings. Get Cyber Safe’s advice is simple: whenever a website, app, or device allows you to enable MFA, turn it on.</p>\n<p>How to write a strong passphrase is taught in other Range Path courses. This lesson asks you to add the extra lock, not to rebuild the first one.</p>\n<p>MFA helps a great deal, but it is not magic. The important habit is to switch it on for the accounts that matter most, such as email, cloud storage, and banking, when the service offers it.</p>",
+      "sources": [
+        {
+          "label": "Multi-factor authentication (Get Cyber Safe)",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-accounts/multi-factor-authentication"
+        },
+        {
+          "label": "Secure your accounts and devices with multi-factor authentication (Cyber Centre, ITSAP.30.030)",
+          "url": "https://www.cyber.gc.ca/en/guidance/secure-your-accounts-and-devices-multi-factor-authentication-itsap30030"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "MFA adds an extra step so there is another defence if someone gets your password.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "MFA can use something you know, something you have, and something you are.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Get Cyber Safe says you should enable MFA whenever a site or app allows it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A password alone is always 100% foolproof.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Recover an account if something goes wrong",
+      "html": "<p>Get Cyber Safe says any of your online accounts can be a target. Signs that an account may have been compromised include being logged out unexpectedly, or security notices about login attempts from strange locations or unusual times.</p>\n<p>If that happens, Get Cyber Safe lists four steps.</p>\n<p><strong>Step 1.</strong> Try to get back in through the account’s <strong>recovery page</strong>. That page is usually found under “need help” or “settings.” Answer the security questions that are there to help you recover the account.</p>\n<p><strong>Step 2.</strong> Contact the provider of the account. Do this if you have lost access — for example after too many wrong password attempts — or if you suspect a cyber criminal has the account. The provider may be able to tell you more and to track other suspicious behaviour.</p>\n<p><strong>Step 3.</strong> Change the passphrase or password. Use a strong, unique one. Other Range Path courses explain how to build a passphrase of four or more random words. This lesson does not repeat that recipe. The point here is to change it after a scare, and not to reuse an old one.</p>\n<p><strong>Step 4.</strong> Enable MFA, as you practised in Lesson 1. Get Cyber Safe says MFA helps protect your information even if your password has been compromised.</p>\n<p>The Cyber Centre also says you should have a clear recovery plan for a lost or compromised extra factor — for example if you lose the phone you use for codes. Know, before you need it, how that service lets you recover access.</p>\n<p>Recovering an account is stressful. Follow the official steps rather than clicking a random “we locked your account” message. Messages like that belong to other safety courses about scams.</p>",
+      "sources": [
+        {
+          "label": "Recovering a hacked account (Get Cyber Safe)",
+          "url": "https://www.getcybersafe.gc.ca/en/blogs/recovering-hacked-account"
+        },
+        {
+          "label": "Secure your accounts and devices with multi-factor authentication (Cyber Centre, ITSAP.30.030)",
+          "url": "https://www.cyber.gc.ca/en/guidance/secure-your-accounts-and-devices-multi-factor-authentication-itsap30030"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Being logged out of an account unexpectedly can be a sign it was compromised.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A recovery page is often found under “need help” or “settings.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "After you recover an account, you should change the passphrase and turn on MFA.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should ignore the account provider and never report the problem.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Make your home router safer",
+      "html": "<p>Connecting to a trusted Wi-Fi network is covered in another course. This lesson is about the box at home that creates that network: the <strong>router</strong>.</p>\n<p>The Cyber Centre says a router is hardware that creates a network for devices in a local area. A modem then connects that network to the internet. Some units combine both jobs and are still called routers. A poorly set-up router can be an attractive target.</p>\n<p>Get Cyber Safe’s family guidance and the Cyber Centre’s router basics agree on several home steps:</p>\n<ul>\n<li>Change the router’s username and password from the <strong>default</strong> settings. Also change the default password for the Wi-Fi network itself. Do not leave the password that was printed on the sticker if you can change it.</li>\n<li>Set up a <strong>guest network</strong> for visitors and for smart devices such as a smart TV. That way you are not sharing your main password, and those devices are separated from your primary network.</li>\n<li>If you can, place the router in a central spot in your home, away from windows. The Cyber Centre also says to restrict physical access to the device.</li>\n</ul>\n<p>The Cyber Centre adds a few other basic measures: turn on strong Wi-Fi protection (it names WPA2 or the newer WPA3), change the default network name so the make and model are not obvious, and disable WPS (a convenience feature that can be attacked). Keep the router’s <strong>firmware</strong> up to date, and turn on automatic firmware updates if the model offers them. That is an update for the router itself, not the phone and computer updates taught in another course.</p>\n<p>Skip advanced steps such as port filtering unless a technician is helping you. Start with the defaults, the guest network, and physical placement.</p>",
+      "sources": [
+        {
+          "label": "Let good cyber security run in the family (Get Cyber Safe)",
+          "url": "https://www.getcybersafe.gc.ca/en/resources/let-good-cyber-security-run-family"
+        },
+        {
+          "label": "Routers cyber security best practices (Cyber Centre, ITSAP.80.019)",
+          "url": "https://www.cyber.gc.ca/en/guidance/routers-cyber-security-best-practices-itsap80019"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You should change a router’s username and password from the default settings.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A guest network is useful for visitors and for smart devices.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson repeats the steps for joining a public Wi-Fi network.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The Cyber Centre says to keep the router’s firmware up to date.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Kids’ devices and parental controls",
+      "html": "<p>Kids use the internet for schoolwork, socializing, and gaming. Get Cyber Safe offers a checklist you can go through with the children in your life. You do not have to be a technical expert. You do need to talk with them.</p>\n<p>The official checklist includes these steps:</p>\n<ol>\n<li>Make a list of all the devices your kids use that connect to the internet.</li>\n<li>Make a list of all the accounts they use, including social media or gaming, and family accounts such as streaming services.</li>\n<li>Use a unique passphrase for each account. Other courses explain how to build a passphrase. Help the family keep those sign-ins safe. If you use a password manager, protect it with your strongest passphrase.</li>\n<li>Turn on <strong>parental controls</strong> for any shared accounts the children can access, so they are not watching content or using features you do not want them to.</li>\n<li>Enable MFA whenever it is available. When your child signs in, they may be asked for another factor such as a fingerprint or a text-message code.</li>\n</ol>\n<p>Get Cyber Safe also says to set a good example on your own devices, and to go through a kids’ cyber-security checklist together. Let them take the lead where they can. They may even teach you something.</p>\n<p>Tell the children they can come to you if they see something online they do not understand. The official page mentions that some threats, such as phishing, happen all over the internet. Spotting scam messages is covered in another Range Path course, so this lesson does not repeat those signs.</p>\n<p>This is general information for families, not legal advice about parenting or about a child’s accounts.</p>",
+      "sources": [
+        {
+          "label": "Keep the kids in your life cyber safe: a checklist (Get Cyber Safe)",
+          "url": "https://www.getcybersafe.gc.ca/en/resources/parents-cyber-safe-checklist"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "An official first step is to list the internet-connected devices your kids use.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Parental controls on shared accounts can limit content and features you do not want children to use.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "MFA can be turned on for a child’s account when the service offers it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson is a full repeat of the phishing course.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Back up the files you do not want to lose",
+      "html": "<p>Get Cyber Safe says you should treat important digital files the way you treat meaningful possessions: keep a safe copy. Your phone, computer, and tablet hold memories, documents, and personal files. Backing up means creating a copy and storing it securely so you do not lose those files if you lose a device, delete something by accident, or run into malicious software.</p>\n<p>Choose a backup method that fits you:</p>\n<ul>\n<li><strong>Cloud storage</strong> keeps files on an online server so you can open them from another device when you have internet.</li>\n<li>An <strong>external hard drive</strong> can back up files automatically with software, or you can copy them yourself.</li>\n<li>A <strong>USB flash drive</strong> is portable: copy the files onto it and eject it safely when you are done.</li>\n<li><strong>Network attached storage (NAS)</strong> is a shared box for several devices on one network. Get Cyber Safe notes this as a useful option for a small business with many devices in one place.</li>\n</ul>\n<p>Consider using two kinds of storage so one lost or stolen copy is not the only copy. Set a backup schedule. Some tools run automatically, but not all of them do. Set a reminder to check that the backup actually worked.</p>\n<p>Protect backups with a strong password and turn on MFA when the service offers it. Get Cyber Safe’s family page also includes “regularly back up the data on your devices” in its housekeeping list.</p>\n<p>This course does not recommend a brand of cloud storage or drive. Pick a method you can keep up, and test that you can open a file from the copy.</p>",
+      "sources": [
+        {
+          "label": "Backups (Get Cyber Safe)",
+          "url": "https://www.getcybersafe.gc.ca/en/resources/backups"
+        },
+        {
+          "label": "Let good cyber security run in the family (Get Cyber Safe)",
+          "url": "https://www.getcybersafe.gc.ca/en/resources/let-good-cyber-security-run-family"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A backup is a securely stored copy of your files so you are less likely to lose them.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Cloud storage, an external drive, and a USB flash drive are backup options named by Get Cyber Safe.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Combining two storage options can reduce the chance that one lost copy is your only copy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you which brand of cloud storage you must buy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose.",
+    "questions": [
+      {
+        "prompt": "MFA adds an extra sign-in step so there is another defence if someone has your password.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      },
+      {
+        "prompt": "Being logged out unexpectedly can be a sign an account was compromised.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      },
+      {
+        "prompt": "You should leave a home router on its original default password.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      },
+      {
+        "prompt": "A guest network can be used for visitors and smart devices.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      },
+      {
+        "prompt": "Parental controls on shared accounts can limit content children see.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      },
+      {
+        "prompt": "A backup is a securely stored copy of your files.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      },
+      {
+        "prompt": "This course is a full repeat of the phishing and passphrase lessons.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Turn on MFA, know the official recovery steps, change default router settings and use a guest network, walk through the kids’ checklist, and back up files you cannot afford to lose."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about extra cyber-safety habits from Get Cyber Safe and the Canadian Centre for Cyber Security. It is not a cybersecurity certificate, not legal advice, and not a guarantee that an account cannot be hacked. Other Range Path courses cover scam emails, passwords and passphrases, connecting to Wi-Fi, software updates, and AI chatbots. This course does not repeat those lessons.",
+    "builderNotes": "- Sources verified live on 10 November 2026 (America/Regina): Get Cyber Safe MFA, recovering a hacked account, backups, parents checklist, and family cyber-security page; Cyber Centre ITSAP.30.030 (MFA) and ITSAP.80.019 (routers).\n- Do **not** repeat: email/online-safety (phishing, CRA scams, how to build a passphrase, CAFC reporting); What is AI (chatbots, AI-made scams); everyday computers (joining Wi-Fi, public Wi-Fi/HTTPS/VPN, general OS and app updates, passphrase construction). Router **firmware** updates are included as router-specific Cyber Centre advice, distinct from the everyday-computers software-update habit.\n- Dropped as too advanced or overlapping: MFA fatigue / FIDO deep dive; Cyber Centre port filtering, SNMP, MAC filtering, and event logging; full WPA encryption lecture.\n- No product endorsements for password managers, cloud brands, or drives.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-online-safety-next-steps-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a phone with a lock."
+  }
+}

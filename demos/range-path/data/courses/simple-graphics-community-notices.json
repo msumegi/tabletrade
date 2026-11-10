@@ -1,0 +1,518 @@
+{
+  "slug": "simple-graphics-community-notices",
+  "title": "Simple Graphics for Community Notices",
+  "summary": "By the end, learners can write the key facts for a community notice in plain language, choose readable fonts and colours, add and format text in a simple design tool, use images as a support (not a replacement) for words, and download or share a file — without treating this course as a Canva or designer certification.",
+  "goals": "By the end, learners can write the key facts for a community notice in plain language, choose readable fonts and colours, add and format text in a simple design tool, use images as a support (not a replacement) for words, and download or share a file — without treating this course as a Canva or designer certification.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional design licence, or vendor certificate (including Canva).",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Write the words before you decorate",
+      "html": "<p>A community notice is a poster, flyer, or digital graphic that tells people about an event, a service, or a change. Pretty decorations do not help if the facts are missing or hard to understand.</p>\n<p>Government of Canada accessibility guidance says documents should use simple, clear, and concise language. Keep sentences short. Use common words. Use an active voice when you can (say “We meet on Friday,” not “A meeting will be held”). Avoid jargon unless you must use it, and define a short form the first time it appears.</p>\n<p>The Digital Accessibility Toolkit says plain language helps everyone, including people with cognitive disabilities. It suggests short sentences, a reading level around Grade 8, and no unusual words when a simple word will do.</p>\n<p>Before you open a design tool, write the facts people need:</p>\n<ul>\n<li>What is happening?</li>\n<li>Who is it for?</li>\n<li>When is it (date and time)?</li>\n<li>Where is it?</li>\n<li>What should people bring or do?</li>\n<li>How can they ask a question (a phone number, email, or office)?</li>\n</ul>\n<p>If you cannot answer those questions on paper, the graphic is not ready. This course does not pick colours or logos for your council. It helps you put clear words first, then place them so people can find, understand, and use the information.</p>\n<p>You can later put those words into Word, PowerPoint, or an online design tool such as Canva. This course is not a Canva certificate, and you do not have to use that tool.</p>",
+      "sources": [
+        {
+          "label": "Annex: Making documents more accessible — Employment and Social Development Canada",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/alternate-formats/making-documents-more-accessible.html"
+        },
+        {
+          "label": "How to create accessible documents in Microsoft 365 — Digital Accessibility Toolkit",
+          "url": "https://a11y.canada.ca/en/how-to-create-accessible-documents-in-microsoft-365/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You should choose decorations first and write the facts later.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Government accessibility guidance asks you to use simple, clear, and concise language.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A community notice should include facts such as what, when, where, and how to ask a question.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a Canva or designer certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Make the text easy to see and read",
+      "html": "<p>Once the words are ready, choose a layout that people can actually read from a hallway, a bulletin board, or a phone.</p>\n<p>Employment and Social Development Canada (ESDC) recommends:</p>\n<ul>\n<li>a font size of 12 points or larger for documents</li>\n<li><strong>sans-serif</strong> fonts (fonts without little hooks on the letters), such as Helvetica, Calibri, Arial, Geneva, or Verdana</li>\n<li>avoiding serif fonts such as Times New Roman and Garamond for this kind of document</li>\n<li>avoiding long stretches of italics or words in ALL CAPITAL LETTERS</li>\n<li>using bold only for a little emphasis</li>\n<li>aligning long text to the left (centred or fully “justified” text can be harder to read)</li>\n<li>strong contrast between the text colour and the background — black text on a white background is best</li>\n<li>not relying only on colour, bold, or an asterisk to mark important information</li>\n</ul>\n<p>For presentation slides, ESDC says to use a sans-serif font large enough to read from a distance (at least 18 point) and not to fill a slide with too much information. Aim for a few short bullet points rather than paragraphs. A hallway poster follows the same idea: large, clear text and lots of empty space.</p>\n<p>The Digital Accessibility Toolkit adds that text must have a contrast ratio of at least 4.5 to 1 against the background (as of 10 November 2026, America/Regina). Black on white is always a safe choice. Avoid busy background images behind text. ESDC also says to avoid watermarks or background pictures that weaken contrast.</p>\n<p>Do not use colour alone to mean “this is urgent.” Add the word “important” or a short sentence that says the same thing.</p>",
+      "sources": [
+        {
+          "label": "Annex: Making documents more accessible — Employment and Social Development Canada",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/alternate-formats/making-documents-more-accessible.html"
+        },
+        {
+          "label": "How to create accessible documents in Microsoft 365 — Digital Accessibility Toolkit",
+          "url": "https://a11y.canada.ca/en/how-to-create-accessible-documents-in-microsoft-365/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Black text on a white background is a safe contrast choice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should put important information in red only, with no extra words.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "ESDC recommends sans-serif fonts such as Arial, Calibri, or Verdana for readable documents.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Busy background images behind text can make a notice harder to read.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Add and format text in a simple design tool",
+      "html": "<p>You can build a notice in Word or PowerPoint if that is what you already use. Many community groups also use Canva, an online design tool, to make posters and flyers. This lesson uses Canva’s official Help pages as one example. The same habits — large text, strong contrast, and few words — apply in any tool.</p>\n<p>Canva Help says you can format text in many design types, including posters. After the words are on the page:</p>\n<ol>\n<li>Select the text.</li>\n<li>On the toolbar, select the font name, then choose a font.</li>\n<li>Select <strong>Font size</strong> and pick a size, or use the plus and minus buttons.</li>\n<li>Select <strong>Text color</strong> and choose a colour with strong contrast against the background.</li>\n<li>Use <strong>Bold</strong> for a short heading if you need it. Use italics and underline sparingly.</li>\n</ol>\n<p>Filter fonts if you need to, including by language. Choose a simple sans-serif font that matches the guidance in Lesson 2, not a decorative font that is hard to read.</p>\n<p>Keep the layout simple. Leave space around the edges. Put the event name first and largest, then the date, time, and place, then any extra details and a contact line.</p>\n<p>Buttons and menus can change. If you cannot find a control, open Canva’s live Help page rather than guessing. You do not need a paid plan to practise with your own words and free elements. This course does not sell or endorse a paid upgrade.</p>",
+      "sources": [
+        {
+          "label": "Format text — Canva Help Center",
+          "url": "https://www.canva.com/help/format-text/"
+        },
+        {
+          "label": "Annex: Making documents more accessible — Employment and Social Development Canada",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/alternate-formats/making-documents-more-accessible.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In Canva Help, you format text by selecting it and using the toolbar to change the font, size, or colour.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course requires you to buy a paid Canva plan.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The event name should usually be the largest text on the notice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You can also apply the same readable-text habits in Word or PowerPoint.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Use pictures to support the words, not replace them",
+      "html": "<p>A photo or icon can help people notice your poster. It should not be the only place the facts live.</p>\n<p>ESDC says you should use images only to enhance information that is already in the text, not to replace it. If you include an image, add a short description. In a digital file that can be <strong>alternative text</strong> (alt text) or a caption beside the picture. People who use a screen reader hear that description. People who magnify a page may also find a large photo hard to see if it becomes blurry.</p>\n<p>When you write a description:</p>\n<ul>\n<li>Say what the image shows and why it is there.</li>\n<li>Keep the words simple and short.</li>\n<li>You do not need to start with “an image of…” because the software already knows it is an image.</li>\n</ul>\n<p>The Digital Accessibility Toolkit says a good test is to imagine describing the picture to someone over the phone. Keep short alt text brief. If a picture is only decoration and adds no meaning, mark it as decorative when the tool allows that.</p>\n<p>If your notice will be printed and pinned to a board, the words on the poster still have to carry the facts. A photo of the hall does not replace the street address.</p>\n<p>Use only photos you have the right to use — for example, a picture your group took, or an image your tool says you may use. Do not copy a random picture from the internet just because it looks nice. This course is not legal advice about copyright.</p>",
+      "sources": [
+        {
+          "label": "Annex: Making documents more accessible — Employment and Social Development Canada",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/alternate-formats/making-documents-more-accessible.html"
+        },
+        {
+          "label": "How to create accessible documents in Microsoft 365 — Digital Accessibility Toolkit",
+          "url": "https://a11y.canada.ca/en/how-to-create-accessible-documents-in-microsoft-365/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Images should enhance information that is already in the text, not replace it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alternative text describes an image for people who cannot see it well or at all.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "It is best to start every description with the words “an image of.”",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A photo of a building can replace the address on a community notice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Check the notice, then download or share it",
+      "html": "<p>Before you print or post, read the notice as if you had never seen it. Can a new person tell what, when, where, and how to ask a question? Are the words spelled correctly? Is the date still right? Is the contrast strong? Did you avoid ALL CAPS and a busy background?</p>\n<p>If you work in Word or PowerPoint, ESDC notes that many programs include an accessibility checker. The checker is a help, not a guarantee.</p>\n<p>If you used Canva, the official Help page “Download or save designs to your device” says you can save a copy to your computer or phone. On that page, the steps are: go to <strong>Share</strong>, then select <strong>Download</strong>, choose a file type, adjust any options you need, and select <strong>Download</strong> again. If the design has more than one page, you can download all pages, the page you are viewing, or chosen pages.</p>\n<p>Canva Help also says that some elements are premium. If your design includes those, a free account may be asked to pay for a licence, upgrade, or download a watermarked draft. To avoid that surprise, stick to free elements and your own photos. This course does not ask you to buy extra content.</p>\n<p>A PDF is often a good choice for printing or emailing because the layout stays in place. A PNG or JPG picture file can work for social media. Check the live Help page if the menu looks different from what you see here.</p>\n<p>Then ask one other person to read the notice. If they miss the time or the place, fix it before you post.</p>",
+      "sources": [
+        {
+          "label": "Download or save designs to your device — Canva Help Center",
+          "url": "https://www.canva.com/help/download-or-purchase/"
+        },
+        {
+          "label": "Annex: Making documents more accessible — Employment and Social Development Canada",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/alternate-formats/making-documents-more-accessible.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Canva Help says you can download a design by going to Share, then Download, then choosing a file type.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An accessibility checker guarantees that a notice meets every standard.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Some Canva elements are premium and may require a payment or a watermarked download on a free account.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should check that a new reader can find the date, place, and contact details before you post.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate.",
+    "questions": [
+      {
+        "prompt": "This course is a Canva or professional design certificate.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      },
+      {
+        "prompt": "You should write the key facts before you decorate the notice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      },
+      {
+        "prompt": "Black text on a white background is a safe contrast choice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      },
+      {
+        "prompt": "Important information should be shown with colour alone.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      },
+      {
+        "prompt": "Images should support the words, not replace them.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      },
+      {
+        "prompt": "Canva Help describes downloading a design from Share, then Download.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      },
+      {
+        "prompt": "Following this course means your notice meets every accessibility standard.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Write clear facts first, use readable text and strong contrast, add pictures only as support, and check the notice before you share it. This course is not a vendor certificate."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about writing and laying out a simple community notice so more people can read it. It is not a design licence, a vendor certificate (including Canva), or legal or accessibility-compliance advice. Following this course does not mean a notice meets every accessibility standard. Tools and buttons change. Check the live help page for any tool you use.",
+    "builderNotes": "- Not a Canva certification and not an accessibility-compliance claim.\n- Canva Help pages blocked the usual WebFetch tool (“Unsupported client”) but returned HTTP 200 with the help text when fetched by GET with a standard browser user-agent on 10 November 2026 (America/Regina). Re-check https://www.canva.com/help/format-text/ and https://www.canva.com/help/download-or-purchase/ before rebuilds; button names can change.\n- Contrast ratio 4.5:1 was verified live on the Digital Accessibility Toolkit page on 10 November 2026 and date-stamped in Lesson 2. Do not put the ratio in a quiz answer that must stay stable for years without a rebuild check.\n- Document body-text “12 points or larger” and slide “at least 18 point” come from the ESDC annex; do not invent larger poster-only point sizes.\n- Do not pitch Canva Pro, Magic Studio, or stock-photo purchases. Teach learners to stay with free elements and their own photos.\n- Companion courses: Word basics and PowerPoint basics. Do not repeat those tool lessons here.\n- Canadian spelling: *colour*, *centre*, *practise* (verb).\n- No Ed2Go or Cengage graphics text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-simple-graphics-community-notices.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a community notice."
+  }
+}

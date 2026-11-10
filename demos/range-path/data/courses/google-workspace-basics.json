@@ -1,0 +1,514 @@
+{
+  "slug": "google-workspace-basics",
+  "title": "Google Workspace Basics",
+  "summary": "By the end, learners can name the main Google Workspace apps, open Google Drive, create a Google Doc and a Google Sheet, and share a file with Viewer, Commenter, or Editor access — without treating this course as a Google credential.",
+  "goals": "By the end, learners can name the main Google Workspace apps, open Google Drive, create a Google Doc and a Google Sheet, and share a file with Viewer, Commenter, or Editor access — without treating this course as a Google credential.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Google certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is Google Workspace?",
+      "html": "<p><strong>Google Workspace</strong> is a set of apps you can use in a web browser. Google’s Workspace Learning Center says you can start with apps such as Gmail, Docs, and Drive, and work from different devices.</p>\n<p>The same Learning Center groups the apps by what they help you do:</p>\n<ul>\n<li><strong>Connect:</strong> Gmail (email), Calendar, Chat, and Meet (video and voice meetings)</li>\n<li><strong>Create:</strong> Docs (word processing), Sheets (spreadsheets), Slides (presentations), and Forms (surveys and quizzes)</li>\n<li><strong>Store and find files:</strong> Drive (cloud storage)</li>\n</ul>\n<p>You do not need every app for this course. The next lessons practise Drive, Docs, Sheets, and sharing. A later Range Path course covers Microsoft Word, Excel, and PowerPoint if those are the tools at your site. This course does not replace those Microsoft courses, and it is not a full Gmail or Meet class.</p>\n<p>If your council, library, or workplace gives you a work or school Google account, your administrator may turn some features on or off. If you use your own account, follow the sign-in they approve on that computer. This course will not create an account for you and will not ask you to type a password into the lesson.</p>\n<p>Google’s help also notes accessibility options in the Learning Center. Ask your instructor if you need those tools.</p>",
+      "sources": [
+        {
+          "label": "Welcome to the Learning Center — Google Workspace",
+          "url": "https://support.google.com/a/users/answer/9389764?hl=en"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Google Drive is described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Cloud storage for files"
+            },
+            {
+              "id": "B",
+              "text": "A kind of tractor"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Google Docs is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A word-processing app"
+            },
+            {
+              "id": "B",
+              "text": "A banking app"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Google Sheets is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A spreadsheet app"
+            },
+            {
+              "id": "B",
+              "text": "A weather radio"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is an official Google certification.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Find your files in Google Drive",
+      "html": "<p><strong>Google Drive</strong> helps you keep files together. Google’s Drive help says you can upload and share files, create new files, keep them organized, and open them from different devices.</p>\n<p><strong>On a computer:</strong></p>\n<ol>\n<li>Go to <strong>drive.google.com</strong>.</li>\n<li>At the top left, click <strong>New</strong>.</li>\n<li>Choose what you need: <strong>New folder</strong>, <strong>Folder upload</strong>, a document type (to create a file), or <strong>File upload</strong>.</li>\n</ol>\n<p><strong>My Drive</strong> holds files and folders you upload or sync, and Google Docs, Sheets, Slides, and Forms you create. Files that other people shared with you appear in <strong>Shared with me</strong>.</p>\n<p>The <strong>Home</strong> section can show files you or others recently opened, shared, or edited. You can search and use filters such as type, people, modified date, or location.</p>\n<p>To see information about a file, click it and choose <strong>View details</strong>. That can include activity, sharing permissions, and recent changes.</p>\n<p>To move a file you no longer need out of the way, Google says you can select it and choose <strong>Move to trash</strong>.</p>\n<p>Do not upload someone else’s private documents for practise. Use a sample file you created, or a practise file your instructor gives you.</p>\n<p>If you use a work or school account, your organization may set extra rules. Follow those rules.</p>",
+      "sources": [
+        {
+          "label": "How to use Google Drive — Google Drive Help",
+          "url": "https://support.google.com/drive/answer/2424384?hl=en"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Google’s Drive help says to start on a computer by going to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "drive.google.com"
+            },
+            {
+              "id": "B",
+              "text": "a random shopping site"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The New button can upload a file or create a file or folder.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Files other people shared with you are listed under:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Shared with me"
+            },
+            {
+              "id": "B",
+              "text": "The Recycle Bin on a different planet"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should upload other people’s private identification documents for practise.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Create a Google Doc",
+      "html": "<p><strong>Google Docs</strong> is the word-processing app in Google Workspace. You can write a letter, a notice, or a short report and work on it with other people later.</p>\n<p>Google’s “Create, view, or download a file” page says:</p>\n<ol>\n<li>On your computer, open a Google Docs (or Sheets, Slides, Forms, or Vids) home screen. For a document, that home screen is <strong>docs.google.com</strong>.</li>\n<li>Click <strong>Create</strong>.</li>\n</ol>\n<p>A new file is automatically named <strong>Untitled document</strong>. To rename it:</p>\n<ol>\n<li>Click the name at the top of the file.</li>\n<li>Type a new name.</li>\n<li>Press <strong>Enter</strong>.</li>\n</ol>\n<p>When you are online, Google automatically saves your changes as you type. You do not need a Save button. If you are not connected to the internet, Google describes optional offline access — set that up only on a device you own, not on a public computer (see Google’s Drive and Docs help for those steps if you need them).</p>\n<p>You can also download a copy: open the file, click <strong>File</strong>, then <strong>Download</strong>, and choose a file type. That is useful if someone needs a file they can open without Google Docs.</p>\n<p>Type a short practise notice, such as “Community kitchen volunteers meet Thursday.” Use Canadian spelling. This lesson is not Microsoft Word training; if you need Word buttons, see the Range Path Word basics course.</p>\n<p>If a file warning appears about phishing or malware, Google says to use caution. Do not ignore a warning just to finish a class task.</p>",
+      "sources": [
+        {
+          "label": "Create, view, or download a file — Google Docs Editors Help",
+          "url": "https://support.google.com/docs/answer/49114?hl=en"
+        },
+        {
+          "label": "How to use Google Drive — Google Drive Help",
+          "url": "https://support.google.com/drive/answer/2424384?hl=en"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To start a document, Google says to open a Docs home screen and click Create.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A new document is first named:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Untitled document"
+            },
+            {
+              "id": "B",
+              "text": "Final tax return"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "When you are online, Google automatically saves as you type.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You rename a file by clicking the name at the top, typing a new name, and pressing Enter.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Create a Google Sheet",
+      "html": "<p><strong>Google Sheets</strong> is an online spreadsheet app. Google’s Sheets help says it lets you create and format spreadsheets and work with other people.</p>\n<p><strong>To create a spreadsheet:</strong></p>\n<ol>\n<li>Open the Sheets home screen at <strong>sheets.google.com</strong>.</li>\n<li>Click <strong>New</strong>. This creates and opens your new spreadsheet.</li>\n</ol>\n<p>You can also create a spreadsheet from the address sheets.google.com/create.</p>\n<p>A new file is named <strong>Untitled spreadsheet</strong> until you rename it the same way as a Doc: click the name at the top, type a new name, and press Enter. Online changes save automatically as you type. Google’s create-and-save page notes a Sheets tip: to save, click outside of the cell you typed in.</p>\n<p>You can add, edit, or format text, numbers, or formulas. For this lesson, keep it simple: type a header row such as Item and Amount, then a few sample numbers. This is not the Range Path Excel basics or Excel next-steps course. Those courses teach Microsoft Excel tables, charts, and functions. Here the goal is only to open Sheets, type a small list, and know the file lives in Drive.</p>\n<p>You can also start a Sheet from Drive: click <strong>New</strong>, then choose the spreadsheet type.</p>\n<p>Do not type real bank passwords, SINs, or another person’s private numbers into a practise sheet.</p>",
+      "sources": [
+        {
+          "label": "How to use Google Sheets — Google Docs Editors Help",
+          "url": "https://support.google.com/docs/answer/6000292?hl=en"
+        },
+        {
+          "label": "Create, view, or download a file — Google Docs Editors Help",
+          "url": "https://support.google.com/docs/answer/49114?hl=en"
+        },
+        {
+          "label": "How to use Google Drive — Google Drive Help",
+          "url": "https://support.google.com/drive/answer/2424384?hl=en"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To create a spreadsheet, Google says to open sheets.google.com and click New.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Google Sheets is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "An online spreadsheet app"
+            },
+            {
+              "id": "B",
+              "text": "A slide projector"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A new spreadsheet is first named Untitled spreadsheet.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson replaces the Excel basics and Excel next-steps courses.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Share a file safely",
+      "html": "<p>You can share a Drive file or folder and choose what other people may do. Google’s sharing page describes three roles:</p>\n<ul>\n<li><strong>Viewer:</strong> can view the file or folder, but cannot make changes, add comments, or share the item</li>\n<li><strong>Commenter:</strong> can make comments and suggestions</li>\n<li><strong>Editor:</strong> can open, edit, delete, or move files in a folder and add new files. Editors can also change permissions and share with others by default</li>\n</ul>\n<p><strong>To share with specific people:</strong></p>\n<ol>\n<li>Go to Google Drive, Docs, Sheets, or Slides.</li>\n<li>Select the item and click <strong>Share</strong>.</li>\n<li>Enter the person’s email address.</li>\n<li>Select Viewer, Commenter, or Editor.</li>\n<li>Choose whether to notify them, then click <strong>Send</strong> or <strong>Share</strong>.</li>\n</ol>\n<p><strong>General access</strong> can be <strong>Restricted</strong> (only people you have given access) or <strong>Anyone with the link</strong> (anyone on the internet who has the link can open it without signing in). If you use a work or school account, an administrator may restrict outside sharing.</p>\n<p>Giving “Anyone with the link” access can spread a file farther than you expect. Do not use that setting for private information. When you share a folder, files inside it inherit those permissions.</p>\n<p>If you no longer want someone to have access, open Share, find the person, and choose <strong>Remove access</strong>.</p>\n<p>This course is not a security audit. When you are unsure, keep the file Restricted and share only with people you know.</p>",
+      "sources": [
+        {
+          "label": "Share and manage access to files and folders in Google Drive — Google Drive Help",
+          "url": "https://support.google.com/drive/answer/7166529?hl=en"
+        },
+        {
+          "label": "How to use Google Drive — Google Drive Help",
+          "url": "https://support.google.com/drive/answer/2424384?hl=en"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A Viewer can:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "View the file, but not change it"
+            },
+            {
+              "id": "B",
+              "text": "Always delete the file"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An Editor can change the file and, by default, can also share it with others.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "“Anyone with the link” means anyone on the internet who has the link can open the file.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should share a practise file that contains someone else’s SIN or password.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential.",
+    "questions": [
+      {
+        "prompt": "Google Drive is cloud storage for files.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      },
+      {
+        "prompt": "You can upload or create files in Drive with the New button.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      },
+      {
+        "prompt": "A new Google Doc is first named Untitled document.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      },
+      {
+        "prompt": "When you are online, Google Docs and Sheets save as you type.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      },
+      {
+        "prompt": "You create a Sheet at sheets.google.com by clicking New.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      },
+      {
+        "prompt": "A Viewer can edit and delete the file.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      },
+      {
+        "prompt": "This course is an official Google certification.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Create files in Drive, Docs, or Sheets, rename them, and share only what is safe. Completion only — not a Google credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about everyday Google Workspace tools, from Google’s official help pages. It is not a Google certification, college credit, or a promise that your workplace or council uses these apps. Sign-in screens and sharing rules can differ for a personal account and a work or school account. Do not practise with other people’s private files, passwords, or identification numbers.",
+    "builderNotes": "- Official Google Help / Learning Center only. Do not copy Google marketing landing pages.\n- Do not teach a full Gmail, Meet, Calendar, Gemini, or admin course. Those apps are named from the Learning Center only.\n- Dropped from learner text: personal-account 15 GB storage (not confirmed on the Drive page fetched this session); sharing caps such as 600 addresses or 100 simultaneous editors; folder-inheritance edge cases beyond a short warning; offline-setup details on public computers (mentioned only as “not on a public computer”).\n- Do not repeat Microsoft Word, Excel, or Outlook button training.\n- No Ed2Go Google Workspace text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-google-workspace-basics.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of three file folders."
+  }
+}

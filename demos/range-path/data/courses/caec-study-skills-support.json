@@ -1,0 +1,518 @@
+{
+  "slug": "caec-study-skills-support",
+  "title": "CAEC Study-Skills Support",
+  "summary": "By the end, learners can explain what the CAEC is on Alberta’s official page, find official study and registration pointers (including sample tests and test outcomes), make a simple study plan that fits adult life, practise reading, writing, and numeracy habits without treating this course as exam coaching, and know where to get official help — without claiming this course will make them pass or earn the credential.",
+  "goals": "By the end, learners can explain what the CAEC is on Alberta’s official page, find official study and registration pointers (including sample tests and test outcomes), make a simple study plan that fits adult life, practise reading, writing, and numeracy habits without treating this course as exam coaching, and know where to get official help — without claiming this course will make them pass or earn the credential.",
+  "certificateNote": "It is not the Canadian Adult Education Credential (CAEC), not a GED® credential, not a college diploma, and not a promise that the learner will pass any test.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What the CAEC is, and what this course is not",
+      "html": "<p>The <strong>Canadian Adult Education Credential (CAEC)</strong> is a Canadian adult education credential. Alberta’s official page says it is for adults who do not have a high school diploma and who are seeking employment prospects, education pathways, or training opportunities. You should confirm directly with employers, post-secondary institutions, and others that the CAEC meets their job or admission requirements.</p>\n<p>This course is study-skills support. Finishing it does not mean you have earned the CAEC. It does not promise that you will pass any test. It is not a replacement for a tutor, a preparation class, or the official tests.</p>\n<p>The official page says the CAEC replaced the GED® in 2024. Completed GED® credentials remain valid. As of 10 November 2026 (America/Regina), that page said they will continue to be recognized as a valid credential until December 2027. This course does not teach former GED® tests.</p>\n<p>CAEC tests are available in these subject areas: Reading, Writing, Math, Science, and Social Studies. All tests are available in English and French. They are computer-based, with a paper option, and they are meant to support test-takers who need learning accommodations. The official page also lists how each test is set up. Those details can change, so read them on the live page instead of memorizing them here.</p>\n<p>Start with Alberta’s CAEC page every time you have a question about the credential. Do not rely on an unofficial social media post or a paid “you will pass” website.</p>",
+      "sources": [
+        {
+          "label": "Canadian Adult Education Credential — Government of Alberta",
+          "url": "https://www.alberta.ca/canadian-adult-education-credential"
+        },
+        {
+          "label": "How to earn your CAEC — Government of Alberta",
+          "url": "https://www.alberta.ca/how-to-earn-your-caec"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Finishing this course means you have earned the CAEC.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The official Alberta page says the CAEC is for adults who do not have a high school diploma and are seeking work, education, or training opportunities.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should confirm with an employer or school that the CAEC meets their requirements.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course teaches former GED® test content.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Follow the official “how to earn” map",
+      "html": "<p>Alberta’s “How to earn your CAEC” page is the official map. The process can vary by province or territory, so use Alberta’s site if you live in Alberta.</p>\n<p>Under <strong>Study</strong>, the page points you to official resources:</p>\n<ul>\n<li>Review the <strong>test outcomes</strong>. These outline the knowledge and skills needed for each test.</li>\n<li>Practise with a <strong>sample test</strong>, available in each subject.</li>\n<li>Watch the official CAEC video to learn more about how tests are formatted, written, and scored.</li>\n<li>Take a test preparation class, available at some testing centres.</li>\n<li>Visit regional CAEC websites for more information.</li>\n</ul>\n<p>This course does not replace those official tools. It does not include sample-test questions, and it does not claim that using a study plan will make you pass.</p>\n<p>Under <strong>Register</strong>, the page tells you to check local eligibility on your provincial or territorial website, create an account on the CAEC digital platform, and schedule your test with a testing centre. You write tests in person at a testing centre on the date and time you selected. The page also says to provide proof of identification and to check your province or territory for fees. This course does not quote fees.</p>\n<p>You can complete the CAEC at your own pace. The official page says there is no specific timeframe in which you need to write the tests, and the tests do not expire. That is good news if you work or care for family. You can plan one subject at a time.</p>\n<p>If you have questions about older GED® results counting toward a CAEC, read the official how-to page. Do not use this course as the rule.</p>",
+      "sources": [
+        {
+          "label": "How to earn your CAEC — Government of Alberta",
+          "url": "https://www.alberta.ca/how-to-earn-your-caec"
+        },
+        {
+          "label": "Canadian Adult Education Credential — Government of Alberta",
+          "url": "https://www.alberta.ca/canadian-adult-education-credential"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The official how-to page says you can review test outcomes and practise with a sample test in each subject.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course includes the official sample-test questions.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "CAEC tests are written in person at a testing centre on the date and time you selected.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The official page says you must write every CAEC test in the same week.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Make a simple study plan that fits adult life",
+      "html": "<p>A study plan is a habit, not a promise that you will pass. Canada’s Skills for Success include <strong>adaptability</strong>: the ability to set or adjust goals, plan and prioritize, stay focused, and keep going when something is hard.</p>\n<p>Useful adaptability habits from the official skill list include:</p>\n<ul>\n<li>set a goal that matches the time and support you have</li>\n<li>break the goal into tasks and put them in order</li>\n<li>manage your time (for example, being on time and not wasting the time you set aside)</li>\n<li>stay focused on the task in front of you</li>\n<li>keep trying when a plan does not work, or change the plan if you need to</li>\n</ul>\n<p>Because the official CAEC page says you can move at your own pace, you do not have to study every subject at once. A simple plan might look like this:</p>\n<ol>\n<li>Open the official test outcomes for one subject.</li>\n<li>Choose two or three short study times in the week that fit around work and family.</li>\n<li>Write those times down where you will see them.</li>\n<li>At each session, do one small task, such as reading a short text or trying part of an official sample test.</li>\n<li>After a week, look at what worked and adjust the plan.</li>\n</ol>\n<p>If your council also offers the Range Path course “How to Learn Online,” you can use it for more study-habit ideas. This CAEC course does not repeat that whole course.</p>\n<p>A plan you can keep for 20 minutes, three times a week, is more useful than a perfect timetable you never follow. This is practice, not a guarantee.</p>",
+      "sources": [
+        {
+          "label": "How to earn your CAEC — Government of Alberta",
+          "url": "https://www.alberta.ca/how-to-earn-your-caec"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success, Government of Canada",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A study plan in this course is a promise that you will pass the CAEC.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Adaptability includes planning, prioritizing, and staying focused.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The official CAEC page says you can complete the credential at your own pace.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "It is better to write down a few study times you can keep than to make a plan you never use.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Practise reading, writing, and numeracy habits",
+      "html": "<p>The official how-to page asks you to review test outcomes and practise with a sample test. Those tools show you what each subject covers. This lesson is about everyday habits that support the same skills. It is not a set of exam tricks, and it does not include real or copied test questions.</p>\n<p>Skills for Success describes <strong>reading</strong> as finding, understanding, and using information in words, symbols, and images. Helpful habits include knowing why you are reading, scanning or skimming to find key information, and saying the main idea in your own words.</p>\n<p><strong>Writing</strong> is sharing information with written words, symbols, and images. Helpful habits include knowing your purpose and your reader, planning what to say, writing in clear sentences, and reading your work again to fix meaning and spelling.</p>\n<p><strong>Numeracy</strong> is finding, understanding, using, and reporting mathematical information in words, numbers, symbols, and graphics. Helpful habits include deciding what question you need to answer, finding the numbers that matter, and checking whether your result makes sense.</p>\n<p>You can practise these habits in daily life in Alberta: read a short official page or community notice and tell someone the main point; write a clear note or email; work with numbers on a receipt or a simple measurement. When you are ready, try an official sample test from the how-to page. Use it to see the format, not as proof that you will pass.</p>\n<p>If a sample test feels hard, that is information for your plan. It does not mean you should stop. Ask a tutor or adult-learning program for help with the skill, and keep using official resources.</p>",
+      "sources": [
+        {
+          "label": "How to earn your CAEC — Government of Alberta",
+          "url": "https://www.alberta.ca/how-to-earn-your-caec"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success, Government of Canada",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This lesson includes real CAEC test questions.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Official sample tests are a place to see the format and practise, not a promise that you will pass.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Reading skills include finding key information and understanding the main idea.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You can practise numeracy by working with numbers you see in daily life, such as on a receipt.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Get help from official places when you get stuck",
+      "html": "<p>Getting stuck is part of learning. The next step is to use official help, not to guess or to buy an unofficial “pass guaranteed” course.</p>\n<p>The how-to page says some testing centres offer a test preparation class. Visit your province or territory’s website to find a testing centre near you. If you need special arrangements or accommodations, request them from your province or territory. The overview page says the CAEC is meant to support test-takers who need access to learning accommodations.</p>\n<p>For questions about the CAEC website, test format, content, rules, and information, Alberta lists these emails (as of 10 November 2026, America/Regina):</p>\n<ul>\n<li>General inquiries: edc.caec@gov.ab.ca</li>\n<li>Technical support: ecc.caec@gov.ab.ca</li>\n</ul>\n<p>A local CALP program, tutor, or adult-learning centre can also help you build reading, writing, and math habits. They cannot issue the CAEC. Only the official process does that after you pass the required tests.</p>\n<p>When you are ready to register, go back to the official Alberta pages. Check eligibility, create your account on the CAEC digital platform, and book with a testing centre. Bring the identification the official page asks for, and look up fees on the live provincial information. This course does not quote fees and does not walk you through every screen.</p>\n<p>Remember what this course is. It supports study habits. It is not the exam, not a pass promise, and not the credential itself.</p>",
+      "sources": [
+        {
+          "label": "How to earn your CAEC — Government of Alberta",
+          "url": "https://www.alberta.ca/how-to-earn-your-caec"
+        },
+        {
+          "label": "Canadian Adult Education Credential — Government of Alberta",
+          "url": "https://www.alberta.ca/canadian-adult-education-credential"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Some testing centres offer a test preparation class, according to the official how-to page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you need accommodations, the official page says to request them from your province or territory.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course can issue your CAEC certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta’s official pages list email contacts for general CAEC questions and technical support.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential.",
+    "questions": [
+      {
+        "prompt": "This course is the CAEC credential.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      },
+      {
+        "prompt": "The official Alberta CAEC page is the place to check what the credential is and how tests are set up.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      },
+      {
+        "prompt": "You can review official test outcomes and practise with official sample tests.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      },
+      {
+        "prompt": "A study plan in this course guarantees that you will pass.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      },
+      {
+        "prompt": "You can complete the CAEC at your own pace; the official page says the tests do not expire.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      },
+      {
+        "prompt": "This course teaches former GED® test content.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      },
+      {
+        "prompt": "Official Alberta pages list contacts if you have questions about the CAEC.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. The CAEC is explained on Alberta’s official pages. This course supports study habits, points you to official sample tests and outcomes, and does not promise a pass or issue the credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about study habits and official Alberta pages for the Canadian Adult Education Credential (CAEC). It is not the CAEC exam, not CAEC prep that promises a pass, and not a CAEC credential. It does not teach former GED® test content. Fees, dates, eligibility, and test rules change. Always check the live official Alberta CAEC page, and talk with a testing centre or qualified advisor about your own situation.",
+    "builderNotes": "- Support path only. Do not claim exam prep, a pass rate, or that this course issues the CAEC. Skip Ed2Go GED prep and do not port GED content.\n- Do not quote exam fees. The official page tells learners to check their province or territory.\n- Dropped from lessons and quizzes (verified live on 2026-11-10 but treated as exam-admin detail, not study-habit teaching): question counts and time limits; the 55% pass mark and score bands; score-release times; rewrite limits (once per calendar month and a maximum of three times per calendar year); the $30 writing-rescore fee and 90-day window; machine-scoring rules; and PLAR / older GED-test bridging steps. Point learners to https://www.alberta.ca/how-to-earn-your-caec and https://www.alberta.ca/canadian-adult-education-credential instead.\n- GED® replacement (2024) and the statement that completed GED® credentials remain recognized as valid until December 2027 were verified live on 2026-11-10 on the overview page and date-stamped in Lesson 1. Do not put the expiry date in a quiz. Re-check before rebuilds.\n- Do not walk through the Vretta / CAEC digital-platform screens. Point to the official register steps only.\n- Companion course: `poc-course-how-to-learn-online-2026-11-10.md`. Do not duplicate that whole course.\n- Date-stamped contacts (as of 10 November 2026, America/Regina): edc.caec@gov.ab.ca (general) and ecc.caec@gov.ab.ca (technical support).\n- Canadian spelling: *practise* (verb), *practice* (noun), *program*, *centre*.\n- No Ed2Go or Cengage text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-caec-study-skills-support.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of a study checklist."
+  }
+}

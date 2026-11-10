@@ -1,0 +1,534 @@
+{
+  "slug": "signed-language-awareness-asl-canada",
+  "title": "Signed Language Awareness (ASL in a Canadian Context)",
+  "summary": "By the end, learners can name the signed languages recognized in federal accessibility law, explain that ASL and LSQ are real languages, describe why a qualified interpreter is different from a friend who “knows some signs,” outline what Canada’s Video Relay Service is for, and find official places to learn more — without treating this course as interpreter training.",
+  "goals": "By the end, learners can name the signed languages recognized in federal accessibility law, explain that ASL and LSQ are real languages, describe why a qualified interpreter is different from a friend who “knows some signs,” outline what Canada’s Video Relay Service is for, and find official places to learn more — without treating this course as interpreter training.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or sign-language interpreter certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What this course is, and which languages the law names",
+      "html": "<p>Signed languages are languages. People use their hands, face, and body to share meaning. This course explains that idea in a Canadian context. It does <strong>not</strong> teach you enough ASL to interpret a meeting, a medical appointment, or a legal matter.</p>\n<p>The <em>Accessible Canada Act</em> is a federal law. The Department of Justice text of section 5.1 says American Sign Language, Quebec Sign Language, and Indigenous sign languages are recognized as the <strong>primary languages for communication by deaf persons in Canada</strong>. A Government of Canada summary of the Act uses the French name <strong>Langue des signes québécoise (LSQ)</strong> for Quebec Sign Language. That summary also says the purpose of the Act is to make Canada barrier-free by January 1, 2040, in areas that include communication.</p>\n<p>“Primary language” here means these signed languages are recognized in that law as the main languages Deaf people use to communicate in Canada. It does not mean every Deaf person uses the same language, and it does not make you an interpreter.</p>\n<p>The same Government of Canada summary notes that Canada already has a human-rights framework that includes the Canadian Charter of Rights and Freedoms, the Canadian Human Rights Act, and Canada’s commitments under the United Nations Convention on the Rights of Persons with Disabilities. This course does not interpret those laws for your situation.</p>\n<p>If you want to learn to sign, look for classes taught by qualified Deaf teachers after you finish these awareness lessons.</p>",
+      "sources": [
+        {
+          "label": "Accessible Canada Act, section 5.1 — Justice Laws",
+          "url": "https://laws-lois.justice.gc.ca/eng/acts/A-0.6/section-5.1.html"
+        },
+        {
+          "label": "Summary of the Accessible Canada Act — Canada.ca",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada/act-summary.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course certifies you as an ASL interpreter.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "The Accessible Canada Act recognizes as primary languages for communication by deaf persons in Canada:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "American Sign Language, Quebec Sign Language, and Indigenous sign languages"
+            },
+            {
+              "id": "B",
+              "text": "Only Morse code"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "LSQ stands for Langue des signes québécoise (Quebec Sign Language).",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Government of Canada summary says the Act aims to make Canada barrier-free by January 1, 2040.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "ASL and LSQ are real languages",
+      "html": "<p>The Canadian Association of the Deaf – Association des Sourds du Canada (CAD-ASC) is a national Deaf organization. On its language position page it says the natural language of Deaf people is Sign language, and that in Canada there are two legitimate Sign languages: American Sign Language (ASL) and la Langue des Signes Quebecoise (LSQ). It also notes a regional dialect called Maritimes Sign Language (MSL).</p>\n<p>CAD-ASC describes these Sign languages as real languages with their own grammar, syntax, and vocabulary. They are not “English on the hands” or “French on the hands.” A word-for-word signed copy of an English sentence is not the same thing as ASL.</p>\n<p>On its official-languages page, CAD-ASC says it uses ASL and LSQ as its two official languages, with English and French as secondary languages. It also says captioning, lip-reading, assistive devices, and oral interpretation are other ways some people access language, but those modes are not the same as ASL or LSQ.</p>\n<p>You cannot assume every Deaf person lip-reads, speaks, or uses the same signed language. A person in much of English-speaking Canada may use ASL. A person in Quebec may use LSQ. Some people use more than one language. Some people are Deafblind and may use other tactile or visual ways to communicate.</p>\n<p>This lesson is awareness, not a grammar class. Do not invent signs from English word order and call it ASL.</p>",
+      "sources": [
+        {
+          "label": "Language — Canadian Association of the Deaf",
+          "url": "https://cad-asc.ca/issues-positions/language/"
+        },
+        {
+          "label": "Official Languages — Canadian Association of the Deaf",
+          "url": "https://cad-asc.ca/issues-positions/official-languages/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "CAD-ASC describes ASL and LSQ as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Real Sign languages with their own grammar"
+            },
+            {
+              "id": "B",
+              "text": "Exactly the same as spoken English"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "LSQ is used especially in:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Quebec, as Quebec Sign Language"
+            },
+            {
+              "id": "B",
+              "text": "Every country as the only world sign language"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Every Deaf person lip-reads English.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Copying English word order with your hands is the same as ASL.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Qualified interpreters are not “a friend who knows some signs”",
+      "html": "<p>A professional interpreter’s job is to relay communication between people who do not share a language. Finishing this course does not give you that skill.</p>\n<p>CAD-ASC’s interpreting page says qualified professional interpreting helps non-Deaf people communicate with Deaf people. It supports using qualified professional interpreters who belong to the interpreter associations named on that page. It does <strong>not</strong> consider family, friends, acquaintances, social workers, teachers, educational assistants, ministers, or others to be qualified professional interpreters.</p>\n<p>CAD-ASC also says interpreters (except Deaf interpreters and Deaf intervenors) are not experts or consultants on Deaf issues. They facilitate communication. Expertise on Deaf issues and Deaf culture comes from Deaf people themselves.</p>\n<p>If your workplace, clinic, or council meeting needs signed-language access, arrange a qualified interpreter. Do not ask a co-worker’s child, a neighbour, or “someone who took a short course” to interpret an important conversation. That can leave out information and put private details in the wrong hands.</p>\n<p>Skills for Success <strong>collaboration</strong> includes valuing diversity and working respectfully with people who have different abilities and ways of communicating. Government of Canada accessibility guidance also says organizations should consider offering materials in ASL, LSQ, or Indigenous sign languages, and should plan time for interpreter requests.</p>\n<p>If you are speaking with a Deaf person through an interpreter, talk with the person, not about them as if they were not there. Wait for the interpreter to finish. This course still does not make you that interpreter.</p>",
+      "sources": [
+        {
+          "label": "Interpreting — Canadian Association of the Deaf",
+          "url": "https://cad-asc.ca/issues-positions/interpreting/"
+        },
+        {
+          "label": "Planning your consultation: choosing an approach — Canada.ca",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/consultation/section5.html"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "CAD-ASC says family members and friends:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Are not qualified professional interpreters"
+            },
+            {
+              "id": "B",
+              "text": "Should always interpret medical and legal meetings"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course qualifies you to interpret a job interview.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "CAD-ASC says interpreters are not, by themselves, experts on Deaf issues.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Government of Canada guidance says some consultees may communicate through ASL, LSQ, or Indigenous sign languages.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Canada’s Video Relay Service",
+      "html": "<p>Canada has a national Video Relay Service, often called <strong>Canada VRS</strong>. It is administered by the Canadian Administrator of Video Relay Service (CAV), a not-for-profit organization mandated by the Canadian Radio-television and Telecommunications Commission (CRTC).</p>\n<p>Canada VRS’s own pages say the service lets Deaf, DeafBlind, hard-of-hearing, and other Canadians who use ASL or LSQ as their primary language communicate with voice telephone users through internet video. A sign-language interpreter relays the conversation in real time between signed language and spoken language.</p>\n<p>The service is <strong>free</strong> to use. To register, you must be a <strong>primary sign language user</strong>. After you register, you receive a personal VRS number so you can make and receive calls. CAV says Canada VRS launched on September 28, 2016, and is available 24 hours a day, 7 days a week, 365 days a year. Apps are described for iOS, Android, Windows, and Mac computers.</p>\n<p>Government of Canada accessibility guidance describes VRS in similar terms: a person using sign language can make telephone and videoconference calls through an operator who interprets their signing verbally, and the other way around.</p>\n<p>VRS is a telephone-access tool. It is not the same as booking an in-person interpreter for a long meeting, and this course does not register you for the service. Hearing colleagues who are not primary sign language users should not treat the VRS app as their own interpreter training.</p>\n<p>For help, Canada VRS lists support@srvcanadavrs.ca and 1-800-958-5856 (English and French). Always check the live page, because contact details can change.</p>",
+      "sources": [
+        {
+          "label": "Canada VRS home",
+          "url": "https://srvcanadavrs.ca/en/"
+        },
+        {
+          "label": "About CAV / Canada VRS",
+          "url": "https://srvcanadavrs.ca/en/about/"
+        },
+        {
+          "label": "Planning your consultation: choosing an approach — Canada.ca",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada-regulations-guidance/consultation/section5.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Canada VRS is described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A free service that relays calls between sign language and spoken language"
+            },
+            {
+              "id": "B",
+              "text": "A course that certifies you as an interpreter"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To register for Canada VRS, the service says you must be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A primary sign language user"
+            },
+            {
+              "id": "B",
+              "text": "A professional interpreter first"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Canada VRS says the service is available 24 hours a day, 7 days a week.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "VRS replaces the need for a qualified interpreter in every in-person meeting.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Where to learn more, and what this course is not",
+      "html": "<p>If signed languages matter in your work or community, keep learning from official and Deaf-led sources.</p>\n<p>Useful starting points:</p>\n<ul>\n<li>The <em>Accessible Canada Act</em> text and the Government of Canada summary, for the legal recognition of ASL, LSQ, and Indigenous sign languages</li>\n<li>CAD-ASC (cad-asc.ca), for national Deaf-community positions on language and interpreting</li>\n<li>Canada VRS (srvcanadavrs.ca), if you or someone you support is a primary ASL or LSQ user who needs to make a voice telephone call</li>\n<li>Local Deaf organizations and classes taught by qualified Deaf teachers. CAD-ASC says qualified Deaf teachers should teach Sign language</li>\n</ul>\n<p>Government of Canada guidance on consulting persons with disabilities uses the principle “Nothing without us.” That means Deaf people should be involved when programs and services are designed, not only talked about after decisions are made.</p>\n<p>Do <strong>not</strong>:</p>\n<ul>\n<li>Pretend this five-lesson awareness course is interpreter training</li>\n<li>Use a family member as a professional interpreter for important or private conversations</li>\n<li>Invent signs and call them ASL or LSQ</li>\n<li>Assume one signed language works for every Deaf person in Canada</li>\n</ul>\n<p>A respectful next step is simple: learn whose language is being used, arrange proper access when it is needed, and keep studying with people who are qualified to teach.</p>",
+      "sources": [
+        {
+          "label": "Summary of the Accessible Canada Act — Canada.ca",
+          "url": "https://www.canada.ca/en/employment-social-development/programs/accessible-canada/act-summary.html"
+        },
+        {
+          "label": "Language — Canadian Association of the Deaf",
+          "url": "https://cad-asc.ca/issues-positions/language/"
+        },
+        {
+          "label": "Interpreting — Canadian Association of the Deaf",
+          "url": "https://cad-asc.ca/issues-positions/interpreting/"
+        },
+        {
+          "label": "Canada VRS home",
+          "url": "https://srvcanadavrs.ca/en/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A good place to read national Deaf-community positions on language is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The Canadian Association of the Deaf (CAD-ASC)"
+            },
+            {
+              "id": "B",
+              "text": "A random social media joke page"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "CAD-ASC says Sign language should be taught by qualified Deaf teachers.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Completing this course makes you a certified interpreter.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "“Nothing without us” points to involving persons with disabilities when programs are designed.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only.",
+    "questions": [
+      {
+        "prompt": "This course is an interpreter certificate.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      },
+      {
+        "prompt": "The Accessible Canada Act recognizes ASL, Quebec Sign Language, and Indigenous sign languages as primary languages for communication by deaf persons in Canada.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      },
+      {
+        "prompt": "CAD-ASC describes ASL and LSQ as real Sign languages with their own grammar.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      },
+      {
+        "prompt": "Family and friends are qualified professional interpreters.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      },
+      {
+        "prompt": "Canada VRS can relay a call between sign language and spoken language for registered primary sign language users.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      },
+      {
+        "prompt": "Every Deaf person in Canada uses the same signed language.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      },
+      {
+        "prompt": "You should look to qualified Deaf teachers if you want to learn to sign.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Signed languages are real languages. Arrange qualified interpreters and official services such as Canada VRS. This course is awareness only."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general awareness about signed languages in Canada. It is not American Sign Language (ASL) fluency training, not an interpreter certificate, and not a substitute for learning from qualified Deaf teachers or professional interpreters. It is not legal, medical, or human-rights advice about a person’s case. Do not treat a few facts from this course as enough skill to interpret for someone.",
+    "builderNotes": "- Awareness only. Do not add a “learn these 20 signs” section unless a verified official or Deaf-led source is opened and the signs are taught correctly; invented signs are harmful.\n- CAD-ASC interpreting page (approved 3 July 2015) still names AVLIC and AQILS. Do not silently rename associations. Point learners to the live page.\n- Canada VRS phone 1-800-958-5856 and support@srvcanadavrs.ca were on the About page this session; re-check before rebuilds.\n- CRTC VRS explainer URL timed out (HTTP 504) this session and was not cited.\n- Canada VRS pages were retrieved with full content via WebFetch this session. Direct curl (even with a browser User-Agent) received HTTP 403 / Cloudflare “Just a moment…”. Re-check in a browser before rebuilds.\n- No Ed2Go “Discover Sign Language” text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  },
+  "media": {
+    "frameClass": "frame frame-wide",
+    "src": "media/course-signed-language-awareness-asl-canada.svg",
+    "srcset": "",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A simple drawing of two hands."
+  }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 853" width="1280" height="853">
+  <rect width="1280" height="853" fill="#e7f0eb"/>
+  <rect x="96" y="86" width="1088" height="681" rx="36" fill="#fffdf8" stroke="#123c2e" stroke-width="10"/>
+  <path d="M520 520 C520 360 620 300 700 340 C780 380 760 500 680 540 C600 580 520 560 520 520Z" fill="#123c2e"/><rect x="470" y="500" width="70" height="180" rx="30" fill="#7a4e0c"/><rect x="760" y="470" width="60" height="200" rx="28" fill="#123c2e"/>
+</svg>
