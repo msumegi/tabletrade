@@ -1,0 +1,600 @@
+{
+  "slug": "writing-simple-grant-application-canada",
+  "title": "Writing a Simple Grant Application in Canada",
+  "summary": "By the end, learners can tell a grant from other kinds of government support, find official program lists (including Innovation Canada’s Business Benefits Finder and Alberta’s non-profit grant pages), read eligibility and expense rules before they write, gather common documents, write clear and honest answers to the questions asked, and describe what happens after they apply — without treating this course as a consultant licence or a guarantee of funding.",
+  "goals": "By the end, learners can tell a grant from other kinds of government support, find official program lists (including Innovation Canada’s Business Benefits Finder and Alberta’s non-profit grant pages), read eligibility and expense rules before they write, gather common documents, write clear and honest answers to the questions asked, and describe what happens after they apply — without treating this course as a consultant licence or a guarantee of funding.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or grant-consultant certification. It is not a promise of funding.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Know what you are applying for",
+      "html": "<p>This course is for people who help a community group, council, or small organization look at government funding in Canada. It also helps if you support a small business that wants to search official programs. It does not promise that you will receive money. Finishing the course does not make you a paid grant consultant.</p>\n<p>Government support is not only “a grant.” Innovation Canada’s Business Benefits Finder groups many kinds of help. A <strong>grant</strong> is money you may not have to repay if you follow the program’s rules. Other supports can include <strong>loans</strong> (money you repay), <strong>tax credits</strong>, <strong>wage subsidies</strong>, chances to work with researchers, and expert advice. The right tool depends on your project and on who you are. A registered non-profit is not the same as a for-profit business.</p>\n<p>The Government of Alberta says there is work to do before you even start completing a grant application. Innovation Canada asks you to check <strong>fit</strong> first:</p>\n<ul>\n<li>Is this project already part of your 12-to-24-month plan?</li>\n<li>Would you still do the work without the funding?</li>\n<li>Do you have the people and time to deliver the project <strong>and</strong> report on it?</li>\n<li>Are you applying because the program fits, or only because the money exists?</li>\n</ul>\n<p>Processing can take weeks or months. If you need to start tomorrow, a slow program may not be the right match. Innovation Canada also notes that government funding is designed to <strong>share risk</strong>, not to pay every cost. Many business programs expect the applicant to contribute, and asking for 100% of the costs is often a non-starter. That is a general tip for business funding, not a rule for every community grant. Always read the live program page.</p>",
+      "sources": [
+        {
+          "label": "Government funding: tips for a strong application — Innovation Canada",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en/first-things-first/government-funding-tips-strong-application"
+        },
+        {
+          "label": "How to get the most out of the Business Benefits Finder — Innovation Canada",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en/innovation-canada/first-things-first/how-get-most-out-business-benefits-finder"
+        },
+        {
+          "label": "Preparing and applying for grants — Government of Alberta",
+          "url": "https://www.alberta.ca/preparing-and-applying-for-grants"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course promises that you will receive a grant.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A loan is different from a grant because:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A loan is money you repay; a grant may not have to be repaid if you follow the rules"
+            },
+            {
+              "id": "B",
+              "text": "A loan is always free money with no paperwork"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before you start the form, Alberta’s preparing-and-applying page says:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "There is work to do first"
+            },
+            {
+              "id": "B",
+              "text": "You should skip the guidelines"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Innovation Canada asks whether the project fits your plan and whether you can deliver and report on it.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Government funding is designed to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Share risk, not always pay every cost"
+            },
+            {
+              "id": "B",
+              "text": "Replace all other planning"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Find official programs",
+      "html": "<p>Start on official government sites. Do not pay a random website for a “secret list” of grants.</p>\n<p>Innovation Canada describes the <strong>Business Benefits Finder</strong> as the place to get a tailored list of what government can do for a business. As of November 2026, its how-to page said the Finder brings together more than 1,500 federal, provincial, and territorial supports, then narrows them after you answer questions. Check the live page; that number can change.</p>\n<p>To get better results:</p>\n<ul>\n<li>Answer in detail. Choose “not sure” only when you truly do not know.</li>\n<li>Think about your goal.</li>\n<li>After you complete a “story,” filter to programs that are <strong>currently accepting applications</strong>.</li>\n<li>View results by category or as a list.</li>\n<li>Use <strong>Share</strong> to email the list. Innovation Canada says the shared list stays up to date when you open it again.</li>\n<li>You can also start from all programs and use filters or a keyword search.</li>\n<li>Save your story and sign up for email notices. You can favourite a program to hear when a deadline is coming.</li>\n</ul>\n<p>This course could not open the Finder’s separate start address this session. Begin at the official Innovation Canada website and follow the Business Benefits Finder link there.</p>\n<p>Canada.ca’s page on getting business support and financing also points you to the Finder. For Alberta it lists Prairies Economic Development Canada, the Prairies Business Service Network, and Community Futures Alberta.</p>\n<p>If you help a charity or non-profit in Alberta, use Alberta.ca’s hub for grants, funding, and supports for non-profits, and the page on preparing and applying for grants. That page points to training such as Grant Writing 101 — open it there rather than copying a webinar.</p>",
+      "sources": [
+        {
+          "label": "Innovation Canada home (Business Benefits Finder described here)",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en"
+        },
+        {
+          "label": "How to get the most out of the Business Benefits Finder",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en/innovation-canada/first-things-first/how-get-most-out-business-benefits-finder"
+        },
+        {
+          "label": "Getting business support and financing — Canada.ca",
+          "url": "https://www.canada.ca/en/services/business/start/support-financing.html"
+        },
+        {
+          "label": "Grants, funding and supports for non-profits — Government of Alberta",
+          "url": "https://www.alberta.ca/grants-funding-and-supports-for-non-profits"
+        },
+        {
+          "label": "Preparing and applying for grants — Government of Alberta",
+          "url": "https://www.alberta.ca/preparing-and-applying-for-grants"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The Business Benefits Finder:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Gives a tailored list after you answer questions about your situation"
+            },
+            {
+              "id": "B",
+              "text": "Guarantees that you will be funded"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "After you complete a story, you can filter to programs that are currently accepting applications.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Saving your story and signing up for notices can help you hear about matching programs or approaching deadlines.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "For Alberta businesses, Canada.ca’s support-and-financing page lists:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Prairies Economic Development Canada, the Prairies Business Service Network, and Community Futures Alberta"
+            },
+            {
+              "id": "B",
+              "text": "Only private banks"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alberta’s non-profit hub is a place to find official funding pages for charities and non-profits.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Read the guidelines before you write",
+      "html": "<p>Innovation Canada says many applications are rejected because the organization or the project expenses are not eligible. Before you write, read who can apply, what costs are eligible, any limits, and matching rules. If you still have questions, call a program officer. Do not invent a rule that is not on the page.</p>\n<p>This is how to read a live program page — an example, not a promise of funding.</p>\n<p>As of November 2026, Alberta’s Community Initiatives Program (CIP) Project Grant page said funding can be up to $75,000 for certain community-driven initiatives, programs, and events. The next intake deadline listed there was February 15, 2027. The program is moving to two intakes each year (February 15 and August 15), and review takes about six months. Check the live CIP page; those figures and dates can change.</p>\n<p>Eligible applicants were Alberta-based non-profits registered and in good standing under named acts, operational for at least one full year, able to provide a financial statement for that year, and with an Alberta address that an active member monitors. Municipalities, for-profits, individuals, schools (as defined on that page), and organizations with overdue ministry-grant reporting were listed as ineligible.</p>\n<p>CIP Project funding is approved only on a matching basis: the applicant must contribute an amount equal to or exceeding the amount requested, plus any remaining funds needed. Total Government of Alberta funding cannot exceed 50% of total project costs. Those matching rules are not true for every grant in Canada.</p>\n<p>Applications go through the <strong>GATE Front Office</strong> portal. Registration can take up to 10 business days, so register at least 10 business days before a deadline. Email the form to registration.cg@gov.ab.ca and choose Community Grants as the program area. For in-kind matching, use only the donated-labour rates printed on the live CIP page.</p>",
+      "sources": [
+        {
+          "label": "Government funding: tips for a strong application — Innovation Canada",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en/first-things-first/government-funding-tips-strong-application"
+        },
+        {
+          "label": "Community Initiatives Program (CIP) Project Grant — Government of Alberta",
+          "url": "https://www.alberta.ca/cip-project-grant"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Innovation Canada says many applications are rejected because:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The organization or the project expenses are not eligible"
+            },
+            {
+              "id": "B",
+              "text": "The writer used Canadian spelling"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before you write, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Read who can apply, what costs are eligible, and the matching rules"
+            },
+            {
+              "id": "B",
+              "text": "Guess the rules from a social media post"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "CIP Project funding, on the live Alberta page, is described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Matching: the applicant contributes an amount equal to or exceeding the amount requested"
+            },
+            {
+              "id": "B",
+              "text": "Automatic full funding with no contribution"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "CIP Project applications are submitted through:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "GATE Front Office"
+            },
+            {
+              "id": "B",
+              "text": "A handwritten note left at any grocery store"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should treat one program’s matching rules as true for every grant in Canada.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Write clear, honest answers",
+      "html": "<p>When you write, Innovation Canada’s experts say: avoid marketing language. These programs are funded by Canadian taxpayers, so officers need a clear picture they can explain to someone who does not know your work. Use everyday words. Say what you will do, who will benefit, and how you will know it worked.</p>\n<p>Answer the questions that are asked. After a long writing session it is easy to describe your whole organization and forget the question. Have a colleague read the draft and check that each question has a direct answer. Innovation Canada also says less is more: give what they ask for so every applicant is judged on the same information.</p>\n<p>Prepare common documents early. Innovation Canada notes that many business applications ask for a description of the organization, the number of employees, the past three years of financial statements, and incorporation documents. For a project they often want a description, a detailed expense breakdown, risks, and the benefits for Canada. Keep a folder of facts you can reuse — then tailor the last part to this program. Do not copy and paste without updating.</p>\n<p>Alberta’s CIP Project page (as of November 2026) shows how specific a document list can be: a board member list with positions and contacts; recent financial statements signed by two signing authorities; current bank statement(s); a signed grant agreement from the portal; an Application for Electronic Payment and a void cheque; and quotes or estimates for project costs. Other items apply only in some cases, such as letters for donated in-kind support. Incomplete applications will not be accepted.</p>\n<p>Use honest numbers. If you need help writing short, plain sentences, see the Range Path course on workplace writing and grammar. This lesson is not Outlook or email training.</p>",
+      "sources": [
+        {
+          "label": "Government funding: tips for a strong application — Innovation Canada",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en/first-things-first/government-funding-tips-strong-application"
+        },
+        {
+          "label": "Community Initiatives Program (CIP) Project Grant — Government of Alberta",
+          "url": "https://www.alberta.ca/cip-project-grant"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Innovation Canada says you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Avoid marketing language and explain the work in plain words"
+            },
+            {
+              "id": "B",
+              "text": "Fill the form with slogans and sales talk"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should answer the questions the program actually asks.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A saved folder of facts is useful, but you still need to tailor the application to this program.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the CIP Project page, incomplete applications:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Will not be accepted"
+            },
+            {
+              "id": "B",
+              "text": "Are automatically approved"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson replaces the workplace-writing course and teaches Outlook buttons.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "After you apply",
+      "html": "<p>Sending the form is not the end of the work.</p>\n<p>Innovation Canada warns that reporting can take more time than people expect. In many business programs, money is reimbursed through claims, sometimes monthly or quarterly, and some reporting can continue after the project ends. Factor that work into your plan before you apply. Rules differ by program — read yours.</p>\n<p>On Alberta’s CIP Project page (as of November 2026):</p>\n<ul>\n<li>Incomplete applications are not accepted.</li>\n<li>Decisions are final and there is no appeal.</li>\n<li>Notification is emailed to the contacts on the application, about six months after the intake deadline.</li>\n<li>If you are declined, you may submit a new application for the same project if you have not already incurred the expenses.</li>\n<li>If you receive a grant, the project must be completed and fully reported within 18 months of the grant payment date, unless an extension is approved.</li>\n</ul>\n<p>Newer CIP applications submitted through GATE Front Office report in that portal. Older awards follow the instructions on the live page.</p>\n<p>Keep copies of what you sent, any emails, and the guidelines that were posted when you applied.</p>\n<p>For CIP questions, Alberta’s Community Grants office listed these contacts: 780-422-9598, toll free 1-800-642-3855, and communitygrants@gov.ab.ca, weekdays from 8:15 am to 4:00 pm (closed statutory holidays).</p>\n<p>A clear application improves your chance of a fair review. It does not guarantee funding. Check the live program page before every new intake.</p>",
+      "sources": [
+        {
+          "label": "Government funding: tips for a strong application — Innovation Canada",
+          "url": "https://ised-isde.canada.ca/site/innovation-canada/en/first-things-first/government-funding-tips-strong-application"
+        },
+        {
+          "label": "Community Initiatives Program (CIP) Project Grant — Government of Alberta",
+          "url": "https://www.alberta.ca/cip-project-grant"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Reporting and claims can be part of the real cost of receiving government funding.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the CIP Project page, grant decisions:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Are final, and no appeals will be considered"
+            },
+            {
+              "id": "B",
+              "text": "Can be appealed to any social media page"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If CIP funding is declined, the page said you may reapply for the same project if:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The expenses have not already been incurred"
+            },
+            {
+              "id": "B",
+              "text": "You have already spent all the money"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Finishing this course guarantees that your organization will be funded.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "For CIP questions, Alberta lists a Community Grants phone number and email on the program page.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding.",
+    "questions": [
+      {
+        "prompt": "This course promises that you will receive grant money.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      },
+      {
+        "prompt": "The Business Benefits Finder can give a tailored list after you answer questions.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      },
+      {
+        "prompt": "You should read who can apply and which expenses are eligible before you write.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      },
+      {
+        "prompt": "Marketing language is the best way to write a grant application.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      },
+      {
+        "prompt": "You should answer the questions the program actually asks.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      },
+      {
+        "prompt": "Some programs require reporting after money is awarded.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      },
+      {
+        "prompt": "This course is a grant-consultant credential.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about finding official grant and funding pages in Canada and reading them before you write. It is not a promise that you or your organization will receive money. It is not a grant-consultant credential, not legal, tax, or financial advice, and not a substitute for a program’s own guidelines. Grant amounts, deadlines, and rules change. Always check the live official page before you apply.",
+    "builderNotes": "- Staff-and-volunteer track: label it so learners do not confuse it with foundational literacy.\n- Do not promise funding. Do not present this as a consultant credential.\n- CIP dollar amount ($75,000) and next deadline (February 15, 2027) were verified live on 2026-11-10 and date-stamped in Lesson 3. Do not put those figures in quiz answers; they go stale. Re-check https://www.alberta.ca/cip-project-grant before any rebuild.\n- CIP matching (“equal to or exceeding the amount requested”) and the 50% Government of Alberta funding cap are CIP rules, not universal Canadian grant rules.\n- Innovation Canada’s note that many business programs expect the applicant to contribute (and may typically award 20–30% of eligible costs) is a business-funding generalization. Do not apply it to CIP or to every community grant.\n- Do not teach CIP donated-labour hourly rates as a general rule; point learners to the live CIP page.\n- The Business Benefits Finder tool URL (`innovation.ised-isde.canada.ca/...`) did not return a usable page from this session’s writing tools (connection failure / HTTP 500). Learners are sent to the verified Innovation Canada homepage and the official how-to page instead. Do not cite `https://www.canada.ca/en/services/business/grants.html`; it redirected to that unreachable Finder address.\n- `https://www.canada.ca/en/services/business/start/support-financing.html` returned the live page on GET and WebFetch this session (title: “Getting business support and financing”); a HEAD request redirected to `canada.ca/errors/404.html`. Verify with GET before rebuilds.\n- Point to Grant Writing 101 and Front Office videos on Alberta.ca; do not copy webinar or sample-application content.\n- Point to the workplace-writing course for plain language; do not repeat Outlook button training.\n- No Ed2Go or Cengage grant-writing text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

@@ -13,7 +13,9 @@ node tools/md-to-course.mjs path/to/course.md --before email-online-safety --sho
 node tools/build-pages.mjs
 ```
 
-`--before email-online-safety` puts the new course after the newer courses and before the original Email, SIN, and Winter courses. Use `--after some-slug` instead if it belongs somewhere else. A grant-application course should use the same `--before email-online-safety` line so it stays with the newer courses.
+`--before email-online-safety` puts the new course after the newer courses and before the original Email, SIN, and Winter courses. Use `--after some-slug` when it belongs beside a particular course. Writing a Simple Grant Application sits immediately after Project Management Basics.
+
+Workplace Writing may later gain a short spelling section. Add that as another lesson object in `data/courses/workplace-writing-grammar-canada.json`, then rebuild. Keep it in that same file.
 
 The converter writes `data/courses/<slug>.json` and inserts the registry line. It keeps the lesson text, official links, and quiz answers from the file. It does not invent facts. If a lesson has no quiz, it writes true/false questions from that lesson’s own sentences and prints a warning. Then edit `shortTitle` or `navLabel` in `data/registry.json` if the labels need a tweak, and run the build again.
 

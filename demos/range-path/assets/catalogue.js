@@ -123,6 +123,16 @@ window.RANGE_PATH = {
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification."
     },
     {
+      "id": "writing-simple-grant-application-canada",
+      "title": "Writing a Simple Grant Application in Canada",
+      "shortTitle": "Grant writing",
+      "navLabel": "Grants",
+      "lessons": 5,
+      "featured": true,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or grant-consultant certification. It is not a promise of funding."
+    },
+    {
       "id": "email-online-safety",
       "title": "Email & Online Safety Basics in Canada",
       "shortTitle": "Email & Online Safety",
