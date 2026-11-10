@@ -106,6 +106,16 @@ registry.courses.forEach((entry) => {
 });
 
 if (!fs.existsSync(path.join(root, "assets", "catalogue.js"))) errors.push("Missing assets/catalogue.js");
+if (!fs.existsSync(path.join(root, "assets", "data.js"))) errors.push("Missing assets/data.js");
+if (!fs.existsSync(path.join(root, "data", "demo-store.json"))) errors.push("Missing data/demo-store.json");
+if (!fs.existsSync(path.join(root, "data", "report-fields.json"))) errors.push("Missing data/report-fields.json");
+
+walk(path.join(root, "assets"))
+  .filter((file) => file.endsWith(".js") && path.basename(file) !== "data.js")
+  .forEach((file) => {
+    const source = fs.readFileSync(file, "utf8");
+    if (source.includes("localStorage")) errors.push(path.relative(root, file) + " touches localStorage");
+  });
 
 if (errors.length) {
   errors.forEach((error) => console.error(error));

@@ -76,7 +76,78 @@
           "answer": "B",
           "explain": "Completion only. It is not MOS or college credit."
         }
-      ]
+      ],
+      "sections": [
+        {
+          "id": "grid",
+          "title": "Cells, rows, and columns",
+          "minutes": 8,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>Microsoft Excel</strong> is a program for lists and numbers. Microsoft’s basic-tasks guide says Excel works well for simple calculations and for tracking many kinds of information. The key is a grid of <strong>cells</strong>. Cells can hold numbers, text, or <strong>formulas</strong> (instructions that calculate). You group cells in <strong>rows</strong> and <strong>columns</strong> so you can add, sort, filter, and later make charts if you want to.</p>\n<p>Excel files are called <strong>workbooks</strong>. Each workbook has one or more <strong>sheets</strong> (also called spreadsheets). You can add more sheets, or start a new workbook when you want to keep information separate.</p>\n"
+            }
+          ]
+        },
+        {
+          "id": "workbook",
+          "title": "Workbooks and a blank sheet",
+          "minutes": 8,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>To start a blank workbook</strong> (Microsoft’s steps):</p>\n<ol>\n<li>Click <strong>File</strong>, then <strong>New</strong>.</li>\n<li>Under New, click <strong>Blank workbook</strong>.</li>\n</ol>\n"
+            }
+          ]
+        },
+        {
+          "id": "address",
+          "title": "Cell addresses",
+          "minutes": 7,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p>Each cell has an address made from its column letter and row number. Cell <strong>A1</strong> is column A, row 1 — the top-left cell on a new sheet.</p>\n<p>People in Canada use spreadsheets for many everyday jobs: hours worked, a small expense list, a class attendance sheet, or a farm or household inventory. This course uses Canadian spelling and simple examples. It will not tell you how to file taxes or choose a bookkeeping system.</p>\n<p>If Excel is not on the computer in front of you, ask your adult learning council which version they have, or whether you can use Excel for the web with a sign-in they approve. Do not buy software because this lesson mentioned it.</p>"
+            }
+          ]
+        }
+      ],
+      "minutes": 23,
+      "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+      "files": [
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-1-starter.csv",
+          "name": "lesson-1-starter.csv",
+          "bytes": 2,
+          "kind": "CSV",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-1-starter.xlsx",
+          "name": "lesson-1-starter.xlsx",
+          "bytes": 2225,
+          "kind": "Excel workbook",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-1-solved.xlsx",
+          "name": "lesson-1-solved.xlsx",
+          "bytes": 2271,
+          "kind": "Excel workbook",
+          "solved": true
+        }
+      ],
+      "filesComment": "PLACEHOLDER for content writers: practice rows use the Item/Amount sample already in lesson 2 (Fuel 80, Feed 45, Supplies 25) or an empty sheet. Replace the files if the lesson changes.",
+      "assignment": {
+        "id": "lesson-1-task",
+        "title": "Practice: What is Excel?",
+        "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
+        "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
+        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      }
     },
     {
       "number": 2,
@@ -149,7 +220,97 @@
           "answer": "A",
           "explain": ""
         }
-      ]
+      ],
+      "sections": [
+        {
+          "id": "enter",
+          "title": "Type in a cell",
+          "minutes": 8,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p>Entering data means typing information into cells so Excel can use it later.</p>\n<p>Microsoft’s steps:</p>\n<ol>\n<li>Click an empty cell. On a new sheet, try <strong>A1</strong>.</li>\n<li>Type text or a number.</li>\n<li>Press <strong>Enter</strong> or <strong>Tab</strong> to move to the next cell.</li>\n</ol>\n<p><strong>Enter</strong> usually moves you down to the cell below. <strong>Tab</strong> usually moves you right to the next column. If you make a mistake, click the cell again and type the correction, or edit what you see.</p>\n"
+            }
+          ]
+        },
+        {
+          "id": "table",
+          "title": "The sample table",
+          "minutes": 8,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>A simple practice table</strong> (sample data only):</p>\n<table><thead><tr><th></th><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>Item</td><td>Amount</td></tr><tr><td>2</td><td>Fuel</td><td>80</td></tr><tr><td>3</td><td>Feed</td><td>45</td></tr><tr><td>4</td><td>Supplies</td><td>25</td></tr></tbody></table>\n<p>Type the words in column A and the numbers in column B. Keep one kind of information in each column. That makes adding and sorting easier later.</p>\n"
+            },
+            {
+              "type": "example",
+              "title": "Worked example: the sample table",
+              "problem": "Enter the sample table from this lesson: column A is Item, column B is Amount.",
+              "steps": [
+                "Click an empty cell. On a new sheet, try A1.",
+                "Type the header Item, press Tab, and type Amount.",
+                "Press Enter and type the rows Fuel 80, Feed 45, and Supplies 25."
+              ],
+              "result": "Column A has Item, Fuel, Feed, and Supplies. Column B has Amount, 80, 45, and 25.",
+              "comment": "PLACEHOLDER for content writers: this worked example only restates the sample table already in the lesson. Replace it with a fuller example."
+            }
+          ]
+        },
+        {
+          "id": "tips",
+          "title": "Tips while you type",
+          "minutes": 6,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>Tips:</strong></p>\n<ul>\n<li>Click once to select a cell before you type.</li>\n<li>If you start typing in the wrong cell, click the cell again and type the correction.</li>\n<li>Do not type a space after a number if you want Excel to treat it as a number.</li>\n<li>Use sample amounts in this course. Do not enter real banking passwords or anyone’s private pay details into a shared computer.</li>\n</ul>\n<p>When a cell is selected, you can also see and edit its contents in the <strong>formula bar</strong> near the top of the window (you will use this more in Lesson 4).</p>"
+            }
+          ]
+        }
+      ],
+      "minutes": 22,
+      "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+      "files": [
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-2-starter.csv",
+          "name": "lesson-2-starter.csv",
+          "bytes": 12,
+          "kind": "CSV",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-2-starter.xlsx",
+          "name": "lesson-2-starter.xlsx",
+          "bytes": 2323,
+          "kind": "Excel workbook",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-2-solved.xlsx",
+          "name": "lesson-2-solved.xlsx",
+          "bytes": 2591,
+          "kind": "Excel workbook",
+          "solved": true
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-2-solved.csv",
+          "name": "lesson-2-solved.csv",
+          "bytes": 40,
+          "kind": "CSV",
+          "solved": true
+        }
+      ],
+      "filesComment": "PLACEHOLDER for content writers: practice rows use the Item/Amount sample already in lesson 2 (Fuel 80, Feed 45, Supplies 25) or an empty sheet. Replace the files if the lesson changes.",
+      "assignment": {
+        "id": "lesson-2-task",
+        "title": "Practice: Enter data in cells",
+        "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
+        "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
+        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      }
     },
     {
       "number": 3,
@@ -222,7 +383,66 @@
           "answer": "B",
           "explain": "This course is not tax advice. Ask a tutor or check official requirements for a real workplace or filing task."
         }
-      ]
+      ],
+      "sections": [
+        {
+          "id": "borders",
+          "title": "Borders and fill colour",
+          "minutes": 10,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p>Plain numbers are useful. A little formatting makes a sheet easier to scan.</p>\n<p><strong>Borders</strong> (Microsoft):</p>\n<ol>\n<li>Select the cell or range you want to outline.</li>\n<li>On the <strong>Home</strong> tab, in the <strong>Font</strong> group, click the arrow next to <strong>Borders</strong>, and choose a style.</li>\n</ol>\n<p><strong>Shading (fill colour):</strong></p>\n<ol>\n<li>Select the cells.</li>\n<li>On the <strong>Home</strong> tab, in the Font group, click the arrow next to <strong>Fill Color</strong>, and pick a colour.</li>\n</ol>\n<p>Use light colours for titles so the text stays readable.</p>\n"
+            }
+          ]
+        },
+        {
+          "id": "formats",
+          "title": "Number formats",
+          "minutes": 10,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>Number formats:</strong> Microsoft says you can add a format such as currency, percentages, or dates so different kinds of numbers are easier to tell apart.</p>\n<ol>\n<li>Select the cells that have numbers.</li>\n<li>Click the <strong>Home</strong> tab, then the arrow in the <strong>General</strong> box.</li>\n<li>Pick a number format. If you do not see the one you want, click <strong>More Number Formats</strong>.</li>\n</ol>\n<p>Choose a format that matches how you write money or dates in Canada. If you are not sure which currency or date style to pick, ask a tutor. This course does not tell you which format a workplace or the CRA requires.</p>\n<p>You can also select a block of cells by clicking the first cell and dragging to the last cell. Microsoft notes you can hold <strong>Shift</strong> and use the arrow keys to select with the keyboard.</p>\n<p>Save your work after you format (Lesson 5) so you do not lose the layout.</p>"
+            }
+          ]
+        }
+      ],
+      "minutes": 20,
+      "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+      "files": [
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-3-starter.csv",
+          "name": "lesson-3-starter.csv",
+          "bytes": 40,
+          "kind": "CSV",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-3-starter.xlsx",
+          "name": "lesson-3-starter.xlsx",
+          "bytes": 2591,
+          "kind": "Excel workbook",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-3-solved.xlsx",
+          "name": "lesson-3-solved.xlsx",
+          "bytes": 2591,
+          "kind": "Excel workbook",
+          "solved": true
+        }
+      ],
+      "filesComment": "PLACEHOLDER for content writers: practice rows use the Item/Amount sample already in lesson 2 (Fuel 80, Feed 45, Supplies 25) or an empty sheet. Replace the files if the lesson changes.",
+      "assignment": {
+        "id": "lesson-3-task",
+        "title": "Practice: Make a sheet easier to read",
+        "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
+        "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
+        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      }
     },
     {
       "number": 4,
@@ -299,7 +519,98 @@
           "answer": "A",
           "explain": ""
         }
-      ]
+      ],
+      "sections": [
+        {
+          "id": "formulas",
+          "title": "Formulas that start with =",
+          "minutes": 12,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p>A <strong>formula</strong> tells Excel to calculate. Microsoft says a simple formula always starts with an <strong>equal sign (=)</strong>. Then you type numbers and operators:</p>\n<ul>\n<li>plus <code>+</code> to add</li>\n<li>minus <code>-</code> to subtract</li>\n<li>asterisk <code>*</code> to multiply</li>\n<li>forward slash <code>/</code> to divide</li>\n</ul>\n<p>Examples from Microsoft: <code>=2+4</code>, <code>=4-2</code>, <code>=2*4</code>, or <code>=4/2</code>. Click a cell, type the formula, then press <strong>Enter</strong> (Windows) or <strong>Return</strong> (Mac). You can also point at cells instead of typing the numbers: for example, <code>=B2+B3+B4</code>.</p>\n<p>Microsoft notes that multiplication and division happen before addition and subtraction. So <code>=5+2*3</code> multiplies 2 and 3 first, then adds 5.</p>\n"
+            },
+            {
+              "type": "example",
+              "title": "Worked example: order of operations",
+              "problem": "What does the formula =5+2*3 calculate?",
+              "steps": [
+                "Start the formula with an equal sign.",
+                "Remember that multiplication happens before addition.",
+                "Multiply 2 by 3 first, then add 5."
+              ],
+              "result": "The lesson states that =5+2*3 multiplies 2 and 3 first, then adds 5.",
+              "comment": "PLACEHOLDER for content writers: this worked example only restates the formula already in the lesson. Replace it with a fuller example."
+            }
+          ]
+        },
+        {
+          "id": "autosum",
+          "title": "AutoSum",
+          "minutes": 10,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>AutoSum</strong> is a fast way to add a column or row. Microsoft’s steps:</p>\n<ol>\n<li>Select the cell immediately <strong>below</strong> a column of numbers, or immediately <strong>to the right</strong> of a row of numbers.</li>\n<li>On the <strong>Home</strong> tab (or the Formulas tab), click <strong>AutoSum</strong>.</li>\n<li>Press Enter.</li>\n</ol>\n<p>AutoSum inserts a <strong>SUM</strong> function for you. You can also type a SUM formula yourself, such as <code>=SUM(B2:B4)</code>, which adds the cells from B2 through B4.</p>\n<p>If a formula does not look right, click the cell and check the formula bar at the top. Fix the equal sign and cell addresses, then press Enter again.</p>\n<p>Practise on the sample amounts from Lesson 2. This is not payroll or tax calculation advice.</p>"
+            },
+            {
+              "type": "example",
+              "title": "Worked example: add a column",
+              "problem": "Add the sample amounts 80, 45, and 25.",
+              "steps": [
+                "Select the cell immediately below the column of numbers.",
+                "On the Home tab, click AutoSum.",
+                "Or type =SUM(B2:B4) if those amounts are in B2 through B4.",
+                "Press Enter."
+              ],
+              "result": "Excel adds the cells from B2 through B4.",
+              "comment": "PLACEHOLDER for content writers: this worked example only restates AutoSum and =SUM(B2:B4) from the lesson. Replace it with a fuller example."
+            }
+          ]
+        }
+      ],
+      "minutes": 22,
+      "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+      "files": [
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-4-starter.csv",
+          "name": "lesson-4-starter.csv",
+          "bytes": 40,
+          "kind": "CSV",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-4-starter.xlsx",
+          "name": "lesson-4-starter.xlsx",
+          "bytes": 2591,
+          "kind": "Excel workbook",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-4-solved.xlsx",
+          "name": "lesson-4-solved.xlsx",
+          "bytes": 2688,
+          "kind": "Excel workbook",
+          "solved": true
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-4-solved.csv",
+          "name": "lesson-4-solved.csv",
+          "bytes": 58,
+          "kind": "CSV",
+          "solved": true
+        }
+      ],
+      "filesComment": "PLACEHOLDER for content writers: practice rows use the Item/Amount sample already in lesson 2 (Fuel 80, Feed 45, Supplies 25) or an empty sheet. Replace the files if the lesson changes.",
+      "assignment": {
+        "id": "lesson-4-task",
+        "title": "Practice: Simple formulas and AutoSum",
+        "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
+        "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
+        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      }
     },
     {
       "number": 5,
@@ -376,7 +687,66 @@
           "answer": "A",
           "explain": ""
         }
-      ]
+      ],
+      "sections": [
+        {
+          "id": "save",
+          "title": "Save the workbook",
+          "minutes": 10,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p>Saving puts your workbook in a file so you can close Excel without losing the work.</p>\n<p>Microsoft’s basic steps:</p>\n<ol>\n<li>Click the <strong>Save</strong> button on the Quick Access Toolbar, or press <strong>Ctrl+S</strong>. If you have saved this file before, you are done.</li>\n<li>The first time, choose <strong>Save As</strong>, pick a location, browse to a folder, type a name in the <strong>File name</strong> box, and click <strong>Save</strong>.</li>\n</ol>\n<p>A clear name helps you find the file later, such as <code>hours-november</code> or <code>expense-list-practice</code>. Save it in a folder you know, such as Documents (see the Everyday Computers course for File Explorer).</p>\n<p>Save often while you work. Microsoft also describes AutoRecovery, which can keep a backup if something goes wrong, such as a power cut. AutoRecovery is not the same as you saving the file yourself, so do not rely on it alone.</p>\n"
+            }
+          ]
+        },
+        {
+          "id": "print",
+          "title": "Print or preview",
+          "minutes": 8,
+          "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+          "blocks": [
+            {
+              "type": "prose",
+              "html": "<p><strong>To print</strong> (Microsoft):</p>\n<ol>\n<li>Click <strong>File</strong>, then <strong>Print</strong>, or press <strong>Ctrl+P</strong>.</li>\n<li>Preview the pages with the Next Page and Previous Page arrows.</li>\n<li>If the layout looks wrong, you can change margins or page breaks.</li>\n<li>Click <strong>Print</strong>.</li>\n</ol>\n<p>Preview first so you do not waste paper. If you are on a shared learning-centre printer, ask staff which printer to pick.</p>\n<p>When you finish, close the file. You can open it later from File Explorer or from <strong>File &gt; Open</strong> in Excel.</p>"
+            }
+          ]
+        }
+      ],
+      "minutes": 18,
+      "minutesComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+      "files": [
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-5-starter.csv",
+          "name": "lesson-5-starter.csv",
+          "bytes": 40,
+          "kind": "CSV",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-5-starter.xlsx",
+          "name": "lesson-5-starter.xlsx",
+          "bytes": 2591,
+          "kind": "Excel workbook",
+          "solved": false
+        },
+        {
+          "href": "../../../practice/excel-basics-canada/lesson-5-solved.xlsx",
+          "name": "lesson-5-solved.xlsx",
+          "bytes": 2591,
+          "kind": "Excel workbook",
+          "solved": true
+        }
+      ],
+      "filesComment": "PLACEHOLDER for content writers: practice rows use the Item/Amount sample already in lesson 2 (Fuel 80, Feed 45, Supplies 25) or an empty sheet. Replace the files if the lesson changes.",
+      "assignment": {
+        "id": "lesson-5-task",
+        "title": "Practice: Save and print your workbook",
+        "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
+        "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
+        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      }
     }
   ],
   "finalQuiz": {
@@ -502,5 +872,150 @@
     "width": 1280,
     "height": 853,
     "alt": "A simple drawing of a spreadsheet grid."
+  },
+  "player": {
+    "version": 2,
+    "estimatedMinutes": 105,
+    "timeComment": "PLACEHOLDER for content writers: reading times are editor estimates so the player can show them. They are not in the source file. Replace them.",
+    "outcomes": [
+      "Open a blank workbook.",
+      "Enter text and numbers in cells.",
+      "Apply simple formatting.",
+      "Write a basic formula that starts with an equal sign.",
+      "Use AutoSum.",
+      "Save or print the work."
+    ],
+    "outcomesComment": "PLACEHOLDER for content writers: these outcomes repeat the course learning goals. Replace them if the goals change.",
+    "youNeed": [
+      "Excel on the computer in front of you, or Excel for the web if your council approves a sign-in.",
+      "The practice files linked in each lesson."
+    ],
+    "youNeedComment": "PLACEHOLDER for content writers: the Excel item restates lesson 1. The practice-file item was added for the player demo."
+  },
+  "finalExam": {
+    "requireAllLessons": true,
+    "passMark": 0.7,
+    "attemptLimit": 2,
+    "questions": [
+      {
+        "prompt": "An Excel file is called a workbook and can contain sheets.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "Workbooks and sheets",
+        "review": "../lesson-1/"
+      },
+      {
+        "prompt": "Cell B3 is column B, row 3.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "Cell addresses",
+        "review": "../lesson-1/"
+      },
+      {
+        "prompt": "After typing in a cell, Enter or Tab moves you toward the next cell.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "Entering data",
+        "review": "../lesson-2/"
+      },
+      {
+        "prompt": "A simple formula can start with a plus sign and never needs an equal sign.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "Formulas",
+        "review": "../lesson-4/"
+      },
+      {
+        "prompt": "AutoSum can add a column of numbers for you.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "AutoSum",
+        "review": "../lesson-4/"
+      },
+      {
+        "prompt": "You should save a new workbook with a name and a location you can find later.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "Saving a workbook",
+        "review": "../lesson-5/"
+      },
+      {
+        "prompt": "This course is an official MOS exam and tax-filing service.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+        "topic": "What this certificate is not",
+        "review": "../lesson-1/"
+      }
+    ]
   }
 }

@@ -10,7 +10,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal, financial, or technical-support contract."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal, financial, or technical-support contract.",
+      "plan": null
     },
     {
       "id": "excel-basics-canada",
@@ -20,7 +21,68 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or tax, payroll, or financial advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or tax, payroll, or financial advice.",
+      "plan": {
+        "id": "excel-basics-canada",
+        "requireAllLessons": true,
+        "exam": true,
+        "attemptLimit": 2,
+        "statedHours": 1.8,
+        "lessons": [
+          {
+            "n": 1,
+            "title": "What is Excel?",
+            "sections": [
+              "grid",
+              "workbook",
+              "address"
+            ],
+            "assignment": "lesson-1-task",
+            "quiz": true
+          },
+          {
+            "n": 2,
+            "title": "Enter data in cells",
+            "sections": [
+              "enter",
+              "table",
+              "tips"
+            ],
+            "assignment": "lesson-2-task",
+            "quiz": true
+          },
+          {
+            "n": 3,
+            "title": "Make a sheet easier to read",
+            "sections": [
+              "borders",
+              "formats"
+            ],
+            "assignment": "lesson-3-task",
+            "quiz": true
+          },
+          {
+            "n": 4,
+            "title": "Simple formulas and AutoSum",
+            "sections": [
+              "formulas",
+              "autosum"
+            ],
+            "assignment": "lesson-4-task",
+            "quiz": true
+          },
+          {
+            "n": 5,
+            "title": "Save and print your workbook",
+            "sections": [
+              "save",
+              "print"
+            ],
+            "assignment": "lesson-5-task",
+            "quiz": true
+          }
+        ]
+      }
     },
     {
       "id": "word-basics-canada",
@@ -30,7 +92,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or legal, career, or immigration advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or legal, career, or immigration advice.",
+      "plan": null
     },
     {
       "id": "job-search-canada",
@@ -40,7 +103,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice.",
+      "plan": null
     },
     {
       "id": "outlook-workplace-email",
@@ -50,7 +114,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification.",
+      "plan": null
     },
     {
       "id": "bookkeeping-fundamentals-canada",
@@ -60,7 +125,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, or tax, accounting, payroll, or audit advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, or tax, accounting, payroll, or audit advice.",
+      "plan": null
     },
     {
       "id": "invoices-expenses-gst-canada",
@@ -70,7 +136,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, software certification, or tax, accounting, payroll, or audit advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, software certification, or tax, accounting, payroll, or audit advice.",
+      "plan": null
     },
     {
       "id": "how-to-learn-online",
@@ -80,7 +147,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program.",
+      "plan": null
     },
     {
       "id": "everyday-work-english",
@@ -90,7 +158,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, CLB certificate, LINC completion, or CELPIP, IELTS, or TOEFL preparation, and it is not immigration or citizenship advice."
+      "certificateNote": "It is not a college diploma, degree, CLB certificate, LINC completion, or CELPIP, IELTS, or TOEFL preparation, and it is not immigration or citizenship advice.",
+      "plan": null
     },
     {
       "id": "workplace-writing-grammar-canada",
@@ -100,7 +169,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential.",
+      "plan": null
     },
     {
       "id": "everyday-math-numeracy",
@@ -110,7 +180,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a high-school or CAEC credit, and it is not tax, lending, investment, or budgeting advice."
+      "certificateNote": "It is not a high-school or CAEC credit, and it is not tax, lending, investment, or budgeting advice.",
+      "plan": null
     },
     {
       "id": "project-management-basics",
@@ -120,7 +191,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification.",
+      "plan": null
     },
     {
       "id": "writing-simple-grant-application-canada",
@@ -130,7 +202,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or grant-consultant certification. It is not a promise of funding."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or grant-consultant certification. It is not a promise of funding.",
+      "plan": null
     },
     {
       "id": "email-online-safety",
@@ -140,7 +213,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
+      "plan": null
     },
     {
       "id": "sin-cra-getting-paid",
@@ -150,7 +224,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": true,
       "extra": false,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
+      "plan": null
     },
     {
       "id": "winter-safety-rural-alberta",
@@ -160,7 +235,8 @@ window.RANGE_PATH = {
       "lessons": 5,
       "featured": false,
       "extra": true,
-      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice."
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
+      "plan": null
     }
   ]
 };

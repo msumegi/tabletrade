@@ -38,3 +38,83 @@ These stay in the JSON for authors and are not shown to learners:
 - “Content notes for builders”.
 
 The certificate uses the source line that starts with “It is not…”.
+
+## Player fields
+
+Old course files still render as one lesson page and an immediate-feedback quiz. New fields are optional. Excel Basics is the only course that uses them today.
+
+`course.player` holds `version`, `estimatedMinutes`, `outcomes`, and `youNeed`. A `*Comment` field next to new wording means a writer still needs to replace that placeholder.
+
+`lesson.sections` is a list of `{ id, title, minutes, blocks }`. When it is present, the lesson page uses those sections. `lesson.html` stays in the file as the source the sections were split from.
+
+`lesson.files` lists downloadable practice files with `href`, `name`, `bytes`, `kind`, and `solved`. `lesson.assignment` is `{ id, title, instructions, selfCheck }`. The self-check stays closed until the learner opens it.
+
+`course.finalExam` is `{ requireAllLessons, passMark, attemptLimit, questions }`. `attemptLimit` is set on each course. Excel Basics uses 2. Each question keeps the old prompt, choices, and answer, and adds `topic` and `review`. The sample certificate stays locked until every section, lesson quiz, and assignment is done and an exam score reaches the pass mark inside the attempt limit. The exam page shows how many attempts are left. It does not show the correct choice before or after submit. It shows the score and the topic names to review. When the attempts are used and the exam is not passed, the learner sees that clearly, and the staff demo lists who is out of attempts. Staff can reset attempts there. That reset is a demo action on this device.
+
+The player does not assume a course has 5 lessons or a 4-question quiz. A course file can carry 10 lessons, or 8 for a shorter course, with 3 or 4 sections, two or more worked examples, practice files, a collapsed self-check, a lesson quiz of 6 to 8 questions, and a final exam of 25 to 30 questions. Excel Basics is the working showcase and still uses the existing shorter lessons. Writing those lessons out to that length is later work.
+
+In markdown, optional headings are left out of older files. When you do use them:
+
+- `## Estimated time` with a number of hours or minutes
+- `## What you need` as a bullet list
+- `### Section: id | Title | minutes` under a lesson
+- `### Example: Title` with `Problem:`, `Steps:`, and `Result:` lines
+- `### Assignment: id | Title`, then the task, then a `Self-check:` line
+- `### Practice file: name | href | bytes | kind | starter` or `solved`
+
+An HTML comment can also carry JSON: `<!-- player-extras { ... } -->`. Lesson objects inside it match on `number`. A file with none of these still converts the same way as before.
+
+### Add a block type
+
+1. Add a function in `tools/blocks.mjs` and put it on `renderers`. The function receives the block and returns HTML. Use the `esc` helper for text.
+2. Put `{ "type": "your-type", ...fields }` in a section's `blocks` array, or teach the converter to emit that object.
+3. Add a `.block-your-type` rule in `assets/site.css` using the existing colour tokens.
+4. Run `node tools/build-pages.mjs`. An unknown type is skipped and the build prints a warning.
+
+Worked example, assignment, and check are the types registered today.
+
+## Data model
+
+Accounts and billing are not built yet. The player and the staff demo already use the records they will need.
+
+- **Organization.** A council. `id`, `name`, `legalName`, `ownerId`, `province`, `country`, `plan`, `accessState`, `seatCap`. `accessState` is `invited`, `active`, `past_due_grace`, `restricted`, or `cancelled`. `seatCap` is null when there is no cap. The sample council is `org-example`, its access state starts as `active`, and its seat cap is empty. Active learners are still counted for reporting.
+- **User.** `id`, `name`, `learnerCode`, `role`, `orgId`, `status`. Roles are `platform-owner`, `org-admin` (one council admin per council), `org-staff`, and `learner`. A platform owner has no council. Learners are separate people. There is no shared login.
+- **Class.** A cohort. `id`, `orgId`, `name`, `code`, `startsOn`, `endsOn`. The sample code `RANGE-DEMO` is open. `RANGE-OLD` has ended, which is how a code is rotated. The code is not a password.
+- **Enrolment.** One learner in one course at one council. `id`, `learnerId`, `courseId`, `orgId`, `classId`, `status`, `startedAt`, `completedAt`. Status is `not_started`, `in_progress`, or `completed`.
+- **Progress.** One row per learner, course, and item. `id`, `learnerId`, `courseId`, `itemId`, `kind`, `status`, `at`, `detail`. `at` is an ISO timestamp. Item ids are `section:{lesson}:{sectionId}`, `quiz:{lesson}`, `assignment:{lesson}`, and `exam:final`. Exam detail keeps an `attempts` list with a timestamp on each try.
+- **Certificate.** `id`, `learnerId`, `courseId`, `orgId`, `issuedAt`, `percent`. The first `issuedAt` is kept.
+- **Subscription.** `id`, `orgId`, `provider`, `status`, `collectionMethod`, `currentPeriodStart`, `currentPeriodEnd`, `externalId`. `provider` is `demo` today and can be `stripe` or `helcim` later. `status` is generic (`active`, `past_due`, `canceled`, `incomplete`). The core record has no processor-specific fields.
+- **Invoice.** A sample copy for the staff demo: `provider`, `number`, `amountDue`, `currency`, `status`. It is labelled as an example and is not a live charge.
+
+`canAccess(user, course)` returns `{ allowed, reason, accessState }`. It reads the council's access state, and it applies `seatCap` only when that field is a number. The demo control for Active, Grace, Restricted, and Ended changes the sample council on this device. It does not take a payment.
+
+Seat usage is the number of distinct learners in that council who have any progress timestamp in the subscription period, or in the current calendar month when no period is stored. Staff and admin accounts are not seats. The same learner in several courses is one seat.
+
+The sample is `data/demo-store.json`. It includes a second council, `org-other`, so a staff report can be checked for scope. Names in that file are fictional.
+
+## Storage adapter
+
+`assets/data.js` is the only script that reads or writes `localStorage`. Pages call `window.RangePathData`. The key is `rangepath.store`. On an empty store it copies `window.RANGE_PATH_SEED` from `assets/demo-seed.js`, which the build writes from the sample JSON.
+
+Replace `createLocalAdapter` with an API adapter later. Keep these methods:
+
+- `getProgress(learnerId, courseId)` returns the lesson and exam view the player already paints.
+- `saveProgress(record)` writes one progress row. The record includes `learnerId`, `courseId`, `itemId`, and `at`.
+- `listEnrollments(filter)` filters by `orgId`, `learnerId`, `courseId`, or `status`.
+- `issueCertificate({ learnerId, courseId, orgId, percent, issuedAt })`.
+- `getOrgReport(orgId)` returns that council's enrolments, learners, progress, certificates, class, plan, seat limit, and active seats. An org admin or org staff member can request only their own `orgId`. A platform owner can request any. A learner cannot.
+- `canAccess(user, course)` is called on every course page. It returns `{ allowed, reason, accessState }`.
+- `resetExamAttempts(learnerId, courseId)` clears that learner's exam tries and sample certificate for one course.
+- `listExamLocks(orgId)` lists learners who have used every attempt and have not passed.
+- `setAccessState(orgId, accessState)` is the demo payment-state switch.
+
+## Staff report fields
+
+`data/report-fields.json` lists the export columns. Required columns are learner code, course, start, last activity, completion, stated hours, exam result, and certificate id. Optional columns are display name, demographics, and the five after-course questions. The file does not include volunteer hours, in-kind amounts, childcare, transportation, financial statements, or exam answer sheets. Those stay with the council.
+
+The staff demo builds a CSV from that list and can print the same on-screen report. Stated hours come from the course file. A blank hour cell means the course file has no figure. The sample numbers are example data.
+- `getSessionUser()`, `setSession(userId)`, and `resetStore()` support the demo role switch.
+
+The switch on every page is labelled “Demo only. This does not sign you in.” It offers Learner and Council staff. Council staff is the sample `org-staff` user and sees only `org-example`.
+
+The staff demo at `admin/` renders from `getOrgReport`. It does not keep a second copy of the roster in the page.
