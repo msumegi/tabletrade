@@ -110,6 +110,45 @@
         finalNote.textContent = "Final quiz passed on this device (" + fin.percent + "% on " + fin.date + ").";
       }
     }
+
+    var hub = document.querySelector("#continue-all");
+    if (hub) {
+      var order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
+      var labels = {
+        "email-online-safety": "Email & Online Safety",
+        "sin-cra-getting-paid": "SIN, CRA & getting paid",
+        "winter-safety-rural-alberta": "Winter safety"
+      };
+      var target = null;
+      var sum = 0;
+      order.forEach(function (id) {
+        sum += coursePercent(data, id);
+        if (target) return;
+        var href = nextHref(data, id, id + "/");
+        if (href.indexOf("certificate") === -1) target = { href: href, id: id };
+      });
+      var summary = document.querySelector("#continue-summary");
+      if (summary) {
+        summary.textContent = Math.round(sum / order.length) + "% of the catalogue finished on this device (18 lessons and quizzes).";
+      }
+      if (!target) {
+        hub.setAttribute("href", "email-online-safety/");
+        hub.textContent = "Review your courses";
+      } else {
+        hub.setAttribute("href", target.href);
+        hub.textContent = "Continue: " + labels[target.id];
+      }
+    }
+    var nameField = document.querySelector("#learner-name-courses");
+    if (nameField && nameField.getAttribute("data-bound") !== "true") {
+      nameField.setAttribute("data-bound", "true");
+      if (data.learnerName) nameField.value = data.learnerName;
+      nameField.addEventListener("input", function () {
+        var fresh = load();
+        fresh.learnerName = nameField.value.trim();
+        save(fresh);
+      });
+    }
   }
 
   function setupNav() {
@@ -206,8 +245,7 @@
     if (!chosen) {
       box.className = "feedback is-bad";
       box.textContent = "Choose an answer, then check it.";
-      var first = item.querySelector("input");
-      if (first) first.focus();
+      item.scrollIntoView({ block: "start" });
       return;
     }
     var answer = item.getAttribute("data-answer");
@@ -270,15 +308,19 @@
       actions.className = "actions";
 
       if (part === "final") {
-        if (passed || (course.final && course.final.passed)) {
+        if (passed) {
           note.textContent = "That meets the 70% mark. You can open a sample certificate. It confirms completion only and is not accredited.";
+        } else if (prev.passed) {
+          note.textContent = "This try was " + correct + "/" + total + ". You already passed at " + prev.percent + "% on this device.";
+        } else {
+          note.textContent = "You need 70% (at least 5 out of 7) for a certificate. Review the lessons and try again. Your score stays on this device.";
+        }
+        if (passed || prev.passed) {
           var link = document.createElement("a");
           link.className = "btn";
           link.href = certUrl;
           link.textContent = "Open the sample certificate";
           actions.appendChild(link);
-        } else {
-          note.textContent = "You need 70% (at least 5 out of 7) for a certificate. Review the lessons and try again. Your score stays on this device.";
         }
       } else {
         note.textContent = "Quiz saved on this device. The next step is ready when you are.";
@@ -323,8 +365,9 @@
   }
 
   function setupCertificate() {
-    var card = document.querySelector(".certificate");
-    if (!card) return;
+    var locked = document.querySelector("#cert-locked");
+    var ready = document.querySelector("#cert-ready");
+    if (!locked || !ready) return;
     var learner = document.querySelector("#learner-name");
     var council = document.querySelector("#council-name");
     var coursePick = document.querySelector("#cert-course");
@@ -333,15 +376,56 @@
     var titleOut = document.querySelector("#cert-title");
     var dateOut = document.querySelector("#cert-date");
     var state = document.querySelector("#cert-state");
+    var learnerEcho = document.querySelector("#learner-echo");
+    var councilEcho = document.querySelector("#council-echo");
+    var courseEcho = document.querySelector("#course-echo");
+    var passedLinks = document.querySelector("#cert-passed-links");
     var data = load();
+    var order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
+    var titles = {
+      "email-online-safety": "Email & Online Safety Basics in Canada",
+      "sin-cra-getting-paid": "Your SIN, CRA My Account & Getting Paid in Canada",
+      "winter-safety-rural-alberta": "Winter Safety & Driving in Rural Alberta"
+    };
 
-    if (learner && data.learnerName) learner.value = data.learnerName;
-    if (council && data.councilName) council.value = data.councilName;
+    function passedFinal(id) {
+      var fin = data.courses[id] && data.courses[id].final;
+      return fin && fin.passed ? fin : null;
+    }
 
+    var passedIds = order.filter(function (id) { return passedFinal(id); });
     var params = new URLSearchParams(window.location.search);
     var wanted = params.get("course");
-    if (wanted && coursePick) {
-      coursePick.value = wanted;
+    var showId = wanted && passedFinal(wanted) ? wanted : (!wanted && passedIds.length ? passedIds[0] : "");
+
+    if (!showId) {
+      ready.hidden = true;
+      locked.hidden = false;
+      if (wanted && passedIds.length && passedLinks) {
+        var lead = document.querySelector("#cert-locked-lead");
+        if (lead) lead.textContent = "That course is not passed on this device yet. Finish its final quiz first. You can open a certificate for a course you already passed.";
+        passedLinks.textContent = "";
+        passedIds.forEach(function (id) {
+          var a = document.createElement("a");
+          a.href = "?course=" + encodeURIComponent(id);
+          a.textContent = titles[id];
+          var p = document.createElement("p");
+          p.appendChild(a);
+          passedLinks.appendChild(p);
+        });
+      }
+      return;
+    }
+
+    locked.hidden = true;
+    ready.hidden = false;
+    if (learner && data.learnerName) learner.value = data.learnerName;
+    if (council && data.councilName) council.value = data.councilName;
+    if (coursePick) {
+      Array.prototype.slice.call(coursePick.options).forEach(function (option) {
+        if (passedIds.indexOf(option.value) === -1) option.remove();
+      });
+      coursePick.value = showId;
     }
 
     function paint() {
@@ -349,21 +433,17 @@
       var org = (council && council.value.trim()) || "EXAMPLE Community Adult Learning";
       if (learnerOut) learnerOut.textContent = name;
       if (councilOut) councilOut.textContent = org;
-      var id = coursePick ? coursePick.value : "";
+      if (learnerEcho) learnerEcho.textContent = name;
+      if (councilEcho) councilEcho.textContent = org;
+      var id = coursePick ? coursePick.value : showId;
       var option = coursePick ? coursePick.options[coursePick.selectedIndex] : null;
-      if (titleOut && option) titleOut.textContent = option.textContent;
-      var fin = data.courses[id] && data.courses[id].final;
-      if (fin && fin.passed && fin.date) {
-        if (dateOut) dateOut.textContent = fin.date;
-        if (state) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";
-      } else {
-        if (dateOut) dateOut.textContent = today();
-        if (state) state.textContent = "Sample preview. Pass the final quiz (70%) on this device to record a completion. Not accredited.";
-      }
-      data.learnerName = learner && learner.value.trim() ? learner.value.trim() : data.learnerName;
-      data.councilName = council && council.value.trim() ? council.value.trim() : data.councilName;
-      if (learner && learner.value.trim()) data.learnerName = learner.value.trim();
-      else if (learner && !learner.value.trim()) data.learnerName = "";
+      var title = option ? option.textContent.trim() : (titles[id] || "");
+      if (titleOut) titleOut.textContent = title;
+      if (courseEcho) courseEcho.textContent = title;
+      var fin = passedFinal(id);
+      if (dateOut) dateOut.textContent = fin && fin.date ? fin.date : "";
+      if (state && fin) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";
+      if (learner) data.learnerName = learner.value.trim();
       if (council) data.councilName = council.value.trim();
       save(data);
     }
@@ -380,23 +460,35 @@
   }
 
   function setupAdmin() {
-    var tabs = document.querySelectorAll("[data-tab]");
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
     if (!tabs.length) return;
-    function select(id) {
-      tabs.forEach(function (tab) {
-        var on = tab.getAttribute("data-tab") === id;
-        tab.setAttribute("aria-selected", on ? "true" : "false");
-        tab.tabIndex = on ? 0 : -1;
+    function select(tab, focus) {
+      var id = tab.getAttribute("aria-controls");
+      tabs.forEach(function (item) {
+        var on = item === tab;
+        item.setAttribute("aria-selected", on ? "true" : "false");
+        item.tabIndex = on ? 0 : -1;
       });
-      document.querySelectorAll("[data-panel]").forEach(function (panel) {
-        if (panel.getAttribute("data-panel") === id) panel.removeAttribute("hidden");
+      document.querySelectorAll('[role="tabpanel"]').forEach(function (panel) {
+        if (panel.id === id) panel.removeAttribute("hidden");
         else panel.setAttribute("hidden", "");
       });
+      if (focus) tab.focus();
     }
-    tabs.forEach(function (tab) {
-      tab.addEventListener("click", function () { select(tab.getAttribute("data-tab")); });
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener("click", function () { select(tab, false); });
+      tab.addEventListener("keydown", function (event) {
+        var next = null;
+        if (event.key === "ArrowRight") next = tabs[(index + 1) % tabs.length];
+        else if (event.key === "ArrowLeft") next = tabs[(index - 1 + tabs.length) % tabs.length];
+        else if (event.key === "Home") next = tabs[0];
+        else if (event.key === "End") next = tabs[tabs.length - 1];
+        if (!next) return;
+        event.preventDefault();
+        select(next, true);
+      });
     });
-    select("learners");
+    select(tabs[0], false);
 
     var openBtn = document.querySelector("#open-draft");
     var dialog = document.querySelector("#draft-dialog");
@@ -432,7 +524,7 @@
     var resetStatus = document.querySelector("#restore-status");
     if (reset) {
       reset.addEventListener("click", function () {
-        select("learners");
+        select(tabs[0], false);
         if (resetStatus) resetStatus.textContent = "Sample data restored. These names are fictional and built into the page.";
       });
     }

@@ -33,17 +33,24 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     </div>
     <nav id="site-nav" class="is-collapsed" aria-label="Main">
-      <div class="site-bar"><ul><li><a href="../">Home</a></li><li><a href="../courses/" aria-current="page">Courses</a></li><li><a href="../pricing/">Pricing</a></li><li><a href="../walkthrough/">Walkthrough</a></li><li><a href="../certificate/">Certificate</a></li><li><a href="../admin/">Staff demo</a></li></ul></div>
+      <div class="site-bar"><ul><li><a href="../">Home</a></li><li><a href="../courses/" aria-current="page">Courses</a></li><li><a href="../pricing/">Pricing</a></li><li><a href="../walkthrough/">Walkthrough</a></li><li><a href="../admin/">Staff demo</a></li></ul></div>
     </nav>
   </header>
   <main id="main">
 
-    <div class="wrap">
+    <div class="wrap-wide">
 <p class="crumbs"><a href="../">Home</a><span>Courses</span></p>
 <h1>Courses</h1>
 <p class="lede">Pick a course. Your place is saved on this phone. No account.</p>
-<div class="cards"><article class="card">
-  <div class="frame frame-tall"><img src="../media/phone-1280.webp" srcset="../media/phone-720.webp 720w, ../media/phone-1280.webp 1280w, ../media/phone-1920.webp 1920w" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="1600" alt="An adult checks a phone and writes notes at a table, with a laptop nearby." style="object-position:center 32%" loading="lazy" decoding="async"></div>
+<section class="card continue" aria-labelledby="continue-title">
+  <h2 id="continue-title">Continue learning</h2>
+  <p id="continue-summary">0% of the catalogue finished on this device (18 lessons and quizzes).</p>
+  <p class="actions"><a class="btn" id="continue-all" href="email-online-safety/lesson-1/">Continue: Email &amp; Online Safety</a></p>
+  <label for="learner-name-courses">Name for certificate (stays on this device)</label>
+  <input id="learner-name-courses" name="learner" type="text" autocomplete="name">
+</section>
+<div class="cards cols-3"><article class="card">
+  <div class="frame frame-person"><img src="../media/phone-1280.webp" srcset="../media/phone-720.webp 720w, ../media/phone-1280.webp 1280w, ../media/phone-1920.webp 1920w" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="1600" alt="An older adult looks at a phone while sitting at home." loading="lazy" decoding="async"></div>
   <h3><a href="email-online-safety/">Email &amp; Online Safety Basics in Canada</a></h3>
   <p>Spot common scams, choose safer passwords, and know where to report fraud in Canada.</p>
   <p class="meta">5 short lessons</p>
@@ -51,7 +58,7 @@
   <a class="btn" href="email-online-safety/">Open course</a>
 </article>
 <article class="card">
-  <div class="frame frame-tall"><img src="../media/notes-1280.webp" srcset="../media/notes-720.webp 720w, ../media/notes-1280.webp 1280w, ../media/notes-1920.webp 1920w" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="1600" alt="An adult writes in a blank notebook at a wooden table." style="object-position:center 42%" loading="lazy" decoding="async"></div>
+  <div class="frame frame-wide frame-slip"><img src="../media/notes-1280.webp" srcset="../media/notes-720.webp 720w, ../media/notes-1280.webp 1280w, ../media/notes-1920.webp 1920w" sizes="(max-width: 720px) 100vw, 40rem" width="1280" height="853" alt="A sample pay advice for a fictional Alberta employer. No real name or SIN is shown." loading="lazy" decoding="async"></div>
   <h3><a href="sin-cra-getting-paid/">Your SIN, CRA My Account &amp; Getting Paid in Canada</a></h3>
   <p>Learn what a SIN is for, how to protect it, and the official paths for CRA My Account and direct deposit.</p>
   <p class="meta">5 short lessons</p>
@@ -59,7 +66,7 @@
   <a class="btn" href="sin-cra-getting-paid/">Open course</a>
 </article>
 <article class="card">
-  <div class="frame frame-wide"><img src="../media/drive-1280.webp" srcset="../media/drive-720.webp 720w, ../media/drive-1280.webp 1280w, ../media/drive-1920.webp 1920w" sizes="(max-width: 900px) 100vw, 960px" width="1280" height="853" alt="Cars travel a snowy highway through evergreen forest near Banff, Alberta. Licence plates are not readable." loading="lazy" decoding="async"></div>
+  <div class="frame frame-wide"><img src="../media/drive-1280.webp" srcset="../media/drive-720.webp 720w, ../media/drive-1280.webp 1280w, ../media/drive-1920.webp 1920w" sizes="(max-width: 900px) 100vw, 960px" width="1280" height="853" alt="A car approaches on a snow-covered two-lane road between fenced fields. No licence plate is readable." loading="lazy" decoding="async"></div>
   <h3><a href="winter-safety-rural-alberta/">Winter Safety &amp; Driving in Rural Alberta</a></h3>
   <p>Plan a rural winter trip, pack a kit, and know safer habits for ice, snow, and getting stranded.</p>
   <p class="meta">5 short lessons</p>
@@ -77,7 +84,7 @@
   </main>
   <footer class="site">
     <div class="wrap">
-      <p class="disclaimer">Demo. Sample data. Not accredited.</p>
+      <p class="disclaimer">This course is general information for adult learners in Canada. It is not legal, tax, financial, medical, driving-instruction, or immigration advice. Always check official pages on Canada.ca, Alberta.ca, or your council staff for your situation.</p>
       <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="../privacy/">Privacy</a></p>
     </div>
   </footer>
