@@ -83,12 +83,15 @@ Accounts and billing are not built yet. The player and the staff demo already us
 - **Enrolment.** One learner in one course at one council. `id`, `learnerId`, `courseId`, `orgId`, `classId`, `status`, `startedAt`, `completedAt`. Status is `not_started`, `in_progress`, or `completed`.
 - **Progress.** One row per learner, course, and item. `id`, `learnerId`, `courseId`, `itemId`, `kind`, `status`, `at`, `detail`. `at` is an ISO timestamp. Item ids are `section:{lesson}:{sectionId}`, `quiz:{lesson}`, `assignment:{lesson}`, and `exam:final`. Exam detail keeps an `attempts` list with a timestamp on each try.
 - **Certificate.** `id`, `learnerId`, `courseId`, `orgId`, `issuedAt`, `percent`. The first `issuedAt` is kept.
-- **Subscription.** `id`, `orgId`, `provider`, `status`, `collectionMethod`, `currentPeriodStart`, `currentPeriodEnd`, `externalId`. `provider` is `demo` today and can be `stripe` or `helcim` later. `status` is generic (`active`, `past_due`, `canceled`, `incomplete`). The core record has no processor-specific fields.
+- **Course assignment.** Staff-set for each course: `calpCategoryTag`, `opportunityType` (`ongoing`, `one_time`, or `undecided`), `statedCourseHours`, and the grant period. Job Search is left as `undecided` in the sample. The stated hours are a sample estimate, not measured time.
+- **Enrolment.** Adds `learnerCode`, lesson counts, and the five optional after-course questions (1.2 a, 1.2 b, 1.2 c, 2.2 a, 2.2 b).
+- **Subscription.** `billingProvider` is null in this demo. `collection` is `card`, `pad`, or `annual_invoice`. `providerStatus` is generic. There is no per-seat price.
+- **Billing stub.** `assets/billing.js` is the `BillingProvider` interface. It returns labelled sample invoices and does not call a processor.
 - **Invoice.** A sample copy for the staff demo: `provider`, `number`, `amountDue`, `currency`, `status`. It is labelled as an example and is not a live charge.
 
 `canAccess(user, course)` returns `{ allowed, reason, accessState }`. It reads the council's access state, and it applies `seatCap` only when that field is a number. The demo control for Active, Grace, Restricted, and Ended changes the sample council on this device. It does not take a payment.
 
-Seat usage is the number of distinct learners in that council who have any progress timestamp in the subscription period, or in the current calendar month when no period is stored. Staff and admin accounts are not seats. The same learner in several courses is one seat.
+An active learner, for the report, is a unique `learnerCode` who started a course in the selected period. Starting means the enrolment is in progress or completed. Staff and admin accounts are not counted. The same person in several courses is one learner and several starts. `seatCap` stays empty unless a council turns on an optional cap. The cap does not change the price.
 
 The sample is `data/demo-store.json`. It includes a second council, `org-other`, so a staff report can be checked for scope. Names in that file are fictional.
 
@@ -110,9 +113,9 @@ Replace `createLocalAdapter` with an API adapter later. Keep these methods:
 
 ## Staff report fields
 
-`data/report-fields.json` lists the export columns. Required columns are learner code, course, start, last activity, completion, stated hours, exam result, and certificate id. Optional columns are display name, demographics, and the five after-course questions. The file does not include volunteer hours, in-kind amounts, childcare, transportation, financial statements, or exam answer sheets. Those stay with the council.
+`data/report-fields.json` is the only field list for the staff dashboard, the CSV, and the printed report. Each field has `name`, `label`, `optional`, and `placeholder`. Optional fields are the display name, demographics, and the five after-course questions. The two hour fields are marked `placeholder` because the current funder form's hour names are not verified. Stated hours are the sample course-depth estimate. Estimated hours are that figure times the share of lessons finished. They are not a timer.
 
-The staff demo builds a CSV from that list and can print the same on-screen report. Stated hours come from the course file. A blank hour cell means the course file has no figure. The sample numbers are example data.
+The staff page is `admin/`. It reads `getSampleReport` for the fictional council, shows a "Sample data, not real learners" banner, and can filter by course and date. Print uses a Letter layout with the banner, the period, summary totals, a per-course table, and notes.
 - `getSessionUser()`, `setSession(userId)`, and `resetStore()` support the demo role switch.
 
 The switch on every page is labelled “Demo only. This does not sign you in.” It offers Learner and Council staff. Council staff is the sample `org-staff` user and sees only `org-example`.

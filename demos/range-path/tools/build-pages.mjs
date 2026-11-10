@@ -545,7 +545,7 @@ function ensureScript(html, root, file) {
 
 function ensureDataScripts(html, root) {
   let out = html;
-  ["demo-seed.js", "data.js", "report-fields.js"].forEach((file) => {
+  ["demo-seed.js", "billing.js", "data.js", "report-fields.js"].forEach((file) => {
     out = ensureScript(out, root, file);
   });
   return out;

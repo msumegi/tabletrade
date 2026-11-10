@@ -12,7 +12,10 @@
       "graceEndsAt": null,
       "restrictedEndsAt": null,
       "catalogue": "all",
-      "seatCap": null
+      "seatCap": null,
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "billingProvider": null
     },
     {
       "id": "org-other",
@@ -26,7 +29,10 @@
       "graceEndsAt": null,
       "restrictedEndsAt": null,
       "catalogue": "all",
-      "seatCap": 5
+      "seatCap": 5,
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "billingProvider": null
     }
   ],
   "users": [
@@ -68,7 +74,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "JLEE"
+      "learnerCode": "JLEE",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-sam",
@@ -78,7 +88,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "SOKO"
+      "learnerCode": "SOKO",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-priya",
@@ -88,7 +102,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "PSAND"
+      "learnerCode": "PSAND",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-morgan",
@@ -98,7 +116,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "MBERG"
+      "learnerCode": "MBERG",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-alex",
@@ -108,7 +130,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "ANGUV"
+      "learnerCode": "ANGUV",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-riley",
@@ -118,7 +144,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "RCHEN"
+      "learnerCode": "RCHEN",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-taylor",
@@ -128,7 +158,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "TMACL"
+      "learnerCode": "TMACL",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-casey",
@@ -138,7 +172,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "CSINGH"
+      "learnerCode": "CSINGH",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-demo-learner",
@@ -148,7 +186,11 @@
       "example": false,
       "status": "active",
       "email": null,
-      "learnerCode": "SAMPLE"
+      "learnerCode": "SAMPLE",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     },
     {
       "id": "user-other-admin",
@@ -168,7 +210,11 @@
       "example": true,
       "status": "active",
       "email": null,
-      "learnerCode": "OTHER1"
+      "learnerCode": "OTHER1",
+      "gender": "prefer_not_to_say",
+      "ageGroup": "prefer_not_to_say",
+      "previousSchooling": "prefer_not_to_say",
+      "learnerProfile": "prefer_not_to_say"
     }
   ],
   "classes": [
@@ -210,7 +256,20 @@
       "status": "completed",
       "startedAt": "2026-10-02T15:00:00.000Z",
       "completedAt": "2026-10-08T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "JLEE",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "yes",
+      "pulseProgressTowardGoal": "yes",
+      "pulseIncreasedConfidence": "yes",
+      "pulseProgramRelevant": "yes",
+      "pulseFeltWelcome": "yes",
+      "pulseCollectedAt": "2026-10-08T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-jordan-excel",
@@ -221,7 +280,20 @@
       "status": "completed",
       "startedAt": "2026-10-02T15:00:00.000Z",
       "completedAt": "2026-10-15T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "JLEE",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "no",
+      "pulseProgressTowardGoal": "no",
+      "pulseIncreasedConfidence": "no",
+      "pulseProgramRelevant": "no",
+      "pulseFeltWelcome": "no",
+      "pulseCollectedAt": "2026-10-15T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-jordan-word",
@@ -232,7 +304,20 @@
       "status": "completed",
       "startedAt": "2026-10-02T15:00:00.000Z",
       "completedAt": "2026-10-22T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "JLEE",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "prefer_not_to_say",
+      "pulseProgressTowardGoal": "prefer_not_to_say",
+      "pulseIncreasedConfidence": "prefer_not_to_say",
+      "pulseProgramRelevant": "prefer_not_to_say",
+      "pulseFeltWelcome": "prefer_not_to_say",
+      "pulseCollectedAt": "2026-10-22T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-jordan-job",
@@ -242,7 +327,13 @@
       "classId": "class-demo",
       "status": "in_progress",
       "startedAt": "2026-10-02T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "JLEE",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 2,
+      "lessonsStartedCount": 3,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-sam-computers",
@@ -253,7 +344,20 @@
       "status": "completed",
       "startedAt": "2026-10-04T15:00:00.000Z",
       "completedAt": "2026-10-11T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "SOKO",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "yes",
+      "pulseProgressTowardGoal": "yes",
+      "pulseIncreasedConfidence": "yes",
+      "pulseProgramRelevant": "yes",
+      "pulseFeltWelcome": "yes",
+      "pulseCollectedAt": "2026-10-11T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-sam-excel",
@@ -264,7 +368,20 @@
       "status": "completed",
       "startedAt": "2026-10-04T15:00:00.000Z",
       "completedAt": "2026-10-19T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "SOKO",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "no",
+      "pulseProgressTowardGoal": "no",
+      "pulseIncreasedConfidence": "no",
+      "pulseProgramRelevant": "no",
+      "pulseFeltWelcome": "no",
+      "pulseCollectedAt": "2026-10-19T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-sam-word",
@@ -274,7 +391,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-04T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "SOKO",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-sam-job",
@@ -284,7 +407,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-04T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "SOKO",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-priya-computers",
@@ -295,7 +424,20 @@
       "status": "completed",
       "startedAt": "2026-10-06T15:00:00.000Z",
       "completedAt": "2026-10-14T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "PSAND",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "prefer_not_to_say",
+      "pulseProgressTowardGoal": "prefer_not_to_say",
+      "pulseIncreasedConfidence": "prefer_not_to_say",
+      "pulseProgramRelevant": "prefer_not_to_say",
+      "pulseFeltWelcome": "prefer_not_to_say",
+      "pulseCollectedAt": "2026-10-14T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-priya-excel",
@@ -305,7 +447,13 @@
       "classId": "class-demo",
       "status": "in_progress",
       "startedAt": "2026-10-06T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "PSAND",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 2,
+      "lessonsStartedCount": 3,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-priya-word",
@@ -315,7 +463,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-06T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "PSAND",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-priya-job",
@@ -326,7 +480,20 @@
       "status": "completed",
       "startedAt": "2026-10-06T15:00:00.000Z",
       "completedAt": "2026-10-28T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "PSAND",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "yes",
+      "pulseProgressTowardGoal": "yes",
+      "pulseIncreasedConfidence": "yes",
+      "pulseProgramRelevant": "yes",
+      "pulseFeltWelcome": "yes",
+      "pulseCollectedAt": "2026-10-28T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-morgan-computers",
@@ -337,7 +504,20 @@
       "status": "completed",
       "startedAt": "2026-10-09T15:00:00.000Z",
       "completedAt": "2026-10-16T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "MBERG",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "no",
+      "pulseProgressTowardGoal": "no",
+      "pulseIncreasedConfidence": "no",
+      "pulseProgramRelevant": "no",
+      "pulseFeltWelcome": "no",
+      "pulseCollectedAt": "2026-10-16T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-morgan-excel",
@@ -348,7 +528,20 @@
       "status": "completed",
       "startedAt": "2026-10-09T15:00:00.000Z",
       "completedAt": "2026-10-24T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "MBERG",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "prefer_not_to_say",
+      "pulseProgressTowardGoal": "prefer_not_to_say",
+      "pulseIncreasedConfidence": "prefer_not_to_say",
+      "pulseProgramRelevant": "prefer_not_to_say",
+      "pulseFeltWelcome": "prefer_not_to_say",
+      "pulseCollectedAt": "2026-10-24T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-morgan-word",
@@ -359,7 +552,20 @@
       "status": "completed",
       "startedAt": "2026-10-09T15:00:00.000Z",
       "completedAt": "2026-11-02T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "MBERG",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "yes",
+      "pulseProgressTowardGoal": "yes",
+      "pulseIncreasedConfidence": "yes",
+      "pulseProgramRelevant": "yes",
+      "pulseFeltWelcome": "yes",
+      "pulseCollectedAt": "2026-11-02T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-morgan-job",
@@ -369,7 +575,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-09T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "MBERG",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-alex-computers",
@@ -380,7 +592,20 @@
       "status": "completed",
       "startedAt": "2026-10-11T15:00:00.000Z",
       "completedAt": "2026-10-20T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "ANGUV",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "no",
+      "pulseProgressTowardGoal": "no",
+      "pulseIncreasedConfidence": "no",
+      "pulseProgramRelevant": "no",
+      "pulseFeltWelcome": "no",
+      "pulseCollectedAt": "2026-10-20T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-alex-excel",
@@ -390,7 +615,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-11T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "ANGUV",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-alex-word",
@@ -401,7 +632,20 @@
       "status": "completed",
       "startedAt": "2026-10-11T15:00:00.000Z",
       "completedAt": "2026-11-04T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "ANGUV",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "prefer_not_to_say",
+      "pulseProgressTowardGoal": "prefer_not_to_say",
+      "pulseIncreasedConfidence": "prefer_not_to_say",
+      "pulseProgramRelevant": "prefer_not_to_say",
+      "pulseFeltWelcome": "prefer_not_to_say",
+      "pulseCollectedAt": "2026-11-04T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-alex-job",
@@ -411,7 +655,13 @@
       "classId": "class-demo",
       "status": "in_progress",
       "startedAt": "2026-10-11T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "ANGUV",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 2,
+      "lessonsStartedCount": 3,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-riley-computers",
@@ -422,7 +672,20 @@
       "status": "completed",
       "startedAt": "2026-10-15T15:00:00.000Z",
       "completedAt": "2026-10-23T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "RCHEN",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "yes",
+      "pulseProgressTowardGoal": "yes",
+      "pulseIncreasedConfidence": "yes",
+      "pulseProgramRelevant": "yes",
+      "pulseFeltWelcome": "yes",
+      "pulseCollectedAt": "2026-10-23T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-riley-excel",
@@ -433,7 +696,20 @@
       "status": "completed",
       "startedAt": "2026-10-15T15:00:00.000Z",
       "completedAt": "2026-11-01T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "RCHEN",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "no",
+      "pulseProgressTowardGoal": "no",
+      "pulseIncreasedConfidence": "no",
+      "pulseProgramRelevant": "no",
+      "pulseFeltWelcome": "no",
+      "pulseCollectedAt": "2026-11-01T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-riley-word",
@@ -443,7 +719,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-15T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "RCHEN",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-riley-job",
@@ -454,7 +736,20 @@
       "status": "completed",
       "startedAt": "2026-10-15T15:00:00.000Z",
       "completedAt": "2026-11-05T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "RCHEN",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "prefer_not_to_say",
+      "pulseProgressTowardGoal": "prefer_not_to_say",
+      "pulseIncreasedConfidence": "prefer_not_to_say",
+      "pulseProgramRelevant": "prefer_not_to_say",
+      "pulseFeltWelcome": "prefer_not_to_say",
+      "pulseCollectedAt": "2026-11-05T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-taylor-computers",
@@ -464,7 +759,13 @@
       "classId": "class-demo",
       "status": "in_progress",
       "startedAt": "2026-10-18T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "TMACL",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 2,
+      "lessonsStartedCount": 3,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-taylor-excel",
@@ -474,7 +775,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-18T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "TMACL",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-taylor-word",
@@ -484,7 +791,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-18T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "TMACL",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-taylor-job",
@@ -495,7 +808,20 @@
       "status": "completed",
       "startedAt": "2026-10-18T15:00:00.000Z",
       "completedAt": "2026-11-06T18:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "TMACL",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 5,
+      "lessonsStartedCount": 5,
+      "pulseSkillsUsedInDailyLife": "yes",
+      "pulseProgressTowardGoal": "yes",
+      "pulseIncreasedConfidence": "yes",
+      "pulseProgramRelevant": "yes",
+      "pulseFeltWelcome": "yes",
+      "pulseCollectedAt": "2026-11-06T18:00:00.000Z",
+      "pulseSample": true,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-casey-computers",
@@ -505,7 +831,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-22T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "CSINGH",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-casey-excel",
@@ -515,7 +847,13 @@
       "classId": "class-demo",
       "status": "in_progress",
       "startedAt": "2026-10-22T15:00:00.000Z",
-      "lastActivityAt": "2026-10-30T18:00:00.000Z"
+      "lastActivityAt": "2026-10-30T18:00:00.000Z",
+      "learnerCode": "CSINGH",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 2,
+      "lessonsStartedCount": 3,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-casey-word",
@@ -525,7 +863,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-22T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "CSINGH",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-user-casey-job",
@@ -535,7 +879,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-10-22T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "CSINGH",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-demo-excel",
@@ -545,7 +895,13 @@
       "classId": "class-demo",
       "status": "not_started",
       "startedAt": "2026-11-10T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "SAMPLE",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 0,
+      "lessonsStartedCount": 0,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     },
     {
       "id": "enr-other-excel",
@@ -555,7 +911,13 @@
       "classId": "class-other",
       "status": "in_progress",
       "startedAt": "2026-11-08T15:00:00.000Z",
-      "lastActivityAt": null
+      "lastActivityAt": null,
+      "learnerCode": "OTHER1",
+      "lessonsTotal": 5,
+      "lessonsCompletedCount": 2,
+      "lessonsStartedCount": 3,
+      "estimatedTimeOnTaskMinutes": null,
+      "sample": true
     }
   ],
   "progress": [
@@ -926,7 +1288,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-08T18:00:00.000Z",
-      "percent": 88
+      "percent": 88,
+      "learnerCode": "JLEE",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-jordan-computers",
+      "pass": true,
+      "score": 88
     },
     {
       "id": "cert-user-jordan-excel",
@@ -934,7 +1301,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-15T18:00:00.000Z",
-      "percent": 84
+      "percent": 84,
+      "learnerCode": "JLEE",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-jordan-excel",
+      "pass": true,
+      "score": 84
     },
     {
       "id": "cert-user-jordan-word",
@@ -942,7 +1314,12 @@
       "courseId": "word-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-22T18:00:00.000Z",
-      "percent": 81
+      "percent": 81,
+      "learnerCode": "JLEE",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-jordan-word",
+      "pass": true,
+      "score": 81
     },
     {
       "id": "cert-user-sam-computers",
@@ -950,7 +1327,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-11T18:00:00.000Z",
-      "percent": 88
+      "percent": 88,
+      "learnerCode": "SOKO",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-sam-computers",
+      "pass": true,
+      "score": 88
     },
     {
       "id": "cert-user-sam-excel",
@@ -958,7 +1340,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-19T18:00:00.000Z",
-      "percent": 84
+      "percent": 84,
+      "learnerCode": "SOKO",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-sam-excel",
+      "pass": true,
+      "score": 84
     },
     {
       "id": "cert-user-priya-computers",
@@ -966,7 +1353,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-14T18:00:00.000Z",
-      "percent": 88
+      "percent": 88,
+      "learnerCode": "PSAND",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-priya-computers",
+      "pass": true,
+      "score": 88
     },
     {
       "id": "cert-user-priya-job",
@@ -974,7 +1366,12 @@
       "courseId": "job-search-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-28T18:00:00.000Z",
-      "percent": 79
+      "percent": 79,
+      "learnerCode": "PSAND",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-priya-job",
+      "pass": true,
+      "score": 79
     },
     {
       "id": "cert-user-morgan-computers",
@@ -982,7 +1379,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-16T18:00:00.000Z",
-      "percent": 88
+      "percent": 88,
+      "learnerCode": "MBERG",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-morgan-computers",
+      "pass": true,
+      "score": 88
     },
     {
       "id": "cert-user-morgan-excel",
@@ -990,7 +1392,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-24T18:00:00.000Z",
-      "percent": 84
+      "percent": 84,
+      "learnerCode": "MBERG",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-morgan-excel",
+      "pass": true,
+      "score": 84
     },
     {
       "id": "cert-user-morgan-word",
@@ -998,7 +1405,12 @@
       "courseId": "word-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-02T18:00:00.000Z",
-      "percent": 81
+      "percent": 81,
+      "learnerCode": "MBERG",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-morgan-word",
+      "pass": true,
+      "score": 81
     },
     {
       "id": "cert-user-alex-computers",
@@ -1006,7 +1418,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-20T18:00:00.000Z",
-      "percent": 88
+      "percent": 88,
+      "learnerCode": "ANGUV",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-alex-computers",
+      "pass": true,
+      "score": 88
     },
     {
       "id": "cert-user-alex-word",
@@ -1014,7 +1431,12 @@
       "courseId": "word-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-04T18:00:00.000Z",
-      "percent": 81
+      "percent": 81,
+      "learnerCode": "ANGUV",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-alex-word",
+      "pass": true,
+      "score": 81
     },
     {
       "id": "cert-user-riley-computers",
@@ -1022,7 +1444,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-23T18:00:00.000Z",
-      "percent": 88
+      "percent": 88,
+      "learnerCode": "RCHEN",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-riley-computers",
+      "pass": true,
+      "score": 88
     },
     {
       "id": "cert-user-riley-excel",
@@ -1030,7 +1457,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-01T18:00:00.000Z",
-      "percent": 84
+      "percent": 84,
+      "learnerCode": "RCHEN",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-riley-excel",
+      "pass": true,
+      "score": 84
     },
     {
       "id": "cert-user-riley-job",
@@ -1038,7 +1470,12 @@
       "courseId": "job-search-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-05T18:00:00.000Z",
-      "percent": 79
+      "percent": 79,
+      "learnerCode": "RCHEN",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-riley-job",
+      "pass": true,
+      "score": 79
     },
     {
       "id": "cert-user-taylor-job",
@@ -1046,43 +1483,127 @@
       "courseId": "job-search-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-06T18:00:00.000Z",
-      "percent": 79
+      "percent": 79,
+      "learnerCode": "TMACL",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-taylor-job",
+      "pass": true,
+      "score": 79
     }
   ],
   "subscriptions": [
     {
       "id": "sub-example",
       "orgId": "org-example",
-      "provider": "demo",
-      "status": "active",
-      "collectionMethod": "automatic",
+      "billingProvider": null,
+      "providerSubscriptionId": "sample-sub-example",
+      "collection": "card",
+      "providerStatus": "active",
       "currentPeriodStart": "2026-11-01T00:00:00.000Z",
       "currentPeriodEnd": "2026-12-01T00:00:00.000Z",
-      "externalId": null
-    },
-    {
-      "id": "sub-other",
-      "orgId": "org-other",
-      "provider": "demo",
-      "status": "active",
-      "collectionMethod": "invoice",
-      "currentPeriodStart": "2026-11-01T00:00:00.000Z",
-      "currentPeriodEnd": "2026-12-01T00:00:00.000Z",
-      "externalId": null
+      "amount": 149,
+      "currency": "CAD",
+      "sample": true
     }
   ],
   "invoices": [
     {
       "id": "inv-example",
       "orgId": "org-example",
-      "provider": "demo",
-      "externalId": "EXAMPLE-0001",
+      "billingProvider": null,
+      "providerInvoiceId": "sample-inv-example",
       "number": "EXAMPLE-0001",
       "amountDue": 149,
+      "amountPaid": 149,
       "currency": "CAD",
       "status": "paid",
       "dueDate": "2026-11-01",
       "paidAt": "2026-11-01T00:00:00.000Z",
+      "sample": true
+    }
+  ],
+  "courseAssignments": [
+    {
+      "id": "assign-everyday-computers-smartphones",
+      "orgId": "org-example",
+      "courseId": "everyday-computers-smartphones",
+      "courseTitle": "Everyday Computers and Smartphones",
+      "calpCategoryTag": "basic_digital_skills",
+      "opportunityType": "ongoing",
+      "statedCourseHours": 20,
+      "statedHoursNote": "SAMPLE ESTIMATE from the course-depth target. Not measured time, and not the length of the current short lessons.",
+      "hoursExportMethod": "both",
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "sample": true
+    },
+    {
+      "id": "assign-excel-basics-canada",
+      "orgId": "org-example",
+      "courseId": "excel-basics-canada",
+      "courseTitle": "Microsoft Excel Basics (Canada)",
+      "calpCategoryTag": "basic_digital_skills",
+      "opportunityType": "ongoing",
+      "statedCourseHours": 20,
+      "statedHoursNote": "SAMPLE ESTIMATE from the course-depth target. Not measured time, and not the length of the current short lessons.",
+      "hoursExportMethod": "both",
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "sample": true
+    },
+    {
+      "id": "assign-word-basics-canada",
+      "orgId": "org-example",
+      "courseId": "word-basics-canada",
+      "courseTitle": "Microsoft Word Basics (Canada)",
+      "calpCategoryTag": "basic_digital_skills",
+      "opportunityType": "ongoing",
+      "statedCourseHours": 20,
+      "statedHoursNote": "SAMPLE ESTIMATE from the course-depth target. Not measured time, and not the length of the current short lessons.",
+      "hoursExportMethod": "both",
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "sample": true
+    },
+    {
+      "id": "assign-job-search-canada",
+      "orgId": "org-example",
+      "courseId": "job-search-canada",
+      "courseTitle": "Job Search and Employment Readiness in Canada",
+      "calpCategoryTag": "skills_for_learning",
+      "opportunityType": "undecided",
+      "statedCourseHours": 20,
+      "statedHoursNote": "SAMPLE ESTIMATE from the course-depth target. Not measured time, and not the length of the current short lessons.",
+      "hoursExportMethod": "both",
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "sample": true
+    },
+    {
+      "id": "assign-outlook-workplace-email",
+      "orgId": "org-example",
+      "courseId": "outlook-workplace-email",
+      "courseTitle": "Microsoft Outlook and Workplace Email Habits",
+      "calpCategoryTag": "basic_digital_skills",
+      "opportunityType": "ongoing",
+      "statedCourseHours": 16,
+      "statedHoursNote": "SAMPLE ESTIMATE from the course-depth target. Not measured time, and not the length of the current short lessons.",
+      "hoursExportMethod": "both",
+      "reportingPeriodStart": "2026-10-01",
+      "reportingPeriodEnd": "2026-11-30",
+      "sample": true
+    }
+  ],
+  "seatUsage": [
+    {
+      "id": "seats-example-2026-11",
+      "orgId": "org-example",
+      "periodStart": "2026-11-01T00:00:00.000Z",
+      "periodEnd": "2026-12-01T00:00:00.000Z",
+      "activeLearnerCount": null,
+      "finalizedCount": null,
+      "capped": false,
+      "cap": null,
       "sample": true
     }
   ]

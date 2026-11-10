@@ -1040,239 +1040,302 @@
     return text;
   }
 
-  function reportCell(field, learner, enrollment, report) {
-    var cert = null;
-    (report.certificates || []).forEach(function (row) {
-      if (row.learnerId === learner.id && row.courseId === enrollment.courseId) cert = row;
-    });
-    var exam = null;
-    var last = enrollment.lastActivityAt || "";
-    (report.progress || []).forEach(function (row) {
-      if (row.learnerId !== learner.id || row.courseId !== enrollment.courseId) return;
-      if (row.at && (!last || row.at > last)) last = row.at;
-      if (row.itemId === "exam:final") exam = row;
-    });
-    var stated = "";
-    var catalogue = window.RANGE_PATH;
-    if (catalogue && catalogue.courses) {
-      catalogue.courses.forEach(function (course) {
-        if (course.id === enrollment.courseId && course.plan && course.plan.statedHours != null) stated = course.plan.statedHours;
-      });
-    }
-    if (field.name === "learner_code") return learner.learnerCode || learner.id;
-    if (field.name === "course_id") return enrollment.courseId;
-    if (field.name === "course_title") {
-      var title = enrollment.courseId;
-      if (window.RANGE_PATH && window.RANGE_PATH.courses) {
-        window.RANGE_PATH.courses.forEach(function (course) {
-          if (course.id === enrollment.courseId) title = course.title || title;
-        });
-      }
-      return title;
-    }
-    if (field.name === "course_started_at") return enrollment.startedAt || "";
-    if (field.name === "last_activity_at") return last;
-    if (field.name === "completed") return cert ? "yes" : "no";
-    if (field.name === "completion_date") return cert ? String(cert.issuedAt).slice(0, 10) : "";
-    if (field.name === "stated_hours") return stated;
-    if (field.name === "final_exam_passed") return exam && exam.detail && exam.detail.passed ? "yes" : "no";
-    if (field.name === "final_exam_score") return exam && exam.detail && exam.detail.percent != null ? exam.detail.percent : "";
-    if (field.name === "final_exam_attempts") return exam && exam.detail && exam.detail.attempts ? exam.detail.attempts.length : "";
-    if (field.name === "certificate_id") return cert ? cert.id : "";
-    if (field.name === "display_name") return learner.name || "";
-    return learner[field.name] || "";
+  function reportFields() {
+    return (window.RANGE_PATH_REPORT_FIELDS && window.RANGE_PATH_REPORT_FIELDS.fields) || [];
+  }
+
+  function sampleBanner() {
+    return (window.RANGE_PATH_REPORT_FIELDS && window.RANGE_PATH_REPORT_FIELDS.sampleBanner) || "Sample data, not real learners";
+  }
+
+  function rowExportValue(field, row) {
+    var map = {
+      learner_code: row.learnerCode,
+      display_name: row.displayName,
+      course_id: row.courseId,
+      course_title: row.courseTitle,
+      calp_category_tag: row.calpCategoryTag,
+      opportunity_type: row.opportunityType,
+      reporting_period_start: row.reportingPeriodStart,
+      reporting_period_end: row.reportingPeriodEnd,
+      course_started_at: row.courseStartedAt ? String(row.courseStartedAt).slice(0, 10) : "",
+      last_activity_at: row.lastActivityAt ? String(row.lastActivityAt).slice(0, 10) : "",
+      lessons_completed_count: row.lessonsCompletedCount,
+      lessons_total: row.lessonsTotal,
+      completed: row.completed ? "yes" : "no",
+      stated_course_hours: row.statedCourseHours,
+      estimated_time_on_task_hours: row.estimatedTimeOnTaskHours,
+      final_exam_passed: row.finalExamPassed ? "yes" : "no",
+      final_exam_score: row.finalExamScore,
+      final_exam_attempts: row.finalExamAttempts,
+      certificate_id: row.certificateId,
+      certificate_issued_at: row.certificateIssuedAt ? String(row.certificateIssuedAt).slice(0, 10) : "",
+      gender: row.gender,
+      age_group: row.ageGroup,
+      previous_schooling: row.previousSchooling,
+      learner_profile: row.learnerProfile,
+      pulse_skills_used_in_daily_life: row.pulseSkillsUsedInDailyLife,
+      pulse_progress_toward_goal: row.pulseProgressTowardGoal,
+      pulse_increased_confidence: row.pulseIncreasedConfidence,
+      pulse_program_relevant: row.pulseProgramRelevant,
+      pulse_felt_welcome: row.pulseFeltWelcome
+    };
+    return map[field.name] == null ? "" : map[field.name];
   }
 
   function downloadReportCsv(report) {
-    var fields = window.RANGE_PATH_REPORT_FIELDS || { required: [], optional: [] };
-    var optional = {};
-    (fields.optional || []).forEach(function (field) { optional[field.name] = true; });
-    var columns = (fields.required || []).concat(fields.optional || []);
-    var lines = [columns.map(function (field) {
-      return csvCell(field.label + (optional[field.name] ? " (optional)" : ""));
-    }).join(",")];
-    (report.enrollments || []).forEach(function (enrollment) {
-      var learner = null;
-      (report.learners || []).forEach(function (person) {
-        if (person.id === enrollment.learnerId) learner = person;
-      });
-      if (!learner) return;
-      lines.push(columns.map(function (field) {
-        return csvCell(reportCell(field, learner, enrollment, report));
-      }).join(","));
+    var fields = reportFields();
+    var lines = [csvCell(sampleBanner())];
+    lines.push(["Reporting period", report.period.from.slice(0, 10), report.period.to.slice(0, 10)].map(csvCell).join(","));
+    lines.push(fields.map(function (field) {
+      var label = field.label + (field.optional ? " (optional)" : "") + (field.placeholder ? " (placeholder)" : "");
+      return csvCell(label);
+    }).join(","));
+    (report.rows || []).forEach(function (row) {
+      lines.push(fields.map(function (field) { return csvCell(rowExportValue(field, row)); }).join(","));
     });
     var blob = new Blob([lines.join("\n") + "\n"], { type: "text/csv" });
     var url = URL.createObjectURL(blob);
     var link = document.createElement("a");
     link.href = url;
-    link.download = "range-path-example-report.csv";
+    link.download = "range-path-sample-report.csv";
     document.body.appendChild(link);
     link.click();
     link.remove();
     URL.revokeObjectURL(url);
   }
 
+  function tallyText(counts) {
+    return Object.keys(counts || {}).map(function (key) { return key + " " + counts[key]; }).join(", ");
+  }
+
+  function paintDashboard(mount, report) {
+    mount.textContent = "";
+    var banner = document.createElement("p");
+    banner.className = "sample-banner";
+    banner.textContent = sampleBanner();
+    mount.appendChild(banner);
+
+    var screen = document.createElement("div");
+    screen.className = "report-screen";
+    var totals = report.totals || {};
+    var summary = document.createElement("ul");
+    summary.className = "stats";
+    [
+      [String(report.activeLearners || 0), "Learner codes who started"],
+      [String(totals.starts || 0), "Course starts"],
+      [String(totals.completions || 0), "Completions"],
+      [String(totals.statedHours || 0), "Stated hours"],
+      [String(totals.estimatedHours || 0), "Estimated hours"],
+      [String(totals.certificates || 0), "Certificates"]
+    ].forEach(function (pair) {
+      var li = document.createElement("li");
+      li.className = "stat";
+      var strong = document.createElement("strong");
+      strong.textContent = pair[0];
+      li.appendChild(strong);
+      li.appendChild(document.createTextNode(" " + pair[1]));
+      summary.appendChild(li);
+    });
+    screen.appendChild(summary);
+    var seat = document.createElement("p");
+    seat.textContent = report.seatNote + (report.seatCap == null ? " No operational cap is set." : " Optional cap: " + report.seatCap + ".");
+    screen.appendChild(seat);
+
+    var courseTitle = document.createElement("h2");
+    courseTitle.textContent = "Progress by course";
+    screen.appendChild(courseTitle);
+    var courseList = document.createElement("div");
+    courseList.className = "report-cards";
+    (report.courses || []).forEach(function (course) {
+      var card = document.createElement("article");
+      card.className = "report-card";
+      var h3 = document.createElement("h3");
+      h3.textContent = course.courseTitle;
+      var body = document.createElement("p");
+      body.textContent = "Category: " + (course.calpCategoryTag || "not set") + ". " + (course.opportunityType || "undecided") + ". " + course.learners + " learner codes, " + course.starts + " starts, " + course.completions + " completions (" + course.completionRate + "%). Stated hours " + course.statedCourseHours + " each (placeholder estimate). Estimated hours from progress: " + course.estimatedHoursTotal + ".";
+      card.appendChild(h3);
+      card.appendChild(body);
+      courseList.appendChild(card);
+    });
+    if (!(report.courses || []).length) {
+      var empty = document.createElement("p");
+      empty.textContent = "No sample enrolments in this course and date range.";
+      courseList.appendChild(empty);
+    }
+    screen.appendChild(courseList);
+
+    var peopleTitle = document.createElement("h2");
+    peopleTitle.textContent = "Learners enrolled";
+    screen.appendChild(peopleTitle);
+    var people = {};
+    (report.rows || []).forEach(function (row) {
+      if (!people[row.learnerCode]) people[row.learnerCode] = { name: row.displayName, code: row.learnerCode, rows: [] };
+      people[row.learnerCode].rows.push(row);
+    });
+    var roster = document.createElement("div");
+    roster.className = "report-cards";
+    Object.keys(people).forEach(function (code) {
+      var person = people[code];
+      var card = document.createElement("article");
+      card.className = "report-card";
+      var h3 = document.createElement("h3");
+      h3.textContent = person.name + " · " + person.code;
+      card.appendChild(h3);
+      person.rows.forEach(function (row) {
+        var line = document.createElement("p");
+        var state = row.completed ? "Completed" : (row.started ? "In progress" : "Enrolled, not started");
+        line.textContent = row.courseTitle + " — " + state + ". Lessons " + row.lessonsCompletedCount + " of " + row.lessonsTotal + ". Estimated hours " + (row.estimatedTimeOnTaskHours == null ? "not calculated" : row.estimatedTimeOnTaskHours) + ".";
+        card.appendChild(line);
+      });
+      roster.appendChild(card);
+    });
+    screen.appendChild(roster);
+
+    var certTitle = document.createElement("h2");
+    certTitle.textContent = "Certificates issued";
+    screen.appendChild(certTitle);
+    var certs = document.createElement("div");
+    certs.className = "report-cards";
+    (report.rows || []).filter(function (row) { return row.certificateId; }).forEach(function (row) {
+      var card = document.createElement("article");
+      card.className = "report-card";
+      var h3 = document.createElement("h3");
+      h3.textContent = row.displayName + " · " + row.learnerCode;
+      var p = document.createElement("p");
+      p.textContent = String(row.certificateIssuedAt).slice(0, 10) + " · " + row.courseTitle + " · " + row.certificateId;
+      card.appendChild(h3);
+      card.appendChild(p);
+      certs.appendChild(card);
+    });
+    screen.appendChild(certs);
+
+    var demoTitle = document.createElement("h2");
+    demoTitle.textContent = "Optional demographics (totals)";
+    screen.appendChild(demoTitle);
+    var demo = document.createElement("p");
+    var demoTotals = report.demographicTotals || {};
+    demo.textContent = "Gender: " + tallyText(demoTotals.gender) + ". Age group: " + tallyText(demoTotals.ageGroup) + ". Previous schooling: " + tallyText(demoTotals.previousSchooling) + ". Learner profile: " + tallyText(demoTotals.learnerProfile) + ".";
+    screen.appendChild(demo);
+
+    var pulseTitle = document.createElement("h2");
+    pulseTitle.textContent = "Optional after-course questions";
+    screen.appendChild(pulseTitle);
+    var pulseNames = {
+      pulseSkillsUsedInDailyLife: "1.2 a Uses the skill in daily life",
+      pulseProgressTowardGoal: "1.2 b Progress toward a goal",
+      pulseIncreasedConfidence: "1.2 c Increased confidence",
+      pulseProgramRelevant: "2.2 a Program felt relevant",
+      pulseFeltWelcome: "2.2 b Felt welcome"
+    };
+    Object.keys(pulseNames).forEach(function (key) {
+      var item = (report.pulseTotals || {})[key] || { counts: {}, percentYes: null };
+      var p = document.createElement("p");
+      p.textContent = pulseNames[key] + ": " + tallyText(item.counts) + (item.percentYes == null ? "" : ". Yes among yes/no answers: " + item.percentYes + "%.");
+      screen.appendChild(p);
+    });
+    mount.appendChild(screen);
+
+    var printed = document.createElement("article");
+    printed.className = "funder-print";
+    printed.innerHTML = "<p class=\"sample-banner\"></p><h1>Range Path funder report</h1><p class=\"report-period\"></p><h2>Summary</h2><ul class=\"report-totals\"></ul><h2>Per course</h2><div class=\"table-scroll\"><table class=\"report-table\"><thead><tr><th>Course</th><th>Category</th><th>Type</th><th>Learners</th><th>Starts</th><th>Completions</th><th>Rate</th><th>Stated hours</th><th>Estimated hours</th></tr></thead><tbody></tbody></table></div><h2>Notes</h2><p class=\"report-notes\"></p>";
+    printed.querySelector(".sample-banner").textContent = sampleBanner();
+    printed.querySelector(".report-period").textContent = "Reporting period " + report.period.from.slice(0, 10) + " to " + report.period.to.slice(0, 10) + ". Sample grant period " + report.grantPeriod.start + " to " + report.grantPeriod.end + ". These dates are a sample selection, not an official funder calendar.";
+    var totalList = printed.querySelector(".report-totals");
+    [
+      "Unique learner codes: " + totals.uniqueLearners,
+      "Learner codes who started a course: " + report.activeLearners,
+      "Starts: " + totals.starts,
+      "Completions: " + totals.completions + " (" + totals.completionRate + "%)",
+      "Certificates: " + totals.certificates,
+      "Stated hours for completions: " + totals.statedHours + " (placeholder estimate)",
+      "Estimated hours from progress: " + totals.estimatedHours + " (placeholder, not a timer)"
+    ].forEach(function (text) {
+      var li = document.createElement("li");
+      li.textContent = text;
+      totalList.appendChild(li);
+    });
+    var tbody = printed.querySelector("tbody");
+    (report.courses || []).forEach(function (course) {
+      var tr = document.createElement("tr");
+      [course.courseTitle, course.calpCategoryTag, course.opportunityType, course.learners, course.starts, course.completions, course.completionRate + "%", course.statedHoursTotal, course.estimatedHoursTotal].forEach(function (value) {
+        var td = document.createElement("td");
+        td.textContent = value == null ? "" : String(value);
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    printed.querySelector(".report-notes").textContent = report.draft;
+    mount.appendChild(printed);
+
+    if ((report.examLocks || []).length) {
+      var lockTitle = document.createElement("h2");
+      lockTitle.className = "no-print";
+      lockTitle.textContent = "Exam attempts used up";
+      mount.appendChild(lockTitle);
+      report.examLocks.forEach(function (lock) {
+        var p = document.createElement("p");
+        p.className = "no-print";
+        p.textContent = lock.learnerName + " (" + lock.learnerCode + ") used " + lock.attempts + " of " + lock.limit + " attempts on " + lock.courseId + " and has not passed.";
+        var button = document.createElement("button");
+        button.type = "button";
+        button.className = "btn btn-secondary no-print";
+        button.textContent = "Reset exam attempts (demo)";
+        button.addEventListener("click", function () {
+          store().resetExamAttempts(lock.learnerId, lock.courseId);
+          window.location.reload();
+        });
+        mount.appendChild(p);
+        mount.appendChild(button);
+      });
+    }
+  }
+
   function setupDashboard() {
     var mount = document.getElementById("org-report");
     if (!mount) return;
     var api = store();
-    if (!api) return;
-    var user = api.getSessionUser();
-    mount.textContent = "";
-    if (!user || (user.role !== "org-staff" && user.role !== "org-admin" && user.role !== "platform-owner")) {
-      var note = document.createElement("p");
-      note.textContent = "This dashboard is for council staff. Use the demo role switch and choose Council staff. Learners only see their own course progress.";
-      mount.appendChild(note);
-      return;
-    }
-    var report = api.getOrgReport(user.role === "platform-owner" ? user.orgId || "org-example" : user.orgId);
-    if (report.error) {
-      var err = document.createElement("p");
-      err.textContent = report.error;
-      mount.appendChild(err);
-      return;
-    }
-    var names = {
-      "everyday-computers-smartphones": "Everyday computers",
-      "excel-basics-canada": "Excel basics",
-      "word-basics-canada": "Word basics",
-      "job-search-canada": "Job search"
-    };
-    var leadIds = Object.keys(names);
-    var month = new Date().toISOString().slice(0, 7);
-    var classCode = (report.classes && report.classes[0] && report.classes[0].code) || "";
-    var lead = document.createElement("p");
-    var sub = report.subscription;
-    var capText = report.seatCap == null ? "No seat cap. The active-learner count is for reporting only." : "Optional seat cap: " + report.seatCap + ".";
-    lead.textContent = "Example data for " + (report.org ? report.org.name : "this council") + ". These people are not real. Each learner has their own record. A class code is not a shared login. Subscription provider: " + (sub ? sub.provider : "none") + ", status: " + (sub ? sub.status : "") + ". " + capText + " Class code: " + classCode + ". Active learners in " + month + ": " + report.activeSeatsThisMonth + ". Winter Safety is a demo extra and is not in this sample.";
-    mount.appendChild(lead);
-    if (report.classes && report.classes.length) {
-      var classLine = document.createElement("p");
-      var today = new Date().toISOString().slice(0, 10);
-      classLine.textContent = "Class codes: " + report.classes.map(function (row) {
-        var ended = row.endsOn && row.endsOn < today;
-        return row.code + (ended ? " ended " + row.endsOn : " open until " + (row.endsOn || "further notice"));
-      }).join("; ") + ".";
-      mount.appendChild(classLine);
-    }
-    if (report.invoices && report.invoices.length) {
-      var invoice = report.invoices[0];
-      var invoiceLine = document.createElement("p");
-      invoiceLine.textContent = "Example invoice " + invoice.number + ". Provider: " + invoice.provider + ". Status: " + invoice.status + ". CA$" + invoice.amountDue + ". Not a live charge.";
-      mount.appendChild(invoiceLine);
-    }
-    var stats = document.createElement("ul");
-    stats.className = "stats";
-    leadIds.forEach(function (courseId) {
-      var count = report.certificates.filter(function (row) { return row.courseId === courseId; }).length;
-      var li = document.createElement("li");
-      li.className = "stat";
-      var strong = document.createElement("strong");
-      strong.textContent = String(count);
-      li.appendChild(strong);
-      li.appendChild(document.createTextNode(" Completed " + names[courseId]));
-      stats.appendChild(li);
+    if (!api || !api.getSampleReport) return;
+    var grant = api.getSampleReport();
+    var filters = document.createElement("form");
+    filters.className = "report-filters no-print";
+    filters.innerHTML = "<label>Course <select name=\"course\"><option value=\"\">All courses</option></select></label><label>From <input name=\"from\" type=\"date\"></label><label>To <input name=\"to\" type=\"date\"></label>";
+    var select = filters.querySelector("select");
+    (grant.assignments || []).forEach(function (assignment) {
+      var option = document.createElement("option");
+      option.value = assignment.courseId;
+      option.textContent = assignment.courseTitle;
+      select.appendChild(option);
     });
-    mount.appendChild(stats);
-    var rosterTitle = document.createElement("h2");
-    rosterTitle.textContent = "Learners enrolled";
-    mount.appendChild(rosterTitle);
-    var list = document.createElement("ul");
-    list.className = "roster";
-    report.learners.forEach(function (learner) {
-      var item = document.createElement("li");
-      var title = document.createElement("h3");
-      title.textContent = learner.name + (learner.example ? " (example)" : "");
-      item.appendChild(title);
-      var enrolled = report.enrollments.filter(function (row) { return row.learnerId === learner.id; });
-      var bits = enrolled.map(function (row) {
-        var cert = report.certificates.filter(function (entry) {
-          return entry.learnerId === learner.id && entry.courseId === row.courseId;
-        })[0];
-        var label = names[row.courseId] || row.courseId;
-        if (cert) return label + " completed " + String(cert.issuedAt).slice(0, 10);
-        var started = report.progress.some(function (entry) {
-          return entry.learnerId === learner.id && entry.courseId === row.courseId;
-        });
-        return label + (started ? " in progress" : " not completed");
+    filters.querySelector("[name=from]").value = grant.grantPeriod.start;
+    filters.querySelector("[name=to]").value = grant.grantPeriod.end;
+    mount.parentNode.insertBefore(filters, mount);
+    function render() {
+      var report = api.getSampleReport({
+        from: filters.querySelector("[name=from]").value,
+        to: filters.querySelector("[name=to]").value,
+        courseId: select.value
       });
-      var line = document.createElement("p");
-      line.textContent = bits.length ? bits.join("; ") : "No enrolments";
-      item.appendChild(line);
-      list.appendChild(item);
-    });
-    mount.appendChild(list);
-    var certs = document.createElement("h2");
-    certs.textContent = "Certificate records";
-    mount.appendChild(certs);
-    var certList = document.createElement("ul");
-    certList.className = "roster";
-    report.certificates.forEach(function (row) {
-      var learner = report.learners.filter(function (person) { return person.id === row.learnerId; })[0];
-      var li = document.createElement("li");
-      var h3 = document.createElement("h3");
-      h3.textContent = learner ? learner.name : row.learnerId;
-      var p = document.createElement("p");
-      p.textContent = String(row.issuedAt).slice(0, 10) + " · " + (names[row.courseId] || row.courseId);
-      var meta = document.createElement("p");
-      meta.className = "meta";
-      meta.textContent = row.id + " · example";
-      li.appendChild(h3);
-      li.appendChild(p);
-      li.appendChild(meta);
-      certList.appendChild(li);
-    });
-    mount.appendChild(certList);
-    var locksTitle = document.createElement("h2");
-    locksTitle.textContent = "Exam attempts used up";
-    mount.appendChild(locksTitle);
-    var locks = report.examLocks || [];
-    var locksCopy = document.createElement("p");
-    locksCopy.textContent = locks.length
-      ? "These example learners have used every exam attempt and have not passed. Resetting attempts is a demo action on this device."
-      : "No learner in this council has used every exam attempt.";
-    mount.appendChild(locksCopy);
-    locks.forEach(function (lock) {
-      var row = document.createElement("p");
-      row.textContent = lock.learnerName + " (" + (lock.learnerCode || lock.learnerId) + ") used " + lock.attempts + " of " + lock.limit + " attempts on " + (names[lock.courseId] || lock.courseId) + " and has not passed.";
-      var resetAttempts = document.createElement("button");
-      resetAttempts.type = "button";
-      resetAttempts.className = "btn btn-secondary";
-      resetAttempts.textContent = "Reset exam attempts (demo)";
-      resetAttempts.addEventListener("click", function () {
-        api.resetExamAttempts(lock.learnerId, lock.courseId);
-        window.location.reload();
-      });
-      mount.appendChild(row);
-      mount.appendChild(resetAttempts);
-    });
-    var exportActions = document.createElement("p");
-    exportActions.className = "actions";
+      paintDashboard(mount, report);
+      mount._report = report;
+    }
+    filters.addEventListener("change", render);
+    var actions = document.createElement("p");
+    actions.className = "actions no-print";
     var csvBtn = document.createElement("button");
     csvBtn.type = "button";
     csvBtn.className = "btn";
     csvBtn.textContent = "Download CSV";
-    csvBtn.addEventListener("click", function () { downloadReportCsv(report); });
+    csvBtn.addEventListener("click", function () { downloadReportCsv(mount._report); });
     var printBtn = document.createElement("button");
     printBtn.type = "button";
     printBtn.className = "btn btn-secondary";
     printBtn.textContent = "Print report";
     printBtn.addEventListener("click", function () { window.print(); });
-    exportActions.appendChild(csvBtn);
-    exportActions.appendChild(printBtn);
-    mount.appendChild(exportActions);
-    var restore = document.createElement("button");
-    restore.type = "button";
-    restore.className = "btn btn-secondary";
-    restore.textContent = "Restore example data";
-    restore.addEventListener("click", function () {
-      api.resetStore();
-      window.location.reload();
-    });
-    var actions = document.createElement("p");
-    actions.className = "actions";
-    actions.appendChild(restore);
-    mount.appendChild(actions);
+    actions.appendChild(csvBtn);
+    actions.appendChild(printBtn);
+    mount.parentNode.insertBefore(actions, mount);
+    render();
   }
 
   document.documentElement.classList.add("js");

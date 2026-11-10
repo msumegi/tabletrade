@@ -23,6 +23,8 @@
       certificates: {},
       subscriptions: {},
       invoices: {},
+      courseAssignments: {},
+      seatUsage: {},
       session: { userId: "user-demo-learner" }
     };
   }
@@ -51,6 +53,8 @@
       certificates: indexById(seed.certificates),
       subscriptions: indexById(seed.subscriptions),
       invoices: indexById(seed.invoices),
+      courseAssignments: indexById(seed.courseAssignments),
+      seatUsage: indexById(seed.seatUsage),
       session: { userId: "user-demo-learner" }
     };
   }
@@ -79,6 +83,8 @@
       var seed = seedFromWindow();
       if (!memory.subscriptions) memory.subscriptions = seed.subscriptions || {};
       if (!memory.invoices) memory.invoices = seed.invoices || {};
+      if (!memory.courseAssignments) memory.courseAssignments = seed.courseAssignments || {};
+      if (!memory.seatUsage) memory.seatUsage = seed.seatUsage || {};
       Object.keys(seed.organizations || {}).forEach(function (id) {
         if (!memory.organizations[id]) memory.organizations[id] = seed.organizations[id];
         else if (!memory.organizations[id].accessState && seed.organizations[id]) {
@@ -178,8 +184,8 @@
       }
       if (org && typeof org.seatCap === "number" && user.role === "learner") {
         var period = currentPeriod(org);
-        var already = listProgress(user.id).some(function (row) {
-          return row.at && row.at >= period.from && row.at <= period.to;
+        var already = listEnrollments({ learnerId: user.id, orgId: org.id }).some(function (row) {
+          return courseWasStarted(row) && inRange(row.startedAt, period.from, period.to);
         });
         if (!already && countActiveSeats(org.id, period.from, period.to) >= org.seatCap) {
           return { allowed: false, reason: "This council has reached its optional seat cap. Ask staff.", accessState: state };
@@ -195,7 +201,7 @@
       if (!store.organizations[orgId]) return null;
       store.organizations[orgId].accessState = accessState;
       Object.keys(store.subscriptions || {}).forEach(function (id) {
-        if (store.subscriptions[id].orgId === orgId) store.subscriptions[id].status = allowed[accessState];
+        if (store.subscriptions[id].orgId === orgId) store.subscriptions[id].providerStatus = allowed[accessState];
       });
       write();
       return store.organizations[orgId];
@@ -431,58 +437,250 @@
       });
     }
 
+    function inRange(iso, fromIso, toIso) {
+      if (!iso || !fromIso || !toIso) return false;
+      return iso >= fromIso && iso <= toIso;
+    }
+
+    function courseWasStarted(row) {
+      return row && (row.status === "in_progress" || row.status === "completed");
+    }
+
     function countActiveSeats(orgId, fromIso, toIso) {
       var seen = {};
-      listProgress().forEach(function (row) {
-        if (!row.at || row.at < fromIso || row.at > toIso) return;
-        var user = getUser(row.learnerId);
-        if (!user || user.orgId !== orgId) return;
-        seen[row.learnerId] = true;
+      listEnrollments({ orgId: orgId }).forEach(function (row) {
+        if (!courseWasStarted(row) || !inRange(row.startedAt, fromIso, toIso)) return;
+        var person = getUser(row.learnerId);
+        if (!person || person.role !== "learner") return;
+        seen[person.learnerCode || row.learnerCode || person.id] = true;
       });
       return Object.keys(seen).length;
+    }
+
+    function boundDay(value, end) {
+      if (!value) return "";
+      if (String(value).length === 10) return value + (end ? "T23:59:59.999Z" : "T00:00:00.000Z");
+      return value;
+    }
+
+    function assignmentFor(orgId, courseId) {
+      var found = null;
+      Object.keys(read().courseAssignments || {}).forEach(function (id) {
+        var row = read().courseAssignments[id];
+        if (row.orgId === orgId && row.courseId === courseId) found = row;
+      });
+      return found;
+    }
+
+    function buildOrgReport(orgId, period) {
+      var org = getOrg(orgId);
+      var query = period || {};
+      var grantStart = (org && org.reportingPeriodStart) || "2026-10-01";
+      var grantEnd = (org && org.reportingPeriodEnd) || "2026-11-30";
+      var from = boundDay(query.from || grantStart, false);
+      var to = boundDay(query.to || grantEnd, true);
+      var courseFilter = query.courseId || "";
+      var subscription = null;
+      Object.keys(read().subscriptions || {}).forEach(function (id) {
+        if (read().subscriptions[id].orgId === orgId) subscription = read().subscriptions[id];
+      });
+      var billing = global.RangePathBilling;
+      var invoiceRecords = Object.keys(read().invoices || {}).map(function (id) {
+        return read().invoices[id];
+      }).filter(function (row) { return row.orgId === orgId; });
+      var learners = {};
+      Object.keys(read().users).forEach(function (id) {
+        var person = read().users[id];
+        if (person.orgId === orgId && person.role === "learner") learners[id] = person;
+      });
+      var progress = listProgress().filter(function (row) {
+        var person = getUser(row.learnerId);
+        return person && person.orgId === orgId;
+      });
+      function lastActivity(learnerId, courseId) {
+        var last = "";
+        progress.forEach(function (row) {
+          if (row.learnerId === learnerId && row.courseId === courseId && row.at && row.at > last) last = row.at;
+        });
+        return last;
+      }
+      var rows = listEnrollments({ orgId: orgId }).filter(function (row) {
+        if (courseFilter && row.courseId !== courseFilter) return false;
+        var person = learners[row.learnerId];
+        if (!person) return false;
+        var activity = row.lastActivityAt || lastActivity(row.learnerId, row.courseId);
+        return inRange(row.startedAt, from, to) || inRange(row.completedAt, from, to) || inRange(activity, from, to);
+      }).map(function (row) {
+        var person = learners[row.learnerId];
+        var assign = assignmentFor(orgId, row.courseId) || {};
+        var cert = null;
+        listCertificates(orgId).forEach(function (item) {
+          if (item.learnerId === row.learnerId && item.courseId === row.courseId) cert = item;
+        });
+        var lessonsTotal = row.lessonsTotal || 0;
+        var lessonsDone = row.lessonsCompletedCount || 0;
+        var stated = typeof assign.statedCourseHours === "number" ? assign.statedCourseHours : null;
+        var estimated = stated != null && lessonsTotal ? Math.round((stated * lessonsDone / lessonsTotal) * 10) / 10 : null;
+        var exam = null;
+        progress.forEach(function (item) {
+          if (item.learnerId === row.learnerId && item.courseId === row.courseId && item.itemId === "exam:final") exam = item;
+        });
+        return {
+          learnerId: row.learnerId,
+          learnerCode: person.learnerCode || row.learnerCode || "",
+          displayName: person.name || "",
+          courseId: row.courseId,
+          courseTitle: assign.courseTitle || row.courseId,
+          calpCategoryTag: assign.calpCategoryTag || "",
+          opportunityType: assign.opportunityType || "",
+          reportingPeriodStart: assign.reportingPeriodStart || grantStart,
+          reportingPeriodEnd: assign.reportingPeriodEnd || grantEnd,
+          courseStartedAt: row.startedAt || "",
+          lastActivityAt: row.lastActivityAt || lastActivity(row.learnerId, row.courseId),
+          status: row.status,
+          started: courseWasStarted(row),
+          lessonsCompletedCount: lessonsDone,
+          lessonsTotal: lessonsTotal,
+          completed: row.status === "completed",
+          statedCourseHours: stated,
+          finalExamScore: exam && exam.detail && exam.detail.percent != null ? exam.detail.percent : (cert ? cert.percent : ""),
+          finalExamAttempts: exam && exam.detail && exam.detail.attempts ? exam.detail.attempts.length : (row.status === "completed" ? 1 : ""),
+          finalExamPassed: Boolean((exam && exam.detail && exam.detail.passed) || row.status === "completed"),
+          estimatedTimeOnTaskHours: estimated,
+          certificateId: cert ? cert.id : "",
+          certificateIssuedAt: cert ? cert.issuedAt : "",
+          gender: person.gender || "",
+          ageGroup: person.ageGroup || "",
+          previousSchooling: person.previousSchooling || "",
+          learnerProfile: person.learnerProfile || "",
+          pulseSkillsUsedInDailyLife: row.pulseSkillsUsedInDailyLife || "",
+          pulseProgressTowardGoal: row.pulseProgressTowardGoal || "",
+          pulseIncreasedConfidence: row.pulseIncreasedConfidence || "",
+          pulseProgramRelevant: row.pulseProgramRelevant || "",
+          pulseFeltWelcome: row.pulseFeltWelcome || "",
+          sample: true
+        };
+      });
+      var codes = {};
+      var startedCodes = {};
+      rows.forEach(function (row) {
+        if (row.learnerCode) codes[row.learnerCode] = true;
+        if (row.started && row.learnerCode) startedCodes[row.learnerCode] = true;
+      });
+      var byCourse = {};
+      rows.forEach(function (row) {
+        if (!byCourse[row.courseId]) {
+          byCourse[row.courseId] = {
+            courseId: row.courseId,
+            courseTitle: row.courseTitle,
+            calpCategoryTag: row.calpCategoryTag,
+            opportunityType: row.opportunityType,
+            statedCourseHours: row.statedCourseHours,
+            learners: 0,
+            starts: 0,
+            completions: 0,
+            statedHoursTotal: 0,
+            estimatedHoursTotal: 0,
+            codes: {}
+          };
+        }
+        var bucket = byCourse[row.courseId];
+        bucket.codes[row.learnerCode] = true;
+        if (row.started) bucket.starts += 1;
+        if (row.completed) {
+          bucket.completions += 1;
+          if (typeof row.statedCourseHours === "number") bucket.statedHoursTotal += row.statedCourseHours;
+        }
+        if (typeof row.estimatedTimeOnTaskHours === "number") bucket.estimatedHoursTotal += row.estimatedTimeOnTaskHours;
+      });
+      var courses = Object.keys(byCourse).map(function (id) {
+        var bucket = byCourse[id];
+        bucket.learners = Object.keys(bucket.codes).length;
+        delete bucket.codes;
+        bucket.statedHoursTotal = Math.round(bucket.statedHoursTotal * 10) / 10;
+        bucket.estimatedHoursTotal = Math.round(bucket.estimatedHoursTotal * 10) / 10;
+        bucket.completionRate = bucket.starts ? Math.round((bucket.completions / bucket.starts) * 100) : 0;
+        return bucket;
+      });
+      function tally(key) {
+        var counts = {};
+        rows.forEach(function (row) {
+          var value = row[key] || "not collected";
+          counts[value] = (counts[value] || 0) + 1;
+        });
+        return counts;
+      }
+      var pulseKeys = [
+        "pulseSkillsUsedInDailyLife",
+        "pulseProgressTowardGoal",
+        "pulseIncreasedConfidence",
+        "pulseProgramRelevant",
+        "pulseFeltWelcome"
+      ];
+      var pulseTotals = {};
+      pulseKeys.forEach(function (key) {
+        var counts = tally(key);
+        var yes = counts.yes || 0;
+        var answered = yes + (counts.no || 0);
+        pulseTotals[key] = {
+          counts: counts,
+          percentYes: answered ? Math.round((yes / answered) * 100) : null
+        };
+      });
+      var starts = rows.filter(function (row) { return row.started; }).length;
+      var completions = rows.filter(function (row) { return row.completed; }).length;
+      var statedHours = courses.reduce(function (sum, course) { return sum + course.statedHoursTotal; }, 0);
+      var estimatedHours = courses.reduce(function (sum, course) { return sum + course.estimatedHoursTotal; }, 0);
+      return {
+        sample: true,
+        banner: "Sample data, not real learners",
+        org: org,
+        seatCap: org && typeof org.seatCap === "number" ? org.seatCap : null,
+        accessState: org ? org.accessState || "active" : "",
+        period: { from: from, to: to },
+        grantPeriod: { start: grantStart, end: grantEnd },
+        activeLearners: Object.keys(startedCodes).length,
+        seatNote: "Unique learner codes who started a course in this period. This count is a report metric, not a charge.",
+        uniqueLearnerCount: Object.keys(codes).length,
+        totals: {
+          uniqueLearners: Object.keys(codes).length,
+          starts: starts,
+          completions: completions,
+          completionRate: starts ? Math.round((completions / starts) * 100) : 0,
+          statedHours: Math.round(statedHours * 10) / 10,
+          estimatedHours: Math.round(estimatedHours * 10) / 10,
+          certificates: completions
+        },
+        courses: courses,
+        rows: rows,
+        demographicTotals: {
+          gender: tally("gender"),
+          ageGroup: tally("ageGroup"),
+          previousSchooling: tally("previousSchooling"),
+          learnerProfile: tally("learnerProfile")
+        },
+        pulseTotals: pulseTotals,
+        draft: "SAMPLE. In this selected period, " + Object.keys(codes).length + " learner codes were enrolled and " + Object.keys(startedCodes).length + " started a course. " + completions + " of " + starts + " starts were completed. Stated hours for completions add up to " + (Math.round(statedHours * 10) / 10) + " (an estimate, not a timer). Staff still have to check the current funder form before they use these numbers.",
+        subscription: billing ? billing.getSubscription(subscription) : null,
+        invoices: billing ? billing.listInvoices(invoiceRecords) : [],
+        examLocks: listExamLocks(orgId),
+        classes: Object.keys(read().classes).map(function (id) { return read().classes[id]; }).filter(function (row) { return row.orgId === orgId; }),
+        assignments: Object.keys(read().courseAssignments || {}).map(function (id) { return read().courseAssignments[id]; }).filter(function (row) { return row.orgId === orgId; }),
+        learners: Object.keys(learners).map(function (id) { return learners[id]; }),
+        enrollments: listEnrollments({ orgId: orgId }),
+        certificates: listCertificates(orgId),
+        progress: progress
+      };
     }
 
     function getOrgReport(orgId, period) {
       var allowed = scopedOrgId(orgId);
       if (!allowed) return { error: "This role cannot view that council.", orgId: orgId };
-      var org = getOrg(allowed);
-      var month = nowIso().slice(0, 7);
-      var subscription = null;
-      Object.keys(read().subscriptions || {}).forEach(function (id) {
-        if (read().subscriptions[id].orgId === allowed) subscription = read().subscriptions[id];
-      });
-      var from = (period && period.from) || (subscription && subscription.currentPeriodStart) || month + "-01T00:00:00.000Z";
-      var to = (period && period.to) || (subscription && subscription.currentPeriodEnd) || month + "-31T23:59:59.999Z";
-      var enrollments = listEnrollments({ orgId: allowed });
-      var learners = {};
-      Object.keys(read().users).forEach(function (id) {
-        var person = read().users[id];
-        if (person.orgId === allowed && person.role === "learner") learners[id] = person;
-      });
-      var classes = Object.keys(read().classes).map(function (id) {
-        return read().classes[id];
-      }).filter(function (row) { return row.orgId === allowed; });
-      return {
-        org: org,
-        seatCap: org && typeof org.seatCap === "number" ? org.seatCap : null,
-        plan: org ? org.plan : "",
-        accessState: org ? org.accessState || "active" : "",
-        period: { from: from, to: to },
-        activeSeatsThisMonth: countActiveSeats(allowed, from, to),
-        subscription: subscription,
-        invoices: Object.keys(read().invoices || {}).map(function (id) {
-          return read().invoices[id];
-        }).filter(function (row) { return row.orgId === allowed; }),
-        examLocks: listExamLocks(allowed),
-        classes: classes,
-        enrollments: enrollments,
-        learners: Object.keys(learners).map(function (id) { return learners[id]; }),
-        certificates: listCertificates(allowed),
-        progress: listProgress().filter(function (row) {
-          var person = getUser(row.learnerId);
-          return person && person.orgId === allowed;
-        })
-      };
+      return buildOrgReport(allowed, period);
+    }
+
+    function getSampleReport(period) {
+      return buildOrgReport("org-example", period);
     }
 
     function resetStore() {
@@ -622,6 +820,7 @@
       listCertificates: listCertificates,
       countActiveSeats: countActiveSeats,
       getOrgReport: getOrgReport,
+      getSampleReport: getSampleReport,
       resetStore: resetStore,
       getLearnerView: getLearnerView,
       saveLearnerView: saveLearnerView
