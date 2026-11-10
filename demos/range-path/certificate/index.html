@@ -33,42 +33,57 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     </div>
     <nav id="site-nav" class="is-collapsed" aria-label="Main">
-      <div class="site-bar"><ul><li><a href="../">Home</a></li><li><a href="../courses/">Courses</a></li><li><a href="../pricing/">Pricing</a></li><li><a href="../walkthrough/">Walkthrough</a></li><li><a href="../certificate/" aria-current="page">Certificate</a></li><li><a href="../admin/">Staff demo</a></li></ul></div>
+      <div class="site-bar"><ul><li><a href="../courses/">Courses</a></li><li><a href="../privacy/">Privacy</a></li></ul></div>
     </nav>
   </header>
   <main id="main">
 
     <div class="wrap">
-<p class="crumbs"><a href="../">Home</a><span>Certificate</span></p>
+<p class="crumbs"><a href="../courses/">Courses</a><span>Certificate</span></p>
+<div id="cert-locked">
+  <h1>Finish the final quiz first</h1>
+  <p id="cert-locked-lead">A certificate opens on this device after you score 70% or more on a course final. Nothing is sent off this phone.</p>
+  <ul class="check">
+    <li><a href="../courses/email-online-safety/final/">Email &amp; Online Safety final quiz</a></li>
+    <li><a href="../courses/sin-cra-getting-paid/final/">SIN, CRA &amp; getting paid final quiz</a></li>
+    <li><a href="../courses/winter-safety-rural-alberta/final/">Winter safety final quiz</a></li>
+  </ul>
+  <div id="cert-passed-links"></div>
+</div>
+<div id="cert-ready" hidden>
 <h1>Sample certificate</h1>
-<p id="cert-state">Sample preview. Not accredited.</p>
-<form class="cert-fields form" action="#">
+<p id="cert-state">Recorded on this device. Still a sample. Not accredited.</p>
+<form class="cert-fields form" action="#" onsubmit="return false;">
   <label for="learner-name">Name for certificate (stays on this device)</label>
   <input id="learner-name" name="learner" type="text" autocomplete="name" value="Sample Learner">
+  <p class="field-echo" id="learner-echo">Sample Learner</p>
   <label for="council-name">Council name</label>
-  <input id="council-name" name="council" type="text" autocomplete="organization" value="EXAMPLE Community Adult Learning">
+  <textarea id="council-name" name="council" rows="2" autocomplete="organization">EXAMPLE Community Adult Learning</textarea>
+  <p class="field-echo" id="council-echo">EXAMPLE Community Adult Learning</p>
   <label for="cert-course">Course</label>
   <select id="cert-course">
     <option value="email-online-safety">Email &amp; Online Safety Basics in Canada</option>
 <option value="sin-cra-getting-paid">Your SIN, CRA My Account &amp; Getting Paid in Canada</option>
 <option value="winter-safety-rural-alberta">Winter Safety &amp; Driving in Rural Alberta</option>
   </select>
+  <p class="field-echo" id="course-echo">Email &amp; Online Safety Basics in Canada</p>
 </form>
 <article class="certificate" id="certificate" aria-label="Sample certificate">
   <p class="sample-flag">SAMPLE</p>
   <h2>Certificate of Completion</h2>
-  <p>This certifies that <strong id="cert-learner">Sample Learner</strong> completed the course “<strong id="cert-title">Email &amp; Online Safety Basics in Canada</strong>” on <strong id="cert-date">2026-11-09</strong>.</p>
+  <p>This certifies that <strong id="cert-learner">Sample Learner</strong> completed the course “<strong id="cert-title">Email &amp; Online Safety Basics in Canada</strong>” on <strong id="cert-date"></strong>.</p>
   <p><strong>This certificate confirms course completion only and is not an accredited credential.</strong></p>
   <p>It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice. Employers and agencies should verify skills separately.</p>
   <p>Issued through <strong id="cert-council">EXAMPLE Community Adult Learning</strong> · Range Path (a Range Road Tech product).</p>
 </article>
 <p class="actions no-print"><button type="button" class="btn" id="print-cert">Print or save as PDF</button></p>
 <p class="no-print"><a href="../courses/">Back to courses</a></p>
+</div>
     </div>
   </main>
   <footer class="site">
     <div class="wrap">
-      <p class="disclaimer">Demo. Sample data. Not accredited.</p>
+      <p class="disclaimer">This course is general information for adult learners in Canada. It is not legal, tax, financial, medical, driving-instruction, or immigration advice. Always check official pages on Canada.ca, Alberta.ca, or your council staff for your situation.</p>
       <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="../privacy/">Privacy</a></p>
     </div>
   </footer>
