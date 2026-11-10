@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Check the built Range Path demo: links, quizzes, disclaimer, noindex. */
+/** Check the built LearnHere demo: links, quizzes, disclaimer, noindex. */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";

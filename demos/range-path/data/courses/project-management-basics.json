@@ -504,7 +504,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general information about planning and finishing a piece of work that has a clear start and end. It is not a PMI, PMP, or CAPM credential, not a promise that you can manage a large government or construction project, and not legal, contracting, or financial advice. Official definitions below come from the Treasury Board of Canada Secretariat glossary for public-service project work; your workplace may use simpler words for the same ideas.",
     "builderNotes": "- Do not teach PMI process groups, earned value, or critical-path exam content.\n- Do not repeat the TBS “20 per cent of salaries” costing convention as a general learner rule.\n- Keep examples at community / small-workplace scale.\n- No Ed2Go project-management text.",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

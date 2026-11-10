@@ -516,7 +516,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general information about clear workplace writing in Canadian English. It is not a diploma, professional editing credential, or official Translation Bureau certificate. It does not replace a conversation class (see Everyday and Work English Practice) and it does not teach Outlook buttons or email sending steps (see Microsoft Outlook and Workplace Email Habits).",
     "builderNotes": "- Do not repeat the English-practice course’s listening/speaking drills or IRCC/LINC content.\n- Do not repeat Outlook Reply/Reply All/To/Cc/Bcc/signature steps.\n- Canadian spelling pairs (cheque, practice/practise, colour, centre/fibre/theatre, metre/meter) were verified in a browser on 2026-11-10 on Writing Tips Plus (our-languages.canada.ca). Scripted fetches get a security check (HTTP 403), so re-check these in a browser before a rebuild.\n- No Ed2Go / commercial grammar curriculum. Canadian spelling in the course body follows the fetched official forms (email, website, it’s/its).",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

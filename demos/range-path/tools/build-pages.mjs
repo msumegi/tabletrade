@@ -36,6 +36,12 @@ function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
+const brand = readJson(path.join(demoRoot, "data", "brand.json"));
+
+function branded(title) {
+  return title + " · " + brand.name;
+}
+
 function write(file, contents) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, contents);
@@ -76,15 +82,17 @@ function page({ depth, title, description, canonical, nav, main, wide, courseId 
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#123c2e">
+  <meta name="application-name" content="${esc(brand.name)}">
   <meta name="description" content="${esc(description)}">
   <title>${esc(title)}</title>
   <link rel="canonical" href="${esc(canonicalUrl)}">
+  <meta property="og:site_name" content="${esc(brand.name)}">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${esc(canonicalUrl)}">
   <meta property="og:image" content="${SITE}og.jpg">
-  <meta property="og:image:alt" content="Range Path — a grain terminal on the prairie in Edson, Alberta">
+  <meta property="og:image:alt" content="${esc(brand.name)} — a grain terminal on the prairie in Edson, Alberta">
   <meta property="og:locale" content="en_CA">
   <link rel="icon" href="${root}favicon.svg" type="image/svg+xml">
   <link rel="icon" href="${root}favicon.png" type="image/png" sizes="32x32">
@@ -98,7 +106,7 @@ function page({ depth, title, description, canonical, nav, main, wide, courseId 
     <div class="site-bar">
       <a class="brand" href="${root}">
         ${MARK}
-        <span class="brand-text"><span class="brand-name">Range Path</span><span class="brand-sub">Practical skills for rural adult learners</span></span>
+        <span class="brand-text"><span class="brand-name">${esc(brand.name)}</span><span class="brand-sub">Practical skills for rural adult learners</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     </div>
@@ -118,8 +126,11 @@ ${main}
       <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="${root}privacy/">Privacy</a></p>
     </div>
   </footer>
+  <script src="${root}assets/brand.js"></script>
   <script src="${root}assets/demo-seed.js"></script>
+  <script src="${root}assets/billing.js"></script>
   <script src="${root}assets/data.js"></script>
+  <script src="${root}assets/report-fields.js"></script>
   <script src="${root}assets/catalogue.js"></script>
   <script src="${root}assets/site.js"></script>
 </body>
@@ -410,7 +421,7 @@ ${planScript}`;
     path.join(dir, "index.html"),
     page({
       depth: 2,
-      title: course.title + " · Range Path",
+      title: branded(course.title),
       description: summary,
       canonical: "courses/" + slug + "/",
       nav: mainNav("../../", "courses/"),
@@ -439,7 +450,7 @@ ${sourceList(lesson.sources)}
       path.join(dir, "lesson-" + number, "index.html"),
       page({
         depth: 3,
-        title: "Lesson " + number + " — " + lesson.title + " · Range Path",
+        title: branded("Lesson " + number + " — " + lesson.title),
         description: lesson.title,
         canonical: "courses/" + slug + "/lesson-" + number + "/",
         nav: lessonNav("../../../", "../", navLabel),
@@ -467,7 +478,7 @@ ${quizForm({
       path.join(dir, "lesson-" + number, "quiz", "index.html"),
       page({
         depth: 4,
-        title: "Quiz — Lesson " + number + " · Range Path",
+        title: branded("Quiz — Lesson " + number),
         description: "Short quiz for lesson " + number + " of " + course.title + ".",
         canonical: "courses/" + slug + "/lesson-" + number + "/quiz/",
         nav: lessonNav("../../../../", "../../", navLabel),
@@ -500,7 +511,7 @@ ${planScript}`;
     path.join(dir, "final", "index.html"),
     page({
       depth: 3,
-      title: "Final quiz — " + course.title + " · Range Path",
+      title: branded((examMode ? "Final exam — " : "Final quiz — ") + course.title),
       description: "Final quiz for " + course.title + ". Pass mark " + passLabel + ".",
       canonical: "courses/" + slug + "/final/",
       nav: lessonNav("../../../", "../", navLabel),
@@ -545,15 +556,95 @@ function ensureScript(html, root, file) {
 
 function ensureDataScripts(html, root) {
   let out = html;
-  ["demo-seed.js", "billing.js", "data.js", "report-fields.js"].forEach((file) => {
+  ["brand.js", "demo-seed.js", "billing.js", "data.js", "report-fields.js"].forEach((file) => {
     out = ensureScript(out, root, file);
   });
   return out;
 }
 
+function previousBrandNames() {
+  const names = [];
+  const indexPath = path.join(demoRoot, "index.html");
+  if (fs.existsSync(indexPath)) {
+    const match = fs.readFileSync(indexPath, "utf8").match(/name="application-name" content="([^"]*)"/);
+    if (match && match[1] && match[1] !== brand.name) names.push(match[1]);
+  }
+  if (brand.name !== "Range Path") names.push("Range Path");
+  return names;
+}
+
+function rewriteBrandText(text, names) {
+  let out = text;
+  names.forEach((name) => {
+    if (name && name !== brand.name) out = out.split(name).join(brand.name);
+  });
+  return out;
+}
+
+function rewriteBrandFiles() {
+  const names = previousBrandNames();
+  if (!names.length) return;
+  function walk(dir) {
+    fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
+      if (entry.name === "practice" || entry.name === "node_modules") return;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        walk(full);
+        return;
+      }
+      if (!/\.(html|js|mjs|json|md|css)$/.test(entry.name)) return;
+      if (full.endsWith(path.join("data", "brand.json")) || full.endsWith("build-pages.mjs") || full.endsWith(path.join("assets", "brand.js"))) return;
+      const text = fs.readFileSync(full, "utf8");
+      const next = rewriteBrandText(text, names);
+      if (next !== text) fs.writeFileSync(full, next);
+    });
+  }
+  walk(demoRoot);
+}
+
+function stampBrand(html) {
+  let out = html.split(brand.name + " (a Range Road Tech product)").join(brand.name + " (" + brand.domain + "), a Range Road Tech product");
+  const application = `<meta name="application-name" content="${esc(brand.name)}">`;
+  if (out.includes('name="application-name"')) {
+    out = out.replace(/<meta name="application-name" content="[^"]*">/, application);
+  } else {
+    out = out.replace("<head>", "<head>\n  " + application);
+  }
+  const siteName = `<meta property="og:site_name" content="${esc(brand.name)}">`;
+  if (out.includes('property="og:site_name"')) {
+    out = out.replace(/<meta property="og:site_name" content="[^"]*">/, siteName);
+  } else {
+    out = out.replace('<meta property="og:title"', siteName + "\n  " + '<meta property="og:title"');
+  }
+  return out;
+}
+
+function stampBrandFiles() {
+  function walk(dir) {
+    fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
+      if (entry.name === "practice" || entry.name === "node_modules") return;
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.name.endsWith(".html")) {
+        const text = fs.readFileSync(full, "utf8");
+        const next = stampBrand(text);
+        if (next !== text) fs.writeFileSync(full, next);
+      }
+    });
+  }
+  walk(demoRoot);
+}
+
 function main() {
+  rewriteBrandFiles();
   const seed = readJson(path.join(demoRoot, "data", "demo-store.json"));
   const reportFields = readJson(path.join(demoRoot, "data", "report-fields.json"));
+  write(
+    path.join(demoRoot, "assets", "brand.js"),
+    "/* Generated by tools/build-pages.mjs from data/brand.json. Do not edit by hand. */\nwindow.COURSE_BRAND = " +
+      JSON.stringify({ name: brand.name, domain: brand.domain }) +
+      ";\n"
+  );
   write(
     path.join(demoRoot, "assets", "report-fields.js"),
     "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.RANGE_PATH_REPORT_FIELDS = " +
@@ -678,6 +769,7 @@ ${extras.map(({ course }) => catalogueCard(course)).join("\n")}
     fs.writeFileSync(file, html);
   });
 
+  stampBrandFiles();
   console.log("Built " + courses.length + " courses.");
 }
 

@@ -62,7 +62,7 @@
           "explain": ""
         },
         {
-          "prompt": "This Range Path course gives you an official Microsoft Office Specialist certificate.",
+          "prompt": "This LearnHere course gives you an official Microsoft Office Specialist certificate.",
           "choices": [
             {
               "id": "A",
@@ -862,7 +862,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or tax, payroll, bookkeeping, or financial advice. Excel menus can look a little different depending on your version (Windows, Mac, or web). Practise on sample data — not on someone else’s private files.",
     "builderNotes": "- Emphasise the disclaimer on every lesson footer.\n- Cite Microsoft Support only for Excel steps; do not paste long help articles.\n- Menus vary by Excel for Windows, Mac, and the web.\n- Not MOS / not college credit / not tax or bookkeeping advice.\n- No Ed2Go / Cengage material. Canadian spelling in our text; Microsoft buttons may use US spelling (Color).\n- Re-check Microsoft Support URLs if a later rebuild finds a redirect change.",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

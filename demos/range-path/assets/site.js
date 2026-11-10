@@ -1044,6 +1044,11 @@
     return (window.RANGE_PATH_REPORT_FIELDS && window.RANGE_PATH_REPORT_FIELDS.fields) || [];
   }
 
+  function productName() {
+    var config = window.COURSE_BRAND;
+    return config && config.name ? config.name : "";
+  }
+
   function sampleBanner() {
     return (window.RANGE_PATH_REPORT_FIELDS && window.RANGE_PATH_REPORT_FIELDS.sampleBanner) || "Sample data, not real learners";
   }
@@ -1238,7 +1243,8 @@
 
     var printed = document.createElement("article");
     printed.className = "funder-print";
-    printed.innerHTML = "<p class=\"sample-banner\"></p><h1>Range Path funder report</h1><p class=\"report-period\"></p><h2>Summary</h2><ul class=\"report-totals\"></ul><h2>Per course</h2><div class=\"table-scroll\"><table class=\"report-table\"><thead><tr><th>Course</th><th>Category</th><th>Type</th><th>Learners</th><th>Starts</th><th>Completions</th><th>Rate</th><th>Stated hours</th><th>Estimated hours</th></tr></thead><tbody></tbody></table></div><h2>Notes</h2><p class=\"report-notes\"></p>";
+    printed.innerHTML = "<p class=\"sample-banner\"></p><h1></h1><p class=\"report-period\"></p><h2>Summary</h2><ul class=\"report-totals\"></ul><h2>Per course</h2><div class=\"table-scroll\"><table class=\"report-table\"><thead><tr><th>Course</th><th>Category</th><th>Type</th><th>Learners</th><th>Starts</th><th>Completions</th><th>Rate</th><th>Stated hours</th><th>Estimated hours</th></tr></thead><tbody></tbody></table></div><h2>Notes</h2><p class=\"report-notes\"></p>";
+    printed.querySelector("h1").textContent = productName() + " funder report";
     printed.querySelector(".sample-banner").textContent = sampleBanner();
     printed.querySelector(".report-period").textContent = "Reporting period " + report.period.from.slice(0, 10) + " to " + report.period.to.slice(0, 10) + ". Sample grant period " + report.grantPeriod.start + " to " + report.grantPeriod.end + ". These dates are a sample selection, not an official funder calendar.";
     var totalList = printed.querySelector(".report-totals");

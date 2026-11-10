@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Convert a Range Path course markdown file into data/courses/<slug>.json.
+ * Convert a LearnHere course markdown file into data/courses/<slug>.json.
  *
  * Usage:
  *   node tools/md-to-course.mjs path/to/course.md --before email-online-safety --short "Short name" --nav "Nav"
@@ -623,7 +623,7 @@ export function parseCourseMarkdown(markdown, fileName) {
       sourceDisclaimer: disclaimer,
       builderNotes,
       reason:
-        "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+        "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
     },
     warnings
   };

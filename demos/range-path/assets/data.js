@@ -1,4 +1,4 @@
-/* Range Path data access. The only script that may touch localStorage.
+/* LearnHere data access. The only script that may touch localStorage.
    Swap createLocalAdapter for an API adapter later. See the demo README. */
 (function (global) {
   "use strict";

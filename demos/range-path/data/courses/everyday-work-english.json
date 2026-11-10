@@ -500,7 +500,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general English practice for everyday and work situations in Canada. It is a self-paced supplement, not a replacement for a conversation class or a tutor. It is not Language Instruction for Newcomers to Canada (LINC), not a Canadian Language Benchmarks (CLB) certificate, and not CELPIP, IELTS, or TOEFL preparation. It is not immigration, citizenship, or legal advice. This course cannot decide which language program or test you should take.",
     "builderNotes": "- Keep sample sentences clearly labelled as practice, not government phrasing.\n- Do not teach citizenship language-score rules (IRCC mentions CLB 4 speaking/listening for citizenship — omitted here to avoid immigration advice).\n- Do not coach IELTS/CELPIP. Mention that IRCC lists those tests only so learners know this course is not that training.\n- A later Phase 1 course covers workplace writing and grammar; keep grammar light here.\n- No Ed2Go / commercial ESL curriculum. Canadian spelling (practise as a verb, centre).",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

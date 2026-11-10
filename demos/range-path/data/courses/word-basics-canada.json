@@ -488,7 +488,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or legal, career, or immigration advice. Word menus can look a little different depending on your version. Use Canadian spelling in your practice documents.",
     "builderNotes": "- Emphasise the disclaimer on every lesson footer.\n- Cite Microsoft Support; do not paste long help articles.\n- We did **not** find the exact menu label “English (Canada)” on the fetched Microsoft pages, so the lesson tells learners to look for a Canadian English option *if it appears*, rather than inventing the label.\n- Microsoft buttons may say Color; our learner text uses Canadian *colour*.\n- Not MOS / not college credit. No Ed2Go / Cengage material.\n- Re-check Microsoft Support URLs if a later rebuild finds a redirect change.",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

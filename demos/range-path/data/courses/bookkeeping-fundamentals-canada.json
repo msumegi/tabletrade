@@ -66,7 +66,7 @@
           "explain": ""
         },
         {
-          "prompt": "This Range Path course issues a Canadian bookkeeping licence.",
+          "prompt": "This LearnHere course issues a Canadian bookkeeping licence.",
           "choices": [
             {
               "id": "A",
@@ -498,9 +498,9 @@
     ]
   },
   "keptBack": {
-    "sourceDisclaimer": "This course is general information only. It is not tax advice, accounting advice, audit advice, payroll advice, or a bookkeeping licence. It will not tell you how to file a return, whether you must register for GST/HST, or which expenses you may deduct. Rules can change. For your own situation, use official CRA pages or speak with a qualified professional. Range Path does not keep your books or file taxes for you.",
+    "sourceDisclaimer": "This course is general information only. It is not tax advice, accounting advice, audit advice, payroll advice, or a bookkeeping licence. It will not tell you how to file a return, whether you must register for GST/HST, or which expenses you may deduct. Rules can change. For your own situation, use official CRA pages or speak with a qualified professional. LearnHere does not keep your books or file taxes for you.",
     "builderNotes": "- Emphasise the strong tax-advice disclaimer on every lesson footer.\n- Date-sensitive figures to re-check: six-year retention; $100 (before tax) business-number detail on receipts (both from CRA pages opened 2026-11-10).\n- Do not invent a GST/HST registration threshold; that was not taught here.\n- Software-agnostic: no QuickBooks/Sage/Wave certification claims.\n- No Ed2Go / Cengage material. Canadian spelling (cheque, practise as a verb).",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

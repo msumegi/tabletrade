@@ -1,6 +1,6 @@
-# Range Path
+# LearnHere
 
-Hidden demo at `/demos/range-path/`. It stays `noindex`, unlinked from the public homepage, and out of any sitemap.
+Hidden demo at `/demos/range-path/`. The folder stays at that path. The visible product name and domain live in `data/brand.json` (`LearnHere`, `learnhere.ca`). It stays `noindex`, unlinked from the public homepage, and out of any sitemap. The footer credit stays “A Range Road Tech product”.
 
 Courses are separate pages: catalogue, course, lesson, quiz, and certificate. Progress and quiz scores stay on the device. The final quiz pass mark is 70%. A pass opens a sample completion certificate.
 
@@ -33,7 +33,7 @@ node tools/check-demo.mjs
 
 These stay in the JSON for authors and are not shown to learners:
 
-- The disclaimer at the top of a source file. Every learning page already shows the existing Range Path disclaimer once, in the footer.
+- The disclaimer at the top of a source file. Every learning page already shows the existing LearnHere disclaimer once, in the footer.
 - “About N words” lines.
 - “Content notes for builders”.
 
