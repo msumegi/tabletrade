@@ -1,0 +1,501 @@
+{
+  "slug": "workplace-writing-grammar-canada",
+  "title": "Workplace Writing and Grammar (Canadian Spelling)",
+  "summary": "By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check a few Canadian word forms from fetched official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.",
+  "goals": "By the end, learners can plan a short workplace document for a reader and a purpose, use official Government of Canada plain-language habits, check a few Canadian word forms from fetched official pages, proofread for meaning and tone, and look up other spellings in the Government of Canada writing tools named on those pages.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Know your purpose and your reader",
+      "html": "<p>Workplace writing is writing that helps someone do a job: a notice, a timesheet note, a short report, or instructions. The Government of Canada’s <strong>Skills for Success</strong> model says writing is the ability to share information using written words, symbols, and images. Official writing steps start with two questions:</p>\n<ul>\n<li>What is the <strong>purpose</strong>? (for example, to inform, to explain, to request information, or to give directions)</li>\n<li>Who is the <strong>audience</strong> (the reader)?</li>\n</ul>\n<p>Then you plan: decide what information to include, how much detail you need, gather facts, and make a simple outline.</p>\n<p>The <strong>Canada.ca Content Style Guide</strong> — official writing rules for Government of Canada web pages — adds habits that also help at work:</p>\n<ul>\n<li>Most people <strong>scan</strong>. They do not read every word.</li>\n<li>Put the <strong>most important information first</strong>.</li>\n<li>Speak directly to the reader with <strong>you</strong> and <strong>your</strong>.</li>\n<li>Be direct. Leave out extra background that does not help the reader finish the task.</li>\n</ul>\n<p>A later lesson looks at lists and headings. For now, before you write, finish this sentence: “This note is for [who], and I want them to [do or know what].”</p>\n<p>This lesson is not about listening and speaking practice (that is the English-practice course) and not about choosing Reply or Reply All (that is the Outlook course). It is about the words on the page.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Canada.ca Content Style Guide",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success says that before you write you should identify:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The purpose and the audience"
+            },
+            {
+              "id": "B",
+              "text": "The longest word you can find"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Canada.ca Content Style Guide says to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Put the most important information first"
+            },
+            {
+              "id": "B",
+              "text": "Hide the main point at the very end every time"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Speaking directly to the reader often means using:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "You and your"
+            },
+            {
+              "id": "B",
+              "text": "Only secret codes"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is a professional editing diploma.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Canadian spelling and word forms",
+      "html": "<p>The Canada.ca Content Style Guide says Government of Canada content must reflect <strong>Canadian writing conventions</strong> in English and French. It also says its techniques work together with <strong>Writing Tips Plus</strong>, a searchable Government of Canada tool for English grammar, punctuation, and writing conventions. If you are not sure how to spell a workplace word in Canadian English, look it up there rather than copying a spelling from another country.</p>\n<p>This course teaches only word forms we could open on official pages this session (November 2026). The Canada.ca Content Style Guide says:</p>\n<ul>\n<li><strong>its</strong> shows possession (belonging to it). <strong>it’s</strong> means <em>it is</em>. Do not mix them up.</li>\n<li><strong>they’re</strong> means <em>they are</em>. <strong>their</strong> shows possession.</li>\n<li>Write <strong>email</strong> (not <em>e-mail</em>), <strong>website</strong> (not <em>web site</em>), <strong>web page</strong> (not <em>webpage</em>), and <strong>online</strong> (not <em>on line</em>).</li>\n<li>Do <strong>not</strong> write a whole word in ALL CAPITAL LETTERS.</li>\n</ul>\n<p>Other Canadian-versus-American pairs (for example some <em>-our</em> or <em>-re</em> words) appear in Writing Tips Plus. Because some Language Portal pages could not be opened reliably from this writing session, those extra pairs are <strong>not</strong> taught as facts here. Look them up in Writing Tips Plus when you need them.</p>\n<p>A computer spell checker may suggest a U.S. spelling. If your workplace follows Canadian English, check the official tool.</p>",
+      "sources": [
+        {
+          "label": "Canada.ca Content Style Guide",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In the Canada.ca Content Style Guide, it’s means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "It is"
+            },
+            {
+              "id": "B",
+              "text": "Belonging to it"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The style guide’s preferred spelling is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "email"
+            },
+            {
+              "id": "B",
+              "text": "e-mail"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The style guide says you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Avoid writing a whole word in ALL CAPITAL LETTERS"
+            },
+            {
+              "id": "B",
+              "text": "Write every sentence in ALL CAPS"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you are unsure of a Canadian spelling, a safer next step is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Look it up in Writing Tips Plus, the tool named on the official pages"
+            },
+            {
+              "id": "B",
+              "text": "Always copy a spelling from another country without checking"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Write in plain language",
+      "html": "<p>Plain language means writing so the reader can find what they need, understand it, and use it. The Canada.ca Content Style Guide says this is required for Government of Canada communications, and the same habits make workplace notes easier to read.</p>\n<p><strong>Use familiar words.</strong> The guide gives examples such as:</p>\n<ul>\n<li><em>ask</em> instead of <em>make a request</em></li>\n<li><em>before</em> instead of <em>prior to</em></li>\n<li><em>get</em> instead of <em>obtain</em></li>\n<li><em>to</em> instead of <em>in order to</em></li>\n</ul>\n<p>If you must use a technical word, explain it in short, clear words.</p>\n<p><strong>Use the active voice</strong> when you can. Name who does the action:</p>\n<ul>\n<li>Write: “Please send the form to the office by Friday.”</li>\n<li>Instead of: “The form should be sent by Friday.”</li>\n</ul>\n<p>The guide’s own examples include “We may ask you to provide proof of citizenship” (active) rather than “You may be asked…” (passive).</p>\n<p><strong>Keep sentences and paragraphs short.</strong></p>\n<ul>\n<li>Aim for sentences under <strong>15 to 20 words</strong>.</li>\n<li>One main idea in each sentence.</li>\n<li>One main idea in each paragraph, and no more than <strong>three sentences</strong>.</li>\n<li>Start with the subject and the verb so the reader sees who is doing what.</li>\n</ul>\n<p><strong>Use lists</strong> when you have two or more steps or items. Numbered lists are for order or steps. Bullet lists are for items that are not a ranked sequence.</p>\n<p>Read a draft out loud. If you run out of breath, the sentence is probably too long.</p>",
+      "sources": [
+        {
+          "label": "Canada.ca Content Style Guide",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A plain-language swap from the style guide is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ask instead of make a request"
+            },
+            {
+              "id": "B",
+              "text": "Obtain instead of get, always"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "An active sentence names:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Who does the action"
+            },
+            {
+              "id": "B",
+              "text": "Nobody at all"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The style guide suggests keeping many sentences:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Under 15 to 20 words, with one main idea"
+            },
+            {
+              "id": "B",
+              "text": "Over 80 words with many extra commas"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A numbered list is useful when:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The reader must follow steps in order"
+            },
+            {
+              "id": "B",
+              "text": "You want to hide the steps"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Grammar checks and proofreading",
+      "html": "<p>Skills for Success says written words should use <strong>correct spelling</strong>, <strong>punctuation that makes the meaning clear</strong>, and <strong>correct grammar</strong>, including an appropriate verb tense and subject-verb agreement (the verb form should match the subject). It also says to <strong>review and revise</strong>: proofread for grammar and spelling, then check accuracy, meaning, and tone.</p>\n<p>A practical order:</p>\n<ol>\n<li>Did you say what you meant? Are names, dates, and numbers correct?</li>\n<li>Does each sentence have a clear subject and verb that match? (Write “The boxes <em>are</em> ready,” not “The boxes <em>is</em> ready.”)</li>\n<li>Did you use the right time word? If the action already happened, use a past form (“I <em>sent</em> the form yesterday”).</li>\n<li>Check <strong>its</strong> / <strong>it’s</strong> and <strong>their</strong> / <strong>they’re</strong> (Lesson 2).</li>\n<li>Check the tone. The Canada.ca Content Style Guide describes a useful workplace tone as direct, informative, conversational, and professional — as if you were speaking to the person, with care.</li>\n</ol>\n<p>The style guide also says to read the text out loud, or use a screen reader, to hear what is unclear.</p>\n<p>This is not a full grammar textbook. If a sentence still feels wrong, ask a coworker or council tutor to read it. Do not invent rules you have not checked.</p>\n<p>Save a copy before you send or post anything important.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Canada.ca Content Style Guide",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success says you should proofread for:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Grammar, spelling, accuracy, meaning, and tone"
+            },
+            {
+              "id": "B",
+              "text": "How many jokes you can add"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Subject-verb agreement means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The verb form should match the subject"
+            },
+            {
+              "id": "B",
+              "text": "Every sentence must be a question"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A helpful check from the style guide is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Read the text out loud"
+            },
+            {
+              "id": "B",
+              "text": "Never look at the draft again"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The boxes is ready shows correct subject-verb agreement.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Shape a short workplace document",
+      "html": "<p>Skills for Success says to choose a format that fits the task: paragraphs, bullet points, numbered lists, or sub-headings. Official workplace examples include accident report forms, timesheets, and memo boards. Use the form your workplace already has when there is one.</p>\n<p>The Canada.ca Content Style Guide says headings should tell the reader what comes next, stay short, and make sense on their own. Use lists so people can scan. Keep list items in the same grammatical pattern (for example, start each step with an action word).</p>\n<p><strong>A simple notice or memo</strong> (practice layout, not an official government template):</p>\n<ol>\n<li>A short title that says what the note is about.</li>\n<li>Who it is for, and the date.</li>\n<li>The most important point in the first sentence.</li>\n<li>Details or steps in a list.</li>\n<li>What you want the reader to do, and by when.</li>\n<li>Your name.</li>\n</ol>\n<p>Example idea: “Water shut-off on Tuesday. The pump room will be closed from 9 am to noon. Please fill bottles on Monday. Thank you, [Name].”</p>\n<p>If you will send the note by email, use the Outlook course for To, Cc, subject lines, and Reply All. This lesson is about the words and the shape of the document.</p>\n<p>Keep private facts off a shared memo board. Do not post a SIN, a password, or health details other people do not need.</p>\n<p>Ask your adult learning council if you want someone to review a practice notice with you.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Canada.ca Content Style Guide",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success workplace formats can include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Timesheets, accident report forms, and memo boards"
+            },
+            {
+              "id": "B",
+              "text": "Only secret poems"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A useful first sentence in a workplace notice:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "States the most important point"
+            },
+            {
+              "id": "B",
+              "text": "Hides the news after three long stories"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "For sending mail in Outlook (Reply, Cc, and similar buttons), this course says to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Use the Outlook course"
+            },
+            {
+              "id": "B",
+              "text": "Ignore every workplace tool"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should post a coworker’s SIN on a shared memo board.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus.",
+    "questions": [
+      {
+        "prompt": "Workplace writing should start with a purpose and a reader.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      },
+      {
+        "prompt": "The Canada.ca Content Style Guide says to put the most important information first.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      },
+      {
+        "prompt": "In that style guide, it’s means “belonging to it.”",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      },
+      {
+        "prompt": "Plain language prefers familiar words and short sentences.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      },
+      {
+        "prompt": "Proofreading includes checking spelling, meaning, and tone.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      },
+      {
+        "prompt": "A short workplace notice should hide the main point until the last line.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      },
+      {
+        "prompt": "This course is a professional editing diploma.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about clear workplace writing in Canadian English. It is not a diploma, professional editing credential, or official Translation Bureau certificate. It does not replace a conversation class (see Everyday and Work English Practice) and it does not teach Outlook buttons or email sending steps (see Microsoft Outlook and Workplace Email Habits).",
+    "builderNotes": "- Do not repeat the English-practice course’s listening/speaking drills or IRCC/LINC content.\n- Do not repeat Outlook Reply/Reply All/To/Cc/Bcc/signature steps.\n- Language Portal / Writing Tips Plus article URLs and the TERMIUM Plus Canadian Style page could not be verified as live HTTP 200 from this session (security-check or blocked fetch). Teach only spellings verified on the Canada.ca Content Style Guide, and point learners to Writing Tips Plus by name because that style guide names it. Re-try Language Portal URLs before a later rebuild.\n- No Ed2Go / commercial grammar curriculum. Canadian spelling in the course body follows the fetched official forms (email, website, it’s/its).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

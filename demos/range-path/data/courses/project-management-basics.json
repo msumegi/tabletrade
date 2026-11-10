@@ -1,0 +1,509 @@
+{
+  "slug": "project-management-basics",
+  "title": "Project Management Basics (Not a PMP Exam)",
+  "summary": "By the end, learners can tell a project from ongoing daily work, name goals, deliverables, scope, and roles, make a simple task-and-schedule plan, describe risk in plain language, and close a small project by checking the result — without treating this course as a PMP exam.",
+  "goals": "By the end, learners can tell a project from ongoing daily work, name goals, deliverables, scope, and roles, make a simple task-and-schedule plan, describe risk in plain language, and close a small project by checking the result — without treating this course as a PMP exam.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is a project?",
+      "html": "<p>The Treasury Board of Canada Secretariat (TBS) glossary says a <strong>project</strong> is an activity or series of activities that has a <strong>beginning and an end</strong>. A project must produce defined outputs and realize specific outcomes, within a clear schedule and resource plan, and within specific time, cost, and performance parameters.</p>\n<p>TBS distinguishes a project from a <strong>program</strong>. A program is an ongoing group of resources and activities toward related objectives. A program may include various projects at various times. Everyday example: “keeping the community hall clean” can be ongoing work. “Paint the hall before the spring supper” is a project — it starts, it should finish, and you can see the result.</p>\n<p><strong>Project management</strong>, in the same glossary, is the systematic planning, organizing, and control of allocated resources to accomplish identified project objectives and outcomes. TBS says this is normally for focused, <strong>non-repetitive</strong>, <strong>time-limited</strong> activities that have some degree of risk and that go beyond usual day-to-day operations.</p>\n<p>Skills for Success <strong>adaptability</strong> includes setting goals and planning: define tasks and milestones, then choose an order that fits your situation. Those habits help even on a small project, such as organizing a bake sale or setting up a new computer station at work.</p>\n<p>This course uses simple community and workplace examples. It does not train you for a PMI exam and does not replace your employer’s own project rules.</p>",
+      "sources": [
+        {
+          "label": "Glossary of Terms for Investment Planning and Project Management — TBS",
+          "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=28007"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In the TBS glossary, a project:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Has a beginning and an end and should produce a defined result"
+            },
+            {
+              "id": "B",
+              "text": "Never finishes and has no purpose"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Project management is described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Planning, organizing, and controlling resources to reach the project’s objectives"
+            },
+            {
+              "id": "B",
+              "text": "Only decorating a binder"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is an official PMP exam.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "“Paint the hall before the spring supper” is closer to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A project, because it has a start, an end, and a clear result"
+            },
+            {
+              "id": "B",
+              "text": "A rule of Canadian criminal law"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Goals, deliverables, scope, and roles",
+      "html": "<p>Before people spend time or money, they need a shared picture of the work.</p>\n<p>The TBS glossary describes a <strong>project charter</strong> as a document that records:</p>\n<ul>\n<li>the project’s goals and objectives</li>\n<li>key <strong>deliverables</strong> (the results you will hand over)</li>\n<li>conditions for success</li>\n<li>constraints (limits, such as a fixed date or a fixed budget)</li>\n<li>roles and responsibilities</li>\n</ul>\n<p>You may not write a formal charter at work or at a community group. You can still write a short version: <em>What are we trying to finish? What will we hand over? What are we not doing? Who does what?</em></p>\n<p><strong>Project scope</strong> is the work that must be performed to deliver a product, service, or result with the specified features and functions. If the plan is “paint the main hall,” adding “and rebuild the roof” is extra scope. Extra work needs a clear yes or no before it starts (see Lesson 4 on change control).</p>\n<p>The <strong>project manager</strong> is the person assigned to achieve the project objectives. A <strong>project sponsor</strong> is a senior person responsible for the success of the project; TBS says that person often approves the start, helps secure funding, and does not usually run the project day to day. <strong>Stakeholders</strong> are people who are actively involved, or whose interests may be affected.</p>\n<p>Skills for Success <strong>collaboration</strong> includes acknowledging the roles of yourself and others and working toward a common goal.</p>\n<p>On a small project, names matter more than titles: who decides, who does the work, and who must be told.</p>",
+      "sources": [
+        {
+          "label": "Glossary of Terms for Investment Planning and Project Management — TBS",
+          "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=28007"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Deliverables are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The key results the project will hand over"
+            },
+            {
+              "id": "B",
+              "text": "Random extra chores with no agreement"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Project scope is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The work needed to deliver the agreed result"
+            },
+            {
+              "id": "B",
+              "text": "A mouthwash"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The project manager is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The person assigned to achieve the project objectives"
+            },
+            {
+              "id": "B",
+              "text": "Anyone who walks past the building"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Stakeholders can include people whose interests may be affected by the project.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Make a simple plan",
+      "html": "<p>Skills for Success says planning includes defining <strong>tasks</strong>, <strong>milestones</strong>, and a longer-term path, then putting tasks in a sensible order.</p>\n<p>The TBS glossary describes a <strong>project management plan</strong> as the document that identifies planned objectives and deliverables, as well as scope, a work breakdown structure, budget, schedule, risks, roles, resources, and how the work will be watched. It becomes the plan against which changes are measured. Your version can be one page.</p>\n<p>A <strong>work breakdown structure</strong> is a list of the work, organized by deliverable, from larger pieces down to smaller ones. A <strong>work package</strong> is the lowest level — a piece of work someone can finish and be responsible for.</p>\n<p><strong>TBS names four phases</strong> it uses (and notes that organizations may use their own names):</p>\n<ol>\n<li>Initial planning and identification — understand the need and look at options.</li>\n<li>Project definition — set clearer objectives and reduce risk before the main work.</li>\n<li>Project implementation — do the work and provide the deliverables.</li>\n<li>Project close-out — accept the results and finish the paperwork.</li>\n</ol>\n<p>For a small community project you might write:</p>\n<ul>\n<li>Goal: hall painted before May 15.</li>\n<li>Tasks: buy paint, cover floors, paint walls, clean up.</li>\n<li>Milestone: walls done by May 10.</li>\n<li>Who: Sam buys supplies; Jordan paints.</li>\n<li>Limit: use the approved colour only.</li>\n</ul>\n<p>This course will not tell you how large a government budget should be. It also does not use private PMI exam methods.</p>",
+      "sources": [
+        {
+          "label": "Glossary of Terms for Investment Planning and Project Management — TBS",
+          "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=28007"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A milestone is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "An important point you plan to reach along the way"
+            },
+            {
+              "id": "B",
+              "text": "A type of road rock you must mail to TBS"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A work breakdown structure organizes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The work by deliverable, from larger pieces to smaller ones"
+            },
+            {
+              "id": "B",
+              "text": "Only the lunch menu"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "One TBS implementation idea is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Do the work and provide the deliverables"
+            },
+            {
+              "id": "B",
+              "text": "Never start after planning"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Every workplace must use the exact four TBS phase names.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "TBS notes that organizations may establish their own phase names."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Time, cost, and risk",
+      "html": "<p>TBS says project objectives typically include <strong>cost</strong>, <strong>schedule</strong>, and <strong>performance</strong> (how well the result should work), along with any other critical objectives. Once approved, those objectives form the baseline — the agreed picture of success.</p>\n<p><strong>Schedule</strong> means when work should happen. Skills for Success numeracy lists “estimate the time required to complete specific tasks” as a number skill. Write realistic dates, and leave a little room for delays.</p>\n<p><strong>Cost</strong> means what the work may require (money, donated supplies, or people’s time). List the main items. This course is not financial advice and will not tell you how to borrow or how to set a government budget.</p>\n<p><strong>Risk</strong>, in the TBS glossary, is the uncertainty around future events and outcomes. It is the likelihood and impact of an event that could affect objectives. A <strong>risk assessment</strong> identifies those events, considers how likely they are and how large the impact could be, and sets out plans to reduce the threat.</p>\n<p>Examples (plain language, not official TBS scenarios): paint may not arrive on time; a volunteer may become ill; the hall may be booked on the only painting day. Write the risk and one backup idea (“order paint one week early”).</p>\n<p><strong>Change control</strong> is the process of identifying, documenting, approving or rejecting, and controlling changes. If someone asks for extra work, pause and decide together before the plan quietly grows.</p>",
+      "sources": [
+        {
+          "label": "Glossary of Terms for Investment Planning and Project Management — TBS",
+          "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=28007"
+        },
+        {
+          "label": "Numeracy self-assessment (PDF)",
+          "url": "https://www.canada.ca/content/dam/esdc-edsc/images/services/jobs/training/initiatives/skills-success/tools/numeracy-self-assessment/numeracy_self_assessment.pdf"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Typical project objectives in the TBS glossary include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Cost, schedule, and performance"
+            },
+            {
+              "id": "B",
+              "text": "Only the font on the cover page"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Risk is described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Uncertainty about future events that could affect your objectives"
+            },
+            {
+              "id": "B",
+              "text": "A guarantee that nothing will go wrong"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Change control means:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Identifying and deciding on changes instead of letting extra work appear quietly"
+            },
+            {
+              "id": "B",
+              "text": "Changing the plan every five minutes with no note"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you how to take out a project loan.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Do the work, check it, and close",
+      "html": "<p><strong>Implementation</strong>, in the TBS glossary, is directing, managing, performing, and accomplishing the project work; providing the deliverables; and providing work performance information (in plain words: doing the tasks and telling people how they are going).</p>\n<p>Skills for Success <strong>collaboration</strong> includes taking responsibility for your part, sharing information when needed, and letting others contribute. <strong>Problem solving</strong> includes watching whether a choice is working and learning from the result.</p>\n<p>A simple rhythm:</p>\n<ul>\n<li>Do the next task on the list.</li>\n<li>Mark it done.</li>\n<li>If something blocks you, say so early.</li>\n<li>Compare progress with the dates you wrote.</li>\n</ul>\n<p><strong>Close-out</strong> is the final phase. TBS says it involves final acceptance of the deliverables, archiving the project documents, and disbanding the project team. It also happens if a project ends early. For a small project that can mean: walk through the result with the person who asked for it, write a short note about what was finished and what was learned, file the receipts or lists, and thank the people who helped.</p>\n<p>Acceptance means the agreed work is done — not that every new idea anyone just thought of is included. New ideas can become a new project.</p>\n<p>This certificate is completion only. It is not a PMP, CAPM, or PMI credential.</p>",
+      "sources": [
+        {
+          "label": "Glossary of Terms for Investment Planning and Project Management — TBS",
+          "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=28007"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Implementation includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Doing the work and providing the deliverables"
+            },
+            {
+              "id": "B",
+              "text": "Only writing the project name in large letters"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Close-out includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Accepting the deliverables and filing the documents"
+            },
+            {
+              "id": "B",
+              "text": "Deleting every note so nobody can learn from the work"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If the agreed work is done and someone wants a large new piece:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Treat it as a possible new project, not silent extra scope"
+            },
+            {
+              "id": "B",
+              "text": "Pretend it was always in the first sentence"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Finishing this course makes you a certified PMP.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted.",
+    "questions": [
+      {
+        "prompt": "A project has a beginning and an end and should produce a defined result.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      },
+      {
+        "prompt": "Scope is the work needed to deliver the agreed result.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      },
+      {
+        "prompt": "A project manager is assigned to achieve the project objectives.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      },
+      {
+        "prompt": "Risk means nothing uncertain can ever happen.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      },
+      {
+        "prompt": "A simple plan can list tasks, milestones, roles, and limits.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      },
+      {
+        "prompt": "Close-out includes accepting the result and keeping useful records.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      },
+      {
+        "prompt": "This course is a PMI or PMP exam.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information about planning and finishing a piece of work that has a clear start and end. It is not a PMI, PMP, or CAPM credential, not a promise that you can manage a large government or construction project, and not legal, contracting, or financial advice. Official definitions below come from the Treasury Board of Canada Secretariat glossary for public-service project work; your workplace may use simpler words for the same ideas.",
+    "builderNotes": "- Do not teach PMI process groups, earned value, or critical-path exam content.\n- Do not repeat the TBS “20 per cent of salaries” costing convention as a general learner rule.\n- Keep examples at community / small-workplace scale.\n- No Ed2Go project-management text.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

@@ -93,6 +93,36 @@ window.RANGE_PATH = {
       "certificateNote": "It is not a college diploma, degree, CLB certificate, LINC completion, or CELPIP, IELTS, or TOEFL preparation, and it is not immigration or citizenship advice."
     },
     {
+      "id": "workplace-writing-grammar-canada",
+      "title": "Workplace Writing and Grammar (Canadian Spelling)",
+      "shortTitle": "Workplace writing",
+      "navLabel": "Writing",
+      "lessons": 5,
+      "featured": true,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential."
+    },
+    {
+      "id": "everyday-math-numeracy",
+      "title": "Everyday Math and Numeracy",
+      "shortTitle": "Everyday math",
+      "navLabel": "Numeracy",
+      "lessons": 5,
+      "featured": true,
+      "extra": false,
+      "certificateNote": "It is not a high-school or CAEC credit, and it is not tax, lending, investment, or budgeting advice."
+    },
+    {
+      "id": "project-management-basics",
+      "title": "Project Management Basics (Not a PMP Exam)",
+      "shortTitle": "Project basics",
+      "navLabel": "Projects",
+      "lessons": 5,
+      "featured": true,
+      "extra": false,
+      "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification."
+    },
+    {
       "id": "email-online-safety",
       "title": "Email & Online Safety Basics in Canada",
       "shortTitle": "Email & Online Safety",

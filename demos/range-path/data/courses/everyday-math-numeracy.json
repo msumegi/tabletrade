@@ -1,0 +1,517 @@
+{
+  "slug": "everyday-math-numeracy",
+  "title": "Everyday Math and Numeracy",
+  "summary": "By the end, learners can describe official numeracy skills, do everyday calculations and estimates, compare grocery value using unit prices, read gross and net pay as numbers on a stub, and check whether an answer makes sense.",
+  "goals": "By the end, learners can describe official numeracy skills, do everyday calculations and estimates, compare grocery value using unit prices, read gross and net pay as numbers on a stub, and check whether an answer makes sense.",
+  "certificateNote": "It is not a high-school or CAEC credit, and it is not tax, lending, investment, or budgeting advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What numeracy is",
+      "html": "<p><strong>Numeracy</strong> is more than school math. The Government of Canada’s <strong>Skills for Success</strong> model defines it as the ability to find, understand, use, and report mathematical information presented through words, numbers, symbols, and graphics. Official examples include performing calculations, making estimations, and making sense of numbers you see in daily life.</p>\n<p>The official skill has clear steps:</p>\n<ol>\n<li>Know what question you need to answer.</li>\n<li>Find the useful numbers (you may need to scan a bill, a label, or a table).</li>\n<li>Connect the pieces of information.</li>\n<li>Calculate, put things in order, measure, or estimate.</li>\n<li>Check whether the result <strong>makes sense</strong>.</li>\n<li>Share the result if someone else needs it — in writing, in a table, or by speaking.</li>\n</ol>\n<p>A Government of Canada numeracy self-assessment (written for the earlier Essential Skills framework, and still posted) lists everyday tasks such as adding and subtracting, making change, adding up a bill, taking simple measurements, comparing sizes or amounts, recording time, estimating quantities, calculating percentages, and comparing similar products to see which is better value.</p>\n<p>This course practises those number skills. It does <strong>not</strong> tell you how to manage debt, choose a loan, or make a household budget, even though some official lists mention budgets as a numeracy task. For money-product rules, use official FCAC pages later or ask a qualified person.</p>\n<p>Bring a calculator if it helps — knowing <em>which</em> numbers to use still matters.</p>",
+      "sources": [
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Numeracy self-assessment (PDF)",
+          "url": "https://www.canada.ca/content/dam/esdc-edsc/images/services/jobs/training/initiatives/skills-success/tools/numeracy-self-assessment/numeracy_self_assessment.pdf"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Skills for Success numeracy includes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Finding, understanding, using, and reporting mathematical information"
+            },
+            {
+              "id": "B",
+              "text": "Avoiding every number you see"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "After you calculate, an official numeracy step is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Check whether the answer makes sense"
+            },
+            {
+              "id": "B",
+              "text": "Throw the paper away without looking"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course gives lending and budgeting advice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Finding the useful numbers on a bill or label is part of numeracy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Everyday calculations",
+      "html": "<p>The numeracy self-assessment includes simple addition and subtraction, multiplication and division, receiving cash and making change, and calculating the cost of items on a bill.</p>\n<p><strong>Add</strong> when you combine amounts. If three items cost $2.50, $1.25, and $3.00, the bill is $6.75.</p>\n<p><strong>Subtract</strong> when you find a difference or make change. If the bill is $6.75 and the customer pays with $10.00, the change is $3.25.</p>\n<p><strong>Multiply</strong> when the same amount repeats. If one box costs $4 and you buy 3 boxes, that is 3 × $4 = $12.</p>\n<p><strong>Divide</strong> when you split an amount or find a rate. If 4 people share a $12 cost equally, each person pays $3.</p>\n<p>Skills for Success says to check whether the answer has the expected size. A $6.75 bill cannot have $100 in change from a $10 bill. If your answer looks far too big or too small, calculate again.</p>\n<p>Write units beside numbers when you can ($ , kg, hours) so you do not add hours to dollars by mistake.</p>\n<p>The Canada.ca Content Style Guide writes a percent with a symbol, such as <strong>20%</strong>. Lesson 4 practises percentages.</p>\n<p>Work slowly on paper or with a calculator. Being careful is part of numeracy, not a weakness.</p>",
+      "sources": [
+        {
+          "label": "Numeracy self-assessment (PDF)",
+          "url": "https://www.canada.ca/content/dam/esdc-edsc/images/services/jobs/training/initiatives/skills-success/tools/numeracy-self-assessment/numeracy_self_assessment.pdf"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        },
+        {
+          "label": "Canada.ca Content Style Guide (numbers and percent)",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "If items cost $2.50, $1.25, and $3.00, the total is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "$6.75"
+            },
+            {
+              "id": "B",
+              "text": "$675"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If a bill is $6.75 and someone pays $10.00, the change is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "$3.25"
+            },
+            {
+              "id": "B",
+              "text": "$16.75"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If your answer looks much too large, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Check the work again"
+            },
+            {
+              "id": "B",
+              "text": "Always accept the first number"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Canada.ca Content Style Guide writes twenty percent as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "20%"
+            },
+            {
+              "id": "B",
+              "text": "20 per cent, never a symbol"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Measure, compare, and estimate",
+      "html": "<p>The numeracy self-assessment includes taking simple measurements (for example length, weight, or temperature), making comparisons (taller or shorter, heavier or lighter, greater than or less than), recording time, estimating quantities (for example “I need approximately 20 copies”), and estimating measurements. It also lists measurement conversions, such as inches to centimetres or millilitres to litres.</p>\n<p>You do not need special tools for every task. A kitchen scale, a wall clock, a vehicle display in kilometres, or a weather report in <strong>°C</strong> can all be measurement sources. When you must convert one unit to another, look up the official factor or use the scale already printed on the tool. This course does not invent conversion numbers.</p>\n<p><strong>Estimate</strong> when an exact number is not needed yet. If you need about 20 copies, you do not count them to the last sheet before you start — but you still check later if the exact count matters.</p>\n<p><strong>Compare</strong> two numbers before you decide. Which package is heavier? Which waiting time is shorter? Which total is greater?</p>\n<p>Skills for Success says to judge whether a result is about the right size. If you estimate “about 20 minutes” for a five-minute walk you make every day, the estimate is probably too high. Adjust and try again.</p>\n<p>Write down the unit (°C, kg, km, minutes) so other people can use your number.</p>",
+      "sources": [
+        {
+          "label": "Numeracy self-assessment (PDF)",
+          "url": "https://www.canada.ca/content/dam/esdc-edsc/images/services/jobs/training/initiatives/skills-success/tools/numeracy-self-assessment/numeracy_self_assessment.pdf"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "An official example of estimating a quantity is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "“I need approximately 20 copies”"
+            },
+            {
+              "id": "B",
+              "text": "Inventing a temperature with no thermometer and no report"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Comparisons in the self-assessment include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Heavier or lighter, greater than or less than"
+            },
+            {
+              "id": "B",
+              "text": "Only favourite colours"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "When you convert units, a careful habit is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Use the factor on the tool or an official source, not a guessed number"
+            },
+            {
+              "id": "B",
+              "text": "Always multiply by 17 because it “looks right”"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Checking whether an estimate is about the right size is part of numeracy.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Percentages and unit prices",
+      "html": "<p>The numeracy self-assessment includes calculating percentages and comparing similar products with different cost structures to determine the best value.</p>\n<p>A <strong>percentage</strong> is a number out of 100. <strong>10%</strong> of 80 is 8, because 10 out of every 100 parts of 80 is 8. <strong>50%</strong> of a price is half of it. <strong>25%</strong> of $40 is $10. If a sign says <strong>20% off</strong> a $20 item, you take off $4, so the reduced price is $16 (before any tax that a store may add). This course will not tell you which tax rate applies where you live.</p>\n<p>The Office of Consumer Affairs (a Government of Canada office) explains <strong>per unit pricing</strong>: the price of a product using one set unit, often by weight (<strong>kilogram</strong> or gram) or volume (<strong>litre</strong> or millilitre), or sometimes per item. That makes it easier to compare two packages that are different sizes. Cereal boxes can look the same size but hold different amounts.</p>\n<p>The same page says unit pricing is required in <strong>Quebec</strong>. In the rest of Canada, including Alberta, many stores show it voluntarily, but they do not all display it the same way, and the unit price may be in smaller print. A “sale” price is not always the better value — compare the price per kilogram or per litre when you can.</p>\n<p>This is shopping numeracy, not advice to buy or avoid a brand.</p>",
+      "sources": [
+        {
+          "label": "Numeracy self-assessment (PDF)",
+          "url": "https://www.canada.ca/content/dam/esdc-edsc/images/services/jobs/training/initiatives/skills-success/tools/numeracy-self-assessment/numeracy_self_assessment.pdf"
+        },
+        {
+          "label": "Comparing food prices — per unit pricing",
+          "url": "https://ised-isde.canada.ca/site/office-consumer-affairs/en/modern-marketplace/comparing-food-prices-unit-pricing"
+        },
+        {
+          "label": "Canada.ca Content Style Guide",
+          "url": "https://design.canada.ca/style-guide/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "10% of 80 is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "8"
+            },
+            {
+              "id": "B",
+              "text": "80"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A unit price is often shown:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Per kilogram, litre, or item"
+            },
+            {
+              "id": "B",
+              "text": "Only as a drawing of the store"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Office of Consumer Affairs says unit pricing is required:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "In Quebec, and voluntary in many other Canadian stores"
+            },
+            {
+              "id": "B",
+              "text": "On every farm gate in the world"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A sale sticker always means the lowest price per kilogram.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Numbers on a pay stub",
+      "html": "<p>The Financial Consumer Agency of Canada (FCAC) has a page on starting a first job. It notes that reading a pay stub can be confusing and that most stubs show pay <strong>before</strong> and <strong>after</strong> deductions.</p>\n<p><strong>Gross pay</strong> is the amount before taxes and other payroll deductions. FCAC says it may also include commissions, bonuses, vacation pay, or overtime.</p>\n<p><strong>Net pay</strong> (take-home pay) is the amount after those deductions. FCAC says this is the amount deposited to a bank account or written on a paycheque.</p>\n<p>Your employer may deduct income tax, Employment Insurance (EI), and Canada Pension Plan (CPP) or Quebec Pension Plan (QPP) contributions, and sometimes other amounts such as benefits, savings-plan contributions, or union dues. <strong>This course will not tell you how much tax you should pay, whether you qualify for EI, or how to file a return.</strong> For SIN and CRA My Account navigation, see the existing Range Path course on that topic.</p>\n<p><strong>Numeracy practice on a stub:</strong></p>\n<ul>\n<li>Find the gross amount and the net amount.</li>\n<li>Check that net is smaller than gross (if there were deductions).</li>\n<li>If you are paid by the hour, multiply hours × hourly rate and see whether that matches the regular-pay line (ask payroll if it does not).</li>\n</ul>\n<p>FCAC also writes about budgets, debt, and savings on that page. Those money decisions are outside this course. Use official FCAC tools later if you want money-management information, or ask a qualified person.</p>",
+      "sources": [
+        {
+          "label": "Starting your first job — FCAC",
+          "url": "https://www.canada.ca/en/financial-consumer-agency/services/first-job.html"
+        },
+        {
+          "label": "Learn about the Skills — Skills for Success",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/understanding-individuals.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Gross pay is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Pay before taxes and other deductions"
+            },
+            {
+              "id": "B",
+              "text": "Always exactly the same as net pay, in every job"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Net pay is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Take-home pay after deductions"
+            },
+            {
+              "id": "B",
+              "text": "A type of fishing net"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course tells you how much income tax you must pay.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "If you are paid by the hour, a useful check is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Multiply hours by the hourly rate and compare it with the stub"
+            },
+            {
+              "id": "B",
+              "text": "Ignore the numbers completely"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice.",
+    "questions": [
+      {
+        "prompt": "Numeracy includes finding numbers, calculating or estimating, and checking whether the result makes sense.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      },
+      {
+        "prompt": "If a $6.75 bill is paid with $10.00, the change is $3.25.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      },
+      {
+        "prompt": "Estimating “about 20 copies” is an official example of everyday numeracy.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      },
+      {
+        "prompt": "A unit price helps you compare products of different sizes.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      },
+      {
+        "prompt": "A sale sticker always means the best unit price.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      },
+      {
+        "prompt": "Gross pay is take-home pay after all deductions.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      },
+      {
+        "prompt": "This course is tax, lending, and budgeting advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general numeracy practice — using numbers in daily life and at work. It is not tax advice, lending advice, investment advice, or budgeting advice, and it is not a high-school or CAEC math credit. A later money-skills module may use more FCAC tools. This course will not tell you how to borrow, invest, file taxes, or build a personal budget.",
+    "builderNotes": "- Do not teach how to build a budget, choose credit, or calculate income tax, even though some FCAC and self-assessment pages mention those topics.\n- Do not invent metric conversion factors that were not printed as numbers on the fetched pages.\n- Date-sensitive: Quebec-only mandatory unit pricing (Office of Consumer Affairs page opened 2026-11-10).\n- No Ed2Go anatomy/algebra sequence. Canadian spelling (litre, metre in unit names as used on the official pages).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

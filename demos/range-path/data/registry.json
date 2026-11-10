@@ -56,6 +56,24 @@
       "featured": true
     },
     {
+      "slug": "workplace-writing-grammar-canada",
+      "shortTitle": "Workplace writing",
+      "navLabel": "Writing",
+      "featured": true
+    },
+    {
+      "slug": "everyday-math-numeracy",
+      "shortTitle": "Everyday math",
+      "navLabel": "Numeracy",
+      "featured": true
+    },
+    {
+      "slug": "project-management-basics",
+      "shortTitle": "Project basics",
+      "navLabel": "Projects",
+      "featured": true
+    },
+    {
       "slug": "email-online-safety",
       "shortTitle": "Email & Online Safety",
       "navLabel": "Email safety",

@@ -476,10 +476,60 @@ export function parseCourseMarkdown(markdown, fileName) {
   };
 }
 
+function readFlag(argv, name) {
+  const index = argv.indexOf(name);
+  if (index === -1) return "";
+  const value = argv[index + 1];
+  if (!value || value.startsWith("--")) {
+    throw new Error(name + " needs a value.");
+  }
+  return value;
+}
+
+function insertRegistry(slug, shortTitle, navLabel, before, after) {
+  const file = path.join(demoRoot, "data", "registry.json");
+  const registry = JSON.parse(fs.readFileSync(file, "utf8"));
+  const existing = registry.courses.findIndex((course) => course.slug === slug);
+  if (existing !== -1) {
+    console.log("Registry already lists " + slug + ". Left that entry where it is.");
+    return;
+  }
+  const entry = { slug, shortTitle, navLabel, featured: true };
+  let index = registry.courses.length;
+  if (before) {
+    index = registry.courses.findIndex((course) => course.slug === before);
+    if (index === -1) throw new Error("Registry has no course named " + before + ".");
+  } else if (after) {
+    index = registry.courses.findIndex((course) => course.slug === after);
+    if (index === -1) throw new Error("Registry has no course named " + after + ".");
+    index += 1;
+  }
+  registry.courses.splice(index, 0, entry);
+  fs.writeFileSync(file, JSON.stringify(registry, null, 2) + "\n");
+  console.log("Added " + slug + " to data/registry.json at position " + (index + 1) + ".");
+}
+
 function main() {
   const file = process.argv[2];
-  if (!file) {
-    console.error("Usage: node tools/md-to-course.mjs path/to/course.md");
+  if (!file || file.startsWith("--")) {
+    console.error("Usage: node tools/md-to-course.mjs path/to/course.md [--before slug | --after slug] [--short \"Short name\"] [--nav \"Nav\"]");
+    process.exit(1);
+  }
+  let before = "";
+  let after = "";
+  let shortTitle = "";
+  let navLabel = "";
+  try {
+    before = readFlag(process.argv, "--before");
+    after = readFlag(process.argv, "--after");
+    shortTitle = readFlag(process.argv, "--short");
+    navLabel = readFlag(process.argv, "--nav");
+  } catch (error) {
+    console.error(error.message);
+    process.exit(1);
+  }
+  if (before && after) {
+    console.error("Use either --before or --after, not both.");
     process.exit(1);
   }
   const markdown = fs.readFileSync(file, "utf8");
@@ -507,7 +557,20 @@ function main() {
       " final questions."
   );
   warnings.forEach((warning) => console.log("Warning: " + warning));
-  console.log('Registry entry: { "slug": "' + course.slug + '", "shortTitle": "' + course.title + '", "navLabel": "' + course.title + '", "featured": true }');
+  const label = shortTitle || course.title.replace(/\s*\([^)]*\)\s*$/, "").trim();
+  const nav = navLabel || label;
+  if (before || after) {
+    try {
+      insertRegistry(course.slug, label, nav, before, after);
+    } catch (error) {
+      console.error(error.message);
+      process.exit(1);
+    }
+  } else {
+    console.log(
+      "Not added to the registry. Re-run with --before email-online-safety to place it ahead of the original courses, then run node tools/build-pages.mjs."
+    );
+  }
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();
