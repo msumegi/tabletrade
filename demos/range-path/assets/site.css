@@ -1,4 +1,4 @@
-/* Adult Learning Subscription — calm, high-contrast, phone-first. */
+/* Range Path — calm, high-contrast, phone-first. */
 :root {
   --bg: #f3efe6;
   --paper: #fffdf8;
@@ -132,16 +132,7 @@ header.site {
   padding: 0.35rem 0;
 }
 
-.brand-text { min-width: 0; }
-.brand-name {
-  display: block;
-  font-size: 1.02rem;
-  line-height: 1.15;
-  max-width: 9.4rem;
-}
-@media (min-width: 390px) {
-  .brand-name { font-size: 1.08rem; max-width: 11rem; }
-}
+.brand-name { font-size: 1.35rem; display: block; line-height: 1; }
 .brand-sub {
   display: none;
   font-family: "Segoe UI", system-ui, sans-serif;
@@ -190,8 +181,6 @@ header.site {
 }
 
 @media (min-width: 860px) {
-  .brand-name { font-size: 1.05rem; max-width: none; white-space: nowrap; }
-  .brand-sub { display: block; line-height: 1.25; }
   .js .nav-toggle { display: none; }
   header.site {
     display: flex;
@@ -600,8 +589,7 @@ footer.site {
 }
 
 @media (min-width: 1040px) {
-  .brand-name { font-size: 1.2rem; max-width: none; }
-  .brand-sub { display: block; line-height: 1.25; max-width: 14rem; }
+  .brand-sub { display: block; line-height: 1.25; max-width: 16rem; }
   .cards.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
 }
 
