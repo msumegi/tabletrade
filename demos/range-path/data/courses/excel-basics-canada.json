@@ -1,0 +1,497 @@
+{
+  "slug": "excel-basics-canada",
+  "title": "Microsoft Excel Basics (Canada)",
+  "summary": "By the end, learners can open a blank workbook, enter text and numbers in cells, apply simple formatting, write a basic formula that starts with an equal sign, use AutoSum, and save or print their work.",
+  "goals": "By the end, learners can open a blank workbook, enter text and numbers in cells, apply simple formatting, write a basic formula that starts with an equal sign, use AutoSum, and save or print their work.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or tax, payroll, or financial advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is Excel?",
+      "html": "<p><strong>Microsoft Excel</strong> is a program for lists and numbers. Microsoft’s basic-tasks guide says Excel works well for simple calculations and for tracking many kinds of information. The key is a grid of <strong>cells</strong>. Cells can hold numbers, text, or <strong>formulas</strong> (instructions that calculate). You group cells in <strong>rows</strong> and <strong>columns</strong> so you can add, sort, filter, and later make charts if you want to.</p>\n<p>Excel files are called <strong>workbooks</strong>. Each workbook has one or more <strong>sheets</strong> (also called spreadsheets). You can add more sheets, or start a new workbook when you want to keep information separate.</p>\n<p><strong>To start a blank workbook</strong> (Microsoft’s steps):</p>\n<ol>\n<li>Click <strong>File</strong>, then <strong>New</strong>.</li>\n<li>Under New, click <strong>Blank workbook</strong>.</li>\n</ol>\n<p>Each cell has an address made from its column letter and row number. Cell <strong>A1</strong> is column A, row 1 — the top-left cell on a new sheet.</p>\n<p>People in Canada use spreadsheets for many everyday jobs: hours worked, a small expense list, a class attendance sheet, or a farm or household inventory. This course uses Canadian spelling and simple examples. It will not tell you how to file taxes or choose a bookkeeping system.</p>\n<p>If Excel is not on the computer in front of you, ask your adult learning council which version they have, or whether you can use Excel for the web with a sign-in they approve. Do not buy software because this lesson mentioned it.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Excel",
+          "url": "https://support.microsoft.com/en-us/excel/basic-tasks-in-excel"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "In Excel, a workbook is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The Excel file, which can contain one or more sheets"
+            },
+            {
+              "id": "B",
+              "text": "A paper notebook you must buy from Microsoft"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Cell A1 is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Column A, row 1"
+            },
+            {
+              "id": "B",
+              "text": "A type of printer ink"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Cells can contain:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Only pictures of cats"
+            },
+            {
+              "id": "B",
+              "text": "Numbers, text, or formulas"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This Range Path course gives you an official Microsoft Office Specialist certificate.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "Completion only. It is not MOS or college credit."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Enter data in cells",
+      "html": "<p>Entering data means typing information into cells so Excel can use it later.</p>\n<p>Microsoft’s steps:</p>\n<ol>\n<li>Click an empty cell. On a new sheet, try <strong>A1</strong>.</li>\n<li>Type text or a number.</li>\n<li>Press <strong>Enter</strong> or <strong>Tab</strong> to move to the next cell.</li>\n</ol>\n<p><strong>Enter</strong> usually moves you down to the cell below. <strong>Tab</strong> usually moves you right to the next column. If you make a mistake, click the cell again and type the correction, or edit what you see.</p>\n<p><strong>A simple practice table</strong> (sample data only):</p>\n<table><thead><tr><th></th><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>Item</td><td>Amount</td></tr><tr><td>2</td><td>Fuel</td><td>80</td></tr><tr><td>3</td><td>Feed</td><td>45</td></tr><tr><td>4</td><td>Supplies</td><td>25</td></tr></tbody></table>\n<p>Type the words in column A and the numbers in column B. Keep one kind of information in each column. That makes adding and sorting easier later.</p>\n<p><strong>Tips:</strong></p>\n<ul>\n<li>Click once to select a cell before you type.</li>\n<li>If you start typing in the wrong cell, click the cell again and type the correction.</li>\n<li>Do not type a space after a number if you want Excel to treat it as a number.</li>\n<li>Use sample amounts in this course. Do not enter real banking passwords or anyone’s private pay details into a shared computer.</li>\n</ul>\n<p>When a cell is selected, you can also see and edit its contents in the <strong>formula bar</strong> near the top of the window (you will use this more in Lesson 4).</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Excel",
+          "url": "https://support.microsoft.com/en-us/excel/basic-tasks-in-excel"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "After you type in a cell, Microsoft’s basic steps say to press:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Enter or Tab to move to the next cell"
+            },
+            {
+              "id": "B",
+              "text": "The power button"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Putting one kind of information in each column helps you:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Add and sort the list later"
+            },
+            {
+              "id": "B",
+              "text": "Hide the keyboard forever"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Cell addresses combine:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A column letter and a row number"
+            },
+            {
+              "id": "B",
+              "text": "Your postal code and shoe size"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should practise with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Sample lists, not other people’s private files"
+            },
+            {
+              "id": "B",
+              "text": "Someone else’s tax return without asking"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Make a sheet easier to read",
+      "html": "<p>Plain numbers are useful. A little formatting makes a sheet easier to scan.</p>\n<p><strong>Borders</strong> (Microsoft):</p>\n<ol>\n<li>Select the cell or range you want to outline.</li>\n<li>On the <strong>Home</strong> tab, in the <strong>Font</strong> group, click the arrow next to <strong>Borders</strong>, and choose a style.</li>\n</ol>\n<p><strong>Shading (fill colour):</strong></p>\n<ol>\n<li>Select the cells.</li>\n<li>On the <strong>Home</strong> tab, in the Font group, click the arrow next to <strong>Fill Color</strong>, and pick a colour.</li>\n</ol>\n<p>Use light colours for titles so the text stays readable.</p>\n<p><strong>Number formats:</strong> Microsoft says you can add a format such as currency, percentages, or dates so different kinds of numbers are easier to tell apart.</p>\n<ol>\n<li>Select the cells that have numbers.</li>\n<li>Click the <strong>Home</strong> tab, then the arrow in the <strong>General</strong> box.</li>\n<li>Pick a number format. If you do not see the one you want, click <strong>More Number Formats</strong>.</li>\n</ol>\n<p>Choose a format that matches how you write money or dates in Canada. If you are not sure which currency or date style to pick, ask a tutor. This course does not tell you which format a workplace or the CRA requires.</p>\n<p>You can also select a block of cells by clicking the first cell and dragging to the last cell. Microsoft notes you can hold <strong>Shift</strong> and use the arrow keys to select with the keyboard.</p>\n<p>Save your work after you format (Lesson 5) so you do not lose the layout.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Excel",
+          "url": "https://support.microsoft.com/en-us/excel/basic-tasks-in-excel"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Borders and fill colour are found on the:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Home tab, in the Font group"
+            },
+            {
+              "id": "B",
+              "text": "Back of the computer tower"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Number formats can help you show numbers as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Currency, percentages, or dates"
+            },
+            {
+              "id": "B",
+              "text": "Only Roman numerals"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you do not see the number format you want, Microsoft’s steps say to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Click More Number Formats"
+            },
+            {
+              "id": "B",
+              "text": "Restart the town’s power grid"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson tells you the exact format the CRA requires on every form.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "This course is not tax advice. Ask a tutor or check official requirements for a real workplace or filing task."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Simple formulas and AutoSum",
+      "html": "<p>A <strong>formula</strong> tells Excel to calculate. Microsoft says a simple formula always starts with an <strong>equal sign (=)</strong>. Then you type numbers and operators:</p>\n<ul>\n<li>plus <code>+</code> to add</li>\n<li>minus <code>-</code> to subtract</li>\n<li>asterisk <code>*</code> to multiply</li>\n<li>forward slash <code>/</code> to divide</li>\n</ul>\n<p>Examples from Microsoft: <code>=2+4</code>, <code>=4-2</code>, <code>=2*4</code>, or <code>=4/2</code>. Click a cell, type the formula, then press <strong>Enter</strong> (Windows) or <strong>Return</strong> (Mac). You can also point at cells instead of typing the numbers: for example, <code>=B2+B3+B4</code>.</p>\n<p>Microsoft notes that multiplication and division happen before addition and subtraction. So <code>=5+2*3</code> multiplies 2 and 3 first, then adds 5.</p>\n<p><strong>AutoSum</strong> is a fast way to add a column or row. Microsoft’s steps:</p>\n<ol>\n<li>Select the cell immediately <strong>below</strong> a column of numbers, or immediately <strong>to the right</strong> of a row of numbers.</li>\n<li>On the <strong>Home</strong> tab (or the Formulas tab), click <strong>AutoSum</strong>.</li>\n<li>Press Enter.</li>\n</ol>\n<p>AutoSum inserts a <strong>SUM</strong> function for you. You can also type a SUM formula yourself, such as <code>=SUM(B2:B4)</code>, which adds the cells from B2 through B4.</p>\n<p>If a formula does not look right, click the cell and check the formula bar at the top. Fix the equal sign and cell addresses, then press Enter again.</p>\n<p>Practise on the sample amounts from Lesson 2. This is not payroll or tax calculation advice.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Excel",
+          "url": "https://support.microsoft.com/en-us/excel/basic-tasks-in-excel"
+        },
+        {
+          "label": "Create a simple formula in Excel",
+          "url": "https://support.microsoft.com/en-us/excel/create-a-simple-formula-in-excel"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Every simple Excel formula starts with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "An equal sign (=)"
+            },
+            {
+              "id": "B",
+              "text": "A question mark"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "In Excel, the symbol for multiply is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "* (asterisk)"
+            },
+            {
+              "id": "B",
+              "text": "x drawn with a pen on the screen"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To add a column with AutoSum, you usually select:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The cell immediately below the numbers"
+            },
+            {
+              "id": "B",
+              "text": "The computer’s volume button"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "=SUM(B2:B4) adds:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The values in cells B2 through B4"
+            },
+            {
+              "id": "B",
+              "text": "Only the title in A1"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Save and print your workbook",
+      "html": "<p>Saving puts your workbook in a file so you can close Excel without losing the work.</p>\n<p>Microsoft’s basic steps:</p>\n<ol>\n<li>Click the <strong>Save</strong> button on the Quick Access Toolbar, or press <strong>Ctrl+S</strong>. If you have saved this file before, you are done.</li>\n<li>The first time, choose <strong>Save As</strong>, pick a location, browse to a folder, type a name in the <strong>File name</strong> box, and click <strong>Save</strong>.</li>\n</ol>\n<p>A clear name helps you find the file later, such as <code>hours-november</code> or <code>expense-list-practice</code>. Save it in a folder you know, such as Documents (see the Everyday Computers course for File Explorer).</p>\n<p>Save often while you work. Microsoft also describes AutoRecovery, which can keep a backup if something goes wrong, such as a power cut. AutoRecovery is not the same as you saving the file yourself, so do not rely on it alone.</p>\n<p><strong>To print</strong> (Microsoft):</p>\n<ol>\n<li>Click <strong>File</strong>, then <strong>Print</strong>, or press <strong>Ctrl+P</strong>.</li>\n<li>Preview the pages with the Next Page and Previous Page arrows.</li>\n<li>If the layout looks wrong, you can change margins or page breaks.</li>\n<li>Click <strong>Print</strong>.</li>\n</ol>\n<p>Preview first so you do not waste paper. If you are on a shared learning-centre printer, ask staff which printer to pick.</p>\n<p>When you finish, close the file. You can open it later from File Explorer or from <strong>File &gt; Open</strong> in Excel.</p>",
+      "sources": [
+        {
+          "label": "Basic tasks in Excel",
+          "url": "https://support.microsoft.com/en-us/excel/basic-tasks-in-excel"
+        },
+        {
+          "label": "Save your workbook",
+          "url": "https://support.microsoft.com/en-us/excel/save-your-workbook"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A quick way to save after the first save is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Ctrl+S or the Save button"
+            },
+            {
+              "id": "B",
+              "text": "Unplugging the computer"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The first time you save, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Choose a location and type a file name"
+            },
+            {
+              "id": "B",
+              "text": "Skip the name so Excel can guess your postal code"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "AutoRecovery:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Replaces the need to save, forever"
+            },
+            {
+              "id": "B",
+              "text": "Can help if something goes wrong, but you should still save your workbook yourself"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "File > Print (or Ctrl+P) lets you:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Preview and then print"
+            },
+            {
+              "id": "B",
+              "text": "Delete Windows"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
+    "questions": [
+      {
+        "prompt": "An Excel file is called a workbook and can contain sheets.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      },
+      {
+        "prompt": "Cell B3 is column B, row 3.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      },
+      {
+        "prompt": "After typing in a cell, Enter or Tab moves you toward the next cell.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      },
+      {
+        "prompt": "A simple formula can start with a plus sign and never needs an equal sign.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      },
+      {
+        "prompt": "AutoSum can add a column of numbers for you.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      },
+      {
+        "prompt": "You should save a new workbook with a name and a location you can find later.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      },
+      {
+        "prompt": "This course is an official MOS exam and tax-filing service.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not an accredited Microsoft Office Specialist (MOS) credential, college credit, or tax, payroll, bookkeeping, or financial advice. Excel menus can look a little different depending on your version (Windows, Mac, or web). Practise on sample data — not on someone else’s private files.",
+    "builderNotes": "- Emphasise the disclaimer on every lesson footer.\n- Cite Microsoft Support only for Excel steps; do not paste long help articles.\n- Menus vary by Excel for Windows, Mac, and the web.\n- Not MOS / not college credit / not tax or bookkeeping advice.\n- No Ed2Go / Cengage material. Canadian spelling in our text; Microsoft buttons may use US spelling (Color).\n- Re-check Microsoft Support URLs if a later rebuild finds a redirect change.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

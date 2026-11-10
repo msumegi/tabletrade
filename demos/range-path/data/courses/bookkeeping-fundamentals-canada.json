@@ -1,0 +1,505 @@
+{
+  "slug": "bookkeeping-fundamentals-canada",
+  "title": "Bookkeeping Fundamentals in Canada",
+  "summary": "By the end, learners can explain what bookkeeping is, list everyday records the CRA describes, describe what should appear on a business receipt, know the usual six-year keeping period (as stated by the CRA as of November 2026), and know that GST/HST record rules exist without treating this course as personal tax help.",
+  "goals": "By the end, learners can explain what bookkeeping is, list everyday records the CRA describes, describe what should appear on a business receipt, know the usual six-year keeping period (as stated by the CRA as of November 2026), and know that GST/HST record rules exist without treating this course as personal tax help.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, or tax, accounting, payroll, or audit advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is bookkeeping?",
+      "html": "<p><strong>Bookkeeping</strong> is the day-to-day recording of a business’s money movements. The Business Development Bank of Canada (BDC), a federal Crown corporation, says bookkeeping means recording every business transaction in a system such as accounting software or a spreadsheet. Those transactions can include sales and other income, expenses and other payments, asset purchases, loan payments, lease payments, and investments.</p>\n<p>BDC says good bookkeeping depends on recording that is:</p>\n<ul>\n<li><strong>accurate</strong> (real figures, not guesses)</li>\n<li><strong>reliable</strong> (put in the right place)</li>\n<li><strong>timely</strong> (written down promptly so details are not forgotten)</li>\n<li><strong>consistent</strong> (the same kind of entry is always recorded the same way)</li>\n<li><strong>simple</strong> (enter a transaction once when you can, so you do not create extra errors)</li>\n</ul>\n<p>BDC also explains that bookkeeping is <strong>one part of accounting</strong>. Accounting is a wider professional activity used to understand a company’s finances and support decisions. In Canada, BDC notes that an accountant needs formal training and membership in a professional order, while a bookkeeper does not need that same professional membership. Many businesses still want experience and computer skills when they hire a bookkeeper.</p>\n<p>This course teaches everyday record-keeping words and habits. It does <strong>not</strong> make you a licensed bookkeeper or accountant, and it does not say which software you must buy. The CRA says it does not issue or recommend one official record book — many paper or computer systems can work if they are clear.</p>\n<p>If you run a small activity or help a local group, ask a professional when the numbers become more than simple lists.</p>",
+      "sources": [
+        {
+          "label": "Bookkeeping 101 — BDC",
+          "url": "https://www.bdc.ca/en/articles-tools/money-finance/manage-finances/bookkeeping-101-keep-company-finances-order"
+        },
+        {
+          "label": "Business records — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Bookkeeping, as BDC describes it, is mainly:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Recording every business transaction in a financial record-keeping system"
+            },
+            {
+              "id": "B",
+              "text": "Designing a company logo"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "BDC says figures in the books should be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Accurate and written down promptly"
+            },
+            {
+              "id": "B",
+              "text": "Guessed at the end of the year"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "According to BDC, bookkeeping is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "One part of the larger activity of accounting"
+            },
+            {
+              "id": "B",
+              "text": "The same as a court judgement"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This Range Path course issues a Canadian bookkeeping licence.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "What records should you keep?",
+      "html": "<p>The CRA says you are required by law to keep records of all your transactions so you can support your income and expense claims. You should keep a record of your <strong>daily income and expenses</strong>. Do <strong>not</strong> send those records in with your income tax return — keep them in case the CRA asks to see them later.</p>\n<p>The CRA does not pick one brand of book for you. You can use a book with columns and separate pages for income and expenses, or clear computerized records.</p>\n<p><strong>Keep separate records for each business</strong> you run. Also keep duplicate deposit slips, bank statements, and cancelled cheques.</p>\n<p><strong>Income records</strong> should include the date, amount, and source of the income. Record income whether you received cash, property, or services, and support entries with original documents. The CRA lists examples such as:</p>\n<ul>\n<li>sales invoices</li>\n<li>cash register tapes</li>\n<li>receipts</li>\n<li>bank deposit slips</li>\n<li>fee statements</li>\n<li>contracts</li>\n</ul>\n<p><strong>Expense records:</strong> the CRA says to always get receipts or other vouchers when you buy something for the business.</p>\n<p>These rules are about <em>keeping proof</em>. This lesson does not tell you which costs you may deduct, how to fill a tax form, or how much tax you owe. That is work for you and a qualified professional, using current CRA pages.</p>\n<p>A simple habit is to write income and expenses on the day they happen, in one place you can find again.</p>",
+      "sources": [
+        {
+          "label": "Business records — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The CRA says you should keep records of daily:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Income and expenses"
+            },
+            {
+              "id": "B",
+              "text": "Only the jokes you heard at coffee"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Should you mail your record books to the CRA with your tax return?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "No — keep them in case the CRA asks to see them later"
+            },
+            {
+              "id": "B",
+              "text": "Yes — send every receipt in the same envelope as the return"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Income records should include:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The date, amount, and source of the income"
+            },
+            {
+              "id": "B",
+              "text": "Only the seller’s favourite colour"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The CRA requires you to buy one official CRA-branded notebook.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "The CRA says it does not issue or suggest one official set of books."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "What should appear on a receipt?",
+      "html": "<p>A <strong>receipt</strong> or voucher is proof of a purchase. The CRA says that when you buy something for your business you should always get one, and that it has to show:</p>\n<ul>\n<li>the date of the purchase</li>\n<li>the name and address of the seller or supplier</li>\n<li>the name and address of the buyer</li>\n<li>a full description of the goods or services</li>\n<li>the vendor’s <strong>business number</strong> if they are a GST/HST registrant and the purchase price is <strong>$100 or more</strong> (before tax)</li>\n</ul>\n<p>That dollar amount comes from the CRA business-records page checked in <strong>November 2026</strong>. If the page changes later, follow the live CRA wording.</p>\n<p>If a cash-register tape does not describe the item, the CRA says you should write the description on the receipt or in your expense journal.</p>\n<p>If a seller does not give you a receipt, the CRA says to write in your expense journal:</p>\n<ul>\n<li>the seller’s name and address</li>\n<li>the amount paid</li>\n<li>the date</li>\n<li>the details of the transaction</li>\n</ul>\n<p><strong>Invoice</strong> is a word you will also see. It is a bill for goods or services. Keep copies of invoices you send (sales) and invoices you pay (purchases). Together with bank records, they help tell the story of money in and money out.</p>\n<p>Check each receipt while you are still at the counter, when it is easier to ask for a missing detail.</p>\n<p>This is not advice about claiming a tax credit. It is about keeping clear proof.</p>",
+      "sources": [
+        {
+          "label": "Business records — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A business purchase receipt should show, among other things:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The date, the seller’s name and address, the buyer’s name and address, and a description"
+            },
+            {
+              "id": "B",
+              "text": "Only a smiley face"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On the CRA page checked in November 2026, a vendor business number is needed on the receipt when:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The vendor is a GST/HST registrant and the purchase is $100 or more before tax"
+            },
+            {
+              "id": "B",
+              "text": "You bought a coffee for $2 from a neighbour’s kitchen"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If a tape has no description, the CRA says you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Write the description on the receipt or in your expense journal"
+            },
+            {
+              "id": "B",
+              "text": "Throw the tape away immediately"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This lesson tells you which expenses you may deduct on a tax return.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "How long to keep records, and where",
+      "html": "<p><strong>How long?</strong> The CRA says that, generally, you must keep all required records and supporting documents for <strong>six years from the end of the last tax year they relate to</strong>. For many individuals, that tax year is the calendar year. For corporations, it is the fiscal period.</p>\n<p>The same six-year idea appears on the CRA’s GST/HST records page: usually keep records for six years from the end of the year to which they relate. The CRA may ask you to keep them longer. If you want to destroy records earlier, you must get written permission and wait for approval. Destroying required records without permission can lead to prosecution.</p>\n<p>There are special cases (for example, some records about long-term property, late returns, objections, or a business that has ended). Those details are on the official page. This course cannot decide which special rule applies to you.</p>\n<p><strong>Where?</strong> The CRA says you must keep records at your place of business or your residence <strong>in Canada</strong>, unless the CRA gives written permission to keep them somewhere else. Records kept only outside Canada, even if you can open them on a screen from Canada, are <strong>not</strong> treated as records kept in Canada.</p>\n<p><strong>As of November 2026</strong>, those are the rules on the CRA pages cited below. Check the live pages before you destroy anything.</p>\n<p>Keep paper records dry and in order. If you use a computer, the CRA expects electronic records to stay readable. Ask a professional if you are unsure.</p>",
+      "sources": [
+        {
+          "label": "Where to keep your records and for how long — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records/where-keep-your-records-long-request-permission-destroy-them-early.html"
+        },
+        {
+          "label": "GST/HST records to keep — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/gst-hst-records-keep.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "The usual CRA keeping period described on the pages checked in November 2026 is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Six years from the end of the last tax year the records relate to"
+            },
+            {
+              "id": "B",
+              "text": "Six hours after you shop"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before you destroy records early, the CRA says you must:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Get written permission and wait for approval"
+            },
+            {
+              "id": "B",
+              "text": "Recycle them the same afternoon"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Unless the CRA gives written permission, records should be kept:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "At your business or residence in Canada"
+            },
+            {
+              "id": "B",
+              "text": "Only on a server that nobody in Canada can reach, with no backup"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course replaces a call to the CRA or an accountant about your own files.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "GST/HST records, and when to get help",
+      "html": "<p><strong>GST</strong> and <strong>HST</strong> are sales taxes administered by the CRA. Some businesses must register, collect the tax, and file GST/HST returns. <strong>This course will not tell you whether you must register or how to file.</strong> Those decisions depend on your situation. Use the official GST/HST pages on Canada.ca or ask a qualified professional.</p>\n<p>If GST/HST records apply to you, the CRA says you must keep records that support your returns and claims. Those records include <strong>sales and purchase invoices</strong> and other records related to your business operations and the GST/HST. If you file electronically, also keep your working copies of returns. You do not have to send receipts in with an electronic GST/HST filing, but you must keep them in case the CRA asks to see them.</p>\n<p>Usually you must keep those records for <strong>six years</strong> from the end of the year they relate to (CRA page checked November 2026).</p>\n<p>A later Range Path course in the catalogue plan looks more closely at invoices, expenses, and GST records. For now, remember:</p>\n<ul>\n<li>write things down when they happen</li>\n<li>keep proof (invoices, receipts, bank records)</li>\n<li>store them safely for the period the CRA describes</li>\n<li>ask for help before you guess</li>\n</ul>\n<p>Help can mean your adult learning council (for a referral), a bookkeeper or accountant, or the CRA’s own pages and enquiry lines listed on Canada.ca. Guessing on a tax form is not a good substitute for official advice.</p>",
+      "sources": [
+        {
+          "label": "GST/HST records to keep — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/gst-hst-records-keep.html"
+        },
+        {
+          "label": "Business records — CRA",
+          "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records.html"
+        },
+        {
+          "label": "Bookkeeping 101 — BDC",
+          "url": "https://www.bdc.ca/en/articles-tools/money-finance/manage-finances/bookkeeping-101-keep-company-finances-order"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This course will decide whether your business must register for GST/HST.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "If GST/HST records apply, the CRA says to keep:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Sales and purchase invoices and related business records"
+            },
+            {
+              "id": "B",
+              "text": "Only a drawing of your shop"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "After you file GST/HST information electronically, receipts:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Must still be kept in case the CRA asks to see them"
+            },
+            {
+              "id": "B",
+              "text": "May be thrown out the same morning"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you are unsure about tax or GST rules, a safer next step is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Check official CRA pages or ask a qualified professional"
+            },
+            {
+              "id": "B",
+              "text": "Invent a number that “looks about right”"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions.",
+    "questions": [
+      {
+        "prompt": "Bookkeeping means recording day-to-day business transactions.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      },
+      {
+        "prompt": "The CRA says to keep daily income and expense records.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      },
+      {
+        "prompt": "You should mail your record books to the CRA with every tax return.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      },
+      {
+        "prompt": "A complete purchase receipt includes the date, seller, buyer, and a description.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      },
+      {
+        "prompt": "The usual CRA keeping period described in November 2026 is six years from the end of the related tax year.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      },
+      {
+        "prompt": "This course tells you whether you must register for GST/HST and how much tax you owe.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      },
+      {
+        "prompt": "This course is a bookkeeping licence and personal tax advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information only. It is not tax advice, accounting advice, audit advice, payroll advice, or a bookkeeping licence. It will not tell you how to file a return, whether you must register for GST/HST, or which expenses you may deduct. Rules can change. For your own situation, use official CRA pages or speak with a qualified professional. Range Path does not keep your books or file taxes for you.",
+    "builderNotes": "- Emphasise the strong tax-advice disclaimer on every lesson footer.\n- Date-sensitive figures to re-check: six-year retention; $100 (before tax) business-number detail on receipts (both from CRA pages opened 2026-11-10).\n- Do not invent a GST/HST registration threshold; that was not taught here.\n- Software-agnostic: no QuickBooks/Sage/Wave certification claims.\n- No Ed2Go / Cengage material. Canadian spelling (cheque, practise as a verb).",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

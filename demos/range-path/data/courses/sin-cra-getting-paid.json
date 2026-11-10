@@ -1,0 +1,518 @@
+{
+  "slug": "sin-cra-getting-paid",
+  "title": "Your SIN, CRA My Account & Getting Paid in Canada",
+  "summary": "Learn what a SIN is for, how to protect it, and the official paths for CRA My Account and direct deposit.",
+  "goals": "Learn what a SIN is for, how to protect it, and the official paths for CRA My Account and direct deposit.",
+  "introHtml": "<p class=\"lede\">Learn what a SIN is for, how to protect it, and the official paths for CRA My Account and direct deposit.</p>\n<p>Learners can explain what a SIN is for, list safer ways to protect it, describe what CRA My Account is (at a high level), and know official paths to set up direct deposit for CRA payments — without treating this course as personal tax help.</p>",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
+  "media": {
+    "frameClass": "frame frame-wide frame-slip",
+    "src": "media/notes-1280.webp",
+    "srcset": "media/notes-720.webp 720w, media/notes-1280.webp 1280w, media/notes-1920.webp 1920w",
+    "sizes": "(max-width: 720px) 100vw, 40rem",
+    "width": 1280,
+    "height": 853,
+    "alt": "A sample pay advice for a fictional Alberta employer. No real name or SIN is shown."
+  },
+  "lessons": [
+    {
+      "number": 1,
+      "title": "What is a Social Insurance Number (SIN)?",
+      "html": "<p>A <strong>Social Insurance Number (SIN)</strong> is a 9-digit number used in Canada for work and for many government programs and benefits. Service Canada explains that your SIN is private, and it is illegal for someone else to use it.</p>\n<p>You may need a SIN to:</p>\n<ul>\n<li>work for an employer who must report your income</li>\n<li>file taxes and receive certain benefits</li>\n<li>deal with some financial accounts that must report interest or income</li>\n</ul>\n<p>Service Canada no longer issues new plastic SIN cards. Older plastic cards can still be used. If you need to see your number, you can often find it on tax slips (such as a T4), on a past tax return, or by signing in to <strong>My Service Canada Account (MSCA)</strong>.</p>\n<p>Your SIN is <strong>not</strong> a general ID card. Do not use it like a driver’s licence or passport when a business only wants ID.</p>\n<p>If you are new to Canada, the steps to apply can depend on your status. This course will <strong>not</strong> tell you which immigration category you are in. Use the official SIN pages on Canada.ca and get help from a settlement or adult learning worker if you need support filling forms.</p>",
+      "sources": [
+        {
+          "label": "Social Insurance Number overview",
+          "url": "https://www.canada.ca/en/employment-social-development/services/sin.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A SIN is mainly:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A free coffee card"
+            },
+            {
+              "id": "B",
+              "text": "A 9-digit number for work and many government programs"
+            },
+            {
+              "id": "C",
+              "text": "Your Alberta health number"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "True or false: Anyone may legally use your SIN if they ask politely.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Is your SIN meant to be everyday photo ID at a store?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Yes"
+            },
+            {
+              "id": "B",
+              "text": "No"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Where might you find your SIN if you forget it (per public guidance)?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "On some tax slips or through My Service Canada Account"
+            },
+            {
+              "id": "B",
+              "text": "On a random Facebook post"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Protect your SIN",
+      "html": "<p>If the wrong person gets your SIN, they may try identity fraud — for example opening accounts or filing false information in your name. Service Canada’s protection guidance says to <strong>limit who has access</strong>.</p>\n<p><strong>Safer habits:</strong></p>\n<ul>\n<li>Do not carry your SIN card or confirmation letter every day if you do not need it.</li>\n<li>Store papers with your SIN in a safe place; shred them before throwing them out.</li>\n<li>Share your SIN only when it is required (for example, after you are hired for payroll, or with a bank when the law requires tax reporting).</li>\n<li>Never give your SIN in a surprise phone call, text, or email from someone you did not contact.</li>\n</ul>\n<p><strong>You are often not required to give a SIN</strong> for things like a job application before hiring, renting many apartments, a credit card application, or phone/internet signup (there are limited exceptions described on Canada.ca). If a business asks and it is not required by law, you can ask why, offer other ID, and refuse.</p>\n<p><strong>Scam warning:</strong> Messages that say your SIN is “cancelled,” or that ask you to “verify your SIN” by clicking a link, are suspicious. Hang up or delete. Use official websites you type yourself.</p>\n<p>If you think your SIN was stolen or misused, follow the official “fraud and data breaches” guidance on Canada.ca and report to the Canadian Anti-Fraud Centre as needed.</p>",
+      "sources": [
+        {
+          "label": "Protect your SIN",
+          "url": "https://www.canada.ca/en/employment-social-development/services/sin/protection.html"
+        },
+        {
+          "label": "SIN overview",
+          "url": "https://www.canada.ca/en/employment-social-development/services/sin.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A good everyday habit is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Posting your SIN on social media"
+            },
+            {
+              "id": "B",
+              "text": "Limiting who sees your SIN and not carrying it unless needed"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Before hiring, must every job application legally collect your SIN?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Public guidance says you do not have to provide it just to apply in many cases"
+            },
+            {
+              "id": "B",
+              "text": "Always yes, even for a paper application at a fair"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A text says “Your SIN will lock in 1 hour — click here.” You should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Click and enter your SIN"
+            },
+            {
+              "id": "B",
+              "text": "Treat it as suspicious; use official channels instead"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Shredding old tax papers that show your SIN is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A recommended protection step"
+            },
+            {
+              "id": "B",
+              "text": "Illegal"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "What is CRA My Account?",
+      "html": "<p><strong>My Account</strong> is the Canada Revenue Agency’s online portal for individuals. Inside your CRA account you can view tax and benefit information after you register and verify your identity.</p>\n<p>Public CRA pages explain that to use My Account you generally need:</p>\n<ul>\n<li>a Social Insurance Number, and</li>\n<li>a filed and assessed income tax and benefit return from the current or previous tax year</li>\n</ul>\n<p>Sign-in options can include a CRA user ID and password, a Sign-In Partner (online banking), or some provincial partners (for example an Alberta.ca Account where available). Details change — always follow the current canada.ca steps.</p>\n<p><strong>What people often use it for (overview only):</strong> viewing notices, checking benefit-related information, updating some profile details, and managing <strong>direct deposit</strong> for CRA payments once you have full access. Some features need finished identity verification.</p>\n<p><strong>Safety:</strong> Bookmark the official sign-in path (for example canada.ca/my-cra-account style addresses that stay on canada.ca). Do not sign in through a link in a surprise email.</p>\n<p>This lesson does <strong>not</strong> teach you how to complete a tax return. If you need filing help, ask your council about community tax clinics or trusted preparers.</p>",
+      "sources": [
+        {
+          "label": "About My Account",
+          "url": "https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html"
+        },
+        {
+          "label": "Sign in to your CRA account",
+          "url": "https://www.canada.ca/en/revenue-agency/services/e-services/cra-login-services.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "My Account is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A CRA online portal for individual tax and benefit information"
+            },
+            {
+              "id": "B",
+              "text": "A social media app"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A common requirement mentioned for using My Account is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Owning a farm"
+            },
+            {
+              "id": "B",
+              "text": "Having a SIN and a filed, assessed return (current or previous year), per CRA"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Safest way to reach My Account:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A surprise email link"
+            },
+            {
+              "id": "B",
+              "text": "Typing or using an official canada.ca sign-in page"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This Range Path course will file your taxes for you.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Direct deposit for CRA payments",
+      "html": "<p><strong>Direct deposit</strong> means the CRA puts refunds or benefit payments into your Canadian bank or credit union account instead of mailing a cheque. CRA pages say you can set this up through your CRA account or through many Canadian banks and credit unions.</p>\n<p><strong>Important points from public CRA guidance:</strong></p>\n<ul>\n<li>Direct deposit is for <strong>Canadian</strong> bank or credit union accounts.</li>\n<li>You can <strong>no longer</strong> start or update CRA direct deposit by telephone.</li>\n<li>Online updates through your CRA account or participating bank are usually faster (CRA describes next-business-day updates after consent in many cases).</li>\n<li>Mail-in enrolment is possible if you cannot use online methods, but it can take much longer (CRA estimates up to about three months or more).</li>\n<li>Do not close an old account until you see a payment arrive in the new one.</li>\n</ul>\n<p><strong>High-level CRA account path (confirm on the live page):</strong> sign in → Individual / My Account → Profile → Direct deposit → Edit.</p>\n<p><strong>Not the same system:</strong> CPP, OAS, and EI have their own government direct-deposit processes. The CRA page notes it does not administer those programs.</p>\n<p>Again: this is not personal financial advice. If a payment is missing, use official CRA contact options after waiting the timeframes they publish.</p>",
+      "sources": [
+        {
+          "label": "Direct deposit for individuals",
+          "url": "https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit/individuals.html"
+        },
+        {
+          "label": "Direct deposit overview",
+          "url": "https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "CRA direct deposit sends money to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A Canadian bank or credit union account you set up"
+            },
+            {
+              "id": "B",
+              "text": "A gift-card balance from a text message"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Can you usually start CRA direct deposit by phone today?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Yes, always"
+            },
+            {
+              "id": "B",
+              "text": "No — CRA says you can no longer sign up or update by telephone"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Before closing an old bank account after switching deposit info, you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Wait until a payment shows up in the new account"
+            },
+            {
+              "id": "B",
+              "text": "Close it the same morning"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "CPP and OAS use exactly the same CRA direct-deposit screen for everything.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True — one click fixes all governments forever"
+            },
+            {
+              "id": "B",
+              "text": "False — CRA notes other departments have their own processes"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Getting paid at work and staying safe",
+      "html": "<p>When you work in Canada, employers generally need your SIN <strong>after</strong> you are hired so they can report income. You should receive pay stubs and, each year, tax slips such as a <strong>T4</strong>. Keep those documents for your records.</p>\n<p><strong>Pay methods</strong> vary by employer: direct deposit to your bank is common; some still use cheques. Ask your employer’s payroll office how you get paid and how to update your bank info <strong>through them</strong> — that is separate from CRA benefit direct deposit.</p>\n<p><strong>Red flags:</strong></p>\n<ul>\n<li>An “employer” asks for your SIN, banking password, or e-Transfer before you have a real job offer and paperwork.</li>\n<li>Someone asks you to “cash a cheque and send money back.”</li>\n<li>A surprise message claims the CRA needs your payroll password.</li>\n</ul>\n<p>Use official SIN protection habits. For workplace problems (unpaid wages, unfair treatment), this course cannot give legal advice — ask your council about employment standards referrals in Alberta or elsewhere.</p>\n<p><strong>Practice task (offline):</strong> Write three places you would store pay stubs safely, and one person you could ask at your council if a job offer feels like a scam.</p>",
+      "sources": [
+        {
+          "label": "Protect your SIN (when to provide or refuse)",
+          "url": "https://www.canada.ca/en/employment-social-development/services/sin/protection.html"
+        },
+        {
+          "label": "SIN overview",
+          "url": "https://www.canada.ca/en/employment-social-development/services/sin.html"
+        },
+        {
+          "label": "CRA scam recognition",
+          "url": "https://www.canada.ca/en/revenue-agency/corporate/scams-fraud/recognize-scam.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Employers normally need your SIN:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "To gossip"
+            },
+            {
+              "id": "B",
+              "text": "After hiring, to report income for tax and benefits"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A T4 is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A type of winter tire"
+            },
+            {
+              "id": "B",
+              "text": "A tax slip related to employment income (among other slips)"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Giving your online banking password to a new “boss” on an app chat is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Normal"
+            },
+            {
+              "id": "B",
+              "text": "A serious red flag"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "This course replaces a lawyer or tax preparer.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "",
+    "questions": [
+      {
+        "prompt": "A SIN is a 9-digit number used for work and many government programs.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "You should post your SIN publicly so friends can help you.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Limit who sees your SIN."
+      },
+      {
+        "prompt": "My Account is a CRA portal for individuals.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "Surprise email links are the best way to sign in to My Account.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Type an official canada.ca address yourself."
+      },
+      {
+        "prompt": "CRA direct deposit can no longer be started by phone.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      },
+      {
+        "prompt": "This course is personal tax and immigration advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "It is general information only."
+      },
+      {
+        "prompt": "Limiting who sees your SIN helps prevent identity fraud.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": ""
+      }
+    ]
+  }
+}

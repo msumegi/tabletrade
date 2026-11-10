@@ -53,7 +53,9 @@ fieldset {
   padding: 0;
 }
 
-h1, h2, h3, p, li { overflow-wrap: break-word; }
+h1, h2, h3, p, li, a, legend, td, th, code { overflow-wrap: anywhere; }
+
+.cards, .card, .steps, main, #site-nav ul { min-width: 0; }
 
 h1, h2, h3, .price-figure, .brand-name {
   font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
@@ -326,6 +328,18 @@ a.btn:focus-visible, button.btn:focus-visible { color: #fff; }
 .cards { display: grid; gap: 0.9rem; }
 .card { padding: 0.85rem 0.85rem 1rem; }
 .card h3 { font-size: 1.28rem; }
+.card h3 a,
+.check a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+}
+main p > a:only-child {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
 .card .meta { color: var(--muted); margin-bottom: 0.6rem; }
 .card .frame { margin-bottom: 0.8rem; }
 
@@ -421,19 +435,43 @@ textarea { min-height: 8rem; resize: vertical; }
 .crumbs a::after { content: " /"; }
 
 .step-label { font-weight: 700; margin-bottom: 0.35rem; }
-.lesson-list { list-style: none; margin: 0; padding: 0; }
+.lesson-list { list-style: none; margin: 0; padding: 0; max-width: 100%; }
 .lesson-list li {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
   padding: 0.35rem 0;
   border-bottom: 1px solid var(--line);
+  min-width: 0;
+  max-width: 100%;
 }
-.lesson-list a { font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+.lesson-list a {
+  font-weight: 700;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
 .status { color: var(--muted); font-size: 0.98rem; margin: 0; }
 
 .prose ul, .prose ol { padding-left: 1.2rem; }
 .prose li { margin: 0.35rem 0; }
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1rem;
+}
+.prose th, .prose td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.4rem;
+  text-align: left;
+  vertical-align: top;
+}
+.prose th { background: var(--wash); }
+.prose code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.92em;
+}
 .remember {
   background: var(--wash);
   border-radius: 12px;
@@ -442,7 +480,12 @@ textarea { min-height: 8rem; resize: vertical; }
 }
 
 .sources { padding-left: 1.15rem; }
-.sources a { overflow-wrap: anywhere; }
+.sources a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.35rem 0;
+}
 
 .q { padding: 0.9rem; margin: 0 0 0.8rem; }
 .q legend { font-weight: 700; padding: 0; margin-bottom: 0.6rem; }
@@ -459,6 +502,7 @@ textarea { min-height: 8rem; resize: vertical; }
   background: #fff;
 }
 .option input { width: 1.25rem; height: 1.25rem; margin-top: 0.15rem; accent-color: var(--spruce); flex: none; }
+.option span { flex: 1; min-width: 0; }
 .option:has(input:checked) { border-color: var(--spruce); background: var(--wash); }
 .option:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
 
@@ -563,7 +607,12 @@ footer.site {
 }
 .disclaimer { font-weight: 700; margin-bottom: 0.35rem; }
 .credit { margin: 0; font-size: 0.98rem; }
-.credit a { font-weight: 600; }
+.credit a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+}
 
 @media (min-width: 600px) {
   .actions { flex-direction: row; flex-wrap: wrap; }
@@ -576,6 +625,9 @@ footer.site {
   .cards.cols-3 { grid-template-columns: 1fr 1fr; }
   .stats { grid-template-columns: repeat(3, 1fr); }
   main { padding-top: 1.75rem; }
+}
+
+@media (min-width: 960px) {
   .matrix-head,
   .matrix-row { grid-template-columns: 1.15fr 1fr 1fr 1fr; align-items: center; }
   .matrix-head {
@@ -591,6 +643,19 @@ footer.site {
 @media (min-width: 1040px) {
   .brand-sub { display: block; line-height: 1.25; max-width: 16rem; }
   .cards.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+@media (max-width: 380px) {
+  .site-bar,
+  .wrap,
+  .wrap-wide { width: min(100% - 1rem, 68rem); }
+  h1 { font-size: 1.65rem; }
+}
+
+@media (min-width: 860px) and (max-width: 1039px) {
+  header.site { align-items: center; }
+  #site-nav ul { flex-wrap: wrap; justify-content: flex-end; }
+  #site-nav a { padding: 0.35rem 0.4rem; }
 }
 
 @media (max-width: 600px) {

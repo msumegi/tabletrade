@@ -48,22 +48,56 @@
     return Math.round((correct / total) * 100);
   }
 
+  function catalogue() {
+    var rp = window.RANGE_PATH;
+    return rp && rp.courses && rp.courses.length ? rp.courses : null;
+  }
+
+  function courseMeta(id) {
+    var list = catalogue();
+    if (!list) return null;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].id === id) return list[i];
+    }
+    return null;
+  }
+
+  function lessonCount(id) {
+    var meta = courseMeta(id);
+    if (meta && meta.lessons) return meta.lessons;
+    return LESSONS;
+  }
+
+  function passRatio() {
+    var rp = window.RANGE_PATH;
+    return rp && typeof rp.passMark === "number" ? rp.passMark : 0.7;
+  }
+
+  function neededCorrect(total) {
+    var ratio = passRatio();
+    var count = 0;
+    while (count < total && count / total < ratio) count += 1;
+    return count;
+  }
+
   function coursePercent(data, id) {
     var course = data.courses[id];
     if (!course) return 0;
     var done = 0;
+    var totalLessons = lessonCount(id);
     var lessons = course.lessons || {};
-    for (var i = 1; i <= LESSONS; i++) {
+    for (var i = 1; i <= totalLessons; i++) {
       if (lessons[i] && lessons[i].done) done += 1;
     }
     if (course.final && course.final.passed) done += 1;
-    return Math.round((done / (LESSONS + 1)) * 100);
+    return Math.round((done / (totalLessons + 1)) * 100);
   }
 
   function nextHref(data, id, base) {
     var course = data.courses[id] || { lessons: {} };
     var lessons = course.lessons || {};
-    for (var i = 1; i <= LESSONS; i++) {
+    var totalLessons = lessonCount(id);
+    for (var i = 1; i <= totalLessons; i++) {
       if (!lessons[i] || !lessons[i].done) return base + "lesson-" + i + "/";
     }
     if (!course.final || !course.final.passed) return base + "final/";
@@ -113,30 +147,35 @@
 
     var hub = document.querySelector("#continue-all");
     if (hub) {
-      var order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
-      var labels = {
-        "email-online-safety": "Email & Online Safety",
-        "sin-cra-getting-paid": "SIN, CRA & getting paid",
-        "winter-safety-rural-alberta": "Winter safety"
-      };
+      var listed = catalogue();
+      var order = listed || [
+        { id: "email-online-safety", shortTitle: "Email & Online Safety", lessons: 5 },
+        { id: "sin-cra-getting-paid", shortTitle: "SIN, CRA & getting paid", lessons: 5 },
+        { id: "winter-safety-rural-alberta", shortTitle: "Winter safety", lessons: 5 }
+      ];
       var target = null;
       var sum = 0;
-      order.forEach(function (id) {
+      var steps = 0;
+      order.forEach(function (item) {
+        var id = item.id || item;
+        var shortTitle = item.shortTitle || id;
         sum += coursePercent(data, id);
+        steps += (item.lessons || lessonCount(id)) + 1;
         if (target) return;
         var href = nextHref(data, id, id + "/");
-        if (href.indexOf("certificate") === -1) target = { href: href, id: id };
+        if (href.indexOf("certificate") === -1) target = { href: href, id: id, shortTitle: shortTitle };
       });
       var summary = document.querySelector("#continue-summary");
-      if (summary) {
-        summary.textContent = Math.round(sum / order.length) + "% of the catalogue finished on this device (18 lessons and quizzes).";
+      if (summary && order.length) {
+        summary.textContent = Math.round(sum / order.length) + "% of the catalogue finished on this device (" + steps + " lessons and quizzes).";
       }
       if (!target) {
-        hub.setAttribute("href", "email-online-safety/");
+        var firstId = order[0].id || order[0];
+        hub.setAttribute("href", firstId + "/");
         hub.textContent = "Review your courses";
       } else {
         hub.setAttribute("href", target.href);
-        hub.textContent = "Continue: " + labels[target.id];
+        hub.textContent = "Continue: " + target.shortTitle;
       }
     }
     var nameField = document.querySelector("#learner-name-courses");
@@ -252,11 +291,11 @@
     var explainEl = item.querySelector(".explain");
     var explain = explainEl ? explainEl.textContent.trim() : "";
     var rightLabel = item.querySelector('input[value="' + answer + '"]');
-    var rightText = rightLabel ? rightLabel.parentElement.querySelector("span").textContent.trim() : answer;
+      var rightText = rightLabel ? rightLabel.parentElement.querySelector("span").textContent.trim() : answer;
       var ok = chosen.value === answer;
       if (ok) correct += 1;
       box.className = ok ? "feedback is-good" : "feedback is-bad";
-      box.textContent = (ok ? "Correct. " : "Not quite. The better answer is: " + rightText + ". ") + explain;
+      box.textContent = (ok ? "Correct." : "Not quite. The better answer is: " + rightText + ".") + (explain ? " " + explain : "");
       item.querySelectorAll("input").forEach(function (input) { input.disabled = true; });
       item.setAttribute("data-locked", "true");
       checkBtn.hidden = true;
@@ -279,7 +318,7 @@
       var pct = percent(correct, total);
       var data = load();
       var course = courseOf(data, courseId);
-      var passed = correct / total >= 0.7;
+      var passed = total > 0 && correct / total >= passRatio();
       if (part === "final") {
         var prev = course.final || {};
         var nowPassed = prev.passed || passed;
@@ -313,7 +352,7 @@
         } else if (prev.passed) {
           note.textContent = "This try was " + correct + "/" + total + ". You already passed at " + prev.percent + "% on this device.";
         } else {
-          note.textContent = "You need 70% (at least 5 out of 7) for a certificate. Review the lessons and try again. Your score stays on this device.";
+          note.textContent = "You need 70% (at least " + neededCorrect(total) + " of " + total + ") for a certificate. Review the lessons and try again. Your score stays on this device.";
         }
         if (passed || prev.passed) {
           var link = document.createElement("a");
@@ -381,12 +420,42 @@
     var courseEcho = document.querySelector("#course-echo");
     var passedLinks = document.querySelector("#cert-passed-links");
     var data = load();
-    var order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
-    var titles = {
-      "email-online-safety": "Email & Online Safety Basics in Canada",
-      "sin-cra-getting-paid": "Your SIN, CRA My Account & Getting Paid in Canada",
-      "winter-safety-rural-alberta": "Winter Safety & Driving in Rural Alberta"
-    };
+    var listed = catalogue();
+    var order;
+    var titles = {};
+    if (listed) {
+      order = listed.map(function (item) { return item.id; });
+      listed.forEach(function (item) { titles[item.id] = item.title; });
+      if (coursePick) {
+        coursePick.textContent = "";
+        listed.forEach(function (item) {
+          var option = document.createElement("option");
+          option.value = item.id;
+          option.textContent = item.title;
+          if (item.certificateNote) option.setAttribute("data-note", item.certificateNote);
+          coursePick.appendChild(option);
+        });
+      }
+      var linkList = document.querySelector("#cert-course-links");
+      if (linkList) {
+        linkList.textContent = "";
+        listed.forEach(function (item) {
+          var li = document.createElement("li");
+          var link = document.createElement("a");
+          link.href = "../courses/" + encodeURIComponent(item.id) + "/final/";
+          link.textContent = item.title + " final quiz";
+          li.appendChild(link);
+          linkList.appendChild(li);
+        });
+      }
+    } else {
+      order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
+      titles = {
+        "email-online-safety": "Email & Online Safety Basics in Canada",
+        "sin-cra-getting-paid": "Your SIN, CRA My Account & Getting Paid in Canada",
+        "winter-safety-rural-alberta": "Winter Safety & Driving in Rural Alberta"
+      };
+    }
 
     function passedFinal(id) {
       var fin = data.courses[id] && data.courses[id].final;
@@ -440,6 +509,10 @@
       var title = option ? option.textContent.trim() : (titles[id] || "");
       if (titleOut) titleOut.textContent = title;
       if (courseEcho) courseEcho.textContent = title;
+      var limitOut = document.querySelector("#cert-limit");
+      if (limitOut && option && option.getAttribute("data-note")) {
+        limitOut.textContent = option.getAttribute("data-note");
+      }
       var fin = passedFinal(id);
       if (dateOut) dateOut.textContent = fin && fin.date ? fin.date : "";
       if (state && fin) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";

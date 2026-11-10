@@ -1,0 +1,517 @@
+{
+  "slug": "job-search-canada",
+  "title": "Job Search and Employment Readiness in Canada",
+  "summary": "By the end, learners can search for jobs on Job Bank, describe what belongs in a resume and a cover letter, tailor an application to one posting, use a Job Bank account with care, and prepare for an interview using official Canadian and Alberta tips.",
+  "goals": "By the end, learners can search for jobs on Job Bank, describe what belongs in a resume and a cover letter, tailor an application to one posting, use a Job Bank account with care, and prepare for an interview using official Canadian and Alberta tips.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Where to look for work",
+      "html": "<p>A <strong>job search</strong> means looking for work in an organized way. The Government of Canada’s <strong>Job Bank</strong> is a free official website where you can browse thousands of jobs across Canada. On Job Bank you can narrow results with filters such as hours of work, benefits, and salary. You can also sign up for <strong>Job Alerts</strong>, a free email service that sends new postings, and search on the Job Bank mobile app.</p>\n<p>Job Bank also says you can look beyond one website: attend job fairs (online or in person), contact recruiters, and use social media to grow your work network.</p>\n<p>In Alberta, <strong>alis</strong> (Alberta’s official careers and work-search site) has a “Look for Work” section with articles on work-search basics, resumes, and how to apply. If you want to talk to someone, alis lists the <strong>Alberta Supports Contact Centre</strong> at <strong>1-877-644-9992</strong> (toll free).</p>\n<p><strong>A simple start:</strong></p>\n<ol>\n<li>Open Job Bank’s find-a-job page.</li>\n<li>Type a job title or skill and a place, such as your town or a nearby city.</li>\n<li>Use filters if the list is long.</li>\n<li>Read the full posting before you apply.</li>\n<li>Write down the closing date and how to apply.</li>\n</ol>\n<p>This course cannot guarantee you a job. It also will not tell you about work permits, immigration categories, or EI. Job Bank has a separate area for people outside Canada; use official pages or settlement staff for those questions.</p>\n<p>Ask your adult learning council if they run employment-readiness workshops.</p>",
+      "sources": [
+        {
+          "label": "Find a job — Job Bank",
+          "url": "https://www.jobbank.gc.ca/findajob"
+        },
+        {
+          "label": "Look for work in Alberta — alis",
+          "url": "https://alis.alberta.ca/look-for-work/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Job Bank is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A free Government of Canada website for searching jobs"
+            },
+            {
+              "id": "B",
+              "text": "A private store that sells job interviews"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On Job Bank you can narrow results by filters such as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Hours of work, benefits, and salary"
+            },
+            {
+              "id": "B",
+              "text": "Your neighbour’s SIN"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "The Alberta Supports Contact Centre number listed on alis is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "1-877-644-9992"
+            },
+            {
+              "id": "B",
+              "text": "911 only"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course guarantees you will be hired.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "It is general information only, not a job offer or career-counselling licence."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Build a resume that matches the job",
+      "html": "<p>A <strong>resume</strong> (alis often writes <em>resumé</em>) tells an employer who you are and what you can do. Job Bank says a good resume shows your background, skills, and qualifications, and that you should <strong>tailor</strong> it to the job by highlighting relevant accomplishments.</p>\n<p>Alis suggests starting with a <strong>master resume</strong> — one long list of your contact information, education and training, work history (most recent job first), skills, accomplishments, volunteer work, awards, and references. Update it often. Then copy the most useful parts into a shorter resume for each job.</p>\n<p>Alis describes three common layouts:</p>\n<ul>\n<li><strong>Chronological</strong> — work and education from newest to oldest. Helpful when the job is similar to work you have done.</li>\n<li><strong>Functional</strong> — focuses on skills. May help if you have gaps in paid work.</li>\n<li><strong>Combination</strong> — skills first, then a short work history. Useful if you are changing fields.</li>\n</ul>\n<p><strong>Official tips that help:</strong></p>\n<ul>\n<li>Study the posting and use the same keywords the employer used (alis notes that some software screens resumes for those words).</li>\n<li>Keep the version you send short — alis says <strong>1 to 2 pages</strong> at most.</li>\n<li>Use a simple, easy-to-read font and point form. Alis says to avoid tables or columns because some screening software cannot read them well.</li>\n<li>Submit a Word file (<code>.doc</code> or <code>.docx</code>) if the posting allows it; alis says some screening software cannot read PDF files.</li>\n<li>Be honest. Proofread out loud, use spell check carefully (it may not know <em>cheque</em> from <em>check</em>), and ask a trusted person to read it.</li>\n</ul>\n<p>Job Bank has a free <strong>Resume Builder</strong> after you sign in. It currently describes a traditional template and a template for youth or recent graduates. You fill in the blanks and can save more than one resume.</p>",
+      "sources": [
+        {
+          "label": "How to write a great resumé — alis",
+          "url": "https://alis.alberta.ca/look-for-work/resumes-and-references/how-to-write-a-great-resume"
+        },
+        {
+          "label": "Resume Builder — Job Bank",
+          "url": "https://www.jobbank.gc.ca/findajob/resume-builder"
+        },
+        {
+          "label": "Find a job — Job Bank",
+          "url": "https://www.jobbank.gc.ca/findajob"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A master resume is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A full list of your work, skills, and education that you update and then tailor for each job"
+            },
+            {
+              "id": "B",
+              "text": "A secret password employers share"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alis says the resume you send should usually be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "1 to 2 pages at most"
+            },
+            {
+              "id": "B",
+              "text": "At least 20 pages"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Why does alis suggest using words from the job posting?",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Some employers use software that looks for those keywords"
+            },
+            {
+              "id": "B",
+              "text": "Longer words always win"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Be honest and proofread before you send"
+            },
+            {
+              "id": "B",
+              "text": "Invent job titles to look more experienced"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Research, cover letters, and how to apply",
+      "html": "<p>Job Bank says applying for a job involves three steps: research the company or job, create a resume, and prepare a cover letter.</p>\n<p><strong>Research first.</strong> Before you send anything, try to learn:</p>\n<ul>\n<li>What the company does</li>\n<li>The duties of the job</li>\n<li>The qualifications and skills required</li>\n<li>Who the customers or clients are</li>\n<li>What reputation the employer has</li>\n</ul>\n<p>Job Bank says this research helps you write the resume and cover letter and prepare for an interview. You can use the posting, the company’s website, and (if it feels safe) people who work in that field.</p>\n<p>A <strong>cover letter</strong> is your introduction. Job Bank says it should be concise, well written, and tailored to that company and job. You may need a different letter for each job. It should give the employer an idea of who you are and highlight the skills you offer.</p>\n<p>On its “stand out” page, Job Bank suggests:</p>\n<ul>\n<li>a short opening that shows interest</li>\n<li>your top skills that match the posting, with one or two clear examples</li>\n<li>a closing that repeats your interest or thanks the reader</li>\n</ul>\n<p>A cover letter is not always required, but when it is, Job Bank says taking time to write a good one can make a real difference.</p>\n<p><strong>When you apply:</strong> follow the instructions on the posting exactly (email, website form, or in person). Attach the files they ask for. Keep a copy of what you sent and the date.</p>\n<p>If a posting feels like a scam (for example, it asks for a banking password or a fee to “guarantee” a job), stop and ask council staff. See also the Range Path email-safety course.</p>",
+      "sources": [
+        {
+          "label": "How do I apply for a job? — Job Bank",
+          "url": "https://www.jobbank.gc.ca/findajob/resources/apply-for-jobs"
+        },
+        {
+          "label": "Stand out to employers — Job Bank",
+          "url": "https://www.jobbank.gc.ca/career-planning/resources/stand-out"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Job Bank’s three application steps are:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Research, create a resume, and prepare a cover letter"
+            },
+            {
+              "id": "B",
+              "text": "Buy a gift card, share your PIN, and wait"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "A cover letter should be:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Tailored to that company and job"
+            },
+            {
+              "id": "B",
+              "text": "The same copied paragraph for every employer, including ones you did not read about"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Researching the employer can help you:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Write a better letter and prepare for an interview"
+            },
+            {
+              "id": "B",
+              "text": "Skip reading the job posting"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "True or false: Every job in Canada requires a cover letter.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "Job Bank says a cover letter is not always required, but it matters when the employer asks for one."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Job Bank accounts and applying online",
+      "html": "<p>You can browse many Job Bank postings without extra tools. If you want to save searches and get alerts, Job Bank offers free accounts.</p>\n<p>A <strong>Standard</strong> account, according to Job Bank’s find-a-job page, can be started with an <strong>email address</strong>. With it you can customize searches, get daily Job Alerts, and use resume templates to prepare an application.</p>\n<p>A <strong>Plus</strong> account adds more tools, such as matching you with openings from a profile, invitations from employers, and applying from some postings with a saved resume or one made in the Resume Builder.</p>\n<p>Some extra services, including <strong>Job Match</strong> and <strong>Direct Apply</strong>, ask you to confirm that you are a Canadian citizen, a permanent resident, or a temporary resident. To prove eligibility, Job Bank may ask for your date of birth, a parent’s last name at birth, and your valid Social Insurance Number (SIN). Job Bank says the SIN is checked automatically and <strong>will not be kept</strong> in its records.</p>\n<p><strong>Important:</strong> If you cannot provide that information or prefer not to, Job Bank says you can still sign up by <strong>opting out</strong> of those extra services. You can add the information later if you change your mind. This course will not tell you which immigration category you are in, and you should not type your SIN into this course.</p>\n<p>When a posting offers <strong>Direct Apply</strong>, follow the official steps on Job Bank and read any box that asks you to share your email and documents with that employer.</p>\n<p>Keep your Job Bank password private, just as you would for email.</p>",
+      "sources": [
+        {
+          "label": "Find a job — Job Bank",
+          "url": "https://www.jobbank.gc.ca/findajob"
+        },
+        {
+          "label": "Create a Job Bank account",
+          "url": "https://www.jobbank.gc.ca/reg/instructions"
+        },
+        {
+          "label": "Resume Builder — Job Bank",
+          "url": "https://www.jobbank.gc.ca/findajob/resume-builder"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Job Bank says a Standard account can be started with:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "An email address"
+            },
+            {
+              "id": "B",
+              "text": "A cash payment to Job Bank"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "If you prefer not to give your SIN on Job Bank:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "You can opt out of some extra services and still sign up"
+            },
+            {
+              "id": "B",
+              "text": "You are banned from reading any job title"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Job Bank says that when it checks a SIN for extra services, it:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Will not keep the SIN in its records"
+            },
+            {
+              "id": "B",
+              "text": "Posts the SIN on a public billboard"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should type your SIN into this Range Path quiz.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Prepare for the interview",
+      "html": "<p>An <strong>interview</strong> is a meeting where an employer asks about your skills and you learn about the job. Being invited is already a step forward. This course cannot promise the job.</p>\n<p><strong>Job Bank</strong> says to prepare in advance:</p>\n<ul>\n<li>Research the company.</li>\n<li>Think of questions they might ask and prepare answers from your work or education.</li>\n<li>Use the <strong>STAR</strong> method to structure examples: Situation, Task, Action, Result.</li>\n<li>Practise with friends or family.</li>\n<li>On the day, bring copies of your resume and a list of references, and dress in a way that fits the workplace.</li>\n</ul>\n<p><strong>Alis</strong> uses a similar method called <strong>STARS</strong> (Situation, Task, Action, Result, Skills) and offers four habits:</p>\n<ol>\n<li><strong>Prepare</strong> — learn about the company and the job; review your resume; plan examples; prepare questions to ask them; bring a reference list. Alis also says to understand your rights about what kinds of questions are appropriate. This course is not legal advice; ask council staff or official resources if a question worries you.</li>\n<li><strong>Practise</strong> — say answers out loud; try a practice interview with a friend.</li>\n<li><strong>Present yourself well</strong> — be neat and on time; turn off your cellphone.</li>\n<li><strong>Participate</strong> — listen carefully; answer thoughtfully; you may take notes. Afterward, alis suggests a short thank-you note or email that names two or three reasons you are a good fit.</li>\n</ol>\n<p>If you want more help in Alberta, call the Alberta Supports Contact Centre at <strong>1-877-644-9992</strong>, or ask your adult learning council about interview practice.</p>",
+      "sources": [
+        {
+          "label": "Find a job — Job Bank (interview section)",
+          "url": "https://www.jobbank.gc.ca/findajob"
+        },
+        {
+          "label": "I have a job interview. How do I prepare? — alis",
+          "url": "https://alis.alberta.ca/tools-and-resources/questions-and-answers/i-have-a-job-interview-how-do-i-prepare/"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "STAR (Job Bank) is a way to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Structure an example with Situation, Task, Action, and Result"
+            },
+            {
+              "id": "B",
+              "text": "Send your banking password"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Before an interview you should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Research the company and practise your answers"
+            },
+            {
+              "id": "B",
+              "text": "Arrive late so you seem busy"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Alis suggests that after an interview you:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Send a short thank-you note or email"
+            },
+            {
+              "id": "B",
+              "text": "Never contact the employer again for any reason"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "This course is licensed career counselling and EI advice.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only.",
+    "questions": [
+      {
+        "prompt": "Job Bank is a free Government of Canada job-search website.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      },
+      {
+        "prompt": "You should send the exact same untailored resume to every employer without reading the posting.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      },
+      {
+        "prompt": "Alis says a resume you send should usually be 1 to 2 pages at most.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      },
+      {
+        "prompt": "A cover letter should be tailored to the company and job.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      },
+      {
+        "prompt": "You can opt out of some Job Bank extra services if you prefer not to give your SIN.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      },
+      {
+        "prompt": "STAR/STARS methods help you give clear interview examples.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      },
+      {
+        "prompt": "This course guarantees a job and gives immigration advice.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Search on official sites, tailor each application, protect your SIN, and practise interviews. This course is general information only."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not a promise of a job, licensed career counselling, or legal, immigration, or Employment Insurance (EI) advice. Job postings and tools change. Always follow the official Job Bank, Alberta, or employer instructions for your situation, and ask staff at your adult learning council if you want extra help.",
+    "builderNotes": "- Emphasise the disclaimer on every lesson footer. Do not collect SINs, dates of birth, or resumes in the course.\n- Job Bank account rules and Resume Builder templates can change — re-check the cited pages before a later rebuild.\n- Do not mix Alberta Public Service application-length tips with general alis resume advice.\n- No immigration or EI advice; point unsettled status questions to official pages or settlement/council staff.\n- No Ed2Go / Cengage material. Canadian spelling (practise as a verb, centre). Job Bank uses “resume”; alis often uses “resumé.”",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}

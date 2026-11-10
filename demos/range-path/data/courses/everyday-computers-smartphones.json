@@ -1,0 +1,533 @@
+{
+  "slug": "everyday-computers-smartphones",
+  "title": "Everyday Computers and Smartphones",
+  "summary": "By the end, learners can name everyday digital devices, use basic on-screen actions, find files in folders, connect to Wi-Fi with more care, and describe simple habits that help keep a computer or phone safer.",
+  "goals": "By the end, learners can name everyday digital devices, use basic on-screen actions, find files in folders, connect to Wi-Fi with more care, and describe simple habits that help keep a computer or phone safer.",
+  "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal, financial, or technical-support contract.",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Meet your everyday devices",
+      "html": "<p>A <strong>digital device</strong> is a tool that stores and shares information. Canada’s Skills for Success program calls digital skill the ability to use digital technology and tools to find, manage, apply, create, and share information and content. That includes computers, tablets, smartphones, and other handheld devices.</p>\n<p><strong>Common devices:</strong></p>\n<ul>\n<li>A <strong>desktop computer</strong> usually stays on a desk and uses a separate screen, keyboard, and mouse.</li>\n<li>A <strong>laptop</strong> is a portable computer with a built-in screen and keyboard.</li>\n<li>A <strong>tablet</strong> is a flat screen you control mostly by touch.</li>\n<li>A <strong>smartphone</strong> is a phone that also works like a small computer. Get Cyber Safe notes that people use phones as cameras, maps, and more — not only to make calls.</li>\n</ul>\n<p>You do not need to own every device. Many libraries and adult learning centres have computers you can practise on.</p>\n<p><strong>Shared ideas on most devices:</strong></p>\n<ul>\n<li>A <strong>screen</strong> shows what is happening.</li>\n<li>You give commands by tapping, clicking, or typing.</li>\n<li><strong>Settings</strong> (sometimes a gear icon) let you change things such as volume, brightness, or Wi-Fi.</li>\n<li><strong>Apps</strong> or <strong>programs</strong> are tools you open to do a job, such as mail, maps, or a web browser.</li>\n</ul>\n<p>Skills for Success also asks learners to know basic words that most devices share, and to use basic functions that are common to most of them. If a word is new, write it down and ask a tutor. Learning the names helps you follow instructions later.</p>\n<p>This course will not repair a broken device. If something will not turn on, check the power or charger first, then ask for help.</p>",
+      "sources": [
+        {
+          "label": "Skills for Success overview",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success.html"
+        },
+        {
+          "label": "Skills for Success — digital skill components",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/learning-steps.html"
+        },
+        {
+          "label": "Get Cyber Safe — Phones and tablets",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-devices/phones-and-tablets"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Digital skill, in Skills for Success, is mainly about:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Using digital tools to find, manage, create, and share information"
+            },
+            {
+              "id": "B",
+              "text": "Fixing every broken charger by yourself"
+            },
+            {
+              "id": "C",
+              "text": "Memorizing every brand name"
+            }
+          ],
+          "answer": "A",
+          "explain": "The official Skills for Success wording is about using digital technology and tools to find, manage, apply, create, and share information and content."
+        },
+        {
+          "prompt": "A smartphone is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Only able to make voice calls"
+            },
+            {
+              "id": "B",
+              "text": "A phone that can also work like a small computer"
+            }
+          ],
+          "answer": "B",
+          "explain": "Get Cyber Safe describes phones as multi-tools people use as cameras, maps, and more."
+        },
+        {
+          "prompt": "Settings on a device are often used to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Throw the device away"
+            },
+            {
+              "id": "B",
+              "text": "Change things such as volume, brightness, or Wi-Fi"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "True or false: You must own a laptop before you can start learning computer basics.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "You can practise on a library or learning-centre computer. The goal is everyday skill, not buying a new device first."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Turn on, look around, and lock the screen",
+      "html": "<p>Before you learn programs, get comfortable with the device in front of you.</p>\n<p><strong>Start up.</strong> Press the power button until the screen lights up. Wait. The first screen may ask you to swipe, tap, or type a password, PIN, or use a fingerprint. Get Cyber Safe says to give a computer a strong log-in password and to lock it when you are not around. On a phone or tablet, use a lock-screen password and turn on extra lock options, such as a fingerprint, if they are available. Also turn on auto-lock so the device locks after a short time.</p>\n<p><strong>Look around.</strong></p>\n<ul>\n<li>On a computer, the <strong>mouse</strong> or trackpad moves a pointer. A single click usually selects something. A double-click often opens it.</li>\n<li>On a phone or tablet, a light tap often opens an item. Swipe to move around the screen.</li>\n<li>The <strong>keyboard</strong> (physical or on-screen) is for typing.</li>\n</ul>\n<p>If you open the wrong thing, look for a Back arrow, an X to close a window, or the Home button or gesture on a phone. Skills for Success includes knowing when to use Back and Next, and how to scroll.</p>\n<p><strong>Lock when you step away.</strong> Even at home, locking the screen helps keep photos, messages, and files private. Do not write a password on a sticky note beside the device. Get Cyber Safe says never to write a password down and then store it near the computer, and never to share your password with anyone.</p>\n<p>Practise turning the device on, unlocking it with help from a tutor if needed, opening one app, closing it, and locking the screen again.</p>",
+      "sources": [
+        {
+          "label": "Get Cyber Safe — Laptops and computers",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-devices/laptops-and-computers"
+        },
+        {
+          "label": "Get Cyber Safe — Phones and tablets",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-devices/phones-and-tablets"
+        },
+        {
+          "label": "Skills for Success — digital skill components",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/learning-steps.html"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A good habit when you leave a computer is to:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Leave it unlocked so anyone can finish your work"
+            },
+            {
+              "id": "B",
+              "text": "Lock it, even if you are only stepping away"
+            }
+          ],
+          "answer": "B",
+          "explain": "Get Cyber Safe says to use a strong log-in password and lock the computer when you are not around."
+        },
+        {
+          "prompt": "On a phone, auto-lock is useful because:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "It locks the device after a short time if you are not using it"
+            },
+            {
+              "id": "B",
+              "text": "It deletes all of your photos every night"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "True or false: It is safe to keep your password on a note stuck to the screen.",
+          "choices": [
+            {
+              "id": "A",
+              "text": "True"
+            },
+            {
+              "id": "B",
+              "text": "False"
+            }
+          ],
+          "answer": "B",
+          "explain": "Get Cyber Safe says not to write a password down and store it near the computer."
+        },
+        {
+          "prompt": "If you open the wrong window or page, a useful first try is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Throw out the device"
+            },
+            {
+              "id": "B",
+              "text": "Look for Back, an X to close, or the phone’s Home control"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Files, folders, and finding your work",
+      "html": "<p>A <strong>file</strong> is one piece of saved work, such as a letter, a photo, or a spreadsheet. A <strong>folder</strong> is a container that holds files (and sometimes other folders). Skills for Success includes storing and organizing digital information in a logical way using files, folders, and labels — for example, downloading a file into a folder on your computer.</p>\n<p>On a Windows computer, <strong>File Explorer</strong> helps you find, open, organize, and manage files and folders. Microsoft’s help says you can open File Explorer from the taskbar or the Start menu, or by pressing the Windows logo key and the letter <strong>E</strong>.</p>\n<p>Common folders you may see include <strong>Documents</strong>, <strong>Downloads</strong>, <strong>Pictures</strong>, <strong>Music</strong>, and <strong>Videos</strong>. Many apps save everyday files into one of these folders, which makes them easier to find later.</p>\n<p><strong>Habits that help:</strong></p>\n<ol>\n<li>Give a file a clear name you will remember, such as <code>rent-receipt-november</code> rather than <code>document1</code>.</li>\n<li>Save related files in the same folder.</li>\n<li>Use the search box in File Explorer if you forget where a file went. Microsoft says you can search from File Explorer Home, or search inside a folder such as Downloads.</li>\n<li>To move a file, Microsoft’s File Explorer help says to select it, choose <strong>Cut</strong>, go to the new place, then choose <strong>Paste</strong>.</li>\n</ol>\n<p>On a phone, files may sit in Photos, Files, Downloads, or inside an app. The idea is the same: know where you saved something.</p>\n<p>Ask a tutor before you permanently delete a file you might still need.</p>",
+      "sources": [
+        {
+          "label": "Skills for Success — digital skill components",
+          "url": "https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/learning-steps.html"
+        },
+        {
+          "label": "File Explorer in Windows",
+          "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A folder is best described as:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A container that can hold files"
+            },
+            {
+              "id": "B",
+              "text": "The power button"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "On Windows, one official way to open File Explorer is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Shaking the computer"
+            },
+            {
+              "id": "B",
+              "text": "Selecting it on the taskbar or Start menu, or pressing the Windows logo key + E"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "Downloads is often the folder where:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Files you save from the internet are placed"
+            },
+            {
+              "id": "B",
+              "text": "The computer stores only printer ink levels"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "To move a file in File Explorer, Microsoft’s help describes:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Cut, go to the new location, then Paste"
+            },
+            {
+              "id": "B",
+              "text": "Throwing the keyboard away"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Connect to the internet with care",
+      "html": "<p>The <strong>internet</strong> lets your device visit websites, send messages, and use many apps. A common way to connect is <strong>Wi-Fi</strong>.</p>\n<p>On Windows 11, Microsoft’s steps are: select the Network, Sound, or Battery icons on the taskbar to open quick settings; on the Wi-Fi setting, choose Manage Wi-Fi connections; pick the network you want; select Connect; then type the network password and select Next. On Windows 10, select the Network icon on the taskbar, choose the network, select Connect, and type the password.</p>\n<p>Use a network you trust, such as your home Wi-Fi or a network a staff person names at the learning centre. Get Cyber Safe warns that public Wi-Fi is convenient but less safe. Anyone can join, including people who should not see your information. Criminals sometimes set up <strong>fake</strong> hotspots with a name that looks almost real. When you can, ask someone at the place hosting the Wi-Fi for the real network name.</p>\n<p>If you must use public Wi-Fi:</p>\n<ul>\n<li>Do not use it for banking or other sensitive information, or to make a purchase.</li>\n<li>Turn Wi-Fi off when you do not need it.</li>\n<li>Prefer websites that show a padlock in the address area (often a sign of a more secure <strong>HTTPS</strong> connection).</li>\n<li>Watch for people reading your screen over your shoulder.</li>\n</ul>\n<p>Get Cyber Safe also says that if you use public Wi-Fi often, a <strong>VPN</strong> (virtual private network) can be a safer option because it encrypts your data. Ask a tutor before you buy or install one. This course does not recommend a brand.</p>",
+      "sources": [
+        {
+          "label": "Connect to a Wi-Fi network in Windows",
+          "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-wi-fi-network-in-windows"
+        },
+        {
+          "label": "Get Cyber Safe — Public Wi-Fi",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-connections/public-wi-fi"
+        },
+        {
+          "label": "Get Cyber Safe — Phones and tablets",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-devices/phones-and-tablets"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "To join Wi-Fi on a Windows computer you usually need:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "The network name and, for most private networks, the password"
+            },
+            {
+              "id": "B",
+              "text": "Your neighbour’s Social Insurance Number"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "Get Cyber Safe says public Wi-Fi is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Always the safest place to do your banking"
+            },
+            {
+              "id": "B",
+              "text": "Convenient, but riskier than a trusted private network"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A fake or “evil twin” hotspot is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A network with a look-alike name meant to trick you"
+            },
+            {
+              "id": "B",
+              "text": "A free printer upgrade"
+            }
+          ],
+          "answer": "A",
+          "explain": "Get Cyber Safe says criminals may create fake hotspots with a similar name. Ask staff for the real network name when you can."
+        },
+        {
+          "prompt": "On public Wi-Fi, a safer habit is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Avoid banking and other sensitive sign-ins"
+            },
+            {
+              "id": "B",
+              "text": "Enter every password you know, just in case"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Simple habits that keep devices safer",
+      "html": "<p>You do not need to become a security expert. A few regular habits help a lot.</p>\n<p><strong>1. Update your software.</strong> Get Cyber Safe says updates often add security protections, not only new features. Skipping updates can leave a device more open to malware and hacking. Turn on automatic updates when you can, for the operating system, apps, browsers, and security software. On a phone, update when the device asks, or turn on automatic updates.</p>\n<p><strong>2. Use strong, unique sign-ins.</strong> Get Cyber Safe recommends a <strong>passphrase</strong> of four or more random words and at least 15 characters when you can. If you use a shorter password style, use at least twelve characters with a mix of letter cases, a number, and a symbol. Use a different password for each important account. Never share a password. Do not send a password by email or text.</p>\n<p><strong>3. Download with care.</strong> On a computer, scan downloads with security software and delete anything it flags. On a phone, Get Cyber Safe says to install apps from trusted stores such as the App Store or Google Play, and to read the permissions an app asks for.</p>\n<p><strong>4. Think before you tap.</strong> Unexpected links and attachments can be risky. If a message feels wrong, do not click. Use a website you type yourself. The Range Path course <em>Email &amp; Online Safety Basics in Canada</em> goes deeper on scams.</p>\n<p>Keep a note of your device’s make and model in a safe place. If a phone is lost, Get Cyber Safe says to contact your service provider and report it to police — do not try to recover stolen property yourself.</p>",
+      "sources": [
+        {
+          "label": "Get Cyber Safe — Software updates",
+          "url": "https://www.getcybersafe.gc.ca/en/resources/fact-sheet-software-updates"
+        },
+        {
+          "label": "Get Cyber Safe — Passphrases, passwords and PINs",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-accounts/passphrases-passwords-and-pins"
+        },
+        {
+          "label": "Get Cyber Safe — Laptops and computers",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-devices/laptops-and-computers"
+        },
+        {
+          "label": "Get Cyber Safe — Phones and tablets",
+          "url": "https://www.getcybersafe.gc.ca/en/secure-your-devices/phones-and-tablets"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Software updates are important because they:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Only change the wallpaper"
+            },
+            {
+              "id": "B",
+              "text": "Often add security protections and fix problems"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A strong passphrase, according to Get Cyber Safe, is often:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Four or more random words and at least 15 characters"
+            },
+            {
+              "id": "B",
+              "text": "Your pet’s name"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        },
+        {
+          "prompt": "You should:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "Use the same password on every account"
+            },
+            {
+              "id": "B",
+              "text": "Use unique passwords for important accounts"
+            }
+          ],
+          "answer": "B",
+          "explain": ""
+        },
+        {
+          "prompt": "A safer place to get a phone app is:",
+          "choices": [
+            {
+              "id": "A",
+              "text": "A trusted store such as the App Store or Google Play"
+            },
+            {
+              "id": "B",
+              "text": "A random pop-up that you did not ask for"
+            }
+          ],
+          "answer": "A",
+          "explain": ""
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only.",
+    "questions": [
+      {
+        "prompt": "Digital skill includes using computers, tablets, and smartphones to find and share information.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      },
+      {
+        "prompt": "You should lock a computer or phone when you step away.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      },
+      {
+        "prompt": "File Explorer on Windows helps you find and organize files and folders.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      },
+      {
+        "prompt": "Public Wi-Fi is the recommended place to do your banking.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      },
+      {
+        "prompt": "Software updates are only for new colours and games, never for security.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      },
+      {
+        "prompt": "A passphrase of four random words can be a strong way to protect an account.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      },
+      {
+        "prompt": "This course is a paid tech-repair service and you should type your real passwords into the quiz.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "explain": "Use Lessons 1–5. Lock screens, trusted Wi-Fi, updates, and unique passphrases are everyday safety habits. This course is general information only."
+      }
+    ]
+  },
+  "keptBack": {
+    "sourceDisclaimer": "This course is general information for adult learners in Canada. It is not a tech-support contract, and it is not legal, financial, or privacy advice. Screens and menus can look different on each device. Do not type real passwords into this course. Always check official help pages, or ask staff at your adult learning council, if you are unsure.",
+    "builderNotes": "- Emphasise the disclaimer on every lesson footer. Do not collect real passwords, PINs, or Wi-Fi keys in the course.\n- Link out to Get Cyber Safe and Microsoft Support; do not paste long official passages.\n- Windows Wi-Fi steps differ slightly between Windows 10 and Windows 11 — both are described on the cited Microsoft page.\n- This is device basics, not a repeat of *Email & Online Safety Basics in Canada*. Keep scam content light and point to that course.\n- No Ed2Go / Cengage material. Canadian spelling (centre, practise as a verb, colour in our text). Microsoft buttons may say “Color.”\n- Not a tech-support contract.",
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+  }
+}
