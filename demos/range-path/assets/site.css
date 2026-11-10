@@ -449,17 +449,22 @@ textarea { min-height: 8rem; resize: vertical; }
 .crumbs {
   margin: 0 0 0.8rem;
   font-size: 0.98rem;
-  line-height: 2.75rem;
+  line-height: 1.35;
 }
 .crumbs a,
 .crumbs span {
-  display: inline;
-  padding: 0.15rem 0;
+  display: inline-block;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.55rem 0.2rem 0.55rem 0;
+  box-sizing: border-box;
+  vertical-align: middle;
 }
 .crumbs > * + *::before {
   content: "/\00a0";
 }
 .crumbs .crumb-here {
+  width: auto;
   white-space: nowrap;
 }
 
