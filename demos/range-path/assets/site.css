@@ -446,14 +446,22 @@ textarea { min-height: 8rem; resize: vertical; }
 .field-echo { margin: 0.35rem 0 0; font-weight: 700; }
 .hint { color: var(--muted); font-weight: 500; font-size: 0.98rem; }
 
-.crumbs { margin: 0 0 0.8rem; font-size: 0.98rem; }
-.crumbs a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0.35rem 0.15rem 0.35rem 0;
+.crumbs {
+  margin: 0 0 0.8rem;
+  font-size: 0.98rem;
+  line-height: 2.75rem;
 }
-.crumbs a::after { content: " /"; }
+.crumbs a,
+.crumbs span {
+  display: inline;
+  padding: 0.15rem 0;
+}
+.crumbs > * + *::before {
+  content: "/\00a0";
+}
+.crumbs .crumb-here {
+  white-space: nowrap;
+}
 
 .step-label { font-weight: 700; margin-bottom: 0.35rem; }
 .lesson-list { list-style: none; margin: 0; padding: 0; max-width: 100%; }

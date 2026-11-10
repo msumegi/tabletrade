@@ -253,7 +253,7 @@ ${lessonItems}
   course.lessons.forEach((lesson, index) => {
     const number = index + 1;
     const width = Math.round((number / count) * 100);
-    const lessonMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span>Lesson ${number}</span></p>
+    const lessonMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span class="crumb-here">Lesson ${number}</span></p>
 <p class="step-label">Lesson ${number} of ${count}</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="${count}" aria-valuenow="${number}" aria-label="Lesson ${number} of ${count}"><span style="width:${width}%"></span></div>
 <h1>${esc(lesson.title)}</h1>
@@ -276,7 +276,7 @@ ${sourceList(lesson.sources)}
     );
 
     const last = number === count;
-    const quizMain = `<p class="crumbs"><a href="../../../../">Home</a><a href="../../../../courses/">Courses</a><a href="../../">${esc(course.title)}</a><a href="../">Lesson ${number}</a><span>Quiz</span></p>
+    const quizMain = `<p class="crumbs"><a href="../../../../">Home</a><a href="../../../../courses/">Courses</a><a href="../../">${esc(course.title)}</a><a class="crumb-here" href="../">Lesson ${number}</a><span class="crumb-here">Quiz</span></p>
 <p class="step-label">Quiz · Lesson ${number} of ${count}</p>
 <h1>${esc(lesson.title)}</h1>
 <p>Choose an answer, then check it. Your score stays on this device.</p>
@@ -303,7 +303,7 @@ ${quizForm({
     );
   });
 
-  const finalMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span>Final quiz</span></p>
+  const finalMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span class="crumb-here">Final quiz</span></p>
 <p class="step-label">Final quiz · ${finalCount} questions · pass at ${passLabel}</p>
 <h1>Final quiz</h1>
 <p>${esc(course.title)}</p>
