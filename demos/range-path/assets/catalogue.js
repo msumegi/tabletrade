@@ -448,7 +448,8 @@ window.LEARNHERE = {
             "assignment": "phones-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -902,7 +903,8 @@ window.LEARNHERE = {
             "assignment": "excel-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -1356,7 +1358,8 @@ window.LEARNHERE = {
             "assignment": "word-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -1810,7 +1813,8 @@ window.LEARNHERE = {
             "assignment": "jobsearch-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -2178,7 +2182,8 @@ window.LEARNHERE = {
             "assignment": "outlook-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 16 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -2187,7 +2192,7 @@ window.LEARNHERE = {
       "shortTitle": "Bookkeeping",
       "navLabel": "Bookkeeping",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, or tax, accounting, payroll, or audit advice.",
       "plan": null
@@ -2198,7 +2203,7 @@ window.LEARNHERE = {
       "shortTitle": "Invoices and GST",
       "navLabel": "Invoices",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, bookkeeping licence, software certification, or tax, accounting, payroll, or audit advice.",
       "plan": null
@@ -2209,7 +2214,7 @@ window.LEARNHERE = {
       "shortTitle": "Learn online",
       "navLabel": "Learning",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or guaranteed admission to another program.",
       "plan": null
@@ -2220,7 +2225,7 @@ window.LEARNHERE = {
       "shortTitle": "Work English",
       "navLabel": "English",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, CLB certificate, LINC completion, or CELPIP, IELTS, or TOEFL preparation, and it is not immigration or citizenship advice.",
       "plan": null
@@ -2231,7 +2236,7 @@ window.LEARNHERE = {
       "shortTitle": "Workplace writing",
       "navLabel": "Writing",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Translation Bureau or editing credential.",
       "plan": null
@@ -2242,7 +2247,7 @@ window.LEARNHERE = {
       "shortTitle": "Everyday math",
       "navLabel": "Numeracy",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a high-school or CAEC credit, and it is not tax, lending, investment, or budgeting advice.",
       "plan": null
@@ -2253,7 +2258,7 @@ window.LEARNHERE = {
       "shortTitle": "Project basics",
       "navLabel": "Projects",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or PMI, PMP, or CAPM certification.",
       "plan": null
@@ -2264,7 +2269,7 @@ window.LEARNHERE = {
       "shortTitle": "Grant writing",
       "navLabel": "Grants",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or grant-consultant certification. It is not a promise of funding.",
       "plan": null
@@ -2275,7 +2280,7 @@ window.LEARNHERE = {
       "shortTitle": "Email & Online Safety",
       "navLabel": "Email safety",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
       "plan": null
@@ -2286,7 +2291,7 @@ window.LEARNHERE = {
       "shortTitle": "SIN, CRA & getting paid",
       "navLabel": "SIN and pay",
       "lessons": 5,
-      "featured": true,
+      "featured": false,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.",
       "plan": null

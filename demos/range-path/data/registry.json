@@ -35,61 +35,61 @@
       "slug": "bookkeeping-fundamentals-canada",
       "shortTitle": "Bookkeeping",
       "navLabel": "Bookkeeping",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "invoices-expenses-gst-canada",
       "shortTitle": "Invoices and GST",
       "navLabel": "Invoices",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "how-to-learn-online",
       "shortTitle": "Learn online",
       "navLabel": "Learning",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "everyday-work-english",
       "shortTitle": "Work English",
       "navLabel": "English",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "workplace-writing-grammar-canada",
       "shortTitle": "Workplace writing",
       "navLabel": "Writing",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "everyday-math-numeracy",
       "shortTitle": "Everyday math",
       "navLabel": "Numeracy",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "project-management-basics",
       "shortTitle": "Project basics",
       "navLabel": "Projects",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "writing-simple-grant-application-canada",
       "shortTitle": "Grant writing",
       "navLabel": "Grants",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "email-online-safety",
       "shortTitle": "Email & Online Safety",
       "navLabel": "Email safety",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "sin-cra-getting-paid",
       "shortTitle": "SIN, CRA & getting paid",
       "navLabel": "SIN and pay",
-      "featured": true
+      "featured": false
     },
     {
       "slug": "winter-safety-rural-alberta",

@@ -3,6 +3,25 @@
 
   var LESSONS = 5;
 
+  function certificateId(name, courseTitle, iso) {
+    var alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+    var text = String(name || "").trim().replace(/\s+/g, " ").toLowerCase() + "|" + String(courseTitle || "").trim().replace(/\s+/g, " ").toLowerCase() + "|" + String(iso || "");
+    var h = 2166136261;
+    var i;
+    for (i = 0; i < text.length; i += 1) {
+      h ^= text.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    var out = "";
+    var n = h >>> 0;
+    for (i = 0; i < 8; i += 1) {
+      out += alphabet[n % alphabet.length];
+      n = Math.imul(n ^ (n >>> 15), 16777619) >>> 0;
+    }
+    return "LH-" + out.slice(0, 4) + "-" + out.slice(4);
+  }
+  window.learnHereCertificateId = certificateId;
+
   function empty() {
     return { learnerName: "", councilName: "", courses: {} };
   }
@@ -550,11 +569,22 @@
     if (!locked || !ready) return;
     var learner = document.querySelector("#learner-name");
     var council = document.querySelector("#council-name");
+    var issuer = document.querySelector("#issuer-name");
+    var issuerTitle = document.querySelector("#issuer-title");
+    var logoInput = document.querySelector("#council-logo");
+    var logoClear = document.querySelector("#council-logo-clear");
     var coursePick = document.querySelector("#cert-course");
     var learnerOut = document.querySelector("#cert-learner");
     var councilOut = document.querySelector("#cert-council");
     var titleOut = document.querySelector("#cert-title");
     var dateOut = document.querySelector("#cert-date");
+    var idOut = document.querySelector("#cert-id");
+    var issuerOut = document.querySelector("#cert-issuer");
+    var issuerTitleOut = document.querySelector("#cert-issuer-title");
+    var logoImg = document.querySelector("#cert-logo");
+    var logoEmpty = document.querySelector("#cert-logo-empty");
+    var sampleFlag = document.querySelector("#cert-sample");
+    var sheet = document.querySelector("#certificate");
     var state = document.querySelector("#cert-state");
     var learnerEcho = document.querySelector("#learner-echo");
     var councilEcho = document.querySelector("#council-echo");
@@ -580,7 +610,7 @@
       var linkList = document.querySelector("#cert-course-links");
       if (linkList) {
         linkList.textContent = "";
-        listed.forEach(function (item) {
+        listed.filter(function (item) { return item.featured && !item.extra; }).forEach(function (item) {
           var li = document.createElement("li");
           var link = document.createElement("a");
           link.href = "../courses/" + encodeURIComponent(item.id) + "/final/";
@@ -590,12 +620,18 @@
         });
       }
     } else {
-      order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
+      order = ["excel-basics-canada"];
       titles = {
-        "email-online-safety": "Email & Online Safety Basics in Canada",
-        "sin-cra-getting-paid": "Your SIN, CRA My Account & Getting Paid in Canada",
-        "winter-safety-rural-alberta": "Winter Safety & Driving in Rural Alberta"
+        "excel-basics-canada": "Microsoft Excel Basics (Canada)"
       };
+      if (coursePick) {
+        var fallback = document.createElement("option");
+        fallback.value = "excel-basics-canada";
+        fallback.textContent = "Microsoft Excel Basics (Canada)";
+        fallback.setAttribute("data-note", "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or tax, payroll, or financial advice.");
+        coursePick.textContent = "";
+        coursePick.appendChild(fallback);
+      }
     }
 
     function passedFinal(id) {
@@ -633,6 +669,8 @@
     ready.hidden = false;
     if (learner && data.learnerName) learner.value = data.learnerName;
     if (council && data.councilName) council.value = data.councilName;
+    if (issuer && data.issuerName) issuer.value = data.issuerName;
+    if (issuerTitle && data.issuerTitle) issuerTitle.value = data.issuerTitle;
     if (coursePick) {
       Array.prototype.slice.call(coursePick.options).forEach(function (option) {
         if (passedIds.indexOf(option.value) === -1) option.remove();
@@ -640,11 +678,51 @@
       coursePick.value = showId;
     }
 
+    function longDate(iso) {
+      var parts = String(iso || "").split("-");
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      if (parts.length < 3) return iso || "";
+      var month = months[Number(parts[1]) - 1];
+      var day = Number(parts[2]);
+      if (!month || !day) return iso;
+      return day + " " + month + " " + parts[0];
+    }
+
+    function studyHours(label) {
+      var match = String(label || "").match(/About\s+[0-9]+(?:[–-][0-9]+)?\s+hours/i);
+      if (!match) return "";
+      return match[0].replace(/hours/i, "hours of study");
+    }
+
+    function showLogo(src) {
+      if (!logoImg) return;
+      if (src) {
+        logoImg.src = src;
+        logoImg.hidden = false;
+        logoImg.alt = "Council logo";
+      } else {
+        logoImg.removeAttribute("src");
+        logoImg.hidden = true;
+        logoImg.alt = "";
+      }
+    }
+
+    function logoError(message) {
+      var live = document.querySelector("#logo-error");
+      if (!live) return;
+      live.hidden = !message;
+      live.textContent = message || "";
+    }
+
     function paint() {
       var name = (learner && learner.value.trim()) || "Sample Learner";
       var org = (council && council.value.trim()) || "EXAMPLE Community Adult Learning";
+      var signed = issuer && issuer.value.trim() ? issuer.value.trim() : "Avery Cho";
+      var role = issuerTitle && issuerTitle.value.trim() ? issuerTitle.value.trim() : "Program coordinator";
       if (learnerOut) learnerOut.textContent = name;
       if (councilOut) councilOut.textContent = org;
+      if (issuerOut) issuerOut.textContent = signed;
+      if (issuerTitleOut) issuerTitleOut.textContent = role;
       if (learnerEcho) learnerEcho.textContent = name;
       if (councilEcho) councilEcho.textContent = org;
       var id = coursePick ? coursePick.value : showId;
@@ -657,16 +735,92 @@
         limitOut.textContent = option.getAttribute("data-note");
       }
       var fin = passedFinal(id);
-      if (dateOut) dateOut.textContent = fin && fin.date ? fin.date : "";
+      var iso = fin && fin.date ? fin.date : "";
+      if (dateOut) dateOut.textContent = longDate(iso);
+      if (idOut) idOut.textContent = certificateId(name, title, iso);
+      var hoursOut = document.querySelector("#cert-hours");
+      var courseMeta = (window.LEARNHERE && window.LEARNHERE.courses || []).filter(function (item) { return item.id === id; })[0];
+      var hoursText = studyHours(courseMeta && courseMeta.plan && courseMeta.plan.hoursLabel);
+      if (hoursOut) hoursOut.textContent = hoursText;
+      var demo = /(?:\?|&)demo=1(?:&|$)/.test(window.location.search) || Boolean(data.example);
+      if (sheet) sheet.classList.toggle("is-sample", demo);
+      if (sampleFlag) sampleFlag.hidden = !demo;
+      var watermark = document.querySelector("#cert-watermark");
+      if (watermark) watermark.hidden = !demo;
+      var pageTitle = (title || "Course") + " certificate · LearnHere";
+      if (demo) pageTitle = "Sample · " + pageTitle;
+      document.title = pageTitle;
+      var heading = document.querySelector("#cert-page-title");
+      if (heading) heading.textContent = demo ? "Sample certificate" : (title || "Course") + " certificate";
+      showLogo(data.councilLogo || "");
       if (state && fin) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";
       if (learner) data.learnerName = learner.value.trim();
       if (council) data.councilName = council.value.trim();
+      if (issuer) data.issuerName = issuer.value.trim();
+      if (issuerTitle) data.issuerTitle = issuerTitle.value.trim();
       save(data);
+    }
+
+    function storeLogo(dataUrl) {
+      data.councilLogo = dataUrl || "";
+      showLogo(data.councilLogo);
+      save(data);
+    }
+
+    if (logoInput) {
+      logoInput.addEventListener("change", function () {
+        var file = logoInput.files && logoInput.files[0];
+        if (!file) return;
+        var allowed = /^(image\/png|image\/jpeg|image\/webp|image\/svg\+xml)$/.test(file.type) || /\.(png|jpe?g|webp|svg)$/i.test(file.name);
+        if (!allowed) {
+          logoInput.value = "";
+          logoError("Use a PNG, JPG, SVG, or WebP logo. Nothing was saved.");
+          return;
+        }
+        if (file.size > 2 * 1024 * 1024) {
+          logoInput.value = "";
+          logoError("That file is over 2 MB. Choose a smaller logo. Nothing was saved.");
+          return;
+        }
+        logoError("");
+        var reader = new FileReader();
+        reader.onload = function () {
+          if (/svg/i.test(file.type) || /\.svg$/i.test(file.name)) {
+            storeLogo(reader.result);
+            return;
+          }
+          var img = new Image();
+          img.onload = function () {
+            var max = 240;
+            var scale = Math.min(1, max / Math.max(img.width, img.height));
+            var canvas = document.createElement("canvas");
+            canvas.width = Math.max(1, Math.round(img.width * scale));
+            canvas.height = Math.max(1, Math.round(img.height * scale));
+            var ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            storeLogo(canvas.toDataURL("image/png"));
+          };
+          img.onerror = function () {
+            logoError("That image could not be read. Nothing was saved.");
+          };
+          img.src = reader.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+    if (logoClear) {
+      logoClear.addEventListener("click", function () {
+        if (logoInput) logoInput.value = "";
+        storeLogo("");
+      });
     }
 
     ["input", "change"].forEach(function (type) {
       if (learner) learner.addEventListener(type, paint);
       if (council) council.addEventListener(type, paint);
+      if (issuer) issuer.addEventListener(type, paint);
+      if (issuerTitle) issuerTitle.addEventListener(type, paint);
       if (coursePick) coursePick.addEventListener(type, paint);
     });
     paint();
@@ -959,8 +1113,13 @@
         questions.forEach(function (question, index) {
           var chosen = question.querySelector("input:checked");
           var legend = question.querySelector("legend");
+          var words = "Not answered";
+          if (chosen) {
+            var span = chosen.parentNode.querySelector("span");
+            words = span ? span.textContent : chosen.value;
+          }
           var li = document.createElement("li");
-          li.textContent = (legend ? legend.textContent : "Question " + (index + 1)) + " — " + (chosen ? chosen.value : "Not answered");
+          li.textContent = (legend ? legend.textContent : "Question " + (index + 1)) + " — " + words;
           list.appendChild(li);
         });
         review.appendChild(list);
@@ -1163,17 +1322,36 @@
       if (passed) note.textContent = "That meets the pass mark. You can open the sample certificate.";
       else if (leftNow > 0) note.textContent = "That is under the pass mark. Attempts remaining: " + leftNow + ".";
       else note.textContent = "That is under the pass mark, and no attempts are left. Council staff can reset the exam from the staff demo.";
+      var answers = document.createElement("ol");
+      answers.className = "exam-answers";
+      key.forEach(function (item, index) {
+        var question = form.querySelector('[data-exam-q="' + index + '"]');
+        var chosen = form.querySelector('input[name="e' + index + '"]:checked');
+        function words(value) {
+          if (!question || !value) return value || "";
+          var input = question.querySelector('input[value="' + value + '"]');
+          var span = input && input.parentNode.querySelector("span");
+          return span ? span.textContent : value;
+        }
+        var li = document.createElement("li");
+        li.textContent = "You chose: " + words(chosen && chosen.value) + ". Correct answer: " + words(item.answer) + ".";
+        answers.appendChild(li);
+      });
       var topics = document.createElement("div");
       if (missed.length) {
         var title = document.createElement("p");
-        title.textContent = "Topics to review:";
+        title.textContent = "Lessons to review:";
         topics.appendChild(title);
         var list = document.createElement("ul");
+        var seenTopic = {};
         missed.forEach(function (item) {
+          var label = item.topic || "Review this lesson";
+          if (seenTopic[label]) return;
+          seenTopic[label] = true;
           var li = document.createElement("li");
           var link = document.createElement("a");
           link.href = item.review || "../";
-          link.textContent = item.topic || "Review this lesson";
+          link.textContent = label;
           li.appendChild(link);
           list.appendChild(li);
         });
@@ -1196,7 +1374,7 @@
         again.addEventListener("click", function () { window.location.reload(); });
         actions.appendChild(again);
       }
-      live.replaceChildren(heading, note, topics, actions);
+      live.replaceChildren(heading, note, answers, topics, actions);
     });
   }
 
@@ -1382,7 +1560,7 @@
       var h3 = document.createElement("h3");
       h3.textContent = course.courseTitle;
       var body = document.createElement("p");
-      body.textContent = "Category: " + humanEnum(course.calpCategoryTag || "not set") + ". " + humanEnum(course.opportunityType || "undecided") + ". " + course.learners + " learner codes, " + course.starts + " starts, " + course.completions + " completions (" + course.completionRate + "%). Stated hours " + course.statedCourseHours + " for the lessons that are ready. Estimated hours from progress: " + course.estimatedHoursTotal + ".";
+      body.textContent = "Category: " + humanEnum(course.calpCategoryTag || "not set") + ". " + humanEnum(course.opportunityType || "undecided") + ". " + course.learners + " learner codes, " + course.starts + " starts, " + course.completions + " completions (" + course.completionRate + "%). Stated hours " + course.statedCourseHours + ". Estimated hours from progress: " + course.estimatedHoursTotal + ".";
       card.appendChild(h3);
       card.appendChild(body);
       courseList.appendChild(card);
@@ -1467,10 +1645,10 @@
 
     var printed = document.createElement("article");
     printed.className = "funder-print";
-    printed.innerHTML = "<p class=\"sample-banner\"></p><h1></h1><p class=\"report-period\"></p><h2>Summary</h2><ul class=\"report-totals\"></ul><h2>Per course</h2><div class=\"table-scroll\"><table class=\"report-table\"><thead><tr><th>Course</th><th>Category</th><th>Type</th><th>Learners</th><th>Starts</th><th>Completions</th><th>Rate</th><th>Stated hours</th><th>Estimated hours</th></tr></thead><tbody></tbody></table></div><h2>Notes</h2><p class=\"report-notes\"></p>";
-    printed.querySelector("h1").textContent = productName() + " funder report";
+    printed.innerHTML = "<header class=\"report-brand\"><p class=\"sample-banner\"></p><p class=\"report-logo\"><svg class=\"mark\" viewBox=\"0 0 32 32\" width=\"28\" height=\"28\" aria-hidden=\"true\"><rect width=\"32\" height=\"32\" rx=\"7\" fill=\"#123c2e\"/><path d=\"M6.5 23.5c4-8 7.2-8.4 10-3.6 2.2 3.8 4.6 3.2 9.2-8.4\" fill=\"none\" stroke=\"#f4efe4\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><circle cx=\"25.2\" cy=\"11.2\" r=\"2.1\" fill=\"#e4c27a\"/></svg> LearnHere</p><h1>LearnHere funder report</h1><p class=\"report-council\"></p><p class=\"report-period\"></p></header><h2>Summary</h2><ul class=\"report-totals\"></ul><h2>Per course</h2><table class=\"report-table\"><thead><tr><th>Course</th><th>Category</th><th>Type</th><th>Learners</th><th>Starts</th><th>Done</th><th>Rate</th><th>Stated h</th><th>Est. h</th></tr></thead><tbody></tbody></table><h2>Notes</h2><p class=\"report-notes\"></p>";
     printed.querySelector(".sample-banner").textContent = sampleBanner();
-    printed.querySelector(".report-period").textContent = "Reporting period " + report.period.from.slice(0, 10) + " to " + report.period.to.slice(0, 10) + ". Sample grant period " + report.grantPeriod.start + " to " + report.grantPeriod.end + ". These dates are a sample selection, not an official funder calendar.";
+    printed.querySelector(".report-council").textContent = (report.org && report.org.name) || "Council";
+    printed.querySelector(".report-period").textContent = "Reporting period " + report.period.from.slice(0, 10) + " to " + report.period.to.slice(0, 10) + ". Sample grant period " + report.grantPeriod.start + " to " + report.grantPeriod.end + ".";
     var totalList = printed.querySelector(".report-totals");
     [
       "Unique learner codes: " + totals.uniqueLearners,
@@ -1488,7 +1666,7 @@
     var tbody = printed.querySelector("tbody");
     (report.courses || []).forEach(function (course) {
       var tr = document.createElement("tr");
-      [course.courseTitle, course.calpCategoryTag, course.opportunityType, course.learners, course.starts, course.completions, course.completionRate + "%", course.statedHoursTotal, course.estimatedHoursTotal].forEach(function (value) {
+      [course.courseTitle, humanEnum(course.calpCategoryTag || "not set"), humanEnum(course.opportunityType || "undecided"), course.learners, course.starts, course.completions, course.completionRate + "%", course.statedHoursTotal, course.estimatedHoursTotal].forEach(function (value) {
         var td = document.createElement("td");
         td.textContent = value == null ? "" : String(value);
         tr.appendChild(td);
@@ -1527,13 +1705,7 @@
     var course = "";
     try { course = new URLSearchParams(window.location.search).get("course") || ""; } catch (err) { course = ""; }
     var items = Array.prototype.slice.call(list.querySelectorAll("li"));
-    if (!course) {
-      list.hidden = true;
-      var note = document.createElement("p");
-      note.textContent = "Open the certificate from the course you passed. This page then shows that course only.";
-      list.insertAdjacentElement("beforebegin", note);
-      return;
-    }
+    if (!course) return;
     items.forEach(function (item) {
       var link = item.querySelector("a");
       var href = link ? link.getAttribute("href") || "" : "";

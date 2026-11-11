@@ -244,6 +244,7 @@ function coursePlan(course) {
     exam: Boolean(course.finalExam),
     attemptLimit: course.finalExam ? course.finalExam.attemptLimit || 2 : 0,
     statedHours: course.player && course.player.estimatedMinutes ? Math.round((course.player.estimatedMinutes / 60) * 10) / 10 : null,
+    hoursLabel: (course.player && course.player.hoursLabel) || "",
     lessons: course.lessons.map((lesson, index) => ({
       n: index + 1,
       title: lesson.title,
@@ -356,8 +357,14 @@ function syllabusExtras(course, passLabel) {
   const hours = minutes ? Math.round((minutes / 60) * 10) / 10 : 0;
   const attempts = course.finalExam ? course.finalExam.attemptLimit || 2 : 0;
   const later = (course.comingSoon || []).length;
+  const practiceLabel = {
+    "word-basics-canada": "practice documents",
+    "outlook-workplace-email": "practice message files",
+    "job-search-canada": "practice worksheets",
+    "everyday-computers-smartphones": "practice checklists"
+  };
   const included = {
-    practiceFile: "a practice workbook",
+    practiceFile: practiceLabel[course.slug] || "a practice workbook",
     checks: "in-lesson checks",
     assignment: "a practice task in each ready lesson",
     cheatSheets: "a cheat sheet you can print",
@@ -831,6 +838,7 @@ ${extras.map(({ course }) => catalogueCard(course)).join("\n")}
   const certFile = path.join(demoRoot, "certificate", "index.html");
   let cert = fs.readFileSync(certFile, "utf8");
   const links = courses
+    .filter(({ entry }) => entry.featured !== false && !entry.extra)
     .map(
       ({ course }) =>
         `<li><a href="../courses/${esc(course.slug)}/final/">${esc(course.title)} final quiz</a></li>`
