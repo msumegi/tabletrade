@@ -910,33 +910,1276 @@ window.LEARNHERE = {
       "title": "Microsoft Word Basics (Canada)",
       "shortTitle": "Word basics",
       "navLabel": "Word",
-      "lessons": 5,
+      "lessons": 10,
       "featured": true,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or legal, career, or immigration advice.",
-      "plan": null
+      "plan": {
+        "id": "word-basics-canada",
+        "requireAllLessons": true,
+        "exam": true,
+        "attemptLimit": 2,
+        "statedHours": null,
+        "lessons": [
+          {
+            "n": 1,
+            "title": "Start Word and look around",
+            "sections": [
+              {
+                "id": "chapter-1-what-word-is-for-and-how-to-start-it",
+                "title": "What Word is for, and how to start it",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-a-tour-of-the-word-window",
+                "title": "A tour of the Word window",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-file-ribbon-and-how-to-leave-without-a",
+                "title": "File, ribbon, and how to leave without a scare",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-starting-word-at-a-library-comp",
+                "title": "Worked example 1. Starting Word at a library computer",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-closing-by-mistake",
+                "title": "Worked example 2. Closing by mistake",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-1",
+            "quiz": true
+          },
+          {
+            "n": 2,
+            "title": "Type, select, undo, and redo",
+            "sections": [
+              {
+                "id": "chapter-1-type-and-press-enter-only-when-you-mea",
+                "title": "Type, and press Enter only when you mean a new paragraph",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-select-text-before-you-change-it",
+                "title": "Select text before you change it",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-undo-and-redo-are-everyday-safety-nets",
+                "title": "Undo and redo are everyday safety nets",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-replacing-one-sentence",
+                "title": "Worked example 1. Replacing one sentence",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-undo-after-a-slip",
+                "title": "Worked example 2. Undo after a slip",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-2",
+            "quiz": true
+          },
+          {
+            "n": 3,
+            "title": "Save, name, and reopen a file",
+            "sections": [
+              {
+                "id": "chapter-1-why-saving-matters",
+                "title": "Why saving matters",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-save-the-first-time-then-save-again",
+                "title": "Save the first time, then save again",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-open-the-file-again",
+                "title": "Open the file again",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-first-save-with-a-clear-name",
+                "title": "Worked example 1. A first save with a clear name",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-opening-from-recent",
+                "title": "Worked example 2. Opening from Recent",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-3",
+            "quiz": true
+          },
+          {
+            "n": 4,
+            "title": "Font, size, bold, and lists",
+            "sections": [
+              {
+                "id": "chapter-1-select-then-use-the-font-group",
+                "title": "Select, then use the Font group",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-make-a-bulleted-or-numbered-list",
+                "title": "Make a bulleted or numbered list",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-headings-wait-for-styles-lists-and-bol",
+                "title": "Headings wait for styles — lists and bold are not the same job",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-bold-a-date",
+                "title": "Worked example 1. Bold a date",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-bring-list-on-a-notice",
+                "title": "Worked example 2. A “bring” list on a notice",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-4",
+            "quiz": true
+          },
+          {
+            "n": 5,
+            "title": "Headings that use styles",
+            "sections": [
+              {
+                "id": "chapter-1-a-style-is-more-than-bigger-bold-text",
+                "title": "A style is more than bigger, bold text",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-apply-a-heading-style-from-the-home-ta",
+                "title": "Apply a heading style from the Home tab",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-change-the-look-of-many-headings-at-on",
+                "title": "Change the look of many headings at once",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-notice-title",
+                "title": "Worked example 1. A notice title",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-two-levels-on-a-longer-page",
+                "title": "Worked example 2. Two levels on a longer page",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-5",
+            "quiz": true
+          },
+          {
+            "n": 6,
+            "title": "Margins, page numbers, and a simple header",
+            "sections": [
+              {
+                "id": "chapter-1-margins-give-the-page-a-quiet-edge",
+                "title": "Margins give the page a quiet edge",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-a-simple-header-with-a-caution",
+                "title": "A simple header, with a caution",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-add-a-page-number",
+                "title": "Add a page number",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-normal-margins-on-a-notice",
+                "title": "Worked example 1. Normal margins on a notice",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-short-header-and-a-page-numbe",
+                "title": "Worked example 2. A short header and a page number",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-6",
+            "quiz": true
+          },
+          {
+            "n": 7,
+            "title": "Check spelling in Canadian English",
+            "sections": [
+              {
+                "id": "chapter-1-word-can-only-check-the-language-it-is",
+                "title": "Word can only check the language it is set to use",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-set-the-proofing-language-for-your-tex",
+                "title": "Set the proofing language for your text",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-add-a-language-and-read-every-suggesti",
+                "title": "Add a language, and read every suggestion",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-notice-that-uses-centre-and-c",
+                "title": "Worked example 1. A notice that uses *centre* and *colour*",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-reading-a-suggestion",
+                "title": "Worked example 2. Reading a suggestion",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-7",
+            "quiz": true
+          },
+          {
+            "n": 8,
+            "title": "A small table and a picture with alt text",
+            "sections": [
+              {
+                "id": "chapter-1-a-table-is-for-simple-facts-not-for-de",
+                "title": "A table is for simple facts, not for decoration",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-pictures-need-words-as-well-as-pixels",
+                "title": "Pictures need words as well as pixels",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-add-alt-text-and-check-the-page",
+                "title": "Add alt text, and check the page",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-opening-hours-in-a-tiny-table",
+                "title": "Worked example 1. Opening hours in a tiny table",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-alt-text-for-a-hall-photo",
+                "title": "Worked example 2. Alt text for a hall photo",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-8",
+            "quiz": true
+          },
+          {
+            "n": 9,
+            "title": "Write a short Canadian letter or community notice",
+            "sections": [
+              {
+                "id": "chapter-1-choose-a-letter-or-a-notice-not-a-new-",
+                "title": "Choose a letter or a notice, not a new kind of writing course",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-build-the-page-with-the-tools-you-alre",
+                "title": "Build the page with the tools you already have",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-read-the-page-the-way-another-person-w",
+                "title": "Read the page the way another person would",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-finishing-the-hall-letter",
+                "title": "Worked example 1. Finishing the hall letter",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-finishing-the-market-notice",
+                "title": "Worked example 2. Finishing the market notice",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-9",
+            "quiz": true
+          },
+          {
+            "n": 10,
+            "title": "Preview, print, and export a PDF",
+            "sections": [
+              {
+                "id": "chapter-1-preview-before-you-spend-paper",
+                "title": "Preview before you spend paper",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-save-a-pdf-so-the-page-travels-well",
+                "title": "Save a PDF so the page travels well",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-finish-the-capstone-then-take-the-exam",
+                "title": "Finish the capstone, then take the exam",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-preview-then-wait-to-print",
+                "title": "Worked example 1. Preview, then wait to print",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-pdf-for-the-tutor",
+                "title": "Worked example 2. A PDF for the tutor",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              },
+              {
+                "id": "capstone",
+                "title": "Capstone",
+                "optional": false
+              }
+            ],
+            "assignment": "word-capstone",
+            "quiz": true
+          }
+        ]
+      }
     },
     {
       "id": "job-search-canada",
       "title": "Job Search and Employment Readiness in Canada",
       "shortTitle": "Job search",
       "navLabel": "Job search",
-      "lessons": 5,
+      "lessons": 10,
       "featured": true,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice.",
-      "plan": null
+      "plan": {
+        "id": "job-search-canada",
+        "requireAllLessons": true,
+        "exam": true,
+        "attemptLimit": 2,
+        "statedHours": null,
+        "lessons": [
+          {
+            "n": 1,
+            "title": "Plan a search that fits your life",
+            "sections": [
+              {
+                "id": "chapter-1-a-search-is-a-plan-not-any-job",
+                "title": "A search is a plan, not “any job”",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-treat-the-search-like-work-you-can-org",
+                "title": "Treat the search like work you can organize",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-know-where-official-help-lives",
+                "title": "Know where official help lives",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-hours-that-will-actually-work",
+                "title": "Worked example 1. Hours that will actually work",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-one-page-master-list",
+                "title": "Worked example 2. A one-page master list",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-1",
+            "quiz": true
+          },
+          {
+            "n": 2,
+            "title": "Find postings on Job Bank and on alis",
+            "sections": [
+              {
+                "id": "chapter-1-start-with-official-canadian-job-board",
+                "title": "Start with official Canadian job boards",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-search-with-a-title-and-a-place",
+                "title": "Search with a title and a place",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-use-alis-beside-job-bank-not-instead-o",
+                "title": "Use alis beside Job Bank, not instead of thinking",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-small-town-search",
+                "title": "Worked example 1. A small-town search",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-alis-for-the-how-job-bank-for-t",
+                "title": "Worked example 2. Alis for the how, Job Bank for the listings",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-2",
+            "quiz": true
+          },
+          {
+            "n": 3,
+            "title": "Read a posting and decide if you can apply",
+            "sections": [
+              {
+                "id": "chapter-1-a-posting-is-a-set-of-instructions-not",
+                "title": "A posting is a set of instructions, not a poster",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-compare-the-posting-with-your-plan-and",
+                "title": "Compare the posting with your plan and your skills",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-decide-apply-tailor-first-or-wait",
+                "title": "Decide: apply, tailor first, or wait",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-matching-the-sample-attendant-p",
+                "title": "Worked example 1. Matching the sample attendant posting",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-posting-that-does-not-fit",
+                "title": "Worked example 2. A posting that does not fit",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-3",
+            "quiz": true
+          },
+          {
+            "n": 4,
+            "title": "Build a master list of your skills and work history",
+            "sections": [
+              {
+                "id": "chapter-1-a-master-list-is-the-long-version-you-",
+                "title": "A master list is the long version you keep for yourself",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-skills-results-and-work-you-might-over",
+                "title": "Skills, results, and work you might overlook",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-references-and-how-to-keep-the-list-us",
+                "title": "References, and how to keep the list usable",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-turning-volunteer-hours-into-sk",
+                "title": "Worked example 1. Turning volunteer hours into skills",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-asking-a-reference-early",
+                "title": "Worked example 2. Asking a reference early",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-4",
+            "quiz": true
+          },
+          {
+            "n": 5,
+            "title": "Write a Canadian resume for one job",
+            "sections": [
+              {
+                "id": "chapter-1-tailor-the-page-to-one-posting",
+                "title": "Tailor the page to one posting",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-choose-a-layout-that-fits-your-history",
+                "title": "Choose a layout that fits your history",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-proofread-then-stop-adding-extras",
+                "title": "Proofread, then stop adding extras",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-keywords-from-the-sample-postin",
+                "title": "Worked example 1. Keywords from the sample posting",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-choosing-a-layout",
+                "title": "Worked example 2. Choosing a layout",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-5",
+            "quiz": true
+          },
+          {
+            "n": 6,
+            "title": "Write a short cover letter or email",
+            "sections": [
+              {
+                "id": "chapter-1-a-cover-letter-is-an-introduction-not-",
+                "title": "A cover letter is an introduction, not a second resume",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-a-simple-shape-that-official-pages-agr",
+                "title": "A simple shape that official pages agree on",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-tailor-it-then-leave-it-alone",
+                "title": "Tailor it, then leave it alone",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-three-part-sampletown-email",
+                "title": "Worked example 1. A three-part Sampletown email",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-letter-that-tries-to-do-too-m",
+                "title": "Worked example 2. A letter that tries to do too much",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-6",
+            "quiz": true
+          },
+          {
+            "n": 7,
+            "title": "Apply online with care (accounts and attachments)",
+            "sections": [
+              {
+                "id": "chapter-1-follow-the-instructions-on-the-posting",
+                "title": "Follow the instructions on the posting",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-job-bank-accounts-alerts-and-your-sin",
+                "title": "Job Bank accounts, alerts, and your SIN",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-attachments-forms-and-knowing-when-to-",
+                "title": "Attachments, forms, and knowing when to stop",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-standard-account-without-extr",
+                "title": "Worked example 1. A Standard account without extra services",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-checking-an-attachment",
+                "title": "Worked example 2. Checking an attachment",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-7",
+            "quiz": true
+          },
+          {
+            "n": 8,
+            "title": "Prepare for an interview using official tips",
+            "sections": [
+              {
+                "id": "chapter-1-an-interview-is-a-meeting-not-a-verdic",
+                "title": "An interview is a meeting, not a verdict",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-star-stars-and-stories-you-can-tell-ho",
+                "title": "STAR, STARS, and stories you can tell honestly",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-the-day-of-the-interview-and-your-ques",
+                "title": "The day of the interview, and your questions",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-stars-card-for-sampletown",
+                "title": "Worked example 1. A STARS card for Sampletown",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-practice-run-with-a-friend",
+                "title": "Worked example 2. A practice run with a friend",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-8",
+            "quiz": true
+          },
+          {
+            "n": 9,
+            "title": "After the interview: thank-you notes and next steps",
+            "sections": [
+              {
+                "id": "chapter-1-write-down-the-interview-while-you-rem",
+                "title": "Write down the interview while you remember it",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-send-a-short-specific-thank-you",
+                "title": "Send a short, specific thank-you",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-if-you-hear-nothing-or-you-hear-no",
+                "title": "If you hear nothing — or you hear no",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-same-day-thank-you",
+                "title": "Worked example 1. A same-day thank-you",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-notes-that-help-the-next-interv",
+                "title": "Worked example 2. Notes that help the next interview",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              }
+            ],
+            "assignment": "self-check-9",
+            "quiz": true
+          },
+          {
+            "n": 10,
+            "title": "Offers, pay questions, and when to ask a person for help",
+            "sections": [
+              {
+                "id": "chapter-1-an-offer-is-more-than-one-pay-number",
+                "title": "An offer is more than one pay number",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-questions-you-can-write-down-and-ones-",
+                "title": "Questions you can write down — and ones this course will not answer",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-accepting-refusing-and-finishing-this-",
+                "title": "Accepting, refusing, and finishing this course",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-reading-beyond-the-hourly-figur",
+                "title": "Worked example 1. Reading beyond the hourly figure",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-two-sample-dates",
+                "title": "Worked example 2. Two sample dates",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "optional-discussion-council-study-group",
+                "title": "Optional discussion (council study group)",
+                "optional": true
+              },
+              {
+                "id": "capstone",
+                "title": "Capstone",
+                "optional": false
+              }
+            ],
+            "assignment": "jobsearch-capstone",
+            "quiz": true
+          }
+        ]
+      }
     },
     {
       "id": "outlook-workplace-email",
-      "title": "Microsoft Outlook and Workplace Email Habits",
+      "title": "Microsoft Outlook and Workplace Email Habits (Canada)",
       "shortTitle": "Outlook email",
       "navLabel": "Outlook",
-      "lessons": 5,
+      "lessons": 8,
       "featured": true,
       "extra": false,
       "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or Microsoft Office Specialist certification.",
-      "plan": null
+      "plan": {
+        "id": "outlook-workplace-email",
+        "requireAllLessons": true,
+        "exam": true,
+        "attemptLimit": 2,
+        "statedHours": null,
+        "lessons": [
+          {
+            "n": 1,
+            "title": "Open Outlook and find Mail and Calendar",
+            "sections": [
+              {
+                "id": "chapter-1-what-outlook-is-and-how-you-start-it",
+                "title": "What Outlook is, and how you start it",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-find-mail-calendar-people-and-tasks",
+                "title": "Find Mail, Calendar, People, and Tasks",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-look-around-without-sending-yet",
+                "title": "Look around without sending yet",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-first-practice-session",
+                "title": "Worked example 1. A first practice session",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-the-library-computer-looks-diff",
+                "title": "Worked example 2. The library computer looks different",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-1",
+            "quiz": true
+          },
+          {
+            "n": 2,
+            "title": "Write and send a clear message",
+            "sections": [
+              {
+                "id": "chapter-1-start-a-new-message",
+                "title": "Start a new message",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-write-a-subject-and-a-short-body",
+                "title": "Write a subject and a short body",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-send-the-message-then-check-that-it-we",
+                "title": "Send the message, then check that it went",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-confirming-saturday-setup",
+                "title": "Worked example 1. Confirming Saturday setup",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-fixing-a-weak-subject",
+                "title": "Worked example 2. Fixing a weak subject",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-2",
+            "quiz": true
+          },
+          {
+            "n": 3,
+            "title": "Reply, Reply All, Forward, and To / Cc / Bcc",
+            "sections": [
+              {
+                "id": "chapter-1-reply-reply-all-and-forward",
+                "title": "Reply, Reply All, and Forward",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-subjects-attachments-and-a-new-set-of-",
+                "title": "Subjects, attachments, and a new set of names",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-to-cc-and-bcc",
+                "title": "To, Cc, and Bcc",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-private-yes-then-a-group-upda",
+                "title": "Worked example 1. A private yes, then a group update",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-forwarding-the-heater-note",
+                "title": "Worked example 2. Forwarding the heater note",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-3",
+            "quiz": true
+          },
+          {
+            "n": 4,
+            "title": "Attachments and a professional tone",
+            "sections": [
+              {
+                "id": "chapter-1-attach-a-file-then-open-or-save-one-yo",
+                "title": "Attach a file, then open or save one you receive",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-treat-unexpected-files-with-care-and-a",
+                "title": "Treat unexpected files with care, and add a simple signature",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-check-the-tone-before-you-send",
+                "title": "Check the tone before you send",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-attaching-a-chair-count-note",
+                "title": "Worked example 1. Attaching a chair-count note",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-an-angry-draft-that-waits",
+                "title": "Worked example 2. An angry draft that waits",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-4",
+            "quiz": true
+          },
+          {
+            "n": 5,
+            "title": "Folders, flags, and finding a message later",
+            "sections": [
+              {
+                "id": "chapter-1-create-a-folder-and-file-a-message",
+                "title": "Create a folder and file a message",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-flag-a-message-you-must-follow-up",
+                "title": "Flag a message you must follow up",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-search-when-you-cannot-remember-the-fo",
+                "title": "Search when you cannot remember the folder",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-saturday-market-folder",
+                "title": "Worked example 1. A Saturday market folder",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-flag-with-a-thursday-reminder",
+                "title": "Worked example 2. A flag with a Thursday reminder",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-5",
+            "quiz": true
+          },
+          {
+            "n": 6,
+            "title": "Spot junk and phishing without panicking",
+            "sections": [
+              {
+                "id": "chapter-1-junk-mail-is-not-the-same-as-a-phishin",
+                "title": "Junk mail is not the same as a phishing trap",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-look-before-you-click",
+                "title": "Look before you click",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-what-to-do-next-without-panic",
+                "title": "What to do next, without panic",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-message-4-stays-unclicked",
+                "title": "Worked example 1. Message 4 stays unclicked",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-newsletter-that-is-only-junk",
+                "title": "Worked example 2. A newsletter that is only junk",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-6",
+            "quiz": true
+          },
+          {
+            "n": 7,
+            "title": "Calendar: appointments and a simple meeting",
+            "sections": [
+              {
+                "id": "chapter-1-an-appointment-is-not-the-same-as-a-me",
+                "title": "An appointment is not the same as a meeting",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-create-an-appointment",
+                "title": "Create an appointment",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-create-a-simple-meeting",
+                "title": "Create a simple meeting",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-a-private-review-hour",
+                "title": "Worked example 1. A private review hour",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-short-briefing-with-jordan",
+                "title": "Worked example 2. A short briefing with Jordan",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              }
+            ],
+            "assignment": "self-check-7",
+            "quiz": true
+          },
+          {
+            "n": 8,
+            "title": "Contacts, tasks, and good daily habits",
+            "sections": [
+              {
+                "id": "chapter-1-people-save-a-name-you-will-write-to-a",
+                "title": "People: save a name you will write to again",
+                "optional": false
+              },
+              {
+                "id": "chapter-2-tasks-a-to-do-item-you-can-find-again",
+                "title": "Tasks: a to-do item you can find again",
+                "optional": false
+              },
+              {
+                "id": "chapter-3-a-calmer-workday-in-outlook",
+                "title": "A calmer workday in Outlook",
+                "optional": false
+              },
+              {
+                "id": "worked-example-1-saving-jordan-as-a-contact",
+                "title": "Worked example 1. Saving Jordan as a contact",
+                "optional": false
+              },
+              {
+                "id": "worked-example-2-a-saturday-chair-task",
+                "title": "Worked example 2. A Saturday chair task",
+                "optional": false
+              },
+              {
+                "id": "try-it",
+                "title": "Try it",
+                "optional": false
+              },
+              {
+                "id": "discussion-optional",
+                "title": "Discussion (optional)",
+                "optional": false
+              },
+              {
+                "id": "capstone",
+                "title": "Capstone",
+                "optional": false
+              }
+            ],
+            "assignment": "outlook-capstone",
+            "quiz": true
+          }
+        ]
+      }
     },
     {
       "id": "bookkeeping-fundamentals-canada",

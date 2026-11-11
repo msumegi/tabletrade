@@ -41,7 +41,7 @@
   <main id="main">
     <div class="wrap">
 <p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">Microsoft Excel Basics (Canada)</a><span class="crumb-here">Lesson 7</span></p>
-<p class="step-label">Lesson 7 of 10 · about 7 min to read</p>
+<p class="step-label">Lesson 7 of 10 · about 15 min to read</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="7" aria-label="Lesson 7 of 10"><span style="width:70%"></span></div>
 <h1>Fill, copy, and when a cell reference should stay put</h1>
 <div class="section-picker">
@@ -49,13 +49,13 @@
   <p class="actions"><a class="btn btn-secondary" data-section-prev href="#section-chapter-1-fill-a-formula-into-the-cells-beside-i">Previous section</a> <a class="btn" data-section-next href="#section-chapter-2-relative-references-move-with-the-form">Next section</a></p>
   <details>
     <summary>Sections in this lesson</summary>
-    <ol><li><a href="#section-chapter-1-fill-a-formula-into-the-cells-beside-i" data-section-link="1">Fill a formula into the cells beside it</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-2-relative-references-move-with-the-form" data-section-link="2">Relative references move with the formula</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-3-lock-a-cell-with-when-it-should-stay-p" data-section-link="3">Lock a cell with $ when it should stay put</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-1-double-each-amount-down-a-colum" data-section-link="4">Worked example 1. Double each amount down a column</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-2-multiply-by-one-sample-rate-tha" data-section-link="5">Worked example 2. Multiply by one sample rate that must stay put</a> <span class="meta">1 min</span></li><li><a href="#section-try-it" data-section-link="6">Try it</a> <span class="meta">1 min</span></li><li><a href="#section-optional-discussion-council-study-group" data-section-link="7">Optional discussion (council study group)</a> <span class="meta">1 min</span></li></ol>
+    <ol><li><a href="#section-chapter-1-fill-a-formula-into-the-cells-beside-i" data-section-link="1">Fill a formula into the cells beside it</a> <span class="meta">3 min</span></li><li><a href="#section-chapter-2-relative-references-move-with-the-form" data-section-link="2">Relative references move with the formula</a> <span class="meta">2 min</span></li><li><a href="#section-chapter-3-lock-a-cell-with-when-it-should-stay-p" data-section-link="3">Lock a cell with $ when it should stay put</a> <span class="meta">2 min</span></li><li><a href="#section-worked-example-1-double-each-amount-down-a-colum" data-section-link="4">Worked example 1. Double each amount down a column</a> <span class="meta">2 min</span></li><li><a href="#section-worked-example-2-multiply-by-one-sample-rate-tha" data-section-link="5">Worked example 2. Multiply by one sample rate that must stay put</a> <span class="meta">2 min</span></li><li><a href="#section-try-it" data-section-link="6">Try it</a> <span class="meta">2 min</span></li><li><a href="#section-optional-discussion-council-study-group" data-section-link="7">Optional discussion (council study group)</a> <span class="meta">2 min</span></li></ol>
   </details>
 </div>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
 <section class="lesson-section longform reading" id="section-chapter-1-fill-a-formula-into-the-cells-beside-i">
   <h2>Fill a formula into the cells beside it</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 3 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Once one formula works, you should not have to retype it on every row. Microsoft's fill page says you can copy formulas into adjacent cells by dragging the <strong>fill handle</strong> — the small square at the corner of the selected cell. Select the cell that has the formula, then drag the fill handle across the cells you want to fill. When you fill down, relative references adjust for each row, unless you used an absolute or mixed reference first.</p>
 <p>If you do not see the fill handle, Microsoft says it may be hidden. On Windows desktop Excel, display it again with <strong>File &gt; Options &gt; Advanced</strong>, and under Editing Options check <strong>Enable fill handle and cell drag-and-drop</strong>. After you drag, a small Auto Fill Options icon may appear so you can change how the fill worked.</p>
@@ -89,7 +89,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-2-relative-references-move-with-the-form">
   <h2>Relative references move with the formula</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>By default, a cell reference is <strong>relative</strong>. Microsoft explains it this way: when you refer to A2 from C2, you are referring to a cell two columns left and in the same row. If you copy <code>=A2+B2</code> from C2 to C3, the references shift down one row and become <code>=A3+B3</code>. The overview page gives another picture: if you copy a relative reference in B2 that points at A1 down to B3, it adjusts from <code>=A1</code> to <code>=A2</code>.</p>
 <p>That is why filling <code>=C15*2</code> from D15 to D16 becomes <code>=C16*2</code>. Excel assumes you want “twice *this* row's amount,” not “twice the first amount, over and over.” For hours, a relative formula on each row is usually what you want.</p>
@@ -105,7 +105,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-3-lock-a-cell-with-when-it-should-stay-p">
   <h2>Lock a cell with $ when it should stay put</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>If you want a reference to stay on one cell when you copy or fill, Microsoft says you “lock” it by putting a dollar sign (<code>$</code>) before the column letter and the row number. That is an <strong>absolute</strong> reference. Their example: if you copy <code>=$A$2+$B$2</code> from C2 to D2, the formula stays exactly the same. The overview page uses <code>$A$1</code> as the pattern: copy or fill it and it still points at A1.</p>
 <p>Microsoft also describes <strong>mixed</strong> references, which lock only the column (<code>$A2</code>) or only the row (<code>B$3</code>). Those are less common in a short everyday list. This course only asks you to lock both parts when one input — such as a single sample rate — should be used on every row: <code>$H$1</code>.</p>
@@ -124,7 +124,7 @@
   <figcaption><ol class="callouts"><li>Without $, H1 becomes H2 when you fill down</li><li>With $H$1, every row keeps the same rate cell</li></ol></figcaption>
 </figure>
 <form class="block block-instant" data-block="check" data-check="excel-absolute-ref" id="excel-absolute-ref">
-  <fieldset class="q"><legend>To keep using the sample rate in H1 on every row, write:</legend><label class="option"><input type="radio" name="excel-absolute-ref" value="A"> <span>H1</span></label><label class="option"><input type="radio" name="excel-absolute-ref" value="B"> <span>$H$1</span></label></fieldset>
+  <fieldset class="q"><legend>To keep using the sample rate in H1 on every row, write:</legend><label class="option"><input type="radio" name="excel-absolute-ref" value="A"> <span>H1</span></label><label class="option"><input type="radio" name="excel-absolute-ref" value="B"> <span>$H$1</span></label><label class="option"><input type="radio" name="excel-absolute-ref" value="C"> <span>H1 without dollar signs — Excel will lock it automatically when you fill down</span></label></fieldset>
   <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
   <p class="feedback" role="status" hidden></p>
   <script type="application/json" class="check-key">{"answer":"B","explain":"$H$1 is an absolute reference. When you fill the formula down, it stays on H1 instead of sliding to H2, H3, and so on."}</script>
@@ -138,7 +138,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-1-double-each-amount-down-a-colum">
   <h2>Worked example 1. Double each amount down a column</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Double each amount down a column</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>On the Practice sheet, type <code>10</code> in C15, <code>20</code> in C16, and <code>30</code> in C17. In D15 type <code>=C15*2</code> and press Enter (the cell should show 20). Drag the fill handle from D15 through D17, or select D15:D17 and choose Home &gt; Fill &gt; Down. D16 should show 40 and D17 should show 60. Click D17: the formula bar should read <code>=C17*2</code>, not <code>=C15*2</code>. The reference moved with the row. That is a relative reference doing its job.</p></div>
@@ -154,7 +154,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-2-multiply-by-one-sample-rate-tha">
   <h2>Worked example 2. Multiply by one sample rate that must stay put</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Multiply by one sample rate that must stay put</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>On the Household sheet, click H1 and type <code>0.05</code>. In I1 type <code>Sample extra rate — not tax advice</code>. In E1 type <code>Sample extra (example only)</code>. In E2 type <code>=C2*$H$1</code> and press Enter. With milk at 5.49, the sample extra is about 0.2745. Fill E2 down through E6. Click E6 (phone card, 25.00): the formula should still mention <code>$H$1</code>, and the result should be 1.25.</p></div>
@@ -170,7 +170,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-try-it">
   <h2>Try it</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><ol><li>Recreate worked example 1 on the Practice sheet (double 10, 20, and 30).</li><li>Put <code>0.05</code> in Household H1 with the “not tax advice” label, write <code>=C2*$H$1</code> in E2, and fill down to E6.</li><li>Click E4 (feed, 45.00) and confirm the formula uses <code>$H$1</code> and the result is 2.25.</li><li>Change H1 from 0.05 to 0.06 and watch the column update. Then put 0.05 back if you want the file to match the model answer.</li></ol></div>
   <p class="actions">
@@ -182,7 +182,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-optional-discussion-council-study-group">
   <h2>Optional discussion (council study group)</h2>
-  <p class="meta">About 1 minute to read, plus a short practice.</p>
+  <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>When have you seen a “total” copied down a list that suddenly turned into zeros? How would reading the formula bar have explained it?</p></div>
 <aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l7-sheet"><h2>Fill and lock a cell — take-home steps</h2><ul><li>Drag the fill handle (small square) to copy into adjacent cells</li><li>Or select the formula plus the empties and use Home &gt; Fill &gt; Down (Ctrl+D)</li><li>Relative references such as A2 shift when you copy them</li><li>An absolute reference such as $H$1 stays put</li><li>Use $ when one sample rate should apply to every row</li><li>A sample extra-rate column is practice math, not tax advice</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>

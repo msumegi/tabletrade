@@ -183,6 +183,35 @@ function sceneSvg(block) {
       <text x="160" y="150" font-size="13" fill="${ink}">Next page</text>
       ${marker(1, 110, 28)}${marker(2, 320, 40)}${marker(3, 300, 190)}`);
   }
+  if (/^word-/.test(id)) {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="20" y="36" font-size="16" fill="${ink}">Word</text>
+      <rect x="20" y="52" width="320" height="148" fill="#fff" stroke="${line}"/>
+      <text x="36" y="84" font-size="14" fill="${ink}">Document</text>
+      <text x="36" y="112" font-size="13" fill="${ink}">Heading</text>
+      <text x="36" y="140" font-size="13" fill="${ink}">Body text</text>
+      ${marker(1, 250, 36)}${marker(2, 200, 84)}${marker(3, 200, 140)}`);
+  }
+  if (/^jobsearch-/.test(id)) {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="20" y="36" font-size="16" fill="${ink}">Sample posting</text>
+      <text x="20" y="68" font-size="13" fill="${ink}">Weekend Attendant</text>
+      <text x="20" y="96" font-size="13" fill="${ink}">Hours: weekends</text>
+      <text x="20" y="124" font-size="13" fill="${ink}">How to apply</text>
+      <text x="20" y="152" font-size="13" fill="${ink}">Closing date</text>
+      ${marker(1, 280, 64)}${marker(2, 280, 96)}${marker(3, 280, 124)}${marker(4, 280, 152)}`);
+  }
+  if (/^outlook-/.test(id)) {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="20" y="36" font-size="16" fill="${ink}">Outlook</text>
+      <rect x="20" y="52" width="90" height="148" fill="#e7f0eb" stroke="${line}"/>
+      <text x="32" y="80" font-size="13" fill="${ink}">Mail</text>
+      <text x="32" y="108" font-size="13" fill="${ink}">Calendar</text>
+      <rect x="124" y="52" width="216" height="148" fill="#fff" stroke="${line}"/>
+      <text x="140" y="84" font-size="13" fill="${ink}">To</text>
+      <text x="140" y="112" font-size="13" fill="${ink}">Subject</text>
+      ${marker(1, 96, 76)}${marker(2, 96, 108)}${marker(3, 300, 84)}`);
+  }
   return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
     <rect x="16" y="16" width="328" height="188" rx="6" fill="#f7f3ea" stroke="${line}" stroke-width="2"/>
     <text x="28" y="40" font-size="14" fill="${ink}">Workbook</text>
@@ -195,7 +224,7 @@ function sceneSvg(block) {
     <text x="36" y="188" font-size="12" fill="#fff">Hours</text>
     <rect x="104" y="174" width="80" height="20" fill="#fff" stroke="${line}"/>
     <text x="112" y="188" font-size="12" fill="${ink}">Household</text>
-    ${marker(1, 300, 36)}${marker(2, 64, 184)}${marker(3, 63, 68)}`);
+    ${marker(1, 300, 36)}${marker(2, 20, 160)}${marker(3, 118, 68)}`);
 }
 
 function annotatedImage(block) {
@@ -255,13 +284,17 @@ function frameKind(block) {
   if (/browser/.test(blob)) return "browser";
   if (/computer|explorer/.test(blob) || /not the real computer/.test(block.caption || "")) return "computer";
   if (/phone|android/.test(blob) || /not the real phone/.test(block.caption || "")) return "phone";
+  if (/not the real Word|\bword-/.test(blob)) return "word";
+  if (/not the real Outlook|outlook-/.test(blob)) return "outlook";
+  if (/Job Bank|jobsearch-|not the real Job Bank/.test(blob)) return "job";
   return "excel";
 }
 
 function simulation(block) {
   const kind = frameKind(block);
-  const caption = block.caption || (kind === "phone" ? "Practice screen — not the real phone." : kind === "computer" ? "Practice screen — not the real computer." : kind === "browser" ? "Practice screen — not the real browser." : "Practice screen — not the real Excel.");
-  const title = kind === "phone" ? "Phone" : kind === "browser" ? "Browser" : kind === "computer" ? "Computer" : "Excel";
+  const names = { phone: "phone", computer: "computer", browser: "browser", word: "Word", outlook: "Outlook", job: "Job Bank", excel: "Excel", sheet: "Excel" };
+  const caption = block.caption || ("Practice screen — not the real " + (names[kind] || "Excel") + ".");
+  const title = names[kind] || "Excel";
   const steps = (block.steps || []).map((step) => {
     const copy = {
       id: step.id,
@@ -363,10 +396,11 @@ function branch(block) {
   const nodes = Object.keys(block.nodes || {})
     .map((id) => {
       const node = block.nodes[id];
+      const text = node.text || node.prompt || node.result || "";
       const choices = (node.choices || [])
-        .map((choice) => `<button type="button" class="btn branch-choice" data-next="${esc(choice.next || "")}">${esc(choice.label)}</button>`)
+        .map((choice) => `<button type="button" class="btn branch-choice" data-next="${esc(choice.next || "")}">${esc(choice.label || choice.text || "")}</button>`)
         .join("");
-      return `<div data-branch-node="${esc(id)}" hidden><p>${esc(node.text || "")}</p><div class="actions">${choices}</div></div>`;
+      return `<div data-branch-node="${esc(id)}" hidden><p>${esc(text)}</p><div class="actions">${choices}</div></div>`;
     })
     .join("");
   return `<section class="block" data-block="branch" data-branch="${esc(block.id || "")}" data-start="${esc(block.start || "")}" id="${esc(block.id || "")}">${nodes}<p class="actions"><button type="button" class="btn btn-secondary" data-branch-back>Back</button></p></section>`;

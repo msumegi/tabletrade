@@ -6,12 +6,12 @@
   "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal, financial, or technical-support contract.",
   "disclaimer": "**What this course is not.** This is general information for adult learners in Canada. It is not a tech-support contract, and it is not legal, financial, privacy, or immigration advice. Screens and menus look different on each brand and version. This course does not replace *Email & Online Safety Basics in Canada*, *Microsoft Excel Basics*, *Microsoft Word Basics*, or *Outlook and Workplace Email Habits*. You do not need to buy a new device. A library or council computer is a valid place to practise.",
   "includes": [
+    "practiceFile",
     "checks",
     "assignment",
     "cheatSheets",
     "final",
-    "sampleCertificate",
-    "practiceFile"
+    "sampleCertificate"
   ],
   "badges": [
     {
@@ -41,7 +41,7 @@
   "player": {
     "outcomes": [],
     "youNeed": [],
-    "hoursLabel": "About 20 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice.",
+    "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice.",
     "readAloud": true
   },
   "finalExam": {
@@ -62,11 +62,11 @@
           },
           {
             "id": "C",
-            "text": "The same thing as a paper folder"
+            "text": "A device that can never connect to the internet"
           },
           {
             "id": "D",
-            "text": "A type of Wi-Fi password"
+            "text": "Any device with a screen, including a television"
           }
         ],
         "answer": "A",
@@ -83,15 +83,15 @@
           },
           {
             "id": "B",
-            "text": "Always delete every file"
+            "text": "Send email"
           },
           {
             "id": "C",
-            "text": "Buy a new laptop"
+            "text": "Browse the web"
           },
           {
             "id": "D",
-            "text": "Send a password by text"
+            "text": "View only your photo albums"
           }
         ],
         "answer": "A",
@@ -112,11 +112,11 @@
           },
           {
             "id": "C",
-            "text": "Open the camera only"
+            "text": "Click the Recycle Bin"
           },
           {
             "id": "D",
-            "text": "Shake the mouse twice"
+            "text": "Open File Explorer and look under This PC"
           }
         ],
         "answer": "A",
@@ -212,11 +212,11 @@
           },
           {
             "id": "C",
-            "text": "Unplug the charger"
+            "text": "Press and hold the icon (that is a different gesture)"
           },
           {
             "id": "D",
-            "text": "Press every side button"
+            "text": "Swipe the icon off the top of the screen"
           }
         ],
         "answer": "A",
@@ -233,15 +233,15 @@
           },
           {
             "id": "B",
-            "text": "Typing the word HOME"
+            "text": "Tapping the Back button once"
           },
           {
             "id": "C",
-            "text": "Removing the SIM card"
+            "text": "Swiping down from the top (that opens notifications or Quick Settings)"
           },
           {
             "id": "D",
-            "text": "Turning the phone face down"
+            "text": "Pressing the volume key"
           }
         ],
         "answer": "A",
@@ -287,11 +287,11 @@
           },
           {
             "id": "C",
-            "text": "A kind of password"
+            "text": "The address bar in a browser"
           },
           {
             "id": "D",
-            "text": "A public Wi-Fi network"
+            "text": "A single saved photo or document"
           }
         ],
         "answer": "A",
@@ -358,15 +358,15 @@
           },
           {
             "id": "B",
-            "text": "The weather widget"
+            "text": "The camera preview"
           },
           {
             "id": "C",
-            "text": "A paper drawer"
+            "text": "Only inside an email you already sent"
           },
           {
             "id": "D",
-            "text": "The power button"
+            "text": "The lock-screen clock"
           }
         ],
         "answer": "A",
@@ -416,7 +416,7 @@
           },
           {
             "id": "D",
-            "text": "You should share your PIN"
+            "text": "The network belongs to the government"
           }
         ],
         "answer": "A",
@@ -437,7 +437,7 @@
           },
           {
             "id": "C",
-            "text": "Post the password on a wall"
+            "text": "Join a network named “Free Wi-Fi” without asking staff"
           },
           {
             "id": "D",
@@ -533,7 +533,7 @@
           },
           {
             "id": "B",
-            "text": "A reason to share your password"
+            "text": "A reason to skip reviewing new permissions"
           },
           {
             "id": "C",
@@ -541,7 +541,7 @@
           },
           {
             "id": "D",
-            "text": "A free holiday"
+            "text": "A requirement to buy a new phone"
           }
         ],
         "answer": "A",
@@ -558,15 +558,15 @@
           },
           {
             "id": "B",
-            "text": "A charger"
+            "text": "A search website itself"
           },
           {
             "id": "C",
-            "text": "A paper folder"
+            "text": "The Settings app"
           },
           {
             "id": "D",
-            "text": "A type of PIN"
+            "text": "A single saved photo"
           }
         ],
         "answer": "A",
@@ -658,7 +658,7 @@
           },
           {
             "id": "B",
-            "text": "Sharing your password in the subject"
+            "text": "Leaving the To field blank and hoping it sends"
           },
           {
             "id": "C",
@@ -712,7 +712,7 @@
           },
           {
             "id": "C",
-            "text": "The word password"
+            "text": "One dictionary word plus your birth year"
           },
           {
             "id": "D",
@@ -733,11 +733,11 @@
           },
           {
             "id": "B",
-            "text": "It makes Wi-Fi faster"
+            "text": "It makes each password stronger"
           },
           {
             "id": "C",
-            "text": "Computers refuse all passwords"
+            "text": "Each site will invent a new password for you automatically"
           },
           {
             "id": "D",
@@ -805,7 +805,7 @@
     {
       "number": 1,
       "title": "Meet the devices you already use",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-devices-you-may-already-have",
@@ -882,6 +882,10 @@
                 {
                   "id": "B",
                   "text": "A phone that can also work like a small computer"
+                },
+                {
+                  "id": "C",
+                  "text": "The same thing as a tablet or a laptop"
                 }
               ],
               "answer": "B",
@@ -991,11 +995,11 @@
             },
             {
               "id": "C",
-              "text": "Memorizing every brand name"
+              "text": "Knowing product names rather than how to find, manage, or share information"
             },
             {
               "id": "D",
-              "text": "Passing a college computer exam"
+              "text": "Completing a college computer course before you can use a public computer"
             }
           ],
           "answer": "A",
@@ -1018,7 +1022,7 @@
             },
             {
               "id": "D",
-              "text": "A printer"
+              "text": "A device used only for printing pages, with no screen, apps, or messages"
             }
           ],
           "answer": "B",
@@ -1029,7 +1033,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Throw the device away"
+              "text": "Factory-reset the device just to change the volume"
             },
             {
               "id": "B",
@@ -1037,11 +1041,11 @@
             },
             {
               "id": "C",
-              "text": "Delete the library’s files"
+              "text": "Delete other people’s files on a shared computer"
             },
             {
               "id": "D",
-              "text": "Turn the building’s lights off"
+              "text": "Restart the library’s network to change screen brightness"
             }
           ],
           "answer": "B",
@@ -1067,7 +1071,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Shake the computer"
+              "text": "Press Ctrl + C"
             },
             {
               "id": "B",
@@ -1079,7 +1083,7 @@
             },
             {
               "id": "D",
-              "text": "Remove the battery"
+              "text": "Open the Recycle Bin"
             }
           ],
           "answer": "B",
@@ -1090,7 +1094,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Become the library’s paid repair technician"
+              "text": "Diagnose and repair every hardware fault at the library"
             },
             {
               "id": "B",
@@ -1119,7 +1123,7 @@
     {
       "number": 2,
       "title": "Power on, lock the screen, and find Settings",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-turn-the-device-on-and-wait",
@@ -1236,6 +1240,10 @@
                 {
                   "id": "B",
                   "text": "A six-digit PIN"
+                },
+                {
+                  "id": "C",
+                  "text": "A PIN, pattern, or password"
                 }
               ],
               "answer": "A",
@@ -1354,7 +1362,7 @@
             },
             {
               "id": "D",
-              "text": "Unplug every cable in the room"
+              "text": "Shut the computer down just to hide the screen (locking it would be enough)"
             }
           ],
           "answer": "B",
@@ -1377,7 +1385,7 @@
             },
             {
               "id": "D",
-              "text": "The camera shutter"
+              "text": "Windows logo key + E (that opens File Explorer)"
             }
           ],
           "answer": "A",
@@ -1396,11 +1404,11 @@
             },
             {
               "id": "C",
-              "text": "Delete your photos"
+              "text": "Work the same as a six-digit PIN"
             },
             {
               "id": "D",
-              "text": "Replace a library card"
+              "text": "Turn on automatically after updates"
             }
           ],
           "answer": "B",
@@ -1501,7 +1509,7 @@
     {
       "number": 3,
       "title": "Touch, click, type, and scroll with care",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-tap-hold-and-type-on-a-phone",
@@ -1588,6 +1596,10 @@
                 {
                   "id": "B",
                   "text": "Pinch the icon with two fingers"
+                },
+                {
+                  "id": "C",
+                  "text": "Swipe the icon off the top of the screen"
                 }
               ],
               "answer": "A",
@@ -1691,15 +1703,15 @@
             },
             {
               "id": "B",
-              "text": "Shake the phone hard"
+              "text": "Press and hold the icon (that opens extra options)"
             },
             {
               "id": "C",
-              "text": "Press every button at once"
+              "text": "Swipe the icon off the screen"
             },
             {
               "id": "D",
-              "text": "Unplug the charger first"
+              "text": "Turn the phone off and on first"
             }
           ],
           "answer": "A",
@@ -1714,15 +1726,15 @@
             },
             {
               "id": "B",
-              "text": "Typing the word HOME"
+              "text": "Tapping the Back button once"
             },
             {
               "id": "C",
-              "text": "Removing the SIM card"
+              "text": "Swiping down from the top (that opens notifications or Quick Settings)"
             },
             {
               "id": "D",
-              "text": "Turning the phone face down for ten minutes"
+              "text": "Pressing the volume key for ten minutes"
             }
           ],
           "answer": "A",
@@ -1846,7 +1858,7 @@
     {
       "number": 4,
       "title": "Files, folders, and finding what you saved",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-what-a-file-is-and-what-a-folder-is",
@@ -1970,6 +1982,10 @@
                 {
                   "id": "B",
                   "text": "Always the same thing as a single photo"
+                },
+                {
+                  "id": "C",
+                  "text": "The name of one saved item, such as a photo or a document"
                 }
               ],
               "answer": "A",
@@ -2068,11 +2084,11 @@
             },
             {
               "id": "C",
-              "text": "A type of password"
+              "text": "The search box in a browser"
             },
             {
               "id": "D",
-              "text": "A Wi-Fi network"
+              "text": "A program such as a web browser"
             }
           ],
           "answer": "B",
@@ -2095,7 +2111,7 @@
             },
             {
               "id": "D",
-              "text": "Shaking the mouse"
+              "text": "Ctrl + C"
             }
           ],
           "answer": "A",
@@ -2133,15 +2149,15 @@
             },
             {
               "id": "B",
-              "text": "The weather widget"
+              "text": "The camera preview"
             },
             {
               "id": "C",
-              "text": "A paper drawer"
+              "text": "Only inside an email you already sent"
             },
             {
               "id": "D",
-              "text": "The power button"
+              "text": "The lock-screen clock"
             }
           ],
           "answer": "A",
@@ -2219,7 +2235,7 @@
     {
       "number": 5,
       "title": "Connect to Wi-Fi without giving away too much",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-join-a-network-you-already-know",
@@ -2347,6 +2363,10 @@
                 {
                   "id": "B",
                   "text": "The network is guaranteed safe for banking"
+                },
+                {
+                  "id": "C",
+                  "text": "The network has no password and is open to everyone"
                 }
               ],
               "answer": "A",
@@ -2449,7 +2469,7 @@
             },
             {
               "id": "C",
-              "text": "The camera shutter"
+              "text": "Photos > Albums"
             },
             {
               "id": "D",
@@ -2623,7 +2643,7 @@
     {
       "number": 6,
       "title": "Accounts, app stores, and updates",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-an-account-is-a-name-the-device-knows",
@@ -2704,6 +2724,10 @@
                 {
                   "id": "B",
                   "text": "Any link someone texts you"
+                },
+                {
+                  "id": "C",
+                  "text": "A pop-up that appears while you play a game"
                 }
               ],
               "answer": "A",
@@ -2896,7 +2920,7 @@
             },
             {
               "id": "C",
-              "text": "A free holiday"
+              "text": "A requirement to buy a new phone"
             },
             {
               "id": "D",
@@ -2953,7 +2977,7 @@
             },
             {
               "id": "B",
-              "text": "You must always refuse and throw the phone away"
+              "text": "You must always refuse every update, including security fixes"
             },
             {
               "id": "C",
@@ -2978,7 +3002,7 @@
     {
       "number": 7,
       "title": "Browsers, search, and deciding if a page is trustworthy",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-a-browser-is-a-window-onto-the-web",
@@ -3095,6 +3119,10 @@
                 {
                   "id": "B",
                   "text": "Type your password quickly so the warning goes away"
+                },
+                {
+                  "id": "C",
+                  "text": "Ignore the warning if the page looks colourful"
                 }
               ],
               "answer": "A",
@@ -3201,15 +3229,15 @@
             },
             {
               "id": "B",
-              "text": "A type of charger"
+              "text": "A search website itself"
             },
             {
               "id": "C",
-              "text": "A paper folder"
+              "text": "The Settings app"
             },
             {
               "id": "D",
-              "text": "A Wi-Fi password"
+              "text": "A single saved photo"
             }
           ],
           "answer": "A",
@@ -3228,7 +3256,7 @@
             },
             {
               "id": "C",
-              "text": "Close your eyes and tap"
+              "text": "Leave out the place name"
             },
             {
               "id": "D",
@@ -3255,7 +3283,7 @@
             },
             {
               "id": "D",
-              "text": "The power button"
+              "text": "The lock-screen clock"
             }
           ],
           "answer": "A",
@@ -3274,11 +3302,11 @@
             },
             {
               "id": "C",
-              "text": "Library card accepted"
+              "text": "Safe to type a password here"
             },
             {
               "id": "D",
-              "text": "Password please"
+              "text": "Ignore this warning"
             }
           ],
           "answer": "A",
@@ -3356,7 +3384,7 @@
     {
       "number": 8,
       "title": "Everyday email and messages on a phone or a computer",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-texts-chat-apps-and-email",
@@ -3437,6 +3465,10 @@
                 {
                   "id": "B",
                   "text": "Send passwords by SMS so you have a copy"
+                },
+                {
+                  "id": "C",
+                  "text": "Text your PIN to yourself so you have a spare copy"
                 }
               ],
               "answer": "A",
@@ -3539,7 +3571,7 @@
             },
             {
               "id": "C",
-              "text": "The power button"
+              "text": "File Explorer"
             },
             {
               "id": "D",
@@ -3690,7 +3722,7 @@
     {
       "number": 9,
       "title": "Safer passwords and common tricks",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-a-passphrase-is-a-longer-secret-you-ca",
@@ -3775,6 +3807,10 @@
                 {
                   "id": "B",
                   "text": "Your pet’s name and a birthday"
+                },
+                {
+                  "id": "C",
+                  "text": "One short dictionary word with a number at the end"
                 }
               ],
               "answer": "A",
@@ -3877,7 +3913,7 @@
             },
             {
               "id": "C",
-              "text": "The word password"
+              "text": "One dictionary word plus your birth year"
             },
             {
               "id": "D",
@@ -4028,7 +4064,7 @@
     {
       "number": 10,
       "title": "When something goes wrong — simple checks and who to ask",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-start-with-the-simple-checks",
@@ -4108,6 +4144,10 @@
                 {
                   "id": "B",
                   "text": "Go looking for the thief on your own"
+                },
+                {
+                  "id": "C",
+                  "text": "Wait a few weeks to see if the phone comes back on its own"
                 }
               ],
               "answer": "A",
@@ -4210,7 +4250,7 @@
             },
             {
               "id": "B",
-              "text": "Throw the device away"
+              "text": "Open the case and try to replace parts without asking staff"
             },
             {
               "id": "C",
@@ -4237,7 +4277,7 @@
             },
             {
               "id": "C",
-              "text": "Turns off the town’s internet"
+              "text": "Deletes your Documents folder"
             },
             {
               "id": "D",
@@ -4302,15 +4342,15 @@
             },
             {
               "id": "B",
-              "text": "Press every key as hard as you can"
+              "text": "Hold unfamiliar buttons until the machine restarts, without asking staff"
             },
             {
               "id": "C",
-              "text": "Pour water on the keyboard"
+              "text": "Sign out without asking, even if unsaved work might be lost"
             },
             {
               "id": "D",
-              "text": "Unplug every machine in the room"
+              "text": "Walk away and leave the frozen screen for the next person"
             }
           ],
           "answer": "A",

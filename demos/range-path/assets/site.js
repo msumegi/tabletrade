@@ -1521,6 +1521,32 @@
     }
   }
 
+  function focusCertificate() {
+    var list = document.getElementById("cert-course-links");
+    if (!list) return;
+    var course = "";
+    try { course = new URLSearchParams(window.location.search).get("course") || ""; } catch (err) { course = ""; }
+    var items = Array.prototype.slice.call(list.querySelectorAll("li"));
+    if (!course) {
+      list.hidden = true;
+      var note = document.createElement("p");
+      note.textContent = "Open the certificate from the course you passed. This page then shows that course only.";
+      list.insertAdjacentElement("beforebegin", note);
+      return;
+    }
+    items.forEach(function (item) {
+      var link = item.querySelector("a");
+      var href = link ? link.getAttribute("href") || "" : "";
+      item.hidden = href.indexOf("/" + course + "/") === -1;
+    });
+    var select = document.getElementById("cert-course");
+    if (select) {
+      Array.prototype.slice.call(select.options).forEach(function (option) {
+        if (option.value !== course) option.remove();
+      });
+    }
+  }
+
   function setupDashboard() {
     var mount = document.getElementById("org-report");
     if (!mount) return;
@@ -1585,6 +1611,7 @@
   setupPlayer();
   setupSectionPicker();
   setupExam();
+  focusCertificate();
   setupQuiz();
   setupWalkthrough();
   setupCertificate();

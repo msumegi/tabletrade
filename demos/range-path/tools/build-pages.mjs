@@ -596,7 +596,7 @@ function homeCard(course) {
       <h3><a href="courses/${esc(course.slug)}/">${esc(course.title)}</a></h3>
       <p>${esc(course.summary || course.goals || "")}</p>
       <p class="meta">${lessonMeta(course)}</p>
-      <a class="btn" data-continue="${esc(course.slug)}" data-resume="progress" data-base="courses/${esc(course.slug)}/" href="courses/${esc(course.slug)}/">Preview this course</a>
+      <a class="btn" data-continue="${esc(course.slug)}" data-resume="progress" data-base="courses/${esc(course.slug)}/" href="courses/${esc(course.slug)}/">Start this course</a>
     </article>`;
 }
 

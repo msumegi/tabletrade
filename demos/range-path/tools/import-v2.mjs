@@ -275,6 +275,7 @@ function extractBank(text) {
 }
 
 let markdown = fs.readFileSync(mdPath, "utf8").replace(/\r/g, "");
+markdown = markdown.replace("- B. You restart the printer", "- B. You save the file");
 markdown = markdown.replace(/LearnHere/g, "LearnHere");
 const { text, bank } = extractBank(markdown);
 const parts = text.split(/\n(?=## )/);

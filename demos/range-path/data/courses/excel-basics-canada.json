@@ -112,7 +112,7 @@
           },
           {
             "id": "C",
-            "text": "Only hidden passwords"
+            "text": "Only one kind of information, such as numbers and never text"
           },
           {
             "id": "D",
@@ -441,7 +441,7 @@
           },
           {
             "id": "D",
-            "text": "The printer"
+            "text": "The header row at the top of the column"
           }
         ],
         "answer": "A",
@@ -779,7 +779,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Put your password in cell A1"
+            "text": "Send every sheet tab without checking for leftover private details"
           },
           {
             "id": "B",
@@ -805,7 +805,7 @@
     {
       "number": 1,
       "title": "What a spreadsheet is for in everyday Canadian life",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-lists-you-already-keep",
@@ -814,7 +814,14 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>A spreadsheet is a tool for lists and numbers. You may already keep those lists on paper, in a notebook, or in a phone note. A hall volunteer might write hours people worked each day. A farm household might jot down feed, fuel, and grocery amounts in Canadian dollars. Those lists work — until you need a total, a sorted list, or a clear copy to share.</p>\n<p>Excel is Microsoft's spreadsheet program. Microsoft's basic-tasks page says it works well for simple calculations and for tracking almost any kind of information. The key is a grid of cells. Each cell can hold a number, text, or a formula. You group cells in rows and columns so you can add the numbers up, sort or filter the list, put it in a table, or show it in a chart.</p>\n<p>You do not need a huge file or a finance job. A one-week hours list with seven rows is a real spreadsheet. A five-line household list in CAD is a real spreadsheet too. The grid keeps each piece of information in its own box, so totals and labels stay lined up when you add a row.</p>\n<p>The Government of Canada's Skills for Success describe Digital as the ability to use digital tools to find, manage, apply, create, and share information. One official example is creating spreadsheets, and the same page names Excel as a common digital tool. Skills for Success also name Numeracy, which includes checking whether a result makes sense. This course practises both.</p>\n<p>A spreadsheet is not magic. If an hours total says you worked 400 hours in one week, the sheet did the math you typed — it did not notice that the number is unlikely. Later lessons will show you how to check a total. For now, the purpose is a clear list, in one place, that you can total and share without rewriting it by hand.</p>\n"
+              "html": "<p>A spreadsheet is a tool for lists and numbers. You may already keep those lists on paper, in a notebook, or in a phone note. A hall volunteer might write hours people worked each day. A farm household might jot down feed, fuel, and grocery amounts in Canadian dollars. Those lists work — until you need a total, a sorted list, or a clear copy to share.</p>\n<p>Excel is Microsoft's spreadsheet program. Microsoft's basic-tasks page says it works well for simple calculations and for tracking almost any kind of information. The key is a grid of cells. Each cell can hold a number, text, or a formula. You group cells in rows and columns so you can add the numbers up, sort or filter the list, put it in a table, or show it in a chart.</p>\n<p>You do not need a huge file or a finance job. A one-week hours list with seven rows is a real spreadsheet. A five-line household list in CAD is a real spreadsheet too. The grid keeps each piece of information in its own box, so totals and labels stay lined up when you add a row.</p>\n<p>The Government of Canada's Skills for Success describe Digital as the ability to use digital tools to find, manage, apply, create, and share information. One official example is creating spreadsheets, and the same page names Excel as a common digital tool. Skills for Success also name Numeracy, which includes checking whether a result makes sense. This course practises both.</p>\n<p>If an hours total says you worked 400 hours in one week, the sheet did the math you typed — it did not notice that the number is unlikely. Later lessons will show you how to check a total. For now, the purpose is a clear list, in one place, that you can total and share without rewriting it by hand.</p>\n"
+            },
+            {
+              "type": "download",
+              "id": "excel-practice-workbook",
+              "href": "../../../media/practice/Excel-Basics-Practice-Sample-Only.xlsx",
+              "label": "Excel Basics practice workbook (Excel file)",
+              "note": "Sample data only. Three sheets: Hours, Household, and Practice. Do not put anyone else’s private figures in this file."
             }
           ]
         },
@@ -866,7 +873,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>This is a basics course. You will open a workbook, move around the grid, type text, numbers, and dates, and format a list so other people can read it. You will write simple formulas that start with <code>=</code>, use AutoSum and AVERAGE, fill or copy a formula, and lock a cell reference when it should stay put. You will sort and filter a list, make a simple table, make a basic chart, and save, print, or export a PDF without sharing private information.</p>\n<p>This course will <strong>not</strong> teach PivotTables, Power Query, macros, or advanced analysis. Those skills are useful later, but they are not the everyday starting point. We stay with the skills most learners need first.</p>\n<p>This course is also <strong>not</strong> tax help, payroll help, or bookkeeping training. When a later lesson uses a sample extra-rate column (for example a GST-style extra on a household amount), the rate is a practice number only. It is not the rate you must use, and it is not advice for your tax return or your pay. Sample hours and pay-stub-style figures are examples too.</p>\n<p>You do not need to buy a new computer. A home, work, library, or council machine with Excel is enough. Excel for the web can be a backup, but some tools (such as Quick Analysis on Windows desktop) may look different or may not appear. If a button is missing, use the matching ribbon command this course also names.</p>\n<p>There is no video. Each click-path has written steps and an interactive walk-through. Lesson quizzes are practice, not a mark. The graded finish line is the final exam after Lesson 10.</p>"
+              "html": "<p>This is a basics course. You will open a workbook, move around the grid, type text, numbers, and dates, and format a list so other people can read it. You will write simple formulas that start with <code>=</code>, use AutoSum and AVERAGE, fill or copy a formula, and lock a cell reference when it should stay put. You will sort and filter a list, make a simple table, make a basic chart, and save, print, or export a PDF without sharing private information.</p>\n<p>This course will <strong>not</strong> teach PivotTables, Power Query, macros, or advanced analysis. Those skills are useful later. We stay with the skills most learners need first.</p>\n<p>This course is also <strong>not</strong> tax help, payroll help, or bookkeeping training. When a later lesson uses a sample extra-rate column (for example a GST-style extra on a household amount), the rate is a practice number only. It is not the rate you must use, and it is not advice for your tax return or your pay. Sample hours and pay-stub-style figures are examples too.</p>\n<p>You do not need to buy a new computer. A home, work, library, or council machine with Excel is enough. Excel for the web can be a backup, but some tools (such as Quick Analysis on Windows desktop) may look different or may not appear. If a button is missing, use the matching ribbon command this course also names.</p>\n<p>There is no video. Each click-path has written steps and an interactive walk-through. Lesson quizzes are practice; the graded finish is the final exam after Lesson 10.</p>"
             },
             {
               "type": "check",
@@ -1139,7 +1146,7 @@
     {
       "number": 2,
       "title": "Open a workbook and move around the grid",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-start-a-blank-workbook",
@@ -1354,6 +1361,10 @@
                 {
                   "id": "B",
                   "text": "The address of the active cell, such as A1"
+                },
+                {
+                  "id": "C",
+                  "text": "The number of sheets in the workbook"
                 }
               ],
               "answer": "B",
@@ -1546,7 +1557,7 @@
             },
             {
               "id": "D",
-              "text": "The printer name"
+              "text": "The header row at the top of the column name"
             }
           ],
           "answer": "B",
@@ -1609,7 +1620,7 @@
     {
       "number": 3,
       "title": "Enter text, numbers, and dates",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-type-text-and-move-to-the-next-cell",
@@ -1810,6 +1821,10 @@
                 {
                   "id": "B",
                   "text": "Give each column one kind of information (a day, an amount, a note)"
+                },
+                {
+                  "id": "C",
+                  "text": "Leave the first row empty so Excel can invent headings"
                 }
               ],
               "answer": "B",
@@ -2070,7 +2085,7 @@
     {
       "number": 4,
       "title": "Format cells so a list is easy to read",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-format-for-readers-not-for-decoration",
@@ -2315,6 +2330,10 @@
                 {
                   "id": "B",
                   "text": "Only under File > Print"
+                },
+                {
+                  "id": "C",
+                  "text": "On the Formulas tab only"
                 }
               ],
               "answer": "A",
@@ -2597,7 +2616,7 @@
     {
       "number": 5,
       "title": "Write a simple formula that starts with =",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-a-formula-always-starts-with",
@@ -2742,10 +2761,14 @@
                 {
                   "id": "B",
                   "text": "A question mark"
+                },
+                {
+                  "id": "C",
+                  "text": "A plus sign (+)"
                 }
               ],
               "answer": "A",
-              "explain": "Microsoft’s basic steps say a simple formula begins with =."
+              "explain": "Excel needs = so it calculates. Without =, it stores what you typed as text."
             }
           ]
         },
@@ -2967,7 +2990,7 @@
             },
             {
               "id": "D",
-              "text": "The printer settings"
+              "text": "The header row at the top of the column settings"
             }
           ],
           "answer": "B",
@@ -3007,7 +3030,7 @@
     {
       "number": 6,
       "title": "AutoSum, AVERAGE, and checking that the answer makes sense",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-autosum-a-fast-way-to-add-a-column-or-",
@@ -3150,6 +3173,10 @@
                 {
                   "id": "B",
                   "text": "The File tab"
+                },
+                {
+                  "id": "C",
+                  "text": "The header cell at the top of the column"
                 }
               ],
               "answer": "A",
@@ -3264,7 +3291,7 @@
             },
             {
               "id": "D",
-              "text": "The printer"
+              "text": "The header row at the top of the column"
             }
           ],
           "answer": "B",
@@ -3442,7 +3469,7 @@
     {
       "number": 7,
       "title": "Fill, copy, and when a cell reference should stay put",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-fill-a-formula-into-the-cells-beside-i",
@@ -3610,6 +3637,10 @@
                 {
                   "id": "B",
                   "text": "$H$1"
+                },
+                {
+                  "id": "C",
+                  "text": "H1 without dollar signs — Excel will lock it automatically when you fill down"
                 }
               ],
               "answer": "B",
@@ -3715,7 +3746,7 @@
             },
             {
               "id": "D",
-              "text": "A printer tool"
+              "text": "The button that prints the worksheet"
             }
           ],
           "answer": "B",
@@ -3726,7 +3757,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Reinstall Windows"
+              "text": "Delete the workbook and start over"
             },
             {
               "id": "B",
@@ -3738,7 +3769,7 @@
             },
             {
               "id": "D",
-              "text": "Turn the computer off for an hour"
+              "text": "Close Excel and reopen it without changing Options"
             }
           ],
           "answer": "B",
@@ -3870,7 +3901,7 @@
     {
       "number": 8,
       "title": "Sort, filter, and a simple table",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-sort-a-list-without-breaking-the-rows",
@@ -4074,6 +4105,10 @@
                 {
                   "id": "B",
                   "text": "Hidden until you clear the filter"
+                },
+                {
+                  "id": "C",
+                  "text": "Moved into a new workbook"
                 }
               ],
               "answer": "B",
@@ -4330,7 +4365,7 @@
     {
       "number": 9,
       "title": "Make a basic chart",
-      "minutes": 7,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-choose-the-cells-and-a-simple-chart-ty",
@@ -4534,6 +4569,10 @@
                 {
                   "id": "B",
                   "text": "Only B9, the total"
+                },
+                {
+                  "id": "C",
+                  "text": "A1:B8 plus the Total row"
                 }
               ],
               "answer": "A",
@@ -4790,7 +4829,7 @@
     {
       "number": 10,
       "title": "Save, print, and share without leaking private information",
-      "minutes": 8,
+      "minutes": 15,
       "sections": [
         {
           "id": "chapter-1-save-on-purpose-autorecovery-is-not-en",
@@ -5059,6 +5098,10 @@
                 {
                   "id": "B",
                   "text": "A full substitute for saving the file yourself"
+                },
+                {
+                  "id": "C",
+                  "text": "A tool that emails the file for you"
                 }
               ],
               "answer": "A",
