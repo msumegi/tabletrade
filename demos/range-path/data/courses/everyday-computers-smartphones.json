@@ -1,8 +1,8 @@
 {
   "slug": "everyday-computers-smartphones",
   "title": "Everyday Computers and Smartphones",
-  "summary": "",
-  "goals": "",
+  "summary": "By the end, learners can name everyday devices, lock a screen, find Settings, save a file they can find again, join Wi-Fi with care, and try simple checks when something goes wrong.",
+  "goals": "By the end, learners can name everyday devices, lock a screen, find Settings, save a file they can find again, join Wi-Fi with care, and try simple checks when something goes wrong.",
   "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, or legal, financial, or technical-support contract.",
   "disclaimer": "**What this course is not.** This is general information for adult learners in Canada. It is not a tech-support contract, and it is not legal, financial, privacy, or immigration advice. Screens and menus look different on each brand and version. This course does not replace *Email & Online Safety Basics in Canada*, *Microsoft Excel Basics*, *Microsoft Word Basics*, or *Outlook and Workplace Email Habits*. You do not need to buy a new device. A library or council computer is a valid place to practise.",
   "includes": [
@@ -54,22 +54,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A phone that can also work like a small computer"
-          },
-          {
-            "id": "B",
             "text": "Only able to make voice calls"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "A device that can never connect to the internet"
+          },
+          {
+            "id": "C",
+            "text": "A phone that can also work like a small computer"
           },
           {
             "id": "D",
             "text": "Any device with a screen, including a television"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "A smartphone also works like a small computer (Get Cyber Safe multi-tool idea; Lesson 1).",
         "topic": "Lesson 1 — Devices you may already have",
         "review": "../lesson-1/#section-chapter-1-devices-you-may-already-have"
@@ -83,15 +83,15 @@
           },
           {
             "id": "B",
-            "text": "Send email"
-          },
-          {
-            "id": "C",
             "text": "Browse the web"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "View only your photo albums"
+          },
+          {
+            "id": "D",
+            "text": "Send email"
           }
         ],
         "answer": "A",
@@ -104,7 +104,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Right-click Start and choose Settings, or press Windows key + I"
+            "text": "Open File Explorer and look under This PC"
           },
           {
             "id": "B",
@@ -116,10 +116,10 @@
           },
           {
             "id": "D",
-            "text": "Open File Explorer and look under This PC"
+            "text": "Right-click Start and choose Settings, or press Windows key + I"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Microsoft: right-click Start > Settings, or Windows key + I (Lesson 1).",
         "topic": "Lesson 1 — Devices you may already have",
         "review": "../lesson-1/#section-chapter-1-devices-you-may-already-have"
@@ -129,11 +129,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "None and Swipe"
+            "text": "A pattern you keep private"
           },
           {
             "id": "B",
-            "text": "A six-digit PIN"
+            "text": "None and Swipe"
           },
           {
             "id": "C",
@@ -141,10 +141,10 @@
           },
           {
             "id": "D",
-            "text": "A pattern you keep private"
+            "text": "A six-digit PIN"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Google: None and Swipe give no protection (Lesson 2).",
         "topic": "Lesson 2 — Turn the device on and wait",
         "review": "../lesson-2/#section-chapter-1-turn-the-device-on-and-wait"
@@ -154,22 +154,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Windows logo key + L, or Start > power > Lock"
-          },
-          {
-            "id": "B",
-            "text": "Ctrl + C"
-          },
-          {
-            "id": "C",
             "text": "Windows key + E"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "Windows logo key + L, or Start > power > Lock"
+          },
+          {
+            "id": "C",
             "text": "Deleting Documents"
+          },
+          {
+            "id": "D",
+            "text": "Ctrl + C"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Microsoft: Windows key + L or Start > power > Lock (Lesson 2).",
         "topic": "Lesson 2 — Turn the device on and wait",
         "review": "../lesson-2/#section-chapter-1-turn-the-device-on-and-wait"
@@ -179,22 +179,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Write a password down and store it near the computer"
+            "text": "Ask a tutor for help"
           },
           {
             "id": "B",
-            "text": "Turn on auto-lock"
+            "text": "Write a password down and store it near the computer"
           },
           {
             "id": "C",
-            "text": "Use a lock-screen password"
+            "text": "Turn on auto-lock"
           },
           {
             "id": "D",
-            "text": "Ask a tutor for help"
+            "text": "Use a lock-screen password"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Get Cyber Safe: do not store a written password near the computer (Lesson 2 / 9).",
         "topic": "Lesson 2 — Turn the device on and wait",
         "review": "../lesson-2/#section-chapter-1-turn-the-device-on-and-wait"
@@ -208,15 +208,15 @@
           },
           {
             "id": "B",
-            "text": "Pinch the icon"
-          },
-          {
-            "id": "C",
             "text": "Press and hold the icon (that is a different gesture)"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Swipe the icon off the top of the screen"
+          },
+          {
+            "id": "D",
+            "text": "Pinch the icon"
           }
         ],
         "answer": "A",
@@ -229,7 +229,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Swiping up from the bottom of the screen"
+            "text": "Pressing the volume key"
           },
           {
             "id": "B",
@@ -237,14 +237,14 @@
           },
           {
             "id": "C",
-            "text": "Swiping down from the top (that opens notifications or Quick Settings)"
+            "text": "Swiping up from the bottom of the screen"
           },
           {
             "id": "D",
-            "text": "Pressing the volume key"
+            "text": "Swiping down from the top (that opens notifications or Quick Settings)"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Google: swipe up from the bottom (Lesson 3).",
         "topic": "Lesson 3 — Tap, hold, and type on a phone",
         "review": "../lesson-3/#section-chapter-1-tap-hold-and-type-on-a-phone"
@@ -279,22 +279,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A container that can hold files"
-          },
-          {
-            "id": "B",
             "text": "Always the same as one photo"
           },
           {
+            "id": "B",
+            "text": "A container that can hold files"
+          },
+          {
             "id": "C",
-            "text": "The address bar in a browser"
+            "text": "A single saved photo or document"
           },
           {
             "id": "D",
-            "text": "A single saved photo or document"
+            "text": "The address bar in a browser"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "A folder holds files (Lesson 4).",
         "topic": "Lesson 4 — What a file is, and what a folder is",
         "review": "../lesson-4/#section-chapter-1-what-a-file-is-and-what-a-folder-is"
@@ -304,22 +304,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The taskbar icon, the Start menu, or Windows key + E"
-          },
-          {
-            "id": "B",
             "text": "Windows key + L only"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Alt + F4"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "The volume key"
+          },
+          {
+            "id": "D",
+            "text": "The taskbar icon, the Start menu, or Windows key + E"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Microsoft File Explorer paths (Lesson 4).",
         "topic": "Lesson 4 — What a file is, and what a folder is",
         "review": "../lesson-4/#section-chapter-1-what-a-file-is-and-what-a-folder-is"
@@ -329,22 +329,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Select it, choose Cut, go to the new place, choose Paste"
-          },
-          {
-            "id": "B",
-            "text": "Rename it twice and hope"
-          },
-          {
-            "id": "C",
             "text": "Email it to yourself and delete the computer"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Take a photo of the screen"
+          },
+          {
+            "id": "C",
+            "text": "Rename it twice and hope"
+          },
+          {
+            "id": "D",
+            "text": "Select it, choose Cut, go to the new place, choose Paste"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Cut, then Paste (Lesson 4).",
         "topic": "Lesson 4 — What a file is, and what a folder is",
         "review": "../lesson-4/#section-chapter-1-what-a-file-is-and-what-a-folder-is"
@@ -379,22 +379,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Settings > Network & internet > Internet"
-          },
-          {
-            "id": "B",
-            "text": "Settings > Wallpaper only"
-          },
-          {
-            "id": "C",
             "text": "Photos > Albums"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "File Explorer > Music"
+          },
+          {
+            "id": "C",
+            "text": "Settings > Wallpaper only"
+          },
+          {
+            "id": "D",
+            "text": "Settings > Network & internet > Internet"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Settings > Network & internet > Internet (Lesson 5).",
         "topic": "Lesson 5 — Join a network you already know",
         "review": "../lesson-5/#section-chapter-1-join-a-network-you-already-know"
@@ -404,22 +404,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The network requires a password"
-          },
-          {
-            "id": "B",
-            "text": "The network is always safe for banking"
-          },
-          {
-            "id": "C",
             "text": "The internet is free worldwide"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "The network belongs to the government"
+          },
+          {
+            "id": "C",
+            "text": "The network requires a password"
+          },
+          {
+            "id": "D",
+            "text": "The network is always safe for banking"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "A lock means a password is required (Lesson 5).",
         "topic": "Lesson 5 — Join a network you already know",
         "review": "../lesson-5/#section-chapter-1-join-a-network-you-already-know"
@@ -433,7 +433,7 @@
           },
           {
             "id": "B",
-            "text": "Join every similar name"
+            "text": "Turn off the screen lock"
           },
           {
             "id": "C",
@@ -441,7 +441,7 @@
           },
           {
             "id": "D",
-            "text": "Turn off the screen lock"
+            "text": "Join every similar name"
           }
         ],
         "answer": "A",
@@ -454,7 +454,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Open a bank account page or make a purchase"
+            "text": "Turn Wi-Fi off later if you do not need it"
           },
           {
             "id": "B",
@@ -462,14 +462,14 @@
           },
           {
             "id": "C",
-            "text": "Watch for people reading your screen"
+            "text": "Open a bank account page or make a purchase"
           },
           {
             "id": "D",
-            "text": "Turn Wi-Fi off later if you do not need it"
+            "text": "Watch for people reading your screen"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "No banking or purchases on public Wi-Fi (Lesson 5).",
         "topic": "Lesson 5 — Join a network you already know",
         "review": "../lesson-5/#section-chapter-1-join-a-network-you-already-know"
@@ -479,22 +479,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The App Store or Google Play, and to review permissions"
-          },
-          {
-            "id": "B",
-            "text": "Any link in a text message"
-          },
-          {
-            "id": "C",
             "text": "A USB stick you found"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "A pop-up over a game"
+          },
+          {
+            "id": "C",
+            "text": "The App Store or Google Play, and to review permissions"
+          },
+          {
+            "id": "D",
+            "text": "Any link in a text message"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Official stores and review permissions (Lesson 6).",
         "topic": "Lesson 6 — An account is a name the device knows",
         "review": "../lesson-6/#section-chapter-1-an-account-is-a-name-the-device-knows"
@@ -504,11 +504,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Settings > System > Software updates"
+            "text": "Settings > Wallpaper only"
           },
           {
             "id": "B",
-            "text": "Settings > Wallpaper only"
+            "text": "A text from an unknown number"
           },
           {
             "id": "C",
@@ -516,10 +516,10 @@
           },
           {
             "id": "D",
-            "text": "A text from an unknown number"
+            "text": "Settings > System > Software updates"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Settings > System > Software updates (Lesson 6).",
         "topic": "Lesson 6 — An account is a name the device knows",
         "review": "../lesson-6/#section-chapter-1-an-account-is-a-name-the-device-knows"
@@ -529,11 +529,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "New security features, not only extra tools"
+            "text": "A reason to skip reviewing new permissions"
           },
           {
             "id": "B",
-            "text": "A reason to skip reviewing new permissions"
+            "text": "A requirement to buy a new phone"
           },
           {
             "id": "C",
@@ -541,10 +541,10 @@
           },
           {
             "id": "D",
-            "text": "A requirement to buy a new phone"
+            "text": "New security features, not only extra tools"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Updates often add security features (Lesson 6).",
         "topic": "Lesson 6 — An account is a name the device knows",
         "review": "../lesson-6/#section-chapter-1-an-account-is-a-name-the-device-knows"
@@ -558,11 +558,11 @@
           },
           {
             "id": "B",
-            "text": "A search website itself"
+            "text": "The Settings app"
           },
           {
             "id": "C",
-            "text": "The Settings app"
+            "text": "A search website itself"
           },
           {
             "id": "D",
@@ -579,22 +579,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Add the location to your search"
-          },
-          {
-            "id": "B",
             "text": "Type only one letter"
           },
           {
+            "id": "B",
+            "text": "Add the location to your search"
+          },
+          {
             "id": "C",
-            "text": "Search with your eyes closed"
+            "text": "Use only capital letters"
           },
           {
             "id": "D",
-            "text": "Use only capital letters"
+            "text": "Search with your eyes closed"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Add a place name (Lesson 7).",
         "topic": "Lesson 7 — A browser is a window onto the web",
         "review": "../lesson-7/#section-chapter-1-a-browser-is-a-window-onto-the-web"
@@ -604,7 +604,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Avoid typing passwords and use Back if you did not mean to be there"
+            "text": "Call a number in a pop-up"
           },
           {
             "id": "B",
@@ -616,10 +616,10 @@
           },
           {
             "id": "D",
-            "text": "Call a number in a pop-up"
+            "text": "Avoid typing passwords and use Back if you did not mean to be there"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Pause; do not type secrets (Lesson 7).",
         "topic": "Lesson 7 — A browser is a window onto the web",
         "review": "../lesson-7/#section-chapter-1-a-browser-is-a-window-onto-the-web"
@@ -629,22 +629,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Open the organisation from its real home page instead"
+            "text": "Type your PIN into the text"
           },
           {
             "id": "B",
-            "text": "Reply with your password"
+            "text": "Open the organisation from its real home page instead"
           },
           {
             "id": "C",
-            "text": "Forward the message to everyone"
+            "text": "Reply with your password"
           },
           {
             "id": "D",
-            "text": "Type your PIN into the text"
+            "text": "Forward the message to everyone"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Use the real home page (Lessons 7 and 9).",
         "topic": "Lesson 8 — Texts, chat apps, and email",
         "review": "../lesson-8/#section-chapter-1-texts-chat-apps-and-email"
@@ -654,7 +654,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Compose, To, a subject, the message, and Send"
+            "text": "Opening every attachment first"
           },
           {
             "id": "B",
@@ -662,14 +662,14 @@
           },
           {
             "id": "C",
-            "text": "Opening every attachment first"
+            "text": "Compose, To, a subject, the message, and Send"
           },
           {
             "id": "D",
             "text": "Sending the note to a random address"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Gmail write-and-send help (Lesson 8).",
         "topic": "Lesson 8 — Texts, chat apps, and email",
         "review": "../lesson-8/#section-chapter-1-texts-chat-apps-and-email"
@@ -679,22 +679,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Send personal or sensitive information"
+            "text": "Practise the word hello"
           },
           {
             "id": "B",
-            "text": "Send an ordinary “I am here” note"
+            "text": "Send personal or sensitive information"
           },
           {
             "id": "C",
-            "text": "Ask a friend a simple question"
+            "text": "Send an ordinary “I am here” note"
           },
           {
             "id": "D",
-            "text": "Practise the word hello"
+            "text": "Ask a friend a simple question"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "No sensitive information by SMS (Lesson 8).",
         "topic": "Lesson 8 — Texts, chat apps, and email",
         "review": "../lesson-8/#section-chapter-1-texts-chat-apps-and-email"
@@ -704,22 +704,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Four or more random words, and at least 15 characters"
-          },
-          {
-            "id": "B",
-            "text": "A pet’s name"
-          },
-          {
-            "id": "C",
             "text": "One dictionary word plus your birth year"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "Four or more random words, and at least 15 characters"
+          },
+          {
+            "id": "C",
             "text": "Your birthday only"
+          },
+          {
+            "id": "D",
+            "text": "A pet’s name"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Four or more random words, minimum 15 characters (Lesson 9).",
         "topic": "Lesson 9 — A passphrase is a longer secret you can remember",
         "review": "../lesson-9/#section-chapter-1-a-passphrase-is-a-longer-secret-you-ca"
@@ -737,11 +737,11 @@
           },
           {
             "id": "C",
-            "text": "Each site will invent a new password for you automatically"
+            "text": "It deletes Downloads"
           },
           {
             "id": "D",
-            "text": "It deletes Downloads"
+            "text": "Each site will invent a new password for you automatically"
           }
         ],
         "answer": "A",
@@ -754,22 +754,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Never share your password with anyone"
-          },
-          {
-            "id": "B",
-            "text": "Text it to a friend for backup"
-          },
-          {
-            "id": "C",
             "text": "Tape it to the monitor"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Use it as a file name"
+          },
+          {
+            "id": "C",
+            "text": "Never share your password with anyone"
+          },
+          {
+            "id": "D",
+            "text": "Text it to a friend for backup"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Never share a password (Lesson 9).",
         "topic": "Lesson 9 — A passphrase is a longer secret you can remember",
         "review": "../lesson-9/#section-chapter-1-a-passphrase-is-a-longer-secret-you-ca"
@@ -783,7 +783,7 @@
           },
           {
             "id": "B",
-            "text": "Contact your service provider"
+            "text": "Keep a record of the make and model"
           },
           {
             "id": "C",
@@ -791,7 +791,7 @@
           },
           {
             "id": "D",
-            "text": "Keep a record of the make and model"
+            "text": "Contact your service provider"
           }
         ],
         "answer": "A",
@@ -902,9 +902,14 @@
               "type": "workedExample",
               "title": "Worked example 1. A library laptop and a home phone",
               "html": "",
-              "problem": "Sam practises on a library laptop and also uses a smartphone at home. The laptop has a separate keyboard and a mouse. The phone has a touch screen and a Settings gear. Both can connect to Wi-Fi, open a browser, and store files. Sam does not need to buy a tablet to start this course. The shared words — screen, Settings, apps — work on both devices, even though the buttons look different.",
-              "steps": [],
-              "result": "Sam practises on a library laptop and also uses a smartphone at home. The laptop has a separate keyboard and a mouse. The phone has a touch screen and a Settings gear. Both can connect to Wi-Fi, open a browser, and store files. Sam does not need to buy a tablet to start this course. The shared words — screen, Settings, apps — work on both devices, even though the buttons look different."
+              "problem": "Sam practises on a library laptop and also uses a smartphone at home.",
+              "steps": [
+                "The laptop has a separate keyboard and a mouse.",
+                "The phone has a touch screen and a Settings gear.",
+                "Both can connect to Wi-Fi, open a browser, and store files.",
+                "Sam does not need to buy a tablet to start this course."
+              ],
+              "result": "The shared words — screen, Settings, apps — work on both devices, even though the buttons look different."
             }
           ]
         },
@@ -917,9 +922,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Finding Settings two ways",
               "html": "",
-              "problem": "On a practice Android-style phone, Sam opens the Settings app (often a gear). On a Windows library computer, Sam right-clicks Start and chooses Settings, or presses the Windows logo key and I. In both places, a search box can find a word such as “volume” or “display.” That habit — open Settings, then search — saves time when menus do not match a screenshot.",
-              "steps": [],
-              "result": "On a practice Android-style phone, Sam opens the Settings app (often a gear). On a Windows library computer, Sam right-clicks Start and chooses Settings, or presses the Windows logo key and I. In both places, a search box can find a word such as “volume” or “display.” That habit — open Settings, then search — saves time when menus do not match a screenshot."
+              "problem": "On a practice Android-style phone, Sam opens the Settings app (often a gear).",
+              "steps": [
+                "On a Windows library computer, Sam right-clicks Start and chooses Settings, or presses the Windows logo key and I."
+              ],
+              "result": "In both places, a search box can find a word such as “volume” or “display.” That habit — open Settings, then search — saves time when menus do not match a screenshot."
             }
           ]
         },
@@ -987,22 +994,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Using digital tools to find, manage, apply, create, and share information"
+              "text": "Completing a college computer course before you can use a public computer"
             },
             {
               "id": "B",
-              "text": "Repairing every broken charger yourself"
+              "text": "Using digital tools to find, manage, apply, create, and share information"
             },
             {
               "id": "C",
-              "text": "Knowing product names rather than how to find, manage, or share information"
+              "text": "Repairing every broken charger yourself"
             },
             {
               "id": "D",
-              "text": "Completing a college computer course before you can use a public computer"
+              "text": "Knowing product names rather than how to find, manage, or share information"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Official Skills for Success wording."
         },
         {
@@ -1010,22 +1017,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only able to make voice calls"
-            },
-            {
-              "id": "B",
               "text": "A phone that can also work like a small computer"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "The same thing as a desktop tower"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "A device used only for printing pages, with no screen, apps, or messages"
+            },
+            {
+              "id": "D",
+              "text": "Only able to make voice calls"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Get Cyber Safe describes phones as multi-tools."
         },
         {
@@ -1037,18 +1044,18 @@
             },
             {
               "id": "B",
-              "text": "Change things such as volume, brightness, or Wi-Fi"
-            },
-            {
-              "id": "C",
               "text": "Delete other people’s files on a shared computer"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Restart the library’s network to change screen brightness"
+            },
+            {
+              "id": "D",
+              "text": "Change things such as volume, brightness, or Wi-Fi"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Settings hold everyday controls."
         },
         {
@@ -1071,22 +1078,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Press Ctrl + C"
-            },
-            {
-              "id": "B",
               "text": "Right-click Start and choose Settings, or press the Windows logo key + I"
             },
             {
+              "id": "B",
+              "text": "Open the Recycle Bin"
+            },
+            {
               "id": "C",
-              "text": "Open File Explorer only"
+              "text": "Press Ctrl + C"
             },
             {
               "id": "D",
-              "text": "Open the Recycle Bin"
+              "text": "Open File Explorer only"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Microsoft’s Settings help lists those paths."
         },
         {
@@ -1260,9 +1267,14 @@
               "type": "workedExample",
               "title": "Worked example 1. Lock a Windows library computer",
               "html": "",
-              "problem": "Pat finishes a practice note on a library Windows computer and needs to ask a question at the desk. Instead of leaving the document open and unlocked, Pat presses the Windows logo key and L. The screen locks. The document stays open in the background. When Pat returns and signs in, the work is still there. If Pat had signed out instead, unsaved work could have been lost.",
-              "steps": [],
-              "result": "Pat finishes a practice note on a library Windows computer and needs to ask a question at the desk. Instead of leaving the document open and unlocked, Pat presses the Windows logo key and L. The screen locks. The document stays open in the background. When Pat returns and signs in, the work is still there. If Pat had signed out instead, unsaved work could have been lost."
+              "problem": "Pat finishes a practice note on a library Windows computer and needs to ask a question at the desk.",
+              "steps": [
+                "Instead of leaving the document open and unlocked, Pat presses the Windows logo key and L.",
+                "The screen locks.",
+                "The document stays open in the background.",
+                "When Pat returns and signs in, the work is still there."
+              ],
+              "result": "If Pat had signed out instead, unsaved work could have been lost."
             }
           ]
         },
@@ -1275,9 +1287,12 @@
               "type": "workedExample",
               "title": "Worked example 2. Choose a PIN on a practice phone (not a real PIN)",
               "html": "",
-              "problem": "On a practice Android screen, Jordan opens Settings, taps Security, then Screen lock. Jordan sees None, Swipe, PIN, Pattern, and Password. Google’s page says None and Swipe give no protection, and recommends a six-digit PIN if you choose PIN. Jordan picks PIN on their own phone later, with a tutor nearby, and does not type that PIN into this course.",
-              "steps": [],
-              "result": "On a practice Android screen, Jordan opens Settings, taps Security, then Screen lock. Jordan sees None, Swipe, PIN, Pattern, and Password. Google’s page says None and Swipe give no protection, and recommends a six-digit PIN if you choose PIN. Jordan picks PIN on their own phone later, with a tutor nearby, and does not type that PIN into this course."
+              "problem": "On a practice Android screen, Jordan opens Settings, taps Security, then Screen lock.",
+              "steps": [
+                "Jordan sees None, Swipe, PIN, Pattern, and Password.",
+                "Google’s page says None and Swipe give no protection, and recommends a six-digit PIN if you choose PIN."
+              ],
+              "result": "Jordan picks PIN on their own phone later, with a tutor nearby, and does not type that PIN into this course."
             }
           ]
         },
@@ -1350,22 +1365,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Leave it unlocked so anyone can finish your work"
-            },
-            {
-              "id": "B",
               "text": "Lock it, even if you are only stepping away"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Write the password on the screen"
+            },
+            {
+              "id": "C",
+              "text": "Leave it unlocked so anyone can finish your work"
             },
             {
               "id": "D",
               "text": "Shut the computer down just to hide the screen (locking it would be enough)"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Get Cyber Safe: lock when you are not around."
         },
         {
@@ -1377,15 +1392,15 @@
             },
             {
               "id": "B",
-              "text": "Ctrl+P"
-            },
-            {
-              "id": "C",
               "text": "Alt+F4 twice"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Windows logo key + E (that opens File Explorer)"
+            },
+            {
+              "id": "D",
+              "text": "Ctrl+P"
             }
           ],
           "answer": "A",
@@ -1400,18 +1415,18 @@
             },
             {
               "id": "B",
-              "text": "Give no protection, according to Google"
+              "text": "Work the same as a six-digit PIN"
             },
             {
               "id": "C",
-              "text": "Work the same as a six-digit PIN"
+              "text": "Give no protection, according to Google"
             },
             {
               "id": "D",
               "text": "Turn on automatically after updates"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Google: None and Swipe give no protection."
         },
         {
@@ -1423,7 +1438,7 @@
             },
             {
               "id": "B",
-              "text": "It locks the device after a short time if you are not using it"
+              "text": "It emails your password to everyone"
             },
             {
               "id": "C",
@@ -1431,10 +1446,10 @@
             },
             {
               "id": "D",
-              "text": "It emails your password to everyone"
+              "text": "It locks the device after a short time if you are not using it"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Get Cyber Safe phones page: enable auto-lock."
         },
         {
@@ -1457,7 +1472,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Throw the phone away"
+              "text": "Share your PIN in a group chat"
             },
             {
               "id": "B",
@@ -1465,7 +1480,7 @@
             },
             {
               "id": "C",
-              "text": "Share your PIN in a group chat"
+              "text": "Throw the phone away"
             },
             {
               "id": "D",
@@ -1480,22 +1495,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Signing out closes your session and unsaved work may be lost"
-            },
-            {
-              "id": "B",
               "text": "Locking always deletes your files"
             },
             {
+              "id": "B",
+              "text": "Signing out closes your session and unsaved work may be lost"
+            },
+            {
               "id": "C",
-              "text": "There is no difference"
+              "text": "Signing out turns off the building lights"
             },
             {
               "id": "D",
-              "text": "Signing out turns off the building lights"
+              "text": "There is no difference"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft: sign out closes the session; lock keeps apps open."
         }
       ],
@@ -1616,9 +1631,13 @@
               "type": "workedExample",
               "title": "Worked example 1. Going Home instead of closing the wrong thing",
               "html": "",
-              "problem": "Lee opens a notes app on an Android practice phone and wants to return to the list of apps. Lee taps the Home button (3-button navigation) — or, on a gesture phone, swipes up from the bottom. The notes app stays in Recents instead of being deleted. Later Lee can swipe up from the bottom, hold, and let go to find the notes app again. If Lee had kept tapping Back, they would step through earlier screens until they reached Home, and then Back would not go any further.",
-              "steps": [],
-              "result": "Lee opens a notes app on an Android practice phone and wants to return to the list of apps. Lee taps the Home button (3-button navigation) — or, on a gesture phone, swipes up from the bottom. The notes app stays in Recents instead of being deleted. Later Lee can swipe up from the bottom, hold, and let go to find the notes app again. If Lee had kept tapping Back, they would step through earlier screens until they reached Home, and then Back would not go any further."
+              "problem": "Lee opens a notes app on an Android practice phone and wants to return to the list of apps.",
+              "steps": [
+                "Lee taps the Home button (3-button navigation) — or, on a gesture phone, swipes up from the bottom.",
+                "The notes app stays in Recents instead of being deleted.",
+                "Later Lee can swipe up from the bottom, hold, and let go to find the notes app again."
+              ],
+              "result": "If Lee had kept tapping Back, they would step through earlier screens until they reached Home, and then Back would not go any further."
             }
           ]
         },
@@ -1631,9 +1650,13 @@
               "type": "workedExample",
               "title": "Worked example 2. Closing a window without shutting down",
               "html": "",
-              "problem": "On a library Windows computer, Lee has a Settings window and a browser window open. To move between them, Lee holds Alt and taps Tab until the browser is selected. When the Settings window is no longer needed, Lee makes sure that window is in front, then presses Alt + F4. Only that window closes. Lee does not press Alt + F4 on an empty desktop, because Microsoft notes that this can prompt a shut-down dialog.",
-              "steps": [],
-              "result": "On a library Windows computer, Lee has a Settings window and a browser window open. To move between them, Lee holds Alt and taps Tab until the browser is selected. When the Settings window is no longer needed, Lee makes sure that window is in front, then presses Alt + F4. Only that window closes. Lee does not press Alt + F4 on an empty desktop, because Microsoft notes that this can prompt a shut-down dialog."
+              "problem": "On a library Windows computer, Lee has a Settings window and a browser window open.",
+              "steps": [
+                "To move between them, Lee holds Alt and taps Tab until the browser is selected.",
+                "When the Settings window is no longer needed, Lee makes sure that window is in front, then presses Alt + F4.",
+                "Only that window closes."
+              ],
+              "result": "Lee does not press Alt + F4 on an empty desktop, because Microsoft notes that this can prompt a shut-down dialog."
             }
           ]
         },
@@ -1699,22 +1722,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Tap the icon with one finger"
-            },
-            {
-              "id": "B",
               "text": "Press and hold the icon (that opens extra options)"
             },
             {
+              "id": "B",
+              "text": "Tap the icon with one finger"
+            },
+            {
               "id": "C",
-              "text": "Swipe the icon off the screen"
+              "text": "Turn the phone off and on first"
             },
             {
               "id": "D",
-              "text": "Turn the phone off and on first"
+              "text": "Swipe the icon off the screen"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Google: tap to select or start something. Apple: tap an icon to open an app."
         },
         {
@@ -1722,22 +1745,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Swiping up from the bottom of the screen"
+              "text": "Pressing the volume key for ten minutes"
             },
             {
               "id": "B",
-              "text": "Tapping the Back button once"
-            },
-            {
-              "id": "C",
               "text": "Swiping down from the top (that opens notifications or Quick Settings)"
             },
             {
+              "id": "C",
+              "text": "Tapping the Back button once"
+            },
+            {
               "id": "D",
-              "text": "Pressing the volume key for ten minutes"
+              "text": "Swiping up from the bottom of the screen"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Google: swipe up from the bottom to go Home."
         },
         {
@@ -1745,22 +1768,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A two-finger pinch only"
+              "text": "The same as turning the phone off"
             },
             {
               "id": "B",
-              "text": "Moving one finger across the screen without lifting"
-            },
-            {
-              "id": "C",
               "text": "A way to delete the phone"
             },
             {
+              "id": "C",
+              "text": "Moving one finger across the screen without lifting"
+            },
+            {
               "id": "D",
-              "text": "The same as turning the phone off"
+              "text": "A two-finger pinch only"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Apple: move one finger without lifting; example is dragging a list in Photos."
         },
         {
@@ -1768,22 +1791,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Locks the computer"
-            },
-            {
-              "id": "B",
               "text": "Closes the active window (and can prompt shut down if no window is open)"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Opens File Explorer"
+            },
+            {
+              "id": "C",
+              "text": "Locks the computer"
             },
             {
               "id": "D",
               "text": "Sends your password to Microsoft"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Microsoft: close the active window; if no windows are open, it can prompt shut down."
         },
         {
@@ -1791,22 +1814,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Own only an iPhone"
+              "text": "Never use a phone"
             },
             {
               "id": "B",
-              "text": "Have limited dexterity or find precise gestures hard"
+              "text": "Own only an iPhone"
             },
             {
               "id": "C",
-              "text": "Never use a phone"
+              "text": "Have limited dexterity or find precise gestures hard"
             },
             {
               "id": "D",
               "text": "Want to skip Updates forever"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Google recommends 3-button navigation in that case."
         },
         {
@@ -1814,14 +1837,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "This course never asks for a real password."
         },
         {
@@ -1829,22 +1852,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Opens File Explorer"
+              "text": "Turns off Wi-Fi for the whole town"
             },
             {
               "id": "B",
-              "text": "Deletes all files"
+              "text": "Opens File Explorer"
             },
             {
               "id": "C",
-              "text": "Turns off Wi-Fi for the whole town"
+              "text": "Deletes all files"
             },
             {
               "id": "D",
               "text": "Locks the screen"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft: Windows key + E opens File Explorer."
         }
       ],
@@ -2002,9 +2025,13 @@
               "type": "workedExample",
               "title": "Worked example 1. A practice note in Documents",
               "html": "",
-              "problem": "Mina writes two sentences in a notes program on a library Windows computer. She chooses Save, opens File Explorer (Windows key + E) if the save box is not already showing Documents, and types the name <code>mina-practice-note</code>. Later she opens File Explorer, selects Documents, and types <code>practice</code> in the search box. The note appears. She does not move anyone else’s files.",
-              "steps": [],
-              "result": "Mina writes two sentences in a notes program on a library Windows computer. She chooses Save, opens File Explorer (Windows key + E) if the save box is not already showing Documents, and types the name <code>mina-practice-note</code>. Later she opens File Explorer, selects Documents, and types <code>practice</code> in the search box. The note appears. She does not move anyone else’s files."
+              "problem": "Mina writes two sentences in a notes program on a library Windows computer.",
+              "steps": [
+                "She chooses Save, opens File Explorer (Windows key + E) if the save box is not already showing Documents, and types the name mina-practice-note .",
+                "Later she opens File Explorer, selects Documents, and types practice in the search box.",
+                "The note appears."
+              ],
+              "result": "She does not move anyone else’s files."
             }
           ]
         },
@@ -2017,9 +2044,12 @@
               "type": "workedExample",
               "title": "Worked example 2. Finding a download on a phone",
               "html": "",
-              "problem": "Mina saved a PDF poster from a town website on her Android phone. She opens the Files app, taps the Downloads category, and sorts by date so the newest item is at the top. She taps the poster to open it. She does not delete other files she does not recognise.",
-              "steps": [],
-              "result": "Mina saved a PDF poster from a town website on her Android phone. She opens the Files app, taps the Downloads category, and sorts by date so the newest item is at the top. She taps the poster to open it. She does not delete other files she does not recognise."
+              "problem": "Mina saved a PDF poster from a town website on her Android phone.",
+              "steps": [
+                "She opens the Files app, taps the Downloads category, and sorts by date so the newest item is at the top.",
+                "She taps the poster to open it."
+              ],
+              "result": "She does not delete other files she does not recognise."
             }
           ]
         },
@@ -2076,11 +2106,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "A single photo"
+              "text": "A container that can hold files"
             },
             {
               "id": "B",
-              "text": "A container that can hold files"
+              "text": "A program such as a web browser"
             },
             {
               "id": "C",
@@ -2088,10 +2118,10 @@
             },
             {
               "id": "D",
-              "text": "A program such as a web browser"
+              "text": "A single photo"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "A folder holds files."
         },
         {
@@ -2099,22 +2129,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Windows logo key + E"
-            },
-            {
-              "id": "B",
               "text": "Windows logo key + L"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Alt + F4"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Ctrl + C"
+            },
+            {
+              "id": "D",
+              "text": "Windows logo key + E"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Taskbar, Start, or Windows key + E (Microsoft). Windows key + L locks the PC."
         },
         {
@@ -2122,22 +2152,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select it, choose Cut, go to the new place, choose Paste"
+              "text": "Email it to yourself and delete the computer"
             },
             {
               "id": "B",
-              "text": "Rename it twice"
+              "text": "Select it, choose Cut, go to the new place, choose Paste"
             },
             {
               "id": "C",
-              "text": "Email it to yourself and delete the computer"
+              "text": "Rename it twice"
             },
             {
               "id": "D",
               "text": "Take a photo of the screen only"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft: Cut, navigate, Paste."
         },
         {
@@ -2145,22 +2175,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The Files app (or the maker’s file app)"
-            },
-            {
-              "id": "B",
               "text": "The camera preview"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Only inside an email you already sent"
+            },
+            {
+              "id": "C",
+              "text": "The Files app (or the maker’s file app)"
             },
             {
               "id": "D",
               "text": "The lock-screen clock"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Google: Files app, or the manufacturer’s app."
         },
         {
@@ -2168,11 +2198,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Files you save from a browser land"
+              "text": "Windows hides the Start menu"
             },
             {
               "id": "B",
-              "text": "The town’s water pipes are stored"
+              "text": "Files you save from a browser land"
             },
             {
               "id": "C",
@@ -2180,10 +2210,10 @@
             },
             {
               "id": "D",
-              "text": "Windows hides the Start menu"
+              "text": "The town’s water pipes are stored"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Downloads is a known folder for items you save from the internet."
         },
         {
@@ -2191,14 +2221,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Delete only your own practice files; ask first on a shared machine."
         },
         {
@@ -2206,7 +2236,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Something you will recognise later, such as mina-practice-note"
+              "text": "A random string you will never remember, on purpose"
             },
             {
               "id": "B",
@@ -2214,14 +2244,14 @@
             },
             {
               "id": "C",
-              "text": "Your bank password"
+              "text": "Something you will recognise later, such as mina-practice-note"
             },
             {
               "id": "D",
-              "text": "A random string you will never remember, on purpose"
+              "text": "Your bank password"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "A clear name is easier to search for."
         }
       ],
@@ -2383,9 +2413,13 @@
               "type": "workedExample",
               "title": "Worked example 1. Asking for the real network name",
               "html": "",
-              "problem": "Chris is at a town library and sees three similar names. Instead of guessing, Chris asks at the desk. Staff give the official name. Chris opens Settings &gt; Network &amp; internet &gt; Internet (or swipes down and taps Internet), taps that name, and types the library key only in the real prompt — not in this course. Chris does not open online banking on that public network.",
-              "steps": [],
-              "result": "Chris is at a town library and sees three similar names. Instead of guessing, Chris asks at the desk. Staff give the official name. Chris opens Settings &gt; Network &amp; internet &gt; Internet (or swipes down and taps Internet), taps that name, and types the library key only in the real prompt — not in this course. Chris does not open online banking on that public network."
+              "problem": "Chris is at a town library and sees three similar names.",
+              "steps": [
+                "Instead of guessing, Chris asks at the desk.",
+                "Staff give the official name.",
+                "Chris opens Settings > Network & internet > Internet (or swipes down and taps Internet), taps that name, and types the library key only in the real prompt — not in this course."
+              ],
+              "result": "Chris does not open online banking on that public network."
             }
           ]
         },
@@ -2398,9 +2432,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Connecting a Windows laptop at home",
               "html": "",
-              "problem": "At home, Chris selects the Network, Sound, or Battery icons on a Windows 11 taskbar, chooses Manage Wi-Fi connections, selects the home network, chooses Connect, types the home key in the real prompt, and selects Next. Later, if Chris is only reading a paper book in a café and does not need the internet, Chris turns Wi-Fi off.",
-              "steps": [],
-              "result": "At home, Chris selects the Network, Sound, or Battery icons on a Windows 11 taskbar, chooses Manage Wi-Fi connections, selects the home network, chooses Connect, types the home key in the real prompt, and selects Next. Later, if Chris is only reading a paper book in a café and does not need the internet, Chris turns Wi-Fi off."
+              "problem": "At home, Chris selects the Network, Sound, or Battery icons on a Windows 11 taskbar, chooses Manage Wi-Fi connections, selects the home network, chooses Connect, types the home key in the real prompt, and selects Next.",
+              "steps": [
+                "At home, Chris selects the Network, Sound, or Battery icons on a Windows 11 taskbar, chooses Manage Wi-Fi connections, selects the home network, chooses Connect, types the home key in the real prompt, and selects Next."
+              ],
+              "result": "Later, if Chris is only reading a paper book in a café and does not need the internet, Chris turns Wi-Fi off."
             }
           ]
         },
@@ -2469,11 +2505,11 @@
             },
             {
               "id": "C",
-              "text": "Photos > Albums"
+              "text": "File Explorer"
             },
             {
               "id": "D",
-              "text": "File Explorer"
+              "text": "Photos > Albums"
             }
           ],
           "answer": "A",
@@ -2484,22 +2520,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The network requires a password"
-            },
-            {
-              "id": "B",
-              "text": "The network is always safe for banking"
-            },
-            {
-              "id": "C",
               "text": "The town has turned off the internet"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "The network requires a password"
+            },
+            {
+              "id": "C",
               "text": "You must share your PIN in a group chat"
+            },
+            {
+              "id": "D",
+              "text": "The network is always safe for banking"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "A lock means a password is required."
         },
         {
@@ -2507,22 +2543,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask the organisation for the real Wi-Fi name"
+              "text": "Turn off the phone case"
             },
             {
               "id": "B",
-              "text": "Join every name that looks similar"
-            },
-            {
-              "id": "C",
               "text": "Post the password on a notice board"
             },
             {
+              "id": "C",
+              "text": "Join every name that looks similar"
+            },
+            {
               "id": "D",
-              "text": "Turn off the phone case"
+              "text": "Ask the organisation for the real Wi-Fi name"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Ask for the legitimate name (evil-twin warning)."
         },
         {
@@ -2530,22 +2566,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Open a bank account page or make a purchase"
+              "text": "Ask staff for the network name"
             },
             {
               "id": "B",
-              "text": "Turn Wi-Fi off later if you do not need it"
+              "text": "Open a bank account page or make a purchase"
             },
             {
               "id": "C",
-              "text": "Ask staff for the network name"
+              "text": "Turn Wi-Fi off later if you do not need it"
             },
             {
               "id": "D",
               "text": "Watch for people reading your screen"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "No banking or purchases on public Wi-Fi."
         },
         {
@@ -2553,7 +2589,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select the Network, Sound, or Battery icons on the taskbar"
+              "text": "Remove the keyboard"
             },
             {
               "id": "B",
@@ -2561,14 +2597,14 @@
             },
             {
               "id": "C",
-              "text": "Remove the keyboard"
+              "text": "Press Alt + F4 on the desktop"
             },
             {
               "id": "D",
-              "text": "Press Alt + F4 on the desktop"
+              "text": "Select the Network, Sound, or Battery icons on the taskbar"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Then Manage Wi-Fi connections > Connect > password > Next."
         },
         {
@@ -2591,22 +2627,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Turn Wi-Fi off"
-            },
-            {
-              "id": "B",
-              "text": "Join every open network"
-            },
-            {
-              "id": "C",
               "text": "Share your password"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Disable the screen lock"
+            },
+            {
+              "id": "C",
+              "text": "Turn Wi-Fi off"
+            },
+            {
+              "id": "D",
+              "text": "Join every open network"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Turn Wi-Fi off when you are not using it."
         },
         {
@@ -2622,11 +2658,11 @@
             },
             {
               "id": "C",
-              "text": "The phone’s battery percentage"
+              "text": "The word SAFE in huge letters"
             },
             {
               "id": "D",
-              "text": "The word SAFE in huge letters"
+              "text": "The phone’s battery percentage"
             }
           ],
           "answer": "A",
@@ -2744,9 +2780,12 @@
               "type": "workedExample",
               "title": "Worked example 1. Updating apps, not following a text link",
               "html": "",
-              "problem": "Omar gets a text that says “Update your banking app now” and includes a link. Instead of tapping it, Omar opens the Google Play Store, taps the profile icon, then Manage apps &amp; device, and looks under Updates available. If the real banking app has an update, it will be listed there. Omar does not type a password into the text message.",
-              "steps": [],
-              "result": "Omar gets a text that says “Update your banking app now” and includes a link. Instead of tapping it, Omar opens the Google Play Store, taps the profile icon, then Manage apps &amp; device, and looks under Updates available. If the real banking app has an update, it will be listed there. Omar does not type a password into the text message."
+              "problem": "Omar gets a text that says “Update your banking app now” and includes a link.",
+              "steps": [
+                "Instead of tapping it, Omar opens the Google Play Store, taps the profile icon, then Manage apps & device, and looks under Updates available.",
+                "If the real banking app has an update, it will be listed there."
+              ],
+              "result": "Omar does not type a password into the text message."
             }
           ]
         },
@@ -2759,9 +2798,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Checking Windows Update on a home PC",
               "html": "",
-              "problem": "On a home Windows 11 computer, Omar selects Start, opens Settings, chooses Windows Update, and selects Check for Windows updates. An update is waiting, so Omar chooses Download &amp; install and restarts when asked — after saving any open work. Omar does not try this upgrade path on a library computer.",
-              "steps": [],
-              "result": "On a home Windows 11 computer, Omar selects Start, opens Settings, chooses Windows Update, and selects Check for Windows updates. An update is waiting, so Omar chooses Download &amp; install and restarts when asked — after saving any open work. Omar does not try this upgrade path on a library computer."
+              "problem": "On a home Windows 11 computer, Omar selects Start, opens Settings, chooses Windows Update, and selects Check for Windows updates.",
+              "steps": [
+                "An update is waiting, so Omar chooses Download & install and restarts when asked — after saving any open work."
+              ],
+              "result": "Omar does not try this upgrade path on a library computer."
             }
           ]
         },
@@ -2843,7 +2884,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "The App Store or Google Play"
+              "text": "A pop-up that appears over a game"
             },
             {
               "id": "B",
@@ -2851,14 +2892,14 @@
             },
             {
               "id": "C",
-              "text": "A pop-up that appears over a game"
+              "text": "The App Store or Google Play"
             },
             {
               "id": "D",
               "text": "A USB stick you found on a bus"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Official stores, and review permissions."
         },
         {
@@ -2870,15 +2911,15 @@
             },
             {
               "id": "B",
-              "text": "Delete computer"
+              "text": "Ignore permissions always"
             },
             {
               "id": "C",
-              "text": "Share password"
+              "text": "Delete computer"
             },
             {
               "id": "D",
-              "text": "Ignore permissions always"
+              "text": "Share password"
             }
           ],
           "answer": "A",
@@ -2889,22 +2930,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Settings > System > Software updates"
+              "text": "The camera app"
             },
             {
               "id": "B",
-              "text": "Settings > Wallpaper only"
+              "text": "Settings > System > Software updates"
             },
             {
               "id": "C",
-              "text": "The camera app"
+              "text": "Settings > Wallpaper only"
             },
             {
               "id": "D",
               "text": "File Explorer > Music"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Settings > System > Software updates (Google)."
         },
         {
@@ -2912,7 +2953,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "New security features, not only extra colours or tools"
+              "text": "A reason to turn off the screen lock"
             },
             {
               "id": "B",
@@ -2924,10 +2965,10 @@
             },
             {
               "id": "D",
-              "text": "A reason to turn off the screen lock"
+              "text": "New security features, not only extra colours or tools"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Get Cyber Safe: updates often contain new security features."
         },
         {
@@ -2939,7 +2980,7 @@
             },
             {
               "id": "B",
-              "text": "Photos > Albums"
+              "text": "a text from an unknown number"
             },
             {
               "id": "C",
@@ -2947,7 +2988,7 @@
             },
             {
               "id": "D",
-              "text": "a text from an unknown number"
+              "text": "Photos > Albums"
             }
           ],
           "answer": "A",
@@ -2973,7 +3014,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "You may be asked whether you accept them"
+              "text": "The phone deletes Documents"
             },
             {
               "id": "B",
@@ -2981,14 +3022,14 @@
             },
             {
               "id": "C",
-              "text": "Permissions never change"
+              "text": "You may be asked whether you accept them"
             },
             {
               "id": "D",
-              "text": "The phone deletes Documents"
+              "text": "Permissions never change"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Some updates require new permissions; you may get a notification asking whether you accept them."
         }
       ],
@@ -3139,9 +3180,12 @@
               "type": "workedExample",
               "title": "Worked example 1. Searching for library hours",
               "html": "",
-              "problem": "Priya wants Saturday hours for the town library. In the browser search box Priya types the library’s name and the town, then opens the result that matches the library’s real site. Priya checks the address bar and the security status before reading the hours. Priya does not tap the first colourful ad that only says “hours near you.”",
-              "steps": [],
-              "result": "Priya wants Saturday hours for the town library. In the browser search box Priya types the library’s name and the town, then opens the result that matches the library’s real site. Priya checks the address bar and the security status before reading the hours. Priya does not tap the first colourful ad that only says “hours near you.”"
+              "problem": "Priya wants Saturday hours for the town library.",
+              "steps": [
+                "In the browser search box Priya types the library’s name and the town, then opens the result that matches the library’s real site.",
+                "Priya checks the address bar and the security status before reading the hours."
+              ],
+              "result": "Priya does not tap the first colourful ad that only says “hours near you.”"
             }
           ]
         },
@@ -3154,9 +3198,13 @@
               "type": "workedExample",
               "title": "Worked example 2. A surprise “log in” page",
               "html": "",
-              "problem": "Priya followed a link in a message that claimed to be from a delivery company. The page asks for an email password. Priya notices the address does not match the company Priya knows, and Chrome’s status does not look like a page Priya trusts. Priya uses Back, does not type anything, and later opens the delivery company by typing its name into search (or using a bookmark) if Priya still needs the parcel information. The longer safety course covers more scam examples; this is enough for today.",
-              "steps": [],
-              "result": "Priya followed a link in a message that claimed to be from a delivery company. The page asks for an email password. Priya notices the address does not match the company Priya knows, and Chrome’s status does not look like a page Priya trusts. Priya uses Back, does not type anything, and later opens the delivery company by typing its name into search (or using a bookmark) if Priya still needs the parcel information. The longer safety course covers more scam examples; this is enough for today."
+              "problem": "Priya followed a link in a message that claimed to be from a delivery company.",
+              "steps": [
+                "The page asks for an email password.",
+                "Priya notices the address does not match the company Priya knows, and Chrome’s status does not look like a page Priya trusts.",
+                "Priya uses Back, does not type anything, and later opens the delivery company by typing its name into search (or using a bookmark) if Priya still needs the parcel information."
+              ],
+              "result": "The longer safety course covers more scam examples; this is enough for today."
             }
           ]
         },
@@ -3225,22 +3273,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A program for looking at websites"
-            },
-            {
-              "id": "B",
               "text": "A search website itself"
             },
             {
+              "id": "B",
+              "text": "A single saved photo"
+            },
+            {
               "id": "C",
-              "text": "The Settings app"
+              "text": "A program for looking at websites"
             },
             {
               "id": "D",
-              "text": "A single saved photo"
+              "text": "The Settings app"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "A browser opens websites."
         },
         {
@@ -3252,15 +3300,15 @@
             },
             {
               "id": "B",
-              "text": "Type only one letter"
+              "text": "Search in all capital letters only"
             },
             {
               "id": "C",
-              "text": "Leave out the place name"
+              "text": "Type only one letter"
             },
             {
               "id": "D",
-              "text": "Search in all capital letters only"
+              "text": "Leave out the place name"
             }
           ],
           "answer": "A",
@@ -3271,22 +3319,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "HTTP, HTTPS, or www"
+              "text": "The lock-screen clock"
             },
             {
               "id": "B",
-              "text": "The Back control"
+              "text": "HTTP, HTTPS, or www"
             },
             {
               "id": "C",
-              "text": "The battery icon"
+              "text": "The Back control"
             },
             {
               "id": "D",
-              "text": "The lock-screen clock"
+              "text": "The battery icon"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Look for a padlock instead (Get Cyber Safe)."
         },
         {
@@ -3294,22 +3342,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Not secure or Dangerous"
-            },
-            {
-              "id": "B",
               "text": "Always bank here"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Safe to type a password here"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Ignore this warning"
+            },
+            {
+              "id": "D",
+              "text": "Not secure or Dangerous"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Also Default (Secure) and Info or Not secure."
         },
         {
@@ -3317,11 +3365,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Open the organisation from its real home page instead"
+              "text": "Reply with your password"
             },
             {
               "id": "B",
-              "text": "Reply with your password"
+              "text": "Open the organisation from its real home page instead"
             },
             {
               "id": "C",
@@ -3332,7 +3380,7 @@
               "text": "Type your PIN into the text"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Never click a link in a suspicious message or send your password."
         },
         {
@@ -3359,15 +3407,15 @@
             },
             {
               "id": "B",
-              "text": "Enter your banking password"
+              "text": "Disable the screen lock"
             },
             {
               "id": "C",
-              "text": "Download every file on the page"
+              "text": "Enter your banking password"
             },
             {
               "id": "D",
-              "text": "Disable the screen lock"
+              "text": "Download every file on the page"
             }
           ],
           "answer": "A",
@@ -3485,9 +3533,11 @@
               "type": "workedExample",
               "title": "Worked example 1. A practice note to a tutor",
               "html": "",
-              "problem": "Riley opens a practice Gmail account on a library computer, clicks Compose, types the tutor’s practice address in To, writes the subject “Practice note from Riley,” and writes two sentences: who Riley is and that the practice message from Lesson 8 is done. Riley checks the To field, clicks Send, and signs out. No password, address, or health detail is in the note.",
-              "steps": [],
-              "result": "Riley opens a practice Gmail account on a library computer, clicks Compose, types the tutor’s practice address in To, writes the subject “Practice note from Riley,” and writes two sentences: who Riley is and that the practice message from Lesson 8 is done. Riley checks the To field, clicks Send, and signs out. No password, address, or health detail is in the note."
+              "problem": "Riley opens a practice Gmail account on a library computer, clicks Compose, types the tutor’s practice address in To, writes the subject “Practice note from Riley,” and writes two sentences: who Riley is and that the practice message from Lesson 8 is done.",
+              "steps": [
+                "Riley checks the To field, clicks Send, and signs out."
+              ],
+              "result": "No password, address, or health detail is in the note."
             }
           ]
         },
@@ -3500,9 +3550,12 @@
               "type": "workedExample",
               "title": "Worked example 2. A text that asks you to call a “bank” number",
               "html": "",
-              "problem": "Riley gets a text that says a bank account is locked and lists a phone number to call at once. The number is not one Riley saved. Following Get Cyber Safe, Riley does not call the number in the text and does not tap the link. If Riley still wants to check the account, Riley uses a phone number or website already known to be the bank’s, or asks a tutor how to find the official contact later.",
-              "steps": [],
-              "result": "Riley gets a text that says a bank account is locked and lists a phone number to call at once. The number is not one Riley saved. Following Get Cyber Safe, Riley does not call the number in the text and does not tap the link. If Riley still wants to check the account, Riley uses a phone number or website already known to be the bank’s, or asks a tutor how to find the official contact later."
+              "problem": "Riley gets a text that says a bank account is locked and lists a phone number to call at once.",
+              "steps": [
+                "The number is not one Riley saved.",
+                "Following Get Cyber Safe, Riley does not call the number in the text and does not tap the link."
+              ],
+              "result": "If Riley still wants to check the account, Riley uses a phone number or website already known to be the bank’s, or asks a tutor how to find the official contact later."
             }
           ]
         },
@@ -3563,22 +3616,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "An email address and a subject line"
-            },
-            {
-              "id": "B",
-              "text": "Only a paper stamp"
-            },
-            {
-              "id": "C",
               "text": "File Explorer"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "An email address and a subject line"
+            },
+            {
+              "id": "C",
               "text": "File Explorer’s Music folder"
+            },
+            {
+              "id": "D",
+              "text": "Only a paper stamp"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Email uses an address and usually a subject."
         },
         {
@@ -3586,22 +3639,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Compose"
+              "text": "Turn off the screen lock"
             },
             {
               "id": "B",
-              "text": "Delete all mail"
-            },
-            {
-              "id": "C",
               "text": "Share your password"
             },
             {
+              "id": "C",
+              "text": "Compose"
+            },
+            {
               "id": "D",
-              "text": "Turn off the screen lock"
+              "text": "Delete all mail"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Then To, subject, message, and Send (Gmail help)."
         },
         {
@@ -3613,7 +3666,7 @@
             },
             {
               "id": "B",
-              "text": "Say you are running late, in ordinary words"
+              "text": "Practise typing the word hello"
             },
             {
               "id": "C",
@@ -3621,7 +3674,7 @@
             },
             {
               "id": "D",
-              "text": "Practise typing the word hello"
+              "text": "Say you are running late, in ordinary words"
             }
           ],
           "answer": "A",
@@ -3632,11 +3685,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Do not call the number in the suspicious message"
+              "text": "Call it at once and read your password aloud"
             },
             {
               "id": "B",
-              "text": "Call it at once and read your password aloud"
+              "text": "Open every attachment"
             },
             {
               "id": "C",
@@ -3644,10 +3697,10 @@
             },
             {
               "id": "D",
-              "text": "Open every attachment"
+              "text": "Do not call the number in the suspicious message"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Never call numbers in suspicious messages, even if they name a bank."
         },
         {
@@ -3655,7 +3708,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "A tutor or practice address"
+              "text": "Your bank’s complaints department"
             },
             {
               "id": "B",
@@ -3663,14 +3716,14 @@
             },
             {
               "id": "C",
-              "text": "Your bank’s complaints department"
+              "text": "A tutor or practice address"
             },
             {
               "id": "D",
               "text": "Every person in the building"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Tutor or practice address only."
         },
         {
@@ -3678,14 +3731,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Never open attachments from unknown or untrusted sources."
         },
         {
@@ -3693,11 +3746,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sign out if staff ask you to"
+              "text": "Download every file you see"
             },
             {
               "id": "B",
-              "text": "Leave the inbox open for the next person"
+              "text": "Sign out if staff ask you to"
             },
             {
               "id": "C",
@@ -3705,10 +3758,10 @@
             },
             {
               "id": "D",
-              "text": "Download every file you see"
+              "text": "Leave the inbox open for the next person"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Sign out so the next person does not use your mail."
         }
       ],
@@ -3827,9 +3880,11 @@
               "type": "workedExample",
               "title": "Worked example 1. A practice passphrase shape (not a real secret)",
               "html": "",
-              "problem": "Noah practises the shape of a passphrase with four ordinary words that are not a real password, counting to be sure there are at least fifteen letters in total. Noah does not type a live password into the course, and does not use a pet’s name. Later, on a real account, Noah will create a different secret and will not reuse it on a second site.",
-              "steps": [],
-              "result": "Noah practises the shape of a passphrase with four ordinary words that are not a real password, counting to be sure there are at least fifteen letters in total. Noah does not type a live password into the course, and does not use a pet’s name. Later, on a real account, Noah will create a different secret and will not reuse it on a second site."
+              "problem": "Noah practises the shape of a passphrase with four ordinary words that are not a real password, counting to be sure there are at least fifteen letters in total.",
+              "steps": [
+                "Noah does not type a live password into the course, and does not use a pet’s name."
+              ],
+              "result": "Later, on a real account, Noah will create a different secret and will not reuse it on a second site."
             }
           ]
         },
@@ -3842,9 +3897,13 @@
               "type": "workedExample",
               "title": "Worked example 2. A “confirm your password” email",
               "html": "",
-              "problem": "Noah receives an email that looks like a store Noah uses. It says to confirm a password today or the account will close. Instead of tapping the link, Noah opens a browser and goes to the store the way Noah usually does (a bookmark or a typed address). The store’s real site has no such warning. Noah deletes the email and does not reply.",
-              "steps": [],
-              "result": "Noah receives an email that looks like a store Noah uses. It says to confirm a password today or the account will close. Instead of tapping the link, Noah opens a browser and goes to the store the way Noah usually does (a bookmark or a typed address). The store’s real site has no such warning. Noah deletes the email and does not reply."
+              "problem": "Noah receives an email that looks like a store Noah uses.",
+              "steps": [
+                "It says to confirm a password today or the account will close.",
+                "Instead of tapping the link, Noah opens a browser and goes to the store the way Noah usually does (a bookmark or a typed address).",
+                "The store’s real site has no such warning."
+              ],
+              "result": "Noah deletes the email and does not reply."
             }
           ]
         },
@@ -3928,22 +3987,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Twelve characters, with mixed case, a number, and a symbol"
+              "text": "Written on the screen"
             },
             {
               "id": "B",
-              "text": "Three letters"
+              "text": "Twelve characters, with mixed case, a number, and a symbol"
             },
             {
               "id": "C",
-              "text": "The same as your email address"
+              "text": "Three letters"
             },
             {
               "id": "D",
-              "text": "Written on the screen"
+              "text": "The same as your email address"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Twelve characters with mixed case, a number, and a symbol."
         },
         {
@@ -3951,22 +4010,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "One stolen password can be tried on the other sites"
-            },
-            {
-              "id": "B",
-              "text": "Computers refuse to reuse anything"
-            },
-            {
-              "id": "C",
               "text": "It makes Wi-Fi faster"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "It deletes Documents"
+            },
+            {
+              "id": "C",
+              "text": "One stolen password can be tried on the other sites"
+            },
+            {
+              "id": "D",
+              "text": "Computers refuse to reuse anything"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "A breach of one site can open the others."
         },
         {
@@ -3974,7 +4033,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Never share your password with anyone"
+              "text": "Tape it to the monitor"
             },
             {
               "id": "B",
@@ -3982,14 +4041,14 @@
             },
             {
               "id": "C",
-              "text": "Tape it to the monitor"
+              "text": "Never share your password with anyone"
             },
             {
               "id": "D",
               "text": "Use it as a file name"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Never share a password."
         },
         {
@@ -3997,22 +4056,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Open the organisation from its real home page instead"
+              "text": "Share the link in a group chat"
             },
             {
               "id": "B",
-              "text": "Type the password as fast as you can"
+              "text": "Open the organisation from its real home page instead"
             },
             {
               "id": "C",
-              "text": "Call every number in the message"
+              "text": "Type the password as fast as you can"
             },
             {
               "id": "D",
-              "text": "Share the link in a group chat"
+              "text": "Call every number in the message"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Legitimate sites will not ask you to log in via text."
         },
         {
@@ -4039,15 +4098,15 @@
             },
             {
               "id": "B",
-              "text": "A pop-up that appears over a game"
-            },
-            {
-              "id": "C",
               "text": "A stranger at a bus stop"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Outlook workplace lessons (a different course)"
+            },
+            {
+              "id": "D",
+              "text": "A pop-up that appears over a game"
             }
           ],
           "answer": "A",
@@ -4164,9 +4223,13 @@
               "type": "workedExample",
               "title": "Worked example 1. A laptop that will not “turn on”",
               "html": "",
-              "problem": "Avery’s library laptop looks dead. Avery checks that the power cable is seated at both ends and waits a moment. The lock screen appears. Avery signs in and finds the practice file from Lesson 4. No extra buttons were held down, and no pop-up “support” number was called.",
-              "steps": [],
-              "result": "Avery’s library laptop looks dead. Avery checks that the power cable is seated at both ends and waits a moment. The lock screen appears. Avery signs in and finds the practice file from Lesson 4. No extra buttons were held down, and no pop-up “support” number was called."
+              "problem": "Avery’s library laptop looks dead.",
+              "steps": [
+                "Avery checks that the power cable is seated at both ends and waits a moment.",
+                "The lock screen appears.",
+                "Avery signs in and finds the practice file from Lesson 4."
+              ],
+              "result": "No extra buttons were held down, and no pop-up “support” number was called."
             }
           ]
         },
@@ -4179,9 +4242,12 @@
               "type": "workedExample",
               "title": "Worked example 2. A phone left on a bus",
               "html": "",
-              "problem": "Avery realises a phone may have been left on a bus. Following Get Cyber Safe, Avery contacts the mobile provider to ask about deactivating the device and does not go looking for a stranger who might have it. Avery also plans to tell local police. Avery does not text the password to a number that later messages “we found your phone.”",
-              "steps": [],
-              "result": "Avery realises a phone may have been left on a bus. Following Get Cyber Safe, Avery contacts the mobile provider to ask about deactivating the device and does not go looking for a stranger who might have it. Avery also plans to tell local police. Avery does not text the password to a number that later messages “we found your phone.”"
+              "problem": "Avery realises a phone may have been left on a bus.",
+              "steps": [
+                "Following Get Cyber Safe, Avery contacts the mobile provider to ask about deactivating the device and does not go looking for a stranger who might have it.",
+                "Avery also plans to tell local police."
+              ],
+              "result": "Avery does not text the password to a number that later messages “we found your phone.”"
             }
           ]
         },
@@ -4246,11 +4312,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Check the charger or power cable, then try to wake the screen"
+              "text": "Open the case and try to replace parts without asking staff"
             },
             {
               "id": "B",
-              "text": "Open the case and try to replace parts without asking staff"
+              "text": "Call every number that appears on screen"
             },
             {
               "id": "C",
@@ -4258,10 +4324,10 @@
             },
             {
               "id": "D",
-              "text": "Call every number that appears on screen"
+              "text": "Check the charger or power cable, then try to wake the screen"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Power first, then wake the screen."
         },
         {
@@ -4269,11 +4335,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Locks the computer and keeps apps open in the background"
+              "text": "Deletes Documents"
             },
             {
               "id": "B",
-              "text": "Deletes Documents"
+              "text": "Sends your password by email"
             },
             {
               "id": "C",
@@ -4281,10 +4347,10 @@
             },
             {
               "id": "D",
-              "text": "Sends your password by email"
+              "text": "Locks the computer and keeps apps open in the background"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Microsoft: lock with Windows key + L; apps stay open."
         },
         {
@@ -4292,22 +4358,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Contact your service provider and report it to police"
-            },
-            {
-              "id": "B",
               "text": "Chase anyone who might have it"
             },
             {
+              "id": "B",
+              "text": "Ignore it and hope"
+            },
+            {
               "id": "C",
-              "text": "Post your password online so a finder can unlock it"
+              "text": "Contact your service provider and report it to police"
             },
             {
               "id": "D",
-              "text": "Ignore it and hope"
+              "text": "Post your password online so a finder can unlock it"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Provider (deactivate / blacklist) and police."
         },
         {
@@ -4323,11 +4389,11 @@
             },
             {
               "id": "C",
-              "text": "Ask staff for help"
+              "text": "Lock the screen"
             },
             {
               "id": "D",
-              "text": "Lock the screen"
+              "text": "Ask staff for help"
             }
           ],
           "answer": "A",
@@ -4338,22 +4404,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask a tutor before you hold unfamiliar buttons or sign out"
-            },
-            {
-              "id": "B",
-              "text": "Hold unfamiliar buttons until the machine restarts, without asking staff"
-            },
-            {
-              "id": "C",
               "text": "Sign out without asking, even if unsaved work might be lost"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Walk away and leave the frozen screen for the next person"
+            },
+            {
+              "id": "C",
+              "text": "Ask a tutor before you hold unfamiliar buttons or sign out"
+            },
+            {
+              "id": "D",
+              "text": "Hold unfamiliar buttons until the machine restarts, without asking staff"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Ask before signing out or forcing buttons; unsaved work can be lost."
         },
         {
@@ -4361,14 +4427,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "This is not a tech-support contract."
         },
         {
@@ -4376,22 +4442,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Use a person or number you already trust, or that staff give you"
-            },
-            {
-              "id": "B",
               "text": "Call the pop-up number and read your password"
             },
             {
+              "id": "B",
+              "text": "Use a person or number you already trust, or that staff give you"
+            },
+            {
               "id": "C",
-              "text": "Disable the screen lock"
+              "text": "Join a random public Wi-Fi network"
             },
             {
               "id": "D",
-              "text": "Join a random public Wi-Fi network"
+              "text": "Disable the screen lock"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Ignore surprise numbers; use known contacts."
         },
         {
@@ -4399,11 +4465,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "On a real device, with staff nearby for Wi-Fi, without typing real secrets into this course"
+              "text": "By installing unofficial apps from a text message"
             },
             {
               "id": "B",
-              "text": "By guessing other people’s passwords"
+              "text": "On a real device, with staff nearby for Wi-Fi, without typing real secrets into this course"
             },
             {
               "id": "C",
@@ -4411,10 +4477,10 @@
             },
             {
               "id": "D",
-              "text": "By installing unofficial apps from a text message"
+              "text": "By guessing other people’s passwords"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Five everyday skills, no live secrets in the course."
         }
       ],

@@ -82,6 +82,80 @@ function sceneSvg(block) {
   const id = block.id || "";
   const ink = "#1b1914";
   const line = "#123c2e";
+  if (id === "word-window-parts") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="16" y="16" width="328" height="22" fill="#e7f0eb" stroke="${line}"/>
+      <text x="24" y="31" font-size="12" fill="${ink}">hall-booking — Word</text>
+      <text x="250" y="31" font-size="11" fill="${ink}">Save Undo</text>
+      <text x="24" y="54" font-size="12" fill="${ink}">File</text>
+      <text x="70" y="54" font-size="12" fill="${ink}">Home</text>
+      <rect x="16" y="64" width="328" height="120" fill="#fff" stroke="${line}"/>
+      <text x="28" y="90" font-size="13" fill="${ink}">Type here</text>
+      <text x="300" y="200" font-size="12" fill="${ink}">100%</text>
+      ${marker(1, 200, 16)}${marker(2, 300, 16)}${marker(3, 40, 48)}${marker(4, 110, 48)}${marker(5, 180, 100)}${marker(6, 330, 200)}`);
+  }
+  if (id === "word-header-margins") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="50" y="24" width="260" height="172" fill="none" stroke="${line}" stroke-dasharray="4 3"/>
+      <rect x="70" y="40" width="220" height="140" fill="#fff" stroke="${line}"/>
+      <text x="80" y="58" font-size="11" fill="${ink}">Community notice — practice</text>
+      <text x="80" y="86" font-size="14" fill="${ink}">Saturday market</text>
+      <text x="250" y="168" font-size="12" fill="${ink}">1</text>
+      ${marker(1, 40, 110)}${marker(2, 200, 36)}${marker(3, 280, 168)}${marker(4, 160, 90)}`);
+  }
+  if (id === "word-alt-text") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="20" y="30" width="150" height="100" fill="#e7f0eb" stroke="${line}"/>
+      <text x="36" y="84" font-size="12" fill="${ink}">Hall photo</text>
+      <rect x="190" y="30" width="150" height="120" fill="#fff" stroke="${line}"/>
+      <text x="200" y="54" font-size="12" fill="${ink}">Alt text</text>
+      <text x="200" y="78" font-size="11" fill="${ink}">Ramp beside the door</text>
+      <text x="200" y="130" font-size="11" fill="${ink}">Decorative</text>
+      ${marker(1, 90, 24)}${marker(2, 320, 50)}${marker(3, 320, 130)}`);
+  }
+  if (id === "outlook-window-parts") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="16" y="28" font-size="12" fill="${ink}">Mail</text>
+      <text x="70" y="28" font-size="12" fill="${ink}">Calendar</text>
+      <text x="140" y="28" font-size="12" fill="${ink}">People</text>
+      <text x="200" y="28" font-size="12" fill="${ink}">Tasks</text>
+      <rect x="16" y="40" width="90" height="160" fill="#e7f0eb" stroke="${line}"/>
+      <text x="24" y="64" font-size="12" fill="${ink}">Inbox</text>
+      <rect x="114" y="40" width="110" height="160" fill="#fff" stroke="${line}"/>
+      <text x="122" y="64" font-size="11" fill="${ink}">Jordan</text>
+      <rect x="232" y="40" width="112" height="160" fill="#fff" stroke="${line}"/>
+      <text x="240" y="64" font-size="11" fill="${ink}">Reading</text>
+      ${marker(1, 36, 16)}${marker(2, 100, 16)}${marker(3, 160, 16)}${marker(4, 230, 16)}${marker(5, 50, 70)}${marker(6, 280, 80)}`);
+  }
+  if (id === "outlook-phishing-signs") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="16" y="36" font-size="12" fill="${ink}">From: acc0unts@mail.test</text>
+      <text x="16" y="68" font-size="12" fill="${ink}">Subject: Account Rest</text>
+      <text x="16" y="110" font-size="12" fill="${ink}">Act in 24 hours or we close it</text>
+      <text x="16" y="150" font-size="12" fill="${ink}">Do not call the number on your card</text>
+      ${marker(1, 330, 32)}${marker(2, 330, 64)}${marker(3, 330, 106)}${marker(4, 330, 146)}`);
+  }
+  if (id === "jobsearch-search-parts") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="16" y="28" font-size="14" fill="${ink}">Job Bank</text>
+      <rect x="16" y="40" width="200" height="28" fill="#fff" stroke="${line}"/>
+      <text x="24" y="58" font-size="12" fill="${ink}">Job title</text>
+      <rect x="16" y="78" width="200" height="28" fill="#fff" stroke="${line}"/>
+      <text x="24" y="96" font-size="12" fill="${ink}">Place</text>
+      <text x="16" y="140" font-size="12" fill="${ink}">Hours</text>
+      <text x="80" y="140" font-size="12" fill="${ink}">Benefits</text>
+      <text x="160" y="140" font-size="12" fill="${ink}">Salary</text>
+      ${marker(1, 240, 54)}${marker(2, 240, 92)}${marker(3, 40, 150)}`);
+  }
+  if (id === "jobsearch-posting-parts") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="16" y="36" font-size="14" fill="${ink}">Weekend Attendant</text>
+      <text x="16" y="58" font-size="12" fill="${ink}">Sampletown Community Centre</text>
+      <text x="16" y="90" font-size="12" fill="${ink}">Weekends · Sampletown</text>
+      <text x="16" y="122" font-size="12" fill="${ink}">Greet visitors · set up tables</text>
+      <text x="16" y="164" font-size="12" fill="${ink}">How to apply · sample closing date</text>
+      ${marker(1, 320, 40)}${marker(2, 320, 86)}${marker(3, 320, 118)}${marker(4, 320, 160)}`);
+  }
   if (id === "phones-parts-of-screen") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
       <rect x="16" y="18" width="110" height="184" rx="14" fill="#f4efe4" stroke="${line}" stroke-width="2"/>
@@ -278,6 +352,22 @@ function sheetTable(rows) {
     .join("")}</table></div>`;
 }
 
+function controlLabel(spot) {
+  const raw = spot.label || spot.id;
+  if (/looks fine/i.test(raw)) return "Print";
+  if (/if it appears|if you see/i.test(raw)) return "English (Canada)";
+  return raw;
+}
+
+function hotspotButtons(spots) {
+  return spots
+    .map(
+      (spot) =>
+        `<button type="button" class="btn btn-secondary" data-hotspot="${esc(spot.id)}">${esc(controlLabel(spot))}</button>`
+    )
+    .join("");
+}
+
 function frameKind(block) {
   const blob = (block.id || "") + " " + (block.app || "") + " " + (block.caption || "");
   if (/first-formula|autosum|enter-tab|enter-text/.test(block.id || "")) return "sheet";
@@ -322,7 +412,48 @@ function simulation(block) {
   }
   let stage = "";
   const config = { id: block.id, kind, steps, values: {}, start: "A1" };
-  if (kind === "sheet") {
+  if (kind === "word" || kind === "outlook" || kind === "job") {
+    const buttons = hotspotButtons(spots);
+    const word = `<div class="word-page">
+      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
+      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
+      <p data-slot="sent1">The hall is open on Saturday.</p>
+      <p data-slot="body">Please bring your own bags.</p>
+      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
+      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
+      <p data-slot="proof" hidden></p>
+      <p data-slot="pagenum" hidden>Page 1</p>
+      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
+    </div>`;
+    const outlook = `<div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
+      </div>
+    </div>`;
+    const job = `<div class="job-form"><p>Job title <strong data-field="title"></strong></p><p>Place <strong data-field="place"></strong></p></div>
+      <ul class="job-results"><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>
+      <article data-slot="posting"><p>Sampletown Community Centre. Greet visitors and set up tables. First aid is an asset, not required. Sample only.</p></article>
+      <div class="ol-pane"><p>To <strong data-field="to"></strong></p><p>Subject <strong data-field="subject"></strong></p><p data-field="body"></p></div>`;
+    const body = kind === "word" ? word : kind === "outlook" ? outlook : job;
+    stage = `<div class="practice-window" data-app="${kind}">
+      <div class="pw-bar"><strong>${esc(title)}</strong> <span data-doc-name>${kind === "word" ? "Document1" : ""}</span></div>
+      ${body}
+      <div class="sheet-keys">${buttons}</div>
+      <p class="pw-status" data-sim-status></p>
+    </div>`;
+  } else if (kind === "sheet") {
     const rows = /enter-tab|enter-text/.test(block.id || "") ? blankGrid() : hoursGrid();
     rows.forEach((row, r) => {
       row.forEach((cell, c) => {
@@ -350,12 +481,7 @@ function simulation(block) {
       <p class="pw-status" data-sim-status></p>
     </div>`;
   } else {
-    const buttons = spots
-      .map(
-        (spot) =>
-          `<button type="button" class="btn btn-secondary" data-hotspot="${esc(spot.id)}">${esc(spot.label || spot.id)}</button>`
-      )
-      .join("");
+    const buttons = hotspotButtons(spots);
     const reveal = block.id === "excel-blank-workbook" ? `<div data-empty-grid hidden>${sheetTable(blankGrid())}</div>` : "";
     if (block.id === "excel-blank-workbook") config.revealGrid = true;
     stage = `<div class="practice-window">

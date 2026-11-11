@@ -82,14 +82,17 @@
 <p>If someone else uses the same library computer, sign out when you finish, the way Everyday Computers teaches for a shared machine. Do not leave Outlook open on a public desk.</p></div>
 <figure class="block block-figure" data-block="annotatedImage" id="outlook-window-parts">
   <div class="stage"><svg viewBox="0 0 360 220" role="img" width="100%"><rect width="360" height="220" fill="#fffdf8"/>
-      <text x="20" y="36" font-size="16" fill="#1b1914">Outlook</text>
-      <rect x="20" y="52" width="90" height="148" fill="#e7f0eb" stroke="#123c2e"/>
-      <text x="32" y="80" font-size="13" fill="#1b1914">Mail</text>
-      <text x="32" y="108" font-size="13" fill="#1b1914">Calendar</text>
-      <rect x="124" y="52" width="216" height="148" fill="#fff" stroke="#123c2e"/>
-      <text x="140" y="84" font-size="13" fill="#1b1914">To</text>
-      <text x="140" y="112" font-size="13" fill="#1b1914">Subject</text>
-      <circle cx="96" cy="76" r="11" fill="#123c2e"/><text x="96" y="80" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="96" cy="108" r="11" fill="#123c2e"/><text x="96" y="112" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="300" cy="84" r="11" fill="#123c2e"/><text x="300" y="88" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
+      <text x="16" y="28" font-size="12" fill="#1b1914">Mail</text>
+      <text x="70" y="28" font-size="12" fill="#1b1914">Calendar</text>
+      <text x="140" y="28" font-size="12" fill="#1b1914">People</text>
+      <text x="200" y="28" font-size="12" fill="#1b1914">Tasks</text>
+      <rect x="16" y="40" width="90" height="160" fill="#e7f0eb" stroke="#123c2e"/>
+      <text x="24" y="64" font-size="12" fill="#1b1914">Inbox</text>
+      <rect x="114" y="40" width="110" height="160" fill="#fff" stroke="#123c2e"/>
+      <text x="122" y="64" font-size="11" fill="#1b1914">Jordan</text>
+      <rect x="232" y="40" width="112" height="160" fill="#fff" stroke="#123c2e"/>
+      <text x="240" y="64" font-size="11" fill="#1b1914">Reading</text>
+      <circle cx="36" cy="16" r="11" fill="#123c2e"/><text x="36" y="20" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="100" cy="16" r="11" fill="#123c2e"/><text x="100" y="20" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="160" cy="16" r="11" fill="#123c2e"/><text x="160" y="20" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text><circle cx="230" cy="16" r="11" fill="#123c2e"/><text x="230" y="20" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">4</text><circle cx="50" cy="70" r="11" fill="#123c2e"/><text x="50" y="74" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">5</text><circle cx="280" cy="80" r="11" fill="#123c2e"/><text x="280" y="84" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">6</text></svg></div>
   <p class="caption">A practice drawing of an Outlook window. Callouts mark Mail, Calendar, People, Tasks, the Inbox in the folder list, the message list, and the reading pane. Caption: Practice screen — not the real Outlook.</p>
   <figcaption><ol class="callouts"><li>Mail — messages and the Inbox</li><li>Calendar — your schedule</li><li>People — contacts</li><li>Tasks — to-do items</li><li>Folder list — Inbox and other folders</li><li>Message list and reading pane</li></ol></figcaption>
 </figure>
@@ -114,13 +117,27 @@
 <section class="block block-sim" data-block="simulation" data-sim="outlook-open-nav" id="outlook-open-nav">
   <h3>Open Outlook and find Mail and Calendar (practice computer)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Outlook</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="start">Start</button><button type="button" class="btn btn-secondary" data-hotspot="outlook">Outlook</button><button type="button" class="btn btn-secondary" data-hotspot="mail">Mail</button><button type="button" class="btn btn-secondary" data-hotspot="calendar">Calendar</button></div>
-        
+  <div class="practice-window" data-app="outlook">
+      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="start">Start</button><button type="button" class="btn btn-secondary" data-hotspot="outlook">Outlook</button><button type="button" class="btn btn-secondary" data-hotspot="mail">Mail</button><button type="button" class="btn btn-secondary" data-hotspot="calendar">Calendar</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -145,9 +162,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A first practice session</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex sits down with a tutor-approved practice account at Sampletown Community Centre. The tutor starts Outlook so Alex never types a real workplace password into the course. Alex looks along the bottom of the window, selects <strong>Mail</strong>, and sees an Inbox with a few sample messages. Alex then selects <strong>Calendar</strong>. The message list disappears from view, which startles Alex for a moment. Alex selects <strong>Mail</strong> again and the Inbox returns. Nothing was deleted. Alex writes “Mail = messages, Calendar = schedule” on a scrap of paper.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex sits down with a tutor-approved practice account at Sampletown Community Centre. The tutor starts Outlook so Alex never types a real workplace password into the course. Alex looks along the bottom of the window, selects <strong>Mail</strong>, and sees an Inbox with a few sample messages. Alex then selects <strong>Calendar</strong>. The message list disappears from view, which startles Alex for a moment. Alex selects <strong>Mail</strong> again and the Inbox returns. Nothing was deleted. Alex writes “Mail = messages, Calendar = schedule” on a scrap of paper.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex sits down with a tutor-approved practice account at Sampletown Community Centre.</p></div>
+      <p class="block-label">Steps</p><ol><li>The tutor starts Outlook so Alex never types a real workplace password into the course.</li><li>Alex looks along the bottom of the window, selects Mail , and sees an Inbox with a few sample messages.</li><li>Alex then selects Calendar .</li><li>The message list disappears from view, which startles Alex for a moment.</li><li>Alex selects Mail again and the Inbox returns.</li><li>Nothing was deleted.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Alex writes “Mail = messages, Calendar = schedule” on a scrap of paper.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-look-around-without-sending-yet">Previous section</a>
@@ -161,9 +178,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. The library computer looks different</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Priya uses a library computer that shows fewer words and more icons than the centre’s laptop. Priya cannot find the word Calendar at first and almost asks staff to reinstall the program. A tutor points to the icons along the bottom and helps Priya match them to Mail, Calendar, People, and Tasks. Priya opens Calendar, checks that today’s date appears, then returns to Mail. Before leaving, Priya signs out, the way Everyday Computers teaches on a shared machine.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Priya uses a library computer that shows fewer words and more icons than the centre’s laptop. Priya cannot find the word Calendar at first and almost asks staff to reinstall the program. A tutor points to the icons along the bottom and helps Priya match them to Mail, Calendar, People, and Tasks. Priya opens Calendar, checks that today’s date appears, then returns to Mail. Before leaving, Priya signs out, the way Everyday Computers teaches on a shared machine.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Priya uses a library computer that shows fewer words and more icons than the centre’s laptop.</p></div>
+      <p class="block-label">Steps</p><ol><li>Priya cannot find the word Calendar at first and almost asks staff to reinstall the program.</li><li>A tutor points to the icons along the bottom and helps Priya match them to Mail, Calendar, People, and Tasks.</li><li>Priya opens Calendar, checks that today’s date appears, then returns to Mail.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Before leaving, Priya signs out, the way Everyday Computers teaches on a shared machine.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-first-practice-session">Previous section</a>
@@ -189,6 +206,7 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>If you are in a study group: what looks different on your screen compared with a classmate’s? Name one matching word or icon you both found.</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="outlook-l1-cheatsheet"><h2>Lesson 1 — Open Outlook</h2><ul><li>Start Outlook from the Start menu. Use a tutor-approved practice account.</li><li>Never type a real workplace password into this course.</li><li>Mail, Calendar, People, and Tasks move you among the main areas.</li><li>New messages usually arrive in the Inbox.</li><li>Switching to Calendar does not delete your mail.</li><li>Screens differ in classic, new, web, and mobile Outlook.</li><li>File &gt; Add Account adds another account later — it is not how you open Calendar.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-try-it">Previous section</a>
     <button type="button" class="btn" data-read-section="discussion-optional" data-lesson="1">Mark this section as read</button>

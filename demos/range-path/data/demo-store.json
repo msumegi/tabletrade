@@ -961,9 +961,9 @@
       "status": "passed",
       "at": "2026-10-08T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 88,
+        "correct": 26,
+        "total": 30,
+        "percent": 87,
         "passed": true,
         "date": "2026-10-08"
       }
@@ -977,9 +977,9 @@
       "status": "passed",
       "at": "2026-10-15T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 84,
+        "correct": 25,
+        "total": 30,
+        "percent": 83,
         "passed": true,
         "date": "2026-10-15"
       }
@@ -993,9 +993,9 @@
       "status": "passed",
       "at": "2026-10-22T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 81,
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
         "passed": true,
         "date": "2026-10-22"
       }
@@ -1024,9 +1024,9 @@
       "status": "passed",
       "at": "2026-10-11T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 88,
+        "correct": 26,
+        "total": 30,
+        "percent": 87,
         "passed": true,
         "date": "2026-10-11"
       }
@@ -1040,9 +1040,9 @@
       "status": "passed",
       "at": "2026-10-19T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 84,
+        "correct": 25,
+        "total": 30,
+        "percent": 83,
         "passed": true,
         "date": "2026-10-19"
       }
@@ -1056,9 +1056,9 @@
       "status": "passed",
       "at": "2026-10-14T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 88,
+        "correct": 26,
+        "total": 30,
+        "percent": 87,
         "passed": true,
         "date": "2026-10-14"
       }
@@ -1087,9 +1087,9 @@
       "status": "passed",
       "at": "2026-10-28T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 79,
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
         "passed": true,
         "date": "2026-10-28"
       }
@@ -1103,9 +1103,9 @@
       "status": "passed",
       "at": "2026-10-16T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 88,
+        "correct": 26,
+        "total": 30,
+        "percent": 87,
         "passed": true,
         "date": "2026-10-16"
       }
@@ -1119,9 +1119,9 @@
       "status": "passed",
       "at": "2026-10-24T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 84,
+        "correct": 25,
+        "total": 30,
+        "percent": 83,
         "passed": true,
         "date": "2026-10-24"
       }
@@ -1135,9 +1135,9 @@
       "status": "passed",
       "at": "2026-11-02T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 81,
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
         "passed": true,
         "date": "2026-11-02"
       }
@@ -1151,9 +1151,9 @@
       "status": "passed",
       "at": "2026-10-20T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 88,
+        "correct": 26,
+        "total": 30,
+        "percent": 87,
         "passed": true,
         "date": "2026-10-20"
       }
@@ -1167,9 +1167,9 @@
       "status": "passed",
       "at": "2026-11-04T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 81,
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
         "passed": true,
         "date": "2026-11-04"
       }
@@ -1198,9 +1198,9 @@
       "status": "passed",
       "at": "2026-10-23T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 88,
+        "correct": 26,
+        "total": 30,
+        "percent": 87,
         "passed": true,
         "date": "2026-10-23"
       }
@@ -1214,9 +1214,9 @@
       "status": "passed",
       "at": "2026-11-01T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 84,
+        "correct": 25,
+        "total": 30,
+        "percent": 83,
         "passed": true,
         "date": "2026-11-01"
       }
@@ -1230,9 +1230,9 @@
       "status": "passed",
       "at": "2026-11-05T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 79,
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
         "passed": true,
         "date": "2026-11-05"
       }
@@ -1261,9 +1261,9 @@
       "status": "passed",
       "at": "2026-11-06T18:00:00.000Z",
       "detail": {
-        "correct": 7,
-        "total": 7,
-        "percent": 79,
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
         "passed": true,
         "date": "2026-11-06"
       }
@@ -1289,13 +1289,13 @@
       "courseId": "excel-basics-canada",
       "itemId": "exam:final",
       "kind": "exam",
-      "status": "scored",
+      "status": "passed",
       "at": "2026-10-30T18:00:00.000Z",
       "detail": {
-        "correct": 2,
-        "total": 7,
-        "percent": 28,
-        "passed": false,
+        "correct": 21,
+        "total": 30,
+        "percent": 70,
+        "passed": true,
         "date": "",
         "attempts": [
           {
@@ -1310,6 +1310,22 @@
           }
         ]
       }
+    },
+    {
+      "id": "prg-user-jordan-outlook-exam",
+      "learnerId": "user-jordan",
+      "courseId": "outlook-workplace-email",
+      "itemId": "exam:final",
+      "kind": "exam",
+      "status": "passed",
+      "at": "2026-10-20T18:00:00.000Z",
+      "detail": {
+        "correct": 24,
+        "total": 30,
+        "percent": 80,
+        "passed": true,
+        "date": "2026-10-20"
+      }
     }
   ],
   "certificates": [
@@ -1319,12 +1335,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-08T18:00:00.000Z",
-      "percent": 88,
+      "percent": 87,
       "learnerCode": "JLEE",
       "sample": true,
       "serial": "SAMPLE-cert-user-jordan-computers",
       "pass": true,
-      "score": 88
+      "score": 87
     },
     {
       "id": "cert-user-jordan-excel",
@@ -1332,12 +1348,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-15T18:00:00.000Z",
-      "percent": 84,
+      "percent": 83,
       "learnerCode": "JLEE",
       "sample": true,
       "serial": "SAMPLE-cert-user-jordan-excel",
       "pass": true,
-      "score": 84
+      "score": 83
     },
     {
       "id": "cert-user-jordan-word",
@@ -1345,12 +1361,12 @@
       "courseId": "word-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-22T18:00:00.000Z",
-      "percent": 81,
+      "percent": 80,
       "learnerCode": "JLEE",
       "sample": true,
       "serial": "SAMPLE-cert-user-jordan-word",
       "pass": true,
-      "score": 81
+      "score": 80
     },
     {
       "id": "cert-user-sam-computers",
@@ -1358,12 +1374,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-11T18:00:00.000Z",
-      "percent": 88,
+      "percent": 87,
       "learnerCode": "SOKO",
       "sample": true,
       "serial": "SAMPLE-cert-user-sam-computers",
       "pass": true,
-      "score": 88
+      "score": 87
     },
     {
       "id": "cert-user-sam-excel",
@@ -1371,12 +1387,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-19T18:00:00.000Z",
-      "percent": 84,
+      "percent": 83,
       "learnerCode": "SOKO",
       "sample": true,
       "serial": "SAMPLE-cert-user-sam-excel",
       "pass": true,
-      "score": 84
+      "score": 83
     },
     {
       "id": "cert-user-priya-computers",
@@ -1384,12 +1400,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-14T18:00:00.000Z",
-      "percent": 88,
+      "percent": 87,
       "learnerCode": "PSAND",
       "sample": true,
       "serial": "SAMPLE-cert-user-priya-computers",
       "pass": true,
-      "score": 88
+      "score": 87
     },
     {
       "id": "cert-user-priya-job",
@@ -1397,12 +1413,12 @@
       "courseId": "job-search-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-28T18:00:00.000Z",
-      "percent": 79,
+      "percent": 80,
       "learnerCode": "PSAND",
       "sample": true,
       "serial": "SAMPLE-cert-user-priya-job",
       "pass": true,
-      "score": 79
+      "score": 80
     },
     {
       "id": "cert-user-morgan-computers",
@@ -1410,12 +1426,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-16T18:00:00.000Z",
-      "percent": 88,
+      "percent": 87,
       "learnerCode": "MBERG",
       "sample": true,
       "serial": "SAMPLE-cert-user-morgan-computers",
       "pass": true,
-      "score": 88
+      "score": 87
     },
     {
       "id": "cert-user-morgan-excel",
@@ -1423,12 +1439,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-10-24T18:00:00.000Z",
-      "percent": 84,
+      "percent": 83,
       "learnerCode": "MBERG",
       "sample": true,
       "serial": "SAMPLE-cert-user-morgan-excel",
       "pass": true,
-      "score": 84
+      "score": 83
     },
     {
       "id": "cert-user-morgan-word",
@@ -1436,12 +1452,12 @@
       "courseId": "word-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-02T18:00:00.000Z",
-      "percent": 81,
+      "percent": 80,
       "learnerCode": "MBERG",
       "sample": true,
       "serial": "SAMPLE-cert-user-morgan-word",
       "pass": true,
-      "score": 81
+      "score": 80
     },
     {
       "id": "cert-user-alex-computers",
@@ -1449,12 +1465,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-20T18:00:00.000Z",
-      "percent": 88,
+      "percent": 87,
       "learnerCode": "ANGUV",
       "sample": true,
       "serial": "SAMPLE-cert-user-alex-computers",
       "pass": true,
-      "score": 88
+      "score": 87
     },
     {
       "id": "cert-user-alex-word",
@@ -1462,12 +1478,12 @@
       "courseId": "word-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-04T18:00:00.000Z",
-      "percent": 81,
+      "percent": 80,
       "learnerCode": "ANGUV",
       "sample": true,
       "serial": "SAMPLE-cert-user-alex-word",
       "pass": true,
-      "score": 81
+      "score": 80
     },
     {
       "id": "cert-user-riley-computers",
@@ -1475,12 +1491,12 @@
       "courseId": "everyday-computers-smartphones",
       "orgId": "org-example",
       "issuedAt": "2026-10-23T18:00:00.000Z",
-      "percent": 88,
+      "percent": 87,
       "learnerCode": "RCHEN",
       "sample": true,
       "serial": "SAMPLE-cert-user-riley-computers",
       "pass": true,
-      "score": 88
+      "score": 87
     },
     {
       "id": "cert-user-riley-excel",
@@ -1488,12 +1504,12 @@
       "courseId": "excel-basics-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-01T18:00:00.000Z",
-      "percent": 84,
+      "percent": 83,
       "learnerCode": "RCHEN",
       "sample": true,
       "serial": "SAMPLE-cert-user-riley-excel",
       "pass": true,
-      "score": 84
+      "score": 83
     },
     {
       "id": "cert-user-riley-job",
@@ -1501,12 +1517,12 @@
       "courseId": "job-search-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-05T18:00:00.000Z",
-      "percent": 79,
+      "percent": 80,
       "learnerCode": "RCHEN",
       "sample": true,
       "serial": "SAMPLE-cert-user-riley-job",
       "pass": true,
-      "score": 79
+      "score": 80
     },
     {
       "id": "cert-user-taylor-job",
@@ -1514,12 +1530,25 @@
       "courseId": "job-search-canada",
       "orgId": "org-example",
       "issuedAt": "2026-11-06T18:00:00.000Z",
-      "percent": 79,
+      "percent": 80,
       "learnerCode": "TMACL",
       "sample": true,
       "serial": "SAMPLE-cert-user-taylor-job",
       "pass": true,
-      "score": 79
+      "score": 80
+    },
+    {
+      "id": "cert-user-jordan-outlook",
+      "learnerId": "user-jordan",
+      "courseId": "outlook-workplace-email",
+      "orgId": "org-example",
+      "issuedAt": "2026-10-20T18:00:00.000Z",
+      "percent": 80,
+      "learnerCode": "JLEE",
+      "sample": true,
+      "serial": "SAMPLE-cert-user-jordan-outlook",
+      "pass": true,
+      "score": 80
     }
   ],
   "subscriptions": [

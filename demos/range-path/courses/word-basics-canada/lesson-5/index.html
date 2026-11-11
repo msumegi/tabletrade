@@ -81,13 +81,21 @@
 <section class="block block-sim" data-block="simulation" data-sim="word-heading-style" id="word-heading-style">
   <h3>Apply Heading 1 (practice Word)</h3>
   <p class="caption">Practice screen — not the real Word.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Word</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="title">Title line</button><button type="button" class="btn btn-secondary" data-hotspot="h1">Heading 1</button></div>
-        
-      </div>
+  <div class="practice-window" data-app="word">
+      <div class="pw-bar"><strong>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="word-page">
+      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
+      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
+      <p data-slot="sent1">The hall is open on Saturday.</p>
+      <p data-slot="body">Please bring your own bags.</p>
+      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
+      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
+      <p data-slot="proof" hidden></p>
+      <p data-slot="pagenum" hidden>Page 1</p>
+      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="title">Title line</button><button type="button" class="btn btn-secondary" data-hotspot="h1">Heading 1</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -128,9 +136,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A notice title</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Priya opens the community-notice practice file. The first line is “Saturday market at the community centre.” Priya selects that line, points at Heading 1 on the Home tab to preview it, then clicks Heading 1. The title now looks like a heading and is marked as one. Priya does not skip ahead to Heading 3.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Priya opens the community-notice practice file. The first line is “Saturday market at the community centre.” Priya selects that line, points at Heading 1 on the Home tab to preview it, then clicks Heading 1. The title now looks like a heading and is marked as one. Priya does not skip ahead to Heading 3.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Priya opens the community-notice practice file.</p></div>
+      <p class="block-label">Steps</p><ol><li>The first line is “Saturday market at the community centre.” Priya selects that line, points at Heading 1 on the Home tab to preview it, then clicks Heading 1.</li><li>The title now looks like a heading and is marked as one.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Priya does not skip ahead to Heading 3.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-change-the-look-of-many-headings-at-on">Previous section</a>
@@ -144,9 +152,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Two levels on a longer page</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Priya adds a second label, “What to bring,” under a short introduction. Priya applies Heading 2 to that label, because Heading 1 is already used for the main title. The order is Heading 1, then Heading 2 — the logical order Microsoft describes.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Priya adds a second label, “What to bring,” under a short introduction. Priya applies Heading 2 to that label, because Heading 1 is already used for the main title. The order is Heading 1, then Heading 2 — the logical order Microsoft describes.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Priya adds a second label, “What to bring,” under a short introduction.</p></div>
+      <p class="block-label">Steps</p><ol><li>Priya applies Heading 2 to that label, because Heading 1 is already used for the main title.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The order is Heading 1, then Heading 2 — the logical order Microsoft describes.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-notice-title">Previous section</a>

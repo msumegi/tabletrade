@@ -79,12 +79,15 @@
 <p>The large white <strong>edit window</strong> shows the contents of the document. A <strong>scroll bar</strong> moves your view up or down. The <strong>status bar</strong> at the bottom shows information about the document. A <strong>zoom</strong> slider changes how large the page looks on screen without changing the printed size of the words. If the page looks tiny on a library monitor, try zoom before you change the font.</p></div>
 <figure class="block block-figure" data-block="annotatedImage" id="word-window-parts">
   <div class="stage"><svg viewBox="0 0 360 220" role="img" width="100%"><rect width="360" height="220" fill="#fffdf8"/>
-      <text x="20" y="36" font-size="16" fill="#1b1914">Word</text>
-      <rect x="20" y="52" width="320" height="148" fill="#fff" stroke="#123c2e"/>
-      <text x="36" y="84" font-size="14" fill="#1b1914">Document</text>
-      <text x="36" y="112" font-size="13" fill="#1b1914">Heading</text>
-      <text x="36" y="140" font-size="13" fill="#1b1914">Body text</text>
-      <circle cx="250" cy="36" r="11" fill="#123c2e"/><text x="250" y="40" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="200" cy="84" r="11" fill="#123c2e"/><text x="200" y="88" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="200" cy="140" r="11" fill="#123c2e"/><text x="200" y="144" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
+      <rect x="16" y="16" width="328" height="22" fill="#e7f0eb" stroke="#123c2e"/>
+      <text x="24" y="31" font-size="12" fill="#1b1914">hall-booking — Word</text>
+      <text x="250" y="31" font-size="11" fill="#1b1914">Save Undo</text>
+      <text x="24" y="54" font-size="12" fill="#1b1914">File</text>
+      <text x="70" y="54" font-size="12" fill="#1b1914">Home</text>
+      <rect x="16" y="64" width="328" height="120" fill="#fff" stroke="#123c2e"/>
+      <text x="28" y="90" font-size="13" fill="#1b1914">Type here</text>
+      <text x="300" y="200" font-size="12" fill="#1b1914">100%</text>
+      <circle cx="200" cy="16" r="11" fill="#123c2e"/><text x="200" y="20" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="300" cy="16" r="11" fill="#123c2e"/><text x="300" y="20" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="40" cy="48" r="11" fill="#123c2e"/><text x="40" y="52" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text><circle cx="110" cy="48" r="11" fill="#123c2e"/><text x="110" y="52" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">4</text><circle cx="180" cy="100" r="11" fill="#123c2e"/><text x="180" y="104" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">5</text><circle cx="330" cy="200" r="11" fill="#123c2e"/><text x="330" y="204" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">6</text></svg></div>
   <p class="caption">A practice drawing of a Word window. Callouts mark the title bar, Quick Access Toolbar, File tab, ribbon and Home tab, edit window, and zoom. Caption: Practice screen — not the real Word.</p>
   <figcaption><ol class="callouts"><li>Title bar — file name and Word</li><li>Quick Access Toolbar — Save, Undo, Redo</li><li>File tab — New, Open, Save As, Print, Close</li><li>Ribbon and Home tab — everyday writing tools</li><li>Edit window — where you type</li><li>Zoom — changes the view, not the printed size</li></ol></figcaption>
 </figure>
@@ -106,13 +109,21 @@
 <section class="block block-sim" data-block="simulation" data-sim="word-start-word" id="word-start-word">
   <h3>Start Word (practice computer)</h3>
   <p class="caption">Practice screen — not the real Word.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Word</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="start">Start</button><button type="button" class="btn btn-secondary" data-hotspot="word">Word</button></div>
-        
-      </div>
+  <div class="practice-window" data-app="word">
+      <div class="pw-bar"><strong>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="word-page">
+      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
+      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
+      <p data-slot="sent1">The hall is open on Saturday.</p>
+      <p data-slot="body">Please bring your own bags.</p>
+      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
+      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
+      <p data-slot="proof" hidden></p>
+      <p data-slot="pagenum" hidden>Page 1</p>
+      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="start">Start</button><button type="button" class="btn btn-secondary" data-hotspot="word">Word</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -137,9 +148,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Starting Word at a library computer</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Jordan sits down at a library Windows computer, presses the Windows key, types enough of the word “Word” to see it, and clicks Word. The startup screen appears. A licence box does not show this time because Word has been used on that machine before. Jordan looks at the title bar, the ribbon, and the white edit window before typing anything.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Jordan sits down at a library Windows computer, presses the Windows key, types enough of the word “Word” to see it, and clicks Word. The startup screen appears. A licence box does not show this time because Word has been used on that machine before. Jordan looks at the title bar, the ribbon, and the white edit window before typing anything.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Jordan sits down at a library Windows computer, presses the Windows key, types enough of the word “Word” to see it, and clicks Word.</p></div>
+      <p class="block-label">Steps</p><ol><li>The startup screen appears.</li><li>A licence box does not show this time because Word has been used on that machine before.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Jordan looks at the title bar, the ribbon, and the white edit window before typing anything.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-file-ribbon-and-how-to-leave-without-a">Previous section</a>
@@ -153,9 +164,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Closing by mistake</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Jordan clicks the X in the corner after typing two sentences that have not been saved. Word asks whether to save the changes. Jordan meant to stay and write more, so Jordan clicks Cancel. The document is still open. Tomorrow Jordan will learn to save on purpose from the Quick Access Toolbar.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Jordan clicks the X in the corner after typing two sentences that have not been saved. Word asks whether to save the changes. Jordan meant to stay and write more, so Jordan clicks Cancel. The document is still open. Tomorrow Jordan will learn to save on purpose from the Quick Access Toolbar.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Jordan clicks the X in the corner after typing two sentences that have not been saved.</p></div>
+      <p class="block-label">Steps</p><ol><li>Word asks whether to save the changes.</li><li>Jordan meant to stay and write more, so Jordan clicks Cancel.</li><li>The document is still open.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Tomorrow Jordan will learn to save on purpose from the Quick Access Toolbar.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-starting-word-at-a-library-comp">Previous section</a>

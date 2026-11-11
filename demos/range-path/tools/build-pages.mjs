@@ -151,7 +151,7 @@ function mainNav(root, current) {
     ["courses/", "Courses"],
     ["pricing/", "Pricing"],
     ["walkthrough/", "Walkthrough"],
-    ["admin/", "Staff demo"]
+    ["admin/?demo=1", "Staff demo"]
   ];
   return (
     "<ul>" +
@@ -370,6 +370,7 @@ function syllabusExtras(course, passLabel) {
   <p>You do not need a password or a payment to open these lessons. Your place is saved on this device only.</p>
   ${(course.player && course.player.hoursLabel) ? `<p><strong>${esc(course.player.hoursLabel)}</strong></p>` : hours ? `<p><strong>About ${hours} hours</strong> for the ${course.lessons.length} lessons (estimate).</p>` : ""}
   ${includeLine ? `<h3>What's included</h3><p>${esc(includeLine)}.</p>` : ""}
+  ${(course.lessons || []).some((lesson) => (lesson.sections || []).some((section) => (section.blocks || []).some((block) => block.type === "cheatSheet"))) ? `<p><a href="cheat-sheet/">Print the course cheat sheet</a>. You can also save that page as a PDF from the print dialog.</p>` : ""}
   ${outcomes ? `<h3>Learning outcomes</h3><ul class="check">${outcomes}</ul>` : ""}
   ${need ? `<h3>What you need</h3><ul class="check">${need}</ul>` : ""}
   <h3>Final exam and certificate</h3>
@@ -493,6 +494,34 @@ ${planScript}`;
       main: courseMain
     })
   );
+  const sheets = [];
+  (course.lessons || []).forEach((lesson, index) => {
+    (lesson.sections || []).forEach((section) => {
+      (section.blocks || []).forEach((block) => {
+        if (block.type === "cheatSheet") sheets.push({ lesson: index + 1, title: block.title || lesson.title, items: block.items || [] });
+      });
+    });
+  });
+  if (sheets.length) {
+    const body = sheets
+      .map(
+        (sheet) =>
+          `<section><h2>Lesson ${sheet.lesson}. ${esc(sheet.title)}</h2><ul>${sheet.items.map((item) => "<li>" + esc(item) + "</li>").join("")}</ul></section>`
+      )
+      .join("\n");
+    write(
+      path.join(dir, "cheat-sheet", "index.html"),
+      page({
+        depth: 3,
+        title: branded("Cheat sheet — " + course.title),
+        description: "Printable steps for " + course.title + ".",
+        canonical: "courses/" + slug + "/cheat-sheet/",
+        nav: lessonNav("../../../", "../", navLabel),
+        courseId: slug,
+        main: `<p class="crumbs"><a href="../../../">Home</a><a href="../">${esc(course.title)}</a><span>Cheat sheet</span></p><h1>Cheat sheet</h1><p>Sample steps only. Use the browser print dialog to save a PDF.</p>${body}<p class="actions no-print"><button type="button" class="btn" onclick="window.print()">Print or save as PDF</button></p>`
+      })
+    );
+  }
 
   course.lessons.forEach((lesson, index) => {
     const number = index + 1;

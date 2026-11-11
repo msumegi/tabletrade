@@ -97,13 +97,27 @@
 <section class="block block-sim" data-block="simulation" data-sim="outlook-attach-file" id="outlook-attach-file">
   <h3>Attach a file to a message (practice screen)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Outlook</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="attach">Attach File</button><button type="button" class="btn btn-secondary" data-hotspot="file">saturday-chairs-practice</button><button type="button" class="btn btn-secondary" data-hotspot="insert">Insert</button></div>
-        
+  <div class="practice-window" data-app="outlook">
+      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="attach">Attach File</button><button type="button" class="btn btn-secondary" data-hotspot="file">saturday-chairs-practice</button><button type="button" class="btn btn-secondary" data-hotspot="insert">Insert</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -116,7 +130,7 @@
   <p class="feedback" role="status" hidden></p>
   <script type="application/json" class="check-key">{"answer":"A","explain":"Open unexpected attachments with care. A file you were not waiting for is a warning sign. Lesson 6 and the email-safety course cover suspicious mail in more depth."}</script>
 </form>
-<p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Outlook-Workplace-Tone-Checklist.txt" download>Workplace email tone checklist</a> <span class="meta">Sample only. Our short checklist based on Microsoft’s writing-advice page opened 10 November 2026. Do not type a real password into the file.</span></p>
+<p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Outlook-Workplace-Tone-Checklist.docx" download>Workplace email tone checklist</a> <span class="meta">Sample only. Our short checklist based on Microsoft’s writing-advice page opened 10 November 2026. Do not type a real password into the file.</span></p>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-2-treat-unexpected-files-with-care-and-a">Previous section</a>
     <button type="button" class="btn" data-read-section="chapter-3-check-the-tone-before-you-send" data-lesson="4">Mark this section as read</button>
@@ -129,9 +143,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Attaching a chair-count note</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex writes to Jordan with the subject “Saturday market — chair-count list attached.” In the body Alex writes, “I attached a short list of who is bringing chairs. Please tell me if we still need two more.” Alex chooses <strong>Message &gt; Attach File</strong>, picks the practice file <code>saturday-chairs-practice</code>, and reads the message once before Send. Alex does not leave the body empty. Later, when Jordan sends a revised list, Alex selects the attachment and chooses <strong>Save As</strong> into the folder staff named.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex writes to Jordan with the subject “Saturday market — chair-count list attached.” In the body Alex writes, “I attached a short list of who is bringing chairs. Please tell me if we still need two more.” Alex chooses <strong>Message &gt; Attach File</strong>, picks the practice file <code>saturday-chairs-practice</code>, and reads the message once before Send. Alex does not leave the body empty. Later, when Jordan sends a revised list, Alex selects the attachment and chooses <strong>Save As</strong> into the folder staff named.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex writes to Jordan with the subject “Saturday market — chair-count list attached.” In the body Alex writes, “I attached a short list of who is bringing chairs.</p></div>
+      <p class="block-label">Steps</p><ol><li>Please tell me if we still need two more.” Alex chooses Message > Attach File , picks the practice file saturday-chairs-practice , and reads the message once before Send.</li><li>Alex does not leave the body empty.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Later, when Jordan sends a revised list, Alex selects the attachment and chooses Save As into the folder staff named.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-check-the-tone-before-you-send">Previous section</a>
@@ -145,9 +159,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. An angry draft that waits</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Priya is upset about a last-minute shift change and types a sharp message in ALL CAPS. Before Send, Priya opens the tone checklist and sees Microsoft’s advice: do not send while angry; save a draft and come back. Priya saves the draft, takes a walk, and returns. The new version uses a calm subject, two short sentences, and a simple signature: “Priya Shah, Weekend volunteer, Sampletown Community Centre.” No large graphic. No sarcasm.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Priya is upset about a last-minute shift change and types a sharp message in ALL CAPS. Before Send, Priya opens the tone checklist and sees Microsoft’s advice: do not send while angry; save a draft and come back. Priya saves the draft, takes a walk, and returns. The new version uses a calm subject, two short sentences, and a simple signature: “Priya Shah, Weekend volunteer, Sampletown Community Centre.” No large graphic. No sarcasm.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Priya is upset about a last-minute shift change and types a sharp message in ALL CAPS.</p></div>
+      <p class="block-label">Steps</p><ol><li>Before Send, Priya opens the tone checklist and sees Microsoft’s advice: do not send while angry; save a draft and come back.</li><li>Priya saves the draft, takes a walk, and returns.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The new version uses a calm subject, two short sentences, and a simple signature: “Priya Shah, Weekend volunteer, Sampletown Community Centre.” No large graphic.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-attaching-a-chair-count-note">Previous section</a>
@@ -173,6 +187,7 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>If you are in a study group: read one sentence that sounds sharp and rewrite it so it stays honest but professional. Check it against the tone checklist.</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="outlook-l4-cheatsheet"><h2>Lesson 4 — Attachments and tone</h2><ul><li>Message &gt; Attach File to add a file from your computer.</li><li>Write one sentence that names the file and what the reader should do.</li><li>Save a received file with Save As (Attachments tab or right-click).</li><li>Do not open an unexpected attachment just to see what it is.</li><li>Signature &gt; Signatures &gt; New. Keep it simple, short, and free of large graphics.</li><li>Read before you send. Do not write in ALL CAPS or send while angry — save a draft.</li><li>Use High Importance sparingly. Do not write anything you would not want others at work to read.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-try-it">Previous section</a>
     <button type="button" class="btn" data-read-section="discussion-optional" data-lesson="4">Mark this section as read</button>

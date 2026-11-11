@@ -98,13 +98,27 @@
 <section class="block block-sim" data-block="simulation" data-sim="outlook-folder-flag" id="outlook-folder-flag">
   <h3>Create a folder and flag a message (practice screen)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Outlook</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="newfolder">New Folder</button><button type="button" class="btn btn-secondary" data-hotspot="msg">Saturday hall setup</button><button type="button" class="btn btn-secondary" data-hotspot="move">Move</button><button type="button" class="btn btn-secondary" data-hotspot="flag">Flag</button></div>
-        
+  <div class="practice-window" data-app="outlook">
+      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="newfolder">New Folder</button><button type="button" class="btn btn-secondary" data-hotspot="msg">Saturday hall setup</button><button type="button" class="btn btn-secondary" data-hotspot="move">Move</button><button type="button" class="btn btn-secondary" data-hotspot="flag">Flag</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -129,9 +143,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A Saturday market folder</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex creates a folder named <strong>Saturday market</strong>. In classic Outlook that is a right-click in the folder pane and <strong>New Folder</strong>; on another computer the label is <strong>Create new folder</strong>. Alex selects Jordan’s hall-setup note and Jordan’s chair note, then uses <strong>Move</strong> (or drag) to put both in the new folder. The Inbox looks calmer. The messages are still there when Alex opens Saturday market.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex creates a folder named <strong>Saturday market</strong>. In classic Outlook that is a right-click in the folder pane and <strong>New Folder</strong>; on another computer the label is <strong>Create new folder</strong>. Alex selects Jordan’s hall-setup note and Jordan’s chair note, then uses <strong>Move</strong> (or drag) to put both in the new folder. The Inbox looks calmer. The messages are still there when Alex opens Saturday market.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex creates a folder named Saturday market .</p></div>
+      <p class="block-label">Steps</p><ol><li>In classic Outlook that is a right-click in the folder pane and New Folder ; on another computer the label is Create new folder .</li><li>Alex selects Jordan’s hall-setup note and Jordan’s chair note, then uses Move (or drag) to put both in the new folder.</li><li>The Inbox looks calmer.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The messages are still there when Alex opens Saturday market.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-search-when-you-cannot-remember-the-fo">Previous section</a>
@@ -145,9 +159,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A flag with a Thursday reminder</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Jordan asked for a reply by Thursday. Alex selects the flag on that message so it turns red, then right-clicks the flag, chooses <strong>Add Reminder</strong>, and sets a Wednesday afternoon reminder. On Wednesday the reminder appears. After Alex replies, Alex chooses <strong>Follow Up &gt; Mark Complete</strong>. The flag becomes a green checkmark and leaves the To-Do Bar.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Jordan asked for a reply by Thursday. Alex selects the flag on that message so it turns red, then right-clicks the flag, chooses <strong>Add Reminder</strong>, and sets a Wednesday afternoon reminder. On Wednesday the reminder appears. After Alex replies, Alex chooses <strong>Follow Up &gt; Mark Complete</strong>. The flag becomes a green checkmark and leaves the To-Do Bar.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Jordan asked for a reply by Thursday.</p></div>
+      <p class="block-label">Steps</p><ol><li>Alex selects the flag on that message so it turns red, then right-clicks the flag, chooses Add Reminder , and sets a Wednesday afternoon reminder.</li><li>On Wednesday the reminder appears.</li><li>After Alex replies, Alex chooses Follow Up > Mark Complete .</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The flag becomes a green checkmark and leaves the To-Do Bar.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-saturday-market-folder">Previous section</a>
@@ -173,6 +187,7 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>If you are in a study group: share one folder name that would help you at work or in a volunteer role, and one kind of message you would flag rather than file and forget.</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="outlook-l5-cheatsheet"><h2>Lesson 5 — Folders, flags, and search</h2><ul><li>Classic Outlook: right-click in the Mail folder pane &gt; New Folder. New Outlook: Create new folder.</li><li>File a message by dragging it onto the folder or by choosing Move.</li><li>Select the flag icon to make a to-do item (the flag turns red).</li><li>Right-click the flag &gt; Add Reminder to pick a date and time.</li><li>Follow Up &gt; Mark Complete when the follow-up is done.</li><li>Search box: top of the Outlook window. from:address finds mail from that sender.</li><li>Search for a few words from a long subject, not always the whole line.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-try-it">Previous section</a>
     <button type="button" class="btn" data-read-section="discussion-optional" data-lesson="5">Mark this section as read</button>

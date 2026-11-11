@@ -81,13 +81,14 @@
 <section class="block block-sim" data-block="simulation" data-sim="jobsearch-cover-email" id="jobsearch-cover-email">
   <h3>Build a short cover email (practice screen)</h3>
   <p class="caption">Practice screen — not a real inbox.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Job Bank</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="to">To</button><button type="button" class="btn btn-secondary" data-hotspot="subj">Subject</button><button type="button" class="btn btn-secondary" data-hotspot="body">Message body</button></div>
-        
-      </div>
+  <div class="practice-window" data-app="job">
+      <div class="pw-bar"><strong>Job Bank</strong> <span data-doc-name></span></div>
+      <div class="job-form"><p>Job title <strong data-field="title"></strong></p><p>Place <strong data-field="place"></strong></p></div>
+      <ul class="job-results"><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>
+      <article data-slot="posting"><p>Sampletown Community Centre. Greet visitors and set up tables. First aid is an asset, not required. Sample only.</p></article>
+      <div class="ol-pane"><p>To <strong data-field="to"></strong></p><p>Subject <strong data-field="subject"></strong></p><p data-field="body"></p></div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="to">To</button><button type="button" class="btn btn-secondary" data-hotspot="subj">Subject</button><button type="button" class="btn btn-secondary" data-hotspot="body">Message body</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -129,8 +130,8 @@
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A three-part Sampletown email</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Subject: Weekend Attendant application — Jordan Lee</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Jordan writes: they saw the Weekend Attendant posting and want to help visitors feel welcome at the community centre. They greeted families at a volunteer skate sale and set up tables for that event. They attach a resume and thank the reader. The note is ten sentences, not two pages.</p></div>
+      <p class="block-label">Steps</p><ol><li>Subject: Weekend Attendant application — Jordan Lee</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The page now shows the change you just made.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-tailor-it-then-leave-it-alone">Previous section</a>
@@ -144,9 +145,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A letter that tries to do too much</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job. Jordan cuts it back to the greeting and setup examples the posting asked for, and moves the extra history back to the resume — or off the page.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job. Jordan cuts it back to the greeting and setup examples the posting asked for, and moves the extra history back to the resume — or off the page.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job.</p></div>
+      <p class="block-label">Steps</p><ol><li>A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Jordan cuts it back to the greeting and setup examples the posting asked for, and moves the extra history back to the resume — or off the page.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-three-part-sampletown-email">Previous section</a>

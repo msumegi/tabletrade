@@ -780,7 +780,7 @@
   }
 
   function setupRoleSwitcher() {
-    document.querySelectorAll('a[href$="admin/"]').forEach(function (link) {
+    document.querySelectorAll('a[href*="admin/"]').forEach(function (link) {
       if (!demoOn()) link.hidden = true;
     });
     if (!demoOn()) return;
@@ -839,7 +839,7 @@
     });
     details.appendChild(bar);
     footer.appendChild(details);
-    document.querySelectorAll('a[href$="admin/"]').forEach(function (link) {
+    document.querySelectorAll('a[href*="admin/"]').forEach(function (link) {
       var staff = user && user.role !== "learner";
       if (!staff && !demoOn()) link.hidden = true;
     });

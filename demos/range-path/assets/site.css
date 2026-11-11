@@ -812,6 +812,15 @@ footer.site {
 .sheet-keys, .pw-menu { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.6rem; }
 .sheet-keys button, .pw-menu button { white-space: nowrap; min-height: 44px; width: auto; flex: 0 0 auto; }
 .pw-status { margin: 0; padding: 0 0.6rem 0.6rem; }
+.word-page, .ol-pane, .job-form, .job-results { margin: 0.6rem; padding: 0.6rem; background: #fff; border: 1px solid var(--line); }
+.doc-title.is-selected, [data-slot="sent1"].is-selected { outline: 3px solid var(--hotspot); }
+.doc-title.is-bold { font-weight: 700; }
+.doc-title.is-heading { font-size: 1.35rem; }
+.ol-split { display: grid; grid-template-columns: minmax(8rem, 40%) 1fr; gap: 0.4rem; }
+.ol-list { list-style: none; margin: 0.6rem; padding: 0; }
+.ol-list li { min-height: 44px; display: flex; align-items: center; }
+.is-flagged::after { content: "  Flagged"; }
+[data-job="other"][hidden], [data-slot][hidden] { display: none; }
 .section-picker { margin: 0 0 1rem; }
 .section-picker summary, .section-picker a { min-height: 44px; }
 #exam-locked summary, #exam-locked a { min-height: 44px; display: flex; align-items: center; }

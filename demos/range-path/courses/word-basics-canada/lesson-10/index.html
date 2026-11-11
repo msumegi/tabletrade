@@ -64,13 +64,21 @@
 <section class="block block-sim" data-block="simulation" data-sim="word-print-preview" id="word-print-preview">
   <h3>Preview the page before you print (practice Word)</h3>
   <p class="caption">Practice screen — not the real Word.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Word</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="file">File</button><button type="button" class="btn btn-secondary" data-hotspot="print">Print</button><button type="button" class="btn btn-secondary" data-hotspot="previewok">Preview looks fine</button></div>
-        
-      </div>
+  <div class="practice-window" data-app="word">
+      <div class="pw-bar"><strong>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="word-page">
+      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
+      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
+      <p data-slot="sent1">The hall is open on Saturday.</p>
+      <p data-slot="body">Please bring your own bags.</p>
+      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
+      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
+      <p data-slot="proof" hidden></p>
+      <p data-slot="pagenum" hidden>Page 1</p>
+      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="file">File</button><button type="button" class="btn btn-secondary" data-hotspot="print">Print</button><button type="button" class="btn btn-secondary" data-hotspot="previewok">Print</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -96,13 +104,21 @@
 <section class="block block-sim" data-block="simulation" data-sim="word-save-pdf" id="word-save-pdf">
   <h3>Save the document as a PDF (practice Word)</h3>
   <p class="caption">Practice screen — not the real Word.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Word</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="savecopy">Save a Copy</button><button type="button" class="btn btn-secondary" data-hotspot="browse">Browse</button><button type="button" class="btn btn-secondary" data-hotspot="pdf">PDF (*.pdf)</button></div>
-        
-      </div>
+  <div class="practice-window" data-app="word">
+      <div class="pw-bar"><strong>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="word-page">
+      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
+      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
+      <p data-slot="sent1">The hall is open on Saturday.</p>
+      <p data-slot="body">Please bring your own bags.</p>
+      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
+      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
+      <p data-slot="proof" hidden></p>
+      <p data-slot="pagenum" hidden>Page 1</p>
+      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="savecopy">Save a Copy</button><button type="button" class="btn btn-secondary" data-hotspot="browse">Browse</button><button type="button" class="btn btn-secondary" data-hotspot="pdf">PDF (*.pdf)</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -151,9 +167,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Preview, then wait to print</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Lee opens File &gt; Print and notices the last bullet on the notice is cut off. Lee goes back to the document, shortens that line, saves, and previews again. The page now fits. Lee asks at the desk before printing one copy.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Lee opens File &gt; Print and notices the last bullet on the notice is cut off. Lee goes back to the document, shortens that line, saves, and previews again. The page now fits. Lee asks at the desk before printing one copy.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Lee opens File > Print and notices the last bullet on the notice is cut off.</p></div>
+      <p class="block-label">Steps</p><ol><li>Lee goes back to the document, shortens that line, saves, and previews again.</li><li>The page now fits.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Lee asks at the desk before printing one copy.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-finish-the-capstone-then-take-the-exam">Previous section</a>
@@ -167,9 +183,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A PDF for the tutor</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Lee chooses File &gt; Save a Copy, browses to Documents, selects PDF, and saves <code>lee-centre-notice-practice.pdf</code>. Lee does not add a password. Lee keeps the original Word file as well, so the page can still be edited later.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Lee chooses File &gt; Save a Copy, browses to Documents, selects PDF, and saves <code>lee-centre-notice-practice.pdf</code>. Lee does not add a password. Lee keeps the original Word file as well, so the page can still be edited later.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Lee chooses File > Save a Copy, browses to Documents, selects PDF, and saves lee-centre-notice-practice.pdf .</p></div>
+      <p class="block-label">Steps</p><ol><li>Lee does not add a password.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Lee keeps the original Word file as well, so the page can still be edited later.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-preview-then-wait-to-print">Previous section</a>

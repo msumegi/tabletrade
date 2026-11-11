@@ -1,8 +1,8 @@
 {
   "slug": "word-basics-canada",
   "title": "Microsoft Word Basics (Canada)",
-  "summary": "",
-  "goals": "",
+  "summary": "By the end, learners can start Word, type and save a document, use a heading style, check spelling in Canadian English, and preview, print, or export a PDF.",
+  "goals": "By the end, learners can start Word, type and save a document, use a heading style, check spelling in Canadian English, and preview, print, or export a PDF.",
   "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or legal, career, or immigration advice.",
   "disclaimer": "**What this course is not.** This is general information for adult learners in Canada. It is not Microsoft Office Specialist (MOS) training, college credit, a CEU, or a professional editing credential. It is not legal, career, or immigration advice. It does not replace *Everyday Computers and Smartphones*, *Microsoft Excel Basics*, *Workplace Writing*, *Job Search and Employment Readiness in Canada*, or *Outlook and Workplace Email Habits*. Use Canadian spelling in your practice documents. Do not type passwords, SINs, or other private numbers into a practice file on a shared computer.",
   "includes": [
@@ -62,22 +62,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Writing documents made mostly of words"
+            "text": "Browsing the web"
           },
           {
             "id": "B",
-            "text": "Adding up pay-stub columns by itself"
+            "text": "Writing documents made mostly of words"
           },
           {
             "id": "C",
-            "text": "Sending workplace email"
+            "text": "Adding up pay-stub columns by itself"
           },
           {
             "id": "D",
-            "text": "Browsing the web"
+            "text": "Sending workplace email"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Word writes documents; calculating tables belong in Excel Basics.",
         "topic": "Lesson 1 — What Word is for, and how to start it",
         "review": "../lesson-1/#section-chapter-1-what-word-is-for-and-how-to-start-it"
@@ -87,22 +87,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The Start menu (or the Windows key), then Word"
-          },
-          {
-            "id": "B",
             "text": "File Explorer only"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "The web browser only"
+          },
+          {
+            "id": "C",
+            "text": "The Start menu (or the Windows key), then Word"
           },
           {
             "id": "D",
             "text": "Excel’s AutoSum button"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Start menu or Windows key, then Word.",
         "topic": "Lesson 1 — What Word is for, and how to start it",
         "review": "../lesson-1/#section-chapter-1-what-word-is-for-and-how-to-start-it"
@@ -112,22 +112,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "New, Open, Save As, Print, and Close"
-          },
-          {
-            "id": "B",
             "text": "Only the Bold button"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Only page colour"
+          },
+          {
+            "id": "C",
+            "text": "New, Open, Save As, Print, and Close"
           },
           {
             "id": "D",
             "text": "The status bar at the bottom of the window only"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "File-tab commands Microsoft lists for new users.",
         "topic": "Lesson 1 — What Word is for, and how to start it",
         "review": "../lesson-1/#section-chapter-1-what-word-is-for-and-how-to-start-it"
@@ -137,22 +137,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Home, Insert, Layout, and Review"
-          },
-          {
-            "id": "B",
             "text": "Only the spelling dictionary"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Only Save As"
+          },
+          {
+            "id": "C",
+            "text": "Home, Insert, Layout, and Review"
           },
           {
             "id": "D",
             "text": "Only page numbers"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Common ribbon tabs taught in Lesson 1.",
         "topic": "Lesson 1 — What Word is for, and how to start it",
         "review": "../lesson-1/#section-chapter-1-what-word-is-for-and-how-to-start-it"
@@ -162,7 +162,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Select the text first"
+            "text": "Change the document theme first"
           },
           {
             "id": "B",
@@ -170,14 +170,14 @@
           },
           {
             "id": "C",
-            "text": "Change the document theme first"
+            "text": "Click Print first"
           },
           {
             "id": "D",
-            "text": "Click Print first"
+            "text": "Select the text first"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Select first.",
         "topic": "Lesson 2 — Type, and press Enter only when you mean a new paragraph",
         "review": "../lesson-2/#section-chapter-1-type-and-press-enter-only-when-you-mea"
@@ -187,22 +187,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A File-tab command such as saving"
+            "text": "Bold you just applied"
           },
           {
             "id": "B",
-            "text": "A word you just typed"
-          },
-          {
-            "id": "C",
             "text": "A font size you just changed"
           },
           {
+            "id": "C",
+            "text": "A File-tab command such as saving"
+          },
+          {
             "id": "D",
-            "text": "Bold you just applied"
+            "text": "A word you just typed"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Microsoft: you cannot undo File-tab actions or saving.",
         "topic": "Lesson 2 — Type, and press Enter only when you mean a new paragraph",
         "review": "../lesson-2/#section-chapter-1-type-and-press-enter-only-when-you-mea"
@@ -212,11 +212,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Ctrl+Y, or F4 on some keyboards (you may need Fn or F-Lock)"
+            "text": "Ctrl+Z again (that repeats Undo)"
           },
           {
             "id": "B",
-            "text": "Ctrl+Z again (that repeats Undo)"
+            "text": "Ctrl+Y, or F4 on some keyboards (you may need Fn or F-Lock)"
           },
           {
             "id": "C",
@@ -227,7 +227,7 @@
             "text": "Insert > Table"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Ctrl+Y or F4, with an Fn / F-Lock note.",
         "topic": "Lesson 3 — Why saving matters",
         "review": "../lesson-3/#section-chapter-1-why-saving-matters"
@@ -237,22 +237,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Use Save As or Save a Copy, pick a folder, and type a clear name"
-          },
-          {
-            "id": "B",
             "text": "Leave the document untitled as Document1"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Print one copy and throw the file away"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Type the words only in a header"
+          },
+          {
+            "id": "D",
+            "text": "Use Save As or Save a Copy, pick a folder, and type a clear name"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Save As or Save a Copy, folder, clear name.",
         "topic": "Lesson 3 — Why saving matters",
         "review": "../lesson-3/#section-chapter-1-why-saving-matters"
@@ -262,22 +262,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Saves the same file again, in the same place, under the same name"
+            "text": "Always opens Save As and asks for a new name"
           },
           {
             "id": "B",
-            "text": "Always creates a PDF"
+            "text": "Saves the same file again, in the same place, under the same name"
           },
           {
             "id": "C",
-            "text": "Always emails the file"
+            "text": "Always creates a PDF"
           },
           {
             "id": "D",
-            "text": "Always opens Save As and asks for a new name"
+            "text": "Always emails the file"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "After the first save, Save updates the same file.",
         "topic": "Lesson 3 — Why saving matters",
         "review": "../lesson-3/#section-chapter-1-why-saving-matters"
@@ -287,22 +287,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The Home tab, in the Font group"
-          },
-          {
-            "id": "B",
-            "text": "The Insert tab, in the Illustrations group"
-          },
-          {
-            "id": "C",
             "text": "File > Close only"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Review > Word Count only"
+          },
+          {
+            "id": "C",
+            "text": "The Insert tab, in the Illustrations group"
+          },
+          {
+            "id": "D",
+            "text": "The Home tab, in the Font group"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Home > Font group.",
         "topic": "Lesson 4 — Select, then use the Font group",
         "review": "../lesson-4/#section-chapter-1-select-then-use-the-font-group"
@@ -312,22 +312,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Type `1.` followed by a space, or use Home > Numbering"
-          },
-          {
-            "id": "B",
             "text": "Insert a nested table of formulas"
           },
           {
+            "id": "B",
+            "text": "Open Excel"
+          },
+          {
             "id": "C",
-            "text": "Insert > Page Number"
+            "text": "Type `1.` followed by a space, or use Home > Numbering"
           },
           {
             "id": "D",
-            "text": "Open Excel"
+            "text": "Insert > Page Number"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Type `1.` and a space, or Home > Numbering (bullets: `",
         "topic": "Lesson 4 — Select, then use the Font group",
         "review": "../lesson-4/#section-chapter-1-select-then-use-the-font-group"
@@ -337,22 +337,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Break the list into separate lists, which can confuse a screen reader"
-          },
-          {
-            "id": "B",
             "text": "Automatically save a PDF"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Change the proofing language"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Add a page number"
+          },
+          {
+            "id": "D",
+            "text": "Break the list into separate lists, which can confuse a screen reader"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Keep a list together.",
         "topic": "Lesson 4 — Select, then use the Font group",
         "review": "../lesson-4/#section-chapter-1-select-then-use-the-font-group"
@@ -362,11 +362,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Word and assistive technology can recognise it as a heading"
+            "text": "It changes the file name"
           },
           {
             "id": "B",
-            "text": "It hides the title from everyone"
+            "text": "Word and assistive technology can recognise it as a heading"
           },
           {
             "id": "C",
@@ -374,10 +374,10 @@
           },
           {
             "id": "D",
-            "text": "It changes the file name"
+            "text": "It hides the title from everyone"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Styles carry meaning, not only a look.",
         "topic": "Lesson 5 — A style is more than bigger, bold text",
         "review": "../lesson-5/#section-chapter-1-a-style-is-more-than-bigger-bold-text"
@@ -387,22 +387,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Use them in order (Heading 1, then Heading 2) and not skip levels"
-          },
-          {
-            "id": "B",
             "text": "Skip from Heading 1 straight to Heading 5 for decoration"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Put the only copy of the title in the header"
+          },
+          {
+            "id": "C",
+            "text": "Use them in order (Heading 1, then Heading 2) and not skip levels"
           },
           {
             "id": "D",
             "text": "Apply Heading 1 to every sentence"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Do not skip heading levels.",
         "topic": "Lesson 5 — A style is more than bigger, bold text",
         "review": "../lesson-5/#section-chapter-1-a-style-is-more-than-bigger-bold-text"
@@ -412,22 +412,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Select the text, then choose a style on the Home tab (Styles gallery)"
-          },
-          {
-            "id": "B",
             "text": "File > Close"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Layout > Margins only"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Insert > Symbol only"
+          },
+          {
+            "id": "D",
+            "text": "Select the text, then choose a style on the Home tab (Styles gallery)"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Home > Styles.",
         "topic": "Lesson 5 — A style is more than bigger, bold text",
         "review": "../lesson-5/#section-chapter-1-a-style-is-more-than-bigger-bold-text"
@@ -437,7 +437,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Layout > Margins"
+            "text": "The Start menu search for Excel"
           },
           {
             "id": "B",
@@ -445,14 +445,14 @@
           },
           {
             "id": "C",
-            "text": "The Start menu search for Excel"
+            "text": "Insert > Picture only"
           },
           {
             "id": "D",
-            "text": "Insert > Picture only"
+            "text": "Layout > Margins"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Layout > Margins.",
         "topic": "Lesson 6 — Margins give the page a quiet edge",
         "review": "../lesson-6/#section-chapter-1-margins-give-the-page-a-quiet-edge"
@@ -462,22 +462,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Appear in the body of the document, not only in a header or footer"
-          },
-          {
-            "id": "B",
-            "text": "Live only in the header, because screen readers always read headers first"
-          },
-          {
-            "id": "C",
             "text": "Be typed only in a comment"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Be added only to the file properties"
+          },
+          {
+            "id": "C",
+            "text": "Appear in the body of the document, not only in a header or footer"
+          },
+          {
+            "id": "D",
+            "text": "Live only in the header, because screen readers always read headers first"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Screen readers may not scan headers and footers.",
         "topic": "Lesson 6 — Margins give the page a quiet edge",
         "review": "../lesson-6/#section-chapter-1-margins-give-the-page-a-quiet-edge"
@@ -512,11 +512,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Review > Language > Set Proofing Language"
+            "text": "Insert > Table > Nested"
           },
           {
             "id": "B",
-            "text": "Insert > Table > Nested"
+            "text": "Review > Language > Set Proofing Language"
           },
           {
             "id": "C",
@@ -527,7 +527,7 @@
             "text": "Home > Font Color only"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Review > Language > Set Proofing Language.",
         "topic": "Lesson 7 — Word can only check the language it is set to use",
         "review": "../lesson-7/#section-chapter-1-word-can-only-check-the-language-it-is"
@@ -541,15 +541,15 @@
           },
           {
             "id": "B",
-            "text": "Invent any menu name and click at random"
+            "text": "Turn spelling off for the whole computer"
           },
           {
             "id": "C",
-            "text": "Accept every red underline without reading"
+            "text": "Invent any menu name and click at random"
           },
           {
             "id": "D",
-            "text": "Turn spelling off for the whole computer"
+            "text": "Accept every red underline without reading"
           }
         ],
         "answer": "A",
@@ -566,15 +566,15 @@
           },
           {
             "id": "B",
-            "text": "center (the US spelling this course does not use)"
+            "text": "middle"
           },
           {
             "id": "C",
-            "text": "centre, but only when it appears in a header"
+            "text": "center (the US spelling this course does not use)"
           },
           {
             "id": "D",
-            "text": "middle"
+            "text": "centre, but only when it appears in a header"
           }
         ],
         "answer": "A",
@@ -587,22 +587,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "*practise* as a verb and *practice* as a noun"
-          },
-          {
-            "id": "B",
             "text": "Random decoration"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Only US spelling"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "The same spelling in every sentence, with no verb or noun difference"
+          },
+          {
+            "id": "D",
+            "text": "*practise* as a verb and *practice* as a noun"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "practise / practice.",
         "topic": "Lesson 8 — A table is for simple facts, not for decoration",
         "review": "../lesson-8/#section-chapter-1-a-table-is-for-simple-facts-not-for-de"
@@ -616,15 +616,15 @@
           },
           {
             "id": "B",
-            "text": "File > Close"
+            "text": "Layout > Margins, then Table"
           },
           {
             "id": "C",
-            "text": "Review > Translate only"
+            "text": "File > Close"
           },
           {
             "id": "D",
-            "text": "Layout > Margins, then Table"
+            "text": "Review > Translate only"
           }
         ],
         "answer": "A",
@@ -641,11 +641,11 @@
           },
           {
             "id": "B",
-            "text": "Merge and nest cells for decoration"
+            "text": "Leave several completely blank rows on purpose"
           },
           {
             "id": "C",
-            "text": "Leave several completely blank rows on purpose"
+            "text": "Merge and nest cells for decoration"
           },
           {
             "id": "D",
@@ -687,22 +687,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Right-click the picture and choose View Alt Text (or Picture Format > Alt Text)"
-          },
-          {
-            "id": "B",
-            "text": "Double-click the header"
-          },
-          {
-            "id": "C",
             "text": "File > Options > Proofing only"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "Right-click the picture and choose View Alt Text (or Picture Format > Alt Text)"
+          },
+          {
+            "id": "C",
             "text": "Review > New Comment only"
+          },
+          {
+            "id": "D",
+            "text": "Double-click the header"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "View Alt Text or Picture Format > Alt Text.",
         "topic": "Lesson 9 — Choose a letter or a notice, not a new kind of writing course",
         "review": "../lesson-9/#section-chapter-1-choose-a-letter-or-a-notice-not-a-new-"
@@ -712,22 +712,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Sample practice text we wrote — not legal advice and not a real booking or event"
-          },
-          {
-            "id": "B",
-            "text": "A signed contract with your town"
-          },
-          {
-            "id": "C",
             "text": "An official MOS exam"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "Sample practice text we wrote — not legal advice and not a real booking or event"
+          },
+          {
+            "id": "C",
             "text": "Immigration forms"
+          },
+          {
+            "id": "D",
+            "text": "A signed contract with your town"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Sample only.",
         "topic": "Lesson 9 — Choose a letter or a notice, not a new kind of writing course",
         "review": "../lesson-9/#section-chapter-1-choose-a-letter-or-a-notice-not-a-new-"
@@ -741,7 +741,7 @@
           },
           {
             "id": "B",
-            "text": "Everyday Computers and Smartphones only"
+            "text": "This same lesson, treated as a finished employer cover letter"
           },
           {
             "id": "C",
@@ -749,7 +749,7 @@
           },
           {
             "id": "D",
-            "text": "This same lesson, treated as a finished employer cover letter"
+            "text": "Everyday Computers and Smartphones only"
           }
         ],
         "answer": "A",
@@ -762,22 +762,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "File > Print"
+            "text": "Review > New Comment only"
           },
           {
             "id": "B",
-            "text": "Insert > Header only"
+            "text": "File > Print"
           },
           {
             "id": "C",
-            "text": "Home > Font Color only"
+            "text": "Insert > Header only"
           },
           {
             "id": "D",
-            "text": "Review > New Comment only"
+            "text": "Home > Font Color only"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "File > Print shows the preview.",
         "topic": "Lesson 10 — Preview before you spend paper",
         "review": "../lesson-10/#section-chapter-1-preview-before-you-spend-paper"
@@ -791,7 +791,7 @@
           },
           {
             "id": "B",
-            "text": "A PDF can never be opened by Word"
+            "text": "A PDF always deletes headings"
           },
           {
             "id": "C",
@@ -799,7 +799,7 @@
           },
           {
             "id": "D",
-            "text": "A PDF always deletes headings"
+            "text": "A PDF can never be opened by Word"
           }
         ],
         "answer": "A",
@@ -975,9 +975,12 @@
               "type": "workedExample",
               "title": "Worked example 1. Starting Word at a library computer",
               "html": "",
-              "problem": "Jordan sits down at a library Windows computer, presses the Windows key, types enough of the word “Word” to see it, and clicks Word. The startup screen appears. A licence box does not show this time because Word has been used on that machine before. Jordan looks at the title bar, the ribbon, and the white edit window before typing anything.",
-              "steps": [],
-              "result": "Jordan sits down at a library Windows computer, presses the Windows key, types enough of the word “Word” to see it, and clicks Word. The startup screen appears. A licence box does not show this time because Word has been used on that machine before. Jordan looks at the title bar, the ribbon, and the white edit window before typing anything."
+              "problem": "Jordan sits down at a library Windows computer, presses the Windows key, types enough of the word “Word” to see it, and clicks Word.",
+              "steps": [
+                "The startup screen appears.",
+                "A licence box does not show this time because Word has been used on that machine before."
+              ],
+              "result": "Jordan looks at the title bar, the ribbon, and the white edit window before typing anything."
             }
           ]
         },
@@ -990,9 +993,13 @@
               "type": "workedExample",
               "title": "Worked example 2. Closing by mistake",
               "html": "",
-              "problem": "Jordan clicks the X in the corner after typing two sentences that have not been saved. Word asks whether to save the changes. Jordan meant to stay and write more, so Jordan clicks Cancel. The document is still open. Tomorrow Jordan will learn to save on purpose from the Quick Access Toolbar.",
-              "steps": [],
-              "result": "Jordan clicks the X in the corner after typing two sentences that have not been saved. Word asks whether to save the changes. Jordan meant to stay and write more, so Jordan clicks Cancel. The document is still open. Tomorrow Jordan will learn to save on purpose from the Quick Access Toolbar."
+              "problem": "Jordan clicks the X in the corner after typing two sentences that have not been saved.",
+              "steps": [
+                "Word asks whether to save the changes.",
+                "Jordan meant to stay and write more, so Jordan clicks Cancel.",
+                "The document is still open."
+              ],
+              "result": "Tomorrow Jordan will learn to save on purpose from the Quick Access Toolbar."
             }
           ]
         },
@@ -1049,22 +1056,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Open the Start menu and click Word"
-            },
-            {
-              "id": "B",
               "text": "Open File Explorer and hope a document starts Word"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Open the web browser only"
+            },
+            {
+              "id": "C",
+              "text": "Open the Start menu and click Word"
             },
             {
               "id": "D",
               "text": "Open Excel first"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Microsoft: Start menu, then Word."
         },
         {
@@ -1076,11 +1083,11 @@
             },
             {
               "id": "B",
-              "text": "Only changing one letter to italic"
+              "text": "Turning off the building lights"
             },
             {
               "id": "C",
-              "text": "Turning off the building lights"
+              "text": "Only changing one letter to italic"
             },
             {
               "id": "D",
@@ -1103,11 +1110,11 @@
             },
             {
               "id": "C",
-              "text": "The status bar at the bottom of the window"
+              "text": "The proofing language list"
             },
             {
               "id": "D",
-              "text": "The proofing language list"
+              "text": "The status bar at the bottom of the window"
             }
           ],
           "answer": "A",
@@ -1118,22 +1125,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Means you clicked X by mistake and want to stay"
-            },
-            {
-              "id": "B",
               "text": "Formats the hard drive"
             },
             {
+              "id": "B",
+              "text": "Means you clicked X by mistake and want to stay"
+            },
+            {
               "id": "C",
-              "text": "Prints the document"
+              "text": "Sends the file by email"
             },
             {
               "id": "D",
-              "text": "Sends the file by email"
+              "text": "Prints the document"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Cancel keeps you in the document."
         },
         {
@@ -1141,22 +1148,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Save, Undo, and Redo"
-            },
-            {
-              "id": "B",
-              "text": "Only the printer name"
-            },
-            {
-              "id": "C",
               "text": "Only page borders"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Save, Undo, and Redo"
+            },
+            {
+              "id": "C",
               "text": "The heading styles gallery"
+            },
+            {
+              "id": "D",
+              "text": "Only the printer name"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft lists Save, Undo, and Redo there."
         },
         {
@@ -1164,22 +1171,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Changes how large the page looks on screen"
-            },
-            {
-              "id": "B",
-              "text": "Always changes the printed font size"
-            },
-            {
-              "id": "C",
               "text": "Deletes the file"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Locks the computer"
+            },
+            {
+              "id": "C",
+              "text": "Changes how large the page looks on screen"
+            },
+            {
+              "id": "D",
+              "text": "Always changes the printed font size"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Zoom changes the view."
         },
         {
@@ -1326,9 +1333,13 @@
               "type": "workedExample",
               "title": "Worked example 1. Replacing one sentence",
               "html": "",
-              "problem": "Sam types three short sentences about the week, then decides the middle sentence is not needed. Sam places the cursor at the start of that sentence, holds the left mouse button, and drags to the end. The sentence is highlighted. Sam presses Backspace and types a clearer sentence. Nothing else on the page changes.",
-              "steps": [],
-              "result": "Sam types three short sentences about the week, then decides the middle sentence is not needed. Sam places the cursor at the start of that sentence, holds the left mouse button, and drags to the end. The sentence is highlighted. Sam presses Backspace and types a clearer sentence. Nothing else on the page changes."
+              "problem": "Sam types three short sentences about the week, then decides the middle sentence is not needed.",
+              "steps": [
+                "Sam places the cursor at the start of that sentence, holds the left mouse button, and drags to the end.",
+                "The sentence is highlighted.",
+                "Sam presses Backspace and types a clearer sentence."
+              ],
+              "result": "Nothing else on the page changes."
             }
           ]
         },
@@ -1341,9 +1352,12 @@
               "type": "workedExample",
               "title": "Worked example 2. Undo after a slip",
               "html": "",
-              "problem": "Sam accidentally selects a whole paragraph and types a single letter, which replaces all of that text. Sam immediately clicks Undo on the Quick Access Toolbar (or presses Ctrl+Z). The paragraph comes back. Sam clicks away to clear the selection and tries again, this time selecting only the word that needed to change.",
-              "steps": [],
-              "result": "Sam accidentally selects a whole paragraph and types a single letter, which replaces all of that text. Sam immediately clicks Undo on the Quick Access Toolbar (or presses Ctrl+Z). The paragraph comes back. Sam clicks away to clear the selection and tries again, this time selecting only the word that needed to change."
+              "problem": "Sam accidentally selects a whole paragraph and types a single letter, which replaces all of that text.",
+              "steps": [
+                "Sam immediately clicks Undo on the Quick Access Toolbar (or presses Ctrl+Z).",
+                "The paragraph comes back."
+              ],
+              "result": "Sam clicks away to clear the selection and tries again, this time selecting only the word that needed to change."
             }
           ]
         },
@@ -1400,22 +1414,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select the text by dragging across it"
-            },
-            {
-              "id": "B",
               "text": "Click Bold first and hope Word selects the words"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Close Word first"
+            },
+            {
+              "id": "C",
+              "text": "Select the text by dragging across it"
             },
             {
               "id": "D",
               "text": "Change the computer’s language settings"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Select first (Microsoft)."
         },
         {
@@ -1423,22 +1437,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Start a new paragraph"
-            },
-            {
-              "id": "B",
-              "text": "Turn off the building lights"
-            },
-            {
-              "id": "C",
               "text": "Save the file automatically as a PDF"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Hide the ribbon forever"
+            },
+            {
+              "id": "C",
+              "text": "Start a new paragraph"
+            },
+            {
+              "id": "D",
+              "text": "Turn off the building lights"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Enter starts a new paragraph; Word wraps lines."
         },
         {
@@ -1450,11 +1464,11 @@
             },
             {
               "id": "B",
-              "text": "Alt+F4 twice"
+              "text": "Deleting Documents"
             },
             {
               "id": "C",
-              "text": "Deleting Documents"
+              "text": "Alt+F4 twice"
             },
             {
               "id": "D",
@@ -1469,22 +1483,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Some actions, such as saving a file or commands on the File tab"
+              "text": "The Start menu"
             },
             {
               "id": "B",
-              "text": "Any typing at all"
+              "text": "Some actions, such as saving a file or commands on the File tab"
             },
             {
               "id": "C",
-              "text": "Only the colour of the title bar"
+              "text": "Any typing at all"
             },
             {
               "id": "D",
-              "text": "The Start menu"
+              "text": "Only the colour of the title bar"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "File-tab commands and saving cannot be undone."
         },
         {
@@ -1530,11 +1544,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "The page looks too small or too large on the screen"
+              "text": "You want to delete the last ten years of files"
             },
             {
               "id": "B",
-              "text": "You want to delete the last ten years of files"
+              "text": "You want to change the town’s name"
             },
             {
               "id": "C",
@@ -1542,10 +1556,10 @@
             },
             {
               "id": "D",
-              "text": "You want to change the town’s name"
+              "text": "The page looks too small or too large on the screen"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Zoom changes the view only."
         }
       ],
@@ -1703,9 +1717,11 @@
               "type": "workedExample",
               "title": "Worked example 1. A first save with a clear name",
               "html": "",
-              "problem": "Mina types two paragraphs in the blank practice document, clicks Save on the Quick Access Toolbar, chooses Documents, types <code>mina-practice-note</code>, and clicks Save. The title bar now shows that name. Mina clicks Save again after adding one more sentence; no extra window appears because the file already has a name.",
-              "steps": [],
-              "result": "Mina types two paragraphs in the blank practice document, clicks Save on the Quick Access Toolbar, chooses Documents, types <code>mina-practice-note</code>, and clicks Save. The title bar now shows that name. Mina clicks Save again after adding one more sentence; no extra window appears because the file already has a name."
+              "problem": "Mina types two paragraphs in the blank practice document, clicks Save on the Quick Access Toolbar, chooses Documents, types mina-practice-note , and clicks Save.",
+              "steps": [
+                "The title bar now shows that name."
+              ],
+              "result": "Mina clicks Save again after adding one more sentence; no extra window appears because the file already has a name."
             }
           ]
         },
@@ -1718,9 +1734,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Opening from Recent",
               "html": "",
-              "problem": "The next day Mina opens Word, clicks the File tab, clicks Open, then Recent, and selects <code>mina-practice-note</code>. The text is still there. If Recent did not show it, Mina would use File Explorer, open Documents, and double-click the file.",
-              "steps": [],
-              "result": "The next day Mina opens Word, clicks the File tab, clicks Open, then Recent, and selects <code>mina-practice-note</code>. The text is still there. If Recent did not show it, Mina would use File Explorer, open Documents, and double-click the file."
+              "problem": "The next day Mina opens Word, clicks the File tab, clicks Open, then Recent, and selects mina-practice-note .",
+              "steps": [
+                "The text is still there."
+              ],
+              "result": "If Recent did not show it, Mina would use File Explorer, open Documents, and double-click the file."
             }
           ]
         },
@@ -1773,22 +1791,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Stores it as a file you can open later"
+              "text": "Locks the computer"
             },
             {
               "id": "B",
-              "text": "Always posts it to social media"
-            },
-            {
-              "id": "C",
               "text": "Prints the page and then discards the file"
             },
             {
+              "id": "C",
+              "text": "Stores it as a file you can open later"
+            },
+            {
               "id": "D",
-              "text": "Locks the computer"
+              "text": "Always posts it to social media"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Saving stores a file you can open, change, and print later."
         },
         {
@@ -1819,22 +1837,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Updates the same file"
-            },
-            {
-              "id": "B",
               "text": "Always creates ten extra copies"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Deletes Documents"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Sends the file to a printer downstairs"
+            },
+            {
+              "id": "D",
+              "text": "Updates the same file"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Later Save clicks use the current file name."
         },
         {
@@ -1842,22 +1860,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "File Explorer or Word’s File > Open (including Recent)"
+              "text": "Deleted files only"
             },
             {
               "id": "B",
-              "text": "A folder you never saved to"
+              "text": "File Explorer or Word’s File > Open (including Recent)"
             },
             {
               "id": "C",
-              "text": "Deleted files only"
+              "text": "A folder you never saved to"
             },
             {
               "id": "D",
               "text": "A text message from an unknown number"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "File Explorer or File > Open / Recent."
         },
         {
@@ -1865,11 +1883,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Something you will recognise later, such as thank-you-note"
+              "text": "Only the letter X"
             },
             {
               "id": "B",
-              "text": "A blank name"
+              "text": "Something you will recognise later, such as thank-you-note"
             },
             {
               "id": "C",
@@ -1877,10 +1895,10 @@
             },
             {
               "id": "D",
-              "text": "Only the letter X"
+              "text": "A blank name"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "A clear name is easier to find."
         },
         {
@@ -1888,14 +1906,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft’s tip on that page."
         },
         {
@@ -1907,7 +1925,7 @@
             },
             {
               "id": "B",
-              "text": "Change the colour of the Start button"
+              "text": "Hide the keyboard"
             },
             {
               "id": "C",
@@ -1915,7 +1933,7 @@
             },
             {
               "id": "D",
-              "text": "Hide the keyboard"
+              "text": "Change the colour of the Start button"
             }
           ],
           "answer": "A",
@@ -2095,9 +2113,11 @@
               "type": "workedExample",
               "title": "Worked example 1. Bold a date",
               "html": "",
-              "problem": "Alex writes “The meeting is on Saturday, 15 November.” Alex selects only “Saturday, 15 November,” clicks the Home tab, and clicks Bold. The rest of the sentence stays regular. Alex saves the file.",
-              "steps": [],
-              "result": "Alex writes “The meeting is on Saturday, 15 November.” Alex selects only “Saturday, 15 November,” clicks the Home tab, and clicks Bold. The rest of the sentence stays regular. Alex saves the file."
+              "problem": "Alex writes “The meeting is on Saturday, 15 November.” Alex selects only “Saturday, 15 November,” clicks the Home tab, and clicks Bold.",
+              "steps": [
+                "The rest of the sentence stays regular."
+              ],
+              "result": "Alex saves the file."
             }
           ]
         },
@@ -2110,9 +2130,12 @@
               "type": "workedExample",
               "title": "Worked example 2. A “bring” list on a notice",
               "html": "",
-              "problem": "Alex types three lines: own bags / small bills / a reusable cup. Alex selects those lines and chooses Home &gt; Bullets. The list stays together, with no extra plain paragraph in the middle. Later Alex will turn the notice title into a Heading 1 style (Lesson 5).",
-              "steps": [],
-              "result": "Alex types three lines: own bags / small bills / a reusable cup. Alex selects those lines and chooses Home &gt; Bullets. The list stays together, with no extra plain paragraph in the middle. Later Alex will turn the notice title into a Heading 1 style (Lesson 5)."
+              "problem": "Alex types three lines: own bags / small bills / a reusable cup.",
+              "steps": [
+                "Alex selects those lines and chooses Home > Bullets.",
+                "The list stays together, with no extra plain paragraph in the middle."
+              ],
+              "result": "Later Alex will turn the notice title into a Heading 1 style (Lesson 5)."
             }
           ]
         },
@@ -2177,15 +2200,15 @@
             },
             {
               "id": "B",
-              "text": "The Insert tab, in Illustrations"
+              "text": "File tab only"
             },
             {
               "id": "C",
-              "text": "The Layout tab only"
+              "text": "The Insert tab, in Illustrations"
             },
             {
               "id": "D",
-              "text": "File tab only"
+              "text": "The Layout tab only"
             }
           ],
           "answer": "A",
@@ -2196,11 +2219,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select the text you want to make bold"
+              "text": "Click Bold without selecting any text first"
             },
             {
               "id": "B",
-              "text": "Click Bold without selecting any text first"
+              "text": "Select the whole document when you only wanted one word"
             },
             {
               "id": "C",
@@ -2208,10 +2231,10 @@
             },
             {
               "id": "D",
-              "text": "Select the whole document when you only wanted one word"
+              "text": "Select the text you want to make bold"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Select first."
         },
         {
@@ -2219,22 +2242,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Leaves plain text"
-            },
-            {
-              "id": "B",
-              "text": "Deletes the file from the computer as well as the formatting"
-            },
-            {
-              "id": "C",
               "text": "Prints the document"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Leaves plain text"
+            },
+            {
+              "id": "C",
               "text": "Locks the screen"
+            },
+            {
+              "id": "D",
+              "text": "Deletes the file from the computer as well as the formatting"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Clear All Formatting leaves plain text."
         },
         {
@@ -2242,11 +2265,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "1, a period, a space, then your text"
+              "text": "The word LIST in all capitals"
             },
             {
               "id": "B",
-              "text": "Only the letter N"
+              "text": "1, a period, a space, then your text"
             },
             {
               "id": "C",
@@ -2254,10 +2277,10 @@
             },
             {
               "id": "D",
-              "text": "The word LIST in all capitals"
+              "text": "Only the letter N"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "`1. ` starts a numbered list."
         },
         {
@@ -2269,11 +2292,11 @@
             },
             {
               "id": "B",
-              "text": "You want to delete Documents"
+              "text": "You want to send email"
             },
             {
               "id": "C",
-              "text": "You want to send email"
+              "text": "You want to delete Documents"
             },
             {
               "id": "D",
@@ -2303,22 +2326,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Drop in a plain paragraph without a bullet or number"
-            },
-            {
-              "id": "B",
               "text": "Press Enter at the end of an item"
             },
             {
+              "id": "B",
+              "text": "Use Home > Numbering"
+            },
+            {
               "id": "C",
-              "text": "Save the file"
+              "text": "Drop in a plain paragraph without a bullet or number"
             },
             {
               "id": "D",
-              "text": "Use Home > Numbering"
+              "text": "Save the file"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "A broken list can confuse screen readers."
         }
       ],
@@ -2450,9 +2473,12 @@
               "type": "workedExample",
               "title": "Worked example 1. A notice title",
               "html": "",
-              "problem": "Priya opens the community-notice practice file. The first line is “Saturday market at the community centre.” Priya selects that line, points at Heading 1 on the Home tab to preview it, then clicks Heading 1. The title now looks like a heading and is marked as one. Priya does not skip ahead to Heading 3.",
-              "steps": [],
-              "result": "Priya opens the community-notice practice file. The first line is “Saturday market at the community centre.” Priya selects that line, points at Heading 1 on the Home tab to preview it, then clicks Heading 1. The title now looks like a heading and is marked as one. Priya does not skip ahead to Heading 3."
+              "problem": "Priya opens the community-notice practice file.",
+              "steps": [
+                "The first line is “Saturday market at the community centre.” Priya selects that line, points at Heading 1 on the Home tab to preview it, then clicks Heading 1.",
+                "The title now looks like a heading and is marked as one."
+              ],
+              "result": "Priya does not skip ahead to Heading 3."
             }
           ]
         },
@@ -2465,9 +2491,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Two levels on a longer page",
               "html": "",
-              "problem": "Priya adds a second label, “What to bring,” under a short introduction. Priya applies Heading 2 to that label, because Heading 1 is already used for the main title. The order is Heading 1, then Heading 2 — the logical order Microsoft describes.",
-              "steps": [],
-              "result": "Priya adds a second label, “What to bring,” under a short introduction. Priya applies Heading 2 to that label, because Heading 1 is already used for the main title. The order is Heading 1, then Heading 2 — the logical order Microsoft describes."
+              "problem": "Priya adds a second label, “What to bring,” under a short introduction.",
+              "steps": [
+                "Priya applies Heading 2 to that label, because Heading 1 is already used for the main title."
+              ],
+              "result": "The order is Heading 1, then Heading 2 — the logical order Microsoft describes."
             }
           ]
         },
@@ -2524,22 +2552,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Quickly formatting headings and titles, and marking what those lines are"
-            },
-            {
-              "id": "B",
-              "text": "Charging your phone"
-            },
-            {
-              "id": "C",
               "text": "Hiding the Start menu"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Quickly formatting headings and titles, and marking what those lines are"
+            },
+            {
+              "id": "C",
               "text": "Deleting Documents"
+            },
+            {
+              "id": "D",
+              "text": "Charging your phone"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Styles format headings, titles, and subtitles (Microsoft)."
         },
         {
@@ -2547,22 +2575,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Highlight the text you want to change"
+              "text": "Turn off the computer"
             },
             {
               "id": "B",
-              "text": "Print the document"
+              "text": "Highlight the text you want to change"
             },
             {
               "id": "C",
-              "text": "Turn off the computer"
+              "text": "Print the document"
             },
             {
               "id": "D",
               "text": "Open Excel"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Highlight first."
         },
         {
@@ -2574,15 +2602,15 @@
             },
             {
               "id": "B",
-              "text": "Change the font size on one word"
+              "text": "Apply Heading 1 to the whole page"
             },
             {
               "id": "C",
-              "text": "Open File > Close"
+              "text": "Change the font size on one word"
             },
             {
               "id": "D",
-              "text": "Apply Heading 1 to the whole page"
+              "text": "Open File > Close"
             }
           ],
           "answer": "A",
@@ -2593,22 +2621,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Heading 1, then Heading 2, then Heading 3"
+              "text": "No headings at all, ever"
             },
             {
               "id": "B",
-              "text": "Heading 3, then Heading 1, then Heading 2"
-            },
-            {
-              "id": "C",
               "text": "Only Heading 3 for every line"
             },
             {
+              "id": "C",
+              "text": "Heading 3, then Heading 1, then Heading 2"
+            },
+            {
               "id": "D",
-              "text": "No headings at all, ever"
+              "text": "Heading 1, then Heading 2, then Heading 3"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Do not skip heading levels."
         },
         {
@@ -2620,11 +2648,11 @@
             },
             {
               "id": "B",
-              "text": "Delete your password"
+              "text": "Replace the town’s name"
             },
             {
               "id": "C",
-              "text": "Replace the town’s name"
+              "text": "Delete your password"
             },
             {
               "id": "D",
@@ -2654,22 +2682,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "In the body of the document (not only in a header)"
-            },
-            {
-              "id": "B",
               "text": "Only on a sticky note"
             },
             {
+              "id": "B",
+              "text": "Only in the file name “aaa”"
+            },
+            {
               "id": "C",
-              "text": "Only as a watermark"
+              "text": "In the body of the document (not only in a header)"
             },
             {
               "id": "D",
-              "text": "Only in the file name “aaa”"
+              "text": "Only as a watermark"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Screen readers may miss information that lives only in a header."
         }
       ],
@@ -2852,9 +2880,11 @@
               "type": "workedExample",
               "title": "Worked example 1. Normal margins on a notice",
               "html": "",
-              "problem": "Chris opens the notice practice file, goes to Layout &gt; Margins, and leaves Normal selected after checking that it is the one-inch default Microsoft describes. The title stays in the body as Heading 1. Chris does not squeeze the words to the paper’s edge.",
-              "steps": [],
-              "result": "Chris opens the notice practice file, goes to Layout &gt; Margins, and leaves Normal selected after checking that it is the one-inch default Microsoft describes. The title stays in the body as Heading 1. Chris does not squeeze the words to the paper’s edge."
+              "problem": "Chris opens the notice practice file, goes to Layout > Margins, and leaves Normal selected after checking that it is the one-inch default Microsoft describes.",
+              "steps": [
+                "The title stays in the body as Heading 1."
+              ],
+              "result": "Chris does not squeeze the words to the paper’s edge."
             }
           ]
         },
@@ -2867,9 +2897,11 @@
               "type": "workedExample",
               "title": "Worked example 2. A short header and a page number",
               "html": "",
-              "problem": "Chris chooses Insert &gt; Header, picks a simple style, and types “Community notice — practice.” Then Chris double-clicks the header, chooses Insert &gt; Page Numbering &gt; Current Position, and picks a plain style. Chris presses Esc to return to the body and checks that the real title is still on the page as Heading 1.",
-              "steps": [],
-              "result": "Chris chooses Insert &gt; Header, picks a simple style, and types “Community notice — practice.” Then Chris double-clicks the header, chooses Insert &gt; Page Numbering &gt; Current Position, and picks a plain style. Chris presses Esc to return to the body and checks that the real title is still on the page as Heading 1."
+              "problem": "Chris chooses Insert > Header, picks a simple style, and types “Community notice — practice.” Then Chris double-clicks the header, chooses Insert > Page Numbering > Current Position, and picks a plain style.",
+              "steps": [
+                "Chris chooses Insert > Header, picks a simple style, and types “Community notice — practice.” Then Chris double-clicks the header, chooses Insert > Page Numbering > Current Position, and picks a plain style."
+              ],
+              "result": "Chris presses Esc to return to the body and checks that the real title is still on the page as Heading 1."
             }
           ]
         },
@@ -2938,15 +2970,15 @@
             },
             {
               "id": "B",
-              "text": "Zero, with words at the paper’s edge"
-            },
-            {
-              "id": "C",
               "text": "Ten centimetres on every side"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Whatever the printer decides at random"
+            },
+            {
+              "id": "D",
+              "text": "Zero, with words at the paper’s edge"
             }
           ],
           "answer": "A",
@@ -2957,22 +2989,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Layout > Margins"
-            },
-            {
-              "id": "B",
               "text": "Home > Font"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Insert > Header"
+            },
+            {
+              "id": "C",
+              "text": "Layout > Margins"
             },
             {
               "id": "D",
               "text": "Review > Spelling"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Layout > Margins."
         },
         {
@@ -2980,7 +3012,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Insert > Header"
+              "text": "Excel’s AutoSum"
             },
             {
               "id": "B",
@@ -2988,14 +3020,14 @@
             },
             {
               "id": "C",
-              "text": "Excel’s AutoSum"
+              "text": "Insert > Header"
             },
             {
               "id": "D",
               "text": "File > Close"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Insert > Header or Footer."
         },
         {
@@ -3003,22 +3035,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select Close Header and Footer, or press Esc"
-            },
-            {
-              "id": "B",
               "text": "Click outside the document window and hope"
             },
             {
+              "id": "B",
+              "text": "Select Close Header and Footer, or press Esc"
+            },
+            {
               "id": "C",
-              "text": "Change the paper size"
+              "text": "Press Ctrl+P"
             },
             {
               "id": "D",
-              "text": "Press Ctrl+P"
+              "text": "Change the paper size"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Close Header and Footer, or Esc."
         },
         {
@@ -3026,11 +3058,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Insert > Page Numbering, then Current Position, then a style"
+              "text": "Printing without opening Word"
             },
             {
               "id": "B",
-              "text": "Printing without opening Word"
+              "text": "Insert > Page Numbering, then Current Position, then a style"
             },
             {
               "id": "C",
@@ -3041,7 +3073,7 @@
               "text": "Typing the page number by hand at the bottom of each page"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Windows steps opened 10 November 2026. Other versions may say Page Number."
         },
         {
@@ -3072,11 +3104,11 @@
             },
             {
               "id": "C",
-              "text": "Hide the Home tab"
+              "text": "Turn off spelling forever"
             },
             {
               "id": "D",
-              "text": "Turn off spelling forever"
+              "text": "Hide the Home tab"
             }
           ],
           "answer": "A",
@@ -3230,9 +3262,12 @@
               "type": "workedExample",
               "title": "Worked example 1. A notice that uses *centre* and *colour*",
               "html": "",
-              "problem": "Noah writes “community centre” and “colourful cup” in the notice file, selects the whole page, and opens Review &gt; Language &gt; Set Proofing Language. A Canadian English option appears, and it shows a check mark. Noah chooses it. Word no longer treats *centre* as a problem.",
-              "steps": [],
-              "result": "Noah writes “community centre” and “colourful cup” in the notice file, selects the whole page, and opens Review &gt; Language &gt; Set Proofing Language. A Canadian English option appears, and it shows a check mark. Noah chooses it. Word no longer treats *centre* as a problem."
+              "problem": "Noah writes “community centre” and “colourful cup” in the notice file, selects the whole page, and opens Review > Language > Set Proofing Language.",
+              "steps": [
+                "A Canadian English option appears, and it shows a check mark.",
+                "Noah chooses it."
+              ],
+              "result": "Word no longer treats *centre* as a problem."
             }
           ]
         },
@@ -3245,9 +3280,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Reading a suggestion",
               "html": "",
-              "problem": "Noah typed “cheuqe” instead of “cheque.” Word underlines it. Noah opens the suggestion list, sees *cheque*, and accepts that one — not a different word. Noah does not accept a change that would turn a name or an address into something else.",
-              "steps": [],
-              "result": "Noah typed “cheuqe” instead of “cheque.” Word underlines it. Noah opens the suggestion list, sees *cheque*, and accepts that one — not a different word. Noah does not accept a change that would turn a name or an address into something else."
+              "problem": "Noah typed “cheuqe” instead of “cheque.” Word underlines it.",
+              "steps": [
+                "Noah opens the suggestion list, sees *cheque*, and accepts that one — not a different word."
+              ],
+              "result": "Noah does not accept a change that would turn a name or an address into something else."
             }
           ]
         },
@@ -3308,7 +3345,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Review > Language > Set Proofing Language"
+              "text": "Layout > Columns"
             },
             {
               "id": "B",
@@ -3316,14 +3353,14 @@
             },
             {
               "id": "C",
-              "text": "Insert > Chart"
+              "text": "Review > Language > Set Proofing Language"
             },
             {
               "id": "D",
-              "text": "Layout > Columns"
+              "text": "Insert > Chart"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Review > Language > Set Proofing Language."
         },
         {
@@ -3331,22 +3368,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "centre, colour, cheque"
-            },
-            {
-              "id": "B",
               "text": "Only US spellings"
             },
             {
+              "id": "B",
+              "text": "centre, colour, cheque"
+            },
+            {
               "id": "C",
-              "text": "Numbers instead of words"
+              "text": "Passwords in the file name"
             },
             {
               "id": "D",
-              "text": "Passwords in the file name"
+              "text": "Numbers instead of words"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "This course uses those Canadian spellings."
         },
         {
@@ -3354,22 +3391,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Spelling and grammar tools for that language are ready"
-            },
-            {
-              "id": "B",
               "text": "The printer is out of paper"
             },
             {
+              "id": "B",
+              "text": "Spelling and grammar tools for that language are ready"
+            },
+            {
               "id": "C",
-              "text": "The file is deleted"
+              "text": "You must share your password"
             },
             {
               "id": "D",
-              "text": "You must share your password"
+              "text": "The file is deleted"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft: Proofing installed means the tools are ready."
         },
         {
@@ -3381,11 +3418,11 @@
             },
             {
               "id": "B",
-              "text": "Always replaces every word without asking, and that is required by law"
+              "text": "Cannot be used in Canada"
             },
             {
               "id": "C",
-              "text": "Cannot be used in Canada"
+              "text": "Always replaces every word without asking, and that is required by law"
             },
             {
               "id": "D",
@@ -3400,22 +3437,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask a tutor rather than inventing a menu name"
-            },
-            {
-              "id": "B",
-              "text": "Download any file a pop-up offers"
-            },
-            {
-              "id": "C",
               "text": "Type your SIN into the page"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Turn the computer off immediately"
+            },
+            {
+              "id": "C",
+              "text": "Download any file a pop-up offers"
+            },
+            {
+              "id": "D",
+              "text": "Ask a tutor rather than inventing a menu name"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "We could not quote a single official menu label; look and ask."
         },
         {
@@ -3423,14 +3460,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Ask before installing packs on a shared machine."
         },
         {
@@ -3438,22 +3475,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Proofread and correct spelling and grammar"
+              "text": "Email a password"
             },
             {
               "id": "B",
-              "text": "Hide the ribbon"
-            },
-            {
-              "id": "C",
               "text": "Skip saving"
             },
             {
+              "id": "C",
+              "text": "Proofread and correct spelling and grammar"
+            },
+            {
               "id": "D",
-              "text": "Email a password"
+              "text": "Hide the ribbon"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Proofread and correct (Skills for Success Writing)."
         }
       ],
@@ -3630,9 +3667,13 @@
               "type": "workedExample",
               "title": "Worked example 1. Opening hours in a tiny table",
               "html": "",
-              "problem": "Rae inserts a two-by-four table (Insert &gt; Table), turns on Header row, and types “Day” and “Hours” in the first row. The next rows say Saturday / 10 a.m.–1 p.m. and Sunday / Closed. Rae does not merge cells and does not leave a blank row. The same facts could have been two short sentences; the table is only for side-by-side times.",
-              "steps": [],
-              "result": "Rae inserts a two-by-four table (Insert &gt; Table), turns on Header row, and types “Day” and “Hours” in the first row. The next rows say Saturday / 10 a.m.–1 p.m. and Sunday / Closed. Rae does not merge cells and does not leave a blank row. The same facts could have been two short sentences; the table is only for side-by-side times."
+              "problem": "Rae inserts a two-by-four table (Insert > Table), turns on Header row, and types “Day” and “Hours” in the first row.",
+              "steps": [
+                "The next rows say Saturday / 10 a.m.–1 p.m.",
+                "and Sunday / Closed.",
+                "Rae does not merge cells and does not leave a blank row."
+              ],
+              "result": "The same facts could have been two short sentences; the table is only for side-by-side times."
             }
           ]
         },
@@ -3646,8 +3687,10 @@
               "title": "Worked example 2. Alt text for a hall photo",
               "html": "",
               "problem": "Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it.",
-              "steps": [],
-              "result": "Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it."
+              "steps": [
+                "Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it."
+              ],
+              "result": "The page now shows the change you just made."
             }
           ]
         },
@@ -3704,22 +3747,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Insert > Table"
-            },
-            {
-              "id": "B",
-              "text": "Home > Font Color"
-            },
-            {
-              "id": "C",
               "text": "Layout > Hyphenation only"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "File > Close"
+            },
+            {
+              "id": "C",
+              "text": "Insert > Table"
+            },
+            {
+              "id": "D",
+              "text": "Home > Font Color"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Insert > Table."
         },
         {
@@ -3727,22 +3770,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Header row, then type column names"
+              "text": "Merged cells for decoration"
             },
             {
               "id": "B",
-              "text": "Nested tables inside every cell"
+              "text": "Header row, then type column names"
             },
             {
               "id": "C",
-              "text": "A blank row between every fact"
+              "text": "Nested tables inside every cell"
             },
             {
               "id": "D",
-              "text": "Merged cells for decoration"
+              "text": "A blank row between every fact"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Header row, then type names."
         },
         {
@@ -3758,11 +3801,11 @@
             },
             {
               "id": "C",
-              "text": "Have two columns of simple facts"
+              "text": "Sit under a heading"
             },
             {
               "id": "D",
-              "text": "Sit under a heading"
+              "text": "Have two columns of simple facts"
             }
           ],
           "answer": "A",
@@ -3773,22 +3816,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "One or two sentences about the object and its context"
-            },
-            {
-              "id": "B",
               "text": "The phrase “an image of” repeated ten times"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "A file name typed beside the picture"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Empty if the picture shows something important"
+            },
+            {
+              "id": "D",
+              "text": "One or two sentences about the object and its context"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "One or two sentences; do not start with “an image of.”"
         },
         {
@@ -3796,7 +3839,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Right-click the picture and choose View Alt Text"
+              "text": "Change the font of nearby text"
             },
             {
               "id": "B",
@@ -3804,14 +3847,14 @@
             },
             {
               "id": "C",
-              "text": "Change the font of nearby text"
+              "text": "Right-click the picture and choose View Alt Text"
             },
             {
               "id": "D",
               "text": "Open Excel"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Or Picture Format > Alt Text."
         },
         {
@@ -3834,22 +3877,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Microsoft Excel Basics"
-            },
-            {
-              "id": "B",
               "text": "This same lesson, using Word formulas"
             },
             {
+              "id": "B",
+              "text": "Microsoft Excel Basics"
+            },
+            {
               "id": "C",
-              "text": "This lesson’s notice template"
+              "text": "Workplace Writing"
             },
             {
               "id": "D",
-              "text": "Workplace Writing"
+              "text": "This lesson’s notice template"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Word is not the calculating spreadsheet course."
         }
       ],
@@ -3977,9 +4020,11 @@
               "type": "workedExample",
               "title": "Worked example 1. Finishing the hall letter",
               "html": "",
-              "problem": "Sam saves a copy as <code>sam-hall-letter-practice</code>, replaces the name and town lines with practice words, adds the title “Hall booking question” as Heading 1, and turns the two requests (hours, deposit) into a short numbered list. Sam sets the proofing language and keeps *centre* and *cheque*. The File tab is not used for printing yet.",
-              "steps": [],
-              "result": "Sam saves a copy as <code>sam-hall-letter-practice</code>, replaces the name and town lines with practice words, adds the title “Hall booking question” as Heading 1, and turns the two requests (hours, deposit) into a short numbered list. Sam sets the proofing language and keeps *centre* and *cheque*. The File tab is not used for printing yet."
+              "problem": "Sam saves a copy as sam-hall-letter-practice , replaces the name and town lines with practice words, adds the title “Hall booking question” as Heading 1, and turns the two requests (hours, deposit) into a short numbered list.",
+              "steps": [
+                "Sam sets the proofing language and keeps *centre* and *cheque*."
+              ],
+              "result": "The File tab is not used for printing yet."
             }
           ]
         },
@@ -3992,9 +4037,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Finishing the market notice",
               "html": "",
-              "problem": "Sam opens the notice starter, applies Heading 1 to the title, checks that the “Bring” lines are a bullet list, and adds a one-line header that repeats “Community notice — practice.” The real title stays in the body. Sam reads the page aloud once, fixes a typo, and saves.",
-              "steps": [],
-              "result": "Sam opens the notice starter, applies Heading 1 to the title, checks that the “Bring” lines are a bullet list, and adds a one-line header that repeats “Community notice — practice.” The real title stays in the body. Sam reads the page aloud once, fixes a typo, and saves."
+              "problem": "Sam opens the notice starter, applies Heading 1 to the title, checks that the “Bring” lines are a bullet list, and adds a one-line header that repeats “Community notice — practice.” The real title stays in the body.",
+              "steps": [
+                "Sam opens the notice starter, applies Heading 1 to the title, checks that the “Bring” lines are a bullet list, and adds a one-line header that repeats “Community notice — practice.” The real title stays in the body."
+              ],
+              "result": "Sam reads the page aloud once, fixes a typo, and saves."
             }
           ]
         },
@@ -4063,22 +4110,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sample text we wrote for practice"
+              "text": "Legal advice"
             },
             {
               "id": "B",
-              "text": "A real booking with your town"
+              "text": "Sample text we wrote for practice"
             },
             {
               "id": "C",
-              "text": "Legal advice"
+              "text": "A real booking with your town"
             },
             {
               "id": "D",
               "text": "An official MOS exam"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Original sample text, marked sample only."
         },
         {
@@ -4086,22 +4133,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Save a copy with a new, clear name"
-            },
-            {
-              "id": "B",
-              "text": "Delete the starter from the computer"
-            },
-            {
-              "id": "C",
               "text": "Type your password into the title"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Turn off the screen lock"
+            },
+            {
+              "id": "C",
+              "text": "Save a copy with a new, clear name"
+            },
+            {
+              "id": "D",
+              "text": "Delete the starter from the computer"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Save a copy first."
         },
         {
@@ -4109,22 +4156,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A heading style such as Heading 1"
+              "text": "All capital letters for every paragraph"
             },
             {
               "id": "B",
-              "text": "Only a header, with nothing in the body"
-            },
-            {
-              "id": "C",
               "text": "Random colours on every letter"
             },
             {
+              "id": "C",
+              "text": "Only a header, with nothing in the body"
+            },
+            {
               "id": "D",
-              "text": "All capital letters for every paragraph"
+              "text": "A heading style such as Heading 1"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Heading 1 or Title in the body."
         },
         {
@@ -4159,11 +4206,11 @@
             },
             {
               "id": "B",
-              "text": "Everyday Computers and Smartphones only"
+              "text": "This lesson’s notice template, treated as a finished application"
             },
             {
               "id": "C",
-              "text": "This lesson’s notice template, treated as a finished application"
+              "text": "Everyday Computers and Smartphones only"
             },
             {
               "id": "D",
@@ -4193,22 +4240,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "centre, colour, cheque, and practise as a verb"
+              "text": "Empty placeholders you forgot to fill, on purpose"
             },
             {
               "id": "B",
-              "text": "Only US spellings"
+              "text": "centre, colour, cheque, and practise as a verb"
             },
             {
               "id": "C",
-              "text": "Your PIN"
+              "text": "Only US spellings"
             },
             {
               "id": "D",
-              "text": "Empty placeholders you forgot to fill, on purpose"
+              "text": "Your PIN"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "The course spelling list."
         }
       ],
@@ -4457,9 +4504,12 @@
               "type": "workedExample",
               "title": "Worked example 1. Preview, then wait to print",
               "html": "",
-              "problem": "Lee opens File &gt; Print and notices the last bullet on the notice is cut off. Lee goes back to the document, shortens that line, saves, and previews again. The page now fits. Lee asks at the desk before printing one copy.",
-              "steps": [],
-              "result": "Lee opens File &gt; Print and notices the last bullet on the notice is cut off. Lee goes back to the document, shortens that line, saves, and previews again. The page now fits. Lee asks at the desk before printing one copy."
+              "problem": "Lee opens File > Print and notices the last bullet on the notice is cut off.",
+              "steps": [
+                "Lee goes back to the document, shortens that line, saves, and previews again.",
+                "The page now fits."
+              ],
+              "result": "Lee asks at the desk before printing one copy."
             }
           ]
         },
@@ -4472,9 +4522,11 @@
               "type": "workedExample",
               "title": "Worked example 2. A PDF for the tutor",
               "html": "",
-              "problem": "Lee chooses File &gt; Save a Copy, browses to Documents, selects PDF, and saves <code>lee-centre-notice-practice.pdf</code>. Lee does not add a password. Lee keeps the original Word file as well, so the page can still be edited later.",
-              "steps": [],
-              "result": "Lee chooses File &gt; Save a Copy, browses to Documents, selects PDF, and saves <code>lee-centre-notice-practice.pdf</code>. Lee does not add a password. Lee keeps the original Word file as well, so the page can still be edited later."
+              "problem": "Lee chooses File > Save a Copy, browses to Documents, selects PDF, and saves lee-centre-notice-practice.pdf .",
+              "steps": [
+                "Lee does not add a password."
+              ],
+              "result": "Lee keeps the original Word file as well, so the page can still be edited later."
             }
           ]
         },
@@ -4546,22 +4598,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "File > Print"
-            },
-            {
-              "id": "B",
-              "text": "Home > Font"
-            },
-            {
-              "id": "C",
               "text": "Review > Translate only"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Insert > Symbol only"
+            },
+            {
+              "id": "C",
+              "text": "File > Print"
+            },
+            {
+              "id": "D",
+              "text": "Home > Font"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "File > Print shows a preview and then lets you print."
         },
         {
@@ -4569,22 +4621,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask staff which printer to use, and whether you should print at all"
+              "text": "Skip saving"
             },
             {
               "id": "B",
-              "text": "Print many extra copies of every practice file"
+              "text": "Ask staff which printer to use, and whether you should print at all"
             },
             {
               "id": "C",
-              "text": "Print other people’s documents"
+              "text": "Print many extra copies of every practice file"
             },
             {
               "id": "D",
-              "text": "Skip saving"
+              "text": "Print other people’s documents"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Ask first; one copy with permission is enough."
         },
         {
@@ -4596,11 +4648,11 @@
             },
             {
               "id": "B",
-              "text": "Shaking the monitor"
+              "text": "Insert > Table"
             },
             {
               "id": "C",
-              "text": "Insert > Table"
+              "text": "Shaking the monitor"
             },
             {
               "id": "D",
@@ -4615,22 +4667,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "PDF in the file-type list, then Save"
+              "text": "The first file type in the list, without looking"
             },
             {
               "id": "B",
-              "text": "A new name without changing the file type to PDF"
+              "text": "PDF in the file-type list, then Save"
             },
             {
               "id": "C",
-              "text": "The first file type in the list, without looking"
+              "text": "A new name without changing the file type to PDF"
             },
             {
               "id": "D",
               "text": "A CSV file, if you meant to keep the Word layout"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "PDF, then Save."
         },
         {
@@ -4676,22 +4728,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Document structure tags for accessibility"
+              "text": "Leaving the file unnamed"
             },
             {
               "id": "B",
-              "text": "Removing every heading"
-            },
-            {
-              "id": "C",
               "text": "Hiding the title only in a header"
             },
             {
+              "id": "C",
+              "text": "Document structure tags for accessibility"
+            },
+            {
               "id": "D",
-              "text": "Leaving the file unnamed"
+              "text": "Removing every heading"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Found under More Options > Options when you save as PDF."
         }
       ],

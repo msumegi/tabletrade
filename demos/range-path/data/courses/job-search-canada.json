@@ -1,8 +1,8 @@
 {
   "slug": "job-search-canada",
   "title": "Job Search and Employment Readiness in Canada",
-  "summary": "",
-  "goals": "",
+  "summary": "By the end, learners can find a posting on Job Bank or alis, decide whether it fits, write a short resume and cover note for one sample job, and prepare for an interview using official tips.",
+  "goals": "By the end, learners can find a posting on Job Bank or alis, decide whether it fits, write a short resume and cover note for one sample job, and prepare for an interview using official tips.",
   "certificateNote": "It is not a college diploma, degree, trade ticket, professional licence, guaranteed job, or legal, immigration, or Employment Insurance advice.",
   "disclaimer": "**What this course is not.** This is general information for adult learners in Canada. It is **not** licensed career counselling, not a promise of a job or a certain wage, and **not** legal, immigration, or Employment Insurance (EI) advice. It does not replace *Microsoft Word Basics* (how to type and save a document), *Outlook and Workplace Email Habits* (how to send workplace email), *Workplace Writing* (tone and longer writing craft), or *Alberta Employment Standards* (wage and hours rules). Job postings and tools change. Follow the official Job Bank, alis, or employer instructions for your situation, and ask staff at your adult learning council if you want extra help. Do not type a Social Insurance Number, password, or other private number into this course.",
   "includes": [
@@ -62,22 +62,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A plan that fits the hours, travel, and kind of work you can take"
-          },
-          {
-            "id": "B",
-            "text": "Applying to every posting in every city, including shifts you cannot work"
-          },
-          {
-            "id": "C",
             "text": "A promised interview from this course"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "An immigration form"
+          },
+          {
+            "id": "C",
+            "text": "Applying to every posting in every city, including shifts you cannot work"
+          },
+          {
+            "id": "D",
+            "text": "A plan that fits the hours, travel, and kind of work you can take"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Plan that fits your life.",
         "topic": "Lesson 1 — A search is a plan, not “any job”",
         "review": "../lesson-1/#section-chapter-1-a-search-is-a-plan-not-any-job"
@@ -91,11 +91,11 @@
           },
           {
             "id": "B",
-            "text": "Keep entirely in your head, with no notes"
+            "text": "Hide from every official website"
           },
           {
             "id": "C",
-            "text": "Hide from every official website"
+            "text": "Keep entirely in your head, with no notes"
           },
           {
             "id": "D",
@@ -112,22 +112,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A free Government of Canada website for searching jobs"
+            "text": "An Employment Insurance office"
           },
           {
             "id": "B",
-            "text": "A store that sells interviews"
+            "text": "A free Government of Canada website for searching jobs"
           },
           {
             "id": "C",
-            "text": "A private payroll company"
+            "text": "A store that sells interviews"
           },
           {
             "id": "D",
-            "text": "An Employment Insurance office"
+            "text": "A private payroll company"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Free official job board.",
         "topic": "Lesson 1 — A search is a plan, not “any job”",
         "review": "../lesson-1/#section-chapter-1-a-search-is-a-plan-not-any-job"
@@ -137,22 +137,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Hours of work, benefits, and salary"
+            "text": "Whether you already have the job"
           },
           {
             "id": "B",
-            "text": "Your neighbour’s private phone number"
+            "text": "Hours of work, benefits, and salary"
           },
           {
             "id": "C",
-            "text": "The interviewer’s favourite colour"
+            "text": "Your neighbour’s private phone number"
           },
           {
             "id": "D",
-            "text": "Whether you already have the job"
+            "text": "The interviewer’s favourite colour"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Hours, benefits, salary.",
         "topic": "Lesson 2 — Start with official Canadian job boards",
         "review": "../lesson-2/#section-chapter-1-start-with-official-canadian-job-board"
@@ -162,22 +162,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The online posting may be taken down before interviews start"
-          },
-          {
-            "id": "B",
             "text": "Links never change"
           },
           {
+            "id": "B",
+            "text": "The online posting may be taken down before interviews start"
+          },
+          {
             "id": "C",
-            "text": "Employers forbid notes"
+            "text": "A copy replaces a resume"
           },
           {
             "id": "D",
-            "text": "A copy replaces a resume"
+            "text": "Employers forbid notes"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Postings can disappear.",
         "topic": "Lesson 2 — Start with official Canadian job boards",
         "review": "../lesson-2/#section-chapter-1-start-with-official-canadian-job-board"
@@ -187,22 +187,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Researching the company or job"
+            "text": "Sending your SIN to this course"
           },
           {
             "id": "B",
-            "text": "Paying a finder fee"
+            "text": "Researching the company or job"
           },
           {
             "id": "C",
-            "text": "Sending your SIN to this course"
+            "text": "Paying a finder fee"
           },
           {
             "id": "D",
             "text": "Skipping the posting"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Research first (Job Bank).",
         "topic": "Lesson 2 — Start with official Canadian job boards",
         "review": "../lesson-2/#section-chapter-1-start-with-official-canadian-job-board"
@@ -212,22 +212,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Is nice to have and is not always a reason to skip the job"
-          },
-          {
-            "id": "B",
-            "text": "Must be invented if you do not have it"
-          },
-          {
-            "id": "C",
             "text": "Means the posting is fake"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Is the same as a required driver’s licence"
+          },
+          {
+            "id": "C",
+            "text": "Is nice to have and is not always a reason to skip the job"
+          },
+          {
+            "id": "D",
+            "text": "Must be invented if you do not have it"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Asset vs required.",
         "topic": "Lesson 3 — A posting is a set of instructions, not a poster",
         "review": "../lesson-3/#section-chapter-1-a-posting-is-a-set-of-instructions-not"
@@ -237,22 +237,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A full list of your work, skills, and education that you update and then tailor"
-          },
-          {
-            "id": "B",
             "text": "A 20-page file you must send unchanged to every employer"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "A list of other people’s SINs"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "A password shared by employers"
+          },
+          {
+            "id": "D",
+            "text": "A full list of your work, skills, and education that you update and then tailor"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Master list you tailor from.",
         "topic": "Lesson 3 — A posting is a set of instructions, not a poster",
         "review": "../lesson-3/#section-chapter-1-a-posting-is-a-set-of-instructions-not"
@@ -262,22 +262,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "With the latest job first"
-          },
-          {
-            "id": "B",
-            "text": "In a random order"
-          },
-          {
-            "id": "C",
             "text": "Without any duties"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Only if the work was unpaid"
+          },
+          {
+            "id": "C",
+            "text": "With the latest job first"
+          },
+          {
+            "id": "D",
+            "text": "In a random order"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Latest job first.",
         "topic": "Lesson 3 — A posting is a set of instructions, not a poster",
         "review": "../lesson-3/#section-chapter-1-a-posting-is-a-set-of-instructions-not"
@@ -287,22 +287,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Can show skills an employer needs"
-          },
-          {
-            "id": "B",
             "text": "Must never appear on a master list"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Replaces the need to be honest"
+          },
+          {
+            "id": "C",
+            "text": "Can show skills an employer needs"
           },
           {
             "id": "D",
             "text": "Requires a SIN in this course"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Volunteer work can count.",
         "topic": "Lesson 4 — A master list is the long version you keep for yourself",
         "review": "../lesson-4/#section-chapter-1-a-master-list-is-the-long-version-you-"
@@ -316,7 +316,7 @@
           },
           {
             "id": "B",
-            "text": "At least 20 pages"
+            "text": "Written without your name"
           },
           {
             "id": "C",
@@ -324,7 +324,7 @@
           },
           {
             "id": "D",
-            "text": "Written without your name"
+            "text": "At least 20 pages"
           }
         ],
         "answer": "A",
@@ -362,11 +362,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "A Word .doc or .docx file"
+            "text": "A photo of a napkin"
           },
           {
             "id": "B",
-            "text": "A photo of a napkin"
+            "text": "Your password file"
           },
           {
             "id": "C",
@@ -374,10 +374,10 @@
           },
           {
             "id": "D",
-            "text": "Your password file"
+            "text": "A Word .doc or .docx file"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Word file if allowed.",
         "topic": "Lesson 5 — Tailor the page to one posting",
         "review": "../lesson-5/#section-chapter-1-tailor-the-page-to-one-posting"
@@ -387,7 +387,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Tailored to that company and job"
+            "text": "A full copy of the master resume"
           },
           {
             "id": "B",
@@ -395,14 +395,14 @@
           },
           {
             "id": "C",
-            "text": "A full copy of the master resume"
+            "text": "Tailored to that company and job"
           },
           {
             "id": "D",
             "text": "Required for every job in Canada, with no exceptions named"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Tailored letter.",
         "topic": "Lesson 5 — Tailor the page to one posting",
         "review": "../lesson-5/#section-chapter-1-tailor-the-page-to-one-posting"
@@ -412,11 +412,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Not always required, but important when the employer asks for one"
+            "text": "Something you should buy from a guaranteed-job site"
           },
           {
             "id": "B",
-            "text": "A legal contract"
+            "text": "Not always required, but important when the employer asks for one"
           },
           {
             "id": "C",
@@ -424,10 +424,10 @@
           },
           {
             "id": "D",
-            "text": "Something you should buy from a guaranteed-job site"
+            "text": "A legal contract"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Not always required.",
         "topic": "Lesson 5 — Tailor the page to one posting",
         "review": "../lesson-5/#section-chapter-1-tailor-the-page-to-one-posting"
@@ -462,11 +462,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "You can opt out of some extra services and still sign up"
+            "text": "You are banned from using email"
           },
           {
             "id": "B",
-            "text": "You may not read any job title"
+            "text": "You can opt out of some extra services and still sign up"
           },
           {
             "id": "C",
@@ -474,10 +474,10 @@
           },
           {
             "id": "D",
-            "text": "You are banned from using email"
+            "text": "You may not read any job title"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Opt out of extras.",
         "topic": "Lesson 6 — A cover letter is an introduction, not a second resume",
         "review": "../lesson-6/#section-chapter-1-a-cover-letter-is-an-introduction-not-"
@@ -487,22 +487,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Will not keep the SIN in its records"
-          },
-          {
-            "id": "B",
-            "text": "Posts the SIN on a public board"
-          },
-          {
-            "id": "C",
             "text": "Emails the SIN to every employer"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Stores it in this course"
+          },
+          {
+            "id": "C",
+            "text": "Will not keep the SIN in its records"
+          },
+          {
+            "id": "D",
+            "text": "Posts the SIN on a public board"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "SIN not kept (Job Bank).",
         "topic": "Lesson 6 — A cover letter is an introduction, not a second resume",
         "review": "../lesson-6/#section-chapter-1-a-cover-letter-is-an-introduction-not-"
@@ -516,15 +516,15 @@
           },
           {
             "id": "B",
-            "text": "A normal Job Bank apply step"
+            "text": "Something this course tells you to do"
           },
           {
             "id": "C",
-            "text": "Required by alis"
+            "text": "A normal Job Bank apply step"
           },
           {
             "id": "D",
-            "text": "Something this course tells you to do"
+            "text": "Required by alis"
           }
         ],
         "answer": "A",
@@ -537,22 +537,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Situation, Task, Action, Result"
-          },
-          {
-            "id": "B",
             "text": "Salary, Tax, Award, Raise"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Send, Type, Attach, Run"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Save, Translate, Apply, Repeat"
+          },
+          {
+            "id": "D",
+            "text": "Situation, Task, Action, Result"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "STAR.",
         "topic": "Lesson 7 — Follow the instructions on the posting",
         "review": "../lesson-7/#section-chapter-1-follow-the-instructions-on-the-posting"
@@ -562,22 +562,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Skills"
-          },
-          {
-            "id": "B",
-            "text": "A SIN"
-          },
-          {
-            "id": "C",
             "text": "A guaranteed offer"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "A cover-letter fee"
+          },
+          {
+            "id": "C",
+            "text": "A SIN"
+          },
+          {
+            "id": "D",
+            "text": "Skills"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Skills.",
         "topic": "Lesson 7 — Follow the instructions on the posting",
         "review": "../lesson-7/#section-chapter-1-follow-the-instructions-on-the-posting"
@@ -591,15 +591,15 @@
           },
           {
             "id": "B",
-            "text": "Negotiate pay first, then research"
-          },
-          {
-            "id": "C",
             "text": "Arrive late, then invent titles"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Skip notes, then argue"
+          },
+          {
+            "id": "D",
+            "text": "Negotiate pay first, then research"
           }
         ],
         "answer": "A",
@@ -612,22 +612,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Write notes and send a short, specific thank-you"
-          },
-          {
-            "id": "B",
-            "text": "Never contact the employer again"
-          },
-          {
-            "id": "C",
             "text": "Argue that they must hire you"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "Write notes and send a short, specific thank-you"
+          },
+          {
+            "id": "C",
             "text": "Assume you have the job"
+          },
+          {
+            "id": "D",
+            "text": "Never contact the employer again"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Notes plus thank-you.",
         "topic": "Lesson 8 — An interview is a meeting, not a verdict",
         "review": "../lesson-8/#section-chapter-1-an-interview-is-a-meeting-not-a-verdic"
@@ -637,11 +637,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Is not the same thing as a job offer"
+            "text": "Must include your SIN"
           },
           {
             "id": "B",
-            "text": "Guarantees the job"
+            "text": "Is not the same thing as a job offer"
           },
           {
             "id": "C",
@@ -649,10 +649,10 @@
           },
           {
             "id": "D",
-            "text": "Must include your SIN"
+            "text": "Guarantees the job"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "A note is not an offer.",
         "topic": "Lesson 8 — An interview is a meeting, not a verdict",
         "review": "../lesson-8/#section-chapter-1-an-interview-is-a-meeting-not-a-verdic"
@@ -687,7 +687,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "More than a salary figure"
+            "text": "The same as a thank-you note"
           },
           {
             "id": "B",
@@ -695,14 +695,14 @@
           },
           {
             "id": "C",
-            "text": "A guarantee from this course"
+            "text": "More than a salary figure"
           },
           {
             "id": "D",
-            "text": "The same as a thank-you note"
+            "text": "A guarantee from this course"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "More than pay.",
         "topic": "Lesson 9 — Write down the interview while you remember it",
         "review": "../lesson-9/#section-chapter-1-write-down-the-interview-while-you-rem"
@@ -712,7 +712,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "A big red flag"
+            "text": "A reason to send your password"
           },
           {
             "id": "B",
@@ -724,10 +724,10 @@
           },
           {
             "id": "D",
-            "text": "A reason to send your password"
+            "text": "A big red flag"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "“Big red flag” (alis).",
         "topic": "Lesson 9 — Write down the interview while you remember it",
         "review": "../lesson-9/#section-chapter-1-write-down-the-interview-while-you-rem"
@@ -737,7 +737,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "1-877-644-9992"
+            "text": "Your bank’s number"
           },
           {
             "id": "B",
@@ -745,14 +745,14 @@
           },
           {
             "id": "C",
-            "text": "A private number this course invented"
+            "text": "1-877-644-9992"
           },
           {
             "id": "D",
-            "text": "Your bank’s number"
+            "text": "A private number this course invented"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Listed on alis this session.",
         "topic": "Lesson 10 — An offer is more than one pay number",
         "review": "../lesson-10/#section-chapter-1-an-offer-is-more-than-one-pay-number"
@@ -762,11 +762,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Gives general information and does not promise a job or give legal, immigration, or EI advice"
+            "text": "Is licensed career counselling"
           },
           {
             "id": "B",
-            "text": "Is licensed career counselling"
+            "text": "Is Employment Insurance advice"
           },
           {
             "id": "C",
@@ -774,10 +774,10 @@
           },
           {
             "id": "D",
-            "text": "Is Employment Insurance advice"
+            "text": "Gives general information and does not promise a job or give legal, immigration, or EI advice"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "General information only.",
         "topic": "Lesson 10 — An offer is more than one pay number",
         "review": "../lesson-10/#section-chapter-1-an-offer-is-more-than-one-pay-number"
@@ -913,9 +913,14 @@
               "type": "workedExample",
               "title": "Worked example 1. Hours that will actually work",
               "html": "",
-              "problem": "Jordan can work weekends and one evening, but not weekday mornings because of a family drop-off. Jordan writes “weekends and one evening; within a 30-minute drive; public-facing or tidy-up work” at the top of a notebook. A weekday 7 a.m. warehouse posting is interesting, but Jordan does not apply. That is not quitting. It is using the plan.",
-              "steps": [],
-              "result": "Jordan can work weekends and one evening, but not weekday mornings because of a family drop-off. Jordan writes “weekends and one evening; within a 30-minute drive; public-facing or tidy-up work” at the top of a notebook. A weekday 7 a.m. warehouse posting is interesting, but Jordan does not apply. That is not quitting. It is using the plan."
+              "problem": "Jordan can work weekends and one evening, but not weekday mornings because of a family drop-off.",
+              "steps": [
+                "Jordan writes “weekends and one evening; within a 30-minute drive; public-facing or tidy-up work” at the top of a notebook.",
+                "A weekday 7 a.m.",
+                "warehouse posting is interesting, but Jordan does not apply.",
+                "That is not quitting."
+              ],
+              "result": "It is using the plan."
             }
           ]
         },
@@ -928,9 +933,11 @@
               "type": "workedExample",
               "title": "Worked example 2. A one-page master list",
               "html": "",
-              "problem": "Jordan rules four columns on paper: Employer, Job title, Date sent, Next step. The first line is left blank until Lesson 2, when a real (or practice) posting appears. Jordan also writes the personal email and the voicemail number at the top so those details stay the same on every application.",
-              "steps": [],
-              "result": "Jordan rules four columns on paper: Employer, Job title, Date sent, Next step. The first line is left blank until Lesson 2, when a real (or practice) posting appears. Jordan also writes the personal email and the voicemail number at the top so those details stay the same on every application."
+              "problem": "Jordan rules four columns on paper: Employer, Job title, Date sent, Next step.",
+              "steps": [
+                "The first line is left blank until Lesson 2, when a real (or practice) posting appears."
+              ],
+              "result": "Jordan also writes the personal email and the voicemail number at the top so those details stay the same on every application."
             }
           ]
         },
@@ -998,15 +1005,15 @@
             },
             {
               "id": "B",
-              "text": "Applying to every posting in every city"
-            },
-            {
-              "id": "C",
               "text": "A promised interview"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "An immigration form from this course"
+            },
+            {
+              "id": "D",
+              "text": "Applying to every posting in every city"
             }
           ],
           "answer": "A",
@@ -1021,15 +1028,15 @@
             },
             {
               "id": "B",
-              "text": "Do only after you are hired"
+              "text": "Hide from your adult learning council"
             },
             {
               "id": "C",
-              "text": "Keep entirely in your head, with no notes"
+              "text": "Do only after you are hired"
             },
             {
               "id": "D",
-              "text": "Hide from your adult learning council"
+              "text": "Keep entirely in your head, with no notes"
             }
           ],
           "answer": "A",
@@ -1040,22 +1047,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Postings can disappear, and you need dates, copies, and next steps in one place"
-            },
-            {
-              "id": "B",
               "text": "Employers require you to publish the list online"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "It replaces a resume"
+            },
+            {
+              "id": "C",
+              "text": "Postings can disappear, and you need dates, copies, and next steps in one place"
             },
             {
               "id": "D",
               "text": "It is a legal contract"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Dates, copies, and follow-up live on the list."
         },
         {
@@ -1063,22 +1070,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A personal email you check often, not a current workplace email"
-            },
-            {
-              "id": "B",
-              "text": "A friend’s email so you never see replies"
-            },
-            {
-              "id": "C",
               "text": "No email at all"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "A personal email you check often, not a current workplace email"
+            },
+            {
+              "id": "C",
               "text": "A different invented address for every letter"
+            },
+            {
+              "id": "D",
+              "text": "A friend’s email so you never see replies"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Personal email, not a current work email."
         },
         {
@@ -1086,7 +1093,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "1-877-644-9992"
+              "text": "A private fee-for-service hotline this course invented"
             },
             {
               "id": "B",
@@ -1094,14 +1101,14 @@
             },
             {
               "id": "C",
-              "text": "A private fee-for-service hotline this course invented"
+              "text": "1-877-644-9992"
             },
             {
               "id": "D",
               "text": "Your bank’s number"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Listed on the alis Look for Work page this session."
         },
         {
@@ -1109,11 +1116,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Gives general information and does not promise a job"
+              "text": "Is licensed career counselling"
             },
             {
               "id": "B",
-              "text": "Is licensed career counselling"
+              "text": "Gives general information and does not promise a job"
             },
             {
               "id": "C",
@@ -1124,7 +1131,7 @@
               "text": "Is Employment Insurance advice"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "General information only."
         },
         {
@@ -1132,22 +1139,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A category of jobs that share skills, such as cook"
+              "text": "A cover letter"
             },
             {
               "id": "B",
-              "text": "One specific shift at one employer"
-            },
-            {
-              "id": "C",
               "text": "A SIN"
             },
             {
+              "id": "C",
+              "text": "One specific shift at one employer"
+            },
+            {
               "id": "D",
-              "text": "A cover letter"
+              "text": "A category of jobs that share skills, such as cook"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Occupation vs one job."
         }
       ],
@@ -1324,9 +1331,12 @@
               "type": "workedExample",
               "title": "Worked example 1. A small-town search",
               "html": "",
-              "problem": "Sam lives near Sampletown and can work weekends. On the practice screen Sam types “attendant” and “Sampletown,” then opens the hours filter and looks for part-time or weekend wording. A weekday-only posting is left on the list but not saved. Sam copies the closing date of one good match onto the master list.",
-              "steps": [],
-              "result": "Sam lives near Sampletown and can work weekends. On the practice screen Sam types “attendant” and “Sampletown,” then opens the hours filter and looks for part-time or weekend wording. A weekday-only posting is left on the list but not saved. Sam copies the closing date of one good match onto the master list."
+              "problem": "Sam lives near Sampletown and can work weekends.",
+              "steps": [
+                "On the practice screen Sam types “attendant” and “Sampletown,” then opens the hours filter and looks for part-time or weekend wording.",
+                "A weekday-only posting is left on the list but not saved."
+              ],
+              "result": "Sam copies the closing date of one good match onto the master list."
             }
           ]
         },
@@ -1339,9 +1349,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Alis for the how, Job Bank for the listings",
               "html": "",
-              "problem": "Sam bookmarks alis Look for Work to reread resume and interview articles later, and uses Job Bank to browse current listings. Sam does not treat a practice drawing as the live site, and asks a tutor when a button has moved.",
-              "steps": [],
-              "result": "Sam bookmarks alis Look for Work to reread resume and interview articles later, and uses Job Bank to browse current listings. Sam does not treat a practice drawing as the live site, and asks a tutor when a button has moved."
+              "problem": "Sam bookmarks alis Look for Work to reread resume and interview articles later, and uses Job Bank to browse current listings.",
+              "steps": [
+                "Sam bookmarks alis Look for Work to reread resume and interview articles later, and uses Job Bank to browse current listings."
+              ],
+              "result": "Sam does not treat a practice drawing as the live site, and asks a tutor when a button has moved."
             }
           ]
         },
@@ -1405,22 +1417,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A free Government of Canada website for searching jobs"
+              "text": "A private payroll service"
             },
             {
               "id": "B",
-              "text": "A store that sells interviews"
+              "text": "A free Government of Canada website for searching jobs"
             },
             {
               "id": "C",
-              "text": "An immigration application"
+              "text": "A store that sells interviews"
             },
             {
               "id": "D",
-              "text": "A private payroll service"
+              "text": "An immigration application"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Free official job board."
         },
         {
@@ -1428,22 +1440,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Hours of work, benefits, and salary"
-            },
-            {
-              "id": "B",
-              "text": "Your SIN"
-            },
-            {
-              "id": "C",
               "text": "The interviewer’s favourite colour"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Whether you already have the job"
+            },
+            {
+              "id": "C",
+              "text": "Hours of work, benefits, and salary"
+            },
+            {
+              "id": "D",
+              "text": "Your SIN"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Hours, benefits, salary."
         },
         {
@@ -1455,15 +1467,15 @@
             },
             {
               "id": "B",
-              "text": "A fee you must pay Job Bank"
-            },
-            {
-              "id": "C",
               "text": "A guaranteed interview"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "A type of cover letter"
+            },
+            {
+              "id": "D",
+              "text": "A fee you must pay Job Bank"
             }
           ],
           "answer": "A",
@@ -1478,11 +1490,11 @@
             },
             {
               "id": "B",
-              "text": "Links never break"
+              "text": "Employers forbid notes"
             },
             {
               "id": "C",
-              "text": "Employers forbid notes"
+              "text": "Links never break"
             },
             {
               "id": "D",
@@ -1497,22 +1509,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A job title or skill and a place"
+              "text": "Someone else’s email"
             },
             {
               "id": "B",
-              "text": "Only a random string of numbers"
-            },
-            {
-              "id": "C",
               "text": "Your password"
             },
             {
+              "id": "C",
+              "text": "A job title or skill and a place"
+            },
+            {
               "id": "D",
-              "text": "Someone else’s email"
+              "text": "Only a random string of numbers"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Title or skill, plus a place."
         },
         {
@@ -1520,22 +1532,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Attending job fairs, contacting recruiters, or using social media carefully"
-            },
-            {
-              "id": "B",
-              "text": "Ignoring every official site"
-            },
-            {
-              "id": "C",
               "text": "Paying for a guaranteed job"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Attending job fairs, contacting recruiters, or using social media carefully"
+            },
+            {
+              "id": "C",
               "text": "Sharing your banking password"
+            },
+            {
+              "id": "D",
+              "text": "Ignoring every official site"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Job Bank lists those extra paths."
         },
         {
@@ -1543,22 +1555,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask a tutor rather than guessing at a hidden setting"
+              "text": "Type your SIN into this course"
             },
             {
               "id": "B",
-              "text": "Invent extra buttons"
-            },
-            {
-              "id": "C",
               "text": "Close the computer permanently"
             },
             {
+              "id": "C",
+              "text": "Invent extra buttons"
+            },
+            {
               "id": "D",
-              "text": "Type your SIN into this course"
+              "text": "Ask a tutor rather than guessing at a hidden setting"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Screens change; ask."
         }
       ],
@@ -1586,7 +1598,7 @@
             {
               "type": "download",
               "id": "jobsearch-sample-posting",
-              "href": "../../../media/practice/Job-Search-Sample-Posting-Sample-Only.txt",
+              "href": "../../../media/practice/Job-Search-Sample-Posting-Sample-Only.docx",
               "label": "Sampletown Weekend Attendant posting (sample only)",
               "note": "Not a real job."
             },
@@ -1720,9 +1732,12 @@
               "type": "workedExample",
               "title": "Worked example 1. Matching the sample attendant posting",
               "html": "",
-              "problem": "Ri can work Saturdays and Sundays and has greeted people at a volunteer skate sale. Ri highlights “greet visitors,” “set up tables,” and “reliable attendance” on the sample posting and writes two honest examples. Ri does not invent first aid. Ri decides to tailor a resume next, then apply by email as the sample asks.",
-              "steps": [],
-              "result": "Ri can work Saturdays and Sundays and has greeted people at a volunteer skate sale. Ri highlights “greet visitors,” “set up tables,” and “reliable attendance” on the sample posting and writes two honest examples. Ri does not invent first aid. Ri decides to tailor a resume next, then apply by email as the sample asks."
+              "problem": "Ri can work Saturdays and Sundays and has greeted people at a volunteer skate sale.",
+              "steps": [
+                "Ri highlights “greet visitors,” “set up tables,” and “reliable attendance” on the sample posting and writes two honest examples.",
+                "Ri does not invent first aid."
+              ],
+              "result": "Ri decides to tailor a resume next, then apply by email as the sample asks."
             }
           ]
         },
@@ -1735,9 +1750,12 @@
               "type": "workedExample",
               "title": "Worked example 2. A posting that does not fit",
               "html": "",
-              "problem": "A different sample line asks for weekday 6 a.m. starts and a class of driver’s licence Ri does not have. Ri records the posting on the master list as “skipped — hours and licence,” instead of forcing an application. That keeps the list honest.",
-              "steps": [],
-              "result": "A different sample line asks for weekday 6 a.m. starts and a class of driver’s licence Ri does not have. Ri records the posting on the master list as “skipped — hours and licence,” instead of forcing an application. That keeps the list honest."
+              "problem": "A different sample line asks for weekday 6 a.m.",
+              "steps": [
+                "starts and a class of driver’s licence Ri does not have.",
+                "Ri records the posting on the master list as “skipped — hours and licence,” instead of forcing an application."
+              ],
+              "result": "That keeps the list honest."
             }
           ]
         },
@@ -1797,22 +1815,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Researching the company or job"
-            },
-            {
-              "id": "B",
-              "text": "Paying a finder fee"
-            },
-            {
-              "id": "C",
               "text": "Sending your SIN to this course"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Researching the company or job"
+            },
+            {
+              "id": "C",
               "text": "Skipping the posting"
+            },
+            {
+              "id": "D",
+              "text": "Paying a finder fee"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Research, then resume, then cover letter (Job Bank)."
         },
         {
@@ -1820,22 +1838,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Employers usually say how they want to receive the resume"
-            },
-            {
-              "id": "B",
-              "text": "You may invent any method you like"
-            },
-            {
-              "id": "C",
               "text": "It is only decoration"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "It replaces the duties list"
+            },
+            {
+              "id": "C",
+              "text": "Employers usually say how they want to receive the resume"
+            },
+            {
+              "id": "D",
+              "text": "You may invent any method you like"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Follow their instructions."
         },
         {
@@ -1843,7 +1861,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "It is nice to have; missing it is not automatically a reason to skip"
+              "text": "You should pay for guaranteed training from a pop-up"
             },
             {
               "id": "B",
@@ -1851,14 +1869,14 @@
             },
             {
               "id": "C",
-              "text": "The job is fake"
+              "text": "It is nice to have; missing it is not automatically a reason to skip"
             },
             {
               "id": "D",
-              "text": "You should pay for guaranteed training from a pop-up"
+              "text": "The job is fake"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Asset vs required."
         },
         {
@@ -1893,7 +1911,7 @@
             },
             {
               "id": "B",
-              "text": "You would need to tailor a resume"
+              "text": "You have volunteer examples instead of paid ones"
             },
             {
               "id": "C",
@@ -1901,7 +1919,7 @@
             },
             {
               "id": "D",
-              "text": "You have volunteer examples instead of paid ones"
+              "text": "You would need to tailor a resume"
             }
           ],
           "answer": "A",
@@ -1912,22 +1930,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A fictional practice file we wrote"
-            },
-            {
-              "id": "B",
-              "text": "A real hiring process"
-            },
-            {
-              "id": "C",
               "text": "A legal job offer"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "An immigration form"
+            },
+            {
+              "id": "C",
+              "text": "A real hiring process"
+            },
+            {
+              "id": "D",
+              "text": "A fictional practice file we wrote"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Sample only."
         },
         {
@@ -1935,22 +1953,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The live posting may be taken down before an interview"
+              "text": "Employers forbid it"
             },
             {
               "id": "B",
-              "text": "You should never keep notes"
+              "text": "The live posting may be taken down before an interview"
             },
             {
               "id": "C",
-              "text": "Copies replace interviews"
+              "text": "You should never keep notes"
             },
             {
               "id": "D",
-              "text": "Employers forbid it"
+              "text": "Copies replace interviews"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Alis: postings can disappear."
         }
       ],
@@ -1989,7 +2007,7 @@
             {
               "type": "download",
               "id": "jobsearch-master-skills",
-              "href": "../../../media/practice/Job-Search-Master-Skills-Worksheet.txt",
+              "href": "../../../media/practice/Job-Search-Tracker.xlsx",
               "label": "Master-skills worksheet (sample)",
               "note": "Do not type a SIN or password."
             },
@@ -2040,9 +2058,11 @@
               "type": "workedExample",
               "title": "Worked example 1. Turning volunteer hours into skills",
               "html": "",
-              "problem": "Mo writes “Volunteer, community skate sale, two winters” on the worksheet, then lists duties: greeted families, took $5 bills for used skates (with a partner), and stacked tables at the end. The accomplishment line is “Opened the sale table on time for eight Saturday mornings.” Mo does not invent a manager title.",
-              "steps": [],
-              "result": "Mo writes “Volunteer, community skate sale, two winters” on the worksheet, then lists duties: greeted families, took $5 bills for used skates (with a partner), and stacked tables at the end. The accomplishment line is “Opened the sale table on time for eight Saturday mornings.” Mo does not invent a manager title."
+              "problem": "Mo writes “Volunteer, community skate sale, two winters” on the worksheet, then lists duties: greeted families, took $5 bills for used skates (with a partner), and stacked tables at the end.",
+              "steps": [
+                "Mo writes “Volunteer, community skate sale, two winters” on the worksheet, then lists duties: greeted families, took $5 bills for used skates (with a partner), and stacked tables at the end."
+              ],
+              "result": "The accomplishment line is “Opened the sale table on time for eight Saturday mornings.” Mo does not invent a manager title."
             }
           ]
         },
@@ -2055,9 +2075,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Asking a reference early",
               "html": "",
-              "problem": "Mo asks a former shift lead, by a short polite message, whether they would be willing to give a positive reference for weekend attendant work. Mo waits for a yes before writing that name on the master list, and does not use a parent as the only reference.",
-              "steps": [],
-              "result": "Mo asks a former shift lead, by a short polite message, whether they would be willing to give a positive reference for weekend attendant work. Mo waits for a yes before writing that name on the master list, and does not use a parent as the only reference."
+              "problem": "Mo asks a former shift lead, by a short polite message, whether they would be willing to give a positive reference for weekend attendant work.",
+              "steps": [
+                "Mo asks a former shift lead, by a short polite message, whether they would be willing to give a positive reference for weekend attendant work."
+              ],
+              "result": "Mo waits for a yes before writing that name on the master list, and does not use a parent as the only reference."
             }
           ]
         },
@@ -2117,7 +2139,7 @@
             },
             {
               "id": "B",
-              "text": "A secret password employers share"
+              "text": "A SIN application"
             },
             {
               "id": "C",
@@ -2125,7 +2147,7 @@
             },
             {
               "id": "D",
-              "text": "A SIN application"
+              "text": "A secret password employers share"
             }
           ],
           "answer": "A",
@@ -2136,7 +2158,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "With the latest job first (reverse order)"
+              "text": "Without any dates or duties"
             },
             {
               "id": "B",
@@ -2144,14 +2166,14 @@
             },
             {
               "id": "C",
-              "text": "Without any dates or duties"
+              "text": "Only if the work was unpaid"
             },
             {
               "id": "D",
-              "text": "Only if the work was unpaid"
+              "text": "With the latest job first (reverse order)"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Reverse chronological work history."
         },
         {
@@ -2159,11 +2181,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Can show skills an employer needs"
+              "text": "Must never appear on a master list"
             },
             {
               "id": "B",
-              "text": "Must never appear on a master list"
+              "text": "Can show skills an employer needs"
             },
             {
               "id": "C",
@@ -2174,7 +2196,7 @@
               "text": "Requires a SIN in this course"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Volunteer work can count."
         },
         {
@@ -2182,7 +2204,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Includes a clear result, not only a vague claim"
+              "text": "Invents a promotion"
             },
             {
               "id": "B",
@@ -2190,14 +2212,14 @@
             },
             {
               "id": "C",
-              "text": "Invents a promotion"
+              "text": "Includes a clear result, not only a vague claim"
             },
             {
               "id": "D",
               "text": "Lists other people’s private numbers"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Results over vague praise."
         },
         {
@@ -2205,22 +2227,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask whether they are willing to give a positive reference"
-            },
-            {
-              "id": "B",
               "text": "Use a family member only, without asking"
             },
             {
+              "id": "B",
+              "text": "Type their SIN into this course"
+            },
+            {
               "id": "C",
-              "text": "Publish their mobile number on a poster"
+              "text": "Ask whether they are willing to give a positive reference"
             },
             {
               "id": "D",
-              "text": "Type their SIN into this course"
+              "text": "Publish their mobile number on a poster"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Ask first."
         },
         {
@@ -2228,11 +2250,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "A Social Insurance Number or password"
+              "text": "A training course you finished"
             },
             {
               "id": "B",
-              "text": "A town name and email"
+              "text": "A Social Insurance Number or password"
             },
             {
               "id": "C",
@@ -2240,10 +2262,10 @@
             },
             {
               "id": "D",
-              "text": "A training course you finished"
+              "text": "A town name and email"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "No SIN or password."
         },
         {
@@ -2305,7 +2327,7 @@
             {
               "type": "download",
               "id": "jobsearch-resume-outline",
-              "href": "../../../media/practice/Job-Search-Resume-Outline.txt",
+              "href": "../../../media/practice/Job-Search-Resume-Outline.docx",
               "label": "Resume outline for the sample posting",
               "note": "Tailor it; do not invent duties."
             },
@@ -2356,9 +2378,11 @@
               "type": "workedExample",
               "title": "Worked example 1. Keywords from the sample posting",
               "html": "",
-              "problem": "Priya’s master list includes grocery-store bagging and hall volunteering. For Sampletown, Priya writes “Greeted visitors at a volunteer skate sale” and “Set up tables for community events,” using the posting’s words *greet* and *tables*. Priya does not add first aid.",
-              "steps": [],
-              "result": "Priya’s master list includes grocery-store bagging and hall volunteering. For Sampletown, Priya writes “Greeted visitors at a volunteer skate sale” and “Set up tables for community events,” using the posting’s words *greet* and *tables*. Priya does not add first aid."
+              "problem": "Priya’s master list includes grocery-store bagging and hall volunteering.",
+              "steps": [
+                "For Sampletown, Priya writes “Greeted visitors at a volunteer skate sale” and “Set up tables for community events,” using the posting’s words *greet* and *tables*."
+              ],
+              "result": "Priya does not add first aid."
             }
           ]
         },
@@ -2371,9 +2395,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Choosing a layout",
               "html": "",
-              "problem": "Priya has a two-year gap after leaving paid work to help at home, plus steady volunteer hours. Priya tries a combination layout: skills first (greeting the public, weekend reliability, tidy setup), then a short dated list of roles. Priya does not invent a full-time job to hide the gap.",
-              "steps": [],
-              "result": "Priya has a two-year gap after leaving paid work to help at home, plus steady volunteer hours. Priya tries a combination layout: skills first (greeting the public, weekend reliability, tidy setup), then a short dated list of roles. Priya does not invent a full-time job to hide the gap."
+              "problem": "Priya has a two-year gap after leaving paid work to help at home, plus steady volunteer hours.",
+              "steps": [
+                "Priya tries a combination layout: skills first (greeting the public, weekend reliability, tidy setup), then a short dated list of roles."
+              ],
+              "result": "Priya does not invent a full-time job to hide the gap."
             }
           ]
         },
@@ -2461,22 +2487,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "1 to 2 pages at most"
-            },
-            {
-              "id": "B",
               "text": "At least 20 pages"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Written only in a table"
+            },
+            {
+              "id": "C",
+              "text": "1 to 2 pages at most"
             },
             {
               "id": "D",
               "text": "Printed on dark paper with no name"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "1–2 pages (alis)."
         },
         {
@@ -2492,11 +2518,11 @@
             },
             {
               "id": "C",
-              "text": "Word cannot save a simple list"
+              "text": "Tables are required by Job Bank"
             },
             {
               "id": "D",
-              "text": "Tables are required by Job Bank"
+              "text": "Word cannot save a simple list"
             }
           ],
           "answer": "A",
@@ -2507,22 +2533,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The job is similar to work you have done"
+              "text": "You have never done any task"
             },
             {
               "id": "B",
-              "text": "You want to hide every date for no reason"
+              "text": "The job is similar to work you have done"
             },
             {
               "id": "C",
-              "text": "You have never done any task"
+              "text": "You want to hide every date for no reason"
             },
             {
               "id": "D",
               "text": "You need immigration advice"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Similar, consistent history."
         },
         {
@@ -2530,11 +2556,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "A Word .doc or .docx file"
+              "text": "A photo of a handwritten napkin only"
             },
             {
               "id": "B",
-              "text": "A photo of a handwritten napkin only"
+              "text": "Someone else’s resume"
             },
             {
               "id": "C",
@@ -2542,10 +2568,10 @@
             },
             {
               "id": "D",
-              "text": "Someone else’s resume"
+              "text": "A Word .doc or .docx file"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Word format if allowed."
         },
         {
@@ -2553,22 +2579,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A traditional template and a youth or recent-graduate template"
+              "text": "A table-only template that alis prefers"
             },
             {
               "id": "B",
-              "text": "A guaranteed interview template"
-            },
-            {
-              "id": "C",
               "text": "A tax-filing template"
             },
             {
+              "id": "C",
+              "text": "A traditional template and a youth or recent-graduate template"
+            },
+            {
               "id": "D",
-              "text": "A table-only template that alis prefers"
+              "text": "A guaranteed interview template"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Two templates described this session."
         },
         {
@@ -2576,22 +2602,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Read out loud and check suggestions such as cheque vs check"
+              "text": "Skip names and dates"
             },
             {
               "id": "B",
-              "text": "Trust spell check without reading"
+              "text": "Read out loud and check suggestions such as cheque vs check"
             },
             {
               "id": "C",
-              "text": "Skip names and dates"
+              "text": "Trust spell check without reading"
             },
             {
               "id": "D",
               "text": "Add a SIN at the top"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Read suggestions; cheque/check example is from alis."
         }
       ],
@@ -2743,8 +2769,10 @@
               "title": "Worked example 1. A three-part Sampletown email",
               "html": "",
               "problem": "Subject: Weekend Attendant application — Jordan Lee",
-              "steps": [],
-              "result": "Jordan writes: they saw the Weekend Attendant posting and want to help visitors feel welcome at the community centre. They greeted families at a volunteer skate sale and set up tables for that event. They attach a resume and thank the reader. The note is ten sentences, not two pages."
+              "steps": [
+                "Subject: Weekend Attendant application — Jordan Lee"
+              ],
+              "result": "The page now shows the change you just made."
             }
           ]
         },
@@ -2757,9 +2785,11 @@
               "type": "workedExample",
               "title": "Worked example 2. A letter that tries to do too much",
               "html": "",
-              "problem": "A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job. Jordan cuts it back to the greeting and setup examples the posting asked for, and moves the extra history back to the resume — or off the page.",
-              "steps": [],
-              "result": "A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job. Jordan cuts it back to the greeting and setup examples the posting asked for, and moves the extra history back to the resume — or off the page."
+              "problem": "A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job.",
+              "steps": [
+                "A first draft repeats every grocery-store duty from Jordan’s master list and never names the attendant job."
+              ],
+              "result": "Jordan cuts it back to the greeting and setup examples the posting asked for, and moves the extra history back to the resume — or off the page."
             }
           ]
         },
@@ -2819,22 +2849,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Research, create a resume, and prepare a cover letter"
+              "text": "Apply first and read later"
             },
             {
               "id": "B",
-              "text": "Pay a fee, share a PIN, and wait"
-            },
-            {
-              "id": "C",
               "text": "Skip the posting, invent duties, and send"
             },
             {
+              "id": "C",
+              "text": "Pay a fee, share a PIN, and wait"
+            },
+            {
               "id": "D",
-              "text": "Apply first and read later"
+              "text": "Research, create a resume, and prepare a cover letter"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Job Bank’s three steps."
         },
         {
@@ -2842,22 +2872,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Tailored to that company and job"
-            },
-            {
-              "id": "B",
-              "text": "The same unused paragraph for every employer"
-            },
-            {
-              "id": "C",
               "text": "Longer than ten pages"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Tailored to that company and job"
+            },
+            {
+              "id": "C",
               "text": "Written only in tables"
+            },
+            {
+              "id": "D",
+              "text": "The same unused paragraph for every employer"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Tailor it."
         },
         {
@@ -2869,11 +2899,11 @@
             },
             {
               "id": "B",
-              "text": "Required for every job in Canada"
+              "text": "A replacement for a resume"
             },
             {
               "id": "C",
-              "text": "A replacement for a resume"
+              "text": "Required for every job in Canada"
             },
             {
               "id": "D",
@@ -2892,11 +2922,11 @@
             },
             {
               "id": "B",
-              "text": "Copy the resume word for word"
+              "text": "Hide the job title"
             },
             {
               "id": "C",
-              "text": "Hide the job title"
+              "text": "Copy the resume word for word"
             },
             {
               "id": "D",
@@ -2911,22 +2941,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Name the job and your name"
-            },
-            {
-              "id": "B",
               "text": "Be left blank"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Be only the word “Hi”"
+            },
+            {
+              "id": "C",
+              "text": "Name the job and your name"
             },
             {
               "id": "D",
               "text": "Contain your password"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Clear subject."
         },
         {
@@ -2934,7 +2964,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Practice, not a real application"
+              "text": "An official Job Bank form"
             },
             {
               "id": "B",
@@ -2942,14 +2972,14 @@
             },
             {
               "id": "C",
-              "text": "Immigration advice"
+              "text": "Practice, not a real application"
             },
             {
               "id": "D",
-              "text": "An official Job Bank form"
+              "text": "Immigration advice"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Sample only."
         },
         {
@@ -2957,11 +2987,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Outlook and Workplace Email Habits"
+              "text": "Employment Standards only"
             },
             {
               "id": "B",
-              "text": "Excel Basics"
+              "text": "Outlook and Workplace Email Habits"
             },
             {
               "id": "C",
@@ -2969,10 +2999,10 @@
             },
             {
               "id": "D",
-              "text": "Employment Standards only"
+              "text": "Excel Basics"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Outlook course pointer."
         }
       ],
@@ -3095,9 +3125,11 @@
               "type": "workedExample",
               "title": "Worked example 1. A Standard account without extra services",
               "html": "",
-              "problem": "Alex creates a Job Bank account with an email address, turns on Job Alerts for “attendant” near home, and opts out of services that ask for a SIN. Alex can still browse postings and prepare a resume without entering a SIN in this course.",
-              "steps": [],
-              "result": "Alex creates a Job Bank account with an email address, turns on Job Alerts for “attendant” near home, and opts out of services that ask for a SIN. Alex can still browse postings and prepare a resume without entering a SIN in this course."
+              "problem": "Alex creates a Job Bank account with an email address, turns on Job Alerts for “attendant” near home, and opts out of services that ask for a SIN.",
+              "steps": [
+                "Alex creates a Job Bank account with an email address, turns on Job Alerts for “attendant” near home, and opts out of services that ask for a SIN."
+              ],
+              "result": "Alex can still browse postings and prepare a resume without entering a SIN in this course."
             }
           ]
         },
@@ -3110,9 +3142,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Checking an attachment",
               "html": "",
-              "problem": "Alex’s first send attempt has last week’s grocery-store letter attached. Alex notices the file name, swaps in <code>Alex_Sampletown_resume.docx</code>, and only then would click Send — and even then, not to a real employer while practising.",
-              "steps": [],
-              "result": "Alex’s first send attempt has last week’s grocery-store letter attached. Alex notices the file name, swaps in <code>Alex_Sampletown_resume.docx</code>, and only then would click Send — and even then, not to a real employer while practising."
+              "problem": "Alex’s first send attempt has last week’s grocery-store letter attached.",
+              "steps": [
+                "Alex’s first send attempt has last week’s grocery-store letter attached."
+              ],
+              "result": "Alex notices the file name, swaps in Alex_Sampletown_resume.docx , and only then would click Send — and even then, not to a real employer while practising."
             }
           ]
         },
@@ -3203,11 +3237,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "You can opt out of some extra services and still sign up"
+              "text": "You may not read any job title"
             },
             {
               "id": "B",
-              "text": "You may not read any job title"
+              "text": "You must type it into this lesson"
             },
             {
               "id": "C",
@@ -3215,10 +3249,10 @@
             },
             {
               "id": "D",
-              "text": "You must type it into this lesson"
+              "text": "You can opt out of some extra services and still sign up"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Opt out of extras."
         },
         {
@@ -3226,22 +3260,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Will not keep the SIN in its records"
-            },
-            {
-              "id": "B",
-              "text": "Prints the SIN on a public page"
-            },
-            {
-              "id": "C",
               "text": "Emails the SIN to every employer"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Will not keep the SIN in its records"
+            },
+            {
+              "id": "C",
               "text": "Stores it in this course"
+            },
+            {
+              "id": "D",
+              "text": "Prints the SIN on a public page"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Job Bank says it will not keep the SIN."
         },
         {
@@ -3249,7 +3283,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Extra services you can use or opt out of"
+              "text": "Ways to pay for a guaranteed job"
             },
             {
               "id": "B",
@@ -3257,14 +3291,14 @@
             },
             {
               "id": "C",
-              "text": "Immigration applications"
+              "text": "Extra services you can use or opt out of"
             },
             {
               "id": "D",
-              "text": "Ways to pay for a guaranteed job"
+              "text": "Immigration applications"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Optional extras."
         },
         {
@@ -3272,22 +3306,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Check the address or site, the file names, and that you attached the right resume"
-            },
-            {
-              "id": "B",
               "text": "Guess every form field, including status questions you do not understand"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Delete your master list"
+            },
+            {
+              "id": "C",
+              "text": "Check the address or site, the file names, and that you attached the right resume"
             },
             {
               "id": "D",
               "text": "Send a banking password"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Check before you send."
         },
         {
@@ -3303,11 +3337,11 @@
             },
             {
               "id": "C",
-              "text": "Required by alis"
+              "text": "Something this course tells you to pay"
             },
             {
               "id": "D",
-              "text": "Something this course tells you to pay"
+              "text": "Required by alis"
             }
           ],
           "answer": "A",
@@ -3318,22 +3352,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Never"
-            },
-            {
-              "id": "B",
-              "text": "Always, in the first box"
-            },
-            {
-              "id": "C",
               "text": "Only on Fridays"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Never"
+            },
+            {
+              "id": "C",
               "text": "In the discussion prompt"
+            },
+            {
+              "id": "D",
+              "text": "Always, in the first box"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Never."
         }
       ],
@@ -3372,7 +3406,7 @@
             {
               "type": "download",
               "id": "jobsearch-interview-sheet",
-              "href": "../../../media/practice/Job-Search-Interview-Practice-Sheet.txt",
+              "href": "../../../media/practice/Job-Search-Interview-Practice-Sheet.docx",
               "label": "Interview practice sheet (sample)",
               "note": ""
             },
@@ -3454,9 +3488,13 @@
               "type": "workedExample",
               "title": "Worked example 1. A STARS card for Sampletown",
               "html": "",
-              "problem": "Situation: a busy Saturday skate sale. Task: greet people and keep the line fair. Action: welcomed each person, pointed to the try-on area, and asked a teammate for help when two families arrived at once. Result: the table opened on time and no one left the line. Skill: friendly, clear communication.",
-              "steps": [],
-              "result": "Situation: a busy Saturday skate sale. Task: greet people and keep the line fair. Action: welcomed each person, pointed to the try-on area, and asked a teammate for help when two families arrived at once. Result: the table opened on time and no one left the line. Skill: friendly, clear communication."
+              "problem": "Situation: a busy Saturday skate sale.",
+              "steps": [
+                "Task: greet people and keep the line fair.",
+                "Action: welcomed each person, pointed to the try-on area, and asked a teammate for help when two families arrived at once.",
+                "Result: the table opened on time and no one left the line."
+              ],
+              "result": "Skill: friendly, clear communication."
             }
           ]
         },
@@ -3469,9 +3507,11 @@
               "type": "workedExample",
               "title": "Worked example 2. A practice run with a friend",
               "html": "",
-              "problem": "Kim reads the Sampletown posting out loud, then answers “Tell me about a time you dealt with a line of people” using the card above. Kim’s friend notes that Kim rushed the result. Kim says the result one more time, slower, and writes a reminder on the sheet.",
-              "steps": [],
-              "result": "Kim reads the Sampletown posting out loud, then answers “Tell me about a time you dealt with a line of people” using the card above. Kim’s friend notes that Kim rushed the result. Kim says the result one more time, slower, and writes a reminder on the sheet."
+              "problem": "Kim reads the Sampletown posting out loud, then answers “Tell me about a time you dealt with a line of people” using the card above.",
+              "steps": [
+                "Kim’s friend notes that Kim rushed the result."
+              ],
+              "result": "Kim says the result one more time, slower, and writes a reminder on the sheet."
             }
           ]
         },
@@ -3540,15 +3580,15 @@
             },
             {
               "id": "B",
-              "text": "Send, Type, Attach, Run"
+              "text": "Save, Translate, Apply, Repeat"
             },
             {
               "id": "C",
-              "text": "Salary, Tax, Award, Raise"
+              "text": "Send, Type, Attach, Run"
             },
             {
               "id": "D",
-              "text": "Save, Translate, Apply, Repeat"
+              "text": "Salary, Tax, Award, Raise"
             }
           ],
           "answer": "A",
@@ -3559,22 +3599,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Skills"
-            },
-            {
-              "id": "B",
               "text": "A SIN"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "A guaranteed offer"
+            },
+            {
+              "id": "C",
+              "text": "Skills"
             },
             {
               "id": "D",
               "text": "A cover-letter fee"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Skills (STARS)."
         },
         {
@@ -3586,15 +3626,15 @@
             },
             {
               "id": "B",
-              "text": "Arrive late so you seem busy"
-            },
-            {
-              "id": "C",
               "text": "Invent a job title"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Leave your resume at home on purpose"
+            },
+            {
+              "id": "D",
+              "text": "Arrive late so you seem busy"
             }
           ],
           "answer": "A",
@@ -3605,11 +3645,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Prepare, then practise, then present yourself well, then participate"
+              "text": "Negotiate pay first, then research"
             },
             {
               "id": "B",
-              "text": "Negotiate pay first, then research"
+              "text": "Prepare, then practise, then present yourself well, then participate"
             },
             {
               "id": "C",
@@ -3620,7 +3660,7 @@
               "text": "Pay a coach fee through this course"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Alis’s four tips."
         },
         {
@@ -3628,22 +3668,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Until after they offer you the job, as a timing tip"
-            },
-            {
-              "id": "B",
               "text": "Out of every conversation forever, even after an offer"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "In the first email subject line, with your SIN"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "To a stranger on public Wi-Fi"
+            },
+            {
+              "id": "D",
+              "text": "Until after they offer you the job, as a timing tip"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Timing tip from work-search basics."
         },
         {
@@ -3651,22 +3691,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Remember this course is not legal advice, and ask council staff or official information later"
-            },
-            {
-              "id": "B",
               "text": "Use this course as a courtroom script"
             },
             {
+              "id": "B",
+              "text": "Remember this course is not legal advice, and ask council staff or official information later"
+            },
+            {
               "id": "C",
-              "text": "Give a banking password"
+              "text": "Pretend the interview is an EI hearing"
             },
             {
               "id": "D",
-              "text": "Pretend the interview is an EI hearing"
+              "text": "Give a banking password"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Not legal advice."
         },
         {
@@ -3674,7 +3714,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only when an employer tells you when to start"
+              "text": "When you finish this lesson"
             },
             {
               "id": "B",
@@ -3682,14 +3722,14 @@
             },
             {
               "id": "C",
-              "text": "As soon as you are invited to interview"
+              "text": "Only when an employer tells you when to start"
             },
             {
               "id": "D",
-              "text": "When you finish this lesson"
+              "text": "As soon as you are invited to interview"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Alis: do not assume until you have a start date."
         }
       ],
@@ -3803,9 +3843,11 @@
               "type": "workedExample",
               "title": "Worked example 1. A same-day thank-you",
               "html": "",
-              "problem": "After a Sampletown practice interview, Sam emails: thanks for the time and for explaining the Saturday setup; Sam learned that attendants help lock up with a checklist; Sam is a good fit because of greeting visitors at the skate sale and setting up tables; Sam remains interested. The note is one screen long.",
-              "steps": [],
-              "result": "After a Sampletown practice interview, Sam emails: thanks for the time and for explaining the Saturday setup; Sam learned that attendants help lock up with a checklist; Sam is a good fit because of greeting visitors at the skate sale and setting up tables; Sam remains interested. The note is one screen long."
+              "problem": "After a Sampletown practice interview, Sam emails: thanks for the time and for explaining the Saturday setup; Sam learned that attendants help lock up with a checklist; Sam is a good fit because of greeting visitors at the skate sale and setting up tables; Sam remains interested.",
+              "steps": [
+                "After a Sampletown practice interview, Sam emails: thanks for the time and for explaining the Saturday setup; Sam learned that attendants help lock up with a checklist; Sam is a good fit because of greeting visitors at the skate sale and setting up tables; Sam remains interested."
+              ],
+              "result": "The note is one screen long."
             }
           ]
         },
@@ -3818,9 +3860,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Notes that help the next interview",
               "html": "",
-              "problem": "Sam writes that the panel asked about handling two families at once, and that Sam forgot to mention a teammate. On the next practice run, Sam adds that detail to the STAR result. Sam also writes “call Friday if no news,” because that is the date the interviewer mentioned.",
-              "steps": [],
-              "result": "Sam writes that the panel asked about handling two families at once, and that Sam forgot to mention a teammate. On the next practice run, Sam adds that detail to the STAR result. Sam also writes “call Friday if no news,” because that is the date the interviewer mentioned."
+              "problem": "Sam writes that the panel asked about handling two families at once, and that Sam forgot to mention a teammate.",
+              "steps": [
+                "On the next practice run, Sam adds that detail to the STAR result."
+              ],
+              "result": "Sam also writes “call Friday if no news,” because that is the date the interviewer mentioned."
             }
           ]
         },
@@ -3880,22 +3924,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Write down what happened while you remember it"
+              "text": "Post the interviewer’s private number"
             },
             {
               "id": "B",
-              "text": "Delete every note"
+              "text": "Write down what happened while you remember it"
             },
             {
               "id": "C",
-              "text": "Assume you are hired"
+              "text": "Delete every note"
             },
             {
               "id": "D",
-              "text": "Post the interviewer’s private number"
+              "text": "Assume you are hired"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Make notes first."
         },
         {
@@ -3903,7 +3947,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Mention something specific from the conversation"
+              "text": "Argue that they must hire you"
             },
             {
               "id": "B",
@@ -3911,14 +3955,14 @@
             },
             {
               "id": "C",
-              "text": "Include your SIN"
+              "text": "Mention something specific from the conversation"
             },
             {
               "id": "D",
-              "text": "Argue that they must hire you"
+              "text": "Include your SIN"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Tailor the thank-you."
         },
         {
@@ -3926,11 +3970,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Confirm that you are still interested"
+              "text": "Withdraw the application without saying why"
             },
             {
               "id": "B",
-              "text": "Demand a salary in capital letters"
+              "text": "Confirm that you are still interested"
             },
             {
               "id": "C",
@@ -3938,10 +3982,10 @@
             },
             {
               "id": "D",
-              "text": "Withdraw the application without saying why"
+              "text": "Demand a salary in capital letters"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Confirm interest."
         },
         {
@@ -3957,11 +4001,11 @@
             },
             {
               "id": "C",
-              "text": "You should stop looking for any work"
+              "text": "You should invent a better title on your resume"
             },
             {
               "id": "D",
-              "text": "You should invent a better title on your resume"
+              "text": "You should stop looking for any work"
             }
           ],
           "answer": "A",
@@ -3972,22 +4016,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Is not the same thing as a job offer"
-            },
-            {
-              "id": "B",
               "text": "Guarantees the job"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Replaces the resume"
+            },
+            {
+              "id": "C",
+              "text": "Is not the same thing as a job offer"
             },
             {
               "id": "D",
               "text": "Is illegal in Alberta"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "A note is not an offer."
         },
         {
@@ -3999,15 +4043,15 @@
             },
             {
               "id": "B",
-              "text": "Ignore the date"
+              "text": "Send your SIN “to speed things up”"
             },
             {
               "id": "C",
-              "text": "Call every hour until then"
+              "text": "Ignore the date"
             },
             {
               "id": "D",
-              "text": "Send your SIN “to speed things up”"
+              "text": "Call every hour until then"
             }
           ],
           "answer": "A",
@@ -4018,7 +4062,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Until an employer tells you when to start"
+              "text": "Never, once you have sent one thank-you"
             },
             {
               "id": "B",
@@ -4026,14 +4070,14 @@
             },
             {
               "id": "C",
-              "text": "Never, once you have sent one thank-you"
+              "text": "Only on websites that charge a guarantee fee"
             },
             {
               "id": "D",
-              "text": "Only on websites that charge a guarantee fee"
+              "text": "Until an employer tells you when to start"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Keep searching until a start date."
         }
       ],
@@ -4116,9 +4160,11 @@
               "type": "workedExample",
               "title": "Worked example 1. Reading beyond the hourly figure",
               "html": "",
-              "problem": "A practice offer (sample only) lists $18.50 an hour — the same example figure as the posting, and still not real pay advice — plus a 40-minute drive each way and no written terms. Kai writes questions about hours, mileage, and a written offer, and asks a tutor what official pages to read, instead of saying yes in the hallway.",
-              "steps": [],
-              "result": "A practice offer (sample only) lists $18.50 an hour — the same example figure as the posting, and still not real pay advice — plus a 40-minute drive each way and no written terms. Kai writes questions about hours, mileage, and a written offer, and asks a tutor what official pages to read, instead of saying yes in the hallway."
+              "problem": "A practice offer (sample only) lists $18.50 an hour — the same example figure as the posting, and still not real pay advice — plus a 40-minute drive each way and no written terms.",
+              "steps": [
+                "A practice offer (sample only) lists $18.50 an hour — the same example figure as the posting, and still not real pay advice — plus a 40-minute drive each way and no written terms."
+              ],
+              "result": "Kai writes questions about hours, mileage, and a written offer, and asks a tutor what official pages to read, instead of saying yes in the hallway."
             }
           ]
         },
@@ -4131,9 +4177,11 @@
               "type": "workedExample",
               "title": "Worked example 2. Two sample dates",
               "html": "",
-              "problem": "Kai has a practice “maybe” from one fictional workplace and a written practice offer from another. Kai does not invent legal strategy. Kai writes both dates down and asks council staff how to reply politely, then updates the master list.",
-              "steps": [],
-              "result": "Kai has a practice “maybe” from one fictional workplace and a written practice offer from another. Kai does not invent legal strategy. Kai writes both dates down and asks council staff how to reply politely, then updates the master list."
+              "problem": "Kai has a practice “maybe” from one fictional workplace and a written practice offer from another.",
+              "steps": [
+                "Kai does not invent legal strategy."
+              ],
+              "result": "Kai writes both dates down and asks council staff how to reply politely, then updates the master list."
             }
           ]
         },
@@ -4208,22 +4256,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "More than a salary figure"
+              "text": "The same as a thank-you note"
             },
             {
               "id": "B",
-              "text": "Only the first number you hear"
-            },
-            {
-              "id": "C",
               "text": "A guarantee from this course"
             },
             {
+              "id": "C",
+              "text": "Only the first number you hear"
+            },
+            {
               "id": "D",
-              "text": "The same as a thank-you note"
+              "text": "More than a salary figure"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "More than pay."
         },
         {
@@ -4254,22 +4302,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Official employment-standards information (or that LearnHere course), not a guess from this lesson"
-            },
-            {
-              "id": "B",
               "text": "This course’s hidden legal chapter"
             },
             {
+              "id": "B",
+              "text": "Your password manager"
+            },
+            {
               "id": "C",
-              "text": "A guaranteed-job pop-up"
+              "text": "Official employment-standards information (or that LearnHere course), not a guess from this lesson"
             },
             {
               "id": "D",
-              "text": "Your password manager"
+              "text": "A guaranteed-job pop-up"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Employment standards, not this lesson."
         },
         {
@@ -4281,15 +4329,15 @@
             },
             {
               "id": "B",
-              "text": "Suggest that you write questions down"
+              "text": "Remind you that sample pay figures are examples only"
             },
             {
               "id": "C",
-              "text": "Point you to Alberta Supports"
+              "text": "Suggest that you write questions down"
             },
             {
               "id": "D",
-              "text": "Remind you that sample pay figures are examples only"
+              "text": "Point you to Alberta Supports"
             }
           ],
           "answer": "A",
@@ -4300,11 +4348,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "In writing, before you turn other offers down (a caution, not a promise about every employer)"
+              "text": "By paying a finder fee"
             },
             {
               "id": "B",
-              "text": "By deleting every note"
+              "text": "In writing, before you turn other offers down (a caution, not a promise about every employer)"
             },
             {
               "id": "C",
@@ -4312,10 +4360,10 @@
             },
             {
               "id": "D",
-              "text": "By paying a finder fee"
+              "text": "By deleting every note"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Written acceptance caution from alis."
         },
         {
@@ -4323,7 +4371,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "1-877-644-9992"
+              "text": "Your bank"
             },
             {
               "id": "B",
@@ -4331,14 +4379,14 @@
             },
             {
               "id": "C",
-              "text": "A private number this course invented"
+              "text": "1-877-644-9992"
             },
             {
               "id": "D",
-              "text": "Your bank"
+              "text": "A private number this course invented"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Listed on alis this session."
         },
         {
@@ -4346,22 +4394,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "You passed a knowledge test — not that a tutor watched you get hired"
-            },
-            {
-              "id": "B",
               "text": "You are guaranteed a job"
             },
             {
+              "id": "B",
+              "text": "You passed a knowledge test — not that a tutor watched you get hired"
+            },
+            {
               "id": "C",
-              "text": "You received immigration status"
+              "text": "You completed licensed career counselling"
             },
             {
               "id": "D",
-              "text": "You completed licensed career counselling"
+              "text": "You received immigration status"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Knowledge exam, not a hired certificate."
         }
       ],

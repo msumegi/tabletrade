@@ -114,6 +114,81 @@
     });
   }
 
+  function paintRich(root, id) {
+    var app = root.querySelector("[data-app]");
+    var appName = app ? app.getAttribute("data-app") : "";
+    function field(name, text) {
+      var el = root.querySelector('[data-field="' + name + '"]');
+      if (el) el.textContent = text;
+    }
+    function slot(name) {
+      var el = root.querySelector('[data-slot="' + name + '"]');
+      if (el) el.hidden = false;
+      return el;
+    }
+    if (id === "title" && appName === "job") field("title", "Weekend Attendant");
+    if (id === "title" && appName === "word") {
+      var line = slot("title");
+      if (line) line.classList.add("is-selected");
+    }
+    if (id === "place") field("place", "Sampletown");
+    if (id === "hours") {
+      var other = root.querySelector('[data-job="other"]');
+      if (other) other.hidden = true;
+    }
+    if (id === "sent1") {
+      var sentence = slot("sent1");
+      if (sentence) sentence.classList.add("is-selected");
+    }
+    if (id === "bold") {
+      var bold = slot("title");
+      if (bold) bold.classList.add("is-bold");
+    }
+    if (id === "bullets") slot("list");
+    if (id === "h1") {
+      var heading = slot("title");
+      if (heading) heading.classList.add("is-heading");
+    }
+    if (id === "header") slot("header");
+    if (id === "pnum" || id === "current") slot("pagenum");
+    if (id === "en-ca" || id === "setlang" || id === "review") {
+      var proof = slot("proof");
+      if (proof && id === "en-ca") proof.textContent = "Proofing: English (Canada)";
+    }
+    if (id === "table" || id === "grid") slot("table");
+    if (id === "headerrow") {
+      var table = slot("table");
+      if (table) table.classList.add("has-header");
+    }
+    if (id === "print" || id === "previewok" || id === "file") slot("preview");
+    if (id === "pdf" || id === "savecopy") {
+      var name = root.querySelector("[data-doc-name]");
+      if (name) name.textContent = "notice-practice.pdf";
+    }
+    if ((id === "save" || id === "savebtn" || id === "docs") && appName === "word") {
+      var saved = root.querySelector("[data-doc-name]");
+      if (saved) saved.textContent = "hall-booking-practice.docx";
+    }
+    if (id === "to") field("to", "jobs@sampletown.example");
+    if (id === "subject" || id === "subj") field("subject", "Weekend Attendant — Sam Lee");
+    if (id === "body") field("body", "I can greet visitors and set up tables on weekends. Resume attached.");
+    if (id === "newemail" || id === "reply") slot("compose");
+    if (id === "send") {
+      var sent = slot("sent");
+      if (sent) sent.textContent = "Sent";
+    }
+    if (id === "mail") slot("mail");
+    if (id === "calendar") slot("calendar");
+    if (id === "attach" || id === "insert") slot("attached");
+    if (id === "flag") {
+      var msg = slot("msg");
+      if (msg) msg.classList.add("is-flagged");
+    }
+    if (id === "newfolder" || id === "move") slot("folder");
+    if (id === "people" || id === "newcontact" || id === "name") slot("contact");
+    if (id === "newappt" || id === "reminder" || id === "title") slot("appt");
+  }
+
   function setupSims() {
     document.querySelectorAll("[data-sim]").forEach(function (root) {
       var keyNode = root.querySelector(".sim-key");
@@ -219,6 +294,7 @@
           return;
         }
         applyTap(id);
+        paintRich(root, id);
         seqAt += 1;
         if (seqAt < seq.length) {
           live.className = "feedback is-good";

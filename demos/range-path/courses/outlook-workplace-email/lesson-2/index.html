@@ -100,13 +100,27 @@
 <section class="block block-sim" data-block="simulation" data-sim="outlook-new-email" id="outlook-new-email">
   <h3>Write and send a new message (practice screen)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Outlook</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="newemail">New Email</button><button type="button" class="btn btn-secondary" data-hotspot="to">To</button><button type="button" class="btn btn-secondary" data-hotspot="subject">Subject</button><button type="button" class="btn btn-secondary" data-hotspot="send">Send</button></div>
-        
+  <div class="practice-window" data-app="outlook">
+      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="newemail">New Email</button><button type="button" class="btn btn-secondary" data-hotspot="to">To</button><button type="button" class="btn btn-secondary" data-hotspot="subject">Subject</button><button type="button" class="btn btn-secondary" data-hotspot="send">Send</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -126,7 +140,7 @@
   <p class="feedback" role="status" hidden></p>
   <script type="application/json" class="check-key">{"answer":"A","explain":"Microsoft asks for a descriptive, action-oriented subject so recipients can tell what they need to do. “Hi” and “Question” do not say what the message is about."}</script>
 </form>
-<p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Outlook-Workplace-Sample-Messages-Sample-Only.txt" download>Sample messages (practice only)</a> <span class="meta">Sample only. Four practice messages we wrote, including one labelled phishing sample for Lesson 6. Do not type a real password or send these to real people.</span></p>
+<p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Outlook-Workplace-Sample-Messages-Sample-Only.docx" download>Sample messages (practice only)</a> <span class="meta">Sample only. Four practice messages we wrote, including one labelled phishing sample for Lesson 6. Do not type a real password or send these to real people.</span></p>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-2-write-a-subject-and-a-short-body">Previous section</a>
     <button type="button" class="btn" data-read-section="chapter-3-send-the-message-then-check-that-it-we" data-lesson="2">Mark this section as read</button>
@@ -139,9 +153,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Confirming Saturday setup</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex needs to tell Jordan whether Saturday from 9:00 a.m. to 10:00 a.m. works. Alex opens Mail, chooses <strong>New Email</strong>, and puts Jordan on the To line. The subject is “Saturday hall setup — I can help from 9:00 to 10:00.” The body has two short lines: “I can help set up tables this Saturday from 9:00 a.m. to 10:00 a.m.” and “Please let me know if the plan changes.” Alex reads the note once, chooses Send, and later checks Sent Items instead of sending the same note again.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex needs to tell Jordan whether Saturday from 9:00 a.m. to 10:00 a.m. works. Alex opens Mail, chooses <strong>New Email</strong>, and puts Jordan on the To line. The subject is “Saturday hall setup — I can help from 9:00 to 10:00.” The body has two short lines: “I can help set up tables this Saturday from 9:00 a.m. to 10:00 a.m.” and “Please let me know if the plan changes.” Alex reads the note once, chooses Send, and later checks Sent Items instead of sending the same note again.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex needs to tell Jordan whether Saturday from 9:00 a.m.</p></div>
+      <p class="block-label">Steps</p><ol><li>to 10:00 a.m.</li><li>Alex opens Mail, chooses New Email , and puts Jordan on the To line.</li><li>The subject is “Saturday hall setup — I can help from 9:00 to 10:00.” The body has two short lines: “I can help set up tables this Saturday from 9:00 a.m.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>to 10:00 a.m.” and “Please let me know if the plan changes.” Alex reads the note once, chooses Send, and later checks Sent Items instead of sending the same note again.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-send-the-message-then-check-that-it-we">Previous section</a>
@@ -155,9 +169,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Fixing a weak subject</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Priya starts a message with the subject “Question” and a long paragraph about chairs, tables, and a heater. Before sending, Priya rereads Microsoft’s subject advice and changes the subject to “Action Required: extra chairs for Saturday’s market.” Priya moves the chair question to its own line and saves the heater note for a separate message, because it is a different topic. The new version is easier for Jordan to scan.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Priya starts a message with the subject “Question” and a long paragraph about chairs, tables, and a heater. Before sending, Priya rereads Microsoft’s subject advice and changes the subject to “Action Required: extra chairs for Saturday’s market.” Priya moves the chair question to its own line and saves the heater note for a separate message, because it is a different topic. The new version is easier for Jordan to scan.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Priya starts a message with the subject “Question” and a long paragraph about chairs, tables, and a heater.</p></div>
+      <p class="block-label">Steps</p><ol><li>Before sending, Priya rereads Microsoft’s subject advice and changes the subject to “Action Required: extra chairs for Saturday’s market.” Priya moves the chair question to its own line and saves the heater note for a separate message, because it is a different topic.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The new version is easier for Jordan to scan.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-confirming-saturday-setup">Previous section</a>
@@ -183,6 +197,7 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>If you are in a study group: rewrite one weak subject (“Hi,” “Question,” or “Update”) into a clearer line. Compare your versions.</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="outlook-l2-cheatsheet"><h2>Lesson 2 — Write and send</h2><ul><li>From the Inbox (or another mail folder), choose New Email. Shortcut: Ctrl+Shift+M.</li><li>Put the person who must act on the To line.</li><li>Write a descriptive, action-oriented subject (FYI: or Action Required can help).</li><li>Keep the body short. Most important point first. Questions on their own lines.</li><li>Read the message, then choose Send.</li><li>Check Sent Items rather than sending the same note twice.</li><li>Use a practice account. Never type a real workplace password into this course.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-try-it">Previous section</a>
     <button type="button" class="btn" data-read-section="discussion-optional" data-lesson="2">Mark this section as read</button>

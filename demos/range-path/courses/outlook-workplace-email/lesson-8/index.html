@@ -99,13 +99,27 @@
 <section class="block block-sim" data-block="simulation" data-sim="outlook-new-contact" id="outlook-new-contact">
   <h3>Save a simple contact (practice screen)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Outlook</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="people">People</button><button type="button" class="btn btn-secondary" data-hotspot="newcontact">New Contact</button><button type="button" class="btn btn-secondary" data-hotspot="name">Full Name</button><button type="button" class="btn btn-secondary" data-hotspot="save">Save</button></div>
-        
+  <div class="practice-window" data-app="outlook">
+      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="people">People</button><button type="button" class="btn btn-secondary" data-hotspot="newcontact">New Contact</button><button type="button" class="btn btn-secondary" data-hotspot="name">Full Name</button><button type="button" class="btn btn-secondary" data-hotspot="save">Save</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -130,9 +144,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Saving Jordan as a contact</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex opens <strong>People</strong>, chooses <strong>New Contact</strong>, and enters Jordan Lee plus the sample address from the practice file. Alex saves the card and does not add a real home address or any private number. The next practice message to Jordan starts by typing “Jordan” on the To line.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex opens <strong>People</strong>, chooses <strong>New Contact</strong>, and enters Jordan Lee plus the sample address from the practice file. Alex saves the card and does not add a real home address or any private number. The next practice message to Jordan starts by typing “Jordan” on the To line.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex opens People , chooses New Contact , and enters Jordan Lee plus the sample address from the practice file.</p></div>
+      <p class="block-label">Steps</p><ol><li>Alex saves the card and does not add a real home address or any private number.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The next practice message to Jordan starts by typing “Jordan” on the To line.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-a-calmer-workday-in-outlook">Previous section</a>
@@ -146,9 +160,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A Saturday chair task</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex still needs to bring two chairs. Rather than hoping memory will do the work, Alex chooses <strong>New Items &gt; Task</strong> (or Ctrl+Shift+K), titles it “Bring two extra chairs on Saturday,” sets a Friday due date, and chooses <strong>Save &amp; Close</strong>. On Friday Alex opens Tasks, sees the item, and later marks it done. Alex also glances at Calendar so the Saturday market briefing is not a surprise.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex still needs to bring two chairs. Rather than hoping memory will do the work, Alex chooses <strong>New Items &gt; Task</strong> (or Ctrl+Shift+K), titles it “Bring two extra chairs on Saturday,” sets a Friday due date, and chooses <strong>Save &amp; Close</strong>. On Friday Alex opens Tasks, sees the item, and later marks it done. Alex also glances at Calendar so the Saturday market briefing is not a surprise.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex still needs to bring two chairs.</p></div>
+      <p class="block-label">Steps</p><ol><li>Rather than hoping memory will do the work, Alex chooses New Items > Task (or Ctrl+Shift+K), titles it “Bring two extra chairs on Saturday,” sets a Friday due date, and chooses Save & Close .</li><li>On Friday Alex opens Tasks, sees the item, and later marks it done.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Alex also glances at Calendar so the Saturday market briefing is not a surprise.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-saving-jordan-as-a-contact">Previous section</a>
@@ -193,6 +207,7 @@
 <p>&lt;details&gt; &lt;summary&gt;Show the model answer&lt;/summary&gt;</p>
 <ul><li>One new practice message was sent, with a clear subject and a short body.</li><li>One reply used Reply or Reply All for a good reason.</li><li>At least one message was filed in a named folder, or flagged for follow-up.</li><li>One appointment exists on the practice calendar with no extra people.</li><li>No real password, SIN, or other private number appears.</li><li>The phishing sample was not clicked.</li><li>The work is clearly sample practice, not a real workplace mailbox.</li></ul>
 <p>&lt;/details&gt;</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="outlook-l8-cheatsheet"><h2>Lesson 8 — Contacts, tasks, and habits</h2><ul><li>People &gt; New Contact (Ctrl+Shift+C). A name and email are enough.</li><li>Do not store passwords, SINs, or other private numbers in a contact.</li><li>New Items &gt; Task, then Save &amp; Close (Ctrl+Shift+K).</li><li>A flag and a task can track the same follow-up — use the list you will actually open.</li><li>Daily habits: read Mail, reply with care, file or flag, check Calendar.</li><li>Pause on suspicious mail. Sign out on a shared computer.</li><li>Next: the ungraded “one good workday” capstone, then a knowledge exam.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-discussion-optional">Previous section</a>
     <button type="button" class="btn" data-read-section="capstone" data-lesson="8">Mark this section as read</button>

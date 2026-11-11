@@ -99,13 +99,27 @@
 <section class="block block-sim" data-block="simulation" data-sim="outlook-new-appointment" id="outlook-new-appointment">
   <h3>Create a practice appointment (practice screen)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
-  <div class="practice-window">
-      <div class="pw-bar"><strong>Outlook</strong></div>
-      <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="newappt">New Appointment</button><button type="button" class="btn btn-secondary" data-hotspot="newmtg">New Meeting</button><button type="button" class="btn btn-secondary" data-hotspot="title">Title</button><button type="button" class="btn btn-secondary" data-hotspot="reminder">Reminder</button><button type="button" class="btn btn-secondary" data-hotspot="save">Save</button></div>
-        
+  <div class="practice-window" data-app="outlook">
+      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="ol-split">
+      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+      <div class="ol-pane">
+        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+        <p data-slot="mail" hidden>Mail is open.</p>
+        <p data-slot="calendar" hidden>Calendar is open.</p>
+        <p data-slot="compose" hidden>New message</p>
+        <p>To <strong data-field="to"></strong></p>
+        <p>Cc <strong data-field="cc"></strong></p>
+        <p>Subject <strong data-field="subject"></strong></p>
+        <p data-field="body"></p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+        <p data-slot="sent" hidden></p>
+        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
+        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
+    </div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="newappt">New Appointment</button><button type="button" class="btn btn-secondary" data-hotspot="newmtg">New Meeting</button><button type="button" class="btn btn-secondary" data-hotspot="title">Title</button><button type="button" class="btn btn-secondary" data-hotspot="reminder">Reminder</button><button type="button" class="btn btn-secondary" data-hotspot="save">Save</button></div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -125,7 +139,7 @@
   <p class="feedback" role="status" hidden></p>
   <script type="application/json" class="check-key">{"answer":"A","explain":"Microsoft says appointments do not involve inviting other people or reserving resources such as a room. A meeting includes other people and can include a room."}</script>
 </form>
-<p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Outlook-Workplace-Calendar-Planning-Sheet.txt" download>Calendar planning sheet</a> <span class="meta">Sample only. One practice appointment and one practice meeting. Do not invite real coworkers unless your tutor says the practice account is safe to use that way.</span></p>
+<p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Outlook-Workplace-Calendar-Planning-Sheet.xlsx" download>Calendar planning sheet</a> <span class="meta">Sample only. One practice appointment and one practice meeting. Do not invite real coworkers unless your tutor says the practice account is safe to use that way.</span></p>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-2-create-an-appointment">Previous section</a>
     <button type="button" class="btn" data-read-section="chapter-3-create-a-simple-meeting" data-lesson="7">Mark this section as read</button>
@@ -138,9 +152,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A private review hour</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex opens Calendar and chooses <strong>New Appointment</strong>, not New Meeting. The title is “Review Saturday market notes.” The time is Wednesday from 1:00 p.m. to 1:30 p.m. Alex sets a 15-minute reminder and saves the item. No one receives an invitation. The block appears on Alex’s calendar only.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex opens Calendar and chooses <strong>New Appointment</strong>, not New Meeting. The title is “Review Saturday market notes.” The time is Wednesday from 1:00 p.m. to 1:30 p.m. Alex sets a 15-minute reminder and saves the item. No one receives an invitation. The block appears on Alex’s calendar only.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex opens Calendar and chooses New Appointment , not New Meeting.</p></div>
+      <p class="block-label">Steps</p><ol><li>The title is “Review Saturday market notes.” The time is Wednesday from 1:00 p.m.</li><li>Alex sets a 15-minute reminder and saves the item.</li><li>No one receives an invitation.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>The block appears on Alex’s calendar only.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-create-a-simple-meeting">Previous section</a>
@@ -154,9 +168,9 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A short briefing with Jordan</h3>
-      <p class="block-label">Problem</p><div class="block-body"><p>Alex needs Jordan to confirm who is bringing chairs. That requires another person, so Alex chooses <strong>New Meeting</strong>, titles it “Saturday market briefing,” sets Thursday from 10:00 a.m. to 10:15 a.m., adds the practice address for Jordan Lee, writes one agenda line, and sends the request. Alex remembers that real replies would arrive in the Inbox. Because the address is sample only, Alex does not expect a live reply from a real coworker.</p></div>
-      
-      <p class="block-label">Result</p><div class="block-body"><p>Alex needs Jordan to confirm who is bringing chairs. That requires another person, so Alex chooses <strong>New Meeting</strong>, titles it “Saturday market briefing,” sets Thursday from 10:00 a.m. to 10:15 a.m., adds the practice address for Jordan Lee, writes one agenda line, and sends the request. Alex remembers that real replies would arrive in the Inbox. Because the address is sample only, Alex does not expect a live reply from a real coworker.</p></div>
+      <p class="block-label">Problem</p><div class="block-body"><p>Alex needs Jordan to confirm who is bringing chairs.</p></div>
+      <p class="block-label">Steps</p><ol><li>That requires another person, so Alex chooses New Meeting , titles it “Saturday market briefing,” sets Thursday from 10:00 a.m.</li><li>to 10:15 a.m., adds the practice address for Jordan Lee, writes one agenda line, and sends the request.</li><li>Alex remembers that real replies would arrive in the Inbox.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Because the address is sample only, Alex does not expect a live reply from a real coworker.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-private-review-hour">Previous section</a>
@@ -182,6 +196,7 @@
   <p class="meta">About 2 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>If you are in a study group: name one weekly task that should be an appointment (only you) and one that should be a meeting (other people). Keep both examples sample-only.</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="outlook-l7-cheatsheet"><h2>Lesson 7 — Appointments and meetings</h2><ul><li>Appointment = your own time, no guests, no room. New Appointment or Ctrl+Shift+A.</li><li>Meeting = other people, and it can include a room. New Meeting or Ctrl+Shift+Q.</li><li>Give every item a clear title, date, start time, and end time.</li><li>Set a reminder from the Reminder list, or choose None.</li><li>Save an appointment. Send a meeting request.</li><li>Meeting replies arrive in your Inbox.</li><li>Use a practice account. Do not invite real people unless your tutor agrees.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-try-it">Previous section</a>
     <button type="button" class="btn" data-read-section="discussion-optional" data-lesson="7">Mark this section as read</button>
