@@ -1530,7 +1530,9 @@
     if ((!user || user.role === "learner") && !demoOn()) {
       mount.textContent = "";
       var closed = document.createElement("p");
-      closed.textContent = "This page is for council staff. Open Demo controls in the footer and choose Council staff. A learner session does not show the roster, the CSV, or exam resets.";
+      closed.textContent = demoOn()
+        ? "This page is for council staff. In this demo, open the address with ?demo=1 and choose Council staff. A learner session does not show the roster, the CSV, or exam resets."
+        : "This page is for council staff. Staff sign-in comes later. A learner session does not show the roster, the CSV, or exam resets.";
       mount.appendChild(closed);
       return;
     }

@@ -292,13 +292,24 @@ function filesBlock(files) {
 <ul class="file-list">${starters.map(item).join("")}${solved.map(item).join("")}</ul>`;
 }
 
+function isCapstone(section) {
+  return section.id === "capstone" || /^capstone/i.test(section.title || "");
+}
+
 function shareMinutes(lesson) {
   const sections = lesson.sections || [];
-  const total = lesson.minutes || sections.length || 1;
-  const count = sections.length || 1;
+  const reading = sections.filter((section) => !isCapstone(section));
+  const total = lesson.minutes || reading.length || 1;
+  const count = reading.length || 1;
   const base = Math.floor(total / count);
   let extra = total - base * count;
-  return sections.map((section, index) => Object.assign({}, section, { minutes: base + (index < extra ? 1 : 0) }));
+  let index = 0;
+  return sections.map((section) => {
+    if (isCapstone(section)) return Object.assign({}, section, { minutes: 20, capstone: true });
+    const minutes = base + (index < extra ? 1 : 0);
+    index += 1;
+    return Object.assign({}, section, { minutes });
+  });
 }
 
 function sectionedLesson(course, lesson, number) {
@@ -314,7 +325,7 @@ function sectionedLesson(course, lesson, number) {
       const next = timed[index + 1];
       return `<section class="lesson-section longform reading" id="section-${esc(section.id)}">
   <h2>${esc(section.title)}</h2>
-  <p class="meta">About ${section.minutes || 0} ${section.minutes === 1 ? "minute" : "minutes"} to read, plus a short practice.</p>
+  <p class="meta">${section.capstone ? "About " + section.minutes + " minutes of practice." : "About " + (section.minutes || 0) + " " + (section.minutes === 1 ? "minute" : "minutes") + " to read, plus a short practice."}</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   ${rendered.html}
   <p class="actions">
