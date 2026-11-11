@@ -40,7 +40,7 @@
   </header>
   <main id="main">
 
-    <div class="wrap">
+    <div class="wrap wrap-wide">
 <p class="crumbs"><a href="../courses/">Courses</a><span>Certificate</span></p>
 <div id="cert-locked">
   <h1>Finish the final quiz first</h1>
@@ -74,9 +74,17 @@
   <label for="learner-name">Name for certificate (stays on this device)</label>
   <input id="learner-name" name="learner" type="text" autocomplete="name" value="Sample Learner">
   <p class="field-echo" id="learner-echo">Sample Learner</p>
-  <label for="council-name">Council name</label>
+  <label for="council-name">Council or organization name</label>
   <textarea id="council-name" name="council" rows="2" autocomplete="organization">EXAMPLE Community Adult Learning</textarea>
   <p class="field-echo" id="council-echo">EXAMPLE Community Adult Learning</p>
+  <label for="issuer-name">Issued by (name)</label>
+  <input id="issuer-name" name="issuer" type="text" autocomplete="name" value="Avery Cho">
+  <label for="issuer-title">Issued by (title)</label>
+  <input id="issuer-title" name="issuer-title" type="text" autocomplete="organization-title" value="Program coordinator">
+  <label for="council-logo">Council logo (optional)</label>
+  <input id="council-logo" name="logo" type="file" accept="image/*">
+  <p class="meta">Staff can add a logo here. It stays in this browser only and is never sent anywhere. Leave it empty if the council has no logo.</p>
+  <p class="actions"><button type="button" class="btn btn-secondary" id="council-logo-clear">Remove council logo</button></p>
   <label for="cert-course">Course</label>
   <select id="cert-course">
     <!-- range-path:cert-options -->
@@ -100,13 +108,47 @@
   </select>
   <p class="field-echo" id="course-echo">Email &amp; Online Safety Basics in Canada</p>
 </form>
-<article class="certificate" id="certificate" aria-label="Sample certificate">
-  <p class="sample-flag">SAMPLE</p>
-  <h2>Certificate of Completion</h2>
-  <p>This certifies that <strong id="cert-learner">Sample Learner</strong> completed the course “<strong id="cert-title">Email &amp; Online Safety Basics in Canada</strong>” on <strong id="cert-date"></strong>.</p>
-  <p><strong>This certificate confirms course completion only and is not an accredited credential.</strong></p>
-  <p><span id="cert-limit">It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.</span> Employers and agencies should verify skills separately.</p>
-  <p>Issued through <strong id="cert-council">EXAMPLE Community Adult Learning</strong> · LearnHere (learnhere.ca), a product of Range Road Technologies.</p>
+<article class="certificate" id="certificate" aria-label="Certificate of completion">
+  <p class="sample-flag" id="cert-sample" hidden>Sample</p>
+  <div class="cert-top">
+    <p class="cert-brand">
+      <svg class="mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#123c2e"/><path d="M6.5 23.5c4-8 7.2-8.4 10-3.6 2.2 3.8 4.6 3.2 9.2-8.4" fill="none" stroke="#f4efe4" stroke-width="2.4" stroke-linecap="round"/><circle cx="25.2" cy="11.2" r="2.1" fill="#e4c27a"/></svg>
+      <span>LearnHere</span>
+    </p>
+    <svg class="cert-seal" viewBox="0 0 160 160" role="img" aria-label="LearnHere. Certificate of Completion.">
+      <circle cx="80" cy="80" r="76" fill="none" stroke="#123c2e" stroke-width="1.2"/>
+      <circle cx="80" cy="80" r="70" fill="none" stroke="#c4a36a" stroke-width="0.7"/>
+      <path d="M46 108c8-14 10-28 4-40M44 96c10-2 16-8 18-16M50 112c12 0 20-8 22-18M114 108c-8-14-10-28-4-40M116 96c-10-2-16-8-18-16M110 112c-12 0-20-8-22-18" fill="none" stroke="#123c2e" stroke-width="0.9" stroke-linecap="round"/>
+      <circle cx="80" cy="86" r="16" fill="none" stroke="#123c2e" stroke-width="0.8"/>
+      <path d="M72 90c3-6 6-7 8-12 2 5 5 6 8 12" fill="none" stroke="#123c2e" stroke-width="0.9" stroke-linecap="round"/>
+      <circle cx="80" cy="74" r="1.6" fill="#c4a36a"/>
+      <defs>
+        <path id="lh-seal-ring" d="M80,18 a62,62 0 1,1 -0.1,0"/>
+      </defs>
+      <text fill="#123c2e" font-family="Georgia, 'Iowan Old Style', Palatino, serif" font-size="9">
+        <textPath href="#lh-seal-ring" startOffset="4%">LearnHere · Certificate of Completion</textPath>
+      </text>
+    </svg>
+  </div>
+  <p class="cert-kicker">Certificate of Completion</p>
+  <p class="cert-name" id="cert-learner">Sample Learner</p>
+  <p class="cert-has">has completed</p>
+  <h2 class="cert-course" id="cert-title">Email &amp; Online Safety Basics in Canada</h2>
+  <p class="cert-when">on <strong id="cert-date"></strong></p>
+  <p class="cert-org"><strong id="cert-council">EXAMPLE Community Adult Learning</strong></p>
+  <div class="cert-foot">
+    <div class="cert-logo" id="cert-logo-slot">
+      <img id="cert-logo" alt="" hidden>
+      <p class="cert-logo-empty" id="cert-logo-empty">No council logo on this device</p>
+    </div>
+    <div class="cert-sign">
+      <p class="cert-sign-label">Issued by</p>
+      <p class="cert-sign-name" id="cert-issuer">Avery Cho</p>
+      <p class="cert-sign-title" id="cert-issuer-title">Program coordinator</p>
+    </div>
+  </div>
+  <p class="cert-id">Certificate <span id="cert-id">LH-XXXX-XXXX</span></p>
+  <p class="cert-honest"><strong>This certificate confirms course completion only and is not an accredited credential.</strong> <span id="cert-limit">It is not a college diploma, degree, trade ticket, professional licence, or immigration, legal, tax, or financial advice.</span></p>
 </article>
 <p class="actions no-print"><button type="button" class="btn" id="print-cert">Print or save as PDF</button></p>
 <p class="no-print"><a href="../courses/">Back to courses</a></p>

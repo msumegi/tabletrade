@@ -550,11 +550,22 @@
     if (!locked || !ready) return;
     var learner = document.querySelector("#learner-name");
     var council = document.querySelector("#council-name");
+    var issuer = document.querySelector("#issuer-name");
+    var issuerTitle = document.querySelector("#issuer-title");
+    var logoInput = document.querySelector("#council-logo");
+    var logoClear = document.querySelector("#council-logo-clear");
     var coursePick = document.querySelector("#cert-course");
     var learnerOut = document.querySelector("#cert-learner");
     var councilOut = document.querySelector("#cert-council");
     var titleOut = document.querySelector("#cert-title");
     var dateOut = document.querySelector("#cert-date");
+    var idOut = document.querySelector("#cert-id");
+    var issuerOut = document.querySelector("#cert-issuer");
+    var issuerTitleOut = document.querySelector("#cert-issuer-title");
+    var logoImg = document.querySelector("#cert-logo");
+    var logoEmpty = document.querySelector("#cert-logo-empty");
+    var sampleFlag = document.querySelector("#cert-sample");
+    var sheet = document.querySelector("#certificate");
     var state = document.querySelector("#cert-state");
     var learnerEcho = document.querySelector("#learner-echo");
     var councilEcho = document.querySelector("#council-echo");
@@ -633,6 +644,8 @@
     ready.hidden = false;
     if (learner && data.learnerName) learner.value = data.learnerName;
     if (council && data.councilName) council.value = data.councilName;
+    if (issuer && data.issuerName) issuer.value = data.issuerName;
+    if (issuerTitle && data.issuerTitle) issuerTitle.value = data.issuerTitle;
     if (coursePick) {
       Array.prototype.slice.call(coursePick.options).forEach(function (option) {
         if (passedIds.indexOf(option.value) === -1) option.remove();
@@ -640,11 +653,57 @@
       coursePick.value = showId;
     }
 
+    function longDate(iso) {
+      var parts = String(iso || "").split("-");
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      if (parts.length < 3) return iso || "";
+      var month = months[Number(parts[1]) - 1];
+      var day = Number(parts[2]);
+      if (!month || !day) return iso;
+      return day + " " + month + " " + parts[0];
+    }
+
+    function certCode(learnerCode, courseId, iso) {
+      var alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+      var text = String(learnerCode || "SAMPLE") + "|" + String(courseId || "") + "|" + String(iso || "");
+      var h = 2166136261;
+      for (var i = 0; i < text.length; i += 1) {
+        h ^= text.charCodeAt(i);
+        h = Math.imul(h, 16777619);
+      }
+      var out = "";
+      var n = h >>> 0;
+      for (var k = 0; k < 8; k += 1) {
+        out += alphabet[n % alphabet.length];
+        n = Math.imul(n ^ (n >>> 15), 16777619) >>> 0;
+      }
+      return "LH-" + out.slice(0, 4) + "-" + out.slice(4);
+    }
+
+    function showLogo(src) {
+      if (!logoImg || !logoEmpty) return;
+      if (src) {
+        logoImg.src = src;
+        logoImg.hidden = false;
+        logoImg.alt = "Council logo";
+        logoEmpty.hidden = true;
+      } else {
+        logoImg.removeAttribute("src");
+        logoImg.hidden = true;
+        logoImg.alt = "";
+        logoEmpty.hidden = false;
+      }
+    }
+
     function paint() {
       var name = (learner && learner.value.trim()) || "Sample Learner";
       var org = (council && council.value.trim()) || "EXAMPLE Community Adult Learning";
+      var signed = issuer && issuer.value.trim() ? issuer.value.trim() : "Avery Cho";
+      var role = issuerTitle && issuerTitle.value.trim() ? issuerTitle.value.trim() : "Program coordinator";
       if (learnerOut) learnerOut.textContent = name;
       if (councilOut) councilOut.textContent = org;
+      if (issuerOut) issuerOut.textContent = signed;
+      if (issuerTitleOut) issuerTitleOut.textContent = role;
       if (learnerEcho) learnerEcho.textContent = name;
       if (councilEcho) councilEcho.textContent = org;
       var id = coursePick ? coursePick.value : showId;
@@ -657,16 +716,65 @@
         limitOut.textContent = option.getAttribute("data-note");
       }
       var fin = passedFinal(id);
-      if (dateOut) dateOut.textContent = fin && fin.date ? fin.date : "";
+      var iso = fin && fin.date ? fin.date : "";
+      if (dateOut) dateOut.textContent = longDate(iso);
+      if (idOut) idOut.textContent = certCode(data.learnerCode, id, iso);
+      var demo = /(?:\?|&)demo=1(?:&|$)/.test(window.location.search) || Boolean(data.example);
+      if (sheet) sheet.classList.toggle("is-sample", demo);
+      if (sampleFlag) sampleFlag.hidden = !demo;
+      showLogo(data.councilLogo || "");
       if (state && fin) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";
       if (learner) data.learnerName = learner.value.trim();
       if (council) data.councilName = council.value.trim();
+      if (issuer) data.issuerName = issuer.value.trim();
+      if (issuerTitle) data.issuerTitle = issuerTitle.value.trim();
       save(data);
+    }
+
+    function storeLogo(dataUrl) {
+      data.councilLogo = dataUrl || "";
+      showLogo(data.councilLogo);
+      save(data);
+    }
+
+    if (logoInput) {
+      logoInput.addEventListener("change", function () {
+        var file = logoInput.files && logoInput.files[0];
+        if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function () {
+          var img = new Image();
+          img.onload = function () {
+            var max = 240;
+            var scale = Math.min(1, max / Math.max(img.width, img.height));
+            var canvas = document.createElement("canvas");
+            canvas.width = Math.max(1, Math.round(img.width * scale));
+            canvas.height = Math.max(1, Math.round(img.height * scale));
+            canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
+            var url = canvas.toDataURL("image/jpeg", 0.72);
+            if (url.length > 120000) {
+              if (state) state.textContent = "That logo is too large for this device. Try a smaller image. Nothing was sent.";
+              return;
+            }
+            storeLogo(url);
+          };
+          img.src = reader.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+    if (logoClear) {
+      logoClear.addEventListener("click", function () {
+        if (logoInput) logoInput.value = "";
+        storeLogo("");
+      });
     }
 
     ["input", "change"].forEach(function (type) {
       if (learner) learner.addEventListener(type, paint);
       if (council) council.addEventListener(type, paint);
+      if (issuer) issuer.addEventListener(type, paint);
+      if (issuerTitle) issuerTitle.addEventListener(type, paint);
       if (coursePick) coursePick.addEventListener(type, paint);
     });
     paint();

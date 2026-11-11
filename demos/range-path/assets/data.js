@@ -718,7 +718,12 @@
       }
       return {
         learnerName: user && user.name ? user.name : "",
+        learnerCode: user && user.learnerCode ? user.learnerCode : "",
+        example: Boolean(user && user.example),
         councilName: (user && user.certificateCouncil) || (org && org.name) || "",
+        issuerName: (org && org.certificateIssuer) || (user && user.certificateIssuer) || "",
+        issuerTitle: (org && org.certificateIssuerTitle) || (user && user.certificateIssuerTitle) || "",
+        councilLogo: (org && org.certificateLogo) || (user && user.certificateLogo) || "",
         courses: courses
       };
     }
@@ -730,7 +735,20 @@
         var patch = {};
         if (view.learnerName && view.learnerName !== user.name) patch.name = view.learnerName;
         if (view.councilName) patch.certificateCouncil = view.councilName;
+        if (view.issuerName) patch.certificateIssuer = view.issuerName;
+        if (view.issuerTitle) patch.certificateIssuerTitle = view.issuerTitle;
+        if (Object.prototype.hasOwnProperty.call(view, "councilLogo")) patch.certificateLogo = view.councilLogo || "";
         if (Object.keys(patch).length) updateUser(user.id, patch);
+        if (user.orgId) {
+          var store = read();
+          var orgRow = store.organizations[user.orgId];
+          if (orgRow) {
+            if (view.issuerName) orgRow.certificateIssuer = view.issuerName;
+            if (view.issuerTitle) orgRow.certificateIssuerTitle = view.issuerTitle;
+            if (Object.prototype.hasOwnProperty.call(view, "councilLogo")) orgRow.certificateLogo = view.councilLogo || "";
+            write();
+          }
+        }
       }
       var courses = (view && view.courses) || {};
       Object.keys(courses).forEach(function (courseId) {
