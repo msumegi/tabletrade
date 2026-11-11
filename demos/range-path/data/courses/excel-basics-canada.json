@@ -87,6 +87,18 @@
             {
               "type": "prose",
               "html": "<p><strong>Microsoft Excel</strong> is a program for lists and numbers. Microsoft’s basic-tasks guide says Excel works well for simple calculations and for tracking many kinds of information. The key is a grid of <strong>cells</strong>. Cells can hold numbers, text, or <strong>formulas</strong> (instructions that calculate). You group cells in <strong>rows</strong> and <strong>columns</strong> so you can add, sort, filter, and later make charts if you want to.</p>\n<p>Excel files are called <strong>workbooks</strong>. Each workbook has one or more <strong>sheets</strong> (also called spreadsheets). You can add more sheets, or start a new workbook when you want to keep information separate.</p>\n"
+            },
+            {
+              "type": "annotatedImage",
+              "id": "excel-grid-figure",
+              "diagram": "grid",
+              "alt": "A practice sheet. Cell A1 is the top-left cell.",
+              "callouts": [
+                {
+                  "n": 1,
+                  "label": "A1 is column A, row 1."
+                }
+              ]
             }
           ]
         },
@@ -99,6 +111,35 @@
             {
               "type": "prose",
               "html": "<p><strong>To start a blank workbook</strong> (Microsoft’s steps):</p>\n<ol>\n<li>Click <strong>File</strong>, then <strong>New</strong>.</li>\n<li>Under New, click <strong>Blank workbook</strong>.</li>\n</ol>\n"
+            },
+            {
+              "type": "simulation",
+              "id": "excel-blank-workbook",
+              "title": "Start a blank workbook",
+              "caption": "Practice screen — not the real Excel.",
+              "tools": [
+                {
+                  "id": "blank",
+                  "label": "Blank workbook"
+                }
+              ],
+              "steps": [
+                {
+                  "id": "s1",
+                  "prompt": "Tap the control that starts a blank workbook.",
+                  "hotspots": [
+                    {
+                      "id": "blank",
+                      "label": "Blank workbook"
+                    }
+                  ],
+                  "correct": [
+                    "blank"
+                  ],
+                  "pass": "A blank workbook is a new file with a sheet.",
+                  "fail": "Look for the control labelled Blank workbook."
+                }
+              ]
             }
           ]
         },
@@ -111,6 +152,23 @@
             {
               "type": "prose",
               "html": "<p>Each cell has an address made from its column letter and row number. Cell <strong>A1</strong> is column A, row 1 — the top-left cell on a new sheet.</p>\n<p>People in Canada use spreadsheets for many everyday jobs: hours worked, a small expense list, a class attendance sheet, or a farm or household inventory. This course uses Canadian spelling and simple examples. It will not tell you how to file taxes or choose a bookkeeping system.</p>\n<p>If Excel is not on the computer in front of you, ask your adult learning council which version they have, or whether you can use Excel for the web with a sign-in they approve. Do not buy software because this lesson mentioned it.</p>"
+            },
+            {
+              "type": "check",
+              "id": "excel-workbook-check",
+              "prompt": "An Excel file is called a:",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Workbook"
+                },
+                {
+                  "id": "B",
+                  "text": "Single cell"
+                }
+              ],
+              "answer": "A",
+              "explain": "The lesson says an Excel file is a workbook and can contain sheets."
             }
           ]
         }
@@ -147,6 +205,16 @@
         "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
         "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
         "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      },
+      "cheatSheet": {
+        "id": "excel-l1-sheet",
+        "title": "What is Excel? — take-home steps",
+        "items": [
+          "A workbook is the Excel file.",
+          "A sheet is a page in that file.",
+          "A cell is one box.",
+          "A1 is column A, row 1."
+        ]
       }
     },
     {
@@ -231,6 +299,54 @@
             {
               "type": "prose",
               "html": "<p>Entering data means typing information into cells so Excel can use it later.</p>\n<p>Microsoft’s steps:</p>\n<ol>\n<li>Click an empty cell. On a new sheet, try <strong>A1</strong>.</li>\n<li>Type text or a number.</li>\n<li>Press <strong>Enter</strong> or <strong>Tab</strong> to move to the next cell.</li>\n</ol>\n<p><strong>Enter</strong> usually moves you down to the cell below. <strong>Tab</strong> usually moves you right to the next column. If you make a mistake, click the cell again and type the correction, or edit what you see.</p>\n"
+            },
+            {
+              "type": "simulation",
+              "id": "excel-enter-tab",
+              "title": "Move after you type",
+              "caption": "Practice screen — not the real Excel.",
+              "tools": [
+                {
+                  "id": "Enter",
+                  "label": "Enter"
+                },
+                {
+                  "id": "Tab",
+                  "label": "Tab"
+                }
+              ],
+              "steps": [
+                {
+                  "id": "s1",
+                  "prompt": "Tap cell A1.",
+                  "hotspots": [
+                    {
+                      "id": "A1",
+                      "label": "Cell A1"
+                    }
+                  ],
+                  "correct": [
+                    "A1"
+                  ],
+                  "pass": "A1 is the top-left cell.",
+                  "fail": "A1 is the first cell, not a number in column B."
+                },
+                {
+                  "id": "s2",
+                  "prompt": "Tap Enter. On this practice screen it stands for moving down.",
+                  "hotspots": [
+                    {
+                      "id": "Enter",
+                      "label": "Enter"
+                    }
+                  ],
+                  "correct": [
+                    "Enter"
+                  ],
+                  "pass": "Enter moves down. Tab moves to the right.",
+                  "fail": "Enter is the labelled control, not another cell."
+                }
+              ]
             }
           ]
         },
@@ -255,6 +371,13 @@
               ],
               "result": "Column A has Item, Fuel, Feed, and Supplies. Column B has Amount, 80, 45, and 25.",
               "comment": "PLACEHOLDER for content writers: this worked example only restates the sample table already in the lesson. Replace it with a fuller example."
+            },
+            {
+              "type": "download",
+              "id": "excel-practice-expenses",
+              "href": "../../../practice/excel-basics-canada/lesson-2-starter.xlsx",
+              "label": "Sample expense list (Excel workbook)",
+              "note": "Sample amounts only: Fuel 80, Feed 45, Supplies 25."
             }
           ]
         },
@@ -267,6 +390,23 @@
             {
               "type": "prose",
               "html": "<p><strong>Tips:</strong></p>\n<ul>\n<li>Click once to select a cell before you type.</li>\n<li>If you start typing in the wrong cell, click the cell again and type the correction.</li>\n<li>Do not type a space after a number if you want Excel to treat it as a number.</li>\n<li>Use sample amounts in this course. Do not enter real banking passwords or anyone’s private pay details into a shared computer.</li>\n</ul>\n<p>When a cell is selected, you can also see and edit its contents in the <strong>formula bar</strong> near the top of the window (you will use this more in Lesson 4).</p>"
+            },
+            {
+              "type": "check",
+              "id": "excel-one-kind",
+              "prompt": "A simple list keeps one kind of information in each column.",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "True"
+                },
+                {
+                  "id": "B",
+                  "text": "False"
+                }
+              ],
+              "answer": "A",
+              "explain": "The lesson's sample table puts names in one column and amounts in the other."
             }
           ]
         }
@@ -310,6 +450,16 @@
         "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
         "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
         "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      },
+      "cheatSheet": {
+        "id": "excel-l2-sheet",
+        "title": "Enter data in cells — take-home steps",
+        "items": [
+          "Click a cell, then type.",
+          "Enter moves down.",
+          "Tab moves right.",
+          "Do not add a space after a number."
+        ]
       }
     },
     {
@@ -394,6 +544,71 @@
             {
               "type": "prose",
               "html": "<p>Plain numbers are useful. A little formatting makes a sheet easier to scan.</p>\n<p><strong>Borders</strong> (Microsoft):</p>\n<ol>\n<li>Select the cell or range you want to outline.</li>\n<li>On the <strong>Home</strong> tab, in the <strong>Font</strong> group, click the arrow next to <strong>Borders</strong>, and choose a style.</li>\n</ol>\n<p><strong>Shading (fill colour):</strong></p>\n<ol>\n<li>Select the cells.</li>\n<li>On the <strong>Home</strong> tab, in the Font group, click the arrow next to <strong>Fill Color</strong>, and pick a colour.</li>\n</ol>\n<p>Use light colours for titles so the text stays readable.</p>\n"
+            },
+            {
+              "type": "simulation",
+              "id": "excel-borders",
+              "title": "Borders and a header fill",
+              "caption": "Practice screen — not the real Excel.",
+              "tools": [
+                {
+                  "id": "Borders",
+                  "label": "Borders"
+                },
+                {
+                  "id": "Fill",
+                  "label": "Header fill"
+                }
+              ],
+              "steps": [
+                {
+                  "id": "s1",
+                  "prompt": "Tap cell B2, the first amount.",
+                  "hotspots": [
+                    {
+                      "id": "B2",
+                      "label": "Cell B2"
+                    }
+                  ],
+                  "correct": [
+                    "B2"
+                  ],
+                  "pass": "B2 is selected.",
+                  "fail": "B2 is the cell with 80."
+                },
+                {
+                  "id": "s2",
+                  "prompt": "Tap Borders.",
+                  "hotspots": [
+                    {
+                      "id": "Borders",
+                      "label": "Borders"
+                    }
+                  ],
+                  "correct": [
+                    "Borders"
+                  ],
+                  "pass": "Borders are on the Home tab, in the Font group, in the real program.",
+                  "fail": "Borders is the labelled control."
+                }
+              ]
+            },
+            {
+              "type": "check",
+              "id": "excel-borders-where",
+              "prompt": "Where does the lesson put Borders?",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "Home tab, Font group"
+                },
+                {
+                  "id": "B",
+                  "text": "On the printed page only"
+                }
+              ],
+              "answer": "A",
+              "explain": "The lesson points to the Home tab for borders and fill."
             }
           ]
         },
@@ -406,6 +621,43 @@
             {
               "type": "prose",
               "html": "<p><strong>Number formats:</strong> Microsoft says you can add a format such as currency, percentages, or dates so different kinds of numbers are easier to tell apart.</p>\n<ol>\n<li>Select the cells that have numbers.</li>\n<li>Click the <strong>Home</strong> tab, then the arrow in the <strong>General</strong> box.</li>\n<li>Pick a number format. If you do not see the one you want, click <strong>More Number Formats</strong>.</li>\n</ol>\n<p>Choose a format that matches how you write money or dates in Canada. If you are not sure which currency or date style to pick, ask a tutor. This course does not tell you which format a workplace or the CRA requires.</p>\n<p>You can also select a block of cells by clicking the first cell and dragging to the last cell. Microsoft notes you can hold <strong>Shift</strong> and use the arrow keys to select with the keyboard.</p>\n<p>Save your work after you format (Lesson 5) so you do not lose the layout.</p>"
+            },
+            {
+              "type": "annotatedImage",
+              "id": "excel-number-formats",
+              "diagram": "grid",
+              "alt": "A practice sheet. Number formats change how a number looks, not the lesson's advice about tax.",
+              "callouts": [
+                {
+                  "n": 1,
+                  "label": "Currency and date views can differ. This course does not set a tax format."
+                }
+              ]
+            },
+            {
+              "type": "order",
+              "id": "excel-border-order",
+              "prompt": "Put these formatting steps in order.",
+              "items": [
+                {
+                  "id": "style",
+                  "text": "Pick a border style"
+                },
+                {
+                  "id": "open",
+                  "text": "Open Borders"
+                },
+                {
+                  "id": "select",
+                  "text": "Select the cells"
+                }
+              ],
+              "correct": [
+                "select",
+                "open",
+                "style"
+              ],
+              "pass": "Select the cells, open Borders, then pick a style."
             }
           ]
         }
@@ -442,6 +694,16 @@
         "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
         "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
         "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      },
+      "cheatSheet": {
+        "id": "excel-l3-sheet",
+        "title": "Make a sheet easier to read — take-home steps",
+        "items": [
+          "Select the cells first.",
+          "Borders are on the Home tab.",
+          "Fill colour can mark a header.",
+          "A number format changes how a number looks."
+        ]
       }
     },
     {
@@ -542,6 +804,58 @@
               ],
               "result": "The lesson states that =5+2*3 multiplies 2 and 3 first, then adds 5.",
               "comment": "PLACEHOLDER for content writers: this worked example only restates the formula already in the lesson. Replace it with a fuller example."
+            },
+            {
+              "type": "simulation",
+              "id": "excel-first-formula",
+              "title": "Write =B2+B3+B4",
+              "caption": "Practice screen — not the real Excel.",
+              "tools": [
+                {
+                  "id": "formula",
+                  "label": "Place =B2+B3+B4"
+                }
+              ],
+              "steps": [
+                {
+                  "id": "s1",
+                  "prompt": "Place the formula =B2+B3+B4.",
+                  "hotspots": [
+                    {
+                      "id": "formula",
+                      "label": "Place =B2+B3+B4"
+                    }
+                  ],
+                  "correct": [
+                    "formula"
+                  ],
+                  "pass": "That adds the three sample amounts. A simple formula starts with =.",
+                  "fail": "Use the control that places =B2+B3+B4."
+                }
+              ]
+            },
+            {
+              "type": "workedExample",
+              "id": "excel-order-of-operations",
+              "title": "Order of operations",
+              "html": "<p>Microsoft's formula guidance, already used in this lesson, says multiplication happens before addition. The formula =5+2*3 multiplies 2 by 3 first, then adds 5.</p>"
+            },
+            {
+              "type": "check",
+              "id": "excel-equals",
+              "prompt": "Every simple Excel formula starts with:",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "An equal sign (=)"
+                },
+                {
+                  "id": "B",
+                  "text": "A question mark"
+                }
+              ],
+              "answer": "A",
+              "explain": "The lesson says a simple formula begins with =."
             }
           ]
         },
@@ -567,6 +881,62 @@
               ],
               "result": "Excel adds the cells from B2 through B4.",
               "comment": "PLACEHOLDER for content writers: this worked example only restates AutoSum and =SUM(B2:B4) from the lesson. Replace it with a fuller example."
+            },
+            {
+              "type": "simulation",
+              "id": "excel-autosum",
+              "title": "Add a column with AutoSum",
+              "caption": "Practice screen — not the real Excel.",
+              "tools": [
+                {
+                  "id": "AutoSum",
+                  "label": "AutoSum"
+                }
+              ],
+              "steps": [
+                {
+                  "id": "s1",
+                  "prompt": "Tap cell B5, just under the numbers.",
+                  "hotspots": [
+                    {
+                      "id": "B5",
+                      "label": "Cell B5"
+                    }
+                  ],
+                  "correct": [
+                    "B5"
+                  ],
+                  "pass": "Good. AutoSum usually sits on the cell under a column of numbers.",
+                  "fail": "B5 is the empty cell under 80, 45 and 25."
+                },
+                {
+                  "id": "s2",
+                  "prompt": "Tap AutoSum, then you would confirm it in the real program.",
+                  "hotspots": [
+                    {
+                      "id": "AutoSum",
+                      "label": "AutoSum"
+                    }
+                  ],
+                  "correct": [
+                    "AutoSum"
+                  ],
+                  "pass": "AutoSum can write =SUM(B2:B4) for those three amounts.",
+                  "fail": "AutoSum is the labelled button."
+                }
+              ]
+            },
+            {
+              "type": "annotatedImage",
+              "id": "excel-sum-figure",
+              "diagram": "sum",
+              "alt": "The formula bar shows =SUM(B2:B4) above the sample amounts.",
+              "callouts": [
+                {
+                  "n": 1,
+                  "label": "Formula bar showing =SUM(B2:B4)"
+                }
+              ]
             }
           ]
         }
@@ -609,7 +979,23 @@
         "title": "Practice: Simple formulas and AutoSum",
         "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
         "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
-        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+        "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment.",
+        "tasks": [
+          "Type the three sample amounts in B2, B3 and B4",
+          "In B5, use AutoSum or type =SUM(B2:B4)",
+          "Check that B5 shows 150"
+        ],
+        "answerKey": "<p>B5 should be 150, because 80 + 45 + 25 = 150.</p>"
+      },
+      "cheatSheet": {
+        "id": "excel-l4-sheet",
+        "title": "Simple formulas and AutoSum — take-home steps",
+        "items": [
+          "A simple formula starts with =.",
+          "Add with +, subtract with -, multiply with *, divide with /.",
+          "AutoSum usually goes under a column of numbers.",
+          "SUM(B2:B4) adds those three cells."
+        ]
       }
     },
     {
@@ -698,6 +1084,71 @@
             {
               "type": "prose",
               "html": "<p>Saving puts your workbook in a file so you can close Excel without losing the work.</p>\n<p>Microsoft’s basic steps:</p>\n<ol>\n<li>Click the <strong>Save</strong> button on the Quick Access Toolbar, or press <strong>Ctrl+S</strong>. If you have saved this file before, you are done.</li>\n<li>The first time, choose <strong>Save As</strong>, pick a location, browse to a folder, type a name in the <strong>File name</strong> box, and click <strong>Save</strong>.</li>\n</ol>\n<p>A clear name helps you find the file later, such as <code>hours-november</code> or <code>expense-list-practice</code>. Save it in a folder you know, such as Documents (see the Everyday Computers course for File Explorer).</p>\n<p>Save often while you work. Microsoft also describes AutoRecovery, which can keep a backup if something goes wrong, such as a power cut. AutoRecovery is not the same as you saving the file yourself, so do not rely on it alone.</p>\n"
+            },
+            {
+              "type": "simulation",
+              "id": "excel-save-print",
+              "title": "Save, then look at a preview",
+              "caption": "Practice screen — not the real Excel.",
+              "tools": [
+                {
+                  "id": "Save",
+                  "label": "Save"
+                },
+                {
+                  "id": "Print",
+                  "label": "Print preview"
+                }
+              ],
+              "steps": [
+                {
+                  "id": "s1",
+                  "prompt": "Tap Save. In the real program, the first save asks where to put the file.",
+                  "hotspots": [
+                    {
+                      "id": "Save",
+                      "label": "Save"
+                    }
+                  ],
+                  "correct": [
+                    "Save"
+                  ],
+                  "pass": "Saving keeps the workbook. A practice name is expense-list-practice.",
+                  "fail": "Save is the labelled control."
+                },
+                {
+                  "id": "s2",
+                  "prompt": "Tap Print preview.",
+                  "hotspots": [
+                    {
+                      "id": "Print",
+                      "label": "Print preview"
+                    }
+                  ],
+                  "correct": [
+                    "Print"
+                  ],
+                  "pass": "Look at the preview before you print on a shared printer.",
+                  "fail": "Print preview is the other labelled control."
+                }
+              ]
+            },
+            {
+              "type": "check",
+              "id": "excel-autorecovery",
+              "prompt": "AutoRecovery is a substitute for saving the workbook.",
+              "choices": [
+                {
+                  "id": "A",
+                  "text": "True"
+                },
+                {
+                  "id": "B",
+                  "text": "False"
+                }
+              ],
+              "answer": "B",
+              "explain": "The lesson says to save your own copy. AutoRecovery is not the same as Save."
             }
           ]
         },
@@ -710,6 +1161,79 @@
             {
               "type": "prose",
               "html": "<p><strong>To print</strong> (Microsoft):</p>\n<ol>\n<li>Click <strong>File</strong>, then <strong>Print</strong>, or press <strong>Ctrl+P</strong>.</li>\n<li>Preview the pages with the Next Page and Previous Page arrows.</li>\n<li>If the layout looks wrong, you can change margins or page breaks.</li>\n<li>Click <strong>Print</strong>.</li>\n</ol>\n<p>Preview first so you do not waste paper. If you are on a shared learning-centre printer, ask staff which printer to pick.</p>\n<p>When you finish, close the file. You can open it later from File Explorer or from <strong>File &gt; Open</strong> in Excel.</p>"
+            },
+            {
+              "type": "annotatedImage",
+              "id": "excel-print-figure",
+              "diagram": "print",
+              "alt": "A practice print preview named expense-list-practice.",
+              "callouts": [
+                {
+                  "n": 1,
+                  "label": "Preview before you print."
+                }
+              ]
+            },
+            {
+              "type": "order",
+              "id": "excel-save-print-order",
+              "prompt": "Put these save-and-print steps in order.",
+              "items": [
+                {
+                  "id": "print",
+                  "text": "Print after you have checked the preview"
+                },
+                {
+                  "id": "preview",
+                  "text": "Look at the preview"
+                },
+                {
+                  "id": "save",
+                  "text": "Save the workbook with a clear name"
+                }
+              ],
+              "correct": [
+                "save",
+                "preview",
+                "print"
+              ],
+              "pass": "Save first so you do not print an older version."
+            },
+            {
+              "type": "branch",
+              "id": "excel-print-unsaved",
+              "start": "n1",
+              "nodes": {
+                "n1": {
+                  "text": "You have not saved. You want a paper copy. What do you do first?",
+                  "choices": [
+                    {
+                      "id": "print",
+                      "label": "Print now",
+                      "next": "n2"
+                    },
+                    {
+                      "id": "save",
+                      "label": "Save, then preview",
+                      "next": "n3"
+                    }
+                  ]
+                },
+                "n2": {
+                  "text": "You might print an older copy, or lose the new numbers if the program closes. Go back and save first.",
+                  "choices": [
+                    {
+                      "id": "back",
+                      "label": "Try another choice",
+                      "next": "n1"
+                    }
+                  ]
+                },
+                "n3": {
+                  "text": "Save first, look at the preview, then print. This practice screen is not your printer.",
+                  "end": true
+                }
+              }
             }
           ]
         }
@@ -746,6 +1270,16 @@
         "instructions": "<p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p>",
         "selfCheck": "<p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p>",
         "comment": "PLACEHOLDER for content writers: the task asks the learner to follow steps already in this lesson, using the practice file. Replace the wording with the full assignment."
+      },
+      "cheatSheet": {
+        "id": "excel-l5-sheet",
+        "title": "Save and print your workbook — take-home steps",
+        "items": [
+          "Ctrl+S saves.",
+          "Ctrl+P opens print.",
+          "Look at the preview first.",
+          "On a shared printer, check the preview before you print."
+        ]
       }
     }
   ],
@@ -890,7 +1424,8 @@
       "Excel on the computer in front of you, or Excel for the web if your council approves a sign-in.",
       "The practice files linked in each lesson."
     ],
-    "youNeedComment": "PLACEHOLDER for content writers: the Excel item restates lesson 1. The practice-file item was added for the player demo."
+    "youNeedComment": "PLACEHOLDER for content writers: the Excel item restates lesson 1. The practice-file item was added for the player demo.",
+    "hoursEstimate": null
   },
   "finalExam": {
     "requireAllLessons": true,
@@ -1015,7 +1550,86 @@
         "explain": "Use Lessons 1–5. Formulas start with =. Save often. This course is completion only, not a Microsoft or college credential.",
         "topic": "What this certificate is not",
         "review": "../lesson-1/"
+      },
+      {
+        "prompt": "The sample amounts 80, 45 and 25 add to 150.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "T",
+        "topic": "The sample total",
+        "review": "../lesson-4/"
+      },
+      {
+        "prompt": "A simple formula can start with a question mark.",
+        "choices": [
+          {
+            "id": "T",
+            "text": "True"
+          },
+          {
+            "id": "F",
+            "text": "False"
+          }
+        ],
+        "answer": "F",
+        "topic": "How a formula starts",
+        "review": "../lesson-4/"
       }
     ]
-  }
+  },
+  "comingSoon": [
+    {
+      "number": 6,
+      "title": "Coming soon"
+    },
+    {
+      "number": 7,
+      "title": "Coming soon"
+    },
+    {
+      "number": 8,
+      "title": "Coming soon"
+    },
+    {
+      "number": 9,
+      "title": "Coming soon"
+    },
+    {
+      "number": 10,
+      "title": "Coming soon"
+    }
+  ],
+  "badges": [
+    {
+      "id": "first-formula",
+      "label": "Wrote a formula",
+      "when": {
+        "type": "simulationComplete",
+        "id": "excel-first-formula"
+      }
+    },
+    {
+      "id": "final-pass",
+      "label": "Passed the final",
+      "when": {
+        "type": "finalPassed"
+      }
+    }
+  ],
+  "includes": [
+    "practiceFile",
+    "checks",
+    "assignment",
+    "cheatSheets",
+    "final",
+    "sampleCertificate"
+  ]
 }

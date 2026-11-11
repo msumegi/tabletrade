@@ -132,6 +132,7 @@ ${main}
   <script src="${root}assets/data.js"></script>
   <script src="${root}assets/report-fields.js"></script>
   <script src="${root}assets/catalogue.js"></script>
+  <script src="${root}assets/player-blocks.js"></script>
   <script src="${root}assets/site.js"></script>
 </body>
 </html>
@@ -255,7 +256,13 @@ function sectionNav(sections) {
         `<li><a href="#section-${esc(section.id)}">${esc(section.title)}</a> <span class="meta">${section.minutes || 0} min</span></li>`
     )
     .join("");
-  return `<details class="section-nav">
+  return `<nav class="section-chips" aria-label="Sections in this lesson">${sections
+    .map(
+      (section) =>
+        `<a href="#section-${esc(section.id)}">${esc(section.title)}${section.minutes ? " · " + section.minutes + " min" : ""}</a>`
+    )
+    .join("")}</nav>
+<details class="section-nav">
   <summary>Sections in this lesson${total ? " · about " + total + " min" : ""}</summary>
   <ol>${items}</ol>
 </details>`;
@@ -284,9 +291,10 @@ function sectionedLesson(course, lesson, number) {
       });
       const prev = index > 0 ? lesson.sections[index - 1] : null;
       const next = lesson.sections[index + 1];
-      return `<section class="lesson-section longform" id="section-${esc(section.id)}">
+      return `<section class="lesson-section longform reading" id="section-${esc(section.id)}">
   <h2>${esc(section.title)}</h2>
-  <p class="meta">About ${section.minutes || 0} min</p>
+  <p class="meta">About ${section.minutes || 0} minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   ${rendered.html}
   <p class="actions">
     ${prev ? `<a class="btn btn-secondary" href="#section-${esc(prev.id)}">Previous section</a>` : ""}
@@ -304,14 +312,15 @@ function sectionedLesson(course, lesson, number) {
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
 ${sections}
 ${filesBlock(lesson.files)}
-${assignment}`;
+${assignment}
+${lesson.cheatSheet ? renderBlocks([{ type: "cheatSheet", ...lesson.cheatSheet }], { lessonNumber: number }).html : ""}`;
 }
 
 function syllabusExtras(course, passLabel) {
   if (!course.player) return "";
   const outcomes = (course.player.outcomes || []).map((item) => "<li>" + esc(item) + "</li>").join("");
   const need = (course.player.youNeed || []).map((item) => "<li>" + esc(item) + "</li>").join("");
-  const minutes = course.player.estimatedMinutes || 0;
+  const minutes = course.player.hoursEstimate == null ? 0 : course.player.estimatedMinutes || 0;
   const hours = minutes ? Math.round((minutes / 60) * 10) / 10 : 0;
   const attempts = course.finalExam ? course.finalExam.attemptLimit || 2 : 0;
   return `<section class="syllabus">
@@ -414,7 +423,24 @@ ${syllabusExtras(course, passLabel)}
 ${lessonItems}
 <li><a href="final/">${examMode ? "Final exam" : "Final quiz"}</a><p class="status" data-final-note="${esc(slug)}">Pass mark ${passLabel} (at least ${needShown} of ${finalCountShown}). ${examMode ? "Opens after every lesson is complete. " : ""}Unlocks the sample certificate.</p></li>
 </ol>
-<p class="meta">Pass the ${examMode ? "final exam" : "final quiz"} with ${passLabel} or more to open a sample certificate.</p>
+<p class="meta">Pass the ${examMode ? "final exam" : "final quiz"} with ${passLabel} or more to open a sample certificate. There is no timer.</p>
+<h2>Progress map</h2>
+<ol class="progress-map">
+${course.lessons
+  .map(
+    (lesson, index) =>
+      `<li><a href="lesson-${index + 1}/">${esc(lesson.title)}</a> <span class="meta" data-status="${esc(slug)}:${index + 1}">Not started</span></li>`
+  )
+  .join("")}
+<li><a href="final/">${examMode ? "Final exam" : "Final quiz"}</a></li>
+${(course.comingSoon || [])
+  .map(
+    (item) =>
+      `<li class="coming-soon"><span>Lesson ${esc(item.number)} — ${esc(item.title)}</span> <span class="meta">Coming soon. Not written yet.</span></li>`
+  )
+  .join("")}
+</ol>
+${(course.badges || []).length ? `<h2>Milestones</h2><ul class="badge-list">${course.badges.map((badge) => `<li class="badge" data-badge="${esc(badge.id)}" data-when="${esc(badge.when && badge.when.type || "")}" data-when-id="${esc(badge.when && badge.when.id || "")}" data-earned="false">${esc(badge.label)}</li>`).join("")}</ul>` : ""}
 ${planScript}`;
 
   write(
@@ -556,7 +582,7 @@ function ensureScript(html, root, file) {
 
 function ensureDataScripts(html, root) {
   let out = html;
-  ["brand.js", "demo-seed.js", "billing.js", "data.js", "report-fields.js"].forEach((file) => {
+  ["brand.js", "demo-seed.js", "billing.js", "data.js", "report-fields.js", "player-blocks.js"].forEach((file) => {
     out = ensureScript(out, root, file);
   });
   return out;

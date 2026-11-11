@@ -71,7 +71,7 @@ An HTML comment can also carry JSON: `<!-- player-extras { ... } -->`. Lesson ob
 3. Add a `.block-your-type` rule in `assets/site.css` using the existing colour tokens.
 4. Run `node tools/build-pages.mjs`. An unknown type is skipped and the build prints a warning.
 
-Worked example, assignment, and check are the types registered today.
+Registered block types: `prose`, `example`, `workedExample`, `annotatedImage`, `simulation`, `check`, `order`, `branch`, `download`, `assignment`, and `cheatSheet`. A progress map and milestone badges are course-level, not a section block. Lessons 6–10 on Excel Basics are marked coming soon and have no pages.
 
 ## Data model
 

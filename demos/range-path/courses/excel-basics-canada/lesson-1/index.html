@@ -44,17 +44,24 @@
 <p class="step-label">Lesson 1 of 5 · about 23 min</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-label="Lesson 1 of 5"><span style="width:20%"></span></div>
 <h1>What is Excel?</h1>
+<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-grid">Cells, rows, and columns · 8 min</a><a href="#section-workbook">Workbooks and a blank sheet · 8 min</a><a href="#section-address">Cell addresses · 7 min</a></nav>
 <details class="section-nav">
   <summary>Sections in this lesson · about 23 min</summary>
   <ol><li><a href="#section-grid">Cells, rows, and columns</a> <span class="meta">8 min</span></li><li><a href="#section-workbook">Workbooks and a blank sheet</a> <span class="meta">8 min</span></li><li><a href="#section-address">Cell addresses</a> <span class="meta">7 min</span></li></ol>
 </details>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
-<section class="lesson-section longform" id="section-grid">
+<section class="lesson-section longform reading" id="section-grid">
   <h2>Cells, rows, and columns</h2>
-  <p class="meta">About 8 min</p>
+  <p class="meta">About 8 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>Microsoft Excel</strong> is a program for lists and numbers. Microsoft’s basic-tasks guide says Excel works well for simple calculations and for tracking many kinds of information. The key is a grid of <strong>cells</strong>. Cells can hold numbers, text, or <strong>formulas</strong> (instructions that calculate). You group cells in <strong>rows</strong> and <strong>columns</strong> so you can add, sort, filter, and later make charts if you want to.</p>
 <p>Excel files are called <strong>workbooks</strong>. Each workbook has one or more <strong>sheets</strong> (also called spreadsheets). You can add more sheets, or start a new workbook when you want to keep information separate.</p>
 </div>
+<figure class="block block-figure" data-block="annotatedImage" id="excel-grid-figure">
+  <div class="stage"><svg viewBox="0 0 320 150" role="img" width="100%"><rect width="320" height="150" fill="#fffdf8"/><rect x="70" y="36" width="60" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="88" y="55" font-size="13" fill="#1b1914">A1</text><text x="16" y="24" font-size="13" fill="#1b1914">Sheet</text><circle cx="250" cy="36" r="12" fill="#123c2e"/><text x="246" y="41" fill="#fff" font-size="12">1</text></svg></div>
+  <p class="caption">A practice sheet. Cell A1 is the top-left cell.</p>
+  <figcaption><ol class="callouts"><li><span class="badge">1</span> A1 is column A, row 1.</li></ol></figcaption>
+</figure>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="grid" data-lesson="1">Mark this section as read</button>
@@ -62,15 +69,27 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:1:grid">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-workbook">
+<section class="lesson-section longform reading" id="section-workbook">
   <h2>Workbooks and a blank sheet</h2>
-  <p class="meta">About 8 min</p>
+  <p class="meta">About 8 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>To start a blank workbook</strong> (Microsoft’s steps):</p>
 <ol>
 <li>Click <strong>File</strong>, then <strong>New</strong>.</li>
 <li>Under New, click <strong>Blank workbook</strong>.</li>
 </ol>
 </div>
+<section class="block block-sim" data-block="simulation" data-sim="excel-blank-workbook" id="excel-blank-workbook">
+  <h3>Start a blank workbook</h3>
+  <p class="caption">Practice screen — not the real Excel.</p>
+  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="blank">Blank workbook</button></div>
+  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p data-sim-prompt></p>
+  <p class="feedback" data-sim-feedback role="status"></p>
+  <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
+  <div data-sim-fallback></div>
+  <script type="application/json" class="sim-key">{"id":"excel-blank-workbook","steps":[{"id":"s1","prompt":"Tap the control that starts a blank workbook.","hotspots":[{"id":"blank","label":"Blank workbook"}],"correct":["blank"],"pass":"A blank workbook is a new file with a sheet.","fail":"Look for the control labelled Blank workbook."}],"fallback":"list"}</script>
+</section>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-grid">Previous section</a>
     <button type="button" class="btn" data-read-section="workbook" data-lesson="1">Mark this section as read</button>
@@ -78,12 +97,19 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:1:workbook">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-address">
+<section class="lesson-section longform reading" id="section-address">
   <h2>Cell addresses</h2>
-  <p class="meta">About 7 min</p>
+  <p class="meta">About 7 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Each cell has an address made from its column letter and row number. Cell <strong>A1</strong> is column A, row 1 — the top-left cell on a new sheet.</p>
 <p>People in Canada use spreadsheets for many everyday jobs: hours worked, a small expense list, a class attendance sheet, or a farm or household inventory. This course uses Canadian spelling and simple examples. It will not tell you how to file taxes or choose a bookkeeping system.</p>
 <p>If Excel is not on the computer in front of you, ask your adult learning council which version they have, or whether you can use Excel for the web with a sign-in they approve. Do not buy software because this lesson mentioned it.</p></div>
+<form class="block block-instant" data-block="check" data-check="excel-workbook-check" id="excel-workbook-check">
+  <fieldset class="q"><legend>An Excel file is called a:</legend><label class="option"><input type="radio" name="excel-workbook-check" value="A"> <span>Workbook</span></label><label class="option"><input type="radio" name="excel-workbook-check" value="B"> <span>Single cell</span></label></fieldset>
+  <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="check-key">{"answer":"A","explain":"The lesson says an Excel file is a workbook and can contain sheets."}</script>
+</form>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-workbook">Previous section</a>
     <button type="button" class="btn" data-read-section="address" data-lesson="1">Mark this section as read</button>
@@ -96,18 +122,19 @@
 <ul class="file-list"><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-1-starter.csv" download>Starter file: lesson-1-starter.csv</a> <span class="meta">CSV · 2 bytes</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-1-starter.xlsx" download>Starter file: lesson-1-starter.xlsx</a> <span class="meta">Excel workbook · 2.2 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-1-solved.xlsx" download>Solved sample: lesson-1-solved.xlsx</a> <span class="meta">Excel workbook · 2.2 KB</span></li></ul>
 <section class="block block-assignment" data-block="assignment" data-block-id="lesson-1-task" id="lesson-1-task">
   <h2>Practice: What is Excel?</h2>
-  <p class="block-prompt">Try this before you open the self-check.</p>
+  <p class="block-prompt">Try this before you open the sample answer.</p>
   <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p></div>
-  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-1-task">I have done this</button></p>
+  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-1-task">I tried this</button></p>
   <p class="block-status" data-assignment-status="lesson-1-task">Not marked done yet.</p>
   <aside class="block block-check" data-block="check">
-  <p class="block-prompt">The answer key stays closed until you open it.</p>
+  <p class="block-prompt">The sample answer stays closed until you open it.</p>
   <details>
-    <summary>Show the self-check</summary>
+    <summary>Show a sample answer</summary>
     <div class="block-body"><p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p></div>
   </details>
 </aside>
 </section>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l1-sheet"><h2>What is Excel? — take-home steps</h2><ul><li>A workbook is the Excel file.</li><li>A sheet is a page in that file.</li><li>A cell is one box.</li><li>A1 is column A, row 1.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
 <h2>Official sources</h2>
 <p>These links open official sites in a new tab.</p>
 <ul class="sources">
@@ -132,6 +159,7 @@
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>
   <script src="../../../assets/catalogue.js"></script>
+  <script src="../../../assets/player-blocks.js"></script>
   <script src="../../../assets/site.js"></script>
 </body>
 </html>

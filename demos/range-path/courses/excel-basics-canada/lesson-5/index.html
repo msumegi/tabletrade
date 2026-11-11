@@ -44,14 +44,16 @@
 <p class="step-label">Lesson 5 of 5 · about 18 min</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="5" aria-label="Lesson 5 of 5"><span style="width:100%"></span></div>
 <h1>Save and print your workbook</h1>
+<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-save">Save the workbook · 10 min</a><a href="#section-print">Print or preview · 8 min</a></nav>
 <details class="section-nav">
   <summary>Sections in this lesson · about 18 min</summary>
   <ol><li><a href="#section-save">Save the workbook</a> <span class="meta">10 min</span></li><li><a href="#section-print">Print or preview</a> <span class="meta">8 min</span></li></ol>
 </details>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
-<section class="lesson-section longform" id="section-save">
+<section class="lesson-section longform reading" id="section-save">
   <h2>Save the workbook</h2>
-  <p class="meta">About 10 min</p>
+  <p class="meta">About 10 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Saving puts your workbook in a file so you can close Excel without losing the work.</p>
 <p>Microsoft’s basic steps:</p>
 <ol>
@@ -61,6 +63,23 @@
 <p>A clear name helps you find the file later, such as <code>hours-november</code> or <code>expense-list-practice</code>. Save it in a folder you know, such as Documents (see the Everyday Computers course for File Explorer).</p>
 <p>Save often while you work. Microsoft also describes AutoRecovery, which can keep a backup if something goes wrong, such as a power cut. AutoRecovery is not the same as you saving the file yourself, so do not rely on it alone.</p>
 </div>
+<section class="block block-sim" data-block="simulation" data-sim="excel-save-print" id="excel-save-print">
+  <h3>Save, then look at a preview</h3>
+  <p class="caption">Practice screen — not the real Excel.</p>
+  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="Save">Save</button><button type="button" class="btn btn-secondary" data-hotspot="Print">Print preview</button></div>
+  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p data-sim-prompt></p>
+  <p class="feedback" data-sim-feedback role="status"></p>
+  <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
+  <div data-sim-fallback></div>
+  <script type="application/json" class="sim-key">{"id":"excel-save-print","steps":[{"id":"s1","prompt":"Tap Save. In the real program, the first save asks where to put the file.","hotspots":[{"id":"Save","label":"Save"}],"correct":["Save"],"pass":"Saving keeps the workbook. A practice name is expense-list-practice.","fail":"Save is the labelled control."},{"id":"s2","prompt":"Tap Print preview.","hotspots":[{"id":"Print","label":"Print preview"}],"correct":["Print"],"pass":"Look at the preview before you print on a shared printer.","fail":"Print preview is the other labelled control."}],"fallback":"list"}</script>
+</section>
+<form class="block block-instant" data-block="check" data-check="excel-autorecovery" id="excel-autorecovery">
+  <fieldset class="q"><legend>AutoRecovery is a substitute for saving the workbook.</legend><label class="option"><input type="radio" name="excel-autorecovery" value="A"> <span>True</span></label><label class="option"><input type="radio" name="excel-autorecovery" value="B"> <span>False</span></label></fieldset>
+  <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="check-key">{"answer":"B","explain":"The lesson says to save your own copy. AutoRecovery is not the same as Save."}</script>
+</form>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="save" data-lesson="5">Mark this section as read</button>
@@ -68,9 +87,10 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:5:save">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-print">
+<section class="lesson-section longform reading" id="section-print">
   <h2>Print or preview</h2>
-  <p class="meta">About 8 min</p>
+  <p class="meta">About 8 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>To print</strong> (Microsoft):</p>
 <ol>
 <li>Click <strong>File</strong>, then <strong>Print</strong>, or press <strong>Ctrl+P</strong>.</li>
@@ -80,6 +100,19 @@
 </ol>
 <p>Preview first so you do not waste paper. If you are on a shared learning-centre printer, ask staff which printer to pick.</p>
 <p>When you finish, close the file. You can open it later from File Explorer or from <strong>File &gt; Open</strong> in Excel.</p></div>
+<figure class="block block-figure" data-block="annotatedImage" id="excel-print-figure">
+  <div class="stage"><svg viewBox="0 0 320 140" role="img" width="100%"><rect width="320" height="140" fill="#fffdf8"/><rect x="16" y="16" width="200" height="108" fill="none" stroke="#123c2e" stroke-width="2"/><text x="28" y="48" fill="#1b1914" font-size="14">Preview</text><text x="28" y="76" fill="#1b1914" font-size="14">expense-list-practice</text><circle cx="250" cy="40" r="12" fill="#123c2e"/><text x="246" y="45" fill="#fff" font-size="12">1</text><text x="230" y="90" fill="#1b1914" font-size="12">Print</text></svg></div>
+  <p class="caption">A practice print preview named expense-list-practice.</p>
+  <figcaption><ol class="callouts"><li><span class="badge">1</span> Preview before you print.</li></ol></figcaption>
+</figure>
+<section class="block" data-block="order" data-order="excel-save-print-order" id="excel-save-print-order">
+  <h3>Put these save-and-print steps in order.</h3>
+  <ol data-order-list><li class="order-row" data-order-item="print"><span>Print after you have checked the preview</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li><li class="order-row" data-order-item="preview"><span>Look at the preview</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li><li class="order-row" data-order-item="save"><span>Save the workbook with a clear name</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li></ol>
+  <p class="actions"><button type="button" class="btn" data-order-check>Check the order</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="order-key">{"correct":["save","preview","print"],"pass":"Save first so you do not print an older version."}</script>
+</section>
+<section class="block" data-block="branch" data-branch="excel-print-unsaved" data-start="n1" id="excel-print-unsaved"><div data-branch-node="n1" hidden><p>You have not saved. You want a paper copy. What do you do first?</p><div class="actions"><button type="button" class="btn branch-choice" data-next="n2">Print now</button><button type="button" class="btn branch-choice" data-next="n3">Save, then preview</button></div></div><div data-branch-node="n2" hidden><p>You might print an older copy, or lose the new numbers if the program closes. Go back and save first.</p><div class="actions"><button type="button" class="btn branch-choice" data-next="n1">Try another choice</button></div></div><div data-branch-node="n3" hidden><p>Save first, look at the preview, then print. This practice screen is not your printer.</p><div class="actions"></div></div><p class="actions"><button type="button" class="btn btn-secondary" data-branch-back>Back</button></p></section>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-save">Previous section</a>
     <button type="button" class="btn" data-read-section="print" data-lesson="5">Mark this section as read</button>
@@ -92,18 +125,19 @@
 <ul class="file-list"><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-5-starter.csv" download>Starter file: lesson-5-starter.csv</a> <span class="meta">CSV · 40 bytes</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-5-starter.xlsx" download>Starter file: lesson-5-starter.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-5-solved.xlsx" download>Solved sample: lesson-5-solved.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li></ul>
 <section class="block block-assignment" data-block="assignment" data-block-id="lesson-5-task" id="lesson-5-task">
   <h2>Practice: Save and print your workbook</h2>
-  <p class="block-prompt">Try this before you open the self-check.</p>
+  <p class="block-prompt">Try this before you open the sample answer.</p>
   <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p></div>
-  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-5-task">I have done this</button></p>
+  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-5-task">I tried this</button></p>
   <p class="block-status" data-assignment-status="lesson-5-task">Not marked done yet.</p>
   <aside class="block block-check" data-block="check">
-  <p class="block-prompt">The answer key stays closed until you open it.</p>
+  <p class="block-prompt">The sample answer stays closed until you open it.</p>
   <details>
-    <summary>Show the self-check</summary>
+    <summary>Show a sample answer</summary>
     <div class="block-body"><p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p></div>
   </details>
 </aside>
 </section>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l5-sheet"><h2>Save and print your workbook — take-home steps</h2><ul><li>Ctrl+S saves.</li><li>Ctrl+P opens print.</li><li>Look at the preview first.</li><li>On a shared printer, check the preview before you print.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
 <h2>Official sources</h2>
 <p>These links open official sites in a new tab.</p>
 <ul class="sources">
@@ -129,6 +163,7 @@
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>
   <script src="../../../assets/catalogue.js"></script>
+  <script src="../../../assets/player-blocks.js"></script>
   <script src="../../../assets/site.js"></script>
 </body>
 </html>

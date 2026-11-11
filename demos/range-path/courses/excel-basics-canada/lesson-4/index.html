@@ -44,14 +44,16 @@
 <p class="step-label">Lesson 4 of 5 · about 22 min</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="4" aria-label="Lesson 4 of 5"><span style="width:80%"></span></div>
 <h1>Simple formulas and AutoSum</h1>
+<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-formulas">Formulas that start with = · 12 min</a><a href="#section-autosum">AutoSum · 10 min</a></nav>
 <details class="section-nav">
   <summary>Sections in this lesson · about 22 min</summary>
   <ol><li><a href="#section-formulas">Formulas that start with =</a> <span class="meta">12 min</span></li><li><a href="#section-autosum">AutoSum</a> <span class="meta">10 min</span></li></ol>
 </details>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
-<section class="lesson-section longform" id="section-formulas">
+<section class="lesson-section longform reading" id="section-formulas">
   <h2>Formulas that start with =</h2>
-  <p class="meta">About 12 min</p>
+  <p class="meta">About 12 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>A <strong>formula</strong> tells Excel to calculate. Microsoft says a simple formula always starts with an <strong>equal sign (=)</strong>. Then you type numbers and operators:</p>
 <ul>
 <li>plus <code>+</code> to add</li>
@@ -71,6 +73,24 @@
   <p class="block-label">Result</p>
   <p>The lesson states that =5+2*3 multiplies 2 and 3 first, then adds 5.</p>
 </aside>
+<section class="block block-sim" data-block="simulation" data-sim="excel-first-formula" id="excel-first-formula">
+  <h3>Write =B2+B3+B4</h3>
+  <p class="caption">Practice screen — not the real Excel.</p>
+  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="formula">Place =B2+B3+B4</button></div>
+  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p data-sim-prompt></p>
+  <p class="feedback" data-sim-feedback role="status"></p>
+  <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
+  <div data-sim-fallback></div>
+  <script type="application/json" class="sim-key">{"id":"excel-first-formula","steps":[{"id":"s1","prompt":"Place the formula =B2+B3+B4.","hotspots":[{"id":"formula","label":"Place =B2+B3+B4"}],"correct":["formula"],"pass":"That adds the three sample amounts. A simple formula starts with =.","fail":"Use the control that places =B2+B3+B4."}],"fallback":"list"}</script>
+</section>
+<aside class="block block-example" data-block="workedExample"><p class="block-label">Example</p><h3>Order of operations</h3><div class="block-body"><p>Microsoft's formula guidance, already used in this lesson, says multiplication happens before addition. The formula =5+2*3 multiplies 2 by 3 first, then adds 5.</p></div></aside>
+<form class="block block-instant" data-block="check" data-check="excel-equals" id="excel-equals">
+  <fieldset class="q"><legend>Every simple Excel formula starts with:</legend><label class="option"><input type="radio" name="excel-equals" value="A"> <span>An equal sign (=)</span></label><label class="option"><input type="radio" name="excel-equals" value="B"> <span>A question mark</span></label></fieldset>
+  <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="check-key">{"answer":"A","explain":"The lesson says a simple formula begins with =."}</script>
+</form>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="formulas" data-lesson="4">Mark this section as read</button>
@@ -78,9 +98,10 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:4:formulas">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-autosum">
+<section class="lesson-section longform reading" id="section-autosum">
   <h2>AutoSum</h2>
-  <p class="meta">About 10 min</p>
+  <p class="meta">About 10 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>AutoSum</strong> is a fast way to add a column or row. Microsoft’s steps:</p>
 <ol>
 <li>Select the cell immediately <strong>below</strong> a column of numbers, or immediately <strong>to the right</strong> of a row of numbers.</li>
@@ -99,6 +120,22 @@
   <p class="block-label">Result</p>
   <p>Excel adds the cells from B2 through B4.</p>
 </aside>
+<section class="block block-sim" data-block="simulation" data-sim="excel-autosum" id="excel-autosum">
+  <h3>Add a column with AutoSum</h3>
+  <p class="caption">Practice screen — not the real Excel.</p>
+  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="AutoSum">AutoSum</button></div>
+  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p data-sim-prompt></p>
+  <p class="feedback" data-sim-feedback role="status"></p>
+  <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
+  <div data-sim-fallback></div>
+  <script type="application/json" class="sim-key">{"id":"excel-autosum","steps":[{"id":"s1","prompt":"Tap cell B5, just under the numbers.","hotspots":[{"id":"B5","label":"Cell B5"}],"correct":["B5"],"pass":"Good. AutoSum usually sits on the cell under a column of numbers.","fail":"B5 is the empty cell under 80, 45 and 25."},{"id":"s2","prompt":"Tap AutoSum, then you would confirm it in the real program.","hotspots":[{"id":"AutoSum","label":"AutoSum"}],"correct":["AutoSum"],"pass":"AutoSum can write =SUM(B2:B4) for those three amounts.","fail":"AutoSum is the labelled button."}],"fallback":"list"}</script>
+</section>
+<figure class="block block-figure" data-block="annotatedImage" id="excel-sum-figure">
+  <div class="stage"><svg viewBox="0 0 320 160" role="img" width="100%"><rect width="320" height="160" fill="#fffdf8"/><text x="16" y="28" fill="#1b1914" font-size="14">=SUM(B2:B4)</text><rect x="16" y="44" width="70" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="28" y="63" font-size="13" fill="#1b1914">Item</text><rect x="86" y="44" width="70" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="96" y="63" font-size="13" fill="#1b1914">Amount</text><text x="28" y="100" font-size="13" fill="#1b1914">Fuel</text><text x="100" y="100" font-size="13" fill="#1b1914">80</text><text x="28" y="122" font-size="13" fill="#1b1914">Feed</text><text x="100" y="122" font-size="13" fill="#1b1914">45</text><text x="28" y="144" font-size="13" fill="#1b1914">Supplies</text><text x="100" y="144" font-size="13" fill="#1b1914">25</text><circle cx="250" cy="28" r="12" fill="#123c2e"/><text x="246" y="33" fill="#fff" font-size="12">1</text></svg></div>
+  <p class="caption">The formula bar shows =SUM(B2:B4) above the sample amounts.</p>
+  <figcaption><ol class="callouts"><li><span class="badge">1</span> Formula bar showing =SUM(B2:B4)</li></ol></figcaption>
+</figure>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-formulas">Previous section</a>
     <button type="button" class="btn" data-read-section="autosum" data-lesson="4">Mark this section as read</button>
@@ -111,18 +148,19 @@
 <ul class="file-list"><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-4-starter.csv" download>Starter file: lesson-4-starter.csv</a> <span class="meta">CSV · 40 bytes</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-4-starter.xlsx" download>Starter file: lesson-4-starter.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-4-solved.xlsx" download>Solved sample: lesson-4-solved.xlsx</a> <span class="meta">Excel workbook · 2.6 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-4-solved.csv" download>Solved sample: lesson-4-solved.csv</a> <span class="meta">CSV · 58 bytes</span></li></ul>
 <section class="block block-assignment" data-block="assignment" data-block-id="lesson-4-task" id="lesson-4-task">
   <h2>Practice: Simple formulas and AutoSum</h2>
-  <p class="block-prompt">Try this before you open the self-check.</p>
-  <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p></div>
-  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-4-task">I have done this</button></p>
+  <p class="block-prompt">Try this before you open the sample answer.</p>
+  <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p><ol><li>Type the three sample amounts in B2, B3 and B4</li><li>In B5, use AutoSum or type =SUM(B2:B4)</li><li>Check that B5 shows 150</li></ol></div>
+  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-4-task">I tried this</button></p>
   <p class="block-status" data-assignment-status="lesson-4-task">Not marked done yet.</p>
   <aside class="block block-check" data-block="check">
-  <p class="block-prompt">The answer key stays closed until you open it.</p>
+  <p class="block-prompt">The sample answer stays closed until you open it.</p>
   <details>
-    <summary>Show the self-check</summary>
-    <div class="block-body"><p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p></div>
+    <summary>Show a sample answer</summary>
+    <div class="block-body"><p>B5 should be 150, because 80 + 45 + 25 = 150.</p></div>
   </details>
 </aside>
 </section>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l4-sheet"><h2>Simple formulas and AutoSum — take-home steps</h2><ul><li>A simple formula starts with =.</li><li>Add with +, subtract with -, multiply with *, divide with /.</li><li>AutoSum usually goes under a column of numbers.</li><li>SUM(B2:B4) adds those three cells.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
 <h2>Official sources</h2>
 <p>These links open official sites in a new tab.</p>
 <ul class="sources">
@@ -148,6 +186,7 @@
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>
   <script src="../../../assets/catalogue.js"></script>
+  <script src="../../../assets/player-blocks.js"></script>
   <script src="../../../assets/site.js"></script>
 </body>
 </html>

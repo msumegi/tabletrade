@@ -44,14 +44,16 @@
 <p class="step-label">Lesson 2 of 5 · about 22 min</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="2" aria-label="Lesson 2 of 5"><span style="width:40%"></span></div>
 <h1>Enter data in cells</h1>
+<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-enter">Type in a cell · 8 min</a><a href="#section-table">The sample table · 8 min</a><a href="#section-tips">Tips while you type · 6 min</a></nav>
 <details class="section-nav">
   <summary>Sections in this lesson · about 22 min</summary>
   <ol><li><a href="#section-enter">Type in a cell</a> <span class="meta">8 min</span></li><li><a href="#section-table">The sample table</a> <span class="meta">8 min</span></li><li><a href="#section-tips">Tips while you type</a> <span class="meta">6 min</span></li></ol>
 </details>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
-<section class="lesson-section longform" id="section-enter">
+<section class="lesson-section longform reading" id="section-enter">
   <h2>Type in a cell</h2>
-  <p class="meta">About 8 min</p>
+  <p class="meta">About 8 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Entering data means typing information into cells so Excel can use it later.</p>
 <p>Microsoft’s steps:</p>
 <ol>
@@ -61,6 +63,17 @@
 </ol>
 <p><strong>Enter</strong> usually moves you down to the cell below. <strong>Tab</strong> usually moves you right to the next column. If you make a mistake, click the cell again and type the correction, or edit what you see.</p>
 </div>
+<section class="block block-sim" data-block="simulation" data-sim="excel-enter-tab" id="excel-enter-tab">
+  <h3>Move after you type</h3>
+  <p class="caption">Practice screen — not the real Excel.</p>
+  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="Enter">Enter</button><button type="button" class="btn btn-secondary" data-hotspot="Tab">Tab</button></div>
+  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p data-sim-prompt></p>
+  <p class="feedback" data-sim-feedback role="status"></p>
+  <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
+  <div data-sim-fallback></div>
+  <script type="application/json" class="sim-key">{"id":"excel-enter-tab","steps":[{"id":"s1","prompt":"Tap cell A1.","hotspots":[{"id":"A1","label":"Cell A1"}],"correct":["A1"],"pass":"A1 is the top-left cell.","fail":"A1 is the first cell, not a number in column B."},{"id":"s2","prompt":"Tap Enter. On this practice screen it stands for moving down.","hotspots":[{"id":"Enter","label":"Enter"}],"correct":["Enter"],"pass":"Enter moves down. Tab moves to the right.","fail":"Enter is the labelled control, not another cell."}],"fallback":"list"}</script>
+</section>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="enter" data-lesson="2">Mark this section as read</button>
@@ -68,9 +81,10 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:2:enter">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-table">
+<section class="lesson-section longform reading" id="section-table">
   <h2>The sample table</h2>
-  <p class="meta">About 8 min</p>
+  <p class="meta">About 8 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>A simple practice table</strong> (sample data only):</p>
 <table><thead><tr><th></th><th>A</th><th>B</th></tr></thead><tbody><tr><td>1</td><td>Item</td><td>Amount</td></tr><tr><td>2</td><td>Fuel</td><td>80</td></tr><tr><td>3</td><td>Feed</td><td>45</td></tr><tr><td>4</td><td>Supplies</td><td>25</td></tr></tbody></table>
 <p>Type the words in column A and the numbers in column B. Keep one kind of information in each column. That makes adding and sorting easier later.</p>
@@ -84,6 +98,7 @@
   <p class="block-label">Result</p>
   <p>Column A has Item, Fuel, Feed, and Supplies. Column B has Amount, 80, 45, and 25.</p>
 </aside>
+<p class="block file-list" data-block="download"><a class="btn" href="../../../practice/excel-basics-canada/lesson-2-starter.xlsx" download>Sample expense list (Excel workbook)</a> <span class="meta">Sample amounts only: Fuel 80, Feed 45, Supplies 25.</span></p>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-enter">Previous section</a>
     <button type="button" class="btn" data-read-section="table" data-lesson="2">Mark this section as read</button>
@@ -91,9 +106,10 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:2:table">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-tips">
+<section class="lesson-section longform reading" id="section-tips">
   <h2>Tips while you type</h2>
-  <p class="meta">About 6 min</p>
+  <p class="meta">About 6 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>Tips:</strong></p>
 <ul>
 <li>Click once to select a cell before you type.</li>
@@ -102,6 +118,12 @@
 <li>Use sample amounts in this course. Do not enter real banking passwords or anyone’s private pay details into a shared computer.</li>
 </ul>
 <p>When a cell is selected, you can also see and edit its contents in the <strong>formula bar</strong> near the top of the window (you will use this more in Lesson 4).</p></div>
+<form class="block block-instant" data-block="check" data-check="excel-one-kind" id="excel-one-kind">
+  <fieldset class="q"><legend>A simple list keeps one kind of information in each column.</legend><label class="option"><input type="radio" name="excel-one-kind" value="A"> <span>True</span></label><label class="option"><input type="radio" name="excel-one-kind" value="B"> <span>False</span></label></fieldset>
+  <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="check-key">{"answer":"A","explain":"The lesson's sample table puts names in one column and amounts in the other."}</script>
+</form>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-table">Previous section</a>
     <button type="button" class="btn" data-read-section="tips" data-lesson="2">Mark this section as read</button>
@@ -114,18 +136,19 @@
 <ul class="file-list"><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-2-starter.csv" download>Starter file: lesson-2-starter.csv</a> <span class="meta">CSV · 12 bytes</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-2-starter.xlsx" download>Starter file: lesson-2-starter.xlsx</a> <span class="meta">Excel workbook · 2.3 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-2-solved.xlsx" download>Solved sample: lesson-2-solved.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-2-solved.csv" download>Solved sample: lesson-2-solved.csv</a> <span class="meta">CSV · 40 bytes</span></li></ul>
 <section class="block block-assignment" data-block="assignment" data-block-id="lesson-2-task" id="lesson-2-task">
   <h2>Practice: Enter data in cells</h2>
-  <p class="block-prompt">Try this before you open the self-check.</p>
+  <p class="block-prompt">Try this before you open the sample answer.</p>
   <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p></div>
-  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-2-task">I have done this</button></p>
+  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-2-task">I tried this</button></p>
   <p class="block-status" data-assignment-status="lesson-2-task">Not marked done yet.</p>
   <aside class="block block-check" data-block="check">
-  <p class="block-prompt">The answer key stays closed until you open it.</p>
+  <p class="block-prompt">The sample answer stays closed until you open it.</p>
   <details>
-    <summary>Show the self-check</summary>
+    <summary>Show a sample answer</summary>
     <div class="block-body"><p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p></div>
   </details>
 </aside>
 </section>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l2-sheet"><h2>Enter data in cells — take-home steps</h2><ul><li>Click a cell, then type.</li><li>Enter moves down.</li><li>Tab moves right.</li><li>Do not add a space after a number.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
 <h2>Official sources</h2>
 <p>These links open official sites in a new tab.</p>
 <ul class="sources">
@@ -150,6 +173,7 @@
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>
   <script src="../../../assets/catalogue.js"></script>
+  <script src="../../../assets/player-blocks.js"></script>
   <script src="../../../assets/site.js"></script>
 </body>
 </html>

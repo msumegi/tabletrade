@@ -44,14 +44,16 @@
 <p class="step-label">Lesson 3 of 5 · about 20 min</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="3" aria-label="Lesson 3 of 5"><span style="width:60%"></span></div>
 <h1>Make a sheet easier to read</h1>
+<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-borders">Borders and fill colour · 10 min</a><a href="#section-formats">Number formats · 10 min</a></nav>
 <details class="section-nav">
   <summary>Sections in this lesson · about 20 min</summary>
   <ol><li><a href="#section-borders">Borders and fill colour</a> <span class="meta">10 min</span></li><li><a href="#section-formats">Number formats</a> <span class="meta">10 min</span></li></ol>
 </details>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
-<section class="lesson-section longform" id="section-borders">
+<section class="lesson-section longform reading" id="section-borders">
   <h2>Borders and fill colour</h2>
-  <p class="meta">About 10 min</p>
+  <p class="meta">About 10 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Plain numbers are useful. A little formatting makes a sheet easier to scan.</p>
 <p><strong>Borders</strong> (Microsoft):</p>
 <ol>
@@ -65,6 +67,23 @@
 </ol>
 <p>Use light colours for titles so the text stays readable.</p>
 </div>
+<section class="block block-sim" data-block="simulation" data-sim="excel-borders" id="excel-borders">
+  <h3>Borders and a header fill</h3>
+  <p class="caption">Practice screen — not the real Excel.</p>
+  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="Borders">Borders</button><button type="button" class="btn btn-secondary" data-hotspot="Fill">Header fill</button></div>
+  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p data-sim-prompt></p>
+  <p class="feedback" data-sim-feedback role="status"></p>
+  <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
+  <div data-sim-fallback></div>
+  <script type="application/json" class="sim-key">{"id":"excel-borders","steps":[{"id":"s1","prompt":"Tap cell B2, the first amount.","hotspots":[{"id":"B2","label":"Cell B2"}],"correct":["B2"],"pass":"B2 is selected.","fail":"B2 is the cell with 80."},{"id":"s2","prompt":"Tap Borders.","hotspots":[{"id":"Borders","label":"Borders"}],"correct":["Borders"],"pass":"Borders are on the Home tab, in the Font group, in the real program.","fail":"Borders is the labelled control."}],"fallback":"list"}</script>
+</section>
+<form class="block block-instant" data-block="check" data-check="excel-borders-where" id="excel-borders-where">
+  <fieldset class="q"><legend>Where does the lesson put Borders?</legend><label class="option"><input type="radio" name="excel-borders-where" value="A"> <span>Home tab, Font group</span></label><label class="option"><input type="radio" name="excel-borders-where" value="B"> <span>On the printed page only</span></label></fieldset>
+  <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="check-key">{"answer":"A","explain":"The lesson points to the Home tab for borders and fill."}</script>
+</form>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="borders" data-lesson="3">Mark this section as read</button>
@@ -72,9 +91,10 @@
   </p>
   <p class="meta" data-section-status="excel-basics-canada:3:borders">Not read yet.</p>
 </section>
-<section class="lesson-section longform" id="section-formats">
+<section class="lesson-section longform reading" id="section-formats">
   <h2>Number formats</h2>
-  <p class="meta">About 10 min</p>
+  <p class="meta">About 10 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p><strong>Number formats:</strong> Microsoft says you can add a format such as currency, percentages, or dates so different kinds of numbers are easier to tell apart.</p>
 <ol>
 <li>Select the cells that have numbers.</li>
@@ -84,6 +104,18 @@
 <p>Choose a format that matches how you write money or dates in Canada. If you are not sure which currency or date style to pick, ask a tutor. This course does not tell you which format a workplace or the CRA requires.</p>
 <p>You can also select a block of cells by clicking the first cell and dragging to the last cell. Microsoft notes you can hold <strong>Shift</strong> and use the arrow keys to select with the keyboard.</p>
 <p>Save your work after you format (Lesson 5) so you do not lose the layout.</p></div>
+<figure class="block block-figure" data-block="annotatedImage" id="excel-number-formats">
+  <div class="stage"><svg viewBox="0 0 320 150" role="img" width="100%"><rect width="320" height="150" fill="#fffdf8"/><rect x="70" y="36" width="60" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="88" y="55" font-size="13" fill="#1b1914">A1</text><text x="16" y="24" font-size="13" fill="#1b1914">Sheet</text><circle cx="250" cy="36" r="12" fill="#123c2e"/><text x="246" y="41" fill="#fff" font-size="12">1</text></svg></div>
+  <p class="caption">A practice sheet. Number formats change how a number looks, not the lesson's advice about tax.</p>
+  <figcaption><ol class="callouts"><li><span class="badge">1</span> Currency and date views can differ. This course does not set a tax format.</li></ol></figcaption>
+</figure>
+<section class="block" data-block="order" data-order="excel-border-order" id="excel-border-order">
+  <h3>Put these formatting steps in order.</h3>
+  <ol data-order-list><li class="order-row" data-order-item="style"><span>Pick a border style</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li><li class="order-row" data-order-item="open"><span>Open Borders</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li><li class="order-row" data-order-item="select"><span>Select the cells</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li></ol>
+  <p class="actions"><button type="button" class="btn" data-order-check>Check the order</button></p>
+  <p class="feedback" role="status" hidden></p>
+  <script type="application/json" class="order-key">{"correct":["select","open","style"],"pass":"Select the cells, open Borders, then pick a style."}</script>
+</section>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-borders">Previous section</a>
     <button type="button" class="btn" data-read-section="formats" data-lesson="3">Mark this section as read</button>
@@ -96,18 +128,19 @@
 <ul class="file-list"><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-3-starter.csv" download>Starter file: lesson-3-starter.csv</a> <span class="meta">CSV · 40 bytes</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-3-starter.xlsx" download>Starter file: lesson-3-starter.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-3-solved.xlsx" download>Solved sample: lesson-3-solved.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li></ul>
 <section class="block block-assignment" data-block="assignment" data-block-id="lesson-3-task" id="lesson-3-task">
   <h2>Practice: Make a sheet easier to read</h2>
-  <p class="block-prompt">Try this before you open the self-check.</p>
+  <p class="block-prompt">Try this before you open the sample answer.</p>
   <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p></div>
-  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-3-task">I have done this</button></p>
+  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-3-task">I tried this</button></p>
   <p class="block-status" data-assignment-status="lesson-3-task">Not marked done yet.</p>
   <aside class="block block-check" data-block="check">
-  <p class="block-prompt">The answer key stays closed until you open it.</p>
+  <p class="block-prompt">The sample answer stays closed until you open it.</p>
   <details>
-    <summary>Show the self-check</summary>
+    <summary>Show a sample answer</summary>
     <div class="block-body"><p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p></div>
   </details>
 </aside>
 </section>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l3-sheet"><h2>Make a sheet easier to read — take-home steps</h2><ul><li>Select the cells first.</li><li>Borders are on the Home tab.</li><li>Fill colour can mark a header.</li><li>A number format changes how a number looks.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
 <h2>Official sources</h2>
 <p>These links open official sites in a new tab.</p>
 <ul class="sources">
@@ -132,6 +165,7 @@
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>
   <script src="../../../assets/catalogue.js"></script>
+  <script src="../../../assets/player-blocks.js"></script>
   <script src="../../../assets/site.js"></script>
 </body>
 </html>
