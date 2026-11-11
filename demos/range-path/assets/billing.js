@@ -32,7 +32,7 @@
     };
   }
 
-  global.RangePathBilling = {
+  global.LearnHereBilling = {
     id: "demo-stub",
     createCustomer: function (org) {
       return { providerCustomerId: "sample-customer-" + (org && org.id ? org.id : "org"), sample: true };
@@ -68,4 +68,5 @@
       return (records || []).map(invoiceFrom);
     }
   };
+  global.RangePathBilling = global.LearnHereBilling;
 })(window);

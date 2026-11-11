@@ -75,59 +75,48 @@ function diagram(kind) {
     return `<svg viewBox="0 0 320 140" role="img" width="100%"><rect width="320" height="140" fill="#fffdf8"/><rect x="16" y="16" width="200" height="108" fill="none" stroke="#123c2e" stroke-width="2"/><text x="28" y="48" fill="#1b1914" font-size="14">Preview</text><text x="28" y="76" fill="#1b1914" font-size="14">expense-list-practice</text><circle cx="250" cy="40" r="12" fill="#123c2e"/><text x="246" y="45" fill="#fff" font-size="12">1</text><text x="230" y="90" fill="#1b1914" font-size="12">Print</text></svg>`;
   }
   if (kind === "sum") {
-    return `<svg viewBox="0 0 320 160" role="img" width="100%"><rect width="320" height="160" fill="#fffdf8"/><text x="16" y="28" fill="#1b1914" font-size="14">=SUM(B2:B4)</text><rect x="16" y="44" width="70" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="28" y="63" font-size="13" fill="#1b1914">Item</text><rect x="86" y="44" width="70" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="96" y="63" font-size="13" fill="#1b1914">Amount</text><text x="28" y="100" font-size="13" fill="#1b1914">Fuel</text><text x="100" y="100" font-size="13" fill="#1b1914">80</text><text x="28" y="122" font-size="13" fill="#1b1914">Feed</text><text x="100" y="122" font-size="13" fill="#1b1914">45</text><text x="28" y="144" font-size="13" fill="#1b1914">Supplies</text><text x="100" y="144" font-size="13" fill="#1b1914">25</text><circle cx="250" cy="28" r="12" fill="#123c2e"/><text x="246" y="33" fill="#fff" font-size="12">1</text></svg>`;
+    return `<svg viewBox="0 0 320 160" role="img" width="100%"><rect width="320" height="160" fill="#fffdf8"/><text x="16" y="28" fill="#1b1914" font-size="14">=SUM(B2:B8)</text><text x="16" y="56" font-size="13" fill="#1b1914">Mon 6</text><text x="16" y="80" font-size="13" fill="#1b1914">Tue 4</text><text x="16" y="104" font-size="13" fill="#1b1914">Wed 7.5</text><text x="16" y="128" font-size="13" fill="#1b1914">Sample hours only</text><circle cx="250" cy="28" r="12" fill="#123c2e"/><text x="246" y="33" fill="#fff" font-size="12">1</text></svg>`;
   }
   return `<svg viewBox="0 0 320 150" role="img" width="100%"><rect width="320" height="150" fill="#fffdf8"/><rect x="70" y="36" width="60" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="88" y="55" font-size="13" fill="#1b1914">A1</text><text x="16" y="24" font-size="13" fill="#1b1914">Sheet</text><circle cx="250" cy="36" r="12" fill="#123c2e"/><text x="246" y="41" fill="#fff" font-size="12">1</text></svg>`;
 }
 
 function annotatedImage(block) {
   const calls = (block.callouts || [])
-    .map((item) => `<li><span class="badge">${esc(item.n)}</span> ${esc(item.label)}</li>`)
+    .map((item) => `<li>${esc(item.label)}</li>`)
     .join("");
-  const picture = block.src
-    ? `<img src="${esc(block.src)}" alt="${esc(block.alt || "")}">`
+  const picture = block.src && !block.diagram
+    ? diagram(block.diagram || "grid")
     : diagram(block.diagram || "grid");
   return `<figure class="block block-figure" data-block="annotatedImage" id="${esc(block.id || "")}">
   <div class="stage">${picture}</div>
-  ${block.src ? "" : `<p class="caption">${esc(block.alt || "")}</p>`}
+  <p class="caption">${esc(block.alt || "")}</p>
   <figcaption><ol class="callouts">${calls}</ol></figcaption>
 </figure>`;
 }
 
 function simulation(block) {
-  const rows = block.rows || [
-    ["", "A", "B"],
-    ["1", "Item", "Amount"],
-    ["2", "Fuel", "80"],
-    ["3", "Feed", "45"],
-    ["4", "Supplies", "25"],
-    ["5", "", ""]
-  ];
-  const body = rows
-    .map((row, r) => {
-      const cells = row
-        .map((cell, c) => {
-          const ref = r === 0 || c === 0 ? "" : String.fromCharCode(64 + c) + r;
-          if (!ref) return `<th>${esc(cell)}</th>`;
-          return `<td><button type="button" data-hotspot="${esc(ref)}" aria-label="${esc(ref)}">${esc(cell)}</button></td>`;
-        })
-        .join("");
-      return `<tr>${cells}</tr>`;
-    })
-    .join("");
-  const tools = (block.tools || [])
-    .map((tool) => `<button type="button" class="btn btn-secondary" data-hotspot="${esc(tool.id)}">${esc(tool.label)}</button>`)
-    .join("");
-  const config = JSON.stringify({
-    id: block.id,
-    steps: block.steps || [],
-    fallback: block.fallback || "list"
+  const spots = [];
+  const seen = {};
+  (block.steps || []).forEach((step) => {
+    (step.hotspots || []).forEach((spot) => {
+      if (seen[spot.id]) return;
+      seen[spot.id] = true;
+      spots.push(spot);
+    });
   });
+  const buttons = spots
+    .map(
+      (spot) =>
+        `<button type="button" class="btn btn-secondary" data-hotspot="${esc(spot.id)}" aria-label="${esc(spot.label || spot.id)}">${esc(spot.label || spot.id)}</button>`
+    )
+    .join("");
+  const config = JSON.stringify({ id: block.id, steps: block.steps || [] });
+  const caption = block.caption || (block.app === "phone" || block.app === "computer" ? "Practice screen — not the real " + block.app + "." : "Practice screen — not the real Excel.");
   return `<section class="block block-sim" data-block="simulation" data-sim="${esc(block.id || "")}" id="${esc(block.id || "")}">
   <h3>${esc(block.title || "Practice screen")}</h3>
-  <p class="caption">${esc(block.caption || "Practice screen — not the real program.")}</p>
-  <div class="ribbon">${tools}</div>
-  <div class="stage"><table class="sheet">${body}</table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p class="caption">${esc(caption)}</p>
+  <p class="meta">${esc(block.stage || "")}</p>
+  <div class="stage"><div class="ribbon">${buttons}</div><p class="caption" data-sim-result></p></div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>

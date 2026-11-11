@@ -3,7 +3,8 @@
 (function (global) {
   "use strict";
 
-  var STORAGE_KEY = "rangepath.store";
+  var STORAGE_KEY = "learnhere.store";
+  var LEGACY_KEY = "rangepath.store";
 
   function nowIso() {
     return new Date().toISOString();
@@ -42,7 +43,7 @@
   }
 
   function seedFromWindow() {
-    var seed = global.RANGE_PATH_SEED;
+    var seed = global.LEARNHERE_SEED || global.RANGE_PATH_SEED;
     if (!seed) return emptyStore();
     return {
       organizations: indexById(seed.organizations),
@@ -67,7 +68,7 @@
       if (memory) return memory;
       var stored = null;
       try {
-        stored = global.localStorage.getItem(STORAGE_KEY);
+        stored = global.localStorage.getItem(STORAGE_KEY) || global.localStorage.getItem(LEGACY_KEY);
       } catch (err) {
         storageOk = false;
       }
@@ -355,7 +356,7 @@
     }
 
     function examAttemptLimit(courseId) {
-      var catalogue = global.RANGE_PATH;
+      var catalogue = global.LEARNHERE || global.RANGE_PATH;
       var courses = catalogue && catalogue.courses ? catalogue.courses : [];
       for (var i = 0; i < courses.length; i++) {
         if (courses[i].id === courseId && courses[i].plan && courses[i].plan.attemptLimit) {
@@ -484,7 +485,7 @@
       Object.keys(read().subscriptions || {}).forEach(function (id) {
         if (read().subscriptions[id].orgId === orgId) subscription = read().subscriptions[id];
       });
-      var billing = global.RangePathBilling;
+      var billing = global.LearnHereBilling || global.RangePathBilling;
       var invoiceRecords = Object.keys(read().invoices || {}).map(function (id) {
         return read().invoices[id];
       }).filter(function (row) { return row.orgId === orgId; });
@@ -827,5 +828,6 @@
     };
   }
 
-  global.RangePathData = createLocalAdapter();
+  global.LearnHereData = createLocalAdapter();
+  global.RangePathData = global.LearnHereData;
 })(window);

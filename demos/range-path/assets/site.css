@@ -751,7 +751,11 @@ footer.site {
 .prose table, .longform table { display: block; max-width: 100%; overflow-x: auto; }
 @media (min-width: 860px) {
   .section-nav { position: sticky; top: calc(var(--header) + 0.5rem); }
+  .syllabus-top { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; gap: 1.5rem; align-items: start; }
+  .syllabus-top .frame { aspect-ratio: 4 / 3; max-height: 11rem; }
 }
+.demo-controls { margin-top: 1rem; }
+.demo-controls summary { min-height: 44px; display: flex; align-items: center; }
 
 .sample-banner {
   margin: 0 0 1rem;
@@ -794,14 +798,18 @@ footer.site {
 }
 .section-chips {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-2);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: var(--space-2);
   margin: 0 0 var(--space-4);
+  max-width: 100%;
 }
+.section-nav a, .lesson-list a { display: flex; align-items: center; min-height: 44px; }
+.order-row.is-picked { outline: 2px solid var(--hotspot); background: var(--wash); }
 .section-chips a {
-  flex: 0 0 auto;
+  flex: 1 1 12rem;
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
   scroll-snap-align: start;
   min-height: 44px;
   display: inline-flex;

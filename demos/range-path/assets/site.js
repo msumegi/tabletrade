@@ -8,7 +8,7 @@
   }
 
   function store() {
-    return window.RangePathData || null;
+    return window.LearnHereData || window.RangePathData || null;
   }
 
   function load() {
@@ -49,7 +49,7 @@
   }
 
   function catalogue() {
-    var rp = window.RANGE_PATH;
+    var rp = window.LEARNHERE;
     return rp && rp.courses && rp.courses.length ? rp.courses : null;
   }
 
@@ -69,7 +69,7 @@
   }
 
   function passRatio() {
-    var rp = window.RANGE_PATH;
+    var rp = window.LEARNHERE;
     return rp && typeof rp.passMark === "number" ? rp.passMark : 0.7;
   }
 
@@ -83,7 +83,7 @@
   function planOf(id) {
     var meta = courseMeta(id);
     if (meta && meta.plan) return meta.plan;
-    var node = document.getElementById("rangepath-plan");
+    var node = document.getElementById("learnhere-plan");
     if (!node) return null;
     try {
       var plan = JSON.parse(node.textContent);
@@ -100,8 +100,12 @@
     return lessons[number] || lessons[String(number)] || {};
   }
 
+  function sectionIdOf(section) {
+    return section && section.id ? section.id : section;
+  }
+
   function sectionRead(row, sectionId) {
-    return Boolean(row.sections && row.sections[sectionId]);
+    return Boolean(row.sections && row.sections[sectionIdOf(sectionId)]);
   }
 
   function lessonReady(data, id, item) {
@@ -148,9 +152,9 @@
       var done = 0;
       plan.lessons.forEach(function (item) {
         var row = lessonRow(data, id, item.n);
-        (item.sections || []).forEach(function (sectionId) {
+        (item.sections || []).forEach(function (section) {
           total += 1;
-          if (sectionRead(row, sectionId)) done += 1;
+          if (sectionRead(row, section)) done += 1;
         });
         if (item.quiz) {
           total += 1;
@@ -187,7 +191,7 @@
         var row = lessonRow(data, id, item.n);
         var sections = item.sections || [];
         for (var s = 0; s < sections.length; s++) {
-          if (!sectionRead(row, sections[s])) return base + "lesson-" + item.n + "/#section-" + sections[s];
+          if (!sectionRead(row, sections[s])) return base + "lesson-" + item.n + "/#section-" + sectionIdOf(sections[s]);
         }
         if (item.quiz && !row.done) return base + "lesson-" + item.n + "/quiz/";
         if (item.assignment && !row.assignment) return base + "lesson-" + item.n + "/#" + item.assignment;
@@ -422,7 +426,7 @@
       var ok = chosen.value === answer;
       if (ok) correct += 1;
       box.className = ok ? "feedback is-good" : "feedback is-bad";
-      box.textContent = (ok ? "Correct." : "Not quite. The better answer is: " + rightText + ".") + (explain ? " " + explain : "");
+      box.textContent = (ok ? "That's right. " : "Not quite. ") + (explain || (ok ? "" : "The better answer is: " + rightText + "."));
       item.querySelectorAll("input").forEach(function (input) { input.disabled = true; });
       item.setAttribute("data-locked", "true");
       checkBtn.hidden = true;
@@ -763,20 +767,31 @@
     if (main) {
       main.textContent = "";
       var note = document.createElement("p");
-      note.textContent = result && result.reason ? result.reason : "This course is not available for this council right now.";
+      note.textContent = (result && result.reason ? result.reason : "This course is not available for this council right now.") + " Your progress on this device is still saved.";
       main.appendChild(note);
     }
   }
 
+  function demoOn() {
+    return /(?:\?|&)demo=1(?:&|$)/.test(window.location.search);
+  }
+
   function setupRoleSwitcher() {
     var api = store();
-    var header = document.querySelector("header.site");
-    if (!api || !header || document.getElementById("role-switch")) return;
+    var footer = document.querySelector("footer.site .wrap, footer.site .wrap-wide");
+    if (!api || !footer || document.getElementById("demo-controls")) return;
     var user = api.getSessionUser();
+    var details = document.createElement("details");
+    details.id = "demo-controls";
+    details.className = "demo-controls no-print";
+    if (demoOn()) details.open = true;
+    var summary = document.createElement("summary");
+    summary.textContent = "Demo controls";
+    details.appendChild(summary);
     var bar = document.createElement("div");
     bar.id = "role-switch";
     bar.className = "role-switch";
-    bar.innerHTML = "<p class=\"role-label\">Demo only. This does not sign you in.</p>";
+    bar.innerHTML = "<p class=\"role-label\">Demo only. This does not sign you in, and it does not erase saved progress.</p>";
     var learnerBtn = document.createElement("button");
     learnerBtn.type = "button";
     learnerBtn.textContent = "Learner";
@@ -815,7 +830,12 @@
       });
       bar.appendChild(button);
     });
-    header.insertAdjacentElement("afterend", bar);
+    details.appendChild(bar);
+    footer.appendChild(details);
+    document.querySelectorAll('a[href$="admin/"]').forEach(function (link) {
+      var staff = user && user.role !== "learner";
+      if (!staff && !demoOn()) link.hidden = true;
+    });
     paintAccessBanner();
   }
 
@@ -833,8 +853,9 @@
     banner.textContent = result.accessState === "past_due_grace"
       ? "Demo only. Payment for this period did not go through. Learners still have access. This is not a real invoice."
       : "Demo only. " + (result.reason || "");
-    var role = document.getElementById("role-switch");
-    if (role) role.insertAdjacentElement("afterend", banner);
+    var main = document.getElementById("main");
+    if (main) main.insertAdjacentElement("afterbegin", banner);
+    banner.textContent += " Your progress on this device is still saved.";
   }
 
   function setupPlayer() {
@@ -866,9 +887,31 @@
         course.lessons[lessonNumber].assignment = true;
         course.lessons[lessonNumber].assignmentAt = new Date().toISOString();
         save(data);
+        var api = store();
+        var who = api && api.getSessionUser ? api.getSessionUser() : null;
+        if (api && who && api.saveProgress) {
+          api.saveProgress({
+            learnerId: who.id,
+            courseId: id,
+            itemId: "assignment:" + (btn.getAttribute("data-assignment-done") || lessonNumber),
+            kind: "assignment",
+            status: "done",
+            at: new Date().toISOString()
+          });
+        }
         paintProgress();
+        document.querySelectorAll("[data-solved-file]").forEach(function (item) { item.hidden = false; });
       });
     });
+    if (id) {
+      var saved = load();
+      var bits = (window.location.pathname || "").match(/lesson-(\d+)/);
+      var lessonNumber = bits ? bits[1] : "";
+      var row = lessonNumber ? lessonRow(saved, id, lessonNumber) : {};
+      if (row.assignment) {
+        document.querySelectorAll("[data-solved-file]").forEach(function (item) { item.hidden = false; });
+      }
+    }
     var reset = document.querySelector("[data-reset-course]");
     if (reset) {
       reset.addEventListener("click", function () {
@@ -896,7 +939,14 @@
     var missing = [];
     if (plan && plan.requireAllLessons) {
       plan.lessons.forEach(function (item) {
-        if (!lessonReady(data, id, item)) missing.push(item);
+        var row = lessonRow(data, id, item.n);
+        (item.sections || []).forEach(function (section) {
+          if (!sectionRead(row, section)) {
+            missing.push({ href: "../lesson-" + item.n + "/#section-" + sectionIdOf(section), text: "Lesson " + item.n + ": mark “" + (section.title || sectionIdOf(section)) + "” as read" });
+          }
+        });
+        if (item.quiz && !row.done) missing.push({ href: "../lesson-" + item.n + "/quiz/", text: "Lesson " + item.n + ": finish the quiz" });
+        if (item.assignment && !row.assignment) missing.push({ href: "../lesson-" + item.n + "/#" + item.assignment, text: "Lesson " + item.n + ": tick I tried this on the practice" });
       });
     }
     if (missing.length) {
@@ -907,8 +957,8 @@
         missing.forEach(function (item) {
           var li = document.createElement("li");
           var link = document.createElement("a");
-          link.href = "../lesson-" + item.n + "/";
-          link.textContent = "Lesson " + item.n + " — " + item.title;
+          link.href = item.href;
+          link.textContent = item.text;
           li.appendChild(link);
           remaining.appendChild(li);
         });
@@ -1041,7 +1091,7 @@
   }
 
   function reportFields() {
-    return (window.RANGE_PATH_REPORT_FIELDS && window.RANGE_PATH_REPORT_FIELDS.fields) || [];
+    return (window.LEARNHERE_REPORT_FIELDS && window.LEARNHERE_REPORT_FIELDS.fields) || [];
   }
 
   function productName() {
@@ -1050,7 +1100,7 @@
   }
 
   function sampleBanner() {
-    return (window.RANGE_PATH_REPORT_FIELDS && window.RANGE_PATH_REPORT_FIELDS.sampleBanner) || "Sample data, not real learners";
+    return (window.LEARNHERE_REPORT_FIELDS && window.LEARNHERE_REPORT_FIELDS.sampleBanner) || "Sample data, not real learners";
   }
 
   function rowExportValue(field, row) {
@@ -1088,22 +1138,71 @@
     return map[field.name] == null ? "" : map[field.name];
   }
 
+  function humanEnum(value) {
+    var map = {
+      basic_digital_skills: "Basic digital skills",
+      skills_for_learning: "Skills for learning",
+      adult_literacy: "Adult literacy",
+      numeracy: "Numeracy",
+      english_language_learning: "English language learning",
+      community_capacity_building: "Community capacity building",
+      other: "Other",
+      not_applied: "Not applied",
+      ongoing: "Ongoing learning opportunity",
+      one_time: "One-time activity",
+      undecided: "Not decided yet",
+      prefer_not_to_say: "Prefer not to say",
+      yes: "Yes",
+      no: "No",
+      "not collected": "Not collected"
+    };
+    return map[value] || value;
+  }
+
   function downloadReportCsv(report) {
-    var fields = reportFields();
     var lines = [csvCell(sampleBanner())];
     lines.push(["Reporting period", report.period.from.slice(0, 10), report.period.to.slice(0, 10)].map(csvCell).join(","));
-    lines.push(fields.map(function (field) {
-      var label = field.label + (field.optional ? " (optional)" : "") + (field.placeholder ? " (placeholder)" : "");
-      return csvCell(label);
-    }).join(","));
+    lines.push(["Unique learner codes", report.totals.uniqueLearners].map(csvCell).join(","));
+    lines.push(["Learner codes who started", report.activeLearners].map(csvCell).join(","));
+    lines.push(["Starts", report.totals.starts].map(csvCell).join(","));
+    lines.push(["Completions", report.totals.completions].map(csvCell).join(","));
+    lines.push(["Completion rate", report.totals.completionRate + "%"].map(csvCell).join(","));
+    lines.push(["Stated hours for ready lessons", report.totals.statedHours].map(csvCell).join(","));
+    lines.push(["Estimated hours from progress", report.totals.estimatedHours].map(csvCell).join(","));
+    lines.push(["Certificates", report.totals.certificates].map(csvCell).join(","));
+    lines.push([]);
+    lines.push(["Course", "Category", "Type", "Learners", "Starts", "Completions", "Stated hours", "Estimated hours"].map(csvCell).join(","));
+    (report.courses || []).forEach(function (course) {
+      lines.push([course.courseTitle, humanEnum(course.calpCategoryTag), humanEnum(course.opportunityType), course.learners, course.starts, course.completions, course.statedHoursTotal, course.estimatedHoursTotal].map(csvCell).join(","));
+    });
+    lines.push([]);
+    lines.push(["Demographic totals"].map(csvCell).join(","));
+    Object.keys(report.demographicTotals || {}).forEach(function (key) {
+      var counts = report.demographicTotals[key];
+      Object.keys(counts).forEach(function (value) {
+        lines.push([humanEnum(key), humanEnum(value), counts[value]].map(csvCell).join(","));
+      });
+    });
+    lines.push([]);
+    lines.push(["After-course question totals"].map(csvCell).join(","));
+    Object.keys(report.pulseTotals || {}).forEach(function (key) {
+      var item = report.pulseTotals[key];
+      Object.keys(item.counts || {}).forEach(function (value) {
+        if (!value) return;
+        lines.push([key, humanEnum(value), item.counts[value]].map(csvCell).join(","));
+      });
+    });
+    lines.push([]);
+    lines.push(["Progress by learner code"].map(csvCell).join(","));
+    lines.push(["Learner code", "Course", "Started", "Lessons finished", "Lessons total", "Completed", "Exam passed", "Exam score", "Certificate id"].map(csvCell).join(","));
     (report.rows || []).forEach(function (row) {
-      lines.push(fields.map(function (field) { return csvCell(rowExportValue(field, row)); }).join(","));
+      lines.push([row.learnerCode, row.courseTitle, row.courseStartedAt ? String(row.courseStartedAt).slice(0, 10) : "", row.lessonsCompletedCount, row.lessonsTotal, row.completed ? "yes" : "no", row.finalExamPassed ? "yes" : "no", row.finalExamScore, row.certificateId].map(csvCell).join(","));
     });
     var blob = new Blob([lines.join("\n") + "\n"], { type: "text/csv" });
     var url = URL.createObjectURL(blob);
     var link = document.createElement("a");
     link.href = url;
-    link.download = "range-path-sample-report.csv";
+    link.download = "learnhere-sample-report.csv";
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -1111,7 +1210,7 @@
   }
 
   function tallyText(counts) {
-    return Object.keys(counts || {}).map(function (key) { return key + " " + counts[key]; }).join(", ");
+    return Object.keys(counts || {}).map(function (key) { return humanEnum(key) + " " + counts[key]; }).join(", ");
   }
 
   function paintDashboard(mount, report) {
@@ -1158,7 +1257,7 @@
       var h3 = document.createElement("h3");
       h3.textContent = course.courseTitle;
       var body = document.createElement("p");
-      body.textContent = "Category: " + (course.calpCategoryTag || "not set") + ". " + (course.opportunityType || "undecided") + ". " + course.learners + " learner codes, " + course.starts + " starts, " + course.completions + " completions (" + course.completionRate + "%). Stated hours " + course.statedCourseHours + " each (placeholder estimate). Estimated hours from progress: " + course.estimatedHoursTotal + ".";
+      body.textContent = "Category: " + humanEnum(course.calpCategoryTag || "not set") + ". " + humanEnum(course.opportunityType || "undecided") + ". " + course.learners + " learner codes, " + course.starts + " starts, " + course.completions + " completions (" + course.completionRate + "%). Stated hours " + course.statedCourseHours + " for the lessons that are ready. Estimated hours from progress: " + course.estimatedHoursTotal + ".";
       card.appendChild(h3);
       card.appendChild(body);
       courseList.appendChild(card);
@@ -1302,6 +1401,14 @@
     if (!mount) return;
     var api = store();
     if (!api || !api.getSampleReport) return;
+    var user = api.getSessionUser();
+    if ((!user || user.role === "learner") && !demoOn()) {
+      mount.textContent = "";
+      var closed = document.createElement("p");
+      closed.textContent = "This page is for council staff. Open Demo controls in the footer and choose Council staff. A learner session does not show the roster, the CSV, or exam resets.";
+      mount.appendChild(closed);
+      return;
+    }
     var grant = api.getSampleReport();
     var filters = document.createElement("form");
     filters.className = "report-filters no-print";

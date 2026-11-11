@@ -1,0 +1,8 @@
+Before you connect to Wi-Fi
+Sample only. Do not type a real Wi-Fi password into this course.
+
+1. Open Settings, then Network and internet, then Internet (on many Android phones). On Windows, use the network icon on the taskbar.
+2. Join a network you already know. A lock icon means the network asks for a password.
+3. Type the password only in the real device prompt, not in a practice screen.
+4. Pause before you use a public network for banking, mail, or other private tasks.
+5. If you joined the wrong name, forget that network and ask a tutor.

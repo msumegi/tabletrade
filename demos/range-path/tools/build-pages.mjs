@@ -123,7 +123,7 @@ ${main}
   <footer class="site">
     <div class="wrap">
       <p class="disclaimer">${DISCLAIMER}</p>
-      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="${root}privacy/">Privacy</a></p>
+      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A product of Range Road Technologies.</a> · <a href="${root}privacy/">Privacy</a></p>
     </div>
   </footer>
   <script src="${root}assets/brand.js"></script>
@@ -160,7 +160,7 @@ function mainNav(root, current) {
 }
 
 function lessonNav(root, courseHref, label) {
-  return `<ul><li><a href="${root}courses/">Courses</a></li><li><a href="${courseHref}" aria-current="page">${esc(label)}</a></li><li><a href="${root}privacy/">Privacy</a></li></ul>`;
+  return `<ul><li><a href="${root}courses/">Courses</a></li><li><a href="${courseHref}">${esc(label)}</a></li><li><a href="${root}privacy/">Privacy</a></li></ul>`;
 }
 
 function imageTag(media, prefix, eager) {
@@ -241,7 +241,7 @@ function coursePlan(course) {
     lessons: course.lessons.map((lesson, index) => ({
       n: index + 1,
       title: lesson.title,
-      sections: (lesson.sections || []).map((section) => section.id),
+      sections: (lesson.sections || []).map((section) => ({ id: section.id, title: section.title })),
       assignment: lesson.assignment ? lesson.assignment.id || "lesson-" + (index + 1) + "-task" : "",
       quiz: Boolean(lesson.quiz && lesson.quiz.length)
     }))
@@ -257,28 +257,26 @@ function sectionNav(sections) {
     )
     .join("");
   return `<nav class="section-chips" aria-label="Sections in this lesson">${sections
-    .map(
-      (section) =>
-        `<a href="#section-${esc(section.id)}">${esc(section.title)}${section.minutes ? " · " + section.minutes + " min" : ""}</a>`
-    )
-    .join("")}</nav>
-<details class="section-nav">
-  <summary>Sections in this lesson${total ? " · about " + total + " min" : ""}</summary>
-  <ol>${items}</ol>
-</details>`;
+    .map((section) => {
+      const short = section.shortTitle || section.title;
+      return `<a href="#section-${esc(section.id)}">${esc(short)}${section.minutes ? " · " + section.minutes + " min" : ""}</a>`;
+    })
+    .join("")}</nav>`;
 }
 
 function filesBlock(files) {
   if (!files || !files.length) return "";
-  const items = files
-    .map((file) => {
-      const label = file.solved ? "Solved sample" : "Starter file";
-      return `<li><a class="btn" href="${esc(file.href)}" download>${esc(label)}: ${esc(file.name)}</a> <span class="meta">${esc(file.kind || "File")} · ${formatBytes(file.bytes || 0)}</span></li>`;
-    })
-    .join("");
+  const starters = files.filter((file) => !file.solved);
+  const solved = files.filter((file) => file.solved);
+  const item = (file) => {
+    const label = file.label || (file.solved ? "Solved sample" : "Practice file");
+    const saveAs = file.downloadName || file.name;
+    const gated = file.solved ? ` data-solved-file hidden` : "";
+    return `<li${gated}><a class="btn" href="${esc(file.href)}" download="${esc(saveAs)}">${esc(label)}</a> <span class="meta">${esc(file.kind || "File")} · ${formatBytes(file.bytes || 0)}</span></li>`;
+  };
   return `<h2>Practice files</h2>
-<p>Download a file and open it in Excel. A solved file is a sample to compare with your work. It is not a mark.</p>
-<ul class="file-list">${items}</ul>`;
+<p>Download a practice file and open it in Excel. Windows, Mac, and Excel for the web can look different. A solved file stays closed until you tick “I tried this” on the practice.</p>
+<ul class="file-list">${starters.map(item).join("")}${solved.map(item).join("")}</ul>`;
 }
 
 function sectionedLesson(course, lesson, number) {
@@ -317,20 +315,31 @@ ${lesson.cheatSheet ? renderBlocks([{ type: "cheatSheet", ...lesson.cheatSheet }
 }
 
 function syllabusExtras(course, passLabel) {
-  if (!course.player) return "";
-  const outcomes = (course.player.outcomes || []).map((item) => "<li>" + esc(item) + "</li>").join("");
-  const need = (course.player.youNeed || []).map((item) => "<li>" + esc(item) + "</li>").join("");
-  const minutes = course.player.hoursEstimate == null ? 0 : course.player.estimatedMinutes || 0;
+  if (!course.player && !(course.comingSoon || []).length) return "";
+  const outcomes = ((course.player && course.player.outcomes) || []).map((item) => "<li>" + esc(item) + "</li>").join("");
+  const need = ((course.player && course.player.youNeed) || []).map((item) => "<li>" + esc(item) + "</li>").join("");
+  const minutes = (course.lessons || []).reduce((sum, lesson) => sum + (lesson.minutes || 0), 0);
   const hours = minutes ? Math.round((minutes / 60) * 10) / 10 : 0;
   const attempts = course.finalExam ? course.finalExam.attemptLimit || 2 : 0;
+  const later = (course.comingSoon || []).length;
+  const included = {
+    practiceFile: "a practice workbook",
+    checks: "in-lesson checks",
+    assignment: "a practice task in each ready lesson",
+    cheatSheets: "a cheat sheet you can print",
+    final: "a " + passLabel + " final with " + attempts + " attempts",
+    sampleCertificate: "a sample certificate"
+  };
+  const includeLine = (course.includes || []).map((key) => included[key] || key).join(", ");
   return `<section class="syllabus">
   <h2>Syllabus</h2>
-  <p>This page is the course outline. It shows how long to allow, what you will practise, and how the final exam works. Start at lesson 1, or continue where you left off.</p>
-  ${hours ? `<p><strong>About ${hours} hours</strong> (${minutes} minutes) of reading and practice.</p>` : ""}
+  <p>You do not need a password or a payment to open these lessons. Your place is saved on this device only.</p>
+  ${(course.player && course.player.hoursLabel) ? `<p><strong>${esc(course.player.hoursLabel)}</strong></p>` : hours ? `<p><strong>About ${hours} hours</strong> for the ${course.lessons.length} lessons (estimate).</p>` : ""}
+  ${includeLine ? `<h3>What's included</h3><p>${esc(includeLine)}.</p>` : ""}
   ${outcomes ? `<h3>Learning outcomes</h3><ul class="check">${outcomes}</ul>` : ""}
   ${need ? `<h3>What you need</h3><ul class="check">${need}</ul>` : ""}
   <h3>Final exam and certificate</h3>
-  <p>Finish every section, lesson quiz, and practice task. Then take the final exam. The pass mark is ${passLabel}. This course allows ${attempts} attempt${attempts === 1 ? "" : "s"}. The sample certificate stays locked until you pass. If every attempt is used, council staff can reset them from the staff demo. The certificate confirms completion only and is not an accredited credential.</p>
+  <p>The final exam covers all ${course.lessons.length} lessons. The pass mark is ${passLabel}. You have ${attempts} attempt${attempts === 1 ? "" : "s"}. There is no timer. The certificate means you passed the knowledge exam. It does not mean a tutor watched you do the task. It stays locked until you pass, and it is not an accredited credential.</p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-reset-course="${esc(course.slug)}">Reset my progress for this course</button></p>
   <p id="reset-status" role="status"></p>
 </section>`;
@@ -383,14 +392,18 @@ function buildCoursePages(course, entry, passMark) {
   const dir = path.join(demoRoot, "courses", slug);
   fs.rmSync(dir, { recursive: true, force: true });
   const count = course.lessons.length;
-  const finalCount = course.finalQuiz.questions.length;
+  const finalCount = course.finalQuiz && course.finalQuiz.questions
+    ? course.finalQuiz.questions.length
+    : course.finalExam && course.finalExam.questions
+      ? course.finalExam.questions.length
+      : 0;
   const need = neededCorrect(finalCount, passMark);
   const passLabel = Math.round(passMark * 100) + "%";
   const navLabel = entry.navLabel || entry.shortTitle || course.title;
   const summary = course.summary || course.goals || "";
   const intro = course.introHtml
     ? course.introHtml
-    : `<p class="lede">${esc(summary)}</p>${course.goals && course.goals !== summary ? "\n<p>" + esc(course.goals) + "</p>" : ""}`;
+    : `<p class="lede">${esc(summary)}</p>${course.player && course.player.outcomes && course.player.outcomes.length ? "" : course.goals && course.goals !== summary ? "\n<p>" + esc(course.goals) + "</p>" : ""}`;
 
   const examMode = Boolean(course.finalExam && course.finalExam.questions && course.finalExam.questions.length);
   const finalCountShown = examMode ? course.finalExam.questions.length : finalCount;
@@ -409,38 +422,27 @@ function buildCoursePages(course, entry, passMark) {
     })
     .join("\n");
   const plan = coursePlan(course);
-  const planScript = plan ? `<script type="application/json" id="rangepath-plan">${JSON.stringify(plan)}</script>` : "";
+  const planScript = plan ? `<script type="application/json" id="learnhere-plan">${JSON.stringify(plan)}</script>` : "";
+  const examNote = `Pass mark ${passLabel} (at least ${needShown} of ${finalCountShown}). ${examMode ? "Opens after every lesson is complete. " : ""}Unlocks the sample certificate.`;
 
   const courseMain = `<p class="crumbs"><a href="../../">Home</a><a href="../">Courses</a><span>${esc(course.title)}</span></p>
-${imageTag(course.media, "../../", true)}
+<div class="syllabus-top">
+<div>
 <h1>${esc(course.title)}</h1>
 ${intro}
-${syllabusExtras(course, passLabel)}
-<p class="progress-line"><span>Your progress</span><span data-pct="${esc(slug)}">0% done</span></p><div class="bar" data-bar="${esc(slug)}" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
 <p class="actions"><a class="btn" data-continue="${esc(slug)}" data-base="" href="lesson-1/">Start lesson 1</a></p>
+<p class="progress-line"><span>Your progress</span><span data-pct="${esc(slug)}">0% done</span></p><div class="bar" data-bar="${esc(slug)}" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
+${syllabusExtras(course, passLabel)}
+</div>
+${imageTag(course.media, "../../", true)}
+</div>
 <h2>Lessons</h2>
 <ol class="lesson-list">
 ${lessonItems}
-<li><a href="final/">${examMode ? "Final exam" : "Final quiz"}</a><p class="status" data-final-note="${esc(slug)}">Pass mark ${passLabel} (at least ${needShown} of ${finalCountShown}). ${examMode ? "Opens after every lesson is complete. " : ""}Unlocks the sample certificate.</p></li>
+<li><a href="final/">${examMode ? "Final exam" : "Final quiz"}</a><p class="status" data-final-note="${esc(slug)}">${examNote} Pass mark ${passLabel} (at least ${needShown} of ${finalCountShown}). Unlocks the sample certificate. There is no timer.</p></li>
 </ol>
-<p class="meta">Pass the ${examMode ? "final exam" : "final quiz"} with ${passLabel} or more to open a sample certificate. There is no timer.</p>
-<h2>Progress map</h2>
-<ol class="progress-map">
-${course.lessons
-  .map(
-    (lesson, index) =>
-      `<li><a href="lesson-${index + 1}/">${esc(lesson.title)}</a> <span class="meta" data-status="${esc(slug)}:${index + 1}">Not started</span></li>`
-  )
-  .join("")}
-<li><a href="final/">${examMode ? "Final exam" : "Final quiz"}</a></li>
-${(course.comingSoon || [])
-  .map(
-    (item) =>
-      `<li class="coming-soon"><span>Lesson ${esc(item.number)} — ${esc(item.title)}</span> <span class="meta">Coming soon. Not written yet.</span></li>`
-  )
-  .join("")}
-</ol>
-${(course.badges || []).length ? `<h2>Milestones</h2><ul class="badge-list">${course.badges.map((badge) => `<li class="badge" data-badge="${esc(badge.id)}" data-when="${esc(badge.when && badge.when.type || "")}" data-when-id="${esc(badge.when && badge.when.id || "")}" data-earned="false">${esc(badge.label)}</li>`).join("")}</ul>` : ""}
+<p class="meta">Pass the ${examMode ? "final exam" : "final quiz"} with ${passLabel} or more to open a sample certificate.</p>
+${(course.badges || []).length ? `<h2>Milestones</h2><ul class="badge-list">${course.badges.map((badge) => `<li class="badge" data-badge="${esc(badge.id)}" data-label="${esc(badge.label)}" data-when="${esc(badge.when && badge.when.type || "")}" data-when-id="${esc(badge.when && badge.when.id || "")}" data-earned="false">${esc(badge.label)}</li>`).join("")}</ul>` : ""}
 ${planScript}`;
 
   write(
@@ -463,7 +465,7 @@ ${planScript}`;
       ? sectionedLesson(course, lesson, number)
       : `<div class="prose">${lesson.html || ""}</div>`;
     const lessonMain = `<p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">${esc(course.title)}</a><span class="crumb-here">Lesson ${number}</span></p>
-<p class="step-label">Lesson ${number} of ${count}${lesson.minutes ? " · about " + lesson.minutes + " min" : ""}</p>
+<p class="step-label">Lesson ${number} of ${count}${lesson.minutes ? " · about " + lesson.minutes + " min to read" : ""}</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="${count}" aria-valuenow="${number}" aria-label="Lesson ${number} of ${count}"><span style="width:${width}%"></span></div>
 <h1>${esc(lesson.title)}</h1>
 ${lessonBody}
@@ -547,24 +549,28 @@ ${planScript}`;
   );
 }
 
+function lessonMeta(course) {
+  const ready = course.lessons.length;
+  const exam = course.finalExam && course.finalExam.questions ? course.finalExam.questions.length + "-question final" : "final quiz";
+  return ready + " lessons · " + exam + " · certificate at 70%";
+}
+
 function homeCard(course) {
-  const count = course.lessons.length;
   return `<article class="card">
       <h3><a href="courses/${esc(course.slug)}/">${esc(course.title)}</a></h3>
       <p>${esc(course.summary || course.goals || "")}</p>
-      <p class="meta">${count} lessons · final quiz · certificate at 70%</p>
+      <p class="meta">${lessonMeta(course)}</p>
       <a class="btn" data-continue="${esc(course.slug)}" data-resume="progress" data-base="courses/${esc(course.slug)}/" href="courses/${esc(course.slug)}/">Preview this course</a>
     </article>`;
 }
 
 function catalogueCard(course) {
-  const count = course.lessons.length;
   const image = imageTag(course.media, "../", false);
   return `<article class="card">
   ${image}
   <h3><a href="${esc(course.slug)}/">${esc(course.title)}</a></h3>
   <p>${esc(course.summary || course.goals || "")}</p>
-  <p class="meta">${count} short lessons</p>
+  <p class="meta">${lessonMeta(course)}</p>
   <p class="progress-line"><span>Your progress</span><span data-pct="${esc(course.slug)}">0% done</span></p><div class="bar" data-bar="${esc(course.slug)}" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Course progress"><span style="width:0%"></span></div>
   <a class="btn" href="${esc(course.slug)}/">Open course</a>
 </article>`;
@@ -673,13 +679,13 @@ function main() {
   );
   write(
     path.join(demoRoot, "assets", "report-fields.js"),
-    "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.RANGE_PATH_REPORT_FIELDS = " +
+    "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.LEARNHERE_REPORT_FIELDS = " +
       JSON.stringify(reportFields) +
       ";\n"
   );
   write(
     path.join(demoRoot, "assets", "demo-seed.js"),
-    "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.RANGE_PATH_SEED = " +
+    "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.LEARNHERE_SEED = " +
       JSON.stringify(seed) +
       ";\n"
   );
@@ -710,7 +716,7 @@ function main() {
   };
   write(
     path.join(demoRoot, "assets", "catalogue.js"),
-    "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.RANGE_PATH = " +
+    "/* Generated by tools/build-pages.mjs. Do not edit by hand. */\nwindow.LEARNHERE = " +
       JSON.stringify(catalogue, null, 2) +
       ";\n"
   );

@@ -7,12 +7,12 @@
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#123c2e">
   <meta name="application-name" content="LearnHere">
-  <meta name="description" content="Save and print your workbook">
-  <title>Lesson 5 — Save and print your workbook · LearnHere</title>
+  <meta name="description" content="Write a simple formula that starts with =">
+  <title>Lesson 5 — Write a simple formula that starts with = · LearnHere</title>
   <link rel="canonical" href="https://rangeroadtech.com/demos/range-path/courses/excel-basics-canada/lesson-5/">
   <meta property="og:site_name" content="LearnHere">
-  <meta property="og:title" content="Lesson 5 — Save and print your workbook · LearnHere">
-  <meta property="og:description" content="Save and print your workbook">
+  <meta property="og:title" content="Lesson 5 — Write a simple formula that starts with = · LearnHere">
+  <meta property="og:description" content="Write a simple formula that starts with =">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rangeroadtech.com/demos/range-path/courses/excel-basics-canada/lesson-5/">
   <meta property="og:image" content="https://rangeroadtech.com/demos/range-path/og.jpg">
@@ -35,114 +35,176 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     </div>
     <nav id="site-nav" class="is-collapsed" aria-label="Main">
-      <div class="site-bar"><ul><li><a href="../../../courses/">Courses</a></li><li><a href="../" aria-current="page">Excel</a></li><li><a href="../../../privacy/">Privacy</a></li></ul></div>
+      <div class="site-bar"><ul><li><a href="../../../courses/">Courses</a></li><li><a href="../">Excel</a></li><li><a href="../../../privacy/">Privacy</a></li></ul></div>
     </nav>
   </header>
   <main id="main">
     <div class="wrap">
 <p class="crumbs"><a href="../../../">Home</a><a href="../../../courses/">Courses</a><a href="../">Microsoft Excel Basics (Canada)</a><span class="crumb-here">Lesson 5</span></p>
-<p class="step-label">Lesson 5 of 5 · about 18 min</p>
-<div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="5" aria-valuenow="5" aria-label="Lesson 5 of 5"><span style="width:100%"></span></div>
-<h1>Save and print your workbook</h1>
-<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-save">Save the workbook · 10 min</a><a href="#section-print">Print or preview · 8 min</a></nav>
-<details class="section-nav">
-  <summary>Sections in this lesson · about 18 min</summary>
-  <ol><li><a href="#section-save">Save the workbook</a> <span class="meta">10 min</span></li><li><a href="#section-print">Print or preview</a> <span class="meta">8 min</span></li></ol>
-</details>
+<p class="step-label">Lesson 5 of 10 · about 7 min to read</p>
+<div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="5" aria-label="Lesson 5 of 10"><span style="width:50%"></span></div>
+<h1>Write a simple formula that starts with =</h1>
+<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-chapter-1-a-formula-always-starts-with">A formula always starts with = · 4 min</a><a href="#section-chapter-2-point-the-formula-at-other-cells">Point the formula at other cells · 4 min</a><a href="#section-chapter-3-multiply-and-divide-before-you-add-and">Multiply and divide before you add and subtract · 4 min</a><a href="#section-worked-example-1-four-tiny-formulas-on-the-pract">Worked example 1. Four tiny formulas on the Practice sheet · 4 min</a><a href="#section-worked-example-2-add-three-days-then-test-5-2-3">Worked example 2. Add three days, then test =5+2*3 · 4 min</a><a href="#section-try-it">Try it · 4 min</a><a href="#section-optional-discussion-council-study-group">Optional discussion (council study group) · 4 min</a></nav>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
-<section class="lesson-section longform reading" id="section-save">
-  <h2>Save the workbook</h2>
-  <p class="meta">About 10 minutes to read, plus a short practice.</p>
+<section class="lesson-section longform reading" id="section-chapter-1-a-formula-always-starts-with">
+  <h2>A formula always starts with =</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <div class="block" data-block="prose"><p>Saving puts your workbook in a file so you can close Excel without losing the work.</p>
-<p>Microsoft’s basic steps:</p>
-<ol>
-<li>Click the <strong>Save</strong> button on the Quick Access Toolbar, or press <strong>Ctrl+S</strong>. If you have saved this file before, you are done.</li>
-<li>The first time, choose <strong>Save As</strong>, pick a location, browse to a folder, type a name in the <strong>File name</strong> box, and click <strong>Save</strong>.</li>
-</ol>
-<p>A clear name helps you find the file later, such as <code>hours-november</code> or <code>expense-list-practice</code>. Save it in a folder you know, such as Documents (see the Everyday Computers course for File Explorer).</p>
-<p>Save often while you work. Microsoft also describes AutoRecovery, which can keep a backup if something goes wrong, such as a power cut. AutoRecovery is not the same as you saving the file yourself, so do not rely on it alone.</p>
-</div>
-<section class="block block-sim" data-block="simulation" data-sim="excel-save-print" id="excel-save-print">
-  <h3>Save, then look at a preview</h3>
+  <div class="block" data-block="prose"><p>A formula is an instruction that tells Excel to calculate. Microsoft's formula pages repeat one rule: a formula always begins with an equal sign (<code>=</code>). If you type <code>2+4</code> without the equal sign, Excel usually treats it as text — it will not give you 6. If you type <code>=2+4</code> and press Enter, Excel runs the calculation and the cell shows 6. The formula bar still shows <code>=2+4</code>, so you can see how the answer was made.</p>
+<p>Microsoft's simple-formula page says a simple formula starts with <code>=</code>, then numbers (constants) and operators:</p>
+<ul><li><code>+</code> add</li><li><code>-</code> subtract</li><li><code>*</code> multiply (asterisk, not the letter x)</li><li><code>/</code> divide (forward slash)</li></ul>
+<p>Their starter examples are <code>=2+4</code>, <code>=4-2</code>, <code>=2*4</code>, and <code>=4/2</code>. You can type those on the Practice sheet right now. After you press Enter (Windows) or Return (Mac), the cell shows the result. Microsoft also notes that you can press Ctrl+Enter if you want the cursor to stay on the active cell after the formula calculates.</p>
+<p>Type the equal sign first, then the rest. If you forget <code>=</code> and already pressed Enter, click the cell, type the formula again starting with <code>=</code>, and press Enter. Watch the formula bar, not only the grid, when you want to know whether a cell holds a formula or a typed-in number.</p>
+<p>You can practise these tiny formulas on the Practice sheet without touching the sample Hours or Household data. Use a clear empty area, such as row 10 downward, so your tests do not sit on top of headers.</p>
+<p><strong>Progress:</strong> Lesson 5, part 2 of 3.</p></div>
+  <p class="actions">
+    
+    <button type="button" class="btn" data-read-section="chapter-1-a-formula-always-starts-with" data-lesson="5">Mark this section as read</button>
+    <a class="btn" href="#section-chapter-2-point-the-formula-at-other-cells" data-read-section="chapter-1-a-formula-always-starts-with" data-lesson="5">Next section</a>
+  </p>
+  <p class="meta" data-section-status="excel-basics-canada:5:chapter-1-a-formula-always-starts-with">Not read yet.</p>
+</section>
+<section class="lesson-section longform reading" id="section-chapter-2-point-the-formula-at-other-cells">
+  <h2>Point the formula at other cells</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
+  <div class="block" data-block="prose"><p>Adding <code>=2+4</code> is a good first test, but everyday lists change. If Wednesday's hours change from 7.5 to 8, a formula that literally says <code>=6+4+7.5</code> will be wrong until you edit it. A better habit is to point at the cells that already hold the numbers.</p>
+<p>Microsoft's overview shows this pattern: select a cell, type <code>=</code>, select a cell (or type its address), type an operator, select the next cell, and press Enter. The result appears in the cell that holds the formula. Microsoft's simple-formula page adds that instead of typing the numbers, you can select the cells that contain the values and type the operators between those selections.</p>
+<p>On the Hours sheet, click an empty cell such as E2 and type <code>=B2+B3+B4</code>, or type <code>=</code>, click B2, type <code>+</code>, click B3, type <code>+</code>, click B4, and press Enter. If the sample data is unchanged, the result is 17.5 (Monday 6 + Tuesday 4 + Wednesday 7.5). If you later change B4 from 7.5 to 8, this formula can update to 18.</p>
+<p>Microsoft's overview also says it is generally best to put constants in their own cells and refer to those cells, rather than burying numbers inside a formula. That habit will matter even more in Lesson 7, when you copy a formula down a column.</p>
+<p>If the result looks like a date or a long string of hash marks, the cell may be too narrow or formatted strangely. Click the cell, read the formula bar, and confirm the cell references before you change anything else.</p></div>
+<section class="block block-sim" data-block="simulation" data-sim="excel-first-formula" id="excel-first-formula">
+  <h3>Build =B2+B3+B4 by tapping cells</h3>
   <p class="caption">Practice screen — not the real Excel.</p>
-  <div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="Save">Save</button><button type="button" class="btn btn-secondary" data-hotspot="Print">Print preview</button></div>
-  <div class="stage"><table class="sheet"><tr><th></th><th>A</th><th>B</th></tr><tr><th>1</th><td><button type="button" data-hotspot="A1" aria-label="A1">Item</button></td><td><button type="button" data-hotspot="B1" aria-label="B1">Amount</button></td></tr><tr><th>2</th><td><button type="button" data-hotspot="A2" aria-label="A2">Fuel</button></td><td><button type="button" data-hotspot="B2" aria-label="B2">80</button></td></tr><tr><th>3</th><td><button type="button" data-hotspot="A3" aria-label="A3">Feed</button></td><td><button type="button" data-hotspot="B3" aria-label="B3">45</button></td></tr><tr><th>4</th><td><button type="button" data-hotspot="A4" aria-label="A4">Supplies</button></td><td><button type="button" data-hotspot="B4" aria-label="B4">25</button></td></tr><tr><th>5</th><td><button type="button" data-hotspot="A5" aria-label="A5"></button></td><td><button type="button" data-hotspot="B5" aria-label="B5"></button></td></tr></table><p class="caption">Swipe inside the frame if a column is off the screen.</p></div>
+  <p class="meta">Hours sheet with sample hours in B2 (6), B3 (4), and B4 (7.5). E2 is empty. Formula bar visible.</p>
+  <div class="stage"><div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="E2" aria-label="Cell E2">Cell E2</button><button type="button" class="btn btn-secondary" data-hotspot="equals" aria-label="Equals key">Equals key</button><button type="button" class="btn btn-secondary" data-hotspot="B2" aria-label="Cell B2">Cell B2</button><button type="button" class="btn btn-secondary" data-hotspot="B4" aria-label="Cell B4">Cell B4</button><button type="button" class="btn btn-secondary" data-hotspot="enter" aria-label="Enter key">Enter key</button></div><p class="caption" data-sim-result></p></div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
   <div data-sim-fallback></div>
-  <script type="application/json" class="sim-key">{"id":"excel-save-print","steps":[{"id":"s1","prompt":"Tap Save. In the real program, the first save asks where to put the file.","hotspots":[{"id":"Save","label":"Save"}],"correct":["Save"],"pass":"Saving keeps the workbook. A practice name is expense-list-practice.","fail":"Save is the labelled control."},{"id":"s2","prompt":"Tap Print preview.","hotspots":[{"id":"Print","label":"Print preview"}],"correct":["Print"],"pass":"Look at the preview before you print on a shared printer.","fail":"Print preview is the other labelled control."}],"fallback":"list"}</script>
+  <script type="application/json" class="sim-key">{"id":"excel-first-formula","steps":[{"id":"s1","prompt":"Tap cell E2, where the formula will go.","hotspots":[{"id":"E2","x":0.72,"y":0.38,"w":0.14,"h":0.08,"label":"Cell E2"}],"correct":["E2"],"pass":"E2 is active.","fail":"E2 is an empty cell to the right of the hours list."},{"id":"s2","prompt":"Type an equal sign (=). Every simple formula starts this way.","hotspots":[{"id":"equals","x":0.2,"y":0.84,"w":0.1,"h":0.08,"label":"Equals key"}],"correct":["equals"],"pass":"E2 and the formula bar show = and Excel is waiting for the rest.","fail":"Type = first. Without it, Excel will not treat this as a formula."},{"id":"s3","prompt":"Tap cell B2 (Monday’s hours).","hotspots":[{"id":"B2","x":0.28,"y":0.38,"w":0.14,"h":0.08,"label":"Cell B2"}],"correct":["B2"],"pass":"The formula becomes =B2.","fail":"B2 is Monday’s hours (6 in the sample). Tap that cell rather than retyping 6."},{"id":"s4","prompt":"Type +, tap B3, type +, tap B4, then tap Enter.","hotspots":[{"id":"B4","x":0.28,"y":0.52,"w":0.14,"h":0.08,"label":"Cell B4"},{"id":"enter","x":0.72,"y":0.84,"w":0.22,"h":0.08,"label":"Enter key"}],"correct":["B4","enter"],"pass":"E2 displays 17.5 with the sample data (6+4+7.5). The formula bar shows =B2+B3+B4 when E2 is selected again.","fail":"Build =B2+B3+B4 by tapping the hour cells and typing + between them, then Enter."}]}</script>
 </section>
-<form class="block block-instant" data-block="check" data-check="excel-autorecovery" id="excel-autorecovery">
-  <fieldset class="q"><legend>AutoRecovery is a substitute for saving the workbook.</legend><label class="option"><input type="radio" name="excel-autorecovery" value="A"> <span>True</span></label><label class="option"><input type="radio" name="excel-autorecovery" value="B"> <span>False</span></label></fieldset>
+<div class="block" data-block="prose"><p><strong>Progress:</strong> Lesson 5, part 3 of 3.</p></div>
+  <p class="actions">
+    <a class="btn btn-secondary" href="#section-chapter-1-a-formula-always-starts-with">Previous section</a>
+    <button type="button" class="btn" data-read-section="chapter-2-point-the-formula-at-other-cells" data-lesson="5">Mark this section as read</button>
+    <a class="btn" href="#section-chapter-3-multiply-and-divide-before-you-add-and" data-read-section="chapter-2-point-the-formula-at-other-cells" data-lesson="5">Next section</a>
+  </p>
+  <p class="meta" data-section-status="excel-basics-canada:5:chapter-2-point-the-formula-at-other-cells">Not read yet.</p>
+</section>
+<section class="lesson-section longform reading" id="section-chapter-3-multiply-and-divide-before-you-add-and">
+  <h2>Multiply and divide before you add and subtract</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
+  <div class="block" data-block="prose"><p>Excel follows the standard order of mathematical operations. Microsoft's simple-formula page states that multiplication and division are performed before addition and subtraction. Their example is to type <code>=5+2*3</code> and press Enter. Excel multiplies the last two numbers (2 × 3 = 6) and then adds the first number (5 + 6). The result is 11, not 21.</p>
+<p>This matters in real lists. Suppose you want to add two hour totals and then multiply by a sample extra rate later in the course. If you write the operators in a long line, Excel will not always go left to right. Read the formula bar and do a rough check in your head: “Which part happens first?” If the on-screen answer is far from your estimate, look at the operators before you trust the cell.</p>
+<p>This course stays with the four everyday operators Microsoft teaches for simple formulas: add, subtract, multiply, and divide. You do not need more advanced operators to finish the practice workbook. What you do need is the habit of starting with <code>=</code>, pointing at cells when the numbers already live on the sheet, and checking that 11-versus-21 kind of surprise.</p>
+<p>If a formula shows an error such as <code>#DIV/0!</code>, you may have divided by a cell that is empty or zero. Click the formula cell, read the formula bar, and fix the cell references rather than typing over the result with a guessed number. The displayed result should come from the formula.</p></div>
+<form class="block block-instant" data-block="check" data-check="excel-equals" id="excel-equals">
+  <fieldset class="q"><legend>Every simple Excel formula starts with:</legend><label class="option"><input type="radio" name="excel-equals" value="A"> <span>An equal sign (=)</span></label><label class="option"><input type="radio" name="excel-equals" value="B"> <span>A question mark</span></label></fieldset>
   <p class="actions"><button type="submit" class="btn">Check my answer</button></p>
   <p class="feedback" role="status" hidden></p>
-  <script type="application/json" class="check-key">{"answer":"B","explain":"The lesson says to save your own copy. AutoRecovery is not the same as Save."}</script>
+  <script type="application/json" class="check-key">{"answer":"A","explain":"Microsoft’s basic steps say a simple formula begins with =."}</script>
 </form>
   <p class="actions">
-    
-    <button type="button" class="btn" data-read-section="save" data-lesson="5">Mark this section as read</button>
-    <a class="btn" href="#section-print" data-read-section="save" data-lesson="5">Next section</a>
+    <a class="btn btn-secondary" href="#section-chapter-2-point-the-formula-at-other-cells">Previous section</a>
+    <button type="button" class="btn" data-read-section="chapter-3-multiply-and-divide-before-you-add-and" data-lesson="5">Mark this section as read</button>
+    <a class="btn" href="#section-worked-example-1-four-tiny-formulas-on-the-pract" data-read-section="chapter-3-multiply-and-divide-before-you-add-and" data-lesson="5">Next section</a>
   </p>
-  <p class="meta" data-section-status="excel-basics-canada:5:save">Not read yet.</p>
+  <p class="meta" data-section-status="excel-basics-canada:5:chapter-3-multiply-and-divide-before-you-add-and">Not read yet.</p>
 </section>
-<section class="lesson-section longform reading" id="section-print">
-  <h2>Print or preview</h2>
-  <p class="meta">About 8 minutes to read, plus a short practice.</p>
+<section class="lesson-section longform reading" id="section-worked-example-1-four-tiny-formulas-on-the-pract">
+  <h2>Worked example 1. Four tiny formulas on the Practice sheet</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <div class="block" data-block="prose"><p><strong>To print</strong> (Microsoft):</p>
-<ol>
-<li>Click <strong>File</strong>, then <strong>Print</strong>, or press <strong>Ctrl+P</strong>.</li>
-<li>Preview the pages with the Next Page and Previous Page arrows.</li>
-<li>If the layout looks wrong, you can change margins or page breaks.</li>
-<li>Click <strong>Print</strong>.</li>
-</ol>
-<p>Preview first so you do not waste paper. If you are on a shared learning-centre printer, ask staff which printer to pick.</p>
-<p>When you finish, close the file. You can open it later from File Explorer or from <strong>File &gt; Open</strong> in Excel.</p></div>
-<figure class="block block-figure" data-block="annotatedImage" id="excel-print-figure">
-  <div class="stage"><svg viewBox="0 0 320 140" role="img" width="100%"><rect width="320" height="140" fill="#fffdf8"/><rect x="16" y="16" width="200" height="108" fill="none" stroke="#123c2e" stroke-width="2"/><text x="28" y="48" fill="#1b1914" font-size="14">Preview</text><text x="28" y="76" fill="#1b1914" font-size="14">expense-list-practice</text><circle cx="250" cy="40" r="12" fill="#123c2e"/><text x="246" y="45" fill="#fff" font-size="12">1</text><text x="230" y="90" fill="#1b1914" font-size="12">Print</text></svg></div>
-  <p class="caption">A practice print preview named expense-list-practice.</p>
-  <figcaption><ol class="callouts"><li><span class="badge">1</span> Preview before you print.</li></ol></figcaption>
-</figure>
-<section class="block" data-block="order" data-order="excel-save-print-order" id="excel-save-print-order">
-  <h3>Put these save-and-print steps in order.</h3>
-  <ol data-order-list><li class="order-row" data-order-item="print"><span>Print after you have checked the preview</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li><li class="order-row" data-order-item="preview"><span>Look at the preview</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li><li class="order-row" data-order-item="save"><span>Save the workbook with a clear name</span> <button type="button" class="btn btn-secondary" data-move="up">Move up</button> <button type="button" class="btn btn-secondary" data-move="down">Move down</button></li></ol>
-  <p class="actions"><button type="button" class="btn" data-order-check>Check the order</button></p>
-  <p class="feedback" role="status" hidden></p>
-  <script type="application/json" class="order-key">{"correct":["save","preview","print"],"pass":"Save first so you do not print an older version."}</script>
-</section>
-<section class="block" data-block="branch" data-branch="excel-print-unsaved" data-start="n1" id="excel-print-unsaved"><div data-branch-node="n1" hidden><p>You have not saved. You want a paper copy. What do you do first?</p><div class="actions"><button type="button" class="btn branch-choice" data-next="n2">Print now</button><button type="button" class="btn branch-choice" data-next="n3">Save, then preview</button></div></div><div data-branch-node="n2" hidden><p>You might print an older copy, or lose the new numbers if the program closes. Go back and save first.</p><div class="actions"><button type="button" class="btn branch-choice" data-next="n1">Try another choice</button></div></div><div data-branch-node="n3" hidden><p>Save first, look at the preview, then print. This practice screen is not your printer.</p><div class="actions"></div></div><p class="actions"><button type="button" class="btn btn-secondary" data-branch-back>Back</button></p></section>
+  <aside class="block block-example" data-block="example">
+  <h3>Worked example 1. Four tiny formulas on the Practice sheet</h3>
+  <p class="block-label">Problem</p>
+  <p></p>
+  <p class="block-label">Steps</p>
+  <ol></ol>
+  <p class="block-label">Result</p>
+  <p></p>
+</aside>
+<div class="block" data-block="prose"><p>On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:</p>
+<ul><li><code>=2+4</code> — the cell should show 6</li><li><code>=4-2</code> — the cell should show 2</li><li><code>=2*4</code> — the cell should show 8</li><li><code>=4/2</code> — the cell should show 2</li></ul>
+<p>These match Microsoft's starter set. If a cell shows the characters <code>=2+4</code> instead of 6, the equal sign may be missing or the cell may be formatted as text. Click it, type the formula again starting with <code>=</code>, and press Enter.</p></div>
   <p class="actions">
-    <a class="btn btn-secondary" href="#section-save">Previous section</a>
-    <button type="button" class="btn" data-read-section="print" data-lesson="5">Mark this section as read</button>
+    <a class="btn btn-secondary" href="#section-chapter-3-multiply-and-divide-before-you-add-and">Previous section</a>
+    <button type="button" class="btn" data-read-section="worked-example-1-four-tiny-formulas-on-the-pract" data-lesson="5">Mark this section as read</button>
+    <a class="btn" href="#section-worked-example-2-add-three-days-then-test-5-2-3" data-read-section="worked-example-1-four-tiny-formulas-on-the-pract" data-lesson="5">Next section</a>
+  </p>
+  <p class="meta" data-section-status="excel-basics-canada:5:worked-example-1-four-tiny-formulas-on-the-pract">Not read yet.</p>
+</section>
+<section class="lesson-section longform reading" id="section-worked-example-2-add-three-days-then-test-5-2-3">
+  <h2>Worked example 2. Add three days, then test =5+2*3</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
+  <aside class="block block-example" data-block="example">
+  <h3>Worked example 2. Add three days, then test =5+2*3</h3>
+  <p class="block-label">Problem</p>
+  <p></p>
+  <p class="block-label">Steps</p>
+  <ol></ol>
+  <p class="block-label">Result</p>
+  <p></p>
+</aside>
+<div class="block" data-block="prose"><p>On the Hours sheet, in E2 enter <code>=B2+B3+B4</code>. With the sample data, the result is 17.5. Change B3 from 4 to 5 temporarily: E2 should become 18.5. Then put B3 back to 4 so the sample file stays correct.</p>
+<p>On the Practice sheet, in a spare cell type <code>=5+2*3</code> and press Enter. Confirm that the result is 11. That single check is the reminder: multiplication happens before addition.</p></div>
+  <p class="actions">
+    <a class="btn btn-secondary" href="#section-worked-example-1-four-tiny-formulas-on-the-pract">Previous section</a>
+    <button type="button" class="btn" data-read-section="worked-example-2-add-three-days-then-test-5-2-3" data-lesson="5">Mark this section as read</button>
+    <a class="btn" href="#section-try-it" data-read-section="worked-example-2-add-three-days-then-test-5-2-3" data-lesson="5">Next section</a>
+  </p>
+  <p class="meta" data-section-status="excel-basics-canada:5:worked-example-2-add-three-days-then-test-5-2-3">Not read yet.</p>
+</section>
+<section class="lesson-section longform reading" id="section-try-it">
+  <h2>Try it</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
+  <div class="block" data-block="prose"><ol><li>On the Practice sheet, type <code>=2+4</code> and confirm you see 6.</li><li>On the Hours sheet, in E2 type <code>=B2+B3+B4</code> (by typing or by clicking the cells) and confirm 17.5.</li><li>In another Practice cell, type <code>=5+2*3</code> and confirm 11.</li><li>Click each formula cell and read the formula bar so you see the instruction, not only the result.</li></ol></div>
+  <p class="actions">
+    <a class="btn btn-secondary" href="#section-worked-example-2-add-three-days-then-test-5-2-3">Previous section</a>
+    <button type="button" class="btn" data-read-section="try-it" data-lesson="5">Mark this section as read</button>
+    <a class="btn" href="#section-optional-discussion-council-study-group" data-read-section="try-it" data-lesson="5">Next section</a>
+  </p>
+  <p class="meta" data-section-status="excel-basics-canada:5:try-it">Not read yet.</p>
+</section>
+<section class="lesson-section longform reading" id="section-optional-discussion-council-study-group">
+  <h2>Optional discussion (council study group)</h2>
+  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
+  <div class="block" data-block="prose"><p>When would you rather click cells to build a formula than type addresses such as B2? When might typing the address be easier?</p></div>
+<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l5-sheet"><h2>Simple formulas — take-home steps</h2><ul><li>A simple formula starts with =</li><li>Add with +, subtract with -, multiply with *, divide with /</li><li>You can tap cells instead of typing their addresses</li><li>Multiplication and division happen before addition and subtraction</li><li>Microsoft’s example =5+2*3 gives 11, not 21</li><li>Read the formula bar to see the instruction, not only the result</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
+  <p class="actions">
+    <a class="btn btn-secondary" href="#section-try-it">Previous section</a>
+    <button type="button" class="btn" data-read-section="optional-discussion-council-study-group" data-lesson="5">Mark this section as read</button>
     
   </p>
-  <p class="meta" data-section-status="excel-basics-canada:5:print">Not read yet.</p>
+  <p class="meta" data-section-status="excel-basics-canada:5:optional-discussion-council-study-group">Not read yet.</p>
 </section>
-<h2>Practice files</h2>
-<p>Download a file and open it in Excel. A solved file is a sample to compare with your work. It is not a mark.</p>
-<ul class="file-list"><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-5-starter.csv" download>Starter file: lesson-5-starter.csv</a> <span class="meta">CSV · 40 bytes</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-5-starter.xlsx" download>Starter file: lesson-5-starter.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li><li><a class="btn" href="../../../practice/excel-basics-canada/lesson-5-solved.xlsx" download>Solved sample: lesson-5-solved.xlsx</a> <span class="meta">Excel workbook · 2.5 KB</span></li></ul>
-<section class="block block-assignment" data-block="assignment" data-block-id="lesson-5-task" id="lesson-5-task">
-  <h2>Practice: Save and print your workbook</h2>
+
+<section class="block block-assignment" data-block="assignment" data-block-id="self-check-5" id="self-check-5">
+  <h2>Self-check</h2>
   <p class="block-prompt">Try this before you open the sample answer.</p>
-  <div class="block-body"><p>Open the starter practice file for this lesson. Follow the steps in the sections above. Then mark this practice done.</p></div>
-  <p class="actions"><button type="button" class="btn" data-assignment-done="lesson-5-task">I tried this</button></p>
-  <p class="block-status" data-assignment-status="lesson-5-task">Not marked done yet.</p>
+  <div class="block-body"><ol><li>What character must start every Excel formula?</li><li>Why is <code>=B2+B3+B4</code> safer than <code>=6+4+7.5</code> for the Hours sheet?</li><li>What is the result of <code>=5+2*3</code>, and why is it not 21?</li></ol></div>
+  <p class="actions"><button type="button" class="btn" data-assignment-done="self-check-5">I tried this</button></p>
+  <p class="block-status" data-assignment-status="self-check-5">Not marked done yet.</p>
   <aside class="block block-check" data-block="check">
   <p class="block-prompt">The sample answer stays closed until you open it.</p>
   <details>
     <summary>Show a sample answer</summary>
-    <div class="block-body"><p>Check your sheet against the solved practice file and against the steps in this lesson. The solved file is a sample, not a mark.</p></div>
+    <div class="block-body"><ol><li>The equal sign <code>=</code>.</li><li>It points at the cells that hold the hours. If a day's hours change, the formula can update. A formula full of typed-in numbers will not notice the change.</li><li>The result is 11, because Excel multiplies 2 × 3 first (6) and then adds 5. Microsoft uses this example to show that multiplication and division happen before addition and subtraction.</li></ol></div>
   </details>
 </aside>
 </section>
-<aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l5-sheet"><h2>Save and print your workbook — take-home steps</h2><ul><li>Ctrl+S saves.</li><li>Ctrl+P opens print.</li><li>Look at the preview first.</li><li>On a shared printer, check the preview before you print.</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
+
 <h2>Official sources</h2>
 <p>These links open official sites in a new tab.</p>
 <ul class="sources">
-<li><a href="https://support.microsoft.com/en-us/excel/basic-tasks-in-excel" target="_blank" rel="noopener noreferrer">Basic tasks in Excel <span>(opens in a new tab)</span></a></li>
-<li><a href="https://support.microsoft.com/en-us/excel/save-your-workbook" target="_blank" rel="noopener noreferrer">Save your workbook <span>(opens in a new tab)</span></a></li>
+<li><a href="https://support.microsoft.com/en-us/excel/create-a-simple-formula-in-excel" target="_blank" rel="noopener noreferrer">Microsoft Support, *Create a simple formula in Excel* <span>(opens in a new tab)</span></a></li>
+<li><a href="https://support.microsoft.com/en-us/excel/basic-tasks-in-excel" target="_blank" rel="noopener noreferrer">Microsoft Support, *Basic tasks in Excel* <span>(opens in a new tab)</span></a></li>
+<li><a href="https://support.microsoft.com/en-us/excel/get-started/overview-of-formulas-in-excel" target="_blank" rel="noopener noreferrer">Microsoft Support, *Overview of formulas in Excel* <span>(opens in a new tab)</span></a></li>
 </ul>
 <div class="actions">
   <a class="btn" href="quiz/">Take the quiz</a>
@@ -154,7 +216,7 @@
   <footer class="site">
     <div class="wrap">
       <p class="disclaimer">This course is general information for adult learners in Canada. It is not legal, tax, financial, medical, driving-instruction, or immigration advice. Always check official pages on Canada.ca, Alberta.ca, or your council staff for your situation.</p>
-      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="../../../privacy/">Privacy</a></p>
+      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A product of Range Road Technologies.</a> · <a href="../../../privacy/">Privacy</a></p>
     </div>
   </footer>
   <script src="../../../assets/brand.js"></script>

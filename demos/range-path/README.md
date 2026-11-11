@@ -71,7 +71,7 @@ An HTML comment can also carry JSON: `<!-- player-extras { ... } -->`. Lesson ob
 3. Add a `.block-your-type` rule in `assets/site.css` using the existing colour tokens.
 4. Run `node tools/build-pages.mjs`. An unknown type is skipped and the build prints a warning.
 
-Registered block types: `prose`, `example`, `workedExample`, `annotatedImage`, `simulation`, `check`, `order`, `branch`, `download`, `assignment`, and `cheatSheet`. A progress map and milestone badges are course-level, not a section block. Lessons 6–10 on Excel Basics are marked coming soon and have no pages.
+Registered block types: `prose`, `example`, `workedExample`, `annotatedImage`, `simulation`, `check`, `order`, `branch`, `download`, `assignment`, and `cheatSheet`. A progress map and milestone badges are course-level, not a section block. Excel Basics and Everyday Computers each have 10 lessons and a 30-question final. The pass mark is 70% (21 of 30) with two attempts. That is the finish line for those two courses. The older “10–12 questions” note (production standard B14) does not apply to them. Word Basics is still the shorter course.
 
 ## Data model
 
