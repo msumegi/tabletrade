@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta name="application-name" content="LearnHere">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#123c2e">
+  <meta name="description" content="Check a LearnHere certificate ID against the name, course, and date printed on it.">
+  <title>Check a certificate · LearnHere</title>
+  <link rel="canonical" href="https://rangeroadtech.com/demos/range-path/verify/">
+  <meta property="og:site_name" content="LearnHere">
+  <meta property="og:title" content="Check a certificate · LearnHere">
+  <meta property="og:description" content="Check a LearnHere certificate ID against the name, course, and date printed on it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rangeroadtech.com/demos/range-path/verify/">
+  <meta property="og:image" content="https://rangeroadtech.com/demos/range-path/og.jpg">
+  <meta property="og:image:alt" content="LearnHere — a grain terminal on the prairie in Edson, Alberta">
+  <meta property="og:locale" content="en_CA">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="../apple-touch.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="site-bar">
+      <a class="brand" href="../">
+        <svg class="mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#123c2e"/><path d="M6.5 23.5c4-8 7.2-8.4 10-3.6 2.2 3.8 4.6 3.2 9.2-8.4" fill="none" stroke="#f4efe4" stroke-width="2.4" stroke-linecap="round"/><circle cx="25.2" cy="11.2" r="2.1" fill="#e4c27a"/></svg>
+        <span class="brand-text"><span class="brand-name">LearnHere</span><span class="brand-sub">Practical skills for rural adult learners</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    </div>
+    <nav id="site-nav" class="is-collapsed" aria-label="Main">
+      <div class="site-bar"><ul><li><a href="../">Home</a></li><li><a href="../courses/">Courses</a></li><li><a href="../certificate/">Certificate</a></li></ul></div>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="wrap">
+      <p class="crumbs"><a href="../">Home</a><span>Check a certificate</span></p>
+      <h1>Check a certificate</h1>
+      <p>Enter the name, course, and date printed on the certificate, and the ID next to them. This page recomputes that ID. It checks those details only. It does not look up a central registry.</p>
+      <form id="verify-form" class="form" action="#" onsubmit="return false;">
+        <label for="verify-name">Name on the certificate</label>
+        <input id="verify-name" name="name" type="text" autocomplete="name" required>
+        <label for="verify-course">Course title</label>
+        <input id="verify-course" name="course" type="text" required>
+        <label for="verify-date">Date (10 November 2026)</label>
+        <input id="verify-date" name="date" type="text" required>
+        <label for="verify-id">Certificate ID</label>
+        <input id="verify-id" name="id" type="text" required>
+        <p class="actions"><button type="submit" class="btn">Check these details</button></p>
+        <p id="verify-result" class="feedback" role="status" hidden></p>
+      </form>
+    </div>
+  </main>
+  <footer class="site">
+    <div class="wrap">
+      <p class="disclaimer">Demo. Sample data. Not accredited.</p>
+      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A product of Range Road Technologies.</a> · <a href="../privacy/">Privacy</a></p>
+    </div>
+  </footer>
+  <script src="../assets/site.js"></script>
+  <script>
+    (function () {
+      var months = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" };
+      function toIso(text) {
+        var raw = String(text || "").trim();
+        var iso = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+        if (iso) return iso[0];
+        var long = raw.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+        if (!long || !months[long[2].toLowerCase()]) return "";
+        var day = String(long[1]).padStart(2, "0");
+        return long[3] + "-" + months[long[2].toLowerCase()] + "-" + day;
+      }
+      var form = document.getElementById("verify-form");
+      var live = document.getElementById("verify-result");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var iso = toIso(document.getElementById("verify-date").value);
+        live.hidden = false;
+        if (!iso || typeof window.learnHereCertificateId !== "function") {
+          live.className = "feedback is-bad";
+          live.textContent = "Enter the date as 10 November 2026. This check could not read that date.";
+          return;
+        }
+        var expected = window.learnHereCertificateId(
+          document.getElementById("verify-name").value,
+          document.getElementById("verify-course").value,
+          iso
+        );
+        var given = document.getElementById("verify-id").value.trim().toUpperCase();
+        var ok = given === expected;
+        live.className = ok ? "feedback is-good" : "feedback is-bad";
+        live.textContent = ok
+          ? "Matches. The ID agrees with this name, course, and date. This does not confirm a record in a central registry."
+          : "Doesn't match. The ID does not agree with this name, course, and date.";
+      });
+    })();
+  </script>
+</body>
+</html>

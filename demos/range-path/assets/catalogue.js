@@ -448,7 +448,8 @@ window.LEARNHERE = {
             "assignment": "phones-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -902,7 +903,8 @@ window.LEARNHERE = {
             "assignment": "excel-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -1356,7 +1358,8 @@ window.LEARNHERE = {
             "assignment": "word-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -1810,7 +1813,8 @@ window.LEARNHERE = {
             "assignment": "jobsearch-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 20–24 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
@@ -2178,7 +2182,8 @@ window.LEARNHERE = {
             "assignment": "outlook-capstone",
             "quiz": true
           }
-        ]
+        ],
+        "hoursLabel": "About 16 hours (estimate, including practice and the exam). Each lesson’s reading time is shorter; the rest is practice."
       }
     },
     {
