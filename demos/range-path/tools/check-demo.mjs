@@ -141,6 +141,7 @@ registry.courses.forEach((entry) => {
   const linked = home.includes("courses/" + entry.slug + "/");
   if (entry.extra && linked) errors.push("Home features extra course " + entry.slug);
   if (!entry.extra && entry.featured !== false && !linked) errors.push("Home is missing " + entry.slug);
+  if (entry.featured === false && linked) errors.push("Home lists " + entry.slug + " outside the five featured courses");
 });
 
 if (!fs.existsSync(path.join(root, "assets", "catalogue.js"))) errors.push("Missing assets/catalogue.js");

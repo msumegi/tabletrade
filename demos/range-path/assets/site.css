@@ -89,6 +89,9 @@ html { scroll-padding-top: calc(var(--header) + 0.75rem); }
 h1, h2, h3, .q, .q legend, .lesson-section, .practice-window, .formula-bar, [data-exam-q], [data-exam-review] {
   scroll-margin-top: calc(var(--header) + 0.75rem);
 }
+.block-sim {
+  scroll-margin-top: calc(var(--header) + 2.75rem);
+}
 
 p { margin: 0 0 1rem; }
 
