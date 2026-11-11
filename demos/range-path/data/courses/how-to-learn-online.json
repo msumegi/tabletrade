@@ -25,14 +25,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Work, learning, and life"
+              "text": "Painting only"
             },
             {
               "id": "B",
-              "text": "Painting only"
+              "text": "Work, learning, and life"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -110,14 +110,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Defining tasks and choosing an order that fits your situation"
+              "text": "Waiting until the last night and hoping for the best"
             },
             {
               "id": "B",
-              "text": "Waiting until the last night and hoping for the best"
+              "text": "Defining tasks and choosing an order that fits your situation"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -140,14 +140,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Flexible enough to change when unexpected events happen"
+              "text": "Impossible to change, even in an emergency"
             },
             {
               "id": "B",
-              "text": "Impossible to change, even in an emergency"
+              "text": "Flexible enough to change when unexpected events happen"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -155,14 +155,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Alis tells adults going back to learning that it helps to let go of the need to be perfect."
         }
       ]
@@ -191,14 +191,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "More effective than long marathon sessions"
+              "text": "A waste of time"
             },
             {
               "id": "B",
-              "text": "A waste of time"
+              "text": "More effective than long marathon sessions"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -236,14 +236,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -279,14 +279,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Protecting personal information and being careful with risky messages"
+              "text": "Sharing your password with anyone who asks"
             },
             {
               "id": "B",
-              "text": "Sharing your password with anyone who asks"
+              "text": "Protecting personal information and being careful with risky messages"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -349,14 +349,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Seeking help from others if needed"
+              "text": "Never asking a question"
             },
             {
               "id": "B",
-              "text": "Never asking a question"
+              "text": "Seeking help from others if needed"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -429,12 +429,12 @@
         "prompt": "Adaptability includes planning, staying focused, and persisting through setbacks.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -444,15 +444,15 @@
         "prompt": "Alis says one long marathon study session is better than shorter, regular periods.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
       },
       {
@@ -474,12 +474,12 @@
         "prompt": "Safe digital practice includes protecting passwords and personal information.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -489,12 +489,12 @@
         "prompt": "Asking for help when you are stuck is part of official problem-solving skill.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -504,15 +504,15 @@
         "prompt": "This course is an accredited study-skills diploma.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Set a realistic goal, study in short regular periods, use safe digital habits, and ask your council or the official Alberta contacts if you need more learning support."
       }
     ]

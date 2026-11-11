@@ -25,14 +25,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Recording every business transaction in a financial record-keeping system"
+              "text": "Designing a company logo"
             },
             {
               "id": "B",
-              "text": "Designing a company logo"
+              "text": "Recording every business transaction in a financial record-keeping system"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -55,14 +55,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "One part of the larger activity of accounting"
+              "text": "The same as a court judgement"
             },
             {
               "id": "B",
-              "text": "The same as a court judgement"
+              "text": "One part of the larger activity of accounting"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -70,14 +70,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -113,14 +113,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "No — keep them in case the CRA asks to see them later"
+              "text": "Yes — send every receipt in the same envelope as the return"
             },
             {
               "id": "B",
-              "text": "Yes — send every receipt in the same envelope as the return"
+              "text": "No — keep them in case the CRA asks to see them later"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -128,14 +128,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The date, amount, and source of the income"
+              "text": "Only the seller’s favourite colour"
             },
             {
               "id": "B",
-              "text": "Only the seller’s favourite colour"
+              "text": "The date, amount, and source of the income"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -143,14 +143,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "The CRA says it does not issue or suggest one official set of books."
         }
       ]
@@ -186,14 +186,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The vendor is a GST/HST registrant and the purchase is $100 or more before tax"
+              "text": "You bought a coffee for $2 from a neighbour’s kitchen"
             },
             {
               "id": "B",
-              "text": "You bought a coffee for $2 from a neighbour’s kitchen"
+              "text": "The vendor is a GST/HST registrant and the purchase is $100 or more before tax"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -263,14 +263,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Get written permission and wait for approval"
+              "text": "Recycle them the same afternoon"
             },
             {
               "id": "B",
-              "text": "Recycle them the same afternoon"
+              "text": "Get written permission and wait for approval"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -329,14 +329,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -344,14 +344,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sales and purchase invoices and related business records"
+              "text": "Only a drawing of your shop"
             },
             {
               "id": "B",
-              "text": "Only a drawing of your shop"
+              "text": "Sales and purchase invoices and related business records"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -359,14 +359,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Must still be kept in case the CRA asks to see them"
+              "text": "May be thrown out the same morning"
             },
             {
               "id": "B",
-              "text": "May be thrown out the same morning"
+              "text": "Must still be kept in case the CRA asks to see them"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -394,12 +394,12 @@
         "prompt": "Bookkeeping means recording day-to-day business transactions.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -409,12 +409,12 @@
         "prompt": "The CRA says to keep daily income and expense records.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -424,15 +424,15 @@
         "prompt": "You should mail your record books to the CRA with every tax return.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
       },
       {
@@ -469,30 +469,30 @@
         "prompt": "This course tells you whether you must register for GST/HST and how much tax you owe.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
       },
       {
         "prompt": "This course is a bookkeeping licence and personal tax advice.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Keep clear proof, store it for the period the CRA describes, and get professional help for filing or registration questions."
       }
     ]

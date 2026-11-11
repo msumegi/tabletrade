@@ -62,15 +62,15 @@
         "choices": [
           {
             "id": "A",
-            "text": "A promised interview from this course"
-          },
-          {
-            "id": "B",
             "text": "An immigration form"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Applying to every posting in every city, including shifts you cannot work"
+          },
+          {
+            "id": "C",
+            "text": "A promised interview from this course"
           },
           {
             "id": "D",
@@ -91,11 +91,11 @@
           },
           {
             "id": "B",
-            "text": "Hide from every official website"
+            "text": "Keep entirely in your head, with no notes"
           },
           {
             "id": "C",
-            "text": "Keep entirely in your head, with no notes"
+            "text": "Hide from every official website"
           },
           {
             "id": "D",
@@ -112,7 +112,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "An Employment Insurance office"
+            "text": "A private payroll company"
           },
           {
             "id": "B",
@@ -120,11 +120,11 @@
           },
           {
             "id": "C",
-            "text": "A store that sells interviews"
+            "text": "An Employment Insurance office"
           },
           {
             "id": "D",
-            "text": "A private payroll company"
+            "text": "A store that sells interviews"
           }
         ],
         "answer": "B",
@@ -137,22 +137,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Whether you already have the job"
+            "text": "The interviewer’s favourite colour"
           },
           {
             "id": "B",
-            "text": "Hours of work, benefits, and salary"
+            "text": "Whether you already have the job"
           },
           {
             "id": "C",
-            "text": "Your neighbour’s private phone number"
+            "text": "Hours of work, benefits, and salary"
           },
           {
             "id": "D",
-            "text": "The interviewer’s favourite colour"
+            "text": "Your neighbour’s private phone number"
           }
         ],
-        "answer": "B",
+        "answer": "C",
         "explain": "Hours, benefits, salary.",
         "topic": "Lesson 2 — Start with official Canadian job boards",
         "review": "../lesson-2/#section-chapter-1-start-with-official-canadian-job-board"
@@ -162,22 +162,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Links never change"
-          },
-          {
-            "id": "B",
             "text": "The online posting may be taken down before interviews start"
           },
           {
+            "id": "B",
+            "text": "Links never change"
+          },
+          {
             "id": "C",
-            "text": "A copy replaces a resume"
+            "text": "Employers forbid notes"
           },
           {
             "id": "D",
-            "text": "Employers forbid notes"
+            "text": "A copy replaces a resume"
           }
         ],
-        "answer": "B",
+        "answer": "A",
         "explain": "Postings can disappear.",
         "topic": "Lesson 2 — Start with official Canadian job boards",
         "review": "../lesson-2/#section-chapter-1-start-with-official-canadian-job-board"
@@ -187,7 +187,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Sending your SIN to this course"
+            "text": "Paying a finder fee"
           },
           {
             "id": "B",
@@ -195,7 +195,7 @@
           },
           {
             "id": "C",
-            "text": "Paying a finder fee"
+            "text": "Sending your SIN to this course"
           },
           {
             "id": "D",
@@ -212,11 +212,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Means the posting is fake"
+            "text": "Is the same as a required driver’s licence"
           },
           {
             "id": "B",
-            "text": "Is the same as a required driver’s licence"
+            "text": "Must be invented if you do not have it"
           },
           {
             "id": "C",
@@ -224,7 +224,7 @@
           },
           {
             "id": "D",
-            "text": "Must be invented if you do not have it"
+            "text": "Means the posting is fake"
           }
         ],
         "answer": "C",
@@ -262,22 +262,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Without any duties"
-          },
-          {
-            "id": "B",
             "text": "Only if the work was unpaid"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "With the latest job first"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "In a random order"
+          },
+          {
+            "id": "D",
+            "text": "Without any duties"
           }
         ],
-        "answer": "C",
+        "answer": "B",
         "explain": "Latest job first.",
         "topic": "Lesson 3 — A posting is a set of instructions, not a poster",
         "review": "../lesson-3/#section-chapter-1-a-posting-is-a-set-of-instructions-not"
@@ -316,7 +316,7 @@
           },
           {
             "id": "B",
-            "text": "Written without your name"
+            "text": "At least 20 pages"
           },
           {
             "id": "C",
@@ -324,7 +324,7 @@
           },
           {
             "id": "D",
-            "text": "At least 20 pages"
+            "text": "Written without your name"
           }
         ],
         "answer": "A",
@@ -337,22 +337,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Some screening software cannot read them well"
-          },
-          {
-            "id": "B",
             "text": "Employers never read point form"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Word cannot save a simple list"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Tables are required by Job Bank"
+          },
+          {
+            "id": "D",
+            "text": "Some screening software cannot read them well"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Screening software / ATS.",
         "topic": "Lesson 4 — A master list is the long version you keep for yourself",
         "review": "../lesson-4/#section-chapter-1-a-master-list-is-the-long-version-you-"
@@ -366,7 +366,7 @@
           },
           {
             "id": "B",
-            "text": "Your password file"
+            "text": "A Word .doc or .docx file"
           },
           {
             "id": "C",
@@ -374,10 +374,10 @@
           },
           {
             "id": "D",
-            "text": "A Word .doc or .docx file"
+            "text": "Your password file"
           }
         ],
-        "answer": "D",
+        "answer": "B",
         "explain": "Word file if allowed.",
         "topic": "Lesson 5 — Tailor the page to one posting",
         "review": "../lesson-5/#section-chapter-1-tailor-the-page-to-one-posting"
@@ -387,11 +387,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "A full copy of the master resume"
+            "text": "The same unused paragraph for every employer"
           },
           {
             "id": "B",
-            "text": "The same unused paragraph for every employer"
+            "text": "A full copy of the master resume"
           },
           {
             "id": "C",
@@ -412,22 +412,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Something you should buy from a guaranteed-job site"
+            "text": "A legal contract"
           },
           {
             "id": "B",
-            "text": "Not always required, but important when the employer asks for one"
-          },
-          {
-            "id": "C",
             "text": "A replacement for researching the job"
           },
           {
+            "id": "C",
+            "text": "Something you should buy from a guaranteed-job site"
+          },
+          {
             "id": "D",
-            "text": "A legal contract"
+            "text": "Not always required, but important when the employer asks for one"
           }
         ],
-        "answer": "B",
+        "answer": "D",
         "explain": "Not always required.",
         "topic": "Lesson 5 — Tailor the page to one posting",
         "review": "../lesson-5/#section-chapter-1-tailor-the-page-to-one-posting"
@@ -462,11 +462,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "You are banned from using email"
+            "text": "You can opt out of some extra services and still sign up"
           },
           {
             "id": "B",
-            "text": "You can opt out of some extra services and still sign up"
+            "text": "You may not read any job title"
           },
           {
             "id": "C",
@@ -474,10 +474,10 @@
           },
           {
             "id": "D",
-            "text": "You may not read any job title"
+            "text": "You are banned from using email"
           }
         ],
-        "answer": "B",
+        "answer": "A",
         "explain": "Opt out of extras.",
         "topic": "Lesson 6 — A cover letter is an introduction, not a second resume",
         "review": "../lesson-6/#section-chapter-1-a-cover-letter-is-an-introduction-not-"
@@ -487,11 +487,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Emails the SIN to every employer"
+            "text": "Stores it in this course"
           },
           {
             "id": "B",
-            "text": "Stores it in this course"
+            "text": "Posts the SIN on a public board"
           },
           {
             "id": "C",
@@ -499,7 +499,7 @@
           },
           {
             "id": "D",
-            "text": "Posts the SIN on a public board"
+            "text": "Emails the SIN to every employer"
           }
         ],
         "answer": "C",
@@ -512,22 +512,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "A reason to stop and ask council staff"
+            "text": "Required by alis"
           },
           {
             "id": "B",
-            "text": "Something this course tells you to do"
+            "text": "A reason to stop and ask council staff"
           },
           {
             "id": "C",
-            "text": "A normal Job Bank apply step"
+            "text": "Something this course tells you to do"
           },
           {
             "id": "D",
-            "text": "Required by alis"
+            "text": "A normal Job Bank apply step"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Stop; ask staff.",
         "topic": "Lesson 7 — Follow the instructions on the posting",
         "review": "../lesson-7/#section-chapter-1-follow-the-instructions-on-the-posting"
@@ -562,15 +562,15 @@
         "choices": [
           {
             "id": "A",
-            "text": "A guaranteed offer"
-          },
-          {
-            "id": "B",
             "text": "A cover-letter fee"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "A SIN"
+          },
+          {
+            "id": "C",
+            "text": "A guaranteed offer"
           },
           {
             "id": "D",
@@ -587,22 +587,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Prepare, practise, present yourself well, and participate"
-          },
-          {
-            "id": "B",
-            "text": "Arrive late, then invent titles"
-          },
-          {
-            "id": "C",
             "text": "Skip notes, then argue"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Negotiate pay first, then research"
+          },
+          {
+            "id": "C",
+            "text": "Prepare, practise, present yourself well, and participate"
+          },
+          {
+            "id": "D",
+            "text": "Arrive late, then invent titles"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Alis’s four habits.",
         "topic": "Lesson 8 — An interview is a meeting, not a verdict",
         "review": "../lesson-8/#section-chapter-1-an-interview-is-a-meeting-not-a-verdic"
@@ -612,22 +612,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Argue that they must hire you"
-          },
-          {
-            "id": "B",
             "text": "Write notes and send a short, specific thank-you"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Assume you have the job"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Never contact the employer again"
+          },
+          {
+            "id": "D",
+            "text": "Argue that they must hire you"
           }
         ],
-        "answer": "B",
+        "answer": "A",
         "explain": "Notes plus thank-you.",
         "topic": "Lesson 8 — An interview is a meeting, not a verdict",
         "review": "../lesson-8/#section-chapter-1-an-interview-is-a-meeting-not-a-verdic"
@@ -637,7 +637,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Must include your SIN"
+            "text": "Guarantees the job"
           },
           {
             "id": "B",
@@ -649,7 +649,7 @@
           },
           {
             "id": "D",
-            "text": "Guarantees the job"
+            "text": "Must include your SIN"
           }
         ],
         "answer": "B",
@@ -687,11 +687,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "The same as a thank-you note"
+            "text": "A guarantee from this course"
           },
           {
             "id": "B",
-            "text": "Only the first number you hear"
+            "text": "The same as a thank-you note"
           },
           {
             "id": "C",
@@ -699,7 +699,7 @@
           },
           {
             "id": "D",
-            "text": "A guarantee from this course"
+            "text": "Only the first number you hear"
           }
         ],
         "answer": "C",
@@ -712,15 +712,15 @@
         "choices": [
           {
             "id": "A",
-            "text": "A reason to send your password"
+            "text": "Immigration advice"
           },
           {
             "id": "B",
-            "text": "Proof you must accept that day"
+            "text": "A reason to send your password"
           },
           {
             "id": "C",
-            "text": "Immigration advice"
+            "text": "Proof you must accept that day"
           },
           {
             "id": "D",
@@ -737,22 +737,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Your bank’s number"
+            "text": "A private number this course invented"
           },
           {
             "id": "B",
-            "text": "911 only"
-          },
-          {
-            "id": "C",
             "text": "1-877-644-9992"
           },
           {
+            "id": "C",
+            "text": "Your bank’s number"
+          },
+          {
             "id": "D",
-            "text": "A private number this course invented"
+            "text": "911 only"
           }
         ],
-        "answer": "C",
+        "answer": "B",
         "explain": "Listed on alis this session.",
         "topic": "Lesson 10 — An offer is more than one pay number",
         "review": "../lesson-10/#section-chapter-1-an-offer-is-more-than-one-pay-number"
@@ -766,18 +766,18 @@
           },
           {
             "id": "B",
-            "text": "Is Employment Insurance advice"
-          },
-          {
-            "id": "C",
             "text": "Is an immigration application"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Gives general information and does not promise a job or give legal, immigration, or EI advice"
+          },
+          {
+            "id": "D",
+            "text": "Is Employment Insurance advice"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "General information only.",
         "topic": "Lesson 10 — An offer is more than one pay number",
         "review": "../lesson-10/#section-chapter-1-an-offer-is-more-than-one-pay-number"
@@ -1001,22 +1001,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A plan that fits the hours, travel, and kind of work you can take"
-            },
-            {
-              "id": "B",
-              "text": "A promised interview"
-            },
-            {
-              "id": "C",
               "text": "An immigration form from this course"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Applying to every posting in every city"
+            },
+            {
+              "id": "C",
+              "text": "A promised interview"
+            },
+            {
+              "id": "D",
+              "text": "A plan that fits the hours, travel, and kind of work you can take"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Know what you need before you search."
         },
         {
@@ -1028,15 +1028,15 @@
             },
             {
               "id": "B",
-              "text": "Hide from your adult learning council"
+              "text": "Keep entirely in your head, with no notes"
             },
             {
               "id": "C",
-              "text": "Do only after you are hired"
+              "text": "Hide from your adult learning council"
             },
             {
               "id": "D",
-              "text": "Keep entirely in your head, with no notes"
+              "text": "Do only after you are hired"
             }
           ],
           "answer": "A",
@@ -1051,18 +1051,18 @@
             },
             {
               "id": "B",
-              "text": "It replaces a resume"
+              "text": "Postings can disappear, and you need dates, copies, and next steps in one place"
             },
             {
               "id": "C",
-              "text": "Postings can disappear, and you need dates, copies, and next steps in one place"
+              "text": "It replaces a resume"
             },
             {
               "id": "D",
               "text": "It is a legal contract"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Dates, copies, and follow-up live on the list."
         },
         {
@@ -1070,22 +1070,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "No email at all"
-            },
-            {
-              "id": "B",
-              "text": "A personal email you check often, not a current workplace email"
-            },
-            {
-              "id": "C",
               "text": "A different invented address for every letter"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "A friend’s email so you never see replies"
+            },
+            {
+              "id": "C",
+              "text": "A personal email you check often, not a current workplace email"
+            },
+            {
+              "id": "D",
+              "text": "No email at all"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Personal email, not a current work email."
         },
         {
@@ -1093,7 +1093,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "A private fee-for-service hotline this course invented"
+              "text": "1-877-644-9992"
             },
             {
               "id": "B",
@@ -1101,14 +1101,14 @@
             },
             {
               "id": "C",
-              "text": "1-877-644-9992"
+              "text": "A private fee-for-service hotline this course invented"
             },
             {
               "id": "D",
               "text": "Your bank’s number"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Listed on the alis Look for Work page this session."
         },
         {
@@ -1120,18 +1120,18 @@
             },
             {
               "id": "B",
-              "text": "Gives general information and does not promise a job"
+              "text": "Is immigration advice"
             },
             {
               "id": "C",
-              "text": "Is immigration advice"
+              "text": "Gives general information and does not promise a job"
             },
             {
               "id": "D",
               "text": "Is Employment Insurance advice"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "General information only."
         },
         {
@@ -1139,7 +1139,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "A cover letter"
+              "text": "One specific shift at one employer"
             },
             {
               "id": "B",
@@ -1147,7 +1147,7 @@
             },
             {
               "id": "C",
-              "text": "One specific shift at one employer"
+              "text": "A cover letter"
             },
             {
               "id": "D",
@@ -1417,11 +1417,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "A private payroll service"
+              "text": "An immigration application"
             },
             {
               "id": "B",
-              "text": "A free Government of Canada website for searching jobs"
+              "text": "A private payroll service"
             },
             {
               "id": "C",
@@ -1429,10 +1429,10 @@
             },
             {
               "id": "D",
-              "text": "An immigration application"
+              "text": "A free Government of Canada website for searching jobs"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Free official job board."
         },
         {
@@ -1440,11 +1440,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "The interviewer’s favourite colour"
+              "text": "Whether you already have the job"
             },
             {
               "id": "B",
-              "text": "Whether you already have the job"
+              "text": "Your SIN"
             },
             {
               "id": "C",
@@ -1452,7 +1452,7 @@
             },
             {
               "id": "D",
-              "text": "Your SIN"
+              "text": "The interviewer’s favourite colour"
             }
           ],
           "answer": "C",
@@ -1467,15 +1467,15 @@
             },
             {
               "id": "B",
-              "text": "A guaranteed interview"
-            },
-            {
-              "id": "C",
               "text": "A type of cover letter"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "A fee you must pay Job Bank"
+            },
+            {
+              "id": "D",
+              "text": "A guaranteed interview"
             }
           ],
           "answer": "A",
@@ -1486,22 +1486,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The online posting may be taken down before interviews start"
+              "text": "Links never break"
             },
             {
               "id": "B",
-              "text": "Employers forbid notes"
+              "text": "The online posting may be taken down before interviews start"
             },
             {
               "id": "C",
-              "text": "Links never break"
+              "text": "Employers forbid notes"
             },
             {
               "id": "D",
               "text": "The copy replaces a resume"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Postings can disappear."
         },
         {
@@ -1509,22 +1509,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Someone else’s email"
+              "text": "Only a random string of numbers"
             },
             {
               "id": "B",
-              "text": "Your password"
-            },
-            {
-              "id": "C",
               "text": "A job title or skill and a place"
             },
             {
+              "id": "C",
+              "text": "Your password"
+            },
+            {
               "id": "D",
-              "text": "Only a random string of numbers"
+              "text": "Someone else’s email"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Title or skill, plus a place."
         },
         {
@@ -1532,22 +1532,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Paying for a guaranteed job"
-            },
-            {
-              "id": "B",
-              "text": "Attending job fairs, contacting recruiters, or using social media carefully"
-            },
-            {
-              "id": "C",
               "text": "Sharing your banking password"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Ignoring every official site"
+            },
+            {
+              "id": "C",
+              "text": "Attending job fairs, contacting recruiters, or using social media carefully"
+            },
+            {
+              "id": "D",
+              "text": "Paying for a guaranteed job"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Job Bank lists those extra paths."
         },
         {
@@ -1555,7 +1555,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Type your SIN into this course"
+              "text": "Invent extra buttons"
             },
             {
               "id": "B",
@@ -1563,7 +1563,7 @@
             },
             {
               "id": "C",
-              "text": "Invent extra buttons"
+              "text": "Type your SIN into this course"
             },
             {
               "id": "D",
@@ -1815,22 +1815,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sending your SIN to this course"
-            },
-            {
-              "id": "B",
-              "text": "Researching the company or job"
-            },
-            {
-              "id": "C",
               "text": "Skipping the posting"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Paying a finder fee"
+            },
+            {
+              "id": "C",
+              "text": "Researching the company or job"
+            },
+            {
+              "id": "D",
+              "text": "Sending your SIN to this course"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Research, then resume, then cover letter (Job Bank)."
         },
         {
@@ -1838,7 +1838,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "It is only decoration"
+              "text": "Employers usually say how they want to receive the resume"
             },
             {
               "id": "B",
@@ -1846,14 +1846,14 @@
             },
             {
               "id": "C",
-              "text": "Employers usually say how they want to receive the resume"
+              "text": "You may invent any method you like"
             },
             {
               "id": "D",
-              "text": "You may invent any method you like"
+              "text": "It is only decoration"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Follow their instructions."
         },
         {
@@ -1861,22 +1861,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "You should pay for guaranteed training from a pop-up"
+              "text": "The job is fake"
             },
             {
               "id": "B",
-              "text": "You must invent a certificate"
+              "text": "You should pay for guaranteed training from a pop-up"
             },
             {
               "id": "C",
-              "text": "It is nice to have; missing it is not automatically a reason to skip"
+              "text": "You must invent a certificate"
             },
             {
               "id": "D",
-              "text": "The job is fake"
+              "text": "It is nice to have; missing it is not automatically a reason to skip"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Asset vs required."
         },
         {
@@ -1884,11 +1884,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Not automatically give up"
+              "text": "Give up on every posting"
             },
             {
               "id": "B",
-              "text": "Give up on every posting"
+              "text": "Not automatically give up"
             },
             {
               "id": "C",
@@ -1899,7 +1899,7 @@
               "text": "Hide the posting from your master list"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Do not automatically give up (alis)."
         },
         {
@@ -1911,7 +1911,7 @@
             },
             {
               "id": "B",
-              "text": "You have volunteer examples instead of paid ones"
+              "text": "You would need to tailor a resume"
             },
             {
               "id": "C",
@@ -1919,7 +1919,7 @@
             },
             {
               "id": "D",
-              "text": "You would need to tailor a resume"
+              "text": "You have volunteer examples instead of paid ones"
             }
           ],
           "answer": "A",
@@ -1930,22 +1930,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A legal job offer"
-            },
-            {
-              "id": "B",
               "text": "An immigration form"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "A real hiring process"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "A fictional practice file we wrote"
+            },
+            {
+              "id": "D",
+              "text": "A legal job offer"
             }
           ],
-          "answer": "D",
+          "answer": "C",
           "explain": "Sample only."
         },
         {
@@ -1953,11 +1953,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Employers forbid it"
+              "text": "Copies replace interviews"
             },
             {
               "id": "B",
-              "text": "The live posting may be taken down before an interview"
+              "text": "Employers forbid it"
             },
             {
               "id": "C",
@@ -1965,10 +1965,10 @@
             },
             {
               "id": "D",
-              "text": "Copies replace interviews"
+              "text": "The live posting may be taken down before an interview"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Alis: postings can disappear."
         }
       ],
@@ -2135,22 +2135,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A full list you update and then tailor for each job"
+              "text": "A secret password employers share"
             },
             {
               "id": "B",
-              "text": "A SIN application"
-            },
-            {
-              "id": "C",
               "text": "A 20-page file you must send unchanged"
             },
             {
+              "id": "C",
+              "text": "A SIN application"
+            },
+            {
               "id": "D",
-              "text": "A secret password employers share"
+              "text": "A full list you update and then tailor for each job"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Living document you tailor from."
         },
         {
@@ -2158,7 +2158,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Without any dates or duties"
+              "text": "With the latest job first (reverse order)"
             },
             {
               "id": "B",
@@ -2166,14 +2166,14 @@
             },
             {
               "id": "C",
-              "text": "Only if the work was unpaid"
+              "text": "Without any dates or duties"
             },
             {
               "id": "D",
-              "text": "With the latest job first (reverse order)"
+              "text": "Only if the work was unpaid"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Reverse chronological work history."
         },
         {
@@ -2204,11 +2204,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Invents a promotion"
+              "text": "Repeats the word “great” many times"
             },
             {
               "id": "B",
-              "text": "Repeats the word “great” many times"
+              "text": "Invents a promotion"
             },
             {
               "id": "C",
@@ -2227,22 +2227,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Use a family member only, without asking"
-            },
-            {
-              "id": "B",
-              "text": "Type their SIN into this course"
-            },
-            {
-              "id": "C",
               "text": "Ask whether they are willing to give a positive reference"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Use a family member only, without asking"
+            },
+            {
+              "id": "C",
               "text": "Publish their mobile number on a poster"
+            },
+            {
+              "id": "D",
+              "text": "Type their SIN into this course"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Ask first."
         },
         {
@@ -2250,22 +2250,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A training course you finished"
+              "text": "A town name and email"
             },
             {
               "id": "B",
-              "text": "A Social Insurance Number or password"
-            },
-            {
-              "id": "C",
               "text": "A volunteer role"
             },
             {
+              "id": "C",
+              "text": "A training course you finished"
+            },
+            {
               "id": "D",
-              "text": "A town name and email"
+              "text": "A Social Insurance Number or password"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "No SIN or password."
         },
         {
@@ -2273,11 +2273,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Copy the most relevant parts of the master list for that one job"
+              "text": "Include every line of the master list, even unrelated jobs"
             },
             {
               "id": "B",
-              "text": "Include every line of the master list, even unrelated jobs"
+              "text": "Copy the most relevant parts of the master list for that one job"
             },
             {
               "id": "C",
@@ -2288,7 +2288,7 @@
               "text": "Be written in another person’s name"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Tailor; do not dump everything."
         }
       ],
@@ -2464,11 +2464,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Employers and screening tools look for a match with that posting"
+              "text": "Longer words always win"
             },
             {
               "id": "B",
-              "text": "Longer words always win"
+              "text": "Employers and screening tools look for a match with that posting"
             },
             {
               "id": "C",
@@ -2479,7 +2479,7 @@
               "text": "Tailoring means inventing titles"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Tailor to the posting."
         },
         {
@@ -2487,22 +2487,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "At least 20 pages"
+              "text": "1 to 2 pages at most"
             },
             {
               "id": "B",
-              "text": "Written only in a table"
+              "text": "At least 20 pages"
             },
             {
               "id": "C",
-              "text": "1 to 2 pages at most"
+              "text": "Written only in a table"
             },
             {
               "id": "D",
               "text": "Printed on dark paper with no name"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "1–2 pages (alis)."
         },
         {
@@ -2510,11 +2510,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Some screening software cannot read them well"
+              "text": "Employers never read point form"
             },
             {
               "id": "B",
-              "text": "Employers never read point form"
+              "text": "Word cannot save a simple list"
             },
             {
               "id": "C",
@@ -2522,10 +2522,10 @@
             },
             {
               "id": "D",
-              "text": "Word cannot save a simple list"
+              "text": "Some screening software cannot read them well"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "ATS / screening software."
         },
         {
@@ -2533,22 +2533,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "You have never done any task"
+              "text": "You want to hide every date for no reason"
             },
             {
               "id": "B",
-              "text": "The job is similar to work you have done"
+              "text": "You have never done any task"
             },
             {
               "id": "C",
-              "text": "You want to hide every date for no reason"
+              "text": "The job is similar to work you have done"
             },
             {
               "id": "D",
               "text": "You need immigration advice"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Similar, consistent history."
         },
         {
@@ -2560,11 +2560,11 @@
             },
             {
               "id": "B",
-              "text": "Someone else’s resume"
+              "text": "Your password file"
             },
             {
               "id": "C",
-              "text": "Your password file"
+              "text": "Someone else’s resume"
             },
             {
               "id": "D",
@@ -2579,22 +2579,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A table-only template that alis prefers"
+              "text": "A guaranteed interview template"
             },
             {
               "id": "B",
-              "text": "A tax-filing template"
-            },
-            {
-              "id": "C",
               "text": "A traditional template and a youth or recent-graduate template"
             },
             {
+              "id": "C",
+              "text": "A tax-filing template"
+            },
+            {
               "id": "D",
-              "text": "A guaranteed interview template"
+              "text": "A table-only template that alis prefers"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Two templates described this session."
         },
         {
@@ -2602,22 +2602,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Skip names and dates"
-            },
-            {
-              "id": "B",
               "text": "Read out loud and check suggestions such as cheque vs check"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Trust spell check without reading"
+            },
+            {
+              "id": "C",
+              "text": "Skip names and dates"
             },
             {
               "id": "D",
               "text": "Add a SIN at the top"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Read suggestions; cheque/check example is from alis."
         }
       ],
@@ -2849,22 +2849,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Apply first and read later"
-            },
-            {
-              "id": "B",
-              "text": "Skip the posting, invent duties, and send"
-            },
-            {
-              "id": "C",
               "text": "Pay a fee, share a PIN, and wait"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Research, create a resume, and prepare a cover letter"
+            },
+            {
+              "id": "C",
+              "text": "Skip the posting, invent duties, and send"
+            },
+            {
+              "id": "D",
+              "text": "Apply first and read later"
             }
           ],
-          "answer": "D",
+          "answer": "B",
           "explain": "Job Bank’s three steps."
         },
         {
@@ -2872,22 +2872,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Longer than ten pages"
-            },
-            {
-              "id": "B",
-              "text": "Tailored to that company and job"
-            },
-            {
-              "id": "C",
               "text": "Written only in tables"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "The same unused paragraph for every employer"
+            },
+            {
+              "id": "C",
+              "text": "Longer than ten pages"
+            },
+            {
+              "id": "D",
+              "text": "Tailored to that company and job"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Tailor it."
         },
         {
@@ -2895,7 +2895,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Not always required, but important when the employer asks for one"
+              "text": "Required for every job in Canada"
             },
             {
               "id": "B",
@@ -2903,14 +2903,14 @@
             },
             {
               "id": "C",
-              "text": "Required for every job in Canada"
+              "text": "Not always required, but important when the employer asks for one"
             },
             {
               "id": "D",
               "text": "A legal contract"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Not always required."
         },
         {
@@ -2922,11 +2922,11 @@
             },
             {
               "id": "B",
-              "text": "Hide the job title"
+              "text": "Copy the resume word for word"
             },
             {
               "id": "C",
-              "text": "Copy the resume word for word"
+              "text": "Hide the job title"
             },
             {
               "id": "D",
@@ -2941,22 +2941,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Be left blank"
+              "text": "Name the job and your name"
             },
             {
               "id": "B",
-              "text": "Be only the word “Hi”"
+              "text": "Be left blank"
             },
             {
               "id": "C",
-              "text": "Name the job and your name"
+              "text": "Be only the word “Hi”"
             },
             {
               "id": "D",
               "text": "Contain your password"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Clear subject."
         },
         {
@@ -2964,22 +2964,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "An official Job Bank form"
+              "text": "Immigration advice"
             },
             {
               "id": "B",
-              "text": "A signed offer"
+              "text": "An official Job Bank form"
             },
             {
               "id": "C",
-              "text": "Practice, not a real application"
+              "text": "A signed offer"
             },
             {
               "id": "D",
-              "text": "Immigration advice"
+              "text": "Practice, not a real application"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Sample only."
         },
         {
@@ -2987,7 +2987,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Employment Standards only"
+              "text": "Excel Basics"
             },
             {
               "id": "B",
@@ -2999,7 +2999,7 @@
             },
             {
               "id": "D",
-              "text": "Excel Basics"
+              "text": "Employment Standards only"
             }
           ],
           "answer": "B",
@@ -3214,11 +3214,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "An email address"
+              "text": "A cash payment to Job Bank"
             },
             {
               "id": "B",
-              "text": "A cash payment to Job Bank"
+              "text": "An email address"
             },
             {
               "id": "C",
@@ -3229,7 +3229,7 @@
               "text": "A guaranteed-job fee"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Email address."
         },
         {
@@ -3237,11 +3237,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "You may not read any job title"
+              "text": "You can opt out of some extra services and still sign up"
             },
             {
               "id": "B",
-              "text": "You must type it into this lesson"
+              "text": "You may not read any job title"
             },
             {
               "id": "C",
@@ -3249,10 +3249,10 @@
             },
             {
               "id": "D",
-              "text": "You can opt out of some extra services and still sign up"
+              "text": "You must type it into this lesson"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Opt out of extras."
         },
         {
@@ -3260,22 +3260,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Emails the SIN to every employer"
-            },
-            {
-              "id": "B",
-              "text": "Will not keep the SIN in its records"
-            },
-            {
-              "id": "C",
               "text": "Stores it in this course"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Prints the SIN on a public page"
+            },
+            {
+              "id": "C",
+              "text": "Will not keep the SIN in its records"
+            },
+            {
+              "id": "D",
+              "text": "Emails the SIN to every employer"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Job Bank says it will not keep the SIN."
         },
         {
@@ -3283,22 +3283,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ways to pay for a guaranteed job"
+              "text": "Immigration applications"
             },
             {
               "id": "B",
-              "text": "Required before you may browse any posting"
+              "text": "Ways to pay for a guaranteed job"
             },
             {
               "id": "C",
-              "text": "Extra services you can use or opt out of"
+              "text": "Required before you may browse any posting"
             },
             {
               "id": "D",
-              "text": "Immigration applications"
+              "text": "Extra services you can use or opt out of"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Optional extras."
         },
         {
@@ -3310,18 +3310,18 @@
             },
             {
               "id": "B",
-              "text": "Delete your master list"
+              "text": "Check the address or site, the file names, and that you attached the right resume"
             },
             {
               "id": "C",
-              "text": "Check the address or site, the file names, and that you attached the right resume"
+              "text": "Delete your master list"
             },
             {
               "id": "D",
               "text": "Send a banking password"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Check before you send."
         },
         {
@@ -3337,11 +3337,11 @@
             },
             {
               "id": "C",
-              "text": "Something this course tells you to pay"
+              "text": "Required by alis"
             },
             {
               "id": "D",
-              "text": "Required by alis"
+              "text": "Something this course tells you to pay"
             }
           ],
           "answer": "A",
@@ -3352,22 +3352,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only on Fridays"
-            },
-            {
-              "id": "B",
-              "text": "Never"
-            },
-            {
-              "id": "C",
               "text": "In the discussion prompt"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Always, in the first box"
+            },
+            {
+              "id": "C",
+              "text": "Never"
+            },
+            {
+              "id": "D",
+              "text": "Only on Fridays"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Never."
         }
       ],
@@ -3576,7 +3576,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Situation, Task, Action, Result"
+              "text": "Salary, Tax, Award, Raise"
             },
             {
               "id": "B",
@@ -3584,14 +3584,14 @@
             },
             {
               "id": "C",
-              "text": "Send, Type, Attach, Run"
+              "text": "Situation, Task, Action, Result"
             },
             {
               "id": "D",
-              "text": "Salary, Tax, Award, Raise"
+              "text": "Send, Type, Attach, Run"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "STAR."
         },
         {
@@ -3599,22 +3599,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A SIN"
+              "text": "Skills"
             },
             {
               "id": "B",
-              "text": "A guaranteed offer"
+              "text": "A SIN"
             },
             {
               "id": "C",
-              "text": "Skills"
+              "text": "A guaranteed offer"
             },
             {
               "id": "D",
               "text": "A cover-letter fee"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Skills (STARS)."
         },
         {
@@ -3622,22 +3622,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Research the organization and practise your answers"
-            },
-            {
-              "id": "B",
-              "text": "Invent a job title"
-            },
-            {
-              "id": "C",
               "text": "Leave your resume at home on purpose"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Research the organization and practise your answers"
+            },
+            {
+              "id": "C",
               "text": "Arrive late so you seem busy"
+            },
+            {
+              "id": "D",
+              "text": "Invent a job title"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Research and practise."
         },
         {
@@ -3649,18 +3649,18 @@
             },
             {
               "id": "B",
-              "text": "Prepare, then practise, then present yourself well, then participate"
-            },
-            {
-              "id": "C",
               "text": "Skip notes, then wait"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Pay a coach fee through this course"
+            },
+            {
+              "id": "D",
+              "text": "Prepare, then practise, then present yourself well, then participate"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Alis’s four tips."
         },
         {
@@ -3668,22 +3668,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Out of every conversation forever, even after an offer"
+              "text": "Until after they offer you the job, as a timing tip"
             },
             {
               "id": "B",
-              "text": "In the first email subject line, with your SIN"
+              "text": "Out of every conversation forever, even after an offer"
             },
             {
               "id": "C",
-              "text": "To a stranger on public Wi-Fi"
+              "text": "In the first email subject line, with your SIN"
             },
             {
               "id": "D",
-              "text": "Until after they offer you the job, as a timing tip"
+              "text": "To a stranger on public Wi-Fi"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Timing tip from work-search basics."
         },
         {
@@ -3695,7 +3695,7 @@
             },
             {
               "id": "B",
-              "text": "Remember this course is not legal advice, and ask council staff or official information later"
+              "text": "Give a banking password"
             },
             {
               "id": "C",
@@ -3703,10 +3703,10 @@
             },
             {
               "id": "D",
-              "text": "Give a banking password"
+              "text": "Remember this course is not legal advice, and ask council staff or official information later"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Not legal advice."
         },
         {
@@ -3714,11 +3714,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "When you finish this lesson"
+              "text": "As soon as you are invited to interview"
             },
             {
               "id": "B",
-              "text": "As soon as you send a thank-you note"
+              "text": "When you finish this lesson"
             },
             {
               "id": "C",
@@ -3726,7 +3726,7 @@
             },
             {
               "id": "D",
-              "text": "As soon as you are invited to interview"
+              "text": "As soon as you send a thank-you note"
             }
           ],
           "answer": "C",
@@ -3924,11 +3924,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Post the interviewer’s private number"
+              "text": "Assume you are hired"
             },
             {
               "id": "B",
-              "text": "Write down what happened while you remember it"
+              "text": "Post the interviewer’s private number"
             },
             {
               "id": "C",
@@ -3936,10 +3936,10 @@
             },
             {
               "id": "D",
-              "text": "Assume you are hired"
+              "text": "Write down what happened while you remember it"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Make notes first."
         },
         {
@@ -3947,11 +3947,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Argue that they must hire you"
+              "text": "Include your SIN"
             },
             {
               "id": "B",
-              "text": "Be a copied generic paragraph that could fit any job"
+              "text": "Argue that they must hire you"
             },
             {
               "id": "C",
@@ -3959,7 +3959,7 @@
             },
             {
               "id": "D",
-              "text": "Include your SIN"
+              "text": "Be a copied generic paragraph that could fit any job"
             }
           ],
           "answer": "C",
@@ -3970,7 +3970,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Withdraw the application without saying why"
+              "text": "Demand a salary in capital letters"
             },
             {
               "id": "B",
@@ -3982,7 +3982,7 @@
             },
             {
               "id": "D",
-              "text": "Demand a salary in capital letters"
+              "text": "Withdraw the application without saying why"
             }
           ],
           "answer": "B",
@@ -4001,11 +4001,11 @@
             },
             {
               "id": "C",
-              "text": "You should invent a better title on your resume"
+              "text": "You should stop looking for any work"
             },
             {
               "id": "D",
-              "text": "You should stop looking for any work"
+              "text": "You should invent a better title on your resume"
             }
           ],
           "answer": "A",
@@ -4020,18 +4020,18 @@
             },
             {
               "id": "B",
-              "text": "Replaces the resume"
+              "text": "Is not the same thing as a job offer"
             },
             {
               "id": "C",
-              "text": "Is not the same thing as a job offer"
+              "text": "Replaces the resume"
             },
             {
               "id": "D",
               "text": "Is illegal in Alberta"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "A note is not an offer."
         },
         {
@@ -4039,7 +4039,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Write the date down and follow up if nothing arrives"
+              "text": "Call every hour until then"
             },
             {
               "id": "B",
@@ -4047,14 +4047,14 @@
             },
             {
               "id": "C",
-              "text": "Ignore the date"
+              "text": "Write the date down and follow up if nothing arrives"
             },
             {
               "id": "D",
-              "text": "Call every hour until then"
+              "text": "Ignore the date"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Track the date."
         },
         {
@@ -4062,7 +4062,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Never, once you have sent one thank-you"
+              "text": "Until an employer tells you when to start"
             },
             {
               "id": "B",
@@ -4070,14 +4070,14 @@
             },
             {
               "id": "C",
-              "text": "Only on websites that charge a guarantee fee"
+              "text": "Never, once you have sent one thank-you"
             },
             {
               "id": "D",
-              "text": "Until an employer tells you when to start"
+              "text": "Only on websites that charge a guarantee fee"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Keep searching until a start date."
         }
       ],
@@ -4256,22 +4256,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The same as a thank-you note"
-            },
-            {
-              "id": "B",
-              "text": "A guarantee from this course"
-            },
-            {
-              "id": "C",
               "text": "Only the first number you hear"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "More than a salary figure"
+            },
+            {
+              "id": "C",
+              "text": "A guarantee from this course"
+            },
+            {
+              "id": "D",
+              "text": "The same as a thank-you note"
             }
           ],
-          "answer": "D",
+          "answer": "B",
           "explain": "More than pay."
         },
         {
@@ -4306,18 +4306,18 @@
             },
             {
               "id": "B",
-              "text": "Your password manager"
+              "text": "A guaranteed-job pop-up"
             },
             {
               "id": "C",
-              "text": "Official employment-standards information (or that LearnHere course), not a guess from this lesson"
+              "text": "Your password manager"
             },
             {
               "id": "D",
-              "text": "A guaranteed-job pop-up"
+              "text": "Official employment-standards information (or that LearnHere course), not a guess from this lesson"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Employment standards, not this lesson."
         },
         {
@@ -4325,7 +4325,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Tell you what dollar amount to negotiate or whether you may work in Canada"
+              "text": "Point you to Alberta Supports"
             },
             {
               "id": "B",
@@ -4333,14 +4333,14 @@
             },
             {
               "id": "C",
-              "text": "Suggest that you write questions down"
+              "text": "Tell you what dollar amount to negotiate or whether you may work in Canada"
             },
             {
               "id": "D",
-              "text": "Point you to Alberta Supports"
+              "text": "Suggest that you write questions down"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "No bargaining script or immigration advice."
         },
         {
@@ -4348,7 +4348,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "By paying a finder fee"
+              "text": "By deleting every note"
             },
             {
               "id": "B",
@@ -4360,7 +4360,7 @@
             },
             {
               "id": "D",
-              "text": "By deleting every note"
+              "text": "By paying a finder fee"
             }
           ],
           "answer": "B",
@@ -4371,22 +4371,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Your bank"
+              "text": "A private number this course invented"
             },
             {
               "id": "B",
-              "text": "911 only"
+              "text": "Your bank"
             },
             {
               "id": "C",
-              "text": "1-877-644-9992"
+              "text": "911 only"
             },
             {
               "id": "D",
-              "text": "A private number this course invented"
+              "text": "1-877-644-9992"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Listed on alis this session."
         },
         {
@@ -4394,22 +4394,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "You are guaranteed a job"
-            },
-            {
-              "id": "B",
               "text": "You passed a knowledge test — not that a tutor watched you get hired"
             },
             {
+              "id": "B",
+              "text": "You are guaranteed a job"
+            },
+            {
               "id": "C",
-              "text": "You completed licensed career counselling"
+              "text": "You received immigration status"
             },
             {
               "id": "D",
-              "text": "You received immigration status"
+              "text": "You completed licensed career counselling"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Knowledge exam, not a hired certificate."
         }
       ],

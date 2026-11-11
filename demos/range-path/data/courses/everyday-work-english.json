@@ -40,14 +40,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Forms, emails, and instructions"
+              "text": "Ignoring every sign you see"
             },
             {
               "id": "B",
-              "text": "Ignoring every sign you see"
+              "text": "Forms, emails, and instructions"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -55,14 +55,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -70,14 +70,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Work, school, services, and talking with people"
+              "text": "Skipping every conversation on purpose"
             },
             {
               "id": "B",
-              "text": "Skipping every conversation on purpose"
+              "text": "Work, school, services, and talking with people"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -98,14 +98,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Asking questions to confirm you understand"
+              "text": "Pretending you heard when you did not"
             },
             {
               "id": "B",
-              "text": "Pretending you heard when you did not"
+              "text": "Asking questions to confirm you understand"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -128,14 +128,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Politely ask them to repeat"
+              "text": "Walk away without a word every time"
             },
             {
               "id": "B",
-              "text": "Walk away without a word every time"
+              "text": "Politely ask them to repeat"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -143,14 +143,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -171,14 +171,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Know why you are reading and what you need to find"
+              "text": "Skip every heading"
             },
             {
               "id": "B",
-              "text": "Skip every heading"
+              "text": "Know why you are reading and what you need to find"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -201,14 +201,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The official Canada.ca or Alberta.ca page"
+              "text": "A random unmarked message that asks for a fee"
             },
             {
               "id": "B",
-              "text": "A random unmarked message that asks for a fee"
+              "text": "The official Canada.ca or Alberta.ca page"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -259,14 +259,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Knowing your purpose and reader, then reviewing what you wrote"
+              "text": "Sending the first draft in ALL CAPS without reading it"
             },
             {
               "id": "B",
-              "text": "Sending the first draft in ALL CAPS without reading it"
+              "text": "Knowing your purpose and reader, then reviewing what you wrote"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -274,14 +274,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Clear about what you need and polite in tone"
+              "text": "A secret written in another person’s name"
             },
             {
               "id": "B",
-              "text": "A secret written in another person’s name"
+              "text": "Clear about what you need and polite in tone"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -289,14 +289,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -329,14 +329,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Permanent residents or protected persons (after an assessment)"
+              "text": "Anyone in the world, with no questions asked, including this online quiz"
             },
             {
               "id": "B",
-              "text": "Anyone in the world, with no questions asked, including this online quiz"
+              "text": "Permanent residents or protected persons (after an assessment)"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -359,14 +359,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Community adult learning providers, school boards, and post-secondary schools"
+              "text": "Only hidden unpaid pop-up shops with no name"
             },
             {
               "id": "B",
-              "text": "Only hidden unpaid pop-up shops with no name"
+              "text": "Community adult learning providers, school boards, and post-secondary schools"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -374,14 +374,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -394,12 +394,12 @@
         "prompt": "Skills for Success includes communication, reading, and writing.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -409,12 +409,12 @@
         "prompt": "Asking a speaker to repeat or confirming what you heard is a useful listening habit.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -439,15 +439,15 @@
         "prompt": "This course is official CELPIP, IELTS, or CLB certification.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
       },
       {
@@ -484,15 +484,15 @@
         "prompt": "This course is immigration advice and a replacement for a conversation class.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Practise listening, speaking, reading, and writing in daily life, and use official IRCC or Alberta pages — or your adult learning council — to find a real class if you want one."
       }
     ]

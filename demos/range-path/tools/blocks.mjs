@@ -442,10 +442,13 @@ function simulation(block) {
         <p data-slot="contact" hidden>Contact: Jordan Lee</p>
       </div>
     </div>`;
+    const jobCompose = block.id === "jobsearch-cover-email"
+      ? `<div class="ol-pane"><p>To <strong data-field="to"></strong></p><p>Subject <strong data-field="subject"></strong></p><p data-field="body"></p></div>`
+      : "";
     const job = `<div class="job-form"><p>Job title <strong data-field="title"></strong></p><p>Place <strong data-field="place"></strong></p></div>
       <ul class="job-results"><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>
       <article data-slot="posting"><p>Sampletown Community Centre. Greet visitors and set up tables. First aid is an asset, not required. Sample only.</p></article>
-      <div class="ol-pane"><p>To <strong data-field="to"></strong></p><p>Subject <strong data-field="subject"></strong></p><p data-field="body"></p></div>`;
+      ${jobCompose}`;
     const body = kind === "word" ? word : kind === "outlook" ? outlook : job;
     stage = `<div class="practice-window" data-app="${kind}">
       <div class="pw-bar"><strong>${esc(title)}</strong> <span data-doc-name>${kind === "word" ? "Document1" : ""}</span></div>

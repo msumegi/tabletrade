@@ -108,7 +108,19 @@ registry.courses.forEach((entry) => {
       }
     });
   }
-  (course.lessons || []).forEach((lesson) => {
+  (course.lessons || []).forEach((lesson, lessonIndex) => {
+    const quiz = lesson.quiz || [];
+    const quizLetters = quiz.map((question) => question.answer).filter((answer) => /^[A-D]$/.test(answer || ""));
+    if (quizLetters.length >= 2) {
+      const counts = {};
+      quizLetters.forEach((answer) => { counts[answer] = (counts[answer] || 0) + 1; });
+      const cap = Math.ceil(quizLetters.length / 4) + 1;
+      Object.keys(counts).forEach((answer) => {
+        if (counts[answer] > cap) {
+          errors.push(entry.slug + " lesson " + (lessonIndex + 1) + " puts " + counts[answer] + " of " + quizLetters.length + " answers on " + answer);
+        }
+      });
+    }
     (lesson.sections || []).forEach((section) => {
       (section.blocks || []).forEach((block) => {
         if (block.type !== "workedExample") return;

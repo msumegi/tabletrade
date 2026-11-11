@@ -35,18 +35,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "Buy the gift cards"
+              "text": "Hang up; this matches scam behaviour the CRA warns about"
             },
             {
               "id": "B",
-              "text": "Hang up; this matches scam behaviour the CRA warns about"
+              "text": "Buy the gift cards"
             },
             {
               "id": "C",
               "text": "Give your SIN to prove who you are"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "The CRA says it will not demand gift cards or use that kind of threat. Hang up and use official channels later."
         },
         {
@@ -69,18 +69,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "Start with canada.ca or end in cra-arc.gc.ca"
-            },
-            {
-              "id": "B",
               "text": "End in .info or .su"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Use random short links only"
+            },
+            {
+              "id": "C",
+              "text": "Start with canada.ca or end in cra-arc.gc.ca"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "CRA guidance: trust addresses that start with canada.ca or end in cra-arc.gc.ca."
         }
       ]
@@ -109,14 +109,14 @@
             },
             {
               "id": "B",
-              "text": "Reply with your SIN"
+              "text": "Open a browser, go to canada.ca yourself, and sign in or call a number from that site"
             },
             {
               "id": "C",
-              "text": "Open a browser, go to canada.ca yourself, and sign in or call a number from that site"
+              "text": "Reply with your SIN"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -124,14 +124,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Yes"
+              "text": "No — numbers can be spoofed"
             },
             {
               "id": "B",
-              "text": "No — numbers can be spoofed"
+              "text": "Yes"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -139,18 +139,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "Gift cards"
-            },
-            {
-              "id": "B",
               "text": "Following official CRA online payment options after you verify the debt yourself"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Pay with gift cards after you look up the number yourself."
+            },
+            {
+              "id": "C",
+              "text": "Gift cards"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Gift cards, crypto, or pressure e-Transfers to strangers are classic scam demands per CRA guidance."
         },
         {
@@ -158,14 +158,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "The CRA may contact people, but you should know the scam warning signs and verify through official channels."
         }
       ]
@@ -190,18 +190,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "Fixing your printer"
+              "text": "Free computer upgrades from the government by e-Transfer"
             },
             {
               "id": "B",
-              "text": "Tricking you into giving information or clicking a harmful link"
+              "text": "Fixing your printer"
             },
             {
               "id": "C",
-              "text": "Free computer upgrades from the government by e-Transfer"
+              "text": "Tricking you into giving information or clicking a harmful link"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": ""
         },
         {
@@ -209,14 +209,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Always safe"
+              "text": "A look-alike style CRA warns about — treat as suspicious"
             },
             {
               "id": "B",
-              "text": "A look-alike style CRA warns about — treat as suspicious"
+              "text": "Always safe"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -239,14 +239,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "CRA and CAFC guidance encourages reporting attempts too."
         }
       ]
@@ -267,18 +267,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "Your dog’s name"
+              "text": "“123456”"
             },
             {
               "id": "B",
-              "text": "Four or more random words (longer is better)"
+              "text": "Your dog’s name"
             },
             {
               "id": "C",
-              "text": "“123456”"
+              "text": "Four or more random words (longer is better)"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": ""
         },
         {
@@ -301,14 +301,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Send it"
+              "text": "Not send it — legitimate services do not ask this way"
             },
             {
               "id": "B",
-              "text": "Not send it — legitimate services do not ask this way"
+              "text": "Send it"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -352,18 +352,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "911 only"
+              "text": "1-888-495-8501"
             },
             {
               "id": "B",
-              "text": "1-888-495-8501"
+              "text": "911 only"
             },
             {
               "id": "C",
               "text": "Your neighbour’s number"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -371,14 +371,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -386,14 +386,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Your bank or credit union"
+              "text": "A random Facebook group only"
             },
             {
               "id": "B",
-              "text": "A random Facebook group only"
+              "text": "Your bank or credit union"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -401,14 +401,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Useless"
+              "text": "Helpful evidence when you report"
             },
             {
               "id": "B",
-              "text": "Helpful evidence when you report"
+              "text": "Useless"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -436,12 +436,12 @@
         "prompt": "Official CRA sites start with canada.ca or end in cra-arc.gc.ca.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -451,12 +451,12 @@
         "prompt": "Phishing tries to trick you into giving information or clicking.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -466,42 +466,42 @@
         "prompt": "Reusing one password everywhere is safe.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "One breach can open many accounts. Use a unique password or passphrase."
       },
       {
         "prompt": "CAFC wants reports only after large losses.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Report even if you did not lose money."
       },
       {
         "prompt": "A passphrase of four random words can be stronger than a short common password.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -511,15 +511,15 @@
         "prompt": "Clicking a surprise refund link is the recommended way to get CRA payments.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Type canada.ca yourself. Do not use a surprise link."
       }
     ]

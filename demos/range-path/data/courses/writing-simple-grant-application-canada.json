@@ -29,14 +29,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -44,14 +44,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "A loan is money you repay; a grant may not have to be repaid if you follow the rules"
+              "text": "A loan is always free money with no paperwork"
             },
             {
               "id": "B",
-              "text": "A loan is always free money with no paperwork"
+              "text": "A loan is money you repay; a grant may not have to be repaid if you follow the rules"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -74,14 +74,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -89,14 +89,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Share risk, not always pay every cost"
+              "text": "Replace all other planning"
             },
             {
               "id": "B",
-              "text": "Replace all other planning"
+              "text": "Share risk, not always pay every cost"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -133,14 +133,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Gives a tailored list after you answer questions about your situation"
+              "text": "Guarantees that you will be funded"
             },
             {
               "id": "B",
-              "text": "Guarantees that you will be funded"
+              "text": "Gives a tailored list after you answer questions about your situation"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -163,14 +163,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -240,14 +240,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Read who can apply, what costs are eligible, and the matching rules"
+              "text": "Guess the rules from a social media post"
             },
             {
               "id": "B",
-              "text": "Guess the rules from a social media post"
+              "text": "Read who can apply, what costs are eligible, and the matching rules"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -255,14 +255,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Matching: the applicant contributes an amount equal to or exceeding the amount requested"
+              "text": "Automatic full funding with no contribution"
             },
             {
               "id": "B",
-              "text": "Automatic full funding with no contribution"
+              "text": "Matching: the applicant contributes an amount equal to or exceeding the amount requested"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -332,14 +332,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -347,14 +347,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -377,14 +377,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -424,14 +424,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Are final, and no appeals will be considered"
+              "text": "Can be appealed to any social media page"
             },
             {
               "id": "B",
-              "text": "Can be appealed to any social media page"
+              "text": "Are final, and no appeals will be considered"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -489,27 +489,27 @@
         "prompt": "This course promises that you will receive grant money.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
       },
       {
         "prompt": "The Business Benefits Finder can give a tailored list after you answer questions.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -534,15 +534,15 @@
         "prompt": "Marketing language is the best way to write a grant application.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
       },
       {
@@ -564,12 +564,12 @@
         "prompt": "Some programs require reporting after money is awarded.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -579,15 +579,15 @@
         "prompt": "This course is a grant-consultant credential.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Find official programs, read the live rules, write clear honest answers, and plan for reporting. A complete application is not a promise of funding."
       }
     ]

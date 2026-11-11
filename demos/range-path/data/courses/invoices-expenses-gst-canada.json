@@ -25,14 +25,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The bill you give when you sell goods or services"
+              "text": "A secret code the CRA emails to every household"
             },
             {
               "id": "B",
-              "text": "A secret code the CRA emails to every household"
+              "text": "The bill you give when you sell goods or services"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -55,14 +55,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "A planned price before the work is finished, not the same as the final invoice"
+              "text": "Always a GST/HST return"
             },
             {
               "id": "B",
-              "text": "Always a GST/HST return"
+              "text": "A planned price before the work is finished, not the same as the final invoice"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -70,14 +70,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -113,14 +113,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The GST/HST rate, and either separate tax and price lines or a clear note that the total includes GST/HST"
+              "text": "Only a drawing of the item, with no prices"
             },
             {
               "id": "B",
-              "text": "Only a drawing of the item, with no prices"
+              "text": "The GST/HST rate, and either separate tax and price lines or a clear note that the total includes GST/HST"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -190,14 +190,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The GST/HST charged or a note that the price includes it, and the supplier’s GST/HST number"
+              "text": "A photo of the seller’s pet"
             },
             {
               "id": "B",
-              "text": "A photo of the seller’s pet"
+              "text": "The GST/HST charged or a note that the price includes it, and the supplier’s GST/HST number"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -205,14 +205,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The buyer’s name, a brief description, and the terms of payment"
+              "text": "The buyer’s SIN"
             },
             {
               "id": "B",
-              "text": "The buyer’s SIN"
+              "text": "The buyer’s name, a brief description, and the terms of payment"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -220,14 +220,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -267,14 +267,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The first nine digits of the number, the business name, and the transaction date"
+              "text": "The supplier’s SIN and home address"
             },
             {
               "id": "B",
-              "text": "The supplier’s SIN and home address"
+              "text": "The first nine digits of the number, the business name, and the transaction date"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -329,14 +329,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sales and purchase invoices and related business records"
+              "text": "Only a drawing of your shop"
             },
             {
               "id": "B",
-              "text": "Only a drawing of your shop"
+              "text": "Sales and purchase invoices and related business records"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -394,12 +394,12 @@
         "prompt": "A sales invoice is the bill you give when you sell goods or services.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -424,12 +424,12 @@
         "prompt": "For every invoice amount, the November 2026 CRA chart asks for the supplier’s name, the date, and the total.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -439,27 +439,27 @@
         "prompt": "This course tells you which GST/HST rate to charge and how to claim an input tax credit.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
       },
       {
         "prompt": "The CRA’s GST/HST Registry can confirm that a nine-digit GST/HST number is registered.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -469,12 +469,12 @@
         "prompt": "Sales and purchase invoices should be kept even if a return is filed electronically.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -484,15 +484,15 @@
         "prompt": "This course is tax advice and a bookkeeping licence.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Put clear GST/HST wording on bills, check the CRA amount chart, look up numbers on the official Registry, and store papers safely. Get a professional for filing or registration questions."
       }
     ]

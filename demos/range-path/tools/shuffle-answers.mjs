@@ -6,13 +6,7 @@ import { fileURLToPath } from "url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
-const SLUGS = [
-  "excel-basics-canada",
-  "everyday-computers-smartphones",
-  "word-basics-canada",
-  "job-search-canada",
-  "outlook-workplace-email"
-];
+const SLUGS = fs.readdirSync(path.join(root, "data", "courses")).filter((name) => name.endsWith(".json")).map((name) => name.replace(/\.json$/, ""));
 
 function hash(text) {
   let h = 2166136261;
@@ -45,32 +39,38 @@ function shuffle(list, seed) {
   return out;
 }
 
-function targets(count, seed) {
-  const deck = [];
-  for (let i = 0; i < count; i += 1) deck.push(i % 4);
-  return shuffle(deck, seed);
-}
-
 function place(question, target, seed) {
   const choices = question.choices || [];
   if (choices.length < 2 || !/^[A-F]$/.test(question.answer || "")) return;
   const correct = choices.find((choice) => choice.id === question.answer) || choices[0];
   const rest = shuffle(choices.filter((choice) => choice !== correct), seed);
-  const slot = Math.min(target, choices.length - 1);
   const next = [];
   let r = 0;
   for (let i = 0; i < choices.length; i += 1) {
-    next.push(i === slot ? correct : rest[r++]);
+    next.push(i === target ? correct : rest[r++]);
   }
   question.choices = next.map((choice, index) => Object.assign({}, choice, { id: LETTERS[index] }));
-  question.answer = LETTERS[slot];
+  question.answer = LETTERS[target];
+}
+
+function shuffleBinary(question, seed) {
+  if (!/^[TF]$/.test(question.answer || "")) return;
+  const choices = question.choices || [];
+  if (choices.length !== 2) return;
+  question.choices = rng(seed)() < 0.5 ? choices.slice() : choices.slice().reverse();
 }
 
 function spread(questions, seedKey) {
-  const deck = targets(questions.length, hash(seedKey + ":deck"));
+  const counts = [0, 0, 0, 0];
   questions.forEach((question, index) => {
+    const width = Math.min(4, (question.choices || []).length);
+    if (width < 2 || !/^[A-F]$/.test(question.answer || "")) return;
     const seed = hash(seedKey + ":" + index + ":" + (question.prompt || ""));
-    place(question, deck[index], seed);
+    const order = shuffle([...Array(width).keys()], seed);
+    const min = Math.min(...order.map((slot) => counts[slot]));
+    const best = order.find((slot) => counts[slot] === min);
+    counts[best] += 1;
+    place(question, best, seed);
   });
 }
 
@@ -78,11 +78,13 @@ for (const slug of SLUGS) {
   const file = path.join(root, "data", "courses", slug + ".json");
   const course = JSON.parse(fs.readFileSync(file, "utf8"));
   if (course.finalExam && course.finalExam.questions) spread(course.finalExam.questions, slug + ":final");
+  if (course.finalQuiz && course.finalQuiz.questions) {
+    course.finalQuiz.questions.forEach((question, index) => shuffleBinary(question, hash(slug + ":final-quiz:" + index)));
+    spread(course.finalQuiz.questions, slug + ":final-quiz");
+  }
   (course.lessons || []).forEach((lesson) => {
+    (lesson.quiz || []).forEach((question, index) => shuffleBinary(question, hash(slug + ":lesson:" + lesson.number + ":" + index)));
     if (lesson.quiz) spread(lesson.quiz, slug + ":lesson:" + lesson.number);
   });
   fs.writeFileSync(file, JSON.stringify(course, null, 2) + "\n");
-  const counts = {};
-  (course.finalExam.questions || []).forEach((q) => { counts[q.answer] = (counts[q.answer] || 0) + 1; });
-  console.log(slug, JSON.stringify(counts));
 }

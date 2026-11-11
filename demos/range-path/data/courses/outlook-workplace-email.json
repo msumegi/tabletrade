@@ -62,22 +62,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Only payroll calculations"
-          },
-          {
-            "id": "B",
             "text": "Only web browsers"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Only printed posters"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Emails, calendars, contacts, tasks, and to-do lists"
+          },
+          {
+            "id": "D",
+            "text": "Only payroll calculations"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "Microsoft’s basic Outlook page says Outlook organizes emails, calendars, contacts, tasks, and to-do lists.",
         "topic": "Lesson 1 — What Outlook is, and how you start it",
         "review": "../lesson-1/#section-chapter-1-what-outlook-is-and-how-you-start-it"
@@ -91,7 +91,7 @@
           },
           {
             "id": "B",
-            "text": "Guess any missing mail-server name until something unlocks"
+            "text": "Type your real workplace password into every practice screen"
           },
           {
             "id": "C",
@@ -99,7 +99,7 @@
           },
           {
             "id": "D",
-            "text": "Type your real workplace password into every practice screen"
+            "text": "Guess any missing mail-server name until something unlocks"
           }
         ],
         "answer": "A",
@@ -112,11 +112,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Calendar"
+            "text": "A single message in the Inbox, because every email hides a calendar"
           },
           {
             "id": "B",
-            "text": "Junk Email"
+            "text": "Calendar"
           },
           {
             "id": "C",
@@ -124,10 +124,10 @@
           },
           {
             "id": "D",
-            "text": "A single message in the Inbox, because every email hides a calendar"
+            "text": "Junk Email"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Calendar sits with Mail, People, and Tasks.",
         "topic": "Lesson 1 — What Outlook is, and how you start it",
         "review": "../lesson-1/#section-chapter-1-what-outlook-is-and-how-you-start-it"
@@ -137,22 +137,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "New Contact"
-          },
-          {
-            "id": "B",
             "text": "New Appointment"
           },
           {
+            "id": "B",
+            "text": "New Contact"
+          },
+          {
             "id": "C",
-            "text": "New Email"
+            "text": "New Meeting"
           },
           {
             "id": "D",
-            "text": "New Meeting"
+            "text": "New Email"
           }
         ],
-        "answer": "C",
+        "answer": "D",
         "explain": "From any mail folder (such as the Inbox), choose New Email.",
         "topic": "Lesson 2 — Start a new message",
         "review": "../lesson-2/#section-chapter-1-start-a-new-message"
@@ -191,11 +191,11 @@
           },
           {
             "id": "B",
-            "text": "Left blank on purpose"
+            "text": "Only the word “Hi”"
           },
           {
             "id": "C",
-            "text": "Only the word “Hi”"
+            "text": "Left blank on purpose"
           },
           {
             "id": "D",
@@ -212,22 +212,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The Junk Email folder"
-          },
-          {
-            "id": "B",
             "text": "Bcc, so they cannot see the question"
           },
           {
+            "id": "B",
+            "text": "The Junk Email folder"
+          },
+          {
             "id": "C",
-            "text": "The calendar only, with the To line left empty"
+            "text": "The To line"
           },
           {
             "id": "D",
-            "text": "The To line"
+            "text": "The calendar only, with the To line left empty"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "People who must act go on To; people who must be informed go on Cc.",
         "topic": "Lesson 3 — Reply, Reply All, and Forward",
         "review": "../lesson-3/#section-chapter-1-reply-reply-all-and-forward"
@@ -237,7 +237,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "The Sent Items folder only, with no recipient"
+            "text": "The sender plus everyone on To and Cc"
           },
           {
             "id": "B",
@@ -245,7 +245,7 @@
           },
           {
             "id": "C",
-            "text": "The sender plus everyone on To and Cc"
+            "text": "The Sent Items folder only, with no recipient"
           },
           {
             "id": "D",
@@ -262,22 +262,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Always included twice"
+            "text": "Not included"
           },
           {
             "id": "B",
-            "text": "Converted into appointments"
+            "text": "Always included twice"
           },
           {
             "id": "C",
-            "text": "Sent only to Bcc recipients"
+            "text": "Converted into appointments"
           },
           {
             "id": "D",
-            "text": "Not included"
+            "text": "Sent only to Bcc recipients"
           }
         ],
-        "answer": "D",
+        "answer": "A",
         "explain": "Attachments are not included on Reply or Reply All.",
         "topic": "Lesson 3 — Reply, Reply All, and Forward",
         "review": "../lesson-3/#section-chapter-1-reply-reply-all-and-forward"
@@ -287,11 +287,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Need to send the message, including original attachments, to someone who was not on To or Cc"
+            "text": "Want to answer only the original sender"
           },
           {
             "id": "B",
-            "text": "Want to answer only the original sender"
+            "text": "Need to send the message, including original attachments, to someone who was not on To or Cc"
           },
           {
             "id": "C",
@@ -302,7 +302,7 @@
             "text": "Want to add a second workplace password"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "Forward includes original attachments and a new recipient list.",
         "topic": "Lesson 4 — Attach a file, then open or save one you receive",
         "review": "../lesson-4/#section-chapter-1-attach-a-file-then-open-or-save-one-yo"
@@ -312,22 +312,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Send the message, then forward the sent copy to the manager"
-          },
-          {
-            "id": "B",
-            "text": "Reply All to the whole company"
-          },
-          {
-            "id": "C",
             "text": "Print the message and leave it on a public desk"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Secretly put the manager in Bcc and hope they never reply"
+          },
+          {
+            "id": "C",
+            "text": "Send the message, then forward the sent copy to the manager"
+          },
+          {
+            "id": "D",
+            "text": "Reply All to the whole company"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Forward the sent copy; a Bcc recipient might reply-all and reveal themselves.",
         "topic": "Lesson 4 — Attach a file, then open or save one you receive",
         "review": "../lesson-4/#section-chapter-1-attach-a-file-then-open-or-save-one-yo"
@@ -337,15 +337,15 @@
         "choices": [
           {
             "id": "A",
-            "text": "Forward the whole list to a public website"
-          },
-          {
-            "id": "B",
             "text": "Mark the message High Importance and send it again"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Reply All with “Remove me”"
+          },
+          {
+            "id": "C",
+            "text": "Forward the whole list to a public website"
           },
           {
             "id": "D",
@@ -362,11 +362,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Message > Attach File"
+            "text": "File > Add Account"
           },
           {
             "id": "B",
-            "text": "File > Add Account"
+            "text": "New Appointment"
           },
           {
             "id": "C",
@@ -374,10 +374,10 @@
           },
           {
             "id": "D",
-            "text": "New Appointment"
+            "text": "Message > Attach File"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Message > Attach File.",
         "topic": "Lesson 5 — Create a folder and file a message",
         "review": "../lesson-5/#section-chapter-1-create-a-folder-and-file-a-message"
@@ -387,22 +387,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Choose Reply All, because saving only works after you reply"
-          },
-          {
-            "id": "B",
-            "text": "Type your workplace password into this course"
-          },
-          {
-            "id": "C",
             "text": "Select the attachment and choose Save As (Attachments tab or right-click)"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "Choose Reply All, because saving only works after you reply"
+          },
+          {
+            "id": "C",
             "text": "Drag the file into Junk Email"
+          },
+          {
+            "id": "D",
+            "text": "Type your workplace password into this course"
           }
         ],
-        "answer": "C",
+        "answer": "A",
         "explain": "Save As from the Attachments tab or the right-click menu.",
         "topic": "Lesson 5 — Create a folder and file a message",
         "review": "../lesson-5/#section-chapter-1-create-a-folder-and-file-a-message"
@@ -412,7 +412,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Hidden on the Bcc line"
+            "text": "A full-page colourful poster"
           },
           {
             "id": "B",
@@ -424,7 +424,7 @@
           },
           {
             "id": "D",
-            "text": "A full-page colourful poster"
+            "text": "Hidden on the Bcc line"
           }
         ],
         "answer": "B",
@@ -437,22 +437,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Reply All so everyone sees how you feel"
-          },
-          {
-            "id": "B",
-            "text": "Write the message, save it as a draft, and come back later"
-          },
-          {
-            "id": "C",
             "text": "Mark it High Importance and send it three times"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Send it immediately in ALL CAPS"
+          },
+          {
+            "id": "C",
+            "text": "Write the message, save it as a draft, and come back later"
+          },
+          {
+            "id": "D",
+            "text": "Reply All so everyone sees how you feel"
           }
         ],
-        "answer": "B",
+        "answer": "C",
         "explain": "Save a draft and return later.",
         "topic": "Lesson 6 — Junk mail is not the same as a phishing trap",
         "review": "../lesson-6/#section-chapter-1-junk-mail-is-not-the-same-as-a-phishin"
@@ -462,7 +462,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Right-clicking in the left pane of Mail and choosing New Folder"
+            "text": "Choosing New Email"
           },
           {
             "id": "B",
@@ -470,14 +470,14 @@
           },
           {
             "id": "C",
-            "text": "Choosing New Email"
+            "text": "Right-clicking in the left pane of Mail and choosing New Folder"
           },
           {
             "id": "D",
             "text": "Choosing New Appointment"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "Classic Outlook: right-click in the left pane of Mail, then New Folder. New Outlook uses Create new folder.",
         "topic": "Lesson 6 — Junk mail is not the same as a phishing trap",
         "review": "../lesson-6/#section-chapter-1-junk-mail-is-not-the-same-as-a-phishin"
@@ -487,22 +487,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Drag the message onto the folder, or select it and choose Move"
-          },
-          {
-            "id": "B",
-            "text": "Open Calendar and print the day"
-          },
-          {
-            "id": "C",
             "text": "Put the folder name in Bcc"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Type the folder name in the subject and send the message again"
+          },
+          {
+            "id": "C",
+            "text": "Open Calendar and print the day"
+          },
+          {
+            "id": "D",
+            "text": "Drag the message onto the folder, or select it and choose Move"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "Drag and drop, or Move on the ribbon.",
         "topic": "Lesson 6 — Junk mail is not the same as a phishing trap",
         "review": "../lesson-6/#section-chapter-1-junk-mail-is-not-the-same-as-a-phishin"
@@ -512,7 +512,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "A new email account is created"
+            "text": "The message is permanently deleted"
           },
           {
             "id": "B",
@@ -524,7 +524,7 @@
           },
           {
             "id": "D",
-            "text": "The message is permanently deleted"
+            "text": "A new email account is created"
           }
         ],
         "answer": "B",
@@ -537,22 +537,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Bcc, because search only works from Bcc"
-          },
-          {
-            "id": "B",
-            "text": "A blank search box, because Outlook always guesses the name"
-          },
-          {
-            "id": "C",
             "text": "from: followed by that person’s address"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "The word Calendar typed into a new appointment"
+          },
+          {
+            "id": "C",
+            "text": "Bcc, because search only works from Bcc"
+          },
+          {
+            "id": "D",
+            "text": "A blank search box, because Outlook always guesses the name"
           }
         ],
-        "answer": "C",
+        "answer": "A",
         "explain": "from: plus the address finds mail from that sender.",
         "topic": "Lesson 7 — An appointment is not the same as a meeting",
         "review": "../lesson-7/#section-chapter-1-an-appointment-is-not-the-same-as-a-me"
@@ -562,22 +562,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Sent to everyone in People"
+            "text": "Moved automatically to the Junk Email folder"
           },
           {
             "id": "B",
-            "text": "Turned into a meeting"
+            "text": "Sent to everyone in People"
           },
           {
             "id": "C",
-            "text": "Moved automatically to the Junk Email folder"
+            "text": "Turned into a meeting"
           },
           {
             "id": "D",
             "text": "Printed automatically"
           }
         ],
-        "answer": "C",
+        "answer": "A",
         "explain": "Possible junk can go to the Junk Email folder.",
         "topic": "Lesson 7 — An appointment is not the same as a meeting",
         "review": "../lesson-7/#section-chapter-1-an-appointment-is-not-the-same-as-a-me"
@@ -587,11 +587,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "A calendar reminder you set yourself"
+            "text": "Any flyer about a store sale"
           },
           {
             "id": "B",
-            "text": "Any flyer about a store sale"
+            "text": "A calendar reminder you set yourself"
           },
           {
             "id": "C",
@@ -612,7 +612,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Forward it to everyone in your Inbox"
+            "text": "Click the link to see what happens"
           },
           {
             "id": "B",
@@ -620,14 +620,14 @@
           },
           {
             "id": "C",
-            "text": "Treat it as a phishing or scam message and delete it"
+            "text": "Forward it to everyone in your Inbox"
           },
           {
             "id": "D",
-            "text": "Click the link to see what happens"
+            "text": "Treat it as a phishing or scam message and delete it"
           }
         ],
-        "answer": "C",
+        "answer": "D",
         "explain": "Get Cyber Safe: if you have no account with that organization, delete the message.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -637,22 +637,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Click the link first and decide later"
-          },
-          {
-            "id": "B",
-            "text": "Type your banking password into this course"
-          },
-          {
-            "id": "C",
             "text": "Call only the phone number printed inside the suspicious message"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Use contact details you find yourself on the official website or a number you already trust"
+          },
+          {
+            "id": "C",
+            "text": "Type your banking password into this course"
+          },
+          {
+            "id": "D",
+            "text": "Click the link first and decide later"
           }
         ],
-        "answer": "D",
+        "answer": "B",
         "explain": "Verify with official details you find yourself.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -687,22 +687,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Can only be created from Junk Email"
-          },
-          {
-            "id": "B",
             "text": "Always includes the whole staff list"
           },
           {
+            "id": "B",
+            "text": "Can only be created from Junk Email"
+          },
+          {
             "id": "C",
-            "text": "Replaces the need for a subject line in every email"
+            "text": "Does not involve inviting other people or reserving a room or equipment"
           },
           {
             "id": "D",
-            "text": "Does not involve inviting other people or reserving a room or equipment"
+            "text": "Replaces the need for a subject line in every email"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "Appointments do not invite others or reserve resources.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -712,22 +712,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Flag a message without opening Calendar"
-          },
-          {
-            "id": "B",
-            "text": "In a Calendar folder, choose New Meeting (shortcut: Ctrl+Shift+Q)"
-          },
-          {
-            "id": "C",
             "text": "Type the word meeting in the search box and press Print"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "Choose New Contact"
+          },
+          {
+            "id": "C",
+            "text": "Flag a message without opening Calendar"
+          },
+          {
+            "id": "D",
+            "text": "In a Calendar folder, choose New Meeting (shortcut: Ctrl+Shift+Q)"
           }
         ],
-        "answer": "B",
+        "answer": "D",
         "explain": "New Meeting, or Ctrl+Shift+Q from any folder.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -737,22 +737,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Only on a printed calendar"
-          },
-          {
-            "id": "B",
             "text": "In your Inbox"
           },
           {
+            "id": "B",
+            "text": "Only on a printed calendar"
+          },
+          {
             "id": "C",
-            "text": "In the Bcc field of a message you never sent"
+            "text": "Only inside Junk Email"
           },
           {
             "id": "D",
-            "text": "Only inside Junk Email"
+            "text": "In the Bcc field of a message you never sent"
           }
         ],
-        "answer": "B",
+        "answer": "A",
         "explain": "Replies to meeting requests arrive in the Inbox.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -766,18 +766,18 @@
           },
           {
             "id": "B",
-            "text": "Open People and choose New Contact (shortcut: Ctrl+Shift+C)"
+            "text": "Create a new appointment for every name"
           },
           {
             "id": "C",
-            "text": "Type the address in Bcc and hope Outlook stores it"
+            "text": "Open People and choose New Contact (shortcut: Ctrl+Shift+C)"
           },
           {
             "id": "D",
-            "text": "Create a new appointment for every name"
+            "text": "Type the address in Bcc and hope Outlook stores it"
           }
         ],
-        "answer": "B",
+        "answer": "C",
         "explain": "People > New Contact, or Ctrl+Shift+C.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -787,22 +787,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "File > Add Account"
+            "text": "Home tab > New Items > Task, then Save & Close (shortcut: Ctrl+Shift+K)"
           },
           {
             "id": "B",
-            "text": "New Email, left empty, sent to everyone"
+            "text": "File > Add Account"
           },
           {
             "id": "C",
-            "text": "Home tab > New Items > Task, then Save & Close (shortcut: Ctrl+Shift+K)"
+            "text": "New Email, left empty, sent to everyone"
           },
           {
             "id": "D",
             "text": "Forwarding a phishing sample to the whole organization"
           }
         ],
-        "answer": "C",
+        "answer": "A",
         "explain": "New Items > Task, then Save & Close; shortcut Ctrl+Shift+K.",
         "topic": "Lesson 8 — People: save a name you will write to again",
         "review": "../lesson-8/#section-chapter-1-people-save-a-name-you-will-write-to-a"
@@ -1089,11 +1089,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only printed letters, with no calendar"
+              "text": "Email, calendars, contacts, tasks, and to-do lists"
             },
             {
               "id": "B",
-              "text": "Email, calendars, contacts, tasks, and to-do lists"
+              "text": "Only printed letters, with no calendar"
             },
             {
               "id": "C",
@@ -1104,7 +1104,7 @@
               "text": "Only payroll calculations"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Microsoft’s basic Outlook page says Outlook organizes emails, calendars, contacts, tasks, and to-do lists."
         },
         {
@@ -1112,11 +1112,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "A credit-card number for MOS certification"
+              "text": "Your manager’s home address"
             },
             {
               "id": "B",
-              "text": "Your manager’s home address"
+              "text": "Your Social Insurance Number"
             },
             {
               "id": "C",
@@ -1124,7 +1124,7 @@
             },
             {
               "id": "D",
-              "text": "Your Social Insurance Number"
+              "text": "A credit-card number for MOS certification"
             }
           ],
           "answer": "C",
@@ -1135,22 +1135,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Guess any missing mail-server name until something works"
-            },
-            {
-              "id": "B",
               "text": "Type your real workplace password into every practice screen"
             },
             {
+              "id": "B",
+              "text": "Guess any missing mail-server name until something works"
+            },
+            {
               "id": "C",
-              "text": "Use a tutor-approved practice account and never type a real workplace password here"
+              "text": "Share your workplace password with the study group"
             },
             {
               "id": "D",
-              "text": "Share your workplace password with the study group"
+              "text": "Use a tutor-approved practice account and never type a real workplace password here"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Use a tutor-approved practice account."
         },
         {
@@ -1181,11 +1181,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "The Inbox"
+              "text": "People"
             },
             {
               "id": "B",
-              "text": "The zoom slider"
+              "text": "The Inbox"
             },
             {
               "id": "C",
@@ -1193,10 +1193,10 @@
             },
             {
               "id": "D",
-              "text": "People"
+              "text": "The zoom slider"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft names the Inbox as a mail folder you can work from; new mail usually arrives there."
         },
         {
@@ -1517,7 +1517,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "New Email"
+              "text": "File > Add Account"
             },
             {
               "id": "B",
@@ -1529,10 +1529,10 @@
             },
             {
               "id": "D",
-              "text": "File > Add Account"
+              "text": "New Email"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "From any mail folder (such as your Inbox), choose New Email."
         },
         {
@@ -1540,22 +1540,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ctrl+Shift+K"
-            },
-            {
-              "id": "B",
-              "text": "Ctrl+Shift+M"
-            },
-            {
-              "id": "C",
               "text": "Ctrl+Shift+C"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Ctrl+Shift+A"
+            },
+            {
+              "id": "C",
+              "text": "Ctrl+Shift+M"
+            },
+            {
+              "id": "D",
+              "text": "Ctrl+Shift+K"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Microsoft lists Ctrl+Shift+M for a new email. Ctrl+Shift+A is for an appointment, Ctrl+Shift+K for a task, and Ctrl+Shift+C for a contact."
         },
         {
@@ -1563,22 +1563,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only the word “Hi”"
-            },
-            {
-              "id": "B",
-              "text": "Written in ALL CAPS so it looks urgent"
-            },
-            {
-              "id": "C",
               "text": "Descriptive and action-oriented, so the reader knows what the message is about"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Only the word “Hi”"
+            },
+            {
+              "id": "C",
               "text": "Empty, because subjects are optional at work"
+            },
+            {
+              "id": "D",
+              "text": "Written in ALL CAPS so it looks urgent"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Microsoft asks for a descriptive, action-oriented subject."
         },
         {
@@ -1590,18 +1590,18 @@
             },
             {
               "id": "B",
-              "text": "As one very long sentence with no punctuation"
+              "text": "From most important to least, and put questions on separate lines"
             },
             {
               "id": "C",
-              "text": "From most important to least, and put questions on separate lines"
+              "text": "As one very long sentence with no punctuation"
             },
             {
               "id": "D",
               "text": "Only as a screenshot of your desktop"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Most important first; questions or action items on their own lines."
         },
         {
@@ -1609,7 +1609,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Delete your Sent Items folder"
+              "text": "Send the identical message five more times"
             },
             {
               "id": "B",
@@ -1617,7 +1617,7 @@
             },
             {
               "id": "C",
-              "text": "Send the identical message five more times"
+              "text": "Delete your Sent Items folder"
             },
             {
               "id": "D",
@@ -1632,22 +1632,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "On the To line"
+              "text": "Only in the subject, with the To line left blank"
             },
             {
               "id": "B",
-              "text": "In the Junk Email folder"
-            },
-            {
-              "id": "C",
               "text": "Only in a calendar appointment"
             },
             {
+              "id": "C",
+              "text": "In the Junk Email folder"
+            },
+            {
               "id": "D",
-              "text": "Only in the subject, with the To line left blank"
+              "text": "On the To line"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Microsoft says to put people who need to respond or take action on the To line."
         },
         {
@@ -1655,22 +1655,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Mark every message High Importance"
+              "text": "Email may not be the best tool — a phone call or instant message can be clearer"
             },
             {
               "id": "B",
-              "text": "Send the same long email every ten minutes"
+              "text": "Mark every message High Importance"
             },
             {
               "id": "C",
-              "text": "Leave the subject blank so it looks urgent"
+              "text": "Send the same long email every ten minutes"
             },
             {
               "id": "D",
-              "text": "Email may not be the best tool — a phone call or instant message can be clearer"
+              "text": "Leave the subject blank so it looks urgent"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "If you want an immediate response, Microsoft says not to rely on email."
         }
       ],
@@ -1929,7 +1929,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "The Junk Email folder"
+              "text": "The sender plus everyone on To and Cc"
             },
             {
               "id": "B",
@@ -1941,7 +1941,7 @@
             },
             {
               "id": "D",
-              "text": "The sender plus everyone on To and Cc"
+              "text": "The Junk Email folder"
             }
           ],
           "answer": "B",
@@ -1952,22 +1952,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The original sender and all other recipients on the To and Cc lines"
-            },
-            {
-              "id": "B",
-              "text": "People you have not added and cannot remove"
-            },
-            {
-              "id": "C",
               "text": "Only the first name in the To box"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Only people on Bcc"
+            },
+            {
+              "id": "C",
+              "text": "People you have not added and cannot remove"
+            },
+            {
+              "id": "D",
+              "text": "The original sender and all other recipients on the To and Cc lines"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Reply All includes the sender plus To and Cc recipients."
         },
         {
@@ -1975,22 +1975,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sent only to Bcc recipients"
+              "text": "Converted into calendar appointments"
             },
             {
               "id": "B",
-              "text": "Not included"
+              "text": "Sent only to Bcc recipients"
             },
             {
               "id": "C",
-              "text": "Always included twice"
+              "text": "Not included"
             },
             {
               "id": "D",
-              "text": "Converted into calendar appointments"
+              "text": "Always included twice"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Attachments are not included on Reply or Reply All."
         },
         {
@@ -1998,22 +1998,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Want to add a second workplace password"
-            },
-            {
-              "id": "B",
-              "text": "Want to answer only the original sender"
-            },
-            {
-              "id": "C",
               "text": "Need to send the message, including original attachments, to someone new"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Want to delete the Inbox"
+            },
+            {
+              "id": "C",
+              "text": "Want to add a second workplace password"
+            },
+            {
+              "id": "D",
+              "text": "Want to answer only the original sender"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Forward includes original attachments and a new recipient list."
         },
         {
@@ -2021,22 +2021,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The calendar only"
-            },
-            {
-              "id": "B",
               "text": "Bcc, so they cannot see the question"
             },
             {
+              "id": "B",
+              "text": "The To line"
+            },
+            {
               "id": "C",
-              "text": "The subject line, with To left empty"
+              "text": "The calendar only"
             },
             {
               "id": "D",
-              "text": "The To line"
+              "text": "The subject line, with To left empty"
             }
           ],
-          "answer": "D",
+          "answer": "B",
           "explain": "Microsoft puts people who must act on To and people who must be informed on Cc."
         },
         {
@@ -2044,7 +2044,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Reply All to the whole company"
+              "text": "Bcc the manager and hope they stay silent"
             },
             {
               "id": "B",
@@ -2052,14 +2052,14 @@
             },
             {
               "id": "C",
-              "text": "Forward the sent copy, rather than secretly using Bcc"
+              "text": "Reply All to the whole company"
             },
             {
               "id": "D",
-              "text": "Bcc the manager and hope they stay silent"
+              "text": "Forward the sent copy, rather than secretly using Bcc"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Forward after sending; a Bcc recipient might reply-all and reveal themselves."
         },
         {
@@ -2067,22 +2067,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask the list owner or your administrator — not Reply All to ask to be removed"
+              "text": "Reply All with “Remove me” so everyone sees it"
             },
             {
               "id": "B",
-              "text": "Put the whole list in To and mark the message High Importance"
-            },
-            {
-              "id": "C",
               "text": "Forward the whole list to a public website"
             },
             {
+              "id": "C",
+              "text": "Ask the list owner or your administrator — not Reply All to ask to be removed"
+            },
+            {
               "id": "D",
-              "text": "Reply All with “Remove me” so everyone sees it"
+              "text": "Put the whole list in To and mark the message High Importance"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Never Reply All only to ask to be removed."
         }
       ],
@@ -2307,22 +2307,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "File > Add Account"
-            },
-            {
-              "id": "B",
               "text": "Message > Attach File"
             },
             {
+              "id": "B",
+              "text": "File > Add Account"
+            },
+            {
               "id": "C",
-              "text": "Calendar > New Meeting"
+              "text": "New Appointment"
             },
             {
               "id": "D",
-              "text": "New Appointment"
+              "text": "Calendar > New Meeting"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Message > Attach File."
         },
         {
@@ -2330,22 +2330,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select it and choose Save As (on the Attachments tab, or by right-clicking)"
-            },
-            {
-              "id": "B",
               "text": "Choose Reply All, because saving only works after you reply"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Drag it into the Junk Email folder"
+            },
+            {
+              "id": "C",
+              "text": "Select it and choose Save As (on the Attachments tab, or by right-clicking)"
             },
             {
               "id": "D",
               "text": "Type your workplace password into this course"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Save As from the Attachments tab or the right-click menu."
         },
         {
@@ -2353,22 +2353,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Hidden on the Bcc line"
+              "text": "Your banking password plus a joke"
             },
             {
               "id": "B",
-              "text": "A full-page colourful poster"
+              "text": "Hidden on the Bcc line"
             },
             {
               "id": "C",
-              "text": "Simple, short, professional, and if possible free of large graphics"
+              "text": "A full-page colourful poster"
             },
             {
               "id": "D",
-              "text": "Your banking password plus a joke"
+              "text": "Simple, short, professional, and if possible free of large graphics"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Microsoft asks for a simple, short, professional signature, free of graphics if possible."
         },
         {
@@ -2376,7 +2376,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Reply All so everyone sees how you feel"
+              "text": "Send it immediately in ALL CAPS"
             },
             {
               "id": "B",
@@ -2384,7 +2384,7 @@
             },
             {
               "id": "C",
-              "text": "Send it immediately in ALL CAPS"
+              "text": "Reply All so everyone sees how you feel"
             },
             {
               "id": "D",
@@ -2399,7 +2399,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "The only way to send a file"
+              "text": "The most professional format Microsoft describes"
             },
             {
               "id": "B",
@@ -2407,14 +2407,14 @@
             },
             {
               "id": "C",
-              "text": "Easy for the reader to misunderstand — add a sentence that names the file and what to do"
+              "text": "The only way to send a file"
             },
             {
               "id": "D",
-              "text": "The most professional format Microsoft describes"
+              "text": "Easy for the reader to misunderstand — add a sentence that names the file and what to do"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Name the file in the body so the reader knows what to do."
         },
         {
@@ -2422,11 +2422,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "On every message you send"
+              "text": "Sparingly, because people learn to ignore it when every message is marked urgent"
             },
             {
               "id": "B",
-              "text": "Instead of a To line"
+              "text": "On every message you send"
             },
             {
               "id": "C",
@@ -2434,10 +2434,10 @@
             },
             {
               "id": "D",
-              "text": "Sparingly, because people learn to ignore it when every message is marked urgent"
+              "text": "Instead of a To line"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Use High Importance sparingly."
         },
         {
@@ -2445,22 +2445,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Consider a phone call or a meeting, because email is not always the best tool"
-            },
-            {
-              "id": "B",
               "text": "Keep Reply-Alling until someone gives up"
             },
             {
+              "id": "B",
+              "text": "Delete Sent Items"
+            },
+            {
               "id": "C",
-              "text": "Secretly Bcc the whole company"
+              "text": "Consider a phone call or a meeting, because email is not always the best tool"
             },
             {
               "id": "D",
-              "text": "Delete Sent Items"
+              "text": "Secretly Bcc the whole company"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "After more than about ten messages without a resolution, consider calling or meeting."
         }
       ],
@@ -2699,22 +2699,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Choosing New Appointment"
+              "text": "Choosing New Email"
             },
             {
               "id": "B",
-              "text": "Right-clicking in the left pane of Mail and choosing New Folder"
-            },
-            {
-              "id": "C",
               "text": "Choosing File > Add Account"
             },
             {
+              "id": "C",
+              "text": "Right-clicking in the left pane of Mail and choosing New Folder"
+            },
+            {
               "id": "D",
-              "text": "Choosing New Email"
+              "text": "Choosing New Appointment"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Classic Outlook: right-click in the left pane of Mail, then New Folder. New Outlook uses Create new folder."
         },
         {
@@ -2722,11 +2722,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Put the file in Bcc"
+              "text": "Drag the message onto the folder, or select it and choose Move"
             },
             {
               "id": "B",
-              "text": "Drag the message onto the folder, or select it and choose Move"
+              "text": "Type the folder name in the subject and send the message again"
             },
             {
               "id": "C",
@@ -2734,10 +2734,10 @@
             },
             {
               "id": "D",
-              "text": "Type the folder name in the subject and send the message again"
+              "text": "Put the file in Bcc"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Drag and drop, or Move on the ribbon (or right-click Move)."
         },
         {
@@ -2745,22 +2745,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The message is sent to everyone in People"
-            },
-            {
-              "id": "B",
               "text": "The message is permanently deleted"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "The message becomes a to-do item and the flag turns red"
+            },
+            {
+              "id": "C",
+              "text": "The message is sent to everyone in People"
             },
             {
               "id": "D",
               "text": "A new email account is created"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "The flag turns red and the message becomes a to-do item."
         },
         {
@@ -2768,22 +2768,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Forward the message to yourself ten times"
-            },
-            {
-              "id": "B",
               "text": "Mark it High Importance instead of using a reminder"
             },
             {
+              "id": "B",
+              "text": "Choose File > Add Account"
+            },
+            {
               "id": "C",
-              "text": "Right-click the flag and choose Add Reminder"
+              "text": "Forward the message to yourself ten times"
             },
             {
               "id": "D",
-              "text": "Choose File > Add Account"
+              "text": "Right-click the flag and choose Add Reminder"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Right-click the flag and choose Add Reminder."
         },
         {
@@ -2791,7 +2791,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Right-click the message and choose Follow Up > Mark Complete"
+              "text": "Turn the flag into a meeting with the entire company"
             },
             {
               "id": "B",
@@ -2799,14 +2799,14 @@
             },
             {
               "id": "C",
-              "text": "Delete your whole mailbox"
+              "text": "Right-click the message and choose Follow Up > Mark Complete"
             },
             {
               "id": "D",
-              "text": "Turn the flag into a meeting with the entire company"
+              "text": "Delete your whole mailbox"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Follow Up > Mark Complete turns the flag into a green checkmark."
         },
         {
@@ -2814,22 +2814,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The word Calendar typed into a new appointment"
-            },
-            {
-              "id": "B",
               "text": "A blank search box, because Outlook guesses the name"
             },
             {
+              "id": "B",
+              "text": "from: followed by that person’s address"
+            },
+            {
               "id": "C",
-              "text": "Bcc, because search only works from Bcc"
+              "text": "The word Calendar typed into a new appointment"
             },
             {
               "id": "D",
-              "text": "from: followed by that person’s address"
+              "text": "Bcc, because search only works from Bcc"
             }
           ],
-          "answer": "D",
+          "answer": "B",
           "explain": "from: plus the address limits results to that sender."
         },
         {
@@ -3077,7 +3077,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Moved automatically to the Junk Email folder"
+              "text": "Turned into a meeting"
             },
             {
               "id": "B",
@@ -3085,14 +3085,14 @@
             },
             {
               "id": "C",
-              "text": "Sent to everyone in People"
+              "text": "Moved automatically to the Junk Email folder"
             },
             {
               "id": "D",
-              "text": "Turned into a meeting"
+              "text": "Sent to everyone in People"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Microsoft says possible junk can go to the Junk Email folder and malware is disabled."
         },
         {
@@ -3100,22 +3100,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A calendar reminder you set yourself"
-            },
-            {
-              "id": "B",
               "text": "A signature that is too long"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "A message that tries to trick you into clicking, opening a file, or giving away private details"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Any flyer about a store sale"
+            },
+            {
+              "id": "D",
+              "text": "A calendar reminder you set yourself"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Phishing tries to trick you into clicking, opening a file, or giving away private details."
         },
         {
@@ -3123,7 +3123,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Forward it to the whole Inbox"
+              "text": "Click the link to see what happens"
             },
             {
               "id": "B",
@@ -3131,7 +3131,7 @@
             },
             {
               "id": "C",
-              "text": "Click the link to see what happens"
+              "text": "Forward it to the whole Inbox"
             },
             {
               "id": "D",
@@ -3146,22 +3146,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Reasons to mark the message High Importance and reply all"
-            },
-            {
-              "id": "B",
               "text": "Warning signs that you should pause and not click"
             },
             {
+              "id": "B",
+              "text": "Required parts of every workplace signature"
+            },
+            {
               "id": "C",
-              "text": "Proof the message is safe"
+              "text": "Reasons to mark the message High Importance and reply all"
             },
             {
               "id": "D",
-              "text": "Required parts of every workplace signature"
+              "text": "Proof the message is safe"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Those are Get Cyber Safe warning signs — pause and do not click."
         },
         {
@@ -3169,11 +3169,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Click the link first and decide later"
+              "text": "Type your banking password into this course"
             },
             {
               "id": "B",
-              "text": "Call only the phone number printed inside the suspicious message"
+              "text": "Click the link first and decide later"
             },
             {
               "id": "C",
@@ -3181,7 +3181,7 @@
             },
             {
               "id": "D",
-              "text": "Type your banking password into this course"
+              "text": "Call only the phone number printed inside the suspicious message"
             }
           ],
           "answer": "C",
@@ -3192,7 +3192,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Paying a fee to “unlock” your email"
+              "text": "A random comment on social media"
             },
             {
               "id": "B",
@@ -3204,7 +3204,7 @@
             },
             {
               "id": "D",
-              "text": "A random comment on social media"
+              "text": "Paying a fee to “unlock” your email"
             }
           ],
           "answer": "B",
@@ -3215,7 +3215,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Take *Email & Online Safety Basics in Canada*"
+              "text": "Share your workplace password with classmates"
             },
             {
               "id": "B",
@@ -3227,10 +3227,10 @@
             },
             {
               "id": "D",
-              "text": "Share your workplace password with classmates"
+              "text": "Take *Email & Online Safety Basics in Canada*"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "This lesson points to the email-safety course for more depth."
         }
       ],
@@ -3515,22 +3515,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Does not involve inviting other people or reserving a room or equipment"
-            },
-            {
-              "id": "B",
               "text": "Always includes the whole staff list"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Can only be created from Junk Email"
+            },
+            {
+              "id": "C",
+              "text": "Does not involve inviting other people or reserving a room or equipment"
             },
             {
               "id": "D",
               "text": "Replaces the need for a subject line in every email"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Appointments do not invite others or reserve resources."
         },
         {
@@ -3538,22 +3538,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Is the same as a Bcc list"
-            },
-            {
-              "id": "B",
-              "text": "Includes other people and can include resources such as conference rooms"
-            },
-            {
-              "id": "C",
               "text": "Lives only in People"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Must never have a title"
+            },
+            {
+              "id": "C",
+              "text": "Is the same as a Bcc list"
+            },
+            {
+              "id": "D",
+              "text": "Includes other people and can include resources such as conference rooms"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Meetings include other people and can include a room."
         },
         {
@@ -3561,7 +3561,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Choose Reply All"
+              "text": "Choose New Email"
             },
             {
               "id": "B",
@@ -3573,7 +3573,7 @@
             },
             {
               "id": "D",
-              "text": "Choose New Email"
+              "text": "Choose Reply All"
             }
           ],
           "answer": "B",
@@ -3584,7 +3584,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Flag a message without opening Calendar"
+              "text": "In a Calendar folder, choose New Meeting (shortcut: Ctrl+Shift+Q)"
             },
             {
               "id": "B",
@@ -3592,14 +3592,14 @@
             },
             {
               "id": "C",
-              "text": "In a Calendar folder, choose New Meeting (shortcut: Ctrl+Shift+Q)"
+              "text": "Flag a message without opening Calendar"
             },
             {
               "id": "D",
               "text": "Type the word meeting in the search box and press Print"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "New Meeting, or Ctrl+Shift+Q from any folder."
         },
         {
@@ -3607,22 +3607,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only inside Junk Email"
-            },
-            {
-              "id": "B",
               "text": "Only on a printed calendar"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "In your Inbox"
+            },
+            {
+              "id": "C",
+              "text": "Only inside Junk Email"
             },
             {
               "id": "D",
               "text": "In the Bcc field of a message you never sent"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Replies to meeting requests arrive in the Inbox."
         },
         {
@@ -3630,22 +3630,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Marking a random email High Importance"
+              "text": "Opening the item and choosing a time in the Reminder list (or None to turn it off)"
             },
             {
               "id": "B",
-              "text": "Creating a new email account"
+              "text": "Marking a random email High Importance"
             },
             {
               "id": "C",
-              "text": "Putting the word reminder in Bcc"
+              "text": "Creating a new email account"
             },
             {
               "id": "D",
-              "text": "Opening the item and choosing a time in the Reminder list (or None to turn it off)"
+              "text": "Putting the word reminder in Bcc"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Use the Reminder list on the appointment or meeting."
         },
         {
@@ -3653,22 +3653,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Create an appointment for the review and a meeting that invites Jordan to the briefing"
-            },
-            {
-              "id": "B",
               "text": "Send one meeting invite to the whole organization for both blocks of time"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Skip Calendar and hope everyone remembers"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Put both blocks of time in the Junk Email folder"
+            },
+            {
+              "id": "D",
+              "text": "Create an appointment for the review and a meeting that invites Jordan to the briefing"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Keep your own review time as an appointment; invite Jordan with a meeting."
         }
       ],
@@ -3919,22 +3919,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The zoom slider"
-            },
-            {
-              "id": "B",
-              "text": "People"
-            },
-            {
-              "id": "C",
               "text": "File > Print only"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Junk Email"
+            },
+            {
+              "id": "C",
+              "text": "People"
+            },
+            {
+              "id": "D",
+              "text": "The zoom slider"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Contacts live under People."
         },
         {
@@ -3946,7 +3946,7 @@
             },
             {
               "id": "B",
-              "text": "Type the address only in Bcc and hope Outlook remembers it"
+              "text": "Choose New Appointment"
             },
             {
               "id": "C",
@@ -3954,7 +3954,7 @@
             },
             {
               "id": "D",
-              "text": "Choose New Appointment"
+              "text": "Type the address only in Bcc and hope Outlook remembers it"
             }
           ],
           "answer": "A",
@@ -3965,22 +3965,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A name and an email address — not passwords or other private numbers"
-            },
-            {
-              "id": "B",
-              "text": "Your workplace password"
-            },
-            {
-              "id": "C",
               "text": "A coworker’s banking details"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "A Social Insurance Number"
+            },
+            {
+              "id": "C",
+              "text": "Your workplace password"
+            },
+            {
+              "id": "D",
+              "text": "A name and an email address — not passwords or other private numbers"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "A name and email are enough; never store passwords or SINs in a practice contact."
         },
         {
@@ -3992,18 +3992,18 @@
             },
             {
               "id": "B",
-              "text": "Forwarding Message 4 to the whole organization"
-            },
-            {
-              "id": "C",
               "text": "Home tab > New Items > Task, then Save & Close (shortcut: Ctrl+Shift+K)"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "New Email, left empty, sent to everyone"
+            },
+            {
+              "id": "D",
+              "text": "Forwarding Message 4 to the whole organization"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "New Items > Task, then Save & Close; shortcut Ctrl+Shift+K."
         },
         {
@@ -4011,22 +4011,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The only way to create a reminder"
-            },
-            {
-              "id": "B",
               "text": "Required before you can save any contact"
             },
             {
+              "id": "B",
+              "text": "The only way to create a reminder"
+            },
+            {
               "id": "C",
-              "text": "An Outlook feature this course does not ask you to use with real coworkers"
+              "text": "How you report fraud to the Canadian Anti-Fraud Centre"
             },
             {
               "id": "D",
-              "text": "How you report fraud to the Canadian Anti-Fraud Centre"
+              "text": "An Outlook feature this course does not ask you to use with real coworkers"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "You can assign a task at work, but this course stays with a task you create for yourself."
         },
         {
@@ -4038,18 +4038,18 @@
             },
             {
               "id": "B",
-              "text": "Click every unexpected attachment"
+              "text": "Read new messages, then choose Reply or Reply All with care before you send"
             },
             {
               "id": "C",
-              "text": "Leave Outlook open on a library computer overnight"
+              "text": "Click every unexpected attachment"
             },
             {
               "id": "D",
-              "text": "Read new messages, then choose Reply or Reply All with care before you send"
+              "text": "Leave Outlook open on a library computer overnight"
             }
           ],
-          "answer": "D",
+          "answer": "B",
           "explain": "Read first, then reply with care."
         },
         {
@@ -4057,22 +4057,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Write your workplace password on a sticky note"
-            },
-            {
-              "id": "B",
               "text": "Sign out, as Everyday Computers teaches for a shared machine"
             },
             {
+              "id": "B",
+              "text": "Write your workplace password on a sticky note"
+            },
+            {
               "id": "C",
-              "text": "Export everyone else’s contacts without asking"
+              "text": "Stay signed in so the next person can read your Inbox"
             },
             {
               "id": "D",
-              "text": "Stay signed in so the next person can read your Inbox"
+              "text": "Export everyone else’s contacts without asking"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Sign out on a shared computer."
         }
       ],

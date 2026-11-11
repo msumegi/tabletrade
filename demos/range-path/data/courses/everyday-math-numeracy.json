@@ -40,14 +40,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Check whether the answer makes sense"
+              "text": "Throw the paper away without looking"
             },
             {
               "id": "B",
-              "text": "Throw the paper away without looking"
+              "text": "Check whether the answer makes sense"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -55,14 +55,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -70,14 +70,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -121,14 +121,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "$3.25"
+              "text": "$16.75"
             },
             {
               "id": "B",
-              "text": "$16.75"
+              "text": "$3.25"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -136,14 +136,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Check the work again"
+              "text": "Always accept the first number"
             },
             {
               "id": "B",
-              "text": "Always accept the first number"
+              "text": "Check the work again"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -198,14 +198,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Heavier or lighter, greater than or less than"
+              "text": "Only favourite colours"
             },
             {
               "id": "B",
-              "text": "Only favourite colours"
+              "text": "Heavier or lighter, greater than or less than"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -213,14 +213,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Use the factor on the tool or an official source, not a guessed number"
+              "text": "Always multiply by 17 because it “looks right”"
             },
             {
               "id": "B",
-              "text": "Always multiply by 17 because it “looks right”"
+              "text": "Use the factor on the tool or an official source, not a guessed number"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -279,14 +279,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Per kilogram, litre, or item"
+              "text": "Only as a drawing of the store"
             },
             {
               "id": "B",
-              "text": "Only as a drawing of the store"
+              "text": "Per kilogram, litre, or item"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -294,14 +294,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "In Quebec, and voluntary in many other Canadian stores"
+              "text": "On every farm gate in the world"
             },
             {
               "id": "B",
-              "text": "On every farm gate in the world"
+              "text": "In Quebec, and voluntary in many other Canadian stores"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -309,14 +309,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -356,14 +356,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Take-home pay after deductions"
+              "text": "A type of fishing net"
             },
             {
               "id": "B",
-              "text": "A type of fishing net"
+              "text": "Take-home pay after deductions"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -371,14 +371,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -386,14 +386,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Multiply hours by the hourly rate and compare it with the stub"
+              "text": "Ignore the numbers completely"
             },
             {
               "id": "B",
-              "text": "Ignore the numbers completely"
+              "text": "Multiply hours by the hourly rate and compare it with the stub"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -406,12 +406,12 @@
         "prompt": "Numeracy includes finding numbers, calculating or estimating, and checking whether the result makes sense.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -436,12 +436,12 @@
         "prompt": "Estimating “about 20 copies” is an official example of everyday numeracy.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -466,45 +466,45 @@
         "prompt": "A sale sticker always means the best unit price.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
       },
       {
         "prompt": "Gross pay is take-home pay after all deductions.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
       },
       {
         "prompt": "This course is tax, lending, and budgeting advice.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Calculate carefully, compare unit prices, and read gross and net pay as numbers — without treating this course as money advice."
       }
     ]

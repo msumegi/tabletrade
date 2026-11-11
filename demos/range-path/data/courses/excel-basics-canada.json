@@ -58,18 +58,18 @@
           },
           {
             "id": "B",
-            "text": "Fill handle"
+            "text": "Workbook"
           },
           {
             "id": "C",
-            "text": "Workbook"
+            "text": "Fill handle"
           },
           {
             "id": "D",
             "text": "Ribbon group"
           }
         ],
-        "answer": "C",
+        "answer": "B",
         "explain": "— Microsoft calls the file a workbook.",
         "topic": "Lesson 1 — Lists you already keep",
         "review": "../lesson-1/#section-chapter-1-lists-you-already-keep"
@@ -79,22 +79,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Column 4, row C"
+            "text": "Column C, row 4"
           },
           {
             "id": "B",
-            "text": "The fourth workbook"
+            "text": "Column 4, row C"
           },
           {
             "id": "C",
-            "text": "Always a date"
+            "text": "The fourth workbook"
           },
           {
             "id": "D",
-            "text": "Column C, row 4"
+            "text": "Always a date"
           }
         ],
-        "answer": "D",
+        "answer": "A",
         "explain": "— Letter = column, number = row.",
         "topic": "Lesson 1 — Lists you already keep",
         "review": "../lesson-1/#section-chapter-1-lists-you-already-keep"
@@ -104,22 +104,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Only PDF files"
+            "text": "Only charts"
           },
           {
             "id": "B",
-            "text": "Numbers, text, or formulas"
-          },
-          {
-            "id": "C",
             "text": "Only one kind of information, such as numbers and never text"
           },
           {
+            "id": "C",
+            "text": "Only PDF files"
+          },
+          {
             "id": "D",
-            "text": "Only charts"
+            "text": "Numbers, text, or formulas"
           }
         ],
-        "answer": "B",
+        "answer": "D",
         "explain": "— Numbers, text, or formulas.",
         "topic": "Lesson 1 — Lists you already keep",
         "review": "../lesson-1/#section-chapter-1-lists-you-already-keep"
@@ -129,22 +129,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Insert > Table > Blank chart"
+            "text": "Data > Sort > New"
           },
           {
             "id": "B",
-            "text": "File > New > Blank workbook"
-          },
-          {
-            "id": "C",
             "text": "Formulas > AutoSum > New"
           },
           {
+            "id": "C",
+            "text": "File > New > Blank workbook"
+          },
+          {
             "id": "D",
-            "text": "Data > Sort > New"
+            "text": "Insert > Table > Blank chart"
           }
         ],
-        "answer": "B",
+        "answer": "C",
         "explain": "— File > New > Blank workbook.",
         "topic": "Lesson 2 — Start a blank workbook",
         "review": "../lesson-2/#section-chapter-1-start-a-blank-workbook"
@@ -154,11 +154,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "To a new workbook"
+            "text": "Left"
           },
           {
             "id": "B",
-            "text": "Left"
+            "text": "To the File tab"
           },
           {
             "id": "C",
@@ -166,7 +166,7 @@
           },
           {
             "id": "D",
-            "text": "To the File tab"
+            "text": "To a new workbook"
           }
         ],
         "answer": "C",
@@ -187,11 +187,11 @@
           },
           {
             "id": "C",
-            "text": "To sheet two"
+            "text": "To Print Preview"
           },
           {
             "id": "D",
-            "text": "To Print Preview"
+            "text": "To sheet two"
           }
         ],
         "answer": "A",
@@ -204,22 +204,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Clicking an empty cell, typing text or a number, then pressing Enter or Tab"
+            "text": "Inserting a pie chart, then typing"
           },
           {
             "id": "B",
-            "text": "Filtering the sheet, then closing Excel"
+            "text": "Clicking an empty cell, typing text or a number, then pressing Enter or Tab"
           },
           {
             "id": "C",
-            "text": "Inserting a pie chart, then typing"
+            "text": "Filtering the sheet, then closing Excel"
           },
           {
             "id": "D",
             "text": "Saving as a PDF first"
           }
         ],
-        "answer": "A",
+        "answer": "B",
         "explain": "— Click, type, Enter or Tab.",
         "topic": "Lesson 2 — Start a blank workbook",
         "review": "../lesson-2/#section-chapter-1-start-a-blank-workbook"
@@ -229,15 +229,15 @@
         "choices": [
           {
             "id": "A",
-            "text": "`six`"
-          },
-          {
-            "id": "B",
             "text": "`about 6?`"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "`6 hours`"
+          },
+          {
+            "id": "C",
+            "text": "`six`"
           },
           {
             "id": "D",
@@ -254,7 +254,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "A date"
+            "text": "The row should be deleted"
           },
           {
             "id": "B",
@@ -262,14 +262,14 @@
           },
           {
             "id": "C",
-            "text": "A recorded day off (no hours)"
+            "text": "A date"
           },
           {
             "id": "D",
-            "text": "The row should be deleted"
+            "text": "A recorded day off (no hours)"
           }
         ],
-        "answer": "C",
+        "answer": "D",
         "explain": "— A typed 0 is a recorded day off.",
         "topic": "Lesson 3 — Type text and move to the next cell",
         "review": "../lesson-3/#section-chapter-1-type-text-and-move-to-the-next-cell"
@@ -279,22 +279,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Sort the sheet A to Z"
+            "text": "Always change 5.49 into 549"
           },
           {
             "id": "B",
-            "text": "Change how numbers look but do not change the stored values"
-          },
-          {
-            "id": "C",
             "text": "Delete formulas"
           },
           {
+            "id": "C",
+            "text": "Change how numbers look but do not change the stored values"
+          },
+          {
             "id": "D",
-            "text": "Always change 5.49 into 549"
+            "text": "Sort the sheet A to Z"
           }
         ],
-        "answer": "B",
+        "answer": "C",
         "explain": "— Formats change display, not stored values.",
         "topic": "Lesson 4 — Format for readers — not for decoration",
         "review": "../lesson-4/#section-chapter-1-format-for-readers-not-for-decoration"
@@ -304,7 +304,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Only inside a PDF"
+            "text": "Only under File > Options"
           },
           {
             "id": "B",
@@ -312,11 +312,11 @@
           },
           {
             "id": "C",
-            "text": "Only under File > Options"
+            "text": "On the Data tab only"
           },
           {
             "id": "D",
-            "text": "On the Data tab only"
+            "text": "Only inside a PDF"
           }
         ],
         "answer": "B",
@@ -333,11 +333,11 @@
           },
           {
             "id": "B",
-            "text": "Time"
+            "text": "Percentage"
           },
           {
             "id": "C",
-            "text": "Percentage"
+            "text": "Time"
           },
           {
             "id": "D",
@@ -354,22 +354,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "`$`"
-          },
-          {
-            "id": "B",
-            "text": "`SUM`"
-          },
-          {
-            "id": "C",
             "text": "`+`"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "`=`"
+          },
+          {
+            "id": "C",
+            "text": "`SUM`"
+          },
+          {
+            "id": "D",
+            "text": "`$`"
           }
         ],
-        "answer": "D",
+        "answer": "B",
         "explain": "— Formulas start with `=`.",
         "topic": "Lesson 5 — A formula always starts with =",
         "review": "../lesson-5/#section-chapter-1-a-formula-always-starts-with"
@@ -387,11 +387,11 @@
           },
           {
             "id": "C",
-            "text": "523"
+            "text": "10"
           },
           {
             "id": "D",
-            "text": "10"
+            "text": "523"
           }
         ],
         "answer": "A",
@@ -404,22 +404,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "`=B2+B3+B4`"
+            "text": "`B2+B3+B4`"
           },
           {
             "id": "B",
-            "text": "`=Day+Day+Day`"
-          },
-          {
-            "id": "C",
             "text": "`Add B2 B3 B4`"
           },
           {
+            "id": "C",
+            "text": "`=Day+Day+Day`"
+          },
+          {
             "id": "D",
-            "text": "`B2+B3+B4`"
+            "text": "`=B2+B3+B4`"
           }
         ],
-        "answer": "A",
+        "answer": "D",
         "explain": "— `=B2+B3+B4`.",
         "topic": "Lesson 5 — A formula always starts with =",
         "review": "../lesson-5/#section-chapter-1-a-formula-always-starts-with"
@@ -429,22 +429,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "The cell immediately below the numbers (or to the right of a row)"
-          },
-          {
-            "id": "B",
-            "text": "A blank chart title"
-          },
-          {
-            "id": "C",
             "text": "The header row at the top of the column"
           },
           {
-            "id": "D",
+            "id": "B",
             "text": "File > New"
+          },
+          {
+            "id": "C",
+            "text": "The cell immediately below the numbers (or to the right of a row)"
+          },
+          {
+            "id": "D",
+            "text": "A blank chart title"
           }
         ],
-        "answer": "A",
+        "answer": "C",
         "explain": "— Cell below a column or to the right of a row.",
         "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
         "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
@@ -454,22 +454,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "FILTER"
-          },
-          {
-            "id": "B",
             "text": "DATE"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "SUM"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "AVERAGE only"
+          },
+          {
+            "id": "D",
+            "text": "FILTER"
           }
         ],
-        "answer": "C",
+        "answer": "B",
         "explain": "— AutoSum inserts SUM.",
         "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
         "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
@@ -479,11 +479,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "158.78"
+            "text": "11"
           },
           {
             "id": "B",
-            "text": "11"
+            "text": "7"
           },
           {
             "id": "C",
@@ -491,7 +491,7 @@
           },
           {
             "id": "D",
-            "text": "7"
+            "text": "158.78"
           }
         ],
         "answer": "C",
@@ -533,7 +533,7 @@
           },
           {
             "id": "B",
-            "text": "Lowers the average compared with averaging working days only"
+            "text": "Converts hours to dollars"
           },
           {
             "id": "C",
@@ -541,10 +541,10 @@
           },
           {
             "id": "D",
-            "text": "Converts hours to dollars"
+            "text": "Lowers the average compared with averaging working days only"
           }
         ],
-        "answer": "B",
+        "answer": "D",
         "explain": "— Zeros increase the count and pull the average down.",
         "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
         "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
@@ -554,11 +554,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "`=SUM(A2)`"
+            "text": "`=A1+B1`"
           },
           {
             "id": "B",
-            "text": "`=A3+B3`"
+            "text": "`=SUM(A2)`"
           },
           {
             "id": "C",
@@ -566,10 +566,10 @@
           },
           {
             "id": "D",
-            "text": "`=A1+B1`"
+            "text": "`=A3+B3`"
           }
         ],
-        "answer": "B",
+        "answer": "D",
         "explain": "— Relative references shift to A3 and B3.",
         "topic": "Lesson 7 — Fill a formula into the cells beside it",
         "review": "../lesson-7/#section-chapter-1-fill-a-formula-into-the-cells-beside-i"
@@ -579,22 +579,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "`#H1`"
-          },
-          {
-            "id": "B",
-            "text": "`H1`"
-          },
-          {
-            "id": "C",
             "text": "`H1%`"
           },
           {
-            "id": "D",
+            "id": "B",
+            "text": "`#H1`"
+          },
+          {
+            "id": "C",
             "text": "`$H$1`"
+          },
+          {
+            "id": "D",
+            "text": "`H1`"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "— `$H$1`.",
         "topic": "Lesson 7 — Fill a formula into the cells beside it",
         "review": "../lesson-7/#section-chapter-1-fill-a-formula-into-the-cells-beside-i"
@@ -604,7 +604,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "A MOS exam requirement"
+            "text": "Proof of a real invoice"
           },
           {
             "id": "B",
@@ -612,11 +612,11 @@
           },
           {
             "id": "C",
-            "text": "Proof of a real invoice"
+            "text": "Official tax advice you must file"
           },
           {
             "id": "D",
-            "text": "Official tax advice you must file"
+            "text": "A MOS exam requirement"
           }
         ],
         "answer": "B",
@@ -633,11 +633,11 @@
           },
           {
             "id": "B",
-            "text": "Delete the header row"
+            "text": "Sort only the Amount column and leave item names where they are"
           },
           {
             "id": "C",
-            "text": "Sort only the Amount column and leave item names where they are"
+            "text": "Delete the header row"
           },
           {
             "id": "D",
@@ -654,7 +654,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "The file becomes a template"
+            "text": "The other rows are permanently deleted"
           },
           {
             "id": "B",
@@ -662,14 +662,14 @@
           },
           {
             "id": "C",
-            "text": "The other rows are permanently deleted"
+            "text": "The other rows are hidden until you clear the filter"
           },
           {
             "id": "D",
-            "text": "The other rows are hidden until you clear the filter"
+            "text": "The file becomes a template"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "— Filter hides rows; it does not delete them.",
         "topic": "Lesson 8 — Sort a list without breaking the rows",
         "review": "../lesson-8/#section-chapter-1-sort-a-list-without-breaking-the-rows"
@@ -679,7 +679,7 @@
         "choices": [
           {
             "id": "A",
-            "text": "Turn off saving"
+            "text": "Confirm the range and whether the list has headers"
           },
           {
             "id": "B",
@@ -691,10 +691,10 @@
           },
           {
             "id": "D",
-            "text": "Confirm the range and whether the list has headers"
+            "text": "Turn off saving"
           }
         ],
-        "answer": "D",
+        "answer": "A",
         "explain": "— Range and headers.",
         "topic": "Lesson 8 — Sort a list without breaking the rows",
         "review": "../lesson-8/#section-chapter-1-sort-a-list-without-breaking-the-rows"
@@ -704,11 +704,11 @@
         "choices": [
           {
             "id": "A",
-            "text": "Column C only"
+            "text": "The entire workbook"
           },
           {
             "id": "B",
-            "text": "A1:B8 (not the Total row)"
+            "text": "Column C only"
           },
           {
             "id": "C",
@@ -716,10 +716,10 @@
           },
           {
             "id": "D",
-            "text": "The entire workbook"
+            "text": "A1:B8 (not the Total row)"
           }
         ],
-        "answer": "B",
+        "answer": "D",
         "explain": "— A1:B8, not the total.",
         "topic": "Lesson 9 — Choose the cells — and a simple chart type",
         "review": "../lesson-9/#section-chapter-1-choose-the-cells-and-a-simple-chart-ty"
@@ -729,22 +729,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Data > Filter > Pie"
-          },
-          {
-            "id": "B",
             "text": "File > Options > Trust Center"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Insert > Recommended Charts"
+          },
+          {
+            "id": "C",
+            "text": "Data > Filter > Pie"
           },
           {
             "id": "D",
             "text": "Formulas > AutoSum > Chart"
           }
         ],
-        "answer": "C",
+        "answer": "B",
         "explain": "— Insert > Recommended Charts.",
         "topic": "Lesson 9 — Choose the cells — and a simple chart type",
         "review": "../lesson-9/#section-chapter-1-choose-the-cells-and-a-simple-chart-ty"
@@ -754,22 +754,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Want AutoSum"
-          },
-          {
-            "id": "B",
             "text": "Want to hide column A"
           },
           {
-            "id": "C",
+            "id": "B",
             "text": "Only want to add a border"
           },
           {
-            "id": "D",
+            "id": "C",
             "text": "Are saving for the first time, choosing a new place, or making a copy"
+          },
+          {
+            "id": "D",
+            "text": "Want AutoSum"
           }
         ],
-        "answer": "D",
+        "answer": "C",
         "explain": "— First save, new place, or copy.",
         "topic": "Lesson 10 — Save on purpose — AutoRecovery is not enough",
         "review": "../lesson-10/#section-chapter-1-save-on-purpose-autorecovery-is-not-en"
@@ -779,22 +779,22 @@
         "choices": [
           {
             "id": "A",
-            "text": "Assume a PDF export strips out any SIN or address you typed"
+            "text": "Rely on AutoRecovery instead of saving"
           },
           {
             "id": "B",
-            "text": "Send every sheet tab without checking for leftover private details"
+            "text": "Assume a PDF export strips out any SIN or address you typed"
           },
           {
             "id": "C",
-            "text": "Check every sheet tab (and clear filters) for private details you do not need to send"
+            "text": "Send every sheet tab without checking for leftover private details"
           },
           {
             "id": "D",
-            "text": "Rely on AutoRecovery instead of saving"
+            "text": "Check every sheet tab (and clear filters) for private details you do not need to send"
           }
         ],
-        "answer": "C",
+        "answer": "D",
         "explain": "— Open every tab; a PDF does not remove private text you exported.",
         "topic": "Lesson 10 — Save on purpose — AutoRecovery is not enough",
         "review": "../lesson-10/#section-chapter-1-save-on-purpose-autorecovery-is-not-en"
@@ -992,11 +992,11 @@
             },
             {
               "id": "C",
-              "text": "Chart"
+              "text": "Formula bar"
             },
             {
               "id": "D",
-              "text": "Formula bar"
+              "text": "Chart"
             }
           ],
           "answer": "B",
@@ -1007,22 +1007,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The third sheet in the workbook"
-            },
-            {
-              "id": "B",
               "text": "Column 3, row B"
             },
             {
+              "id": "B",
+              "text": "The third sheet in the workbook"
+            },
+            {
               "id": "C",
-              "text": "Always a formula"
+              "text": "Column B, row 3"
             },
             {
               "id": "D",
-              "text": "Column B, row 3"
+              "text": "Always a formula"
             }
           ],
-          "answer": "D",
+          "answer": "C",
           "explain": "The letter is the column; the number is the row."
         },
         {
@@ -1030,22 +1030,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Numbers, text, or formulas"
-            },
-            {
-              "id": "B",
-              "text": "Only formulas"
-            },
-            {
-              "id": "C",
               "text": "Only charts"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Only money amounts"
+            },
+            {
+              "id": "C",
+              "text": "Only formulas"
+            },
+            {
+              "id": "D",
+              "text": "Numbers, text, or formulas"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Microsoft's basic-tasks page says cells can contain numbers, text, or formulas."
         },
         {
@@ -1057,15 +1057,15 @@
             },
             {
               "id": "B",
-              "text": "Building PivotTables"
+              "text": "Giving tax advice"
             },
             {
               "id": "C",
-              "text": "Passing the MOS exam"
+              "text": "Building PivotTables"
             },
             {
               "id": "D",
-              "text": "Giving tax advice"
+              "text": "Passing the MOS exam"
             }
           ],
           "answer": "A",
@@ -1080,18 +1080,18 @@
             },
             {
               "id": "B",
-              "text": "That day is recorded as no hours (a day off)"
+              "text": "Excel made a mistake"
             },
             {
               "id": "C",
-              "text": "The row should be deleted"
+              "text": "That day is recorded as no hours (a day off)"
             },
             {
               "id": "D",
-              "text": "Excel made a mistake"
+              "text": "The row should be deleted"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "A typed 0 is information. A blank cell is not the same as zero."
         },
         {
@@ -1099,22 +1099,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "File a tax return in Excel"
+              "text": "Become a licensed bookkeeper"
             },
             {
               "id": "B",
-              "text": "Pass a college credit exam"
-            },
-            {
-              "id": "C",
               "text": "Do everyday Excel tasks such as lists, simple formulas, a basic chart, and careful sharing"
             },
             {
+              "id": "C",
+              "text": "Pass a college credit exam"
+            },
+            {
               "id": "D",
-              "text": "Become a licensed bookkeeper"
+              "text": "File a tax return in Excel"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "This is a basics course, not MOS, college credit, or tax training."
         },
         {
@@ -1122,22 +1122,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Official CRA rates you must use"
+              "text": "Practice examples only, not tax or payroll advice"
             },
             {
               "id": "B",
-              "text": "Your real pay"
+              "text": "Official CRA rates you must use"
             },
             {
               "id": "C",
-              "text": "Practice examples only, not tax or payroll advice"
+              "text": "Your real pay"
             },
             {
               "id": "D",
               "text": "Proof you completed MOS training"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Sample money figures are examples only."
         }
       ],
@@ -1460,11 +1460,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Data > Filter > Blank"
+              "text": "File > New > Blank workbook"
             },
             {
               "id": "B",
-              "text": "Insert > Chart"
+              "text": "Data > Filter > Blank"
             },
             {
               "id": "C",
@@ -1472,10 +1472,10 @@
             },
             {
               "id": "D",
-              "text": "File > New > Blank workbook"
+              "text": "Insert > Chart"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "File > New > Blank workbook, from Microsoft's basic-tasks page."
         },
         {
@@ -1483,22 +1483,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Column D, row 10"
+              "text": "Column 10, row D"
             },
             {
               "id": "B",
-              "text": "Always empty"
-            },
-            {
-              "id": "C",
               "text": "Sheet 10"
             },
             {
+              "id": "C",
+              "text": "Column D, row 10"
+            },
+            {
               "id": "D",
-              "text": "Column 10, row D"
+              "text": "Always empty"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "The letter is the column; the number is the row."
         },
         {
@@ -1529,22 +1529,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "To a new workbook"
-            },
-            {
-              "id": "B",
               "text": "To the ribbon"
             },
             {
+              "id": "B",
+              "text": "To a new workbook"
+            },
+            {
               "id": "C",
-              "text": "Down to the cell below"
+              "text": "Left"
             },
             {
               "id": "D",
-              "text": "Left"
+              "text": "Down to the cell below"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Enter moves down."
         },
         {
@@ -1575,7 +1575,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Switch between sheets in the same workbook"
+              "text": "Close Excel"
             },
             {
               "id": "B",
@@ -1583,14 +1583,14 @@
             },
             {
               "id": "C",
-              "text": "Close Excel"
+              "text": "Switch between sheets in the same workbook"
             },
             {
               "id": "D",
               "text": "Create a chart"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Tabs switch sheets inside the same workbook."
         },
         {
@@ -1598,22 +1598,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Always changes the active cell to A1"
-            },
-            {
-              "id": "B",
-              "text": "Saves the file"
-            },
-            {
-              "id": "C",
               "text": "Changes what you can see, but does not by itself change the active cell"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Always changes the active cell to A1"
+            },
+            {
+              "id": "C",
               "text": "Deletes what you typed"
+            },
+            {
+              "id": "D",
+              "text": "Saves the file"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Scrolling changes your view; clicking a cell after you scroll is what changes the active cell."
         }
       ],
@@ -1926,11 +1926,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Pressing Enter or Tab"
+              "text": "Closing Excel at once"
             },
             {
               "id": "B",
-              "text": "Clicking Data > Filter"
+              "text": "Pressing Enter or Tab"
             },
             {
               "id": "C",
@@ -1938,10 +1938,10 @@
             },
             {
               "id": "D",
-              "text": "Closing Excel at once"
+              "text": "Clicking Data > Filter"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Microsoft: press Enter or Tab to move to the next cell."
         },
         {
@@ -1953,7 +1953,7 @@
             },
             {
               "id": "B",
-              "text": "`6`"
+              "text": "`6 hours`"
             },
             {
               "id": "C",
@@ -1961,10 +1961,10 @@
             },
             {
               "id": "D",
-              "text": "`6 hours`"
+              "text": "`6`"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Keep the value as a number; put the unit in the header."
         },
         {
@@ -1972,22 +1972,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A date"
-            },
-            {
-              "id": "B",
-              "text": "Missing data"
-            },
-            {
-              "id": "C",
               "text": "Excel deleted the row"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "A date"
+            },
+            {
+              "id": "C",
               "text": "A recorded day off (no hours)"
+            },
+            {
+              "id": "D",
+              "text": "Missing data"
             }
           ],
-          "answer": "D",
+          "answer": "C",
           "explain": "A typed 0 is recorded information."
         },
         {
@@ -1995,22 +1995,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "In a chart title only"
-            },
-            {
-              "id": "B",
               "text": "In the column header"
             },
             {
+              "id": "B",
+              "text": "In the file name only"
+            },
+            {
               "id": "C",
-              "text": "Inside every number cell"
+              "text": "In a chart title only"
             },
             {
               "id": "D",
-              "text": "In the file name only"
+              "text": "Inside every number cell"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Headers carry the unit (Hours worked, Amount (CAD))."
         },
         {
@@ -2018,7 +2018,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Formulas > AutoSum"
+              "text": "Data > Sort"
             },
             {
               "id": "B",
@@ -2026,14 +2026,14 @@
             },
             {
               "id": "C",
-              "text": "Home > arrow on the General box > Date (or More Number Formats)"
+              "text": "Formulas > AutoSum"
             },
             {
               "id": "D",
-              "text": "Data > Sort"
+              "text": "Home > arrow on the General box > Date (or More Number Formats)"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Home > General arrow > Date or More Number Formats."
         },
         {
@@ -2041,11 +2041,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Click the cell and read the formula bar; the full text is still in the cell"
+              "text": "The text is always lost forever"
             },
             {
               "id": "B",
-              "text": "Excel has turned it into a date"
+              "text": "Click the cell and read the formula bar; the full text is still in the cell"
             },
             {
               "id": "C",
@@ -2053,10 +2053,10 @@
             },
             {
               "id": "D",
-              "text": "The text is always lost forever"
+              "text": "Excel has turned it into a date"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "The formula bar shows the full cell contents."
         },
         {
@@ -2064,22 +2064,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Always print as 10/11/2026"
-            },
-            {
-              "id": "B",
-              "text": "Are the same on every computer in Canada"
-            },
-            {
-              "id": "C",
               "text": "Can follow the format you pick and the computer's regional settings"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Cannot be changed"
+            },
+            {
+              "id": "C",
+              "text": "Always print as 10/11/2026"
+            },
+            {
+              "id": "D",
+              "text": "Are the same on every computer in Canada"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Microsoft notes that date formats depend on type and locale; some follow regional settings. We do not treat one layout as the only Canadian form."
         }
       ],
@@ -2510,22 +2510,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Only in Quick Analysis"
-            },
-            {
-              "id": "B",
               "text": "Only under File > Options"
             },
             {
+              "id": "B",
+              "text": "Only in Quick Analysis"
+            },
+            {
               "id": "C",
-              "text": "On the Home tab, in the Font group"
+              "text": "On the Data tab"
             },
             {
               "id": "D",
-              "text": "On the Data tab"
+              "text": "On the Home tab, in the Font group"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Home > Font > Fill Color."
         },
         {
@@ -2533,22 +2533,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Scientific"
-            },
-            {
-              "id": "B",
-              "text": "Currency (or Number with two decimal places)"
-            },
-            {
-              "id": "C",
               "text": "Time"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Percentage"
+            },
+            {
+              "id": "C",
+              "text": "Currency (or Number with two decimal places)"
+            },
+            {
+              "id": "D",
+              "text": "Scientific"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Currency, or Number with two decimals and CAD in the header."
         },
         {
@@ -2560,18 +2560,18 @@
             },
             {
               "id": "B",
-              "text": "The file will not save"
+              "text": "Excel will display it as a large percentage, which is not what a dollar amount means"
             },
             {
               "id": "C",
-              "text": "Excel will display it as a large percentage, which is not what a dollar amount means"
+              "text": "The file will not save"
             },
             {
               "id": "D",
               "text": "The cell becomes a chart"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Percentage is for rates, not dollar amounts."
         },
         {
@@ -2606,11 +2606,11 @@
             },
             {
               "id": "B",
-              "text": "Hiding the header row"
+              "text": "No headers at all"
             },
             {
               "id": "C",
-              "text": "No headers at all"
+              "text": "Hiding the header row"
             },
             {
               "id": "D",
@@ -2878,22 +2878,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A dollar sign"
+              "text": "A plus sign"
             },
             {
               "id": "B",
-              "text": "An equal sign `=`"
-            },
-            {
-              "id": "C",
               "text": "The word SUM"
             },
             {
+              "id": "C",
+              "text": "A dollar sign"
+            },
+            {
               "id": "D",
-              "text": "A plus sign"
+              "text": "An equal sign `=`"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Formulas always begin with `=`."
         },
         {
@@ -2901,22 +2901,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "`&`"
+              "text": "`*`"
             },
             {
               "id": "B",
-              "text": "`x`"
-            },
-            {
-              "id": "C",
               "text": "`#`"
             },
             {
+              "id": "C",
+              "text": "`&`"
+            },
+            {
               "id": "D",
-              "text": "`*`"
+              "text": "`x`"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Asterisk means multiply."
         },
         {
@@ -2924,11 +2924,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "42"
+              "text": "6"
             },
             {
               "id": "B",
-              "text": "8"
+              "text": "42"
             },
             {
               "id": "C",
@@ -2936,7 +2936,7 @@
             },
             {
               "id": "D",
-              "text": "6"
+              "text": "8"
             }
           ],
           "answer": "C",
@@ -2947,22 +2947,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "`=B2+B3+B4`"
-            },
-            {
-              "id": "B",
-              "text": "`=Day+Day+Day`"
-            },
-            {
-              "id": "C",
               "text": "`SUM` with no equal sign or range"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "`=B2+B3+B4`"
+            },
+            {
+              "id": "C",
               "text": "`B2+B3+B4` (no equal sign)"
+            },
+            {
+              "id": "D",
+              "text": "`=Day+Day+Day`"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Start with `=` and point at the cells."
         },
         {
@@ -2970,7 +2970,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "5 + (2×3) = 11"
+              "text": "(5+2)×3 = 21"
             },
             {
               "id": "B",
@@ -2978,14 +2978,14 @@
             },
             {
               "id": "C",
-              "text": "(5+2)×3 = 21"
+              "text": "523"
             },
             {
               "id": "D",
-              "text": "523"
+              "text": "5 + (2×3) = 11"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Multiply first, then add; result 11."
         },
         {
@@ -2993,22 +2993,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Nothing useful"
+              "text": "Only the file name"
             },
             {
               "id": "B",
-              "text": "The formula (the instruction), when that cell is selected"
+              "text": "Nothing useful"
             },
             {
               "id": "C",
-              "text": "Only the file name"
+              "text": "The formula (the instruction), when that cell is selected"
             },
             {
               "id": "D",
               "text": "The header row at the top of the column settings"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Select the cell and read the formula bar."
         },
         {
@@ -3016,22 +3016,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Always display 6"
-            },
-            {
-              "id": "B",
-              "text": "Create a chart"
-            },
-            {
-              "id": "C",
               "text": "Treat it as text rather than calculate"
             },
             {
-              "id": "D",
+              "id": "B",
+              "text": "Always display 6"
+            },
+            {
+              "id": "C",
               "text": "Print the sheet"
+            },
+            {
+              "id": "D",
+              "text": "Create a chart"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Without `=`, Excel usually does not treat the entry as a formula."
         }
       ],
@@ -3301,22 +3301,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A chart"
-            },
-            {
-              "id": "B",
               "text": "The File tab"
             },
             {
+              "id": "B",
+              "text": "A chart"
+            },
+            {
               "id": "C",
-              "text": "The cell immediately below the numbers"
+              "text": "The header row at the top of the column"
             },
             {
               "id": "D",
-              "text": "The header row at the top of the column"
+              "text": "The cell immediately below the numbers"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "Below a column (or to the right of a row)."
         },
         {
@@ -3324,22 +3324,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "AVERAGE only"
+              "text": "SUM"
             },
             {
               "id": "B",
-              "text": "DATE"
+              "text": "AVERAGE only"
             },
             {
               "id": "C",
-              "text": "SUM"
+              "text": "DATE"
             },
             {
               "id": "D",
               "text": "FILTER"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "AutoSum inserts SUM."
         },
         {
@@ -3347,7 +3347,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Sort column B"
+              "text": "Add B2 to B8 only (two cells)"
             },
             {
               "id": "B",
@@ -3359,7 +3359,7 @@
             },
             {
               "id": "D",
-              "text": "Add B2 to B8 only (two cells)"
+              "text": "Sort column B"
             }
           ],
           "answer": "B",
@@ -3370,22 +3370,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Data > Filter > Average"
-            },
-            {
-              "id": "B",
               "text": "Insert > Chart > Average"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "File > Print > Average"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Formulas tab > arrow next to AutoSum > Average"
+            },
+            {
+              "id": "D",
+              "text": "Data > Filter > Average"
             }
           ],
-          "answer": "D",
+          "answer": "C",
           "explain": "Formulas > AutoSum arrow > Average."
         },
         {
@@ -3393,22 +3393,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "25.5"
+              "text": "7"
             },
             {
               "id": "B",
-              "text": "158.78"
+              "text": "25.5"
             },
             {
               "id": "C",
-              "text": "7"
+              "text": "158.78"
             },
             {
               "id": "D",
               "text": "11"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "6+4+7.5+0+5+3+0 = 25.5."
         },
         {
@@ -3416,22 +3416,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Lowers the average compared with averaging working days only"
-            },
-            {
-              "id": "B",
-              "text": "Deletes the zeros"
-            },
-            {
-              "id": "C",
               "text": "Converts hours into dollars"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Makes the sum larger"
+            },
+            {
+              "id": "C",
+              "text": "Lowers the average compared with averaging working days only"
+            },
+            {
+              "id": "D",
+              "text": "Deletes the zeros"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Zeros increase the count of values and pull the average down."
         },
         {
@@ -3439,11 +3439,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Always press Enter anyway"
+              "text": "Correct the range before you press Enter, or the answer will be wrong"
             },
             {
               "id": "B",
-              "text": "Correct the range before you press Enter, or the answer will be wrong"
+              "text": "Always press Enter anyway"
             },
             {
               "id": "C",
@@ -3454,7 +3454,7 @@
               "text": "The file becomes a PDF"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Check the highlight before you confirm."
         },
         {
@@ -3462,11 +3462,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Change the number format to Percentage"
+              "text": "Never look at the formula bar"
             },
             {
               "id": "B",
-              "text": "Never look at the formula bar"
+              "text": "Change the number format to Percentage"
             },
             {
               "id": "C",
@@ -3768,22 +3768,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A type of chart"
+              "text": "The small square at the corner of the selected cell that you can drag to copy into adjacent cells"
             },
             {
               "id": "B",
-              "text": "The File tab"
+              "text": "A type of chart"
             },
             {
               "id": "C",
-              "text": "The button that prints the worksheet"
+              "text": "The File tab"
             },
             {
               "id": "D",
-              "text": "The small square at the corner of the selected cell that you can drag to copy into adjacent cells"
+              "text": "The button that prints the worksheet"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Microsoft's fill handle is the small square you drag."
         },
         {
@@ -3791,7 +3791,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Click Data > Filter"
+              "text": "Close Excel and reopen it without changing Options"
             },
             {
               "id": "B",
@@ -3799,11 +3799,11 @@
             },
             {
               "id": "C",
-              "text": "Close Excel and reopen it without changing Options"
+              "text": "Delete the workbook and start over"
             },
             {
               "id": "D",
-              "text": "Delete the workbook and start over"
+              "text": "Click Data > Filter"
             }
           ],
           "answer": "B",
@@ -3814,22 +3814,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Select the formula cell and the adjacent cells you want to fill"
-            },
-            {
-              "id": "B",
-              "text": "Create a PDF"
-            },
-            {
-              "id": "C",
               "text": "Hide column A"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Close the workbook"
+            },
+            {
+              "id": "C",
+              "text": "Select the formula cell and the adjacent cells you want to fill"
+            },
+            {
+              "id": "D",
+              "text": "Create a PDF"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Select the formula and the target cells first."
         },
         {
@@ -3837,11 +3837,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "`=A3+B3`"
+              "text": "`=A2+B2` unchanged"
             },
             {
               "id": "B",
-              "text": "`=A2+B2` unchanged"
+              "text": "`=SUM(A2:B2)`"
             },
             {
               "id": "C",
@@ -3849,10 +3849,10 @@
             },
             {
               "id": "D",
-              "text": "`=SUM(A2:B2)`"
+              "text": "`=A3+B3`"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "Relative references shift to A3 and B3."
         },
         {
@@ -3860,11 +3860,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "`#H1`"
+              "text": "`H1:H1:H1`"
             },
             {
               "id": "B",
-              "text": "`H1:H1:H1`"
+              "text": "H1%"
             },
             {
               "id": "C",
@@ -3872,7 +3872,7 @@
             },
             {
               "id": "D",
-              "text": "H1%"
+              "text": "`#H1`"
             }
           ],
           "answer": "C",
@@ -3883,22 +3883,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "The file cannot be saved"
-            },
-            {
-              "id": "B",
               "text": "Dates become text"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Every copied formula keeps pointing at that same cell"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Excel deletes other sheets"
+            },
+            {
+              "id": "D",
+              "text": "The file cannot be saved"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Absolute references stay put when filled or copied."
         },
         {
@@ -3906,22 +3906,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Your real payroll"
-            },
-            {
-              "id": "B",
               "text": "Practice math only, not tax or bookkeeping help"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Official CRA tax advice"
+            },
+            {
+              "id": "C",
+              "text": "Your real payroll"
             },
             {
               "id": "D",
               "text": "A MOS exam requirement"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": "Sample numbers only; not tax advice."
         }
       ],
@@ -4240,11 +4240,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "Hide column A forever"
+              "text": "Sort only column C and ignore the item names"
             },
             {
               "id": "B",
-              "text": "Select or include every column of the list so rows stay together"
+              "text": "Hide column A forever"
             },
             {
               "id": "C",
@@ -4252,10 +4252,10 @@
             },
             {
               "id": "D",
-              "text": "Sort only column C and ignore the item names"
+              "text": "Select or include every column of the list so rows stay together"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Keep whole rows together."
         },
         {
@@ -4263,7 +4263,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Insert > Chart"
+              "text": "Data tab > Sort & Filter group > Sort"
             },
             {
               "id": "B",
@@ -4271,14 +4271,14 @@
             },
             {
               "id": "C",
-              "text": "Data tab > Sort & Filter group > Sort"
+              "text": "Insert > Chart"
             },
             {
               "id": "D",
               "text": "Formulas > AutoSum"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Data > Sort."
         },
         {
@@ -4286,7 +4286,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Clicking the arrow in a column header, clearing Select All, and ticking the values you want"
+              "text": "Printing the sheet"
             },
             {
               "id": "B",
@@ -4294,14 +4294,14 @@
             },
             {
               "id": "C",
-              "text": "Printing the sheet"
+              "text": "Clicking the arrow in a column header, clearing Select All, and ticking the values you want"
             },
             {
               "id": "D",
               "text": "Changing the file type to PDF"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Header arrow, clear Select All, tick values, OK."
         },
         {
@@ -4317,11 +4317,11 @@
             },
             {
               "id": "C",
-              "text": "Converted into a chart"
+              "text": "Moved into a new workbook automatically"
             },
             {
               "id": "D",
-              "text": "Moved into a new workbook automatically"
+              "text": "Converted into a chart"
             }
           ],
           "answer": "B",
@@ -4332,22 +4332,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Choose a style and confirm the range and whether the list has headers"
+              "text": "Add a trendline"
             },
             {
               "id": "B",
-              "text": "Turn off saving"
+              "text": "Choose a style and confirm the range and whether the list has headers"
             },
             {
               "id": "C",
-              "text": "Pass a MOS exam first"
+              "text": "Turn off saving"
             },
             {
               "id": "D",
-              "text": "Add a trendline"
+              "text": "Pass a MOS exam first"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Style, range, headers, OK."
         },
         {
@@ -4355,22 +4355,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A way to send email"
-            },
-            {
-              "id": "B",
               "text": "The only way to make a table on a Mac"
             },
             {
+              "id": "B",
+              "text": "A way to send email"
+            },
+            {
               "id": "C",
-              "text": "A tax tool"
+              "text": "A Windows desktop path Microsoft documents in Basic tasks (you may not see the button on every device)"
             },
             {
               "id": "D",
-              "text": "A Windows desktop path Microsoft documents in Basic tasks (you may not see the button on every device)"
+              "text": "A tax tool"
             }
           ],
-          "answer": "D",
+          "answer": "C",
           "explain": "Documented in Basic tasks; not always visible."
         },
         {
@@ -4378,22 +4378,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A sort by Amount"
+              "text": "A filter on Category"
             },
             {
               "id": "B",
-              "text": "A simple table"
+              "text": "A sort by Amount"
             },
             {
               "id": "C",
-              "text": "A PivotTable or Power Query"
+              "text": "A simple table"
             },
             {
               "id": "D",
-              "text": "A filter on Category"
+              "text": "A PivotTable or Power Query"
             }
           ],
-          "answer": "C",
+          "answer": "D",
           "explain": "PivotTables and Power Query are beyond this intro."
         }
       ],
@@ -4713,22 +4713,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A picture of the cells you selected"
+              "text": "Numbers that are not on the sheet"
             },
             {
               "id": "B",
-              "text": "Hidden passwords"
+              "text": "A picture of the cells you selected"
             },
             {
               "id": "C",
-              "text": "Numbers that are not on the sheet"
+              "text": "Hidden passwords"
             },
             {
               "id": "D",
               "text": "The File menu"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "Charts picture the selected cells."
         },
         {
@@ -4736,22 +4736,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "A1:B8"
-            },
-            {
-              "id": "B",
-              "text": "The entire worksheet including empty rows"
-            },
-            {
-              "id": "C",
               "text": "Column C notes only"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Only B9 (the total)"
+            },
+            {
+              "id": "C",
+              "text": "A1:B8"
+            },
+            {
+              "id": "D",
+              "text": "The entire worksheet including empty rows"
             }
           ],
-          "answer": "A",
+          "answer": "C",
           "explain": "Labels and daily hours, not the total."
         },
         {
@@ -4759,22 +4759,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Data > Filter > Pie"
-            },
-            {
-              "id": "B",
-              "text": "Insert > Recommended Charts"
-            },
-            {
-              "id": "C",
               "text": "Formulas > AutoSum > Chart"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "File > Options > Trust Center"
+            },
+            {
+              "id": "C",
+              "text": "Data > Filter > Pie"
+            },
+            {
+              "id": "D",
+              "text": "Insert > Recommended Charts"
             }
           ],
-          "answer": "B",
+          "answer": "D",
           "explain": "Insert > Recommended Charts."
         },
         {
@@ -4782,7 +4782,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "Change 7.5 into 75"
+              "text": "Make one extra column so large that the days are hard to compare"
             },
             {
               "id": "B",
@@ -4790,14 +4790,14 @@
             },
             {
               "id": "C",
-              "text": "Make one extra column so large that the days are hard to compare"
+              "text": "Change 7.5 into 75"
             },
             {
               "id": "D",
               "text": "Save the file as a PDF automatically"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "The total can dwarf the days."
         },
         {
@@ -4805,11 +4805,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "You are printing in black and white only"
+              "text": "You need a PivotTable"
             },
             {
               "id": "B",
-              "text": "You have many negative values"
+              "text": "You are printing in black and white only"
             },
             {
               "id": "C",
@@ -4817,7 +4817,7 @@
             },
             {
               "id": "D",
-              "text": "You need a PivotTable"
+              "text": "You have many negative values"
             }
           ],
           "answer": "C",
@@ -4828,22 +4828,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "You cannot make a chart"
+              "text": "Use Insert > Recommended Charts or Insert > Charts instead"
             },
             {
               "id": "B",
-              "text": "You must buy a new computer"
+              "text": "You cannot make a chart"
             },
             {
               "id": "C",
-              "text": "Excel will invent data"
+              "text": "You must buy a new computer"
             },
             {
               "id": "D",
-              "text": "Use Insert > Recommended Charts or Insert > Charts instead"
+              "text": "Excel will invent data"
             }
           ],
-          "answer": "D",
+          "answer": "A",
           "explain": "Use the Insert tab path."
         },
         {
@@ -4851,7 +4851,7 @@
           "choices": [
             {
               "id": "A",
-              "text": "`Tax return 2026`"
+              "text": "`Chart 1`"
             },
             {
               "id": "B",
@@ -4863,7 +4863,7 @@
             },
             {
               "id": "D",
-              "text": "`Chart 1`"
+              "text": "`Tax return 2026`"
             }
           ],
           "answer": "B",
@@ -5278,22 +5278,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Data > Filter"
-            },
-            {
-              "id": "B",
               "text": "Insert > Chart"
             },
             {
-              "id": "C",
+              "id": "B",
               "text": "Save or Ctrl+S"
+            },
+            {
+              "id": "C",
+              "text": "Data > Filter"
             },
             {
               "id": "D",
               "text": "Formulas > Average"
             }
           ],
-          "answer": "C",
+          "answer": "B",
           "explain": "Save or Ctrl+S."
         },
         {
@@ -5301,11 +5301,11 @@
           "choices": [
             {
               "id": "A",
-              "text": "You are saving for the first time, choosing a new place, or making a copy"
+              "text": "You only want to sort A to Z"
             },
             {
               "id": "B",
-              "text": "You only want to sort A to Z"
+              "text": "You want AutoSum"
             },
             {
               "id": "C",
@@ -5313,10 +5313,10 @@
             },
             {
               "id": "D",
-              "text": "You want AutoSum"
+              "text": "You are saving for the first time, choosing a new place, or making a copy"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explain": "First save, new location, or copy."
         },
         {
@@ -5324,22 +5324,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Emails the file automatically"
-            },
-            {
-              "id": "B",
-              "text": "Is a backup Microsoft describes — you should still save the workbook often"
-            },
-            {
-              "id": "C",
               "text": "Formats cells as Currency"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Replaces the need to save the file yourself"
+            },
+            {
+              "id": "C",
+              "text": "Is a backup Microsoft describes — you should still save the workbook often"
+            },
+            {
+              "id": "D",
+              "text": "Emails the file automatically"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "AutoRecovery is not a substitute for saving."
         },
         {
@@ -5351,15 +5351,15 @@
             },
             {
               "id": "B",
-              "text": "Turn the computer off"
-            },
-            {
-              "id": "C",
               "text": "Convert every number to text"
             },
             {
-              "id": "D",
+              "id": "C",
               "text": "Delete sheet tabs"
+            },
+            {
+              "id": "D",
+              "text": "Turn the computer off"
             }
           ],
           "answer": "A",
@@ -5370,15 +5370,15 @@
           "choices": [
             {
               "id": "A",
-              "text": "Insert > Table > PDF"
+              "text": "Home > Fill Color > PDF"
             },
             {
               "id": "B",
-              "text": "Data > Sort > PDF"
+              "text": "Insert > Table > PDF"
             },
             {
               "id": "C",
-              "text": "Home > Fill Color > PDF"
+              "text": "Data > Sort > PDF"
             },
             {
               "id": "D",
@@ -5393,22 +5393,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Removes all numbers"
-            },
-            {
-              "id": "B",
-              "text": "Is not, by itself, a guarantee the recipient cannot edit the file"
-            },
-            {
-              "id": "C",
               "text": "Deletes hidden rows from the original workbook"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Guarantees no one can edit the content"
+            },
+            {
+              "id": "C",
+              "text": "Is not, by itself, a guarantee the recipient cannot edit the file"
+            },
+            {
+              "id": "D",
+              "text": "Removes all numbers"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": "Microsoft's PDF warning."
         },
         {
@@ -5416,22 +5416,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Skip saving"
-            },
-            {
-              "id": "B",
-              "text": "Filter away sensitive rows and assume they will not be shared"
-            },
-            {
-              "id": "C",
               "text": "Check every sheet tab and look for private details you do not need to send"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Add your password in cell A1 so the other person can see it"
+            },
+            {
+              "id": "C",
+              "text": "Filter away sensitive rows and assume they will not be shared"
+            },
+            {
+              "id": "D",
+              "text": "Skip saving"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explain": "Open every tab; do not rely on a filter to hide private rows."
         },
         {
@@ -5439,22 +5439,22 @@
           "choices": [
             {
               "id": "A",
-              "text": "Never save any file"
-            },
-            {
-              "id": "B",
-              "text": "Share as much as possible so nothing is missed"
-            },
-            {
-              "id": "C",
               "text": "Post account numbers in a chart title"
             },
             {
-              "id": "D",
+              "id": "B",
               "text": "Share only when you know why the information is needed, and share as little as possible"
+            },
+            {
+              "id": "C",
+              "text": "Never save any file"
+            },
+            {
+              "id": "D",
+              "text": "Share as much as possible so nothing is missed"
             }
           ],
-          "answer": "D",
+          "answer": "B",
           "explain": "Know why you are sharing, and share as little as you can."
         }
       ],
