@@ -83,7 +83,7 @@ Accounts and billing are not built yet. The player and the staff demo already us
 - **Enrolment.** One learner in one course at one council. `id`, `learnerId`, `courseId`, `orgId`, `classId`, `status`, `startedAt`, `completedAt`. Status is `not_started`, `in_progress`, or `completed`.
 - **Progress.** One row per learner, course, and item. `id`, `learnerId`, `courseId`, `itemId`, `kind`, `status`, `at`, `detail`. `at` is an ISO timestamp. Item ids are `section:{lesson}:{sectionId}`, `quiz:{lesson}`, `assignment:{lesson}`, and `exam:final`. Exam detail keeps an `attempts` list with a timestamp on each try.
 - **Certificate.** `id`, `learnerId`, `courseId`, `orgId`, `issuedAt`, `percent`. The first `issuedAt` is kept.
-- **Course assignment.** Staff-set for each course: `calpCategoryTag`, `opportunityType` (`ongoing`, `one_time`, or `undecided`), `statedCourseHours`, and the grant period. Job Search is left as `undecided` in the sample. The stated hours are a sample estimate, not measured time.
+- **Course assignment.** Staff-set for each course: `calpCategoryTag`, `opportunityType` (`ongoing`, `one_time`, or `undecided`), `statedCourseHours`, and the grant period. The sample courses, including Job Search, are `ongoing`. The stated hours are a sample estimate, not measured time.
 - **Enrolment.** Adds `learnerCode`, lesson counts, and the five optional after-course questions (1.2 a, 1.2 b, 1.2 c, 2.2 a, 2.2 b).
 - **Subscription.** `billingProvider` is null in this demo. `collection` is `card`, `pad`, or `annual_invoice`. `providerStatus` is generic. There is no per-seat price.
 - **Billing stub.** `assets/billing.js` is the `BillingProvider` interface. It returns labelled sample invoices and does not call a processor.
