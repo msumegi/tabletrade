@@ -12,7 +12,10 @@ import { fileURLToPath } from "url";
 import { renderBlocks } from "./blocks.mjs";
 
 const demoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SITE = "https://rangeroadtech.com/demos/range-path/";
+const DEMO_SITE = "https://rangeroadtech.com/demos/range-path/";
+const SITE = process.env.LEARNHERE_SITE
+  ? (process.env.LEARNHERE_SITE.endsWith("/") ? process.env.LEARNHERE_SITE : process.env.LEARNHERE_SITE + "/")
+  : DEMO_SITE;
 const DISCLAIMER =
   "This course is general information for adult learners in Canada. It is not legal, tax, financial, medical, driving-instruction, or immigration advice. Always check official pages on Canada.ca, Alberta.ca, or your council staff for your situation.";
 const MARK =

@@ -1,0 +1,54 @@
+name: Publish LearnHere
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "demos/range-path/**"
+      - ".github/workflows/publish-learnhere.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-learnhere
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out tabletrade
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build the domain-root copy
+        run: node demos/range-path/tools/publish-learnhere.mjs /tmp/learnhere-site
+
+      - name: Push to msumegi/learnhere
+        env:
+          TOKEN: ${{ secrets.LEARNHERE_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "LEARNHERE_DEPLOY_TOKEN is not set. Add a token that can push to msumegi/learnhere."
+            exit 1
+          fi
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          rm -rf /tmp/learnhere-repo
+          git clone --depth 1 "https://x-access-token:${TOKEN}@github.com/msumegi/learnhere.git" /tmp/learnhere-repo
+          find /tmp/learnhere-repo -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a /tmp/learnhere-site/. /tmp/learnhere-repo/
+          cd /tmp/learnhere-repo
+          git add -A
+          if git diff --cached --quiet; then
+            echo "learnhere.ca is already current."
+            exit 0
+          fi
+          git commit -m "Publish LearnHere from tabletrade ${GITHUB_SHA}"
+          git push origin HEAD:main
