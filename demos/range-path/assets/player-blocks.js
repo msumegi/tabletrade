@@ -126,6 +126,42 @@
       if (el) el.hidden = false;
       return el;
     }
+    var sim = root.getAttribute("data-sim") || "";
+    var lines = {
+      "outlook-new-email": {
+        to: "Jordan Lee",
+        subject: "Saturday hall setup — can you confirm by Thursday?",
+        body: "I can help set up tables this Saturday from 9:00 a.m. to 10:00 a.m. Please let me know if the plan changes."
+      },
+      "jobsearch-cover-email": {
+        to: "jobs@sampletown.example",
+        subject: "Weekend Attendant application — Sam Lee",
+        body: "I can greet visitors and set up tables on weekends. Resume attached."
+      }
+    };
+    var mine = lines[sim] || {};
+    function retitle(text) {
+      var el = root.querySelector("[data-app-title]");
+      if (el) el.textContent = text;
+    }
+    function openApp(name) {
+      var launch = root.querySelector('[data-slot="launcher"]');
+      if (launch) launch.hidden = true;
+      slot("doc");
+      slot("app");
+      var docName = root.querySelector("[data-doc-name]");
+      if (docName && name) docName.textContent = name;
+    }
+    if (id === "start") slot("startmenu");
+    if (id === "word") {
+      openApp("Document1");
+      retitle("Word");
+    }
+    if (id === "outlook") {
+      openApp("");
+      retitle("Outlook");
+    }
+    if (id === "search") slot("results");
     if (id === "title" && appName === "job") field("title", "Weekend Attendant");
     if (id === "title" && appName === "word") {
       var line = slot("title");
@@ -169,16 +205,28 @@
       var saved = root.querySelector("[data-doc-name]");
       if (saved) saved.textContent = "hall-booking-practice.docx";
     }
-    if (id === "to") field("to", "jobs@sampletown.example");
-    if (id === "subject" || id === "subj") field("subject", "Weekend Attendant — Sam Lee");
-    if (id === "body") field("body", "I can greet visitors and set up tables on weekends. Resume attached.");
+    if (id === "to" && mine.to) field("to", mine.to);
+    if ((id === "subject" || id === "subj") && mine.subject) field("subject", mine.subject);
+    if (id === "body" && mine.body) field("body", mine.body);
     if (id === "newemail" || id === "reply") slot("compose");
     if (id === "send") {
       var sent = slot("sent");
       if (sent) sent.textContent = "Sent";
     }
-    if (id === "mail") slot("mail");
-    if (id === "calendar") slot("calendar");
+    if (id === "mail") {
+      slot("mail");
+      if (sim === "outlook-open-nav") {
+        var calNote = root.querySelector('[data-slot="calendar"]');
+        if (calNote) calNote.hidden = true;
+      }
+    }
+    if (id === "calendar") {
+      slot("calendar");
+      if (sim === "outlook-open-nav") {
+        var mailNote = root.querySelector('[data-slot="mail"]');
+        if (mailNote) mailNote.hidden = true;
+      }
+    }
     if (id === "attach" || id === "insert") slot("attached");
     if (id === "flag") {
       var msg = slot("msg");

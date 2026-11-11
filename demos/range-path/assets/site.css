@@ -742,6 +742,7 @@ footer.site {
   background: var(--paper);
 }
 .block-label { font-weight: 700; margin: 0.6rem 0 0.2rem; }
+.result-line { font-size: 1.0625rem; line-height: 1.55; font-weight: 600; }
 .section-nav summary,
 .block-check summary {
   min-height: 44px;
@@ -809,14 +810,19 @@ footer.site {
 .sheet th, .sheet td { border: 1px solid var(--line); padding: 0; white-space: nowrap; }
 .sheet button { min-width: 44px; min-height: 44px; padding: 0.4rem 0.6rem; white-space: nowrap; background: #fff; color: var(--ink); border: 0; }
 .sheet td.is-selected { outline: 3px solid var(--hotspot); outline-offset: -3px; }
-.sheet-keys, .pw-menu { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.6rem; }
-.sheet-keys button, .pw-menu button { white-space: nowrap; min-height: 44px; width: auto; flex: 0 0 auto; }
-.pw-status { margin: 0; padding: 0 0.6rem 0.6rem; }
-.word-page, .ol-pane, .job-form, .job-results { margin: 0.6rem; padding: 0.6rem; background: #fff; border: 1px solid var(--line); }
+.sheet-keys, .pw-menu, .pw-ribbon { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0.4rem; max-width: 100%; }
+.pw-ribbon { background: #e7f0eb; border-bottom: 1px solid var(--line); }
+.sheet-keys button, .pw-menu button, .pw-ribbon button { white-space: normal; min-height: 44px; width: auto; max-width: 100%; flex: 0 1 auto; text-align: left; }
+.pw-status { margin: 0; padding: 0.4rem 0.6rem 0.6rem; }
+.launch, .word-page, .ol-pane, .job-form, .job-results { margin: 0.6rem; padding: 0.6rem; background: #fff; border: 1px solid var(--line); max-width: calc(100% - 1.2rem); }
+.launch { background: #f4efe4; min-height: 7rem; }
 .doc-title.is-selected, [data-slot="sent1"].is-selected { outline: 3px solid var(--hotspot); }
 .doc-title.is-bold { font-weight: 700; }
 .doc-title.is-heading { font-size: 1.35rem; }
-.ol-split { display: grid; grid-template-columns: minmax(8rem, 40%) 1fr; gap: 0.4rem; }
+.ol-split { display: grid; grid-template-columns: minmax(0, 42%) minmax(0, 1fr); gap: 0.4rem; max-width: 100%; }
+@media (max-width: 360px) {
+  .ol-split { grid-template-columns: 1fr; }
+}
 .ol-list { list-style: none; margin: 0.6rem; padding: 0; }
 .ol-list li { min-height: 44px; display: flex; align-items: center; }
 .is-flagged::after { content: "  Flagged"; }

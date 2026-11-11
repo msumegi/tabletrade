@@ -99,25 +99,12 @@
   <h3>Create a folder and flag a message (practice screen)</h3>
   <p class="caption">Practice screen — not the real Outlook.</p>
   <div class="practice-window" data-app="outlook">
-      <div class="pw-bar"><strong>Outlook</strong> <span data-doc-name></span></div>
+      <div class="pw-bar"><strong data-app-title>Outlook</strong> <span data-doc-name></span></div>
+      <div class="pw-ribbon" role="toolbar"><button type="button" class="btn btn-secondary" data-hotspot="newfolder">New Folder</button><button type="button" class="btn btn-secondary" data-hotspot="msg">Saturday hall setup</button><button type="button" class="btn btn-secondary" data-hotspot="move">Move</button><button type="button" class="btn btn-secondary" data-hotspot="flag">Flag</button></div>
       <div class="ol-split">
-      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
-      <div class="ol-pane">
-        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
-        <p data-slot="mail" hidden>Mail is open.</p>
-        <p data-slot="calendar" hidden>Calendar is open.</p>
-        <p data-slot="compose" hidden>New message</p>
-        <p>To <strong data-field="to"></strong></p>
-        <p>Cc <strong data-field="cc"></strong></p>
-        <p>Subject <strong data-field="subject"></strong></p>
-        <p data-field="body"></p>
-        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
-        <p data-slot="sent" hidden></p>
-        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
-        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
+        <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+        <div class="ol-pane"><p>Inbox. This screen has no compose window.</p></div>
       </div>
-    </div>
-      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="newfolder">New Folder</button><button type="button" class="btn btn-secondary" data-hotspot="msg">Saturday hall setup</button><button type="button" class="btn btn-secondary" data-hotspot="move">Move</button><button type="button" class="btn btn-secondary" data-hotspot="flag">Flag</button></div>
       <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
@@ -145,7 +132,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A Saturday market folder</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Alex creates a folder named Saturday market .</p></div>
       <p class="block-label">Steps</p><ol><li>In classic Outlook that is a right-click in the folder pane and New Folder ; on another computer the label is Create new folder .</li><li>Alex selects Jordan’s hall-setup note and Jordan’s chair note, then uses Move (or drag) to put both in the new folder.</li><li>The Inbox looks calmer.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>The messages are still there when Alex opens Saturday market.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">The messages are still there when Alex opens Saturday market.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-search-when-you-cannot-remember-the-fo">Previous section</a>
@@ -161,7 +148,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A flag with a Thursday reminder</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Jordan asked for a reply by Thursday.</p></div>
       <p class="block-label">Steps</p><ol><li>Alex selects the flag on that message so it turns red, then right-clicks the flag, chooses Add Reminder , and sets a Wednesday afternoon reminder.</li><li>On Wednesday the reminder appears.</li><li>After Alex replies, Alex chooses Follow Up > Mark Complete .</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>The flag becomes a green checkmark and leaves the To-Do Bar.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">The flag becomes a green checkmark and leaves the To-Do Bar.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-saturday-market-folder">Previous section</a>

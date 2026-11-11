@@ -80,7 +80,8 @@
   <h3>Select a sentence, then use Undo (practice Word)</h3>
   <p class="caption">Practice screen — not the real Word.</p>
   <div class="practice-window" data-app="word">
-      <div class="pw-bar"><strong>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="pw-bar"><strong data-app-title>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="pw-ribbon" role="toolbar"><button type="button" class="btn btn-secondary" data-hotspot="sent1">First sentence</button><button type="button" class="btn btn-secondary" data-hotspot="undo">Undo</button></div>
       <div class="word-page">
       <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
       <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
@@ -92,7 +93,6 @@
       <p data-slot="pagenum" hidden>Page 1</p>
       <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
     </div>
-      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="sent1">First sentence</button><button type="button" class="btn btn-secondary" data-hotspot="undo">Undo</button></div>
       <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
@@ -136,7 +136,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Replacing one sentence</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Sam types three short sentences about the week, then decides the middle sentence is not needed.</p></div>
       <p class="block-label">Steps</p><ol><li>Sam places the cursor at the start of that sentence, holds the left mouse button, and drags to the end.</li><li>The sentence is highlighted.</li><li>Sam presses Backspace and types a clearer sentence.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>Nothing else on the page changes.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Only the selected sentence changes. The other sentences on the page stay as Sam typed them.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-undo-and-redo-are-everyday-safety-nets">Previous section</a>
@@ -152,7 +152,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Undo after a slip</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Sam accidentally selects a whole paragraph and types a single letter, which replaces all of that text.</p></div>
       <p class="block-label">Steps</p><ol><li>Sam immediately clicks Undo on the Quick Access Toolbar (or presses Ctrl+Z).</li><li>The paragraph comes back.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>Sam clicks away to clear the selection and tries again, this time selecting only the word that needed to change.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Sam clicks away to clear the selection and tries again, this time selecting only the word that needed to change.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-replacing-one-sentence">Previous section</a>

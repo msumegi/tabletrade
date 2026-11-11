@@ -67,11 +67,11 @@
   <p class="caption">Practice screen — not the real Excel.</p>
   <div class="practice-window">
       <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="pw-ribbon" role="toolbar" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="file">File tab</button><button type="button" class="btn btn-secondary" data-hotspot="saveas">Save As</button><button type="button" class="btn btn-secondary" data-hotspot="filename">File name box</button><button type="button" class="btn btn-secondary" data-hotspot="save">Save</button></div>
       <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="file">File tab</button><button type="button" class="btn btn-secondary" data-hotspot="saveas">Save As</button><button type="button" class="btn btn-secondary" data-hotspot="filename">File name box</button><button type="button" class="btn btn-secondary" data-hotspot="save">Save</button></div>
         
       </div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -100,11 +100,11 @@
   <p class="caption">Practice screen — not the real Excel.</p>
   <div class="practice-window">
       <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="pw-ribbon" role="toolbar" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="file">File tab</button><button type="button" class="btn btn-secondary" data-hotspot="print">Print</button><button type="button" class="btn btn-secondary" data-hotspot="next">Next Page</button><button type="button" class="btn btn-secondary" data-hotspot="done">Preview looked sensible</button></div>
       <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="file">File tab</button><button type="button" class="btn btn-secondary" data-hotspot="print">Print</button><button type="button" class="btn btn-secondary" data-hotspot="next">Next Page</button><button type="button" class="btn btn-secondary" data-hotspot="done">Preview looked sensible</button></div>
         
       </div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -135,7 +135,7 @@
       <text x="160" y="70" font-size="14" fill="#1b1914">Hours preview</text>
       <text x="160" y="96" font-size="13" fill="#1b1914">Mon 6</text>
       <text x="160" y="150" font-size="13" fill="#1b1914">Next page</text>
-      <circle cx="110" cy="28" r="11" fill="#123c2e"/><text x="110" y="32" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="320" cy="40" r="11" fill="#123c2e"/><text x="320" y="44" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="300" cy="190" r="11" fill="#123c2e"/><text x="300" y="194" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
+      <circle cx="130" cy="18" r="11" fill="#123c2e"/><text x="130" y="22" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="300" cy="56" r="11" fill="#123c2e"/><text x="300" y="60" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="300" cy="190" r="11" fill="#123c2e"/><text x="300" y="194" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
   <p class="caption">A practice File &gt; Print screen. A preview of the Hours list sits on the right. Next Page and Previous Page arrows sit under the preview.</p>
   <figcaption><ol class="callouts"><li>File &gt; Print (or Ctrl+P)</li><li>Preview the page before you print</li><li>Next Page / Previous Page arrows</li></ol></figcaption>
 </figure>
@@ -166,7 +166,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Save, then preview the Hours sheet</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>With the practice workbook open, choose File > Save As, pick a folder you are allowed to use, and name the file excel-basics-hours-sample-only .</p></div>
       <p class="block-label">Steps</p><ol><li>Change Friday's note by adding the word practice , then press Ctrl+S.</li><li>Open File > Print and look at the preview.</li><li>Check that all seven days and the total are present, and that a stray extra page is not blank except for one column.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>Close the print screen without printing if you do not need paper.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Close the print screen without printing if you do not need paper.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-share-less-than-you-think-you-need-to">Previous section</a>
@@ -182,7 +182,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Export a PDF and check it for extra details</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Choose File > Save As (or Save a Copy), set Save as type to PDF (*.pdf), name it excel-basics-hours-sample-only , and click Save.</p></div>
       <p class="block-label">Steps</p><ol><li>Open the PDF and read it as a stranger would.</li><li>Do you see only sample days and hours, or did a side cell with a real phone number or a real name sneak onto the page?</li><li>Microsoft warns that a PDF is not a guarantee against editing, and it will not strip private text you left on the sheet.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>If you find extra details, go back to Excel, remove them, save the workbook, and export the PDF again.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">If you find extra details, go back to Excel, remove them, save the workbook, and export the PDF again.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-save-then-preview-the-hours-she">Previous section</a>

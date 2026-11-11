@@ -68,9 +68,9 @@
   <p class="caption">Practice screen — not the real Excel.</p>
   <div class="practice-window">
       <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="pw-ribbon" role="toolbar"><button type="button" class="btn btn-secondary" data-hotspot="enter">Enter</button></div>
       <div class="formula-bar"><span data-name-box>A1</span><span data-formula-input></span></div>
       <div class="sheet-scroll"><table class="sheet"><tr><th></th><th>A</th><th>B</th><th>C</th></tr><tr><th>1</th><td data-cell="A1"><button type="button" data-hotspot="A1" aria-label="Cell A1"><span data-cell-value></span></button></td><td data-cell="B1"><button type="button" data-hotspot="B1" aria-label="Cell B1"><span data-cell-value></span></button></td><td data-cell="C1"><button type="button" data-hotspot="C1" aria-label="Cell C1"><span data-cell-value></span></button></td></tr><tr><th>2</th><td data-cell="A2"><button type="button" data-hotspot="A2" aria-label="Cell A2"><span data-cell-value></span></button></td><td data-cell="B2"><button type="button" data-hotspot="B2" aria-label="Cell B2"><span data-cell-value></span></button></td><td data-cell="C2"><button type="button" data-hotspot="C2" aria-label="Cell C2"><span data-cell-value></span></button></td></tr><tr><th>3</th><td data-cell="A3"><button type="button" data-hotspot="A3" aria-label="Cell A3"><span data-cell-value></span></button></td><td data-cell="B3"><button type="button" data-hotspot="B3" aria-label="Cell B3"><span data-cell-value></span></button></td><td data-cell="C3"><button type="button" data-hotspot="C3" aria-label="Cell C3"><span data-cell-value></span></button></td></tr><tr><th>4</th><td data-cell="A4"><button type="button" data-hotspot="A4" aria-label="Cell A4"><span data-cell-value></span></button></td><td data-cell="B4"><button type="button" data-hotspot="B4" aria-label="Cell B4"><span data-cell-value></span></button></td><td data-cell="C4"><button type="button" data-hotspot="C4" aria-label="Cell C4"><span data-cell-value></span></button></td></tr></table></div>
-      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="enter">Enter</button></div>
       <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
@@ -115,11 +115,11 @@
   <p class="caption">Practice screen — not the real Excel.</p>
   <div class="practice-window">
       <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="pw-ribbon" role="toolbar" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="A1">Cell A1</button><button type="button" class="btn btn-secondary" data-hotspot="home">Home tab</button><button type="button" class="btn btn-secondary" data-hotspot="general">General arrow</button><button type="button" class="btn btn-secondary" data-hotspot="date">Date</button><button type="button" class="btn btn-secondary" data-hotspot="more">More Number Formats</button></div>
       <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="A1">Cell A1</button><button type="button" class="btn btn-secondary" data-hotspot="home">Home tab</button><button type="button" class="btn btn-secondary" data-hotspot="general">General arrow</button><button type="button" class="btn btn-secondary" data-hotspot="date">Date</button><button type="button" class="btn btn-secondary" data-hotspot="more">More Number Formats</button></div>
         
       </div>
+      <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
@@ -147,7 +147,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Type the first Hours row on the Practice sheet</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>On the Practice sheet, click A3 (leave the note in A1 as it is).</p></div>
       <p class="block-label">Steps</p><ol><li>On the Practice sheet, click A3 (leave the note in A1 as it is).</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>Type these headers across row 3, using Tab between them:</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Type these headers across row 3, using Tab between them:</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-type-a-date-and-fix-a-mistake">Previous section</a>
@@ -163,7 +163,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A sample date and a CAD amount</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Still on the Practice sheet, click E3 and type Sample date (this is not a real appointment).</p></div>
       <p class="block-label">Steps</p><ol><li>In E4 type 2026-11-10 .</li><li>Select E4, go to the Home tab, click the arrow on the General box, and choose a Date format you can read.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>The day should still be 10 November 2026 even if the style changes.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">The day should still be 10 November 2026 even if the style changes.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-type-the-first-hours-row-on-the">Previous section</a>

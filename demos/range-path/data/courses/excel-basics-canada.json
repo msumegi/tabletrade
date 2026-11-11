@@ -2798,9 +2798,12 @@
               "html": "",
               "problem": "On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:",
               "steps": [
-                "On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:"
+                "Type =2+4 and press Enter. The cell shows 6.",
+                "On the Hours sheet, type =B2+B3+B4 and press Enter. With the sample hours, the cell shows 17.5.",
+                "Type =5+2*3 and press Enter. Excel multiplies first, so the cell shows 11, not 21.",
+                "Click each formula cell and read the formula bar. You should see the instruction, not only the result."
               ],
-              "result": "The page now shows the change you just made."
+              "result": "Each cell shows a calculated number because the entry began with =. Microsoft’s example =5+2*3 is 11, not 21."
             }
           ]
         },

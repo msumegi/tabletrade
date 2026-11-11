@@ -80,18 +80,16 @@
   <h3>Search Job Bank for a practice job (practice screen)</h3>
   <p class="caption">Practice screen — not the real Job Bank.</p>
   <div class="practice-window" data-app="job">
-      <div class="pw-bar"><strong>Job Bank</strong> <span data-doc-name></span></div>
+      <div class="pw-bar"><strong data-app-title>Job Bank</strong> <span data-doc-name></span></div>
+      <div class="pw-ribbon" role="toolbar"><button type="button" class="btn btn-secondary" data-hotspot="title">Job title box</button><button type="button" class="btn btn-secondary" data-hotspot="place">Place box</button><button type="button" class="btn btn-secondary" data-hotspot="search">Search</button><button type="button" class="btn btn-secondary" data-hotspot="hours">Hours of work</button></div>
       <div class="job-form"><p>Job title <strong data-field="title"></strong></p><p>Place <strong data-field="place"></strong></p></div>
-      <ul class="job-results"><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>
-      <article data-slot="posting"><p>Sampletown Community Centre. Greet visitors and set up tables. First aid is an asset, not required. Sample only.</p></article>
-      
-      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="title">Job title box</button><button type="button" class="btn btn-secondary" data-hotspot="place">Place box</button><button type="button" class="btn btn-secondary" data-hotspot="hours">Hours of work</button></div>
+      <ul class="job-results" data-slot="results" hidden><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>
       <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
-  <script type="application/json" class="sim-key">{"id":"jobsearch-jobbank-search","kind":"job","steps":[{"id":"s1","prompt":"Type a job title that fits your plan, such as Weekend Attendant.","pass":"A title or skill word is how you start. Use words an employer might use.","fail":"Tap the job-title box first.","correct":["title"]},{"id":"s2","prompt":"Type a place, such as your town or a nearby city.","pass":"A place keeps the list closer to travel you can actually do.","fail":"Add a town or city.","correct":["place"]},{"id":"s3","prompt":"If the list is long, open a filter such as hours of work.","pass":"Job Bank says you can filter by hours of work, benefits, and salary. Filters help; they do not replace reading the posting.","fail":"Try the Hours of work filter.","correct":["hours"]}],"values":{},"start":"A1"}</script>
+  <script type="application/json" class="sim-key">{"id":"jobsearch-jobbank-search","kind":"job","steps":[{"id":"s1","prompt":"Type a job title that fits your plan, such as Weekend Attendant.","pass":"A title or skill word is how you start. Use words an employer might use.","fail":"Tap the job-title box first.","correct":["title"]},{"id":"s2","prompt":"Type a place, such as your town or a nearby city.","pass":"A place keeps the list closer to travel you can actually do.","fail":"Add a town or city.","correct":["place"]},{"id":"s3","prompt":"Choose Search. The practice list stays empty until you do.","pass":"The practice list appears. Read more than the first line before you decide.","fail":"Choose Search after the job title and the place.","correct":["search"]},{"id":"s4","prompt":"If the list is long, open a filter such as hours of work.","pass":"Job Bank says you can filter by hours of work, benefits, and salary. Filters help; they do not replace reading the posting.","fail":"Try the Hours of work filter.","correct":["hours"]}],"values":{},"start":"A1"}</script>
 </section>
 <div class="block" data-block="prose"></div>
   <p class="actions">
@@ -118,8 +116,8 @@
       <text x="16" y="140" font-size="12" fill="#1b1914">Hours</text>
       <text x="80" y="140" font-size="12" fill="#1b1914">Benefits</text>
       <text x="160" y="140" font-size="12" fill="#1b1914">Salary</text>
-      <circle cx="240" cy="54" r="11" fill="#123c2e"/><text x="240" y="58" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="240" cy="92" r="11" fill="#123c2e"/><text x="240" y="96" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="40" cy="150" r="11" fill="#123c2e"/><text x="40" y="154" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
-  <p class="caption">A practice drawing of a Job Bank-style search page with a job-title box, a place box, and filters for hours, benefits, and salary. Caption: Practice screen — not the real Job Bank.</p>
+      <circle cx="250" cy="54" r="11" fill="#123c2e"/><text x="250" y="58" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="250" cy="92" r="11" fill="#123c2e"/><text x="250" y="96" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="250" cy="140" r="11" fill="#123c2e"/><text x="250" y="144" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
+  <p class="caption">Practice screen — not the real Job Bank.</p>
   <figcaption><ol class="callouts"><li>Job title or skill</li><li>Place (town or nearby city)</li><li>Filters such as hours, benefits, or salary</li></ol></figcaption>
 </figure>
 <form class="block block-instant" data-block="check" data-check="jobsearch-filters" id="jobsearch-filters">
@@ -142,7 +140,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. A small-town search</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Sam lives near Sampletown and can work weekends.</p></div>
       <p class="block-label">Steps</p><ol><li>On the practice screen Sam types “attendant” and “Sampletown,” then opens the hours filter and looks for part-time or weekend wording.</li><li>A weekday-only posting is left on the list but not saved.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>Sam copies the closing date of one good match onto the master list.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Sam copies the closing date of one good match onto the master list.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-use-alis-beside-job-bank-not-instead-o">Previous section</a>
@@ -158,7 +156,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Alis for the how, Job Bank for the listings</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Sam bookmarks alis Look for Work to reread resume and interview articles later, and uses Job Bank to browse current listings.</p></div>
       <p class="block-label">Steps</p><ol><li>Sam bookmarks alis Look for Work to reread resume and interview articles later, and uses Job Bank to browse current listings.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>Sam does not treat a practice drawing as the live site, and asks a tutor when a button has moved.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Sam does not treat a practice drawing as the live site, and asks a tutor when a button has moved.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-a-small-town-search">Previous section</a>

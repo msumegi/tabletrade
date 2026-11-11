@@ -1339,7 +1339,7 @@
                 "The sentence is highlighted.",
                 "Sam presses Backspace and types a clearer sentence."
               ],
-              "result": "Nothing else on the page changes."
+              "result": "Only the selected sentence changes. The other sentences on the page stay as Sam typed them."
             }
           ]
         },
@@ -2117,7 +2117,7 @@
               "steps": [
                 "The rest of the sentence stays regular."
               ],
-              "result": "Alex saves the file."
+              "result": "Only the date is bold. Alex then saves the file so the notice keeps that emphasis."
             }
           ]
         },
@@ -3688,10 +3688,15 @@
               "html": "",
               "problem": "Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it.",
               "steps": [
-                "Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it."
+                "Rae right-clicks the practice photo, chooses View Alt Text, and types a description of the ramp beside the main door.",
+                "Rae does not write “an image of a building,” and would rewrite any automatic text that was wrong."
               ],
-              "result": "The page now shows the change you just made."
+              "result": "Someone who cannot see the photo hears that the entrance has a ramp beside the main door, not only that a picture is there."
             }
+          ],
+          "steps": [
+            "Rae right-clicks the practice photo, chooses View Alt Text, and types a description of the ramp beside the main door.",
+            "Rae does not write “an image of a building,” and would rewrite any automatic text that was wrong."
           ]
         },
         {

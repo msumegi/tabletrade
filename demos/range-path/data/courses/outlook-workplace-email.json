@@ -1446,15 +1446,22 @@
               "type": "workedExample",
               "title": "Worked example 1. Confirming Saturday setup",
               "html": "",
-              "problem": "Alex needs to tell Jordan whether Saturday from 9:00 a.m.",
+              "problem": "Alex needs to tell Jordan that Saturday from 9:00 a.m. to 10:00 a.m. still works.",
               "steps": [
-                "to 10:00 a.m.",
-                "Alex opens Mail, chooses New Email , and puts Jordan on the To line.",
-                "The subject is “Saturday hall setup — I can help from 9:00 to 10:00.” The body has two short lines: “I can help set up tables this Saturday from 9:00 a.m."
+                "Alex opens Mail, chooses New Email, and puts Jordan Lee on the To line.",
+                "The subject is “Saturday hall setup — I can help from 9:00 to 10:00.”",
+                "The body says “I can help set up tables this Saturday from 9:00 a.m. to 10:00 a.m.” and “Please let me know if the plan changes.”"
               ],
-              "result": "to 10:00 a.m.” and “Please let me know if the plan changes.” Alex reads the note once, chooses Send, and later checks Sent Items instead of sending the same note again."
+              "result": "Alex reads the note once, chooses Send, and later checks Sent Items instead of sending the same note again."
             }
-          ]
+          ],
+          "problem": "Alex needs to tell Jordan that Saturday from 9:00 a.m. to 10:00 a.m. still works.",
+          "steps": [
+            "Alex opens Mail, chooses New Email, and puts Jordan Lee on the To line.",
+            "The subject is “Saturday hall setup — I can help from 9:00 to 10:00.”",
+            "The body says “I can help set up tables this Saturday from 9:00 a.m. to 10:00 a.m.” and “Please let me know if the plan changes.”"
+          ],
+          "result": "Alex reads the note once, chooses Send, and later checks Sent Items instead of sending the same note again."
         },
         {
           "id": "worked-example-2-fixing-a-weak-subject",

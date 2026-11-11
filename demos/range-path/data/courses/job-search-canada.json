@@ -916,12 +916,16 @@
               "problem": "Jordan can work weekends and one evening, but not weekday mornings because of a family drop-off.",
               "steps": [
                 "Jordan writes “weekends and one evening; within a 30-minute drive; public-facing or tidy-up work” at the top of a notebook.",
-                "A weekday 7 a.m.",
-                "warehouse posting is interesting, but Jordan does not apply.",
-                "That is not quitting."
+                "A weekday 7 a.m. warehouse posting is interesting, but Jordan does not apply.",
+                "Skipping it is not quitting. It matches the hours Jordan can actually work."
               ],
-              "result": "It is using the plan."
+              "result": "Jordan is using the plan: the weekday morning hours do not fit, so that posting stays off the list."
             }
+          ],
+          "steps": [
+            "Jordan writes “weekends and one evening; within a 30-minute drive; public-facing or tidy-up work” at the top of a notebook.",
+            "A weekday 7 a.m. warehouse posting is interesting, but Jordan does not apply.",
+            "Skipping it is not quitting. It matches the hours Jordan can actually work."
           ]
         },
         {
@@ -1239,6 +1243,25 @@
                 },
                 {
                   "id": "s3",
+                  "prompt": "Choose Search. The practice list stays empty until you do.",
+                  "hotspots": [
+                    {
+                      "id": "search",
+                      "x": 0.62,
+                      "y": 0.4,
+                      "w": 0.28,
+                      "h": 0.1,
+                      "label": "Search"
+                    }
+                  ],
+                  "correct": [
+                    "search"
+                  ],
+                  "pass": "The practice list appears. Read more than the first line before you decide.",
+                  "fail": "Choose Search after the job title and the place."
+                },
+                {
+                  "id": "s4",
                   "prompt": "If the list is long, open a filter such as hours of work.",
                   "hotspots": [
                     {
@@ -1750,13 +1773,16 @@
               "type": "workedExample",
               "title": "Worked example 2. A posting that does not fit",
               "html": "",
-              "problem": "A different sample line asks for weekday 6 a.m.",
+              "problem": "A different sample line asks for a weekday 6 a.m. start and a class of driver’s licence Ri does not have.",
               "steps": [
-                "starts and a class of driver’s licence Ri does not have.",
                 "Ri records the posting on the master list as “skipped — hours and licence,” instead of forcing an application."
               ],
-              "result": "That keeps the list honest."
+              "result": "Ri keeps the list honest by marking the posting skipped for hours and a licence, instead of forcing an application."
             }
+          ],
+          "problem": "A different sample line asks for a weekday 6 a.m. start and a class of driver’s licence Ri does not have.",
+          "steps": [
+            "Ri records the posting on the master list as “skipped — hours and licence,” instead of forcing an application."
           ]
         },
         {
@@ -2008,7 +2034,7 @@
               "type": "download",
               "id": "jobsearch-master-skills",
               "href": "../../../media/practice/Job-Search-Tracker.xlsx",
-              "label": "Master-skills worksheet (sample)",
+              "label": "Job Search Tracker (sample workbook)",
               "note": "Do not type a SIN or password."
             },
             {
@@ -2382,7 +2408,7 @@
               "steps": [
                 "For Sampletown, Priya writes “Greeted visitors at a volunteer skate sale” and “Set up tables for community events,” using the posting’s words *greet* and *tables*."
               ],
-              "result": "Priya does not add first aid."
+              "result": "Priya leaves first aid off the resume because the posting lists it as an asset, not a requirement, and Priya does not have it."
             }
           ]
         },
@@ -2768,12 +2794,20 @@
               "type": "workedExample",
               "title": "Worked example 1. A three-part Sampletown email",
               "html": "",
-              "problem": "Subject: Weekend Attendant application — Jordan Lee",
+              "problem": "Jordan drafts a cover email for the fictional Sampletown Weekend Attendant posting.",
               "steps": [
-                "Subject: Weekend Attendant application — Jordan Lee"
+                "The subject is “Weekend Attendant application — Jordan Lee.”",
+                "The body has a short opening, one example of greeting visitors at a skate sale, and a polite close.",
+                "The last line says the resume is attached."
               ],
-              "result": "The page now shows the change you just made."
+              "result": "The note names the Weekend Attendant job, gives one honest example, and says the resume is attached."
             }
+          ],
+          "problem": "Jordan drafts a cover email for the fictional Sampletown Weekend Attendant posting.",
+          "steps": [
+            "The subject is “Weekend Attendant application — Jordan Lee.”",
+            "The body has a short opening, one example of greeting visitors at a skate sale, and a polite close.",
+            "The last line says the resume is attached."
           ]
         },
         {
@@ -3494,7 +3528,7 @@
                 "Action: welcomed each person, pointed to the try-on area, and asked a teammate for help when two families arrived at once.",
                 "Result: the table opened on time and no one left the line."
               ],
-              "result": "Skill: friendly, clear communication."
+              "result": "The skill Jordan would name is friendly, clear communication, shown by greeting people and keeping the Saturday line fair."
             }
           ]
         },
@@ -3845,10 +3879,17 @@
               "html": "",
               "problem": "After a Sampletown practice interview, Sam emails: thanks for the time and for explaining the Saturday setup; Sam learned that attendants help lock up with a checklist; Sam is a good fit because of greeting visitors at the skate sale and setting up tables; Sam remains interested.",
               "steps": [
-                "After a Sampletown practice interview, Sam emails: thanks for the time and for explaining the Saturday setup; Sam learned that attendants help lock up with a checklist; Sam is a good fit because of greeting visitors at the skate sale and setting up tables; Sam remains interested."
+                "Sam thanks the panel for the time and for explaining the Saturday setup.",
+                "Sam names one thing learned: attendants help lock up with a checklist.",
+                "Sam gives one matching example — greeting visitors and setting up tables — and says the interest remains."
               ],
-              "result": "The note is one screen long."
+              "result": "The thank-you stays about one screen long: thanks, one thing Sam learned, one matching example, and continued interest."
             }
+          ],
+          "steps": [
+            "Sam thanks the panel for the time and for explaining the Saturday setup.",
+            "Sam names one thing learned: attendants help lock up with a checklist.",
+            "Sam gives one matching example — greeting visitors and setting up tables — and says the interest remains."
           ]
         },
         {

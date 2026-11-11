@@ -80,7 +80,8 @@
   <h3>Insert a small table and mark the header row (practice Word)</h3>
   <p class="caption">Practice screen — not the real Word.</p>
   <div class="practice-window" data-app="word">
-      <div class="pw-bar"><strong>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="pw-bar"><strong data-app-title>Word</strong> <span data-doc-name>Document1</span></div>
+      <div class="pw-ribbon" role="toolbar"><button type="button" class="btn btn-secondary" data-hotspot="table">Table</button><button type="button" class="btn btn-secondary" data-hotspot="grid">2 by 3 grid</button><button type="button" class="btn btn-secondary" data-hotspot="headerrow">Header row</button></div>
       <div class="word-page">
       <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
       <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
@@ -92,7 +93,6 @@
       <p data-slot="pagenum" hidden>Page 1</p>
       <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
     </div>
-      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="table">Table</button><button type="button" class="btn btn-secondary" data-hotspot="grid">2 by 3 grid</button><button type="button" class="btn btn-secondary" data-hotspot="headerrow">Header row</button></div>
       <p class="pw-status" data-sim-status></p>
     </div>
   <p data-sim-prompt></p>
@@ -124,7 +124,7 @@
       <text x="200" y="78" font-size="11" fill="#1b1914">Ramp beside the door</text>
       <text x="200" y="130" font-size="11" fill="#1b1914">Decorative</text>
       <circle cx="90" cy="24" r="11" fill="#123c2e"/><text x="90" y="28" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="320" cy="50" r="11" fill="#123c2e"/><text x="320" y="54" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="320" cy="130" r="11" fill="#123c2e"/><text x="320" y="134" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
-  <p class="caption">A practice drawing of a Word picture with an Alt Text pane. The sample description reads: Hall entrance with a ramp beside the main door. Caption: Practice screen — not the real Word.</p>
+  <p class="caption">Practice screen — not the real Word.</p>
   <figcaption><ol class="callouts"><li>Picture on the page</li><li>Alt Text pane — one or two sentences</li><li>Mark as decorative — only if it adds no meaning</li></ol></figcaption>
 </figure>
 <form class="block block-instant" data-block="check" data-check="word-why-alt-text" id="word-why-alt-text">
@@ -147,7 +147,7 @@
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Opening hours in a tiny table</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Rae inserts a two-by-four table (Insert > Table), turns on Header row, and types “Day” and “Hours” in the first row.</p></div>
       <p class="block-label">Steps</p><ol><li>The next rows say Saturday / 10 a.m.–1 p.m.</li><li>and Sunday / Closed.</li><li>Rae does not merge cells and does not leave a blank row.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>The same facts could have been two short sentences; the table is only for side-by-side times.</p></div>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">The same facts could have been two short sentences; the table is only for side-by-side times.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-add-alt-text-and-check-the-page">Previous section</a>
@@ -162,8 +162,8 @@
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Alt text for a hall photo</h3>
       <p class="block-label">Problem</p><div class="block-body"><p>Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it.</p></div>
-      <p class="block-label">Steps</p><ol><li>Rae inserts a practice photo staff provided, right-clicks it, chooses View Alt Text, and types: “Accessible entrance of the Sampletown community centre, with a ramp beside the main door.” Rae does not write “an image of a building.” If Word had filled in automatic text that was wrong, Rae would have rewritten it.</li></ol>
-      <p class="block-label">Result</p><div class="block-body"><p>The page now shows the change you just made.</p></div>
+      <p class="block-label">Steps</p><ol><li>Rae right-clicks the practice photo, chooses View Alt Text, and types a description of the ramp beside the main door.</li><li>Rae does not write “an image of a building,” and would rewrite any automatic text that was wrong.</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p class="result-line">Someone who cannot see the photo hears that the entrance has a ramp beside the main door, not only that a picture is there.</p></div>
     </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-opening-hours-in-a-tiny-table">Previous section</a>

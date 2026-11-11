@@ -28,7 +28,7 @@ function example(block) {
   <p class="block-label">Steps</p>
   <ol>${steps}</ol>
   <p class="block-label">Result</p>
-  <p>${esc(block.result || "")}</p>
+  <p class="result-line">${esc(block.result || "")}</p>
 </aside>`;
 }
 
@@ -86,13 +86,13 @@ function sceneSvg(block) {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
       <rect x="16" y="16" width="328" height="22" fill="#e7f0eb" stroke="${line}"/>
       <text x="24" y="31" font-size="12" fill="${ink}">hall-booking — Word</text>
-      <text x="250" y="31" font-size="11" fill="${ink}">Save Undo</text>
+      <text x="220" y="31" font-size="11" fill="${ink}">Save</text>
       <text x="24" y="54" font-size="12" fill="${ink}">File</text>
-      <text x="70" y="54" font-size="12" fill="${ink}">Home</text>
+      <text x="100" y="54" font-size="12" fill="${ink}">Home</text>
       <rect x="16" y="64" width="328" height="120" fill="#fff" stroke="${line}"/>
       <text x="28" y="90" font-size="13" fill="${ink}">Type here</text>
-      <text x="300" y="200" font-size="12" fill="${ink}">100%</text>
-      ${marker(1, 200, 16)}${marker(2, 300, 16)}${marker(3, 40, 48)}${marker(4, 110, 48)}${marker(5, 180, 100)}${marker(6, 330, 200)}`);
+      <text x="250" y="188" font-size="12" fill="${ink}">100%</text>
+      ${marker(1, 188, 27)}${marker(2, 332, 27)}${marker(3, 68, 54)}${marker(4, 168, 54)}${marker(5, 180, 130)}${marker(6, 332, 176)}`);
   }
   if (id === "word-header-margins") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -101,7 +101,7 @@ function sceneSvg(block) {
       <text x="80" y="58" font-size="11" fill="${ink}">Community notice — practice</text>
       <text x="80" y="86" font-size="14" fill="${ink}">Saturday market</text>
       <text x="250" y="168" font-size="12" fill="${ink}">1</text>
-      ${marker(1, 40, 110)}${marker(2, 200, 36)}${marker(3, 280, 168)}${marker(4, 160, 90)}`);
+      ${marker(1, 36, 110)}${marker(2, 300, 36)}${marker(3, 300, 168)}${marker(4, 250, 90)}`);
   }
   if (id === "word-alt-text") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -115,7 +115,7 @@ function sceneSvg(block) {
   }
   if (id === "outlook-window-parts") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
-      <text x="16" y="28" font-size="12" fill="${ink}">Mail</text>
+      <text x="16" y="36" font-size="12" fill="${ink}">Mail</text>
       <text x="70" y="28" font-size="12" fill="${ink}">Calendar</text>
       <text x="140" y="28" font-size="12" fill="${ink}">People</text>
       <text x="200" y="28" font-size="12" fill="${ink}">Tasks</text>
@@ -125,7 +125,7 @@ function sceneSvg(block) {
       <text x="122" y="64" font-size="11" fill="${ink}">Jordan</text>
       <rect x="232" y="40" width="112" height="160" fill="#fff" stroke="${line}"/>
       <text x="240" y="64" font-size="11" fill="${ink}">Reading</text>
-      ${marker(1, 36, 16)}${marker(2, 100, 16)}${marker(3, 160, 16)}${marker(4, 230, 16)}${marker(5, 50, 70)}${marker(6, 280, 80)}`);
+      ${marker(1, 32, 12)}${marker(2, 96, 12)}${marker(3, 164, 12)}${marker(4, 228, 12)}${marker(5, 70, 110)}${marker(6, 300, 130)}`);
   }
   if (id === "outlook-phishing-signs") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -145,7 +145,7 @@ function sceneSvg(block) {
       <text x="16" y="140" font-size="12" fill="${ink}">Hours</text>
       <text x="80" y="140" font-size="12" fill="${ink}">Benefits</text>
       <text x="160" y="140" font-size="12" fill="${ink}">Salary</text>
-      ${marker(1, 240, 54)}${marker(2, 240, 92)}${marker(3, 40, 150)}`);
+      ${marker(1, 250, 54)}${marker(2, 250, 92)}${marker(3, 250, 140)}`);
   }
   if (id === "jobsearch-posting-parts") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -165,7 +165,7 @@ function sceneSvg(block) {
       <rect x="162" y="60" width="166" height="78" fill="#fff" stroke="${line}"/>
       <rect x="162" y="146" width="166" height="14" fill="#e7f0eb" stroke="${line}"/>
       <text x="40" y="100" font-size="12" fill="${ink}">Screen</text>
-      ${marker(1, 96, 52)}${marker(2, 48, 52)}${marker(3, 71, 176)}${marker(4, 250, 160)}`);
+      ${marker(1, 100, 48)}${marker(2, 40, 70)}${marker(3, 100, 176)}${marker(4, 300, 120)}`);
   }
   if (id === "phones-gestures") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -176,7 +176,7 @@ function sceneSvg(block) {
       <rect x="124" y="178" width="34" height="16" fill="#fff" stroke="${line}"/>
       <rect x="162" y="178" width="34" height="16" fill="#fff" stroke="${line}"/>
       <rect x="200" y="178" width="36" height="16" fill="#fff" stroke="${line}"/>
-      ${marker(1, 168, 70)}${marker(2, 200, 120)}${marker(3, 180, 160)}${marker(4, 124, 100)}${marker(5, 180, 186)}`);
+      ${marker(1, 180, 56)}${marker(2, 210, 140)}${marker(3, 150, 160)}${marker(4, 130, 70)}${marker(5, 280, 186)}`);
   }
   if (id === "phones-app-stores") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -189,7 +189,7 @@ function sceneSvg(block) {
       <text x="190" y="78" font-size="13" fill="${ink}">System</text>
       <text x="190" y="102" font-size="13" fill="${ink}">Software updates</text>
       <text x="190" y="140" font-size="13" fill="${ink}">Permissions</text>
-      ${marker(1, 140, 78)}${marker(2, 150, 40)}${marker(3, 330, 96)}${marker(4, 330, 140)}`);
+      ${marker(1, 130, 48)}${marker(2, 160, 28)}${marker(3, 340, 120)}${marker(4, 340, 168)}`);
   }
   if (id === "phones-compose-message") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -202,7 +202,7 @@ function sceneSvg(block) {
       <text x="52" y="132" font-size="13" fill="${ink}">Message</text>
       <rect x="250" y="160" width="64" height="28" rx="6" fill="${line}"/>
       <text x="266" y="178" font-size="13" fill="#fff">Send</text>
-      ${marker(1, 300, 44)}${marker(2, 300, 82)}${marker(3, 250, 130)}${marker(4, 282, 154)}`);
+      ${marker(1, 310, 44)}${marker(2, 310, 82)}${marker(3, 200, 148)}${marker(4, 282, 140)}`);
   }
   if (id === "excel-formula-bar") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -215,7 +215,7 @@ function sceneSvg(block) {
       <rect x="16" y="100" width="328" height="100" fill="#fff" stroke="${line}"/>
       <text x="40" y="140" font-size="13" fill="${ink}">A</text>
       <text x="90" y="140" font-size="13" fill="${ink}">B</text>
-      ${marker(1, 70, 34)}${marker(2, 48, 74)}${marker(3, 320, 74)}`);
+      ${marker(1, 110, 34)}${marker(2, 48, 104)}${marker(3, 300, 48)}`);
   }
   if (id === "excel-number-formats") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -246,7 +246,7 @@ function sceneSvg(block) {
       <text x="190" y="28" font-size="13" fill="${ink}">With $H$1</text>
       <text x="190" y="52" font-size="13" fill="${ink}">E2 =C2*$H$1</text>
       <text x="190" y="76" font-size="13" fill="${ink}">E3 =C3*$H$1</text>
-      ${marker(1, 150, 64)}${marker(2, 340, 64)}`);
+      ${marker(1, 160, 100)}${marker(2, 340, 100)}`);
   }
   if (id === "excel-print-preview-figure") {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -255,7 +255,7 @@ function sceneSvg(block) {
       <text x="160" y="70" font-size="14" fill="${ink}">Hours preview</text>
       <text x="160" y="96" font-size="13" fill="${ink}">Mon 6</text>
       <text x="160" y="150" font-size="13" fill="${ink}">Next page</text>
-      ${marker(1, 110, 28)}${marker(2, 320, 40)}${marker(3, 300, 190)}`);
+      ${marker(1, 130, 18)}${marker(2, 300, 56)}${marker(3, 300, 190)}`);
   }
   if (/^word-/.test(id)) {
     return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
@@ -284,7 +284,7 @@ function sceneSvg(block) {
       <rect x="124" y="52" width="216" height="148" fill="#fff" stroke="${line}"/>
       <text x="140" y="84" font-size="13" fill="${ink}">To</text>
       <text x="140" y="112" font-size="13" fill="${ink}">Subject</text>
-      ${marker(1, 96, 76)}${marker(2, 96, 108)}${marker(3, 300, 84)}`);
+      ${marker(1, 78, 130)}${marker(2, 78, 168)}${marker(3, 300, 140)}`);
   }
   return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
     <rect x="16" y="16" width="328" height="188" rx="6" fill="#f7f3ea" stroke="${line}" stroke-width="2"/>
@@ -298,16 +298,25 @@ function sceneSvg(block) {
     <text x="36" y="188" font-size="12" fill="#fff">Hours</text>
     <rect x="104" y="174" width="80" height="20" fill="#fff" stroke="${line}"/>
     <text x="112" y="188" font-size="12" fill="${ink}">Household</text>
-    ${marker(1, 300, 36)}${marker(2, 20, 160)}${marker(3, 118, 68)}`);
+    ${marker(1, 300, 36)}${marker(2, 200, 150)}${marker(3, 250, 68)}`);
+}
+
+function practiceCaption(text, fallback) {
+  const raw = String(text || "");
+  const found = raw.match(/Practice screen — not (?:the|a) real [^.]+\./);
+  if (found) return found[0];
+  const cleaned = raw.replace(/\s*Caption:\s*/gi, " ").replace(/\s+/g, " ").trim();
+  return cleaned || fallback;
 }
 
 function annotatedImage(block) {
   const calls = (block.callouts || [])
     .map((item) => `<li>${esc(item.label)}</li>`)
     .join("");
+  const caption = practiceCaption(block.alt, "Practice screen — not the real app.");
   return `<figure class="block block-figure" data-block="annotatedImage" id="${esc(block.id || "")}">
   <div class="stage">${sceneSvg(block)}</div>
-  <p class="caption">${esc(block.alt || "")}</p>
+  <p class="caption">${esc(caption)}</p>
   <figcaption><ol class="callouts">${calls}</ol></figcaption>
 </figure>`;
 }
@@ -380,11 +389,95 @@ function frameKind(block) {
   return "excel";
 }
 
+function richStage(id) {
+  const wordPage = `<div class="word-page">
+      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
+      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
+      <p data-slot="sent1">The hall is open on Saturday.</p>
+      <p data-slot="body">Please bring your own bags.</p>
+      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
+      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
+      <p data-slot="proof" hidden></p>
+      <p data-slot="pagenum" hidden>Page 1</p>
+      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
+    </div>`;
+  if (id === "word-start-word") {
+    return `<div class="launch" data-slot="launcher"><p>Desktop</p><p data-slot="startmenu" hidden>Start menu</p></div>
+      <div class="word-page" data-slot="doc" hidden><p class="doc-title">Document1</p><p>Blank page. Nothing typed yet.</p></div>`;
+  }
+  if (id === "outlook-open-nav") {
+    return `<div class="launch" data-slot="launcher"><p>Desktop</p><p data-slot="startmenu" hidden>Start menu</p></div>
+      <div class="ol-split" data-slot="app" hidden>
+        <ul class="ol-list"><li>Outlook</li></ul>
+        <div class="ol-pane">
+          <p data-slot="mail" hidden>Inbox is open. Sample messages are here. Nothing has been sent.</p>
+          <p data-slot="calendar" hidden>Calendar is open. The Saturday market is on the practice calendar. Your mail is still saved.</p>
+        </div>
+      </div>`;
+  }
+  if (id === "outlook-new-email") {
+    return `<div class="ol-split">
+        <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li></ul>
+        <div class="ol-pane">
+          <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+          <div data-slot="compose" hidden>
+            <p>To <strong data-field="to"></strong></p>
+            <p>Subject <strong data-field="subject"></strong></p>
+            <p>I can help set up tables this Saturday from 9:00 a.m. to 10:00 a.m. Please let me know if the plan changes.</p>
+          </div>
+          <p data-slot="sent" hidden></p>
+        </div>
+      </div>`;
+  }
+  if (id === "outlook-reply") {
+    return `<div class="ol-split">
+        <ul class="ol-list"><li>Saturday hall setup — Jordan</li></ul>
+        <div class="ol-pane">
+          <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
+          <p data-slot="compose" hidden>Reply to Jordan only.</p>
+          <p data-slot="sent" hidden></p>
+        </div>
+      </div>`;
+  }
+  if (id === "outlook-attach-file") {
+    return `<div class="ol-pane">
+        <p>To <strong>Jordan Lee</strong></p>
+        <p>Subject <strong>Saturday market — chair-count list attached</strong></p>
+        <p>The chair-count list is attached. Please tell me if we still need two more.</p>
+        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
+      </div>`;
+  }
+  if (id === "outlook-folder-flag") {
+    return `<div class="ol-split">
+        <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
+        <div class="ol-pane"><p>Inbox. This screen has no compose window.</p></div>
+      </div>`;
+  }
+  if (id === "outlook-new-appointment") {
+    return `<div class="ol-pane"><p>Calendar</p><p data-slot="appt" hidden>Appointment: Review Saturday market notes</p></div>`;
+  }
+  if (id === "outlook-new-contact") {
+    return `<div class="ol-pane"><p data-slot="people">People</p><p data-slot="contact" hidden>Contact: Jordan Lee</p></div>`;
+  }
+  if (id === "jobsearch-jobbank-search") {
+    return `<div class="job-form"><p>Job title <strong data-field="title"></strong></p><p>Place <strong data-field="place"></strong></p></div>
+      <ul class="job-results" data-slot="results" hidden><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>`;
+  }
+  if (id === "jobsearch-cover-email") {
+    return `<div class="ol-pane"><p>To <strong data-field="to"></strong></p><p>Subject <strong data-field="subject"></strong></p><p data-field="body"></p></div>`;
+  }
+  return wordPage;
+}
+
 function simulation(block) {
   const kind = frameKind(block);
   const names = { phone: "phone", computer: "computer", browser: "browser", word: "Word", outlook: "Outlook", job: "Job Bank", excel: "Excel", sheet: "Excel" };
-  const caption = block.caption || ("Practice screen — not the real " + (names[kind] || "Excel") + ".");
-  const title = names[kind] || "Excel";
+  const caption = practiceCaption(block.caption, "Practice screen — not the real " + (names[kind] || "Excel") + ".");
+  const title = block.id === "word-start-word" || block.id === "outlook-open-nav"
+    ? "Desktop"
+    : block.id === "jobsearch-cover-email"
+      ? "Mail"
+      : (names[kind] || "Excel");
   const steps = (block.steps || []).map((step) => {
     const copy = {
       id: step.id,
@@ -414,46 +507,11 @@ function simulation(block) {
   const config = { id: block.id, kind, steps, values: {}, start: "A1" };
   if (kind === "word" || kind === "outlook" || kind === "job") {
     const buttons = hotspotButtons(spots);
-    const word = `<div class="word-page">
-      <p class="doc-header" data-slot="header" hidden>Community notice — practice</p>
-      <p class="doc-title" data-slot="title">Saturday market at the community centre</p>
-      <p data-slot="sent1">The hall is open on Saturday.</p>
-      <p data-slot="body">Please bring your own bags.</p>
-      <ul data-slot="list" hidden><li>Own bags</li><li>Small bills</li><li>A reusable cup</li></ul>
-      <table class="mini-table" data-slot="table" hidden><tr><th>Day</th><th>Hours</th></tr><tr><td>Saturday</td><td>10 a.m.–1 p.m.</td></tr></table>
-      <p data-slot="proof" hidden></p>
-      <p data-slot="pagenum" hidden>Page 1</p>
-      <p data-slot="preview" hidden>Preview: the page fits on one sheet.</p>
-    </div>`;
-    const outlook = `<div class="ol-split">
-      <ul class="ol-list"><li data-slot="msg">Saturday hall setup — Jordan</li><li data-slot="folder" hidden>Saturday market</li></ul>
-      <div class="ol-pane">
-        <p data-slot="reading">Jordan: Can you help set up tables on Saturday?</p>
-        <p data-slot="mail" hidden>Mail is open.</p>
-        <p data-slot="calendar" hidden>Calendar is open.</p>
-        <p data-slot="compose" hidden>New message</p>
-        <p>To <strong data-field="to"></strong></p>
-        <p>Cc <strong data-field="cc"></strong></p>
-        <p>Subject <strong data-field="subject"></strong></p>
-        <p data-field="body"></p>
-        <p data-slot="attached" hidden>Attached: saturday-chairs-practice</p>
-        <p data-slot="sent" hidden></p>
-        <p data-slot="appt" hidden>Appointment: Review Saturday market notes</p>
-        <p data-slot="contact" hidden>Contact: Jordan Lee</p>
-      </div>
-    </div>`;
-    const jobCompose = block.id === "jobsearch-cover-email"
-      ? `<div class="ol-pane"><p>To <strong data-field="to"></strong></p><p>Subject <strong data-field="subject"></strong></p><p data-field="body"></p></div>`
-      : "";
-    const job = `<div class="job-form"><p>Job title <strong data-field="title"></strong></p><p>Place <strong data-field="place"></strong></p></div>
-      <ul class="job-results"><li data-job="match">Weekend Attendant — Sampletown — weekends</li><li data-job="other">Weekday clerk — weekdays only</li></ul>
-      <article data-slot="posting"><p>Sampletown Community Centre. Greet visitors and set up tables. First aid is an asset, not required. Sample only.</p></article>
-      ${jobCompose}`;
-    const body = kind === "word" ? word : kind === "outlook" ? outlook : job;
+    const doc = block.id === "word-start-word" || kind !== "word" ? "" : "Document1";
     stage = `<div class="practice-window" data-app="${kind}">
-      <div class="pw-bar"><strong>${esc(title)}</strong> <span data-doc-name>${kind === "word" ? "Document1" : ""}</span></div>
-      ${body}
-      <div class="sheet-keys">${buttons}</div>
+      <div class="pw-bar"><strong data-app-title>${esc(title)}</strong> <span data-doc-name>${esc(doc)}</span></div>
+      <div class="pw-ribbon" role="toolbar">${buttons}</div>
+      ${richStage(block.id)}
       <p class="pw-status" data-sim-status></p>
     </div>`;
   } else if (kind === "sheet") {
@@ -478,9 +536,9 @@ function simulation(block) {
       .join("");
     stage = `<div class="practice-window">
       <div class="pw-bar"><strong>${esc(title)}</strong></div>
+      <div class="pw-ribbon" role="toolbar">${keyHtml}</div>
       <div class="formula-bar"><span data-name-box>A1</span><span data-formula-input></span></div>
       ${sheetTable(rows)}
-      <div class="sheet-keys">${keyHtml}</div>
       <p class="pw-status" data-sim-status></p>
     </div>`;
   } else {
@@ -489,11 +547,11 @@ function simulation(block) {
     if (block.id === "excel-blank-workbook") config.revealGrid = true;
     stage = `<div class="practice-window">
       <div class="pw-bar"><strong>${esc(title)}</strong></div>
+      <div class="pw-ribbon" role="toolbar" data-sim-menu>${buttons}</div>
       <div class="pw-scroll">
-        <p class="pw-status" data-sim-status></p>
-        <div class="pw-menu" data-sim-menu>${buttons}</div>
         ${reveal}
       </div>
+      <p class="pw-status" data-sim-status></p>
     </div>`;
   }
   return `<section class="block block-sim" data-block="simulation" data-sim="${esc(block.id || "")}" id="${esc(block.id || "")}">
@@ -544,7 +602,7 @@ function workedExample(block) {
     return `<aside class="block block-example" data-block="workedExample"><h3>${esc(block.title || "Worked example")}</h3>
       ${problem ? `<p class="block-label">Problem</p><div class="block-body"><p>${problem}</p></div>` : ""}
       ${items ? `<p class="block-label">Steps</p><ol>${items}</ol>` : ""}
-      ${result ? `<p class="block-label">Result</p><div class="block-body"><p>${result}</p></div>` : ""}
+      ${result ? `<p class="block-label">Result</p><div class="block-body"><p class="result-line">${result}</p></div>` : ""}
     </aside>`;
   }
   if (block.html) {
