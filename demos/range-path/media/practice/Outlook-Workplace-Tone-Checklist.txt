@@ -1,0 +1,7 @@
+Tone checklist. Sample only.
+
+- Short subject that says what you need
+- No ALL CAPS
+- High Importance only when it is truly urgent
+- A two or three line signature: name, role, organisation
+- No real password in the message

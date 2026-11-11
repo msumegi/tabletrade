@@ -25,14 +25,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The purpose and the audience"
+              "text": "The longest word you can find"
             },
             {
               "id": "B",
-              "text": "The longest word you can find"
+              "text": "The purpose and the audience"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -55,14 +55,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "You and your"
+              "text": "Only secret codes"
             },
             {
               "id": "B",
-              "text": "Only secret codes"
+              "text": "You and your"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -70,14 +70,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -133,14 +133,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "email"
+              "text": "e-mail"
             },
             {
               "id": "B",
-              "text": "e-mail"
+              "text": "email"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -148,14 +148,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Avoid writing a whole word in ALL CAPITAL LETTERS"
+              "text": "Write every sentence in ALL CAPS"
             },
             {
               "id": "B",
-              "text": "Write every sentence in ALL CAPS"
+              "text": "Avoid writing a whole word in ALL CAPITAL LETTERS"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -191,14 +191,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ask instead of make a request"
+              "text": "Obtain instead of get, always"
             },
             {
               "id": "B",
-              "text": "Obtain instead of get, always"
+              "text": "Ask instead of make a request"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -221,14 +221,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Under 15 to 20 words, with one main idea"
+              "text": "Over 80 words with many extra commas"
             },
             {
               "id": "B",
-              "text": "Over 80 words with many extra commas"
+              "text": "Under 15 to 20 words, with one main idea"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -283,14 +283,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The verb form should match the subject"
+              "text": "Every sentence must be a question"
             },
             {
               "id": "B",
-              "text": "Every sentence must be a question"
+              "text": "The verb form should match the subject"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -298,14 +298,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Read the text out loud"
+              "text": "Never look at the draft again"
             },
             {
               "id": "B",
-              "text": "Never look at the draft again"
+              "text": "Read the text out loud"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -313,14 +313,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -360,14 +360,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "States the most important point"
+              "text": "Hides the news after three long stories"
             },
             {
               "id": "B",
-              "text": "Hides the news after three long stories"
+              "text": "States the most important point"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -410,12 +410,12 @@
         "prompt": "Workplace writing should start with a purpose and a reader.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -440,27 +440,27 @@
         "prompt": "In that style guide, it’s means “belonging to it.”",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
       },
       {
         "prompt": "Plain language prefers familiar words and short sentences.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -485,30 +485,30 @@
         "prompt": "A short workplace notice should hide the main point until the last line.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
       },
       {
         "prompt": "This course is a professional editing diploma.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Plan for the reader, write plainly, check official Canadian word forms, and proofread. Look up other spellings in Writing Tips Plus."
       }
     ]
@@ -516,7 +516,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general information about clear workplace writing in Canadian English. It is not a diploma, professional editing credential, or official Translation Bureau certificate. It does not replace a conversation class (see Everyday and Work English Practice) and it does not teach Outlook buttons or email sending steps (see Microsoft Outlook and Workplace Email Habits).",
     "builderNotes": "- Do not repeat the English-practice course’s listening/speaking drills or IRCC/LINC content.\n- Do not repeat Outlook Reply/Reply All/To/Cc/Bcc/signature steps.\n- Canadian spelling pairs (cheque, practice/practise, colour, centre/fibre/theatre, metre/meter) were verified in a browser on 2026-11-10 on Writing Tips Plus (our-languages.canada.ca). Scripted fetches get a security check (HTTP 403), so re-check these in a browser before a rebuild.\n- No Ed2Go / commercial grammar curriculum. Canadian spelling in the course body follows the fetched official forms (email, website, it’s/its).",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",

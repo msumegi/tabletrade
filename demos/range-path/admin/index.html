@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
+  <meta name="application-name" content="LearnHere">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#123c2e">
-  <meta name="description" content="Example staff view with fictional learner names for the Range Path demo.">
-  <title>Staff demo · Range Path</title>
+  <meta name="description" content="Example staff view with fictional learner names for the LearnHere demo.">
+  <title>Staff demo · LearnHere</title>
   <link rel="canonical" href="https://rangeroadtech.com/demos/range-path/admin/">
-  <meta property="og:title" content="Staff demo · Range Path">
-  <meta property="og:description" content="Example staff view with fictional learner names for the Range Path demo.">
+  <meta property="og:site_name" content="LearnHere">
+  <meta property="og:title" content="Staff demo · LearnHere">
+  <meta property="og:description" content="Example staff view with fictional learner names for the LearnHere demo.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rangeroadtech.com/demos/range-path/admin/">
   <meta property="og:image" content="https://rangeroadtech.com/demos/range-path/og.jpg">
-  <meta property="og:image:alt" content="Range Path — a grain terminal on the prairie in Edson, Alberta">
+  <meta property="og:image:alt" content="LearnHere — a grain terminal on the prairie in Edson, Alberta">
   <meta property="og:locale" content="en_CA">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon.png" type="image/png" sizes="32x32">
@@ -28,160 +30,38 @@
     <div class="site-bar">
       <a class="brand" href="../">
         <svg class="mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#123c2e"/><path d="M6.5 23.5c4-8 7.2-8.4 10-3.6 2.2 3.8 4.6 3.2 9.2-8.4" fill="none" stroke="#f4efe4" stroke-width="2.4" stroke-linecap="round"/><circle cx="25.2" cy="11.2" r="2.1" fill="#e4c27a"/></svg>
-        <span class="brand-text"><span class="brand-name">Range Path</span><span class="brand-sub">Practical skills for rural adult learners</span></span>
+        <span class="brand-text"><span class="brand-name">LearnHere</span><span class="brand-sub">Practical skills for rural adult learners</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     </div>
     <nav id="site-nav" class="is-collapsed" aria-label="Main">
-      <div class="site-bar"><ul><li><a href="../">Home</a></li><li><a href="../courses/">Courses</a></li><li><a href="../pricing/">Pricing</a></li><li><a href="../walkthrough/">Walkthrough</a></li><li><a href="../admin/" aria-current="page">Staff demo</a></li></ul></div>
+      <div class="site-bar"><ul><li><a href="../">Home</a></li><li><a href="../courses/">Courses</a></li><li><a href="../pricing/">Pricing</a></li><li><a href="../walkthrough/">Walkthrough</a></li><li><a href="../admin/?demo=1" aria-current="page">Staff demo</a></li></ul></div>
     </nav>
   </header>
   <main id="main">
-<div class="example"><p>EXAMPLE DATA — fictional names for demo only</p></div>
+<div class="example"><p>Sample data, not real learners</p></div>
     <div class="wrap-wide">
 <p class="crumbs"><a href="../">Home</a><span>Staff demo</span></p>
-<h1>Staff demo</h1>
-<p class="lede">A sample outcomes view. These people are not real. Nothing here is a live enrolment.</p>
-<p>Eight sample learners. The names below are fictional. Winter Safety is a demo extra and is not in this sample.</p>
-<ul class="stats">
-  <li class="stat"><strong>6</strong> Completed everyday computers</li>
-  <li class="stat"><strong>4</strong> Completed Excel basics</li>
-  <li class="stat"><strong>3</strong> Completed Word basics</li>
-  <li class="stat"><strong>3</strong> Completed job search</li>
-</ul>
-<div class="tabs" role="tablist" aria-label="Staff demo sections">
-  <button type="button" role="tab" id="tab-learners" aria-controls="panel-learners" aria-selected="true">Learners</button>
-  <button type="button" role="tab" id="tab-completions" aria-controls="panel-completions" aria-selected="false" tabindex="-1">Completions</button>
-  <button type="button" role="tab" id="tab-quizzes" aria-controls="panel-quizzes" aria-selected="false" tabindex="-1">Quiz averages</button>
-  <button type="button" role="tab" id="tab-certificates" aria-controls="panel-certificates" aria-selected="false" tabindex="-1">Certificates</button>
-  <button type="button" role="tab" id="tab-outcomes" aria-controls="panel-outcomes" aria-selected="false" tabindex="-1">Outcomes</button>
+<h1>Council staff dashboard</h1>
+<p class="lede">Sample data, not real learners. Filter by course and date, then download a CSV or print the funder report. Nothing here is a live enrolment.</p>
+<div id="org-report">
+  <p>Demo. This view loads from the sample store. Turn on JavaScript to see council staff data for this organization only.</p>
 </div>
-<section id="panel-learners" role="tabpanel" aria-labelledby="tab-learners" tabindex="0" data-panel="learners">
-  <h2>Learners enrolled</h2>
-  <ul class="roster"><li>
-  <h3>Jordan Lee</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-02</p>
-  <dl><dt>Everyday computers</dt><dd>Completed 2026-10-08</dd><dt>Excel basics</dt><dd>Completed 2026-10-15</dd><dt>Word basics</dt><dd>Completed 2026-10-22</dd><dt>Job search</dt><dd>In progress</dd></dl>
-</li>
-<li>
-  <h3>Sam Okonkwo</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-04</p>
-  <dl><dt>Everyday computers</dt><dd>Completed 2026-10-11</dd><dt>Excel basics</dt><dd>Completed 2026-10-19</dd><dt>Word basics</dt><dd>Not completed</dd><dt>Job search</dt><dd>Not completed</dd></dl>
-</li>
-<li>
-  <h3>Priya Sandhu</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-06</p>
-  <dl><dt>Everyday computers</dt><dd>Completed 2026-10-14</dd><dt>Excel basics</dt><dd>In progress</dd><dt>Word basics</dt><dd>Not completed</dd><dt>Job search</dt><dd>Completed 2026-10-28</dd></dl>
-</li>
-<li>
-  <h3>Morgan Berg</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-09</p>
-  <dl><dt>Everyday computers</dt><dd>Completed 2026-10-16</dd><dt>Excel basics</dt><dd>Completed 2026-10-24</dd><dt>Word basics</dt><dd>Completed 2026-11-02</dd><dt>Job search</dt><dd>Not completed</dd></dl>
-</li>
-<li>
-  <h3>Alex Nguyen</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-11</p>
-  <dl><dt>Everyday computers</dt><dd>Completed 2026-10-20</dd><dt>Excel basics</dt><dd>Not completed</dd><dt>Word basics</dt><dd>Completed 2026-11-04</dd><dt>Job search</dt><dd>In progress</dd></dl>
-</li>
-<li>
-  <h3>Riley Chen</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-15</p>
-  <dl><dt>Everyday computers</dt><dd>Completed 2026-10-23</dd><dt>Excel basics</dt><dd>Completed 2026-11-01</dd><dt>Word basics</dt><dd>Not completed</dd><dt>Job search</dt><dd>Completed 2026-11-05</dd></dl>
-</li>
-<li>
-  <h3>Taylor MacLeod</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-18</p>
-  <dl><dt>Everyday computers</dt><dd>In progress</dd><dt>Excel basics</dt><dd>Not completed</dd><dt>Word basics</dt><dd>Not completed</dd><dt>Job search</dt><dd>Completed 2026-11-06</dd></dl>
-</li>
-<li>
-  <h3>Casey Singh</h3>
-  <p class="meta">Sample learner · enrolled 2026-10-22</p>
-  <dl><dt>Everyday computers</dt><dd>Not completed</dd><dt>Excel basics</dt><dd>Not completed</dd><dt>Word basics</dt><dd>Not completed</dd><dt>Job search</dt><dd>Not completed</dd></dl>
-</li></ul>
-</section>
-<section id="panel-completions" role="tabpanel" aria-labelledby="tab-completions" tabindex="0" data-panel="completions">
-  <h2>Completions</h2>
-  <p>Dates are the day that sample learner finished the course. This sample uses the four lead courses. Winter Safety is a demo extra and is not listed here.</p>
-  <div class="matrix" role="table" aria-label="Course completions">
-    <div class="matrix-row matrix-head" role="row">
-      <span role="columnheader">Learner</span>
-      <span role="columnheader">Computers</span>
-      <span role="columnheader">Excel</span>
-      <span role="columnheader">Word</span>
-      <span role="columnheader">Job search</span>
-    </div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Jordan Lee</span><span role="cell" data-label="Computers">2026-10-08</span><span role="cell" data-label="Excel">2026-10-15</span><span role="cell" data-label="Word">2026-10-22</span><span role="cell" data-label="Job search">In progress</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Sam Okonkwo</span><span role="cell" data-label="Computers">2026-10-11</span><span role="cell" data-label="Excel">2026-10-19</span><span role="cell" data-label="Word">Not completed</span><span role="cell" data-label="Job search">Not completed</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Priya Sandhu</span><span role="cell" data-label="Computers">2026-10-14</span><span role="cell" data-label="Excel">In progress</span><span role="cell" data-label="Word">Not completed</span><span role="cell" data-label="Job search">2026-10-28</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Morgan Berg</span><span role="cell" data-label="Computers">2026-10-16</span><span role="cell" data-label="Excel">2026-10-24</span><span role="cell" data-label="Word">2026-11-02</span><span role="cell" data-label="Job search">Not completed</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Alex Nguyen</span><span role="cell" data-label="Computers">2026-10-20</span><span role="cell" data-label="Excel">Not completed</span><span role="cell" data-label="Word">2026-11-04</span><span role="cell" data-label="Job search">In progress</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Riley Chen</span><span role="cell" data-label="Computers">2026-10-23</span><span role="cell" data-label="Excel">2026-11-01</span><span role="cell" data-label="Word">Not completed</span><span role="cell" data-label="Job search">2026-11-05</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Taylor MacLeod</span><span role="cell" data-label="Computers">In progress</span><span role="cell" data-label="Excel">Not completed</span><span role="cell" data-label="Word">Not completed</span><span role="cell" data-label="Job search">2026-11-06</span></div>
-    <div class="matrix-row" role="row"><span class="matrix-name" role="rowheader">Casey Singh</span><span role="cell" data-label="Computers">Not completed</span><span role="cell" data-label="Excel">Not completed</span><span role="cell" data-label="Word">Not completed</span><span role="cell" data-label="Job search">Not completed</span></div>
-  </div>
-</section>
-<section id="panel-quizzes" role="tabpanel" aria-labelledby="tab-quizzes" tabindex="0" data-panel="quizzes">
-  <h2>Quiz averages</h2>
-  <ul class="stats">
-    <li class="stat"><strong>88%</strong> Everyday computers</li>
-    <li class="stat"><strong>84%</strong> Excel basics</li>
-    <li class="stat"><strong>81%</strong> Word basics</li>
-    <li class="stat"><strong>79%</strong> Job search</li>
-  </ul>
-  <p>Sample averages only. Not live scores.</p>
-</section>
-<section id="panel-certificates" role="tabpanel" aria-labelledby="tab-certificates" tabindex="0" data-panel="certificates">
-  <h2>Certificate log</h2>
-  <p>Sixteen local prints, one for each sample completion of the four lead courses. Winter Safety is a demo extra and has none in this sample.</p>
-  <ul class="roster">
-    <li><h3>Jordan Lee</h3><p>2026-10-08 · Everyday Computers and Smartphones</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Sam Okonkwo</h3><p>2026-10-11 · Everyday Computers and Smartphones</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Priya Sandhu</h3><p>2026-10-14 · Everyday Computers and Smartphones</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Morgan Berg</h3><p>2026-10-16 · Everyday Computers and Smartphones</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Alex Nguyen</h3><p>2026-10-20 · Everyday Computers and Smartphones</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Riley Chen</h3><p>2026-10-23 · Everyday Computers and Smartphones</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Jordan Lee</h3><p>2026-10-15 · Microsoft Excel Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Sam Okonkwo</h3><p>2026-10-19 · Microsoft Excel Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Morgan Berg</h3><p>2026-10-24 · Microsoft Excel Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Riley Chen</h3><p>2026-11-01 · Microsoft Excel Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Jordan Lee</h3><p>2026-10-22 · Microsoft Word Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Morgan Berg</h3><p>2026-11-02 · Microsoft Word Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Alex Nguyen</h3><p>2026-11-04 · Microsoft Word Basics (Canada)</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Priya Sandhu</h3><p>2026-10-28 · Job Search and Employment Readiness in Canada</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Riley Chen</h3><p>2026-11-05 · Job Search and Employment Readiness in Canada</p><p class="meta">Printed locally · example</p></li>
-    <li><h3>Taylor MacLeod</h3><p>2026-11-06 · Job Search and Employment Readiness in Canada</p><p class="meta">Printed locally · example</p></li>
-  </ul>
-</section>
-<section id="panel-outcomes" role="tabpanel" aria-labelledby="tab-outcomes" tabindex="0" data-panel="outcomes">
-  <h2>Draft outcomes summary</h2>
-  <p>Staff can copy a starting paragraph for a funder note. A real report still needs a human review and a signature.</p>
-  <p class="actions"><button type="button" class="btn" id="open-draft">Open draft outcomes summary</button></p>
-  <noscript>
-    <p><strong>Draft only — council staff must review and sign any real report.</strong></p>
-    <p>In October–November 2026, EXAMPLE Community Adult Learning offered Range Path courses. Eight sample learners enrolled. Six completed Everyday Computers and Smartphones, four completed Excel Basics, three completed Word Basics, and three completed Job Search. Average sample quiz scores were above 75%. Winter Safety is a demo extra and is not in this sample. Staff note: EXAMPLE DATA for product demo.</p>
-  </noscript>
-  <dialog id="draft-dialog" aria-labelledby="draft-title">
-    <h2 id="draft-title">Draft outcomes summary</h2>
-    <p><strong>Draft only — council staff must review and sign any real report.</strong></p>
-    <label for="draft-text">Draft text</label>
-    <textarea id="draft-text" readonly>In October–November 2026, EXAMPLE Community Adult Learning offered Range Path courses. Eight sample learners enrolled. Six completed Everyday Computers and Smartphones, four completed Excel Basics, three completed Word Basics, and three completed Job Search. Average sample quiz scores were above 75%. Winter Safety is a demo extra and is not in this sample. Staff note: EXAMPLE DATA for product demo.</textarea>
-    <p class="actions">
-      <button type="button" class="btn" id="copy-draft">Copy draft</button>
-      <button type="button" class="btn btn-secondary" data-close>Close</button>
-    </p>
-    <p id="copy-status" role="status"></p>
-  </dialog>
-</section>
-<p class="actions"><button type="button" class="btn btn-secondary" id="restore-sample">Restore sample view</button></p>
-<p id="restore-status" role="status"></p>
+
     </div>
   </main>
   <footer class="site">
     <div class="wrap-wide">
       <p class="disclaimer">Demo. Sample data. Not accredited.</p>
-      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A Range Road Tech product</a> · <a href="../privacy/">Privacy</a></p>
+      <p class="credit"><a href="https://rangeroadtech.com/" target="_blank" rel="noopener noreferrer">A product of Range Road Technologies.</a> · <a href="../privacy/">Privacy</a></p>
     </div>
   </footer>
+    <script src="../assets/demo-seed.js"></script>
+  <script src="../assets/data.js"></script>
+  <script src="../assets/report-fields.js"></script>
+  <script src="../assets/billing.js"></script>
+  <script src="../assets/brand.js"></script>
+  <script src="../assets/player-blocks.js"></script>
   <script src="../assets/catalogue.js"></script>
   <script src="../assets/site.js"></script>
 </body>

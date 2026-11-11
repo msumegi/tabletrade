@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Convert a Range Path course markdown file into data/courses/<slug>.json.
+ * Convert a LearnHere course markdown file into data/courses/<slug>.json.
  *
  * Usage:
  *   node tools/md-to-course.mjs path/to/course.md --before email-online-safety --short "Short name" --nav "Nav"
@@ -293,7 +293,77 @@ function sectionKind(level, title) {
   if (level === 3 && /^Final quiz explanations\b/i.test(name)) return "finalExplain";
   if (level === 2 && /^Certificate text\b/i.test(name)) return "certificate";
   if (level === 2 && /^Content notes\b/i.test(name)) return "notes";
+  if (level === 2 && /^What you need\b/i.test(name)) return "youNeed";
+  if (level === 2 && /^Estimated time\b/i.test(name)) return "time";
+  if (level === 3 && /^Section:/i.test(name)) return "playerSection";
+  if (level === 3 && /^Example:/i.test(name)) return "example";
+  if (level === 3 && /^Assignment:/i.test(name)) return "assignment";
+  if (level === 3 && /^Practice file:/i.test(name)) return "file";
   return "other";
+}
+
+function bulletLines(lines) {
+  return lines
+    .map((line) => line.trim())
+    .filter((line) => line && line !== "---")
+    .map((line) => plain(line.replace(/^[-*]\s+/, "")));
+}
+
+function parseExampleBlock(title, lines) {
+  let problem = "";
+  let result = "";
+  const steps = [];
+  let mode = "";
+  lines.forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed === "---") return;
+    if (/^Problem:/i.test(trimmed)) {
+      mode = "problem";
+      problem = plain(trimmed.replace(/^Problem:\s*/i, ""));
+      return;
+    }
+    if (/^Result:/i.test(trimmed)) {
+      mode = "result";
+      result = plain(trimmed.replace(/^Result:\s*/i, ""));
+      return;
+    }
+    if (/^Steps:/i.test(trimmed)) {
+      mode = "steps";
+      const rest = plain(trimmed.replace(/^Steps:\s*/i, ""));
+      if (rest) steps.push(rest);
+      return;
+    }
+    const text = plain(trimmed.replace(/^[-*]\s+/, ""));
+    if (mode === "steps") steps.push(text);
+    else if (mode === "problem") problem = (problem + " " + text).trim();
+    else if (mode === "result") result = (result + " " + text).trim();
+  });
+  return {
+    type: "example",
+    title: title.replace(/^Example:\s*/i, "").trim() || "Worked example",
+    problem,
+    steps,
+    result
+  };
+}
+
+function splitAssignment(lines) {
+  const instructions = [];
+  const selfCheck = [];
+  let mode = "instructions";
+  lines.forEach((line) => {
+    if (/^Self-check:/i.test(line.trim())) {
+      mode = "check";
+      const rest = line.trim().replace(/^Self-check:\s*/i, "");
+      if (rest) selfCheck.push(rest);
+      return;
+    }
+    (mode === "check" ? selfCheck : instructions).push(line);
+  });
+  return {
+    instructions: renderBlocks(instructions),
+    selfCheck: renderBlocks(selfCheck)
+  };
 }
 
 function lessonTitle(heading) {
@@ -346,6 +416,8 @@ export function parseCourseMarkdown(markdown, fileName) {
   let certificateNote = "";
   let builderNotes = "";
   let currentLesson = null;
+  const youNeed = [];
+  let estimatedMinutes = 0;
 
   sections.forEach((section) => {
     const kind = sectionKind(section.level, section.title);
@@ -415,6 +487,75 @@ export function parseCourseMarkdown(markdown, fileName) {
         .join("\n");
       return;
     }
+    if (kind === "youNeed") {
+      bulletLines(section.lines).forEach((item) => youNeed.push(item));
+      return;
+    }
+    if (kind === "time") {
+      const text = section.lines.join(" ");
+      const hours = text.match(/(\d+(?:\.\d+)?)\s*hours?/i);
+      const minutes = text.match(/(\d+)\s*minutes?/i);
+      estimatedMinutes = (hours ? Math.round(Number(hours[1]) * 60) : 0) + (minutes ? Number(minutes[1]) : 0);
+      return;
+    }
+    if (kind === "playerSection") {
+      if (!currentLesson) {
+        warnings.push("Section appeared before a lesson: " + section.title);
+        return;
+      }
+      const parts = section.title.replace(/^Section:\s*/i, "").split("|").map((part) => part.trim());
+      currentLesson.sections = currentLesson.sections || [];
+      currentLesson.sections.push({
+        id: parts[0] || "section-" + (currentLesson.sections.length + 1),
+        title: parts[1] || parts[0] || "Section",
+        minutes: Number(parts[2]) || 0,
+        blocks: [{ type: "prose", html: renderBlocks(section.lines) }]
+      });
+      return;
+    }
+    if (kind === "example") {
+      if (!currentLesson) {
+        warnings.push("Example appeared before a lesson: " + section.title);
+        return;
+      }
+      const block = parseExampleBlock(section.title, section.lines);
+      currentLesson.sections = currentLesson.sections || [];
+      const last = currentLesson.sections[currentLesson.sections.length - 1];
+      if (last) last.blocks.push(block);
+      else warnings.push("Example needs a Section heading first: " + section.title);
+      return;
+    }
+    if (kind === "assignment") {
+      if (!currentLesson) {
+        warnings.push("Assignment appeared before a lesson: " + section.title);
+        return;
+      }
+      const parts = section.title.replace(/^Assignment:\s*/i, "").split("|").map((part) => part.trim());
+      const body = splitAssignment(section.lines);
+      currentLesson.assignment = {
+        id: parts[0] || "lesson-" + currentLesson.number + "-task",
+        title: parts[1] || parts[0] || "Assignment",
+        instructions: body.instructions,
+        selfCheck: body.selfCheck
+      };
+      return;
+    }
+    if (kind === "file") {
+      if (!currentLesson) {
+        warnings.push("Practice file appeared before a lesson: " + section.title);
+        return;
+      }
+      const parts = section.title.replace(/^Practice file:\s*/i, "").split("|").map((part) => part.trim());
+      currentLesson.files = currentLesson.files || [];
+      currentLesson.files.push({
+        name: parts[0] || "practice",
+        href: parts[1] || "",
+        bytes: Number(parts[2]) || 0,
+        kind: parts[3] || "File",
+        solved: /solved/i.test(parts[4] || "")
+      });
+      return;
+    }
     if (section.title && section.lines.some((line) => line.trim())) {
       warnings.push("Skipped section: " + section.title);
     }
@@ -452,19 +593,28 @@ export function parseCourseMarkdown(markdown, fileName) {
     throw error;
   }
 
-  return {
+  const course = {
     slug,
     title,
     summary: goals,
     goals,
     certificateNote,
-    lessons: lessons.map((lesson) => ({
-      number: lesson.number,
-      title: lesson.title,
-      html: lesson.html,
-      sources: lesson.sources,
-      quiz: lesson.quiz
-    })),
+    lessons: lessons.map((lesson) => {
+      const out = {
+        number: lesson.number,
+        title: lesson.title,
+        html: lesson.html,
+        sources: lesson.sources,
+        quiz: lesson.quiz
+      };
+      if (lesson.sections && lesson.sections.length) out.sections = lesson.sections;
+      if (lesson.files && lesson.files.length) out.files = lesson.files;
+      if (lesson.assignment) out.assignment = lesson.assignment;
+      if (lesson.sections && lesson.sections.length) {
+        out.minutes = lesson.sections.reduce((sum, section) => sum + (section.minutes || 0), 0);
+      }
+      return out;
+    }),
     finalQuiz: {
       explain: finalExplain,
       questions: finalQuestions
@@ -473,10 +623,31 @@ export function parseCourseMarkdown(markdown, fileName) {
       sourceDisclaimer: disclaimer,
       builderNotes,
       reason:
-        "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+        "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
     },
     warnings
   };
+  if (youNeed.length || estimatedMinutes) {
+    course.player = { version: 2, estimatedMinutes, youNeed, outcomes: [] };
+  }
+  const extrasMatch = String(markdown).match(/<!--\s*player-extras\s*(\{[\s\S]*?\})\s*-->/);
+  if (extrasMatch) {
+    try {
+      const extras = JSON.parse(extrasMatch[1]);
+      const extraLessons = extras.lessons;
+      delete extras.lessons;
+      delete extras.warnings;
+      Object.assign(course, extras);
+      (extraLessons || []).forEach((extra) => {
+        const lesson = course.lessons.find((item) => item.number === extra.number);
+        if (lesson) Object.assign(lesson, extra);
+        else warnings.push("player-extras has no matching lesson " + extra.number + ".");
+      });
+    } catch (error) {
+      warnings.push("player-extras comment is not valid JSON.");
+    }
+  }
+  return course;
 }
 
 function readFlag(argv, name) {

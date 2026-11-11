@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Check the built Range Path demo: links, quizzes, disclaimer, noindex. */
+/** Check the built LearnHere demo: links, quizzes, disclaimer, noindex. */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -88,11 +88,49 @@ registry.courses.forEach((entry) => {
       }
     });
   });
-  const finals = course.finalQuiz && course.finalQuiz.questions ? course.finalQuiz.questions : [];
+  const finals = course.finalExam && course.finalExam.questions
+    ? course.finalExam.questions
+    : course.finalQuiz && course.finalQuiz.questions
+      ? course.finalQuiz.questions
+      : [];
   if (finals.length < 1) errors.push(entry.slug + " has no final quiz");
   finals.forEach((question, index) => {
     const ids = question.choices.map((choice) => choice.id);
     if (ids.indexOf(question.answer) === -1) errors.push(entry.slug + " final Q" + (index + 1) + " has a bad answer");
+  });
+  const letters = finals.map((question) => question.answer).filter((answer) => /^[A-D]$/.test(answer || ""));
+  if (letters.length >= 4) {
+    const counts = {};
+    letters.forEach((answer) => { counts[answer] = (counts[answer] || 0) + 1; });
+    Object.keys(counts).forEach((answer) => {
+      if (counts[answer] / letters.length > 0.4) {
+        errors.push(entry.slug + " final puts " + counts[answer] + " of " + letters.length + " answers on " + answer);
+      }
+    });
+  }
+  (course.lessons || []).forEach((lesson, lessonIndex) => {
+    const quiz = lesson.quiz || [];
+    const quizLetters = quiz.map((question) => question.answer).filter((answer) => /^[A-D]$/.test(answer || ""));
+    if (quizLetters.length >= 2) {
+      const counts = {};
+      quizLetters.forEach((answer) => { counts[answer] = (counts[answer] || 0) + 1; });
+      const cap = Math.ceil(quizLetters.length / 4) + 1;
+      Object.keys(counts).forEach((answer) => {
+        if (counts[answer] > cap) {
+          errors.push(entry.slug + " lesson " + (lessonIndex + 1) + " puts " + counts[answer] + " of " + quizLetters.length + " answers on " + answer);
+        }
+      });
+    }
+    (lesson.sections || []).forEach((section) => {
+      (section.blocks || []).forEach((block) => {
+        if (block.type !== "workedExample") return;
+        const steps = block.steps || [];
+        if (!steps.length) errors.push(entry.slug + " " + (block.title || block.id || "example") + " has no steps");
+        if ((block.problem || "").trim() && (block.problem || "").trim() === (block.result || "").trim()) {
+          errors.push(entry.slug + " " + (block.title || "example") + " repeats the problem as the result");
+        }
+      });
+    });
   });
   const finalPage = path.join(root, "courses", entry.slug, "final", "index.html");
   if (!fs.existsSync(finalPage)) errors.push(entry.slug + " missing final page");
@@ -106,6 +144,16 @@ registry.courses.forEach((entry) => {
 });
 
 if (!fs.existsSync(path.join(root, "assets", "catalogue.js"))) errors.push("Missing assets/catalogue.js");
+if (!fs.existsSync(path.join(root, "assets", "data.js"))) errors.push("Missing assets/data.js");
+if (!fs.existsSync(path.join(root, "data", "demo-store.json"))) errors.push("Missing data/demo-store.json");
+if (!fs.existsSync(path.join(root, "data", "report-fields.json"))) errors.push("Missing data/report-fields.json");
+
+walk(path.join(root, "assets"))
+  .filter((file) => file.endsWith(".js") && path.basename(file) !== "data.js")
+  .forEach((file) => {
+    const source = fs.readFileSync(file, "utf8");
+    if (source.includes("localStorage")) errors.push(path.relative(root, file) + " touches localStorage");
+  });
 
 if (errors.length) {
   errors.forEach((error) => console.error(error));

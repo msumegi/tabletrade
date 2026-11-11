@@ -1,0 +1,18 @@
+Sample messages only. Not a real mailbox. Do not type a real password.
+
+Message 1. A short work note
+To: tutor@example.test
+Subject: Hall setup on Saturday
+Body: I can help set up tables on Saturday. Please tell me the time.
+
+Message 2. Reply versus Reply All
+A group note about a meeting. Reply goes to the sender. Reply All also goes to everyone on To and Cc.
+
+Message 3. A file you meant to attach
+Subject: Practice notice
+Body: The notice is attached. (Attach only a practice file.)
+
+Message 4. SAMPLE PHISHING. Do not click.
+From: notices@sample-mail.test
+Subject: Your account will close today
+Body: This is a labelled practice scam. The sender is not your organisation. Delete it. Do not type a password.

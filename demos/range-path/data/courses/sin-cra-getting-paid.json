@@ -31,18 +31,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "A free coffee card"
+              "text": "Your Alberta health number"
             },
             {
               "id": "B",
-              "text": "A 9-digit number for work and many government programs"
+              "text": "A free coffee card"
             },
             {
               "id": "C",
-              "text": "Your Alberta health number"
+              "text": "A 9-digit number for work and many government programs"
             }
           ],
-          "answer": "B",
+          "answer": "C",
           "explain": ""
         },
         {
@@ -65,14 +65,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Yes"
+              "text": "No"
             },
             {
               "id": "B",
-              "text": "No"
+              "text": "Yes"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -142,14 +142,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Click and enter your SIN"
+              "text": "Treat it as suspicious; use official channels instead"
             },
             {
               "id": "B",
-              "text": "Treat it as suspicious; use official channels instead"
+              "text": "Click and enter your SIN"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -157,14 +157,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "A recommended protection step"
+              "text": "Illegal"
             },
             {
               "id": "B",
-              "text": "Illegal"
+              "text": "A recommended protection step"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -189,14 +189,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "A CRA online portal for individual tax and benefit information"
+              "text": "A social media app"
             },
             {
               "id": "B",
-              "text": "A social media app"
+              "text": "A CRA online portal for individual tax and benefit information"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -204,14 +204,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Owning a farm"
+              "text": "Having a SIN and a filed, assessed return (current or previous year), per CRA"
             },
             {
               "id": "B",
-              "text": "Having a SIN and a filed, assessed return (current or previous year), per CRA"
+              "text": "Owning a farm"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -219,18 +219,18 @@
           "choices": [
             {
               "id": "A",
-              "text": "A surprise email link"
+              "text": "Typing or using an official canada.ca sign-in page"
             },
             {
               "id": "B",
-              "text": "Typing or using an official canada.ca sign-in page"
+              "text": "A surprise email link"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
-          "prompt": "This Range Path course will file your taxes for you.",
+          "prompt": "This LearnHere course will file your taxes for you.",
           "choices": [
             {
               "id": "A",
@@ -347,14 +347,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "To gossip"
+              "text": "After hiring, to report income for tax and benefits"
             },
             {
               "id": "B",
-              "text": "After hiring, to report income for tax and benefits"
+              "text": "To gossip"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -392,14 +392,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -412,12 +412,12 @@
         "prompt": "A SIN is a 9-digit number used for work and many government programs.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -427,27 +427,27 @@
         "prompt": "You should post your SIN publicly so friends can help you.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Limit who sees your SIN."
       },
       {
         "prompt": "My Account is a CRA portal for individuals.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -457,15 +457,15 @@
         "prompt": "Surprise email links are the best way to sign in to My Account.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Type an official canada.ca address yourself."
       },
       {
@@ -487,27 +487,27 @@
         "prompt": "This course is personal tax and immigration advice.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "It is general information only."
       },
       {
         "prompt": "Limiting who sees your SIN helps prevent identity fraud.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",

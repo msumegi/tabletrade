@@ -39,14 +39,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Drive faster to beat the storm"
+              "text": "Do not travel"
             },
             {
               "id": "B",
-              "text": "Do not travel"
+              "text": "Drive faster to beat the storm"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -54,14 +54,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Tell someone your route and expected arrival time"
+              "text": "Keep your plans secret from everyone"
             },
             {
               "id": "B",
-              "text": "Keep your plans secret from everyone"
+              "text": "Tell someone your route and expected arrival time"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -69,14 +69,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Ordering pizza"
+              "text": "Road and travel condition information"
             },
             {
               "id": "B",
-              "text": "Road and travel condition information"
+              "text": "Ordering pizza"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -146,14 +146,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Help if you become stranded and reduce fuel-system moisture issues"
+              "text": "Make the car louder"
             },
             {
               "id": "B",
-              "text": "Make the car louder"
+              "text": "Help if you become stranded and reduce fuel-system moisture issues"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -212,14 +212,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Recommended by Alberta.ca"
+              "text": "Something Alberta.ca says never to use in winter conditions"
             },
             {
               "id": "B",
-              "text": "Something Alberta.ca says never to use in winter conditions"
+              "text": "Recommended by Alberta.ca"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         },
         {
@@ -227,14 +227,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Help by reflecting off flakes and causing glare — prefer low beams"
+              "text": "Are always best"
             },
             {
               "id": "B",
-              "text": "Are always best"
+              "text": "Help by reflecting off flakes and causing glare — prefer low beams"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": "AMA: high beams reflect off snowflakes and cause glare."
         },
         {
@@ -242,14 +242,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Shorter than normal"
+              "text": "Much longer than normal (for example about 3 times or more)"
             },
             {
               "id": "B",
-              "text": "Much longer than normal (for example about 3 times or more)"
+              "text": "Shorter than normal"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -323,14 +323,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Speed up through the zone"
+              "text": "Slow down and scan carefully"
             },
             {
               "id": "B",
-              "text": "Slow down and scan carefully"
+              "text": "Speed up through the zone"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -420,12 +420,12 @@
         "prompt": "Closed roads mean you should not travel.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -435,12 +435,12 @@
         "prompt": "Checking 511 Alberta before a rural winter trip is a good habit.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -450,27 +450,27 @@
         "prompt": "Cruise control is recommended on ice.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Alberta.ca says not to use cruise control in winter conditions."
       },
       {
         "prompt": "Following distance should increase on slick roads.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -480,27 +480,27 @@
         "prompt": "High beams are best in heavy falling snow.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "High beams can glare off snow. Prefer low beams."
       },
       {
         "prompt": "A stranded driver should keep the tailpipe clear of snow if the engine runs.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -510,15 +510,15 @@
         "prompt": "This course replaces professional driver training.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "It is general safety information, not a driving lesson."
       }
     ]

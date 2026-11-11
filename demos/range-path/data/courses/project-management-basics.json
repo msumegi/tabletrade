@@ -40,14 +40,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Planning, organizing, and controlling resources to reach the project’s objectives"
+              "text": "Only decorating a binder"
             },
             {
               "id": "B",
-              "text": "Only decorating a binder"
+              "text": "Planning, organizing, and controlling resources to reach the project’s objectives"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -117,14 +117,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The work needed to deliver the agreed result"
+              "text": "A mouthwash"
             },
             {
               "id": "B",
-              "text": "A mouthwash"
+              "text": "The work needed to deliver the agreed result"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -147,14 +147,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         }
       ]
@@ -194,14 +194,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "The work by deliverable, from larger pieces to smaller ones"
+              "text": "Only the lunch menu"
             },
             {
               "id": "B",
-              "text": "Only the lunch menu"
+              "text": "The work by deliverable, from larger pieces to smaller ones"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -271,14 +271,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Uncertainty about future events that could affect your objectives"
+              "text": "A guarantee that nothing will go wrong"
             },
             {
               "id": "B",
-              "text": "A guarantee that nothing will go wrong"
+              "text": "Uncertainty about future events that could affect your objectives"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -286,14 +286,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Identifying and deciding on changes instead of letting extra work appear quietly"
+              "text": "Changing the plan every five minutes with no note"
             },
             {
               "id": "B",
-              "text": "Changing the plan every five minutes with no note"
+              "text": "Identifying and deciding on changes instead of letting extra work appear quietly"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -301,14 +301,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "True"
+              "text": "False"
             },
             {
               "id": "B",
-              "text": "False"
+              "text": "True"
             }
           ],
-          "answer": "B",
+          "answer": "A",
           "explain": ""
         }
       ]
@@ -333,14 +333,14 @@
           "choices": [
             {
               "id": "A",
-              "text": "Doing the work and providing the deliverables"
+              "text": "Only writing the project name in large letters"
             },
             {
               "id": "B",
-              "text": "Only writing the project name in large letters"
+              "text": "Doing the work and providing the deliverables"
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explain": ""
         },
         {
@@ -443,27 +443,27 @@
         "prompt": "Risk means nothing uncertain can ever happen.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
+            "id": "A",
+            "text": "False"
           },
           {
-            "id": "F",
-            "text": "False"
+            "id": "B",
+            "text": "True"
           }
         ],
-        "answer": "F",
+        "answer": "A",
         "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
       },
       {
         "prompt": "A simple plan can list tasks, milestones, roles, and limits.",
         "choices": [
           {
-            "id": "T",
-            "text": "True"
-          },
-          {
             "id": "F",
             "text": "False"
+          },
+          {
+            "id": "T",
+            "text": "True"
           }
         ],
         "answer": "T",
@@ -488,15 +488,15 @@
         "prompt": "This course is a PMI or PMP exam.",
         "choices": [
           {
-            "id": "T",
+            "id": "A",
             "text": "True"
           },
           {
-            "id": "F",
+            "id": "B",
             "text": "False"
           }
         ],
-        "answer": "F",
+        "answer": "B",
         "explain": "Use Lessons 1–5. Agree on the result, plan the work, watch time and risk, then close when the agreed deliverables are accepted."
       }
     ]
@@ -504,7 +504,7 @@
   "keptBack": {
     "sourceDisclaimer": "This course is general information about planning and finishing a piece of work that has a clear start and end. It is not a PMI, PMP, or CAPM credential, not a promise that you can manage a large government or construction project, and not legal, contracting, or financial advice. Official definitions below come from the Treasury Board of Canada Secretariat glossary for public-service project work; your workplace may use simpler words for the same ideas.",
     "builderNotes": "- Do not teach PMI process groups, earned value, or critical-path exam content.\n- Do not repeat the TBS “20 per cent of salaries” costing convention as a general learner rule.\n- Keep examples at community / small-workplace scale.\n- No Ed2Go project-management text.",
-    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing Range Path footer disclaimer once. Builder notes are for authors and are not shown to learners."
+    "reason": "The source disclaimer is not shown on the page. Each page keeps the existing LearnHere footer disclaimer once. Builder notes are for authors and are not shown to learners."
   },
   "media": {
     "frameClass": "frame frame-wide",
