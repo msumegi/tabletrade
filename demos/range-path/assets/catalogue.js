@@ -24,31 +24,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-devices-you-may-already-have",
-                "title": "Devices you may already have"
+                "title": "Devices you may already have",
+                "optional": false
               },
               {
                 "id": "chapter-2-shared-words-screen-settings-and-apps",
-                "title": "Shared words: screen, Settings, and apps"
+                "title": "Shared words: screen, Settings, and apps",
+                "optional": false
               },
               {
                 "id": "chapter-3-why-lock-and-update-matter-later",
-                "title": "Why lock and update matter later"
+                "title": "Why lock and update matter later",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-library-laptop-and-a-home-pho",
-                "title": "Worked example 1. A library laptop and a home phone"
+                "title": "Worked example 1. A library laptop and a home phone",
+                "optional": false
               },
               {
                 "id": "worked-example-2-finding-settings-two-ways",
-                "title": "Worked example 2. Finding Settings two ways"
+                "title": "Worked example 2. Finding Settings two ways",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-1",
@@ -60,31 +67,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-turn-the-device-on-and-wait",
-                "title": "Turn the device on and wait"
+                "title": "Turn the device on and wait",
+                "optional": false
               },
               {
                 "id": "chapter-2-find-settings-and-review-the-screen-lo",
-                "title": "Find Settings and review the screen lock"
+                "title": "Find Settings and review the screen lock",
+                "optional": false
               },
               {
                 "id": "chapter-3-lock-when-you-step-away",
-                "title": "Lock when you step away"
+                "title": "Lock when you step away",
+                "optional": false
               },
               {
                 "id": "worked-example-1-lock-a-windows-library-computer",
-                "title": "Worked example 1. Lock a Windows library computer"
+                "title": "Worked example 1. Lock a Windows library computer",
+                "optional": false
               },
               {
                 "id": "worked-example-2-choose-a-pin-on-a-practice-phon",
-                "title": "Worked example 2. Choose a PIN on a practice phone (not a real PIN)"
+                "title": "Worked example 2. Choose a PIN on a practice phone (not a real PIN)",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-2",
@@ -96,31 +110,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-tap-hold-and-type-on-a-phone",
-                "title": "Tap, hold, and type on a phone"
+                "title": "Tap, hold, and type on a phone",
+                "optional": false
               },
               {
                 "id": "chapter-2-swipe-scroll-zoom-and-find-home-or-bac",
-                "title": "Swipe, scroll, zoom, and find Home or Back"
+                "title": "Swipe, scroll, zoom, and find Home or Back",
+                "optional": false
               },
               {
                 "id": "chapter-3-click-type-and-switch-windows-on-a-com",
-                "title": "Click, type, and switch windows on a computer"
+                "title": "Click, type, and switch windows on a computer",
+                "optional": false
               },
               {
                 "id": "worked-example-1-going-home-instead-of-closing-t",
-                "title": "Worked example 1. Going Home instead of closing the wrong thing"
+                "title": "Worked example 1. Going Home instead of closing the wrong thing",
+                "optional": false
               },
               {
                 "id": "worked-example-2-closing-a-window-without-shutti",
-                "title": "Worked example 2. Closing a window without shutting down"
+                "title": "Worked example 2. Closing a window without shutting down",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-3",
@@ -132,31 +153,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-what-a-file-is-and-what-a-folder-is",
-                "title": "What a file is, and what a folder is"
+                "title": "What a file is, and what a folder is",
+                "optional": false
               },
               {
                 "id": "chapter-2-open-file-explorer-and-look-in-a-known",
-                "title": "Open File Explorer and look in a known folder"
+                "title": "Open File Explorer and look in a known folder",
+                "optional": false
               },
               {
                 "id": "chapter-3-find-a-file-on-a-phone-and-pick-a-name",
-                "title": "Find a file on a phone, and pick a name you can search for"
+                "title": "Find a file on a phone, and pick a name you can search for",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-practice-note-in-documents",
-                "title": "Worked example 1. A practice note in Documents"
+                "title": "Worked example 1. A practice note in Documents",
+                "optional": false
               },
               {
                 "id": "worked-example-2-finding-a-download-on-a-phone",
-                "title": "Worked example 2. Finding a download on a phone"
+                "title": "Worked example 2. Finding a download on a phone",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-4",
@@ -168,31 +196,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-join-a-network-you-already-know",
-                "title": "Join a network you already know"
+                "title": "Join a network you already know",
+                "optional": false
               },
               {
                 "id": "chapter-2-read-the-name-and-read-the-lock",
-                "title": "Read the name, and read the lock"
+                "title": "Read the name, and read the lock",
+                "optional": false
               },
               {
                 "id": "chapter-3-public-wi-fi-is-convenient-not-private",
-                "title": "Public Wi-Fi is convenient, not private"
+                "title": "Public Wi-Fi is convenient, not private",
+                "optional": false
               },
               {
                 "id": "worked-example-1-asking-for-the-real-network-nam",
-                "title": "Worked example 1. Asking for the real network name"
+                "title": "Worked example 1. Asking for the real network name",
+                "optional": false
               },
               {
                 "id": "worked-example-2-connecting-a-windows-laptop-at-",
-                "title": "Worked example 2. Connecting a Windows laptop at home"
+                "title": "Worked example 2. Connecting a Windows laptop at home",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-5",
@@ -204,31 +239,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-an-account-is-a-name-the-device-knows",
-                "title": "An account is a name the device knows"
+                "title": "An account is a name the device knows",
+                "optional": false
               },
               {
                 "id": "chapter-2-get-apps-from-the-official-store",
-                "title": "Get apps from the official store"
+                "title": "Get apps from the official store",
+                "optional": false
               },
               {
                 "id": "chapter-3-say-yes-to-updates",
-                "title": "Say yes to updates"
+                "title": "Say yes to updates",
+                "optional": false
               },
               {
                 "id": "worked-example-1-updating-apps-not-following-a-t",
-                "title": "Worked example 1. Updating apps, not following a text link"
+                "title": "Worked example 1. Updating apps, not following a text link",
+                "optional": false
               },
               {
                 "id": "worked-example-2-checking-windows-update-on-a-ho",
-                "title": "Worked example 2. Checking Windows Update on a home PC"
+                "title": "Worked example 2. Checking Windows Update on a home PC",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-6",
@@ -240,31 +282,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-a-browser-is-a-window-onto-the-web",
-                "title": "A browser is a window onto the web"
+                "title": "A browser is a window onto the web",
+                "optional": false
               },
               {
                 "id": "chapter-2-look-at-the-address-then-look-at-the-s",
-                "title": "Look at the address, then look at the security status"
+                "title": "Look at the address, then look at the security status",
+                "optional": false
               },
               {
                 "id": "chapter-3-does-this-page-match-what-you-asked-fo",
-                "title": "Does this page match what you asked for?"
+                "title": "Does this page match what you asked for?",
+                "optional": false
               },
               {
                 "id": "worked-example-1-searching-for-library-hours",
-                "title": "Worked example 1. Searching for library hours"
+                "title": "Worked example 1. Searching for library hours",
+                "optional": false
               },
               {
                 "id": "worked-example-2-a-surprise-log-in-page",
-                "title": "Worked example 2. A surprise “log in” page"
+                "title": "Worked example 2. A surprise “log in” page",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-7",
@@ -276,31 +325,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-texts-chat-apps-and-email",
-                "title": "Texts, chat apps, and email"
+                "title": "Texts, chat apps, and email",
+                "optional": false
               },
               {
                 "id": "chapter-2-write-a-short-message-you-mean-to-send",
-                "title": "Write a short message you mean to send"
+                "title": "Write a short message you mean to send",
+                "optional": false
               },
               {
                 "id": "chapter-3-think-before-you-tap-a-link-or-an-atta",
-                "title": "Think before you tap a link or an attachment"
+                "title": "Think before you tap a link or an attachment",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-practice-note-to-a-tutor",
-                "title": "Worked example 1. A practice note to a tutor"
+                "title": "Worked example 1. A practice note to a tutor",
+                "optional": false
               },
               {
                 "id": "worked-example-2-a-text-that-asks-you-to-call-a-",
-                "title": "Worked example 2. A text that asks you to call a “bank” number"
+                "title": "Worked example 2. A text that asks you to call a “bank” number",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-8",
@@ -312,31 +368,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-a-passphrase-is-a-longer-secret-you-ca",
-                "title": "A passphrase is a longer secret you can remember"
+                "title": "A passphrase is a longer secret you can remember",
+                "optional": false
               },
               {
                 "id": "chapter-2-unique-secrets-stored-safely",
-                "title": "Unique secrets, stored safely"
+                "title": "Unique secrets, stored safely",
+                "optional": false
               },
               {
                 "id": "chapter-3-messages-that-try-to-collect-a-passwor",
-                "title": "Messages that try to collect a password"
+                "title": "Messages that try to collect a password",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-practice-passphrase-shape-not",
-                "title": "Worked example 1. A practice passphrase shape (not a real secret)"
+                "title": "Worked example 1. A practice passphrase shape (not a real secret)",
+                "optional": false
               },
               {
                 "id": "worked-example-2-a-confirm-your-password-email",
-                "title": "Worked example 2. A “confirm your password” email"
+                "title": "Worked example 2. A “confirm your password” email",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-9",
@@ -348,31 +411,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-start-with-the-simple-checks",
-                "title": "Start with the simple checks"
+                "title": "Start with the simple checks",
+                "optional": false
               },
               {
                 "id": "chapter-2-who-to-ask-and-what-to-do-if-a-device-",
-                "title": "Who to ask, and what to do if a device is missing"
+                "title": "Who to ask, and what to do if a device is missing",
+                "optional": false
               },
               {
                 "id": "chapter-3-put-the-everyday-skills-on-one-list",
-                "title": "Put the everyday skills on one list"
+                "title": "Put the everyday skills on one list",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-laptop-that-will-not-turn-on",
-                "title": "Worked example 1. A laptop that will not “turn on”"
+                "title": "Worked example 1. A laptop that will not “turn on”",
+                "optional": false
               },
               {
                 "id": "worked-example-2-a-phone-left-on-a-bus",
-                "title": "Worked example 2. A phone left on a bus"
+                "title": "Worked example 2. A phone left on a bus",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "phones-capstone",
@@ -403,31 +473,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-lists-you-already-keep",
-                "title": "Lists you already keep"
+                "title": "Lists you already keep",
+                "optional": false
               },
               {
                 "id": "chapter-2-workbooks-sheets-and-cells",
-                "title": "Workbooks, sheets, and cells"
+                "title": "Workbooks, sheets, and cells",
+                "optional": false
               },
               {
                 "id": "chapter-3-what-this-course-will-teach-and-what-i",
-                "title": "What this course will teach — and what it will not"
+                "title": "What this course will teach — and what it will not",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-week-of-hall-hours-on-paper-v",
-                "title": "Worked example 1. A week of hall hours on paper vs in a sheet"
+                "title": "Worked example 1. A week of hall hours on paper vs in a sheet",
+                "optional": false
               },
               {
                 "id": "worked-example-2-a-small-household-list-in-cad",
-                "title": "Worked example 2. A small household list in CAD"
+                "title": "Worked example 2. A small household list in CAD",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-1",
@@ -439,31 +516,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-start-a-blank-workbook",
-                "title": "Start a blank workbook"
+                "title": "Start a blank workbook",
+                "optional": false
               },
               {
                 "id": "chapter-2-read-the-window-columns-rows-and-the-a",
-                "title": "Read the window: columns, rows, and the active cell"
+                "title": "Read the window: columns, rows, and the active cell",
+                "optional": false
               },
               {
                 "id": "chapter-3-move-from-cell-to-cell",
-                "title": "Move from cell to cell"
+                "title": "Move from cell to cell",
+                "optional": false
               },
               {
                 "id": "worked-example-1-find-one-note-on-the-hours-shee",
-                "title": "Worked example 1. Find one note on the Hours sheet"
+                "title": "Worked example 1. Find one note on the Hours sheet",
+                "optional": false
               },
               {
                 "id": "worked-example-2-start-blank-type-a-title-and-co",
-                "title": "Worked example 2. Start blank, type a title, and come back to A1"
+                "title": "Worked example 2. Start blank, type a title, and come back to A1",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-2",
@@ -475,31 +559,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-type-text-and-move-to-the-next-cell",
-                "title": "Type text and move to the next cell"
+                "title": "Type text and move to the next cell",
+                "optional": false
               },
               {
                 "id": "chapter-2-type-numbers-and-keep-units-in-the-hea",
-                "title": "Type numbers — and keep units in the header"
+                "title": "Type numbers — and keep units in the header",
+                "optional": false
               },
               {
                 "id": "chapter-3-type-a-date-and-fix-a-mistake",
-                "title": "Type a date and fix a mistake"
+                "title": "Type a date and fix a mistake",
+                "optional": false
               },
               {
                 "id": "worked-example-1-type-the-first-hours-row-on-the",
-                "title": "Worked example 1. Type the first Hours row on the Practice sheet"
+                "title": "Worked example 1. Type the first Hours row on the Practice sheet",
+                "optional": false
               },
               {
                 "id": "worked-example-2-a-sample-date-and-a-cad-amount",
-                "title": "Worked example 2. A sample date and a CAD amount"
+                "title": "Worked example 2. A sample date and a CAD amount",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-3",
@@ -511,31 +602,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-format-for-readers-not-for-decoration",
-                "title": "Format for readers — not for decoration"
+                "title": "Format for readers — not for decoration",
+                "optional": false
               },
               {
                 "id": "chapter-2-borders-and-fill-colour",
-                "title": "Borders and fill colour"
+                "title": "Borders and fill colour",
+                "optional": false
               },
               {
                 "id": "chapter-3-number-formats-for-hours-and-canadian-",
-                "title": "Number formats for hours and Canadian dollars"
+                "title": "Number formats for hours and Canadian dollars",
+                "optional": false
               },
               {
                 "id": "worked-example-1-make-the-hours-list-easier-to-s",
-                "title": "Worked example 1. Make the Hours list easier to scan"
+                "title": "Worked example 1. Make the Hours list easier to scan",
+                "optional": false
               },
               {
                 "id": "worked-example-2-show-household-amounts-as-money",
-                "title": "Worked example 2. Show household amounts as money"
+                "title": "Worked example 2. Show household amounts as money",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-4",
@@ -547,31 +645,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-a-formula-always-starts-with",
-                "title": "A formula always starts with ="
+                "title": "A formula always starts with =",
+                "optional": false
               },
               {
                 "id": "chapter-2-point-the-formula-at-other-cells",
-                "title": "Point the formula at other cells"
+                "title": "Point the formula at other cells",
+                "optional": false
               },
               {
                 "id": "chapter-3-multiply-and-divide-before-you-add-and",
-                "title": "Multiply and divide before you add and subtract"
+                "title": "Multiply and divide before you add and subtract",
+                "optional": false
               },
               {
                 "id": "worked-example-1-four-tiny-formulas-on-the-pract",
-                "title": "Worked example 1. Four tiny formulas on the Practice sheet"
+                "title": "Worked example 1. Four tiny formulas on the Practice sheet",
+                "optional": false
               },
               {
                 "id": "worked-example-2-add-three-days-then-test-5-2-3",
-                "title": "Worked example 2. Add three days, then test =5+2*3"
+                "title": "Worked example 2. Add three days, then test =5+2*3",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-5",
@@ -583,31 +688,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-autosum-a-fast-way-to-add-a-column-or-",
-                "title": "AutoSum — a fast way to add a column or row"
+                "title": "AutoSum — a fast way to add a column or row",
+                "optional": false
               },
               {
                 "id": "chapter-2-average-typical-value-of-a-group-of-nu",
-                "title": "AVERAGE — typical value of a group of numbers"
+                "title": "AVERAGE — typical value of a group of numbers",
+                "optional": false
               },
               {
                 "id": "chapter-3-check-that-the-answer-makes-sense",
-                "title": "Check that the answer makes sense"
+                "title": "Check that the answer makes sense",
+                "optional": false
               },
               {
                 "id": "worked-example-1-total-the-sample-week",
-                "title": "Worked example 1. Total the sample week"
+                "title": "Worked example 1. Total the sample week",
+                "optional": false
               },
               {
                 "id": "worked-example-2-average-the-sample-week-includi",
-                "title": "Worked example 2. Average the sample week — including days off"
+                "title": "Worked example 2. Average the sample week — including days off",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-6",
@@ -619,31 +731,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-fill-a-formula-into-the-cells-beside-i",
-                "title": "Fill a formula into the cells beside it"
+                "title": "Fill a formula into the cells beside it",
+                "optional": false
               },
               {
                 "id": "chapter-2-relative-references-move-with-the-form",
-                "title": "Relative references move with the formula"
+                "title": "Relative references move with the formula",
+                "optional": false
               },
               {
                 "id": "chapter-3-lock-a-cell-with-when-it-should-stay-p",
-                "title": "Lock a cell with $ when it should stay put"
+                "title": "Lock a cell with $ when it should stay put",
+                "optional": false
               },
               {
                 "id": "worked-example-1-double-each-amount-down-a-colum",
-                "title": "Worked example 1. Double each amount down a column"
+                "title": "Worked example 1. Double each amount down a column",
+                "optional": false
               },
               {
                 "id": "worked-example-2-multiply-by-one-sample-rate-tha",
-                "title": "Worked example 2. Multiply by one sample rate that must stay put"
+                "title": "Worked example 2. Multiply by one sample rate that must stay put",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-7",
@@ -655,31 +774,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-sort-a-list-without-breaking-the-rows",
-                "title": "Sort a list without breaking the rows"
+                "title": "Sort a list without breaking the rows",
+                "optional": false
               },
               {
                 "id": "chapter-2-filter-so-only-some-rows-show",
-                "title": "Filter so only some rows show"
+                "title": "Filter so only some rows show",
+                "optional": false
               },
               {
                 "id": "chapter-3-turn-the-list-into-a-simple-table",
-                "title": "Turn the list into a simple table"
+                "title": "Turn the list into a simple table",
+                "optional": false
               },
               {
                 "id": "worked-example-1-sort-household-amounts-from-lar",
-                "title": "Worked example 1. Sort household amounts from largest to smallest"
+                "title": "Worked example 1. Sort household amounts from largest to smallest",
+                "optional": false
               },
               {
                 "id": "worked-example-2-filter-groceries-then-make-a-ta",
-                "title": "Worked example 2. Filter groceries, then make a table"
+                "title": "Worked example 2. Filter groceries, then make a table",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-8",
@@ -691,31 +817,38 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-choose-the-cells-and-a-simple-chart-ty",
-                "title": "Choose the cells — and a simple chart type"
+                "title": "Choose the cells — and a simple chart type",
+                "optional": false
               },
               {
                 "id": "chapter-2-insert-a-recommended-chart",
-                "title": "Insert a recommended chart"
+                "title": "Insert a recommended chart",
+                "optional": false
               },
               {
                 "id": "chapter-3-another-official-path-quick-analysis",
-                "title": "Another official path: Quick Analysis"
+                "title": "Another official path: Quick Analysis",
+                "optional": false
               },
               {
                 "id": "worked-example-1-a-column-chart-of-the-sample-we",
-                "title": "Worked example 1. A column chart of the sample week"
+                "title": "Worked example 1. A column chart of the sample week",
+                "optional": false
               },
               {
                 "id": "worked-example-2-household-amounts-as-a-simple-p",
-                "title": "Worked example 2. Household amounts as a simple picture"
+                "title": "Worked example 2. Household amounts as a simple picture",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               }
             ],
             "assignment": "self-check-9",
@@ -727,35 +860,43 @@ window.LEARNHERE = {
             "sections": [
               {
                 "id": "chapter-1-save-on-purpose-autorecovery-is-not-en",
-                "title": "Save on purpose — AutoRecovery is not enough"
+                "title": "Save on purpose — AutoRecovery is not enough",
+                "optional": false
               },
               {
                 "id": "chapter-2-preview-print-or-export-a-pdf",
-                "title": "Preview, print, or export a PDF"
+                "title": "Preview, print, or export a PDF",
+                "optional": false
               },
               {
                 "id": "chapter-3-share-less-than-you-think-you-need-to",
-                "title": "Share less than you think you need to"
+                "title": "Share less than you think you need to",
+                "optional": false
               },
               {
                 "id": "worked-example-1-save-then-preview-the-hours-she",
-                "title": "Worked example 1. Save, then preview the Hours sheet"
+                "title": "Worked example 1. Save, then preview the Hours sheet",
+                "optional": false
               },
               {
                 "id": "worked-example-2-export-a-pdf-and-check-it-for-e",
-                "title": "Worked example 2. Export a PDF and check it for extra details"
+                "title": "Worked example 2. Export a PDF and check it for extra details",
+                "optional": false
               },
               {
                 "id": "try-it",
-                "title": "Try it"
+                "title": "Try it",
+                "optional": false
               },
               {
                 "id": "optional-discussion-council-study-group",
-                "title": "Optional discussion (council study group)"
+                "title": "Optional discussion (council study group)",
+                "optional": true
               },
               {
                 "id": "capstone",
-                "title": "Capstone"
+                "title": "Capstone",
+                "optional": false
               }
             ],
             "assignment": "excel-capstone",

@@ -70,7 +70,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Microsoft calls the file a workbook."
+        "explain": "— Microsoft calls the file a workbook.",
+        "topic": "Lesson 1 — Lists you already keep",
+        "review": "../lesson-1/#section-chapter-1-lists-you-already-keep"
       },
       {
         "prompt": "Cell C4 is:",
@@ -93,7 +95,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Letter = column, number = row."
+        "explain": "— Letter = column, number = row.",
+        "topic": "Lesson 1 — Lists you already keep",
+        "review": "../lesson-1/#section-chapter-1-lists-you-already-keep"
       },
       {
         "prompt": "A cell can hold:",
@@ -116,7 +120,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Numbers, text, or formulas."
+        "explain": "— Numbers, text, or formulas.",
+        "topic": "Lesson 1 — Lists you already keep",
+        "review": "../lesson-1/#section-chapter-1-lists-you-already-keep"
       },
       {
         "prompt": "Microsoft's path to start a new empty file is:",
@@ -139,7 +145,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— File > New > Blank workbook."
+        "explain": "— File > New > Blank workbook.",
+        "topic": "Lesson 2 — Start a blank workbook",
+        "review": "../lesson-2/#section-chapter-1-start-a-blank-workbook"
       },
       {
         "prompt": "After you type in a cell, Enter usually moves:",
@@ -162,7 +170,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Enter moves down."
+        "explain": "— Enter moves down.",
+        "topic": "Lesson 2 — Start a blank workbook",
+        "review": "../lesson-2/#section-chapter-1-start-a-blank-workbook"
       },
       {
         "prompt": "After you type in a cell, Tab usually moves:",
@@ -185,7 +195,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Tab moves right."
+        "explain": "— Tab moves right.",
+        "topic": "Lesson 2 — Start a blank workbook",
+        "review": "../lesson-2/#section-chapter-1-start-a-blank-workbook"
       },
       {
         "prompt": "Microsoft's three steps for entering data begin with:",
@@ -208,7 +220,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Click, type, Enter or Tab."
+        "explain": "— Click, type, Enter or Tab.",
+        "topic": "Lesson 2 — Start a blank workbook",
+        "review": "../lesson-2/#section-chapter-1-start-a-blank-workbook"
       },
       {
         "prompt": "Which value belongs in an Hours worked column if you want Excel to add it later?",
@@ -231,7 +245,9 @@
           }
         ],
         "answer": "C",
-        "explain": "— Keep a plain number; put the unit in the header."
+        "explain": "— Keep a plain number; put the unit in the header.",
+        "topic": "Lesson 3 — Type text and move to the next cell",
+        "review": "../lesson-3/#section-chapter-1-type-text-and-move-to-the-next-cell"
       },
       {
         "prompt": "On the sample Hours sheet, Thursday’s `0` means:",
@@ -254,7 +270,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— A typed 0 is a recorded day off."
+        "explain": "— A typed 0 is a recorded day off.",
+        "topic": "Lesson 3 — Type text and move to the next cell",
+        "review": "../lesson-3/#section-chapter-1-type-text-and-move-to-the-next-cell"
       },
       {
         "prompt": "Number formats (such as Currency):",
@@ -277,7 +295,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Formats change display, not stored values."
+        "explain": "— Formats change display, not stored values.",
+        "topic": "Lesson 4 — Format for readers — not for decoration",
+        "review": "../lesson-4/#section-chapter-1-format-for-readers-not-for-decoration"
       },
       {
         "prompt": "Borders and Fill Color are found, in Microsoft's basic-tasks steps:",
@@ -300,7 +320,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Home > Font group."
+        "explain": "— Home > Font group.",
+        "topic": "Lesson 4 — Format for readers — not for decoration",
+        "review": "../lesson-4/#section-chapter-1-format-for-readers-not-for-decoration"
       },
       {
         "prompt": "A sensible format for Household amounts in CAD is:",
@@ -323,7 +345,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Currency or Number with two decimals."
+        "explain": "— Currency or Number with two decimals.",
+        "topic": "Lesson 4 — Format for readers — not for decoration",
+        "review": "../lesson-4/#section-chapter-1-format-for-readers-not-for-decoration"
       },
       {
         "prompt": "Every Excel formula must start with:",
@@ -346,7 +370,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Formulas start with `=`."
+        "explain": "— Formulas start with `=`.",
+        "topic": "Lesson 5 — A formula always starts with =",
+        "review": "../lesson-5/#section-chapter-1-a-formula-always-starts-with"
       },
       {
         "prompt": "Microsoft's example `=5+2*3` results in:",
@@ -369,7 +395,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Multiply first: 5 + 6 = 11."
+        "explain": "— Multiply first: 5 + 6 = 11.",
+        "topic": "Lesson 5 — A formula always starts with =",
+        "review": "../lesson-5/#section-chapter-1-a-formula-always-starts-with"
       },
       {
         "prompt": "A formula that adds Monday to Wednesday hours on the sample Hours sheet is:",
@@ -392,7 +420,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— `=B2+B3+B4`."
+        "explain": "— `=B2+B3+B4`.",
+        "topic": "Lesson 5 — A formula always starts with =",
+        "review": "../lesson-5/#section-chapter-1-a-formula-always-starts-with"
       },
       {
         "prompt": "To total a column with AutoSum, first select:",
@@ -415,7 +445,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Cell below a column or to the right of a row."
+        "explain": "— Cell below a column or to the right of a row.",
+        "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
+        "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
       },
       {
         "prompt": "AutoSum inserts a formula that uses:",
@@ -438,7 +470,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— AutoSum inserts SUM."
+        "explain": "— AutoSum inserts SUM.",
+        "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
+        "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
       },
       {
         "prompt": "With sample hours 6, 4, 7.5, 0, 5, 3, and 0, `=SUM(B2:B8)` equals:",
@@ -461,7 +495,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— 25.5."
+        "explain": "— 25.5.",
+        "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
+        "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
       },
       {
         "prompt": "A Microsoft path to calculate an average is:",
@@ -484,7 +520,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Formulas > AutoSum arrow > Average."
+        "explain": "— Formulas > AutoSum arrow > Average.",
+        "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
+        "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
       },
       {
         "prompt": "Including two zero days in `=AVERAGE(B2:B8)`:",
@@ -507,7 +545,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Zeros increase the count and pull the average down."
+        "explain": "— Zeros increase the count and pull the average down.",
+        "topic": "Lesson 6 — AutoSum — a fast way to add a column or row",
+        "review": "../lesson-6/#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-"
       },
       {
         "prompt": "Copying `=A2+B2` from C2 down to C3 usually gives:",
@@ -530,7 +570,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Relative references shift to A3 and B3."
+        "explain": "— Relative references shift to A3 and B3.",
+        "topic": "Lesson 7 — Fill a formula into the cells beside it",
+        "review": "../lesson-7/#section-chapter-1-fill-a-formula-into-the-cells-beside-i"
       },
       {
         "prompt": "The absolute reference that stays on cell H1 when filled down is:",
@@ -553,7 +595,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— `$H$1`."
+        "explain": "— `$H$1`.",
+        "topic": "Lesson 7 — Fill a formula into the cells beside it",
+        "review": "../lesson-7/#section-chapter-1-fill-a-formula-into-the-cells-beside-i"
       },
       {
         "prompt": "A sample extra-rate column that multiplies household amounts by 0.05 is:",
@@ -576,7 +620,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Practice only; not tax advice."
+        "explain": "— Practice only; not tax advice.",
+        "topic": "Lesson 7 — Fill a formula into the cells beside it",
+        "review": "../lesson-7/#section-chapter-1-fill-a-formula-into-the-cells-beside-i"
       },
       {
         "prompt": "Before you sort a list by Amount, you should:",
@@ -599,7 +645,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Keep whole rows together."
+        "explain": "— Keep whole rows together.",
+        "topic": "Lesson 8 — Sort a list without breaking the rows",
+        "review": "../lesson-8/#section-chapter-1-sort-a-list-without-breaking-the-rows"
       },
       {
         "prompt": "After you filter Category to Groceries:",
@@ -622,7 +670,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Filter hides rows; it does not delete them."
+        "explain": "— Filter hides rows; it does not delete them.",
+        "topic": "Lesson 8 — Sort a list without breaking the rows",
+        "review": "../lesson-8/#section-chapter-1-sort-a-list-without-breaking-the-rows"
       },
       {
         "prompt": "Home > Format as Table asks you to:",
@@ -645,7 +695,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— Range and headers."
+        "explain": "— Range and headers.",
+        "topic": "Lesson 8 — Sort a list without breaking the rows",
+        "review": "../lesson-8/#section-chapter-1-sort-a-list-without-breaking-the-rows"
       },
       {
         "prompt": "For a column chart of hours by day on the sample Hours sheet, select:",
@@ -668,7 +720,9 @@
           }
         ],
         "answer": "A",
-        "explain": "— A1:B8, not the total."
+        "explain": "— A1:B8, not the total.",
+        "topic": "Lesson 9 — Choose the cells — and a simple chart type",
+        "review": "../lesson-9/#section-chapter-1-choose-the-cells-and-a-simple-chart-ty"
       },
       {
         "prompt": "Microsoft's Windows path for previewing a new chart is:",
@@ -691,7 +745,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Insert > Recommended Charts."
+        "explain": "— Insert > Recommended Charts.",
+        "topic": "Lesson 9 — Choose the cells — and a simple chart type",
+        "review": "../lesson-9/#section-chapter-1-choose-the-cells-and-a-simple-chart-ty"
       },
       {
         "prompt": "File > Save As is the path to use when you:",
@@ -714,7 +770,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— First save, new place, or copy."
+        "explain": "— First save, new place, or copy.",
+        "topic": "Lesson 10 — Save on purpose — AutoRecovery is not enough",
+        "review": "../lesson-10/#section-chapter-1-save-on-purpose-autorecovery-is-not-en"
       },
       {
         "prompt": "Before you email a workbook you should:",
@@ -737,7 +795,9 @@
           }
         ],
         "answer": "B",
-        "explain": "— Open every tab; a PDF does not remove private text you exported."
+        "explain": "— Open every tab; a PDF does not remove private text you exported.",
+        "topic": "Lesson 10 — Save on purpose — AutoRecovery is not enough",
+        "review": "../lesson-10/#section-chapter-1-save-on-purpose-autorecovery-is-not-en"
       }
     ]
   },
@@ -754,7 +814,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>A spreadsheet is a tool for lists and numbers. You may already keep those lists on paper, in a notebook, or in a phone note. A hall volunteer might write hours people worked each day. A farm household might jot down feed, fuel, and grocery amounts in Canadian dollars. Those lists work — until you need a total, a sorted list, or a clear copy to share.</p>\n<p>Excel is Microsoft's spreadsheet program. Microsoft's basic-tasks page says it works well for simple calculations and for tracking almost any kind of information. The key is a grid of cells. Each cell can hold a number, text, or a formula. You group cells in rows and columns so you can add the numbers up, sort or filter the list, put it in a table, or show it in a chart.</p>\n<p>You do not need a huge file or a finance job. A one-week hours list with seven rows is a real spreadsheet. A five-line household list in CAD is a real spreadsheet too. The grid keeps each piece of information in its own box, so totals and labels stay lined up when you add a row.</p>\n<p>The Government of Canada's Skills for Success describe Digital as the ability to use digital tools to find, manage, apply, create, and share information. One official example is creating spreadsheets, and the same page names Excel as a common digital tool. Skills for Success also name Numeracy, which includes checking whether a result makes sense. This course practises both.</p>\n<p>A spreadsheet is not magic. If an hours total says you worked 400 hours in one week, the sheet did the math you typed — it did not notice that the number is unlikely. Later lessons will show you how to check a total. For now, the purpose is a clear list, in one place, that you can total and share without rewriting it by hand.</p>\n<p><strong>Progress:</strong> Lesson 1, part 2 of 3.</p>"
+              "html": "<p>A spreadsheet is a tool for lists and numbers. You may already keep those lists on paper, in a notebook, or in a phone note. A hall volunteer might write hours people worked each day. A farm household might jot down feed, fuel, and grocery amounts in Canadian dollars. Those lists work — until you need a total, a sorted list, or a clear copy to share.</p>\n<p>Excel is Microsoft's spreadsheet program. Microsoft's basic-tasks page says it works well for simple calculations and for tracking almost any kind of information. The key is a grid of cells. Each cell can hold a number, text, or a formula. You group cells in rows and columns so you can add the numbers up, sort or filter the list, put it in a table, or show it in a chart.</p>\n<p>You do not need a huge file or a finance job. A one-week hours list with seven rows is a real spreadsheet. A five-line household list in CAD is a real spreadsheet too. The grid keeps each piece of information in its own box, so totals and labels stay lined up when you add a row.</p>\n<p>The Government of Canada's Skills for Success describe Digital as the ability to use digital tools to find, manage, apply, create, and share information. One official example is creating spreadsheets, and the same page names Excel as a common digital tool. Skills for Success also name Numeracy, which includes checking whether a result makes sense. This course practises both.</p>\n<p>A spreadsheet is not magic. If an hours total says you worked 400 hours in one week, the sheet did the math you typed — it did not notice that the number is unlikely. Later lessons will show you how to check a total. For now, the purpose is a clear list, in one place, that you can total and share without rewriting it by hand.</p>\n"
             }
           ]
         },
@@ -795,7 +855,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 1, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -839,11 +899,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. A week of hall hours on paper vs in a sheet",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Pat helps set up the community hall. On paper the week is: Mon 6 hours, Tue 4, Wed 7.5, Thu off, Fri 5, Sat 3, Sun off. Added up, that is 25.5 hours. If Pat later remembers that Friday was 5.5, not 5, the whole addition has to be done again, and anyone who received a paper copy still has the old total.</p>\n<p>In Excel, that same week is the <strong>Hours</strong> sheet: days in column A, hours in column B, and a short note in column C. When you learn AutoSum, you will put a total in cell B9. If Friday changes, the total can update. That is the everyday reason to use a sheet: it is easy to correct and easy to share a clear copy.</p>"
+              "html": "",
+              "problem": "Pat helps set up the community hall. On paper the week is: Mon 6 hours, Tue 4, Wed 7.5, Thu off, Fri 5, Sat 3, Sun off. Added up, that is 25.5 hours. If Pat later remembers that Friday was 5.5, not 5, the whole addition has to be done again, and anyone who received a paper copy still has the old total.",
+              "steps": [],
+              "result": "In Excel, that same week is the <strong>Hours</strong> sheet: days in column A, hours in column B, and a short note in column C. When you learn AutoSum, you will put a total in cell B9. If Friday changes, the total can update. That is the everyday reason to use a sheet: it is easy to correct and easy to share a clear copy."
             }
           ]
         },
@@ -855,11 +914,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. A small household list in CAD",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>A farm household writes five lines: milk (2 litre) at the Co-op for $5.49, bread at the Co-op for $3.29, fuel at the cardlock for $80.00, feed at the farm supply for $45.00, and a phone card at the hardware store for $25.00. On paper the total is $158.78.</p>\n<p>In the <strong>Household</strong> sheet, each item has its own row: item (with the Canadian spelling *litre*), store, amount in CAD, and a category such as Groceries or Vehicle. Later you will total column C, format the amounts so they line up like money, filter to see only Groceries, and make a simple chart. The data stays the same five lines — stored in a grid so Excel can help.</p>"
+              "html": "",
+              "problem": "A farm household writes five lines: milk (2 litre) at the Co-op for $5.49, bread at the Co-op for $3.29, fuel at the cardlock for $80.00, feed at the farm supply for $45.00, and a phone card at the hardware store for $25.00. On paper the total is $158.78.",
+              "steps": [],
+              "result": "In the <strong>Household</strong> sheet, each item has its own row: item (with the Canadian spelling *litre*), store, amount in CAD, and a category such as Groceries or Vehicle. Later you will total column C, format the amounts so they line up like money, filter to see only Groceries, and make a simple chart. The data stays the same five lines — stored in a grid so Excel can help."
             }
           ]
         },
@@ -1162,7 +1220,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 2, part 2 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -1203,7 +1261,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 2, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -1311,11 +1369,14 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Find one note on the Hours sheet",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Open the practice workbook and click the <strong>Hours</strong> tab. You want the note for Wednesday's market stall.</p>\n<ol><li>Column A lists the days. Wednesday is in cell A4 (<code>Wed</code>).</li><li>Column B lists the hours. Wednesday's hours are in B4 (<code>7.5</code>).</li><li>Column C lists the notes. Wednesday's note is in C4 (<code>Market stall</code>).</li></ol>\n<p>Click C4. The name box should show C4, and the formula bar should show Market stall. That is all “moving around the grid” means: you can go to one exact box and read or change what is there. If you clicked C5 by mistake, look at the name box, then click C4 or press the up arrow.</p>"
+              "html": "",
+              "problem": "Open the practice workbook and click the <strong>Hours</strong> tab. You want the note for Wednesday's market stall.",
+              "steps": [
+                "Column A lists the days. Wednesday is in cell A4 (<code>Wed</code>).",
+                "Column B lists the hours. Wednesday's hours are in B4 (<code>7.5</code>).",
+                "Column C lists the notes. Wednesday's note is in C4 (<code>Market stall</code>)."
+              ],
+              "result": "Click C4. The name box should show C4, and the formula bar should show Market stall. That is all “moving around the grid” means: you can go to one exact box and read or change what is there. If you clicked C5 by mistake, look at the name box, then click C4 or press the up arrow."
             }
           ]
         },
@@ -1327,11 +1388,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Start blank, type a title, and come back to A1",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Create a blank workbook (File &gt; New &gt; Blank workbook). Click A1 if it is not already selected. Type <code>Hall hours — sample only</code> and press Enter. The title stays in A1, and the active cell moves to A2. You have not made a list yet — only a title in the corner.</p>\n<p>Now click A1 again. The formula bar shows the full title even if column A is too narrow to show every word on the grid. Clicking the cell and reading the formula bar is a safe way to check what you typed. If the title is wrong, type it again while A1 is selected and press Enter. You will learn more about editing in Lesson 3.</p>"
+              "html": "",
+              "problem": "Create a blank workbook (File &gt; New &gt; Blank workbook). Click A1 if it is not already selected. Type <code>Hall hours — sample only</code> and press Enter. The title stays in A1, and the active cell moves to A2. You have not made a list yet — only a title in the corner.",
+              "steps": [],
+              "result": "Now click A1 again. The formula bar shows the full title even if column A is too narrow to show every word on the grid. Clicking the cell and reading the formula bar is a safe way to check what you typed. If the title is wrong, type it again while A1 is selected and press Enter. You will learn more about editing in Lesson 3."
             }
           ]
         },
@@ -1611,7 +1671,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 3, part 2 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -1622,7 +1682,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>Numbers are values Excel can calculate later: <code>6</code>, <code>7.5</code>, <code>5.49</code>, <code>80</code>, <code>0</code>. Type them without extra words in the same cell. Put the unit in the header instead. Write <code>Hours worked</code> in B1 and <code>6</code> in B2, not <code>6 hours</code> in B2. Write <code>Amount (CAD)</code> in C1 and <code>5.49</code> in C2, not <code>five dollars forty-nine</code> and not <code>$5.49 CAD</code> mixed with words. You will learn number formats (including a currency look) in Lesson 4. A clean number is easier for AutoSum to add.</p>\n<p>Use a decimal point for parts of an hour or parts of a dollar, as in <code>7.5</code> and <code>5.49</code>. Do not type a space in the middle of a number. If you type <code>7,5</code> Excel may treat that as text or as a thousands style, depending on the computer's region settings. On most Canadian English computers, <code>7.5</code> is the safe way to type seven and a half.</p>\n<p>A <strong>zero</strong> and a <strong>blank</strong> are not the same. On the Hours sheet, Thursday is <code>0</code> because that day was off — you recorded “no hours.” A blank cell means nothing has been entered yet. When you total a column later, you will want recorded days off to stay as 0 so the row is not mistaken for missing data.</p>\n<p>If a number looks left-aligned like a word, Excel may have stored it as text (for example if you typed <code>6 hours</code>). Lesson 6 will ask you to check that a total makes sense. A first defence is to keep numbers as numbers from the start.</p>\n<p><strong>Progress:</strong> Lesson 3, part 3 of 3.</p>"
+              "html": "<p>Numbers are values Excel can calculate later: <code>6</code>, <code>7.5</code>, <code>5.49</code>, <code>80</code>, <code>0</code>. Type them without extra words in the same cell. Put the unit in the header instead. Write <code>Hours worked</code> in B1 and <code>6</code> in B2, not <code>6 hours</code> in B2. Write <code>Amount (CAD)</code> in C1 and <code>5.49</code> in C2, not <code>five dollars forty-nine</code> and not <code>$5.49 CAD</code> mixed with words. You will learn number formats (including a currency look) in Lesson 4. A clean number is easier for AutoSum to add.</p>\n<p>Use a decimal point for parts of an hour or parts of a dollar, as in <code>7.5</code> and <code>5.49</code>. Do not type a space in the middle of a number. If you type <code>7,5</code> Excel may treat that as text or as a thousands style, depending on the computer's region settings. On most Canadian English computers, <code>7.5</code> is the safe way to type seven and a half.</p>\n<p>A <strong>zero</strong> and a <strong>blank</strong> are not the same. On the Hours sheet, Thursday is <code>0</code> because that day was off — you recorded “no hours.” A blank cell means nothing has been entered yet. When you total a column later, you will want recorded days off to stay as 0 so the row is not mistaken for missing data.</p>\n<p>If a number looks left-aligned like a word, Excel may have stored it as text (for example if you typed <code>6 hours</code>). Lesson 6 will ask you to check that a total makes sense. A first defence is to keep numbers as numbers from the start.</p>\n"
             }
           ]
         },
@@ -1765,11 +1825,14 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Type the first Hours row on the Practice sheet",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the <strong>Practice</strong> sheet, click A3 (leave the note in A1 as it is). Type these headers across row 3, using Tab between them:</p>\n<ul><li>A3: <code>Day</code></li><li>B3: <code>Hours worked</code></li><li>C3: <code>Notes</code></li></ul>\n<p>Press Enter after Notes, then click A4. Type <code>Mon</code>, press Tab, type <code>6</code>, press Tab, type <code>Community hall setup</code>, and press Enter. You now have one complete row: text in A, a number in B, and a longer text note in C. The number 6 has no word <code>hours</code> beside it, because the header already says Hours worked.</p>"
+              "html": "",
+              "problem": "On the <strong>Practice</strong> sheet, click A3 (leave the note in A1 as it is). Type these headers across row 3, using Tab between them:",
+              "steps": [
+                "A3: <code>Day</code>",
+                "B3: <code>Hours worked</code>",
+                "C3: <code>Notes</code>"
+              ],
+              "result": "Press Enter after Notes, then click A4. Type <code>Mon</code>, press Tab, type <code>6</code>, press Tab, type <code>Community hall setup</code>, and press Enter. You now have one complete row: text in A, a number in B, and a longer text note in C. The number 6 has no word <code>hours</code> beside it, because the header already says Hours worked."
             }
           ]
         },
@@ -1781,11 +1844,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. A sample date and a CAD amount",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Still on the Practice sheet, click E3 and type <code>Sample date</code> (this is not a real appointment). In E4 type <code>2026-11-10</code>. Select E4, go to the Home tab, click the arrow on the General box, and choose a Date format you can read. The day should still be 10 November 2026 even if the style changes.</p>\n<p>Then click F3 and type <code>Amount (CAD)</code>. In F4 type <code>5.49</code> — digits and a decimal point only. Do not type the word dollars in F4. You will make amounts look like money in Lesson 4. If 5.49 looks left-aligned, you may have typed an extra space or character; click F4 and type <code>5.49</code> again.</p>"
+              "html": "",
+              "problem": "Still on the Practice sheet, click E3 and type <code>Sample date</code> (this is not a real appointment). In E4 type <code>2026-11-10</code>. Select E4, go to the Home tab, click the arrow on the General box, and choose a Date format you can read. The day should still be 10 November 2026 even if the style changes.",
+              "steps": [],
+              "result": "Then click F3 and type <code>Amount (CAD)</code>. In F4 type <code>5.49</code> — digits and a decimal point only. Do not type the word dollars in F4. You will make amounts look like money in Lesson 4. If 5.49 looks left-aligned, you may have typed an extra space or character; click F4 and type <code>5.49</code> again."
             }
           ]
         },
@@ -2017,7 +2079,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>A list is easier to trust when other people can see where one row ends and the next begins, and when money looks like money. Formatting is that extra clarity. Microsoft's basic-tasks page covers three everyday tools you will use here: cell borders, cell shading (fill colour), and number formats such as currency, percentages, or dates.</p>\n<p>Number formats change how a value is displayed. They do not change the value itself. Microsoft's number-format help says this plainly: formats only change how numbers appear and do not affect the values. If cell C2 contains <code>5.49</code> and you apply a Currency format, the cell may show something like <code>$5.49</code>, but Excel still stores 5.49 for any later formula. That is why you typed plain numbers in Lesson 3.</p>\n<p>Good formatting is calm. A bold-looking header row (a light fill and a bottom border) helps. A thin border around the data block helps. Matching decimal places in a money column helps. Rainbow colours, a different fill on every row, or a tiny font do not help. If you use colour, use it as a backup to clear labels, not as the only way to tell categories apart — a print-out or a photocopy may lose the colour.</p>\n<p>You do not need to format empty rows below the list. Format the cells you are actually using, including the header row. If you add a new row later, you can copy the format from a neighbour cell or select the new cells and apply the same border and number format again.</p>\n<p><strong>Progress:</strong> Lesson 4, part 2 of 3.</p>"
+              "html": "<p>A list is easier to trust when other people can see where one row ends and the next begins, and when money looks like money. Formatting is that extra clarity. Microsoft's basic-tasks page covers three everyday tools you will use here: cell borders, cell shading (fill colour), and number formats such as currency, percentages, or dates.</p>\n<p>Number formats change how a value is displayed. They do not change the value itself. Microsoft's number-format help says this plainly: formats only change how numbers appear and do not affect the values. If cell C2 contains <code>5.49</code> and you apply a Currency format, the cell may show something like <code>$5.49</code>, but Excel still stores 5.49 for any later formula. That is why you typed plain numbers in Lesson 3.</p>\n<p>Good formatting is calm. A bold-looking header row (a light fill and a bottom border) helps. A thin border around the data block helps. Matching decimal places in a money column helps. Rainbow colours, a different fill on every row, or a tiny font do not help. If you use colour, use it as a backup to clear labels, not as the only way to tell categories apart — a print-out or a photocopy may lose the colour.</p>\n<p>You do not need to format empty rows below the list. Format the cells you are actually using, including the header row. If you add a new row later, you can copy the format from a neighbour cell or select the new cells and apply the same border and number format again.</p>\n"
             }
           ]
         },
@@ -2119,7 +2181,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 4, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -2294,11 +2356,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Make the Hours list easier to scan",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Hours sheet, select A1:C1 and apply a pale Fill Color from Home &gt; Font. Then select A1:C8 and choose a full border style from Home &gt; Font &gt; Borders. Select B2:B8 and, from Home &gt; the General arrow, choose Number. If a dialog lets you set decimal places, choose 1 so 6.0 and 7.5 line up. Leave column C (Notes) as General or as text — those cells are words, not amounts.</p>\n<p>Stand back and look at the sheet. You should be able to run a finger down Wednesday's row and see <code>Wed</code>, <code>7.5</code>, and <code>Market stall</code> without losing the line. That is enough formatting for an everyday hours list.</p>"
+              "html": "",
+              "problem": "On the Hours sheet, select A1:C1 and apply a pale Fill Color from Home &gt; Font. Then select A1:C8 and choose a full border style from Home &gt; Font &gt; Borders. Select B2:B8 and, from Home &gt; the General arrow, choose Number. If a dialog lets you set decimal places, choose 1 so 6.0 and 7.5 line up. Leave column C (Notes) as General or as text — those cells are words, not amounts.",
+              "steps": [],
+              "result": "Stand back and look at the sheet. You should be able to run a finger down Wednesday's row and see <code>Wed</code>, <code>7.5</code>, and <code>Market stall</code> without losing the line. That is enough formatting for an everyday hours list."
             }
           ]
         },
@@ -2310,11 +2371,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Show household amounts as money",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Household sheet, select C2:C6. On the Home tab, click the arrow in the General box and pick Currency. The sample values 5.49, 3.29, 80.00, 45.00, and 25.00 should now display as currency. Add a simple border around A1:D6 if you like, and a pale fill on A1:D1.</p>\n<p>Check that column D (Category) is still plain text: Groceries, Vehicle, Farm, Household. Category labels should not receive a currency format. If you formatted too many columns by mistake, select the text cells and set them back to General.</p>"
+              "html": "",
+              "problem": "On the Household sheet, select C2:C6. On the Home tab, click the arrow in the General box and pick Currency. The sample values 5.49, 3.29, 80.00, 45.00, and 25.00 should now display as currency. Add a simple border around A1:D6 if you like, and a pale fill on A1:D1.",
+              "steps": [],
+              "result": "Check that column D (Category) is still plain text: Groceries, Vehicle, Farm, Household. Category labels should not receive a currency format. If you formatted too many columns by mistake, select the text cells and set them back to General."
             }
           ]
         },
@@ -2546,7 +2606,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>A formula is an instruction that tells Excel to calculate. Microsoft's formula pages repeat one rule: a formula always begins with an equal sign (<code>=</code>). If you type <code>2+4</code> without the equal sign, Excel usually treats it as text — it will not give you 6. If you type <code>=2+4</code> and press Enter, Excel runs the calculation and the cell shows 6. The formula bar still shows <code>=2+4</code>, so you can see how the answer was made.</p>\n<p>Microsoft's simple-formula page says a simple formula starts with <code>=</code>, then numbers (constants) and operators:</p>\n<ul><li><code>+</code> add</li><li><code>-</code> subtract</li><li><code>*</code> multiply (asterisk, not the letter x)</li><li><code>/</code> divide (forward slash)</li></ul>\n<p>Their starter examples are <code>=2+4</code>, <code>=4-2</code>, <code>=2*4</code>, and <code>=4/2</code>. You can type those on the Practice sheet right now. After you press Enter (Windows) or Return (Mac), the cell shows the result. Microsoft also notes that you can press Ctrl+Enter if you want the cursor to stay on the active cell after the formula calculates.</p>\n<p>Type the equal sign first, then the rest. If you forget <code>=</code> and already pressed Enter, click the cell, type the formula again starting with <code>=</code>, and press Enter. Watch the formula bar, not only the grid, when you want to know whether a cell holds a formula or a typed-in number.</p>\n<p>You can practise these tiny formulas on the Practice sheet without touching the sample Hours or Household data. Use a clear empty area, such as row 10 downward, so your tests do not sit on top of headers.</p>\n<p><strong>Progress:</strong> Lesson 5, part 2 of 3.</p>"
+              "html": "<p>A formula is an instruction that tells Excel to calculate. Microsoft's formula pages repeat one rule: a formula always begins with an equal sign (<code>=</code>). If you type <code>2+4</code> without the equal sign, Excel usually treats it as text — it will not give you 6. If you type <code>=2+4</code> and press Enter, Excel runs the calculation and the cell shows 6. The formula bar still shows <code>=2+4</code>, so you can see how the answer was made.</p>\n<p>Microsoft's simple-formula page says a simple formula starts with <code>=</code>, then numbers (constants) and operators:</p>\n<ul><li><code>+</code> add</li><li><code>-</code> subtract</li><li><code>*</code> multiply (asterisk, not the letter x)</li><li><code>/</code> divide (forward slash)</li></ul>\n<p>Their starter examples are <code>=2+4</code>, <code>=4-2</code>, <code>=2*4</code>, and <code>=4/2</code>. You can type those on the Practice sheet right now. After you press Enter (Windows) or Return (Mac), the cell shows the result. Microsoft also notes that you can press Ctrl+Enter if you want the cursor to stay on the active cell after the formula calculates.</p>\n<p>Type the equal sign first, then the rest. If you forget <code>=</code> and already pressed Enter, click the cell, type the formula again starting with <code>=</code>, and press Enter. Watch the formula bar, not only the grid, when you want to know whether a cell holds a formula or a typed-in number.</p>\n<p>You can practise these tiny formulas on the Practice sheet without touching the sample Hours or Household data. Use a clear empty area, such as row 10 downward, so your tests do not sit on top of headers.</p>\n"
             }
           ]
         },
@@ -2657,7 +2717,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 5, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -2697,11 +2757,15 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Four tiny formulas on the Practice sheet",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:</p>\n<ul><li><code>=2+4</code> — the cell should show 6</li><li><code>=4-2</code> — the cell should show 2</li><li><code>=2*4</code> — the cell should show 8</li><li><code>=4/2</code> — the cell should show 2</li></ul>\n<p>These match Microsoft's starter set. If a cell shows the characters <code>=2+4</code> instead of 6, the equal sign may be missing or the cell may be formatted as text. Click it, type the formula again starting with <code>=</code>, and press Enter.</p>"
+              "html": "",
+              "problem": "On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:",
+              "steps": [
+                "<code>=2+4</code> — the cell should show 6",
+                "<code>=4-2</code> — the cell should show 2",
+                "<code>=2*4</code> — the cell should show 8",
+                "<code>=4/2</code> — the cell should show 2"
+              ],
+              "result": "These match Microsoft's starter set. If a cell shows the characters <code>=2+4</code> instead of 6, the equal sign may be missing or the cell may be formatted as text. Click it, type the formula again starting with <code>=</code>, and press Enter."
             }
           ]
         },
@@ -2713,11 +2777,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Add three days, then test =5+2*3",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Hours sheet, in E2 enter <code>=B2+B3+B4</code>. With the sample data, the result is 17.5. Change B3 from 4 to 5 temporarily: E2 should become 18.5. Then put B3 back to 4 so the sample file stays correct.</p>\n<p>On the Practice sheet, in a spare cell type <code>=5+2*3</code> and press Enter. Confirm that the result is 11. That single check is the reminder: multiplication happens before addition.</p>"
+              "html": "",
+              "problem": "On the Hours sheet, in E2 enter <code>=B2+B3+B4</code>. With the sample data, the result is 17.5. Change B3 from 4 to 5 temporarily: E2 should become 18.5. Then put B3 back to 4 so the sample file stays correct.",
+              "steps": [],
+              "result": "On the Practice sheet, in a spare cell type <code>=5+2*3</code> and press Enter. Confirm that the result is 11. That single check is the reminder: multiplication happens before addition."
             }
           ]
         },
@@ -3025,7 +3088,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 6, part 2 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -3036,7 +3099,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>Excel can also calculate an average (the mean): add the numbers, then divide by how many numbers were included. Microsoft's “Calculate an average” page shows this path:</p>\n<ol><li>Select the cells you want to average, *or* select the cell where the average should appear.</li><li>On the <strong>Formulas</strong> tab, select the arrow next to <strong>AutoSum</strong>, and then select <strong>Average</strong>.</li></ol>\n<p>When you create the average in its own cell, the formula bar shows a function that looks like <code>=AVERAGE(A2:A7)</code> in Microsoft's sample. On the Hours sheet, click B11 (leaving a blank row under the total is fine) or another empty cell, choose Formulas &gt; AutoSum arrow &gt; Average, and check that the range points at the hours, <code>B2:B8</code>, not at the total in B9. If AutoSum's average includes the total, the answer will be too high. Edit the range so it covers only the days.</p>\n<p>With the sample hours 6, 4, 7.5, 0, 5, 3, and 0, the average is 25.5 ÷ 7, which is about 3.64 hours per day if every listed day counts — including Thursday and Sunday as zeros. That is mathematically correct for “average of the seven recorded days.” It is not the same as “average of only the days I worked.” If you need the second meaning, you would average only the working days (or leave days off out of the sheet). This course does not teach extra functions that ignore certain values. What it teaches is to read the range inside AVERAGE and know which cells are included.</p>\n<p>You can also type <code>=AVERAGE(B2:B8)</code> yourself, the same way you typed <code>=SUM(B2:B8)</code>. Starting with <code>=</code> and using a colon range is the same habit as Lesson 5, with a function name added. Microsoft's overview of formulas shows that pattern: type <code>=</code>, a function name, <code>(</code>, the range, then <code>)</code>.</p>\n<p><strong>Progress:</strong> Lesson 6, part 3 of 3.</p>"
+              "html": "<p>Excel can also calculate an average (the mean): add the numbers, then divide by how many numbers were included. Microsoft's “Calculate an average” page shows this path:</p>\n<ol><li>Select the cells you want to average, *or* select the cell where the average should appear.</li><li>On the <strong>Formulas</strong> tab, select the arrow next to <strong>AutoSum</strong>, and then select <strong>Average</strong>.</li></ol>\n<p>When you create the average in its own cell, the formula bar shows a function that looks like <code>=AVERAGE(A2:A7)</code> in Microsoft's sample. On the Hours sheet, click B11 (leaving a blank row under the total is fine) or another empty cell, choose Formulas &gt; AutoSum arrow &gt; Average, and check that the range points at the hours, <code>B2:B8</code>, not at the total in B9. If AutoSum's average includes the total, the answer will be too high. Edit the range so it covers only the days.</p>\n<p>With the sample hours 6, 4, 7.5, 0, 5, 3, and 0, the average is 25.5 ÷ 7, which is about 3.64 hours per day if every listed day counts — including Thursday and Sunday as zeros. That is mathematically correct for “average of the seven recorded days.” It is not the same as “average of only the days I worked.” If you need the second meaning, you would average only the working days (or leave days off out of the sheet). This course does not teach extra functions that ignore certain values. What it teaches is to read the range inside AVERAGE and know which cells are included.</p>\n<p>You can also type <code>=AVERAGE(B2:B8)</code> yourself, the same way you typed <code>=SUM(B2:B8)</code>. Starting with <code>=</code> and using a colon range is the same habit as Lesson 5, with a function name added. Microsoft's overview of formulas shows that pattern: type <code>=</code>, a function name, <code>(</code>, the range, then <code>)</code>.</p>\n"
             }
           ]
         },
@@ -3102,11 +3165,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Total the sample week",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Hours sheet, click B9. Use Home &gt; AutoSum (or Formulas &gt; AutoSum). Confirm <code>=SUM(B2:B8)</code> and press Enter. The sample total is <strong>25.5</strong>. Check: 6+4=10, plus 7.5 is 17.5, plus 0 is 17.5, plus 5 is 22.5, plus 3 is 25.5, plus 0 is 25.5. The formula and the hand check agree.</p>\n<p>On the Household sheet, click C7 (Total row) and AutoSum the amounts C2:C6. The sample total is <strong>158.78</strong> (5.49+3.29+80+45+25). If Currency format is on, the total should look like money as well.</p>"
+              "html": "",
+              "problem": "On the Hours sheet, click B9. Use Home &gt; AutoSum (or Formulas &gt; AutoSum). Confirm <code>=SUM(B2:B8)</code> and press Enter. The sample total is <strong>25.5</strong>. Check: 6+4=10, plus 7.5 is 17.5, plus 0 is 17.5, plus 5 is 22.5, plus 3 is 25.5, plus 0 is 25.5. The formula and the hand check agree.",
+              "steps": [],
+              "result": "On the Household sheet, click C7 (Total row) and AutoSum the amounts C2:C6. The sample total is <strong>158.78</strong> (5.49+3.29+80+45+25). If Currency format is on, the total should look like money as well."
             }
           ]
         },
@@ -3118,11 +3180,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Average the sample week — including days off",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Click an empty cell under the Hours sheet (for example B11) and choose Formulas &gt; the arrow next to AutoSum &gt; Average. Set the range to <code>B2:B8</code> if Excel did not. The sample average is 25.5 ÷ 7 ≈ <strong>3.64</strong>.</p>\n<p>Now ask the sense-check question: “Does about three and a half hours a day sound right for a week that includes two days off and a 7.5-hour market day?” Yes, as an average of seven calendar days. If someone asked “What is a typical working day this week?”, you would look at Mon, Tue, Wed, Fri, and Sat only (6, 4, 7.5, 5, 3), whose total is 25.5 and whose average is 25.5 ÷ 5 = 5.1. Same SUM, different story, because the range changed. Always read the range.</p>"
+              "html": "",
+              "problem": "Click an empty cell under the Hours sheet (for example B11) and choose Formulas &gt; the arrow next to AutoSum &gt; Average. Set the range to <code>B2:B8</code> if Excel did not. The sample average is 25.5 ÷ 7 ≈ <strong>3.64</strong>.",
+              "steps": [],
+              "result": "Now ask the sense-check question: “Does about three and a half hours a day sound right for a week that includes two days off and a 7.5-hour market day?” Yes, as an average of seven calendar days. If someone asked “What is a typical working day this week?”, you would look at Mon, Tue, Wed, Fri, and Sat only (6, 4, 7.5, 5, 3), whose total is 25.5 and whose average is 25.5 ÷ 5 = 5.1. Same SUM, different story, because the range changed. Always read the range."
             }
           ]
         },
@@ -3443,7 +3504,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 7, part 2 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -3454,7 +3515,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>By default, a cell reference is <strong>relative</strong>. Microsoft explains it this way: when you refer to A2 from C2, you are referring to a cell two columns left and in the same row. If you copy <code>=A2+B2</code> from C2 to C3, the references shift down one row and become <code>=A3+B3</code>. The overview page gives another picture: if you copy a relative reference in B2 that points at A1 down to B3, it adjusts from <code>=A1</code> to <code>=A2</code>.</p>\n<p>That is why filling <code>=C15*2</code> from D15 to D16 becomes <code>=C16*2</code>. Excel assumes you want “twice *this* row's amount,” not “twice the first amount, over and over.” For hours, a relative formula on each row is usually what you want.</p>\n<p>Relative references are helpful — and they can surprise you. If cell H1 holds a sample extra rate and you write <code>=C2*H1</code> in E2, that works on row 2. If you fill it down to E3, the formula becomes <code>=C3*H2</code>. H2 is probably empty, so the result may be 0 or look blank. The formula did not “break” at random. It moved H1 down one row because H1 was relative. Lesson 7's next chapter shows how to stop that move.</p>\n<p>When something looks wrong after a fill, click each result cell and read the formula bar. Ask: “Did every reference shift the way I meant?” If one reference should have stayed on H1, that reference needs to be locked.</p>\n<p><strong>Progress:</strong> Lesson 7, part 3 of 3.</p>"
+              "html": "<p>By default, a cell reference is <strong>relative</strong>. Microsoft explains it this way: when you refer to A2 from C2, you are referring to a cell two columns left and in the same row. If you copy <code>=A2+B2</code> from C2 to C3, the references shift down one row and become <code>=A3+B3</code>. The overview page gives another picture: if you copy a relative reference in B2 that points at A1 down to B3, it adjusts from <code>=A1</code> to <code>=A2</code>.</p>\n<p>That is why filling <code>=C15*2</code> from D15 to D16 becomes <code>=C16*2</code>. Excel assumes you want “twice *this* row's amount,” not “twice the first amount, over and over.” For hours, a relative formula on each row is usually what you want.</p>\n<p>Relative references are helpful — and they can surprise you. If cell H1 holds a sample extra rate and you write <code>=C2*H1</code> in E2, that works on row 2. If you fill it down to E3, the formula becomes <code>=C3*H2</code>. H2 is probably empty, so the result may be 0 or look blank. The formula did not “break” at random. It moved H1 down one row because H1 was relative. Lesson 7's next chapter shows how to stop that move.</p>\n<p>When something looks wrong after a fill, click each result cell and read the formula bar. Ask: “Did every reference shift the way I meant?” If one reference should have stayed on H1, that reference needs to be locked.</p>\n"
             }
           ]
         },
@@ -3564,11 +3625,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Double each amount down a column",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Practice sheet, type <code>10</code> in C15, <code>20</code> in C16, and <code>30</code> in C17. In D15 type <code>=C15*2</code> and press Enter (the cell should show 20). Drag the fill handle from D15 through D17, or select D15:D17 and choose Home &gt; Fill &gt; Down. D16 should show 40 and D17 should show 60. Click D17: the formula bar should read <code>=C17*2</code>, not <code>=C15*2</code>. The reference moved with the row. That is a relative reference doing its job.</p>"
+              "html": "",
+              "problem": "On the Practice sheet, type <code>10</code> in C15, <code>20</code> in C16, and <code>30</code> in C17. In D15 type <code>=C15*2</code> and press Enter (the cell should show 20). Drag the fill handle from D15 through D17, or select D15:D17 and choose Home &gt; Fill &gt; Down. D16 should show 40 and D17 should show 60. Click D17: the formula bar should read <code>=C17*2</code>, not <code>=C15*2</code>. The reference moved with the row. That is a relative reference doing its job.",
+              "steps": [],
+              "result": "On the Practice sheet, type <code>10</code> in C15, <code>20</code> in C16, and <code>30</code> in C17. In D15 type <code>=C15*2</code> and press Enter (the cell should show 20). Drag the fill handle from D15 through D17, or select D15:D17 and choose Home &gt; Fill &gt; Down. D16 should show 40 and D17 should show 60. Click D17: the formula bar should read <code>=C17*2</code>, not <code>=C15*2</code>. The reference moved with the row. That is a relative reference doing its job."
             }
           ]
         },
@@ -3580,11 +3640,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Multiply by one sample rate that must stay put",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Household sheet, click H1 and type <code>0.05</code>. In I1 type <code>Sample extra rate — not tax advice</code>. In E1 type <code>Sample extra (example only)</code>. In E2 type <code>=C2*$H$1</code> and press Enter. With milk at 5.49, the sample extra is about 0.2745. Fill E2 down through E6. Click E6 (phone card, 25.00): the formula should still mention <code>$H$1</code>, and the result should be 1.25.</p>\n<p>Now, only as a test you will undo, imagine E2 had been <code>=C2*H1</code> without dollar signs. Filled down, row 6 would point at H5, not H1, and the extras would be wrong. Put the <code>$</code> signs back if you tried that test. These figures are practice math, not a tax calculation.</p>"
+              "html": "",
+              "problem": "On the Household sheet, click H1 and type <code>0.05</code>. In I1 type <code>Sample extra rate — not tax advice</code>. In E1 type <code>Sample extra (example only)</code>. In E2 type <code>=C2*$H$1</code> and press Enter. With milk at 5.49, the sample extra is about 0.2745. Fill E2 down through E6. Click E6 (phone card, 25.00): the formula should still mention <code>$H$1</code>, and the result should be 1.25.",
+              "steps": [],
+              "result": "Now, only as a test you will undo, imagine E2 had been <code>=C2*H1</code> without dollar signs. Filled down, row 6 would point at H5, not H1, and the extras would be wrong. Put the <code>$</code> signs back if you tried that test. These figures are practice math, not a tax calculation."
             }
           ]
         },
@@ -3820,7 +3879,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>Sorting rearranges rows so you can read a list in order — A to Z, Z to A, smallest number to largest, or the reverse. Microsoft's basic-tasks page describes two approaches. For a sort with specific choices, select a single cell anywhere in the range, then on the <strong>Data</strong> tab, in the <strong>Sort &amp; Filter</strong> group, choose <strong>Sort</strong>. A Sort dialog appears. In <strong>Sort by</strong>, pick the first column to sort on. In <strong>Sort On</strong>, choose Values (you can also see Cell Color, Font Color, or Cell Icon — this course stays with Values). In <strong>Order</strong>, choose A to Z or Z to A for text, or smallest to largest / largest to smallest for numbers.</p>\n<p>Before you sort, select a range that includes every column of the list, or click inside a well-formed block that has headers. Microsoft's example ranges include several columns at once (such as A1:L5) as well as a single column. For the Household sheet, that means keeping Item, Store, Amount, and Category together. If you sort only the Amount column, the prices can detach from the item names. That is one of the easiest ways to ruin a list. If a sort looks wrong, use Undo if you still can, or go back to the sample layout at the start of this course.</p>\n<p>On Hours, you might sort by hours (largest first) to see which day was busiest. Wednesday's 7.5 hours should still travel with the note “Market stall.” After you finish looking, you can sort Day back to the original week order if you need Monday through Sunday again — or keep a copy of the file before you experiment.</p>\n<p><strong>Progress:</strong> Lesson 8, part 2 of 3.</p>"
+              "html": "<p>Sorting rearranges rows so you can read a list in order — A to Z, Z to A, smallest number to largest, or the reverse. Microsoft's basic-tasks page describes two approaches. For a sort with specific choices, select a single cell anywhere in the range, then on the <strong>Data</strong> tab, in the <strong>Sort &amp; Filter</strong> group, choose <strong>Sort</strong>. A Sort dialog appears. In <strong>Sort by</strong>, pick the first column to sort on. In <strong>Sort On</strong>, choose Values (you can also see Cell Color, Font Color, or Cell Icon — this course stays with Values). In <strong>Order</strong>, choose A to Z or Z to A for text, or smallest to largest / largest to smallest for numbers.</p>\n<p>Before you sort, select a range that includes every column of the list, or click inside a well-formed block that has headers. Microsoft's example ranges include several columns at once (such as A1:L5) as well as a single column. For the Household sheet, that means keeping Item, Store, Amount, and Category together. If you sort only the Amount column, the prices can detach from the item names. That is one of the easiest ways to ruin a list. If a sort looks wrong, use Undo if you still can, or go back to the sample layout at the start of this course.</p>\n<p>On Hours, you might sort by hours (largest first) to see which day was busiest. Wednesday's 7.5 hours should still travel with the note “Market stall.” After you finish looking, you can sort Day back to the original week order if you need Monday through Sunday again — or keep a copy of the file before you experiment.</p>\n"
             }
           ]
         },
@@ -3922,7 +3981,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 8, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -4030,11 +4089,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Sort household amounts from largest to smallest",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Click a cell in the Household amount column (C2 is fine). On the Data tab, click Sort. Sort by Amount (CAD), Sort On Values, Order Largest to Smallest, then confirm. The sample order becomes Fuel (80.00), Feed (45.00), Phone card (25.00), Milk (5.49), Bread (3.29). Check that Fuel is still tagged Vehicle and Cardlock — the whole row moved together. If milk somehow sat beside “Cardlock,” the sort did not include every column; undo and select A1:D6 before you sort again.</p>"
+              "html": "",
+              "problem": "Click a cell in the Household amount column (C2 is fine). On the Data tab, click Sort. Sort by Amount (CAD), Sort On Values, Order Largest to Smallest, then confirm. The sample order becomes Fuel (80.00), Feed (45.00), Phone card (25.00), Milk (5.49), Bread (3.29). Check that Fuel is still tagged Vehicle and Cardlock — the whole row moved together. If milk somehow sat beside “Cardlock,” the sort did not include every column; undo and select A1:D6 before you sort again.",
+              "steps": [],
+              "result": "Click a cell in the Household amount column (C2 is fine). On the Data tab, click Sort. Sort by Amount (CAD), Sort On Values, Order Largest to Smallest, then confirm. The sample order becomes Fuel (80.00), Feed (45.00), Phone card (25.00), Milk (5.49), Bread (3.29). Check that Fuel is still tagged Vehicle and Cardlock — the whole row moved together. If milk somehow sat beside “Cardlock,” the sort did not include every column; undo and select A1:D6 before you sort again."
             }
           ]
         },
@@ -4046,11 +4104,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Filter groceries, then make a table",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Clear any sort confusion by using the original sample file if needed. Click in the Household list, choose Data &gt; Filter, and filter Category to Groceries. Only two rows should show. Clear the filter so all five rows return.</p>\n<p>Then convert A1:D6 to a table with Home &gt; Format as Table (or Quick Analysis &gt; Tables &gt; Table on Windows desktop). Confirm that the table has headers. Use the new Category arrow to filter Groceries again — the same idea as Data &gt; Filter, now built into the table. Sort Amount from the table header if you want the grocery items ordered by price (Milk 5.49 above Bread 3.29, or the reverse).</p>"
+              "html": "",
+              "problem": "Clear any sort confusion by using the original sample file if needed. Click in the Household list, choose Data &gt; Filter, and filter Category to Groceries. Only two rows should show. Clear the filter so all five rows return.",
+              "steps": [],
+              "result": "Then convert A1:D6 to a table with Home &gt; Format as Table (or Quick Analysis &gt; Tables &gt; Table on Windows desktop). Confirm that the table has headers. Use the new Category arrow to filter Groceries again — the same idea as Data &gt; Filter, now built into the table. Sort Amount from the table header if you want the grocery items ordered by price (Milk 5.49 above Bread 3.29, or the reverse)."
             }
           ]
         },
@@ -4282,7 +4339,7 @@
           "blocks": [
             {
               "type": "prose",
-              "html": "<p>A chart is a picture of numbers that already live on the sheet. It does not invent new facts. If Wednesday is 7.5 hours in the grid, the bar or column for Wednesday should match 7.5. Microsoft's chart page says charts help you visualize data, and it starts with a plain instruction: select the data for the chart, then choose a chart.</p>\n<p>Select the labels and the numbers together. For a week of hours, select A1:B8 — the Day header and values, and the Hours worked header and values. If you select only the numbers, the chart may show 1, 2, 3 instead of Mon, Tue, Wed. If you include the Total row (row 9) by accident, the total can dwarf the days and make the picture misleading. Select through Sunday only unless you truly want the total in the chart.</p>\n<p>This course stays with everyday types. Microsoft describes <strong>column</strong> charts as a common way to show categories along the horizontal axis and values up the vertical axis — a good fit for hours by day. <strong>Pie</strong> charts show parts of one whole. Microsoft says to consider a pie when you have only one data series, none of the values are negative, almost none are zero, and you have no more than seven categories that really are parts of the same total. Five household amounts can make a pie; a week with two zero days is a weaker pie (those slices vanish) and a better column chart.</p>\n<p>You do not need 3-D exploding pies, trendlines, or combination charts here. A flat column chart with a clear title is enough. Give the chart a title that names the list and reminds readers it is sample data, such as <code>Hours worked — sample only</code>.</p>\n<p><strong>Progress:</strong> Lesson 9, part 2 of 3.</p>"
+              "html": "<p>A chart is a picture of numbers that already live on the sheet. It does not invent new facts. If Wednesday is 7.5 hours in the grid, the bar or column for Wednesday should match 7.5. Microsoft's chart page says charts help you visualize data, and it starts with a plain instruction: select the data for the chart, then choose a chart.</p>\n<p>Select the labels and the numbers together. For a week of hours, select A1:B8 — the Day header and values, and the Hours worked header and values. If you select only the numbers, the chart may show 1, 2, 3 instead of Mon, Tue, Wed. If you include the Total row (row 9) by accident, the total can dwarf the days and make the picture misleading. Select through Sunday only unless you truly want the total in the chart.</p>\n<p>This course stays with everyday types. Microsoft describes <strong>column</strong> charts as a common way to show categories along the horizontal axis and values up the vertical axis — a good fit for hours by day. <strong>Pie</strong> charts show parts of one whole. Microsoft says to consider a pie when you have only one data series, none of the values are negative, almost none are zero, and you have no more than seven categories that really are parts of the same total. Five household amounts can make a pie; a week with two zero days is a weaker pie (those slices vanish) and a better column chart.</p>\n<p>You do not need 3-D exploding pies, trendlines, or combination charts here. A flat column chart with a clear title is enough. Give the chart a title that names the list and reminds readers it is sample data, such as <code>Hours worked — sample only</code>.</p>\n"
             }
           ]
         },
@@ -4384,7 +4441,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 9, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -4492,11 +4549,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. A column chart of the sample week",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>On the Hours sheet, select A1:B8. Choose Insert &gt; Recommended Charts, pick a clustered column preview that shows Mon through Sun, and click OK. Title it <code>Hours worked — sample only</code>. Check the picture against the grid: Wednesday should be the tallest column at 7.5; Thursday and Sunday should show no bar or a flat bar at zero; Monday should sit at 6. If the total 25.5 appears as an eighth giant column, you included B9 — delete the chart and select only A1:B8.</p>"
+              "html": "",
+              "problem": "On the Hours sheet, select A1:B8. Choose Insert &gt; Recommended Charts, pick a clustered column preview that shows Mon through Sun, and click OK. Title it <code>Hours worked — sample only</code>. Check the picture against the grid: Wednesday should be the tallest column at 7.5; Thursday and Sunday should show no bar or a flat bar at zero; Monday should sit at 6. If the total 25.5 appears as an eighth giant column, you included B9 — delete the chart and select only A1:B8.",
+              "steps": [],
+              "result": "On the Hours sheet, select A1:B8. Choose Insert &gt; Recommended Charts, pick a clustered column preview that shows Mon through Sun, and click OK. Title it <code>Hours worked — sample only</code>. Check the picture against the grid: Wednesday should be the tallest column at 7.5; Thursday and Sunday should show no bar or a flat bar at zero; Monday should sit at 6. If the total 25.5 appears as an eighth giant column, you included B9 — delete the chart and select only A1:B8."
             }
           ]
         },
@@ -4508,11 +4564,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Household amounts as a simple picture",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Select the item names and the amounts on the Household sheet (A1:A6 and C1:C6, or A1:C6 if the preview still makes sense). Insert a recommended column chart, or a pie if Microsoft's preview looks clean — five positive values, no zeros, one series. Title it <code>Household amounts (CAD) — sample only</code>. Fuel at 80.00 should dominate; bread at 3.29 should be the smallest. This is not a budget report and not a real household's spending. It is the same five practice rows you have used since Lesson 1.</p>"
+              "html": "",
+              "problem": "Select the item names and the amounts on the Household sheet (A1:A6 and C1:C6, or A1:C6 if the preview still makes sense). Insert a recommended column chart, or a pie if Microsoft's preview looks clean — five positive values, no zeros, one series. Title it <code>Household amounts (CAD) — sample only</code>. Fuel at 80.00 should dominate; bread at 3.29 should be the smallest. This is not a budget report and not a real household's spending. It is the same five practice rows you have used since Lesson 1.",
+              "steps": [],
+              "result": "Select the item names and the amounts on the Household sheet (A1:A6 and C1:C6, or A1:C6 if the preview still makes sense). Insert a recommended column chart, or a pie if Microsoft's preview looks clean — five positive values, no zeros, one series. Title it <code>Household amounts (CAD) — sample only</code>. Fuel at 80.00 should dominate; bread at 3.29 should be the smallest. This is not a budget report and not a real household's spending. It is the same five practice rows you have used since Lesson 1."
             }
           ]
         },
@@ -4835,7 +4890,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 10, part 2 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -4927,7 +4982,7 @@
             },
             {
               "type": "prose",
-              "html": "<p><strong>Progress:</strong> Lesson 10, part 3 of 3.</p>"
+              "html": ""
             }
           ]
         },
@@ -5019,11 +5074,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 1. Save, then preview the Hours sheet",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>With the practice workbook open, choose File &gt; Save As, pick a folder you are allowed to use, and name the file <code>excel-basics-hours-sample-only</code>. Click Save. Change Friday's note by adding the word <code>practice</code>, then press Ctrl+S. Open File &gt; Print and look at the preview. Check that all seven days and the total are present, and that a stray extra page is not blank except for one column. Close the print screen without printing if you do not need paper.</p>"
+              "html": "",
+              "problem": "With the practice workbook open, choose File &gt; Save As, pick a folder you are allowed to use, and name the file <code>excel-basics-hours-sample-only</code>. Click Save. Change Friday's note by adding the word <code>practice</code>, then press Ctrl+S. Open File &gt; Print and look at the preview. Check that all seven days and the total are present, and that a stray extra page is not blank except for one column. Close the print screen without printing if you do not need paper.",
+              "steps": [],
+              "result": "With the practice workbook open, choose File &gt; Save As, pick a folder you are allowed to use, and name the file <code>excel-basics-hours-sample-only</code>. Click Save. Change Friday's note by adding the word <code>practice</code>, then press Ctrl+S. Open File &gt; Print and look at the preview. Check that all seven days and the total are present, and that a stray extra page is not blank except for one column. Close the print screen without printing if you do not need paper."
             }
           ]
         },
@@ -5035,11 +5089,10 @@
             {
               "type": "workedExample",
               "title": "Worked example 2. Export a PDF and check it for extra details",
-              "html": ""
-            },
-            {
-              "type": "prose",
-              "html": "<p>Choose File &gt; Save As (or Save a Copy), set Save as type to PDF (*.pdf), name it <code>excel-basics-hours-sample-only</code>, and click Save. Open the PDF and read it as a stranger would. Do you see only sample days and hours, or did a side cell with a real phone number or a real name sneak onto the page? Microsoft warns that a PDF is not a guarantee against editing, and it will not strip private text you left on the sheet. If you find extra details, go back to Excel, remove them, save the workbook, and export the PDF again.</p>"
+              "html": "",
+              "problem": "Choose File &gt; Save As (or Save a Copy), set Save as type to PDF (*.pdf), name it <code>excel-basics-hours-sample-only</code>, and click Save. Open the PDF and read it as a stranger would. Do you see only sample days and hours, or did a side cell with a real phone number or a real name sneak onto the page? Microsoft warns that a PDF is not a guarantee against editing, and it will not strip private text you left on the sheet. If you find extra details, go back to Excel, remove them, save the workbook, and export the PDF again.",
+              "steps": [],
+              "result": "Choose File &gt; Save As (or Save a Copy), set Save as type to PDF (*.pdf), name it <code>excel-basics-hours-sample-only</code>, and click Save. Open the PDF and read it as a stranger would. Do you see only sample days and hours, or did a side cell with a real phone number or a real name sneak onto the page? Microsoft warns that a PDF is not a guarantee against editing, and it will not strip private text you left on the sheet. If you find extra details, go back to Excel, remove them, save the workbook, and export the PDF again."
             }
           ]
         },

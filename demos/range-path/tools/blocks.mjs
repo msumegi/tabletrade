@@ -70,31 +70,209 @@ function check(block) {
 </aside>`;
 }
 
-function diagram(kind) {
-  if (kind === "print") {
-    return `<svg viewBox="0 0 320 140" role="img" width="100%"><rect width="320" height="140" fill="#fffdf8"/><rect x="16" y="16" width="200" height="108" fill="none" stroke="#123c2e" stroke-width="2"/><text x="28" y="48" fill="#1b1914" font-size="14">Preview</text><text x="28" y="76" fill="#1b1914" font-size="14">expense-list-practice</text><circle cx="250" cy="40" r="12" fill="#123c2e"/><text x="246" y="45" fill="#fff" font-size="12">1</text><text x="230" y="90" fill="#1b1914" font-size="12">Print</text></svg>`;
+function marker(n, x, y) {
+  return `<circle cx="${x}" cy="${y}" r="11" fill="#123c2e"/><text x="${x}" y="${y + 4}" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">${n}</text>`;
+}
+
+function svgWrap(body) {
+  return `<svg viewBox="0 0 360 220" role="img" width="100%">${body}</svg>`;
+}
+
+function sceneSvg(block) {
+  const id = block.id || "";
+  const ink = "#1b1914";
+  const line = "#123c2e";
+  if (id === "phones-parts-of-screen") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="16" y="18" width="110" height="184" rx="14" fill="#f4efe4" stroke="${line}" stroke-width="2"/>
+      <rect x="28" y="36" width="86" height="120" fill="#fff" stroke="${line}"/>
+      <circle cx="71" cy="176" r="8" fill="none" stroke="${line}" stroke-width="2"/>
+      <rect x="150" y="48" width="190" height="120" rx="6" fill="#f4efe4" stroke="${line}" stroke-width="2"/>
+      <rect x="162" y="60" width="166" height="78" fill="#fff" stroke="${line}"/>
+      <rect x="162" y="146" width="166" height="14" fill="#e7f0eb" stroke="${line}"/>
+      <text x="40" y="100" font-size="12" fill="${ink}">Screen</text>
+      ${marker(1, 96, 52)}${marker(2, 48, 52)}${marker(3, 71, 176)}${marker(4, 250, 160)}`);
   }
-  if (kind === "sum") {
-    return `<svg viewBox="0 0 320 160" role="img" width="100%"><rect width="320" height="160" fill="#fffdf8"/><text x="16" y="28" fill="#1b1914" font-size="14">=SUM(B2:B8)</text><text x="16" y="56" font-size="13" fill="#1b1914">Mon 6</text><text x="16" y="80" font-size="13" fill="#1b1914">Tue 4</text><text x="16" y="104" font-size="13" fill="#1b1914">Wed 7.5</text><text x="16" y="128" font-size="13" fill="#1b1914">Sample hours only</text><circle cx="250" cy="28" r="12" fill="#123c2e"/><text x="246" y="33" fill="#fff" font-size="12">1</text></svg>`;
+  if (id === "phones-gestures") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="110" y="12" width="140" height="196" rx="16" fill="#f4efe4" stroke="${line}" stroke-width="2"/>
+      <rect x="124" y="32" width="112" height="140" fill="#fff" stroke="${line}"/>
+      <text x="148" y="90" font-size="13" fill="${ink}">Tap</text>
+      <text x="140" y="112" font-size="12" fill="${ink}">Scroll</text>
+      <rect x="124" y="178" width="34" height="16" fill="#fff" stroke="${line}"/>
+      <rect x="162" y="178" width="34" height="16" fill="#fff" stroke="${line}"/>
+      <rect x="200" y="178" width="36" height="16" fill="#fff" stroke="${line}"/>
+      ${marker(1, 168, 70)}${marker(2, 200, 120)}${marker(3, 180, 160)}${marker(4, 124, 100)}${marker(5, 180, 186)}`);
   }
-  return `<svg viewBox="0 0 320 150" role="img" width="100%"><rect width="320" height="150" fill="#fffdf8"/><rect x="70" y="36" width="60" height="28" fill="#e7f0eb" stroke="#123c2e"/><text x="88" y="55" font-size="13" fill="#1b1914">A1</text><text x="16" y="24" font-size="13" fill="#1b1914">Sheet</text><circle cx="250" cy="36" r="12" fill="#123c2e"/><text x="246" y="41" fill="#fff" font-size="12">1</text></svg>`;
+  if (id === "phones-app-stores") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="18" y="16" width="150" height="188" rx="14" fill="#f4efe4" stroke="${line}" stroke-width="2"/>
+      <text x="36" y="48" font-size="14" fill="${ink}">Play Store</text>
+      <rect x="36" y="64" width="114" height="28" fill="#fff" stroke="${line}"/>
+      <text x="44" y="82" font-size="12" fill="${ink}">Search</text>
+      <text x="36" y="120" font-size="12" fill="${ink}">Install</text>
+      <text x="190" y="48" font-size="14" fill="${ink}">Settings</text>
+      <text x="190" y="78" font-size="13" fill="${ink}">System</text>
+      <text x="190" y="102" font-size="13" fill="${ink}">Software updates</text>
+      <text x="190" y="140" font-size="13" fill="${ink}">Permissions</text>
+      ${marker(1, 140, 78)}${marker(2, 150, 40)}${marker(3, 330, 96)}${marker(4, 330, 140)}`);
+  }
+  if (id === "phones-compose-message") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="24" y="16" width="312" height="188" rx="8" fill="#f4efe4" stroke="${line}" stroke-width="2"/>
+      <text x="40" y="48" font-size="14" fill="${ink}">To</text>
+      <rect x="80" y="32" width="200" height="24" fill="#fff" stroke="${line}"/>
+      <text x="40" y="88" font-size="14" fill="${ink}">Subject</text>
+      <rect x="110" y="70" width="170" height="24" fill="#fff" stroke="${line}"/>
+      <rect x="40" y="108" width="240" height="70" fill="#fff" stroke="${line}"/>
+      <text x="52" y="132" font-size="13" fill="${ink}">Message</text>
+      <rect x="250" y="160" width="64" height="28" rx="6" fill="${line}"/>
+      <text x="266" y="178" font-size="13" fill="#fff">Send</text>
+      ${marker(1, 300, 44)}${marker(2, 300, 82)}${marker(3, 250, 130)}${marker(4, 282, 154)}`);
+  }
+  if (id === "excel-formula-bar") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="16" y="16" width="328" height="36" fill="#e7f0eb" stroke="${line}"/>
+      <text x="28" y="40" font-size="14" fill="${ink}">Home</text>
+      <rect x="16" y="60" width="64" height="28" fill="#fff" stroke="${line}"/>
+      <text x="28" y="78" font-size="13" fill="${ink}">A1</text>
+      <rect x="88" y="60" width="256" height="28" fill="#fff" stroke="${line}"/>
+      <text x="100" y="78" font-size="13" fill="${ink}">formula bar</text>
+      <rect x="16" y="100" width="328" height="100" fill="#fff" stroke="${line}"/>
+      <text x="40" y="140" font-size="13" fill="${ink}">A</text>
+      <text x="90" y="140" font-size="13" fill="${ink}">B</text>
+      ${marker(1, 70, 34)}${marker(2, 48, 74)}${marker(3, 320, 74)}`);
+  }
+  if (id === "excel-number-formats") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="20" y="36" font-size="16" fill="${ink}">Home · Number</text>
+      <rect x="20" y="52" width="200" height="150" fill="#fff" stroke="${line}"/>
+      <text x="36" y="80" font-size="14" fill="${ink}">General</text>
+      <text x="36" y="108" font-size="14" fill="${ink}">Currency</text>
+      <text x="36" y="136" font-size="14" fill="${ink}">Date</text>
+      <text x="36" y="164" font-size="14" fill="${ink}">Percentage</text>
+      ${marker(1, 240, 76)}${marker(2, 240, 108)}${marker(3, 240, 136)}${marker(4, 240, 164)}`);
+  }
+  if (id === "excel-sum-formula-bar") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="16" y="12" width="328" height="28" fill="#fff" stroke="${line}"/>
+      <text x="28" y="31" font-size="14" fill="${ink}">=SUM(B2:B8)</text>
+      <text x="40" y="64" font-size="13" fill="${ink}">A</text><text x="110" y="64" font-size="13" fill="${ink}">B</text>
+      <text x="24" y="88" font-size="13" fill="${ink}">2 Mon</text><text x="110" y="88" font-size="13" fill="${ink}">6</text>
+      <text x="24" y="110" font-size="13" fill="${ink}">3 Tue</text><text x="110" y="110" font-size="13" fill="${ink}">4</text>
+      <text x="24" y="132" font-size="13" fill="${ink}">4 Wed</text><text x="110" y="132" font-size="13" fill="${ink}">7.5</text>
+      <text x="24" y="176" font-size="13" fill="${ink}">9 Total</text><text x="100" y="176" font-size="13" fill="${ink}">25.5</text>
+      ${marker(1, 330, 26)}${marker(2, 160, 176)}${marker(3, 200, 110)}`);
+  }
+  if (id === "excel-relative-vs-absolute") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="16" y="28" font-size="13" fill="${ink}">Without $</text>
+      <text x="16" y="52" font-size="13" fill="${ink}">E2 =C2*H1</text>
+      <text x="16" y="76" font-size="13" fill="${ink}">E3 =C3*H2</text>
+      <text x="190" y="28" font-size="13" fill="${ink}">With $H$1</text>
+      <text x="190" y="52" font-size="13" fill="${ink}">E2 =C2*$H$1</text>
+      <text x="190" y="76" font-size="13" fill="${ink}">E3 =C3*$H$1</text>
+      ${marker(1, 150, 64)}${marker(2, 340, 64)}`);
+  }
+  if (id === "excel-print-preview-figure") {
+    return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+      <text x="16" y="32" font-size="14" fill="${ink}">File &gt; Print</text>
+      <rect x="140" y="24" width="200" height="150" fill="#fff" stroke="${line}" stroke-width="2"/>
+      <text x="160" y="70" font-size="14" fill="${ink}">Hours preview</text>
+      <text x="160" y="96" font-size="13" fill="${ink}">Mon 6</text>
+      <text x="160" y="150" font-size="13" fill="${ink}">Next page</text>
+      ${marker(1, 110, 28)}${marker(2, 320, 40)}${marker(3, 300, 190)}`);
+  }
+  return svgWrap(`<rect width="360" height="220" fill="#fffdf8"/>
+    <rect x="16" y="16" width="328" height="188" rx="6" fill="#f7f3ea" stroke="${line}" stroke-width="2"/>
+    <text x="28" y="40" font-size="14" fill="${ink}">Workbook</text>
+    <rect x="28" y="56" width="70" height="24" fill="#fff" stroke="${line}"/>
+    <text x="40" y="72" font-size="13" fill="${ink}">A1</text>
+    <rect x="28" y="96" width="280" height="70" fill="#fff" stroke="${line}"/>
+    <text x="48" y="124" font-size="13" fill="${ink}">A</text>
+    <text x="100" y="124" font-size="13" fill="${ink}">B</text>
+    <rect x="28" y="174" width="72" height="20" fill="#123c2e"/>
+    <text x="36" y="188" font-size="12" fill="#fff">Hours</text>
+    <rect x="104" y="174" width="80" height="20" fill="#fff" stroke="${line}"/>
+    <text x="112" y="188" font-size="12" fill="${ink}">Household</text>
+    ${marker(1, 300, 36)}${marker(2, 64, 184)}${marker(3, 63, 68)}`);
 }
 
 function annotatedImage(block) {
   const calls = (block.callouts || [])
     .map((item) => `<li>${esc(item.label)}</li>`)
     .join("");
-  const picture = block.src && !block.diagram
-    ? diagram(block.diagram || "grid")
-    : diagram(block.diagram || "grid");
   return `<figure class="block block-figure" data-block="annotatedImage" id="${esc(block.id || "")}">
-  <div class="stage">${picture}</div>
+  <div class="stage">${sceneSvg(block)}</div>
   <p class="caption">${esc(block.alt || "")}</p>
   <figcaption><ol class="callouts">${calls}</ol></figcaption>
 </figure>`;
 }
 
+function hoursGrid() {
+  return [
+    ["", "A", "B", "C", "D", "E"],
+    ["1", "Day", "Hours", "", "", ""],
+    ["2", "Mon", "6", "", "", ""],
+    ["3", "Tue", "4", "", "", ""],
+    ["4", "Wed", "7.5", "", "", ""],
+    ["5", "Thu", "0", "", "", ""],
+    ["6", "Fri", "5", "", "", ""],
+    ["7", "Sat", "3", "", "", ""],
+    ["8", "Sun", "0", "", "", ""],
+    ["9", "Total", "", "", "", ""]
+  ];
+}
+
+function blankGrid() {
+  return [
+    ["", "A", "B", "C"],
+    ["1", "", "", ""],
+    ["2", "", "", ""],
+    ["3", "", "", ""],
+    ["4", "", "", ""]
+  ];
+}
+
+function sheetTable(rows) {
+  return `<div class="sheet-scroll"><table class="sheet">${rows
+    .map((row, r) => {
+      const cells = row
+        .map((cell, c) => {
+          if (r === 0 || c === 0) return `<th>${esc(cell)}</th>`;
+          const ref = String.fromCharCode(64 + c) + r;
+          return `<td data-cell="${ref}"><button type="button" data-hotspot="${ref}" aria-label="Cell ${ref}"><span data-cell-value>${esc(cell)}</span></button></td>`;
+        })
+        .join("");
+      return `<tr>${cells}</tr>`;
+    })
+    .join("")}</table></div>`;
+}
+
+function frameKind(block) {
+  const blob = (block.id || "") + " " + (block.app || "") + " " + (block.caption || "");
+  if (/first-formula|autosum|enter-tab|enter-text/.test(block.id || "")) return "sheet";
+  if (/browser/.test(blob)) return "browser";
+  if (/computer|explorer/.test(blob) || /not the real computer/.test(block.caption || "")) return "computer";
+  if (/phone|android/.test(blob) || /not the real phone/.test(block.caption || "")) return "phone";
+  return "excel";
+}
+
 function simulation(block) {
+  const kind = frameKind(block);
+  const caption = block.caption || (kind === "phone" ? "Practice screen — not the real phone." : kind === "computer" ? "Practice screen — not the real computer." : kind === "browser" ? "Practice screen — not the real browser." : "Practice screen — not the real Excel.");
+  const title = kind === "phone" ? "Phone" : kind === "browser" ? "Browser" : kind === "computer" ? "Computer" : "Excel";
+  const steps = (block.steps || []).map((step) => {
+    const copy = {
+      id: step.id,
+      prompt: step.prompt,
+      pass: step.pass,
+      fail: step.fail,
+      correct: step.correct || []
+    };
+    if (block.id === "excel-first-formula" && step.id === "s4") copy.sequence = ["plus", "B3", "plus", "B4", "enter"];
+    return copy;
+  });
   const spots = [];
   const seen = {};
   (block.steps || []).forEach((step) => {
@@ -104,24 +282,66 @@ function simulation(block) {
       spots.push(spot);
     });
   });
-  const buttons = spots
-    .map(
-      (spot) =>
-        `<button type="button" class="btn btn-secondary" data-hotspot="${esc(spot.id)}" aria-label="${esc(spot.label || spot.id)}">${esc(spot.label || spot.id)}</button>`
-    )
-    .join("");
-  const config = JSON.stringify({ id: block.id, steps: block.steps || [] });
-  const caption = block.caption || (block.app === "phone" || block.app === "computer" ? "Practice screen — not the real " + block.app + "." : "Practice screen — not the real Excel.");
+  if (block.id === "excel-first-formula") {
+    ["plus", "B3"].forEach((id) => {
+      if (!seen[id]) spots.push({ id, label: id === "plus" ? "+" : "Cell B3" });
+    });
+  }
+  let stage = "";
+  const config = { id: block.id, kind, steps, values: {}, start: "A1" };
+  if (kind === "sheet") {
+    const rows = /enter-tab|enter-text/.test(block.id || "") ? blankGrid() : hoursGrid();
+    rows.forEach((row, r) => {
+      row.forEach((cell, c) => {
+        if (r === 0 || c === 0 || cell === "") return;
+        config.values[String.fromCharCode(64 + c) + r] = cell;
+      });
+    });
+    if (block.id === "excel-first-formula") config.finish = { cell: "E2", value: "17.5", formula: "=B2+B3+B4" };
+    if (block.id === "excel-autosum") config.finish = { cell: "B9", value: "25.5", formula: "=SUM(B2:B8)" };
+    const keys = [];
+    const need = new Set(spots.map((spot) => spot.id));
+    if (need.has("equals") || block.id === "excel-first-formula") keys.push(["equals", "="]);
+    if (need.has("plus") || block.id === "excel-first-formula") keys.push(["plus", "+"]);
+    if (need.has("enter") || kind === "sheet") keys.push(["enter", "Enter"]);
+    if (need.has("tab")) keys.push(["tab", "Tab"]);
+    if (need.has("autosum")) keys.push(["autosum", "AutoSum"]);
+    const keyHtml = keys
+      .map(([id, label]) => `<button type="button" class="btn btn-secondary" data-hotspot="${id}">${label}</button>`)
+      .join("");
+    stage = `<div class="practice-window">
+      <div class="pw-bar"><strong>${esc(title)}</strong></div>
+      <div class="formula-bar"><span data-name-box>A1</span><span data-formula-input></span></div>
+      ${sheetTable(rows)}
+      <div class="sheet-keys">${keyHtml}</div>
+      <p class="pw-status" data-sim-status></p>
+    </div>`;
+  } else {
+    const buttons = spots
+      .map(
+        (spot) =>
+          `<button type="button" class="btn btn-secondary" data-hotspot="${esc(spot.id)}">${esc(spot.label || spot.id)}</button>`
+      )
+      .join("");
+    const reveal = block.id === "excel-blank-workbook" ? `<div data-empty-grid hidden>${sheetTable(blankGrid())}</div>` : "";
+    if (block.id === "excel-blank-workbook") config.revealGrid = true;
+    stage = `<div class="practice-window">
+      <div class="pw-bar"><strong>${esc(title)}</strong></div>
+      <div class="pw-scroll">
+        <p class="pw-status" data-sim-status></p>
+        <div class="pw-menu" data-sim-menu>${buttons}</div>
+        ${reveal}
+      </div>
+    </div>`;
+  }
   return `<section class="block block-sim" data-block="simulation" data-sim="${esc(block.id || "")}" id="${esc(block.id || "")}">
   <h3>${esc(block.title || "Practice screen")}</h3>
   <p class="caption">${esc(caption)}</p>
-  <p class="meta">${esc(block.stage || "")}</p>
-  <div class="stage"><div class="ribbon">${buttons}</div><p class="caption" data-sim-result></p></div>
+  ${stage}
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
-  <div data-sim-fallback></div>
-  <script type="application/json" class="sim-key">${config}</script>
+  <script type="application/json" class="sim-key">${JSON.stringify(config)}</script>
 </section>`;
 }
 
@@ -153,8 +373,19 @@ function branch(block) {
 }
 
 function workedExample(block) {
+  const problem = block.problem || "";
+  const steps = block.steps || [];
+  const result = block.result || "";
+  if (problem || steps.length || result) {
+    const items = steps.map((step) => "<li>" + step + "</li>").join("");
+    return `<aside class="block block-example" data-block="workedExample"><h3>${esc(block.title || "Worked example")}</h3>
+      ${problem ? `<p class="block-label">Problem</p><div class="block-body"><p>${problem}</p></div>` : ""}
+      ${items ? `<p class="block-label">Steps</p><ol>${items}</ol>` : ""}
+      ${result ? `<p class="block-label">Result</p><div class="block-body"><p>${result}</p></div>` : ""}
+    </aside>`;
+  }
   if (block.html) {
-    return `<aside class="block block-example" data-block="workedExample"><p class="block-label">Example</p><h3>${esc(block.title || "Worked example")}</h3><div class="block-body">${block.html}</div></aside>`;
+    return `<aside class="block block-example" data-block="workedExample"><h3>${esc(block.title || "Worked example")}</h3><div class="block-body">${block.html}</div></aside>`;
   }
   return example(block);
 }

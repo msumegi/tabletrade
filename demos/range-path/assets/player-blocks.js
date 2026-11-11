@@ -117,80 +117,116 @@
   function setupSims() {
     document.querySelectorAll("[data-sim]").forEach(function (root) {
       var keyNode = root.querySelector(".sim-key");
-      var config = { steps: [] };
-      try { config = JSON.parse(keyNode.textContent); } catch (err) { config = { steps: [] }; }
+      var config = { steps: [], values: {} };
+      try { config = JSON.parse(keyNode.textContent); } catch (err) { config = { steps: [], values: {} }; }
+      config.values = config.values || {};
       var index = 0;
+      var seqAt = 0;
       var held = "";
+      var formula = "";
+      var selected = config.start || "A1";
+      var committed = false;
       var prompt = root.querySelector("[data-sim-prompt]");
       var live = root.querySelector("[data-sim-feedback]");
-      var fallback = root.querySelector("[data-sim-fallback]");
+      var status = root.querySelector("[data-sim-status]");
       function step() { return config.steps[index]; }
-      function applyResult(result) {
-        if (!result) return;
-        if (result.bar) {
-          var input = root.querySelector("[data-formula-input]");
-          if (input) input.value = result.bar;
+      function sequenceOf(current) {
+        if (current.sequence && current.sequence.length) return current.sequence;
+        return current.correct || [];
+      }
+      function move(ref, down, right) {
+        var match = /^([A-Z]+)(\d+)$/.exec(ref || "");
+        if (!match) return ref;
+        var col = match[1].charCodeAt(0) + right;
+        var row = Number(match[2]) + down;
+        if (col < 65) col = 65;
+        if (row < 1) row = 1;
+        return String.fromCharCode(col) + row;
+      }
+      function paint() {
+        var box = root.querySelector("[data-name-box]");
+        var bar = root.querySelector("[data-formula-input]");
+        if (box) box.textContent = selected;
+        if (bar) bar.textContent = formula;
+        root.querySelectorAll("[data-cell]").forEach(function (cell) {
+          var ref = cell.getAttribute("data-cell");
+          cell.classList.toggle("is-selected", ref === selected);
+          var label = cell.querySelector("[data-cell-value]");
+          if (label && Object.prototype.hasOwnProperty.call(config.values, ref)) label.textContent = config.values[ref];
+        });
+        if (status) status.textContent = held || "";
+      }
+      function finishSheet() {
+        if (!config.finish) return;
+        config.values[config.finish.cell] = config.finish.value;
+        formula = config.finish.formula;
+        selected = config.finish.cell;
+        committed = true;
+        paint();
+      }
+      function applyTap(id) {
+        if (/^[A-Z]+\d+$/.test(id)) {
+          selected = id;
+          if (!committed && formula.charAt(0) === "=") formula += id;
+        } else if (id === "equals") {
+          formula = "=";
+          committed = false;
+        } else if (id === "plus") {
+          formula += "+";
+        } else if (id === "autosum") {
+          formula = config.finish ? config.finish.formula : "=SUM(B2:B8)";
+          committed = false;
+        } else if (id === "enter" || id === "tab") {
+          var typed = formula.replace(/\s+/g, "");
+          if (config.finish && typed === config.finish.formula) finishSheet();
+          else if (id === "enter") selected = move(selected, 1, 0);
+          else selected = move(selected, 0, 1);
         }
-        if (result.cell) {
-          var cell = root.querySelector('[data-hotspot="' + result.cell + '"]');
-          if (cell) cell.textContent = result.text || "";
-        }
+        paint();
       }
       function show() {
         var current = step();
         root.querySelectorAll("[data-hotspot]").forEach(function (button) { button.classList.remove("is-target"); });
         live.textContent = held;
         live.className = held ? "feedback is-good" : "feedback";
+        paint();
         if (!current) {
+          finishSheet();
           prompt.textContent = "You finished this practice screen.";
           var showMe = root.querySelector("[data-sim-show]");
           if (showMe) showMe.hidden = true;
+          var menu = root.querySelector("[data-sim-menu]");
+          var empty = root.querySelector("[data-empty-grid]");
+          if (config.revealGrid && empty) {
+            empty.hidden = false;
+            if (menu) menu.hidden = true;
+            var first = empty.querySelector("[data-cell='A1']");
+            if (first) first.classList.add("is-selected");
+          }
           remember("sim:" + root.getAttribute("data-sim"), "simulation");
-          if (fallback) fallback.textContent = "";
           return;
         }
         prompt.textContent = (held ? "Next: " : "") + (current.prompt || "");
-        if (fallback) {
-          fallback.textContent = "";
-          var list = document.createElement("div");
-          list.className = "actions";
-          root.querySelectorAll("[data-hotspot]").forEach(function (spot) {
-            var button = document.createElement("button");
-            button.type = "button";
-            button.className = "btn btn-secondary";
-            button.textContent = spot.getAttribute("aria-label") || spot.textContent || spot.getAttribute("data-hotspot");
-            button.addEventListener("click", function () { choose(spot.getAttribute("data-hotspot"), spot); });
-            list.appendChild(button);
-          });
-          fallback.appendChild(list);
-        }
       }
-      function formulaOk(value, accept) {
-        var typed = String(value || "").replace(/\s+/g, "").toLowerCase();
-        return (accept || []).some(function (item) { return typed === String(item).replace(/\s+/g, "").toLowerCase(); });
-      }
-      function choose(id, source) {
+      function choose(id) {
         var current = step();
         if (!current) return;
-        var ok = false;
-        if (current.formula) {
-          var input = root.querySelector("[data-formula-input]");
-          ok = formulaOk(input && input.value, current.formula);
-          if (!ok && id !== "formula-bar") {
-            live.className = "feedback is-bad";
-            live.textContent = current.fail || "Type the formula in the formula bar, then check it.";
-            return;
-          }
-        } else {
-          ok = (current.correct || []).indexOf(id) !== -1;
-        }
-        if (!ok) {
+        var seq = sequenceOf(current);
+        var needed = seq[seqAt];
+        if (id !== needed) {
           live.className = "feedback is-bad";
-          live.textContent = current.fail || "Not quite. Try again.";
+          live.textContent = current.fail || "Not quite. Try the next part of this step.";
           return;
         }
-        held = (held ? held + " " : "") + (current.pass || "That's right.");
-        applyResult(current.result);
+        applyTap(id);
+        seqAt += 1;
+        if (seqAt < seq.length) {
+          live.className = "feedback is-good";
+          live.textContent = "Kept. Continue this step.";
+          return;
+        }
+        held = current.pass || "That's right.";
+        seqAt = 0;
         index += 1;
         show();
       }
@@ -202,9 +238,10 @@
         showMe.addEventListener("click", function () {
           var current = step();
           if (!current) return;
+          var seq = sequenceOf(current);
+          var needed = seq[seqAt];
           root.querySelectorAll("[data-hotspot]").forEach(function (button) {
-            var on = (current.correct || []).indexOf(button.getAttribute("data-hotspot")) !== -1;
-            button.classList.toggle("is-target", on);
+            button.classList.toggle("is-target", button.getAttribute("data-hotspot") === needed);
           });
         });
       }

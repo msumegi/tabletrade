@@ -127,7 +127,13 @@ ${main}
     </div>
   </footer>
   <script src="${root}assets/brand.js"></script>
-  <script src="${root}assets/demo-seed.js"></script>
+  <script>
+    (function () {
+      var demo = /(?:\\?|&)demo=1(?:&|$)/.test(location.search);
+      var staff = /\\/admin\\//.test(location.pathname);
+      if (demo || staff) document.write('<script src="${root}assets/demo-seed.js"><\\/script>');
+    })();
+  </script>
   <script src="${root}assets/billing.js"></script>
   <script src="${root}assets/data.js"></script>
   <script src="${root}assets/report-fields.js"></script>
@@ -241,7 +247,11 @@ function coursePlan(course) {
     lessons: course.lessons.map((lesson, index) => ({
       n: index + 1,
       title: lesson.title,
-      sections: (lesson.sections || []).map((section) => ({ id: section.id, title: section.title })),
+      sections: (lesson.sections || []).map((section) => ({
+        id: section.id,
+        title: section.title,
+        optional: /optional discussion/i.test(section.title || "")
+      })),
       assignment: lesson.assignment ? lesson.assignment.id || "lesson-" + (index + 1) + "-task" : "",
       quiz: Boolean(lesson.quiz && lesson.quiz.length)
     }))
@@ -249,19 +259,22 @@ function coursePlan(course) {
 }
 
 function sectionNav(sections) {
-  const total = sections.reduce((sum, section) => sum + (section.minutes || 0), 0);
+  if (!sections.length) return "";
   const items = sections
     .map(
-      (section) =>
-        `<li><a href="#section-${esc(section.id)}">${esc(section.title)}</a> <span class="meta">${section.minutes || 0} min</span></li>`
+      (section, index) =>
+        `<li><a href="#section-${esc(section.id)}" data-section-link="${index + 1}">${esc(section.title)}</a> <span class="meta">${section.minutes || 0} min</span></li>`
     )
     .join("");
-  return `<nav class="section-chips" aria-label="Sections in this lesson">${sections
-    .map((section) => {
-      const short = section.shortTitle || section.title;
-      return `<a href="#section-${esc(section.id)}">${esc(short)}${section.minutes ? " · " + section.minutes + " min" : ""}</a>`;
-    })
-    .join("")}</nav>`;
+  const next = sections[1] || sections[0];
+  return `<div class="section-picker">
+  <p class="section-now">Section <span data-section-now>1</span> of ${sections.length}</p>
+  <p class="actions"><a class="btn btn-secondary" data-section-prev href="#section-${esc(sections[0].id)}">Previous section</a> <a class="btn" data-section-next href="#section-${esc(next.id)}">Next section</a></p>
+  <details>
+    <summary>Sections in this lesson</summary>
+    <ol>${items}</ol>
+  </details>
+</div>`;
 }
 
 function filesBlock(files) {
@@ -279,19 +292,29 @@ function filesBlock(files) {
 <ul class="file-list">${starters.map(item).join("")}${solved.map(item).join("")}</ul>`;
 }
 
+function shareMinutes(lesson) {
+  const sections = lesson.sections || [];
+  const total = lesson.minutes || sections.length || 1;
+  const count = sections.length || 1;
+  const base = Math.floor(total / count);
+  let extra = total - base * count;
+  return sections.map((section, index) => Object.assign({}, section, { minutes: base + (index < extra ? 1 : 0) }));
+}
+
 function sectionedLesson(course, lesson, number) {
-  const sections = lesson.sections
+  const timed = shareMinutes(lesson);
+  const sections = timed
     .map((section, index) => {
       const blocks = section.blocks && section.blocks.length ? section.blocks : [{ type: "prose", html: section.html || "" }];
       const rendered = renderBlocks(blocks, { lessonNumber: number });
       rendered.unknown.forEach((type) => {
         console.warn(course.slug + " lesson " + number + ": no renderer for block type " + type);
       });
-      const prev = index > 0 ? lesson.sections[index - 1] : null;
-      const next = lesson.sections[index + 1];
+      const prev = index > 0 ? timed[index - 1] : null;
+      const next = timed[index + 1];
       return `<section class="lesson-section longform reading" id="section-${esc(section.id)}">
   <h2>${esc(section.title)}</h2>
-  <p class="meta">About ${section.minutes || 0} minutes to read, plus a short practice.</p>
+  <p class="meta">About ${section.minutes || 0} ${section.minutes === 1 ? "minute" : "minutes"} to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   ${rendered.html}
   <p class="actions">
@@ -306,7 +329,7 @@ function sectionedLesson(course, lesson, number) {
   const assignment = lesson.assignment
     ? renderBlocks([Object.assign({ type: "assignment" }, lesson.assignment)], { lessonNumber: number }).html
     : "";
-  return `${sectionNav(lesson.sections)}
+  return `${sectionNav(timed)}
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
 ${sections}
 ${filesBlock(lesson.files)}
@@ -360,7 +383,7 @@ function examPage(course, passLabel, need, total) {
             `<label class="option"><input type="radio" name="e${index}" value="${esc(choice.id)}"> <span>${esc(choice.text)}</span></label>`
         )
         .join("");
-      return `<fieldset class="q"><legend>${esc(question.prompt)}</legend>${choices}</fieldset>`;
+      return `<fieldset class="q exam-q" data-exam-q="${index}" ${index ? "hidden" : ""}><legend>${esc(question.prompt)}</legend>${choices}</fieldset>`;
     })
     .join("");
   const attemptLimit = course.finalExam.attemptLimit || 2;
@@ -372,15 +395,17 @@ function examPage(course, passLabel, need, total) {
 </div>
 <div id="exam-locked">
   <h2>Finish the lessons first</h2>
-  <p>This is the final exam. It stays closed until every section, lesson quiz, and practice task is done. The pass mark is ${passLabel} (at least ${need} of ${total}). The sample certificate stays locked until you pass.</p>
-  <ul data-exam-remaining></ul>
+  <p>This exam stays closed until the required sections, lesson quizzes, and practice tasks are done. Optional discussions are not required. The pass mark is ${passLabel} (at least ${need} of ${total}). The sample certificate stays locked until you pass.</p>
+  <div data-exam-remaining></div>
   <p><a class="btn" href="../">Back to the syllabus</a></p>
 </div>
 <div id="exam-open" hidden>
-  <p>Answer every question, then submit. Correct answers stay hidden. After you submit, you will see your score and which topics to review. This exam allows ${attemptLimit} attempts. Your score stays on this device.</p>
+  <p>One question at a time. You can go back, then review every answer before you submit. Correct answers stay hidden. This exam allows ${attemptLimit} attempts. Your score stays on this device.</p>
   <form data-exam data-course="${esc(course.slug)}" data-pass="${course.finalExam.passMark || 0.7}" data-attempts="${attemptLimit}">
+    <p data-exam-progress>Question 1 of ${questions.length}</p>
     ${fields}
-    <p class="actions"><button type="submit" class="btn">Submit exam</button></p>
+    <div data-exam-review hidden></div>
+    <p class="actions"><button type="button" class="btn btn-secondary" data-exam-back>Back</button> <button type="button" class="btn" data-exam-next>Next</button> <button type="submit" class="btn" data-exam-submit hidden>Submit exam</button></p>
     <div class="quiz-result" aria-live="polite"></div>
   </form>
 </div>
@@ -588,7 +613,7 @@ function ensureScript(html, root, file) {
 
 function ensureDataScripts(html, root) {
   let out = html;
-  ["brand.js", "demo-seed.js", "billing.js", "data.js", "report-fields.js", "player-blocks.js"].forEach((file) => {
+  ["brand.js", "billing.js", "data.js", "report-fields.js", "player-blocks.js"].forEach((file) => {
     out = ensureScript(out, root, file);
   });
   return out;

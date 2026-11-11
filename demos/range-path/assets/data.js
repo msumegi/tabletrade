@@ -16,8 +16,12 @@
 
   function emptyStore() {
     return {
-      organizations: {},
-      users: {},
+      organizations: {
+        "org-example": { id: "org-example", name: "EXAMPLE Community Adult Learning", accessState: "active", seatCap: null }
+      },
+      users: {
+        "user-demo-learner": { id: "user-demo-learner", name: "Sample learner", role: "learner", orgId: "org-example", status: "active", learnerCode: "SAMPLE" }
+      },
       classes: {},
       enrollments: {},
       progress: {},
@@ -91,6 +95,12 @@
         else if (!memory.organizations[id].accessState && seed.organizations[id]) {
           memory.organizations[id].accessState = seed.organizations[id].accessState || "active";
         }
+      });
+      ["users", "enrollments", "classes", "certificates", "courseAssignments", "subscriptions", "invoices"].forEach(function (key) {
+        Object.keys(seed[key] || {}).forEach(function (id) {
+          if (!memory[key]) memory[key] = {};
+          if (!memory[key][id]) memory[key][id] = seed[key][id];
+        });
       });
       return memory;
     }
@@ -520,12 +530,20 @@
         });
         var lessonsTotal = row.lessonsTotal || 0;
         var lessonsDone = row.lessonsCompletedCount || 0;
+        var catalogue = global.LEARNHERE || global.RANGE_PATH;
+        if (catalogue && catalogue.courses) {
+          catalogue.courses.forEach(function (course) {
+            if (course.id === row.courseId && course.lessons) lessonsTotal = course.lessons;
+          });
+        }
         var stated = typeof assign.statedCourseHours === "number" ? assign.statedCourseHours : null;
         var estimated = stated != null && lessonsTotal ? Math.round((stated * lessonsDone / lessonsTotal) * 10) / 10 : null;
         var exam = null;
         progress.forEach(function (item) {
           if (item.learnerId === row.learnerId && item.courseId === row.courseId && item.itemId === "exam:final") exam = item;
         });
+        if (((exam && exam.detail && exam.detail.passed) || cert) && lessonsTotal) lessonsDone = lessonsTotal;
+        estimated = stated != null && lessonsTotal ? Math.round((stated * lessonsDone / lessonsTotal) * 10) / 10 : null;
         return {
           learnerId: row.learnerId,
           learnerCode: person.learnerCode || row.learnerCode || "",
@@ -542,11 +560,11 @@
           started: courseWasStarted(row),
           lessonsCompletedCount: lessonsDone,
           lessonsTotal: lessonsTotal,
-          completed: row.status === "completed",
+          completed: row.status === "completed" || Boolean((exam && exam.detail && exam.detail.passed) || cert),
           statedCourseHours: stated,
           finalExamScore: exam && exam.detail && exam.detail.percent != null ? exam.detail.percent : (cert ? cert.percent : ""),
           finalExamAttempts: exam && exam.detail && exam.detail.attempts ? exam.detail.attempts.length : (row.status === "completed" ? 1 : ""),
-          finalExamPassed: Boolean((exam && exam.detail && exam.detail.passed) || row.status === "completed"),
+          finalExamPassed: Boolean((exam && exam.detail && exam.detail.passed) || cert || row.status === "completed"),
           estimatedTimeOnTaskHours: estimated,
           certificateId: cert ? cert.id : "",
           certificateIssuedAt: cert ? cert.issuedAt : "",

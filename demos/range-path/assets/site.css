@@ -796,6 +796,23 @@ footer.site {
   text-align: left;
   vertical-align: top;
 }
+.practice-window { border: 2px solid var(--spruce); border-radius: 12px; background: #fffdf8; max-width: 100%; overflow: hidden; }
+.pw-bar, .formula-bar { display: flex; gap: 0.5rem; align-items: center; min-height: 44px; padding: 0.4rem 0.6rem; background: var(--stage); border-bottom: 1px solid var(--line); }
+.formula-bar span { min-height: 36px; display: inline-flex; align-items: center; }
+[data-name-box] { min-width: 3rem; font-weight: 700; }
+[data-formula-input] { flex: 1; font-family: ui-monospace, monospace; }
+.sheet-scroll, .pw-scroll { overflow-x: auto; max-width: 100%; }
+.sheet { border-collapse: collapse; }
+.sheet th, .sheet td { border: 1px solid var(--line); padding: 0; white-space: nowrap; }
+.sheet button { min-width: 44px; min-height: 44px; padding: 0.4rem 0.6rem; white-space: nowrap; background: #fff; color: var(--ink); border: 0; }
+.sheet td.is-selected { outline: 3px solid var(--hotspot); outline-offset: -3px; }
+.sheet-keys, .pw-menu { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.6rem; }
+.sheet-keys button, .pw-menu button { white-space: nowrap; min-height: 44px; width: auto; flex: 0 0 auto; }
+.pw-status { margin: 0; padding: 0 0.6rem 0.6rem; }
+.section-picker { margin: 0 0 1rem; }
+.section-picker summary, .section-picker a { min-height: 44px; }
+#exam-locked summary, #exam-locked a { min-height: 44px; display: flex; align-items: center; }
+.exam-q[hidden], [data-exam-review][hidden] { display: none; }
 .section-chips {
   display: flex;
   flex-wrap: wrap;

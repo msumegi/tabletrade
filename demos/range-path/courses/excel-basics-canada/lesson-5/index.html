@@ -44,11 +44,18 @@
 <p class="step-label">Lesson 5 of 10 · about 7 min to read</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="5" aria-label="Lesson 5 of 10"><span style="width:50%"></span></div>
 <h1>Write a simple formula that starts with =</h1>
-<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-chapter-1-a-formula-always-starts-with">A formula always starts with = · 4 min</a><a href="#section-chapter-2-point-the-formula-at-other-cells">Point the formula at other cells · 4 min</a><a href="#section-chapter-3-multiply-and-divide-before-you-add-and">Multiply and divide before you add and subtract · 4 min</a><a href="#section-worked-example-1-four-tiny-formulas-on-the-pract">Worked example 1. Four tiny formulas on the Practice sheet · 4 min</a><a href="#section-worked-example-2-add-three-days-then-test-5-2-3">Worked example 2. Add three days, then test =5+2*3 · 4 min</a><a href="#section-try-it">Try it · 4 min</a><a href="#section-optional-discussion-council-study-group">Optional discussion (council study group) · 4 min</a></nav>
+<div class="section-picker">
+  <p class="section-now">Section <span data-section-now>1</span> of 7</p>
+  <p class="actions"><a class="btn btn-secondary" data-section-prev href="#section-chapter-1-a-formula-always-starts-with">Previous section</a> <a class="btn" data-section-next href="#section-chapter-2-point-the-formula-at-other-cells">Next section</a></p>
+  <details>
+    <summary>Sections in this lesson</summary>
+    <ol><li><a href="#section-chapter-1-a-formula-always-starts-with" data-section-link="1">A formula always starts with =</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-2-point-the-formula-at-other-cells" data-section-link="2">Point the formula at other cells</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-3-multiply-and-divide-before-you-add-and" data-section-link="3">Multiply and divide before you add and subtract</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-1-four-tiny-formulas-on-the-pract" data-section-link="4">Worked example 1. Four tiny formulas on the Practice sheet</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-2-add-three-days-then-test-5-2-3" data-section-link="5">Worked example 2. Add three days, then test =5+2*3</a> <span class="meta">1 min</span></li><li><a href="#section-try-it" data-section-link="6">Try it</a> <span class="meta">1 min</span></li><li><a href="#section-optional-discussion-council-study-group" data-section-link="7">Optional discussion (council study group)</a> <span class="meta">1 min</span></li></ol>
+  </details>
+</div>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
 <section class="lesson-section longform reading" id="section-chapter-1-a-formula-always-starts-with">
   <h2>A formula always starts with =</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>A formula is an instruction that tells Excel to calculate. Microsoft's formula pages repeat one rule: a formula always begins with an equal sign (<code>=</code>). If you type <code>2+4</code> without the equal sign, Excel usually treats it as text — it will not give you 6. If you type <code>=2+4</code> and press Enter, Excel runs the calculation and the cell shows 6. The formula bar still shows <code>=2+4</code>, so you can see how the answer was made.</p>
 <p>Microsoft's simple-formula page says a simple formula starts with <code>=</code>, then numbers (constants) and operators:</p>
@@ -56,7 +63,7 @@
 <p>Their starter examples are <code>=2+4</code>, <code>=4-2</code>, <code>=2*4</code>, and <code>=4/2</code>. You can type those on the Practice sheet right now. After you press Enter (Windows) or Return (Mac), the cell shows the result. Microsoft also notes that you can press Ctrl+Enter if you want the cursor to stay on the active cell after the formula calculates.</p>
 <p>Type the equal sign first, then the rest. If you forget <code>=</code> and already pressed Enter, click the cell, type the formula again starting with <code>=</code>, and press Enter. Watch the formula bar, not only the grid, when you want to know whether a cell holds a formula or a typed-in number.</p>
 <p>You can practise these tiny formulas on the Practice sheet without touching the sample Hours or Household data. Use a clear empty area, such as row 10 downward, so your tests do not sit on top of headers.</p>
-<p><strong>Progress:</strong> Lesson 5, part 2 of 3.</p></div>
+</div>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="chapter-1-a-formula-always-starts-with" data-lesson="5">Mark this section as read</button>
@@ -66,7 +73,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-2-point-the-formula-at-other-cells">
   <h2>Point the formula at other cells</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Adding <code>=2+4</code> is a good first test, but everyday lists change. If Wednesday's hours change from 7.5 to 8, a formula that literally says <code>=6+4+7.5</code> will be wrong until you edit it. A better habit is to point at the cells that already hold the numbers.</p>
 <p>Microsoft's overview shows this pattern: select a cell, type <code>=</code>, select a cell (or type its address), type an operator, select the next cell, and press Enter. The result appears in the cell that holds the formula. Microsoft's simple-formula page adds that instead of typing the numbers, you can select the cells that contain the values and type the operators between those selections.</p>
@@ -76,15 +83,19 @@
 <section class="block block-sim" data-block="simulation" data-sim="excel-first-formula" id="excel-first-formula">
   <h3>Build =B2+B3+B4 by tapping cells</h3>
   <p class="caption">Practice screen — not the real Excel.</p>
-  <p class="meta">Hours sheet with sample hours in B2 (6), B3 (4), and B4 (7.5). E2 is empty. Formula bar visible.</p>
-  <div class="stage"><div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="E2" aria-label="Cell E2">Cell E2</button><button type="button" class="btn btn-secondary" data-hotspot="equals" aria-label="Equals key">Equals key</button><button type="button" class="btn btn-secondary" data-hotspot="B2" aria-label="Cell B2">Cell B2</button><button type="button" class="btn btn-secondary" data-hotspot="B4" aria-label="Cell B4">Cell B4</button><button type="button" class="btn btn-secondary" data-hotspot="enter" aria-label="Enter key">Enter key</button></div><p class="caption" data-sim-result></p></div>
+  <div class="practice-window">
+      <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="formula-bar"><span data-name-box>A1</span><span data-formula-input></span></div>
+      <div class="sheet-scroll"><table class="sheet"><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr><tr><th>1</th><td data-cell="A1"><button type="button" data-hotspot="A1" aria-label="Cell A1"><span data-cell-value>Day</span></button></td><td data-cell="B1"><button type="button" data-hotspot="B1" aria-label="Cell B1"><span data-cell-value>Hours</span></button></td><td data-cell="C1"><button type="button" data-hotspot="C1" aria-label="Cell C1"><span data-cell-value></span></button></td><td data-cell="D1"><button type="button" data-hotspot="D1" aria-label="Cell D1"><span data-cell-value></span></button></td><td data-cell="E1"><button type="button" data-hotspot="E1" aria-label="Cell E1"><span data-cell-value></span></button></td></tr><tr><th>2</th><td data-cell="A2"><button type="button" data-hotspot="A2" aria-label="Cell A2"><span data-cell-value>Mon</span></button></td><td data-cell="B2"><button type="button" data-hotspot="B2" aria-label="Cell B2"><span data-cell-value>6</span></button></td><td data-cell="C2"><button type="button" data-hotspot="C2" aria-label="Cell C2"><span data-cell-value></span></button></td><td data-cell="D2"><button type="button" data-hotspot="D2" aria-label="Cell D2"><span data-cell-value></span></button></td><td data-cell="E2"><button type="button" data-hotspot="E2" aria-label="Cell E2"><span data-cell-value></span></button></td></tr><tr><th>3</th><td data-cell="A3"><button type="button" data-hotspot="A3" aria-label="Cell A3"><span data-cell-value>Tue</span></button></td><td data-cell="B3"><button type="button" data-hotspot="B3" aria-label="Cell B3"><span data-cell-value>4</span></button></td><td data-cell="C3"><button type="button" data-hotspot="C3" aria-label="Cell C3"><span data-cell-value></span></button></td><td data-cell="D3"><button type="button" data-hotspot="D3" aria-label="Cell D3"><span data-cell-value></span></button></td><td data-cell="E3"><button type="button" data-hotspot="E3" aria-label="Cell E3"><span data-cell-value></span></button></td></tr><tr><th>4</th><td data-cell="A4"><button type="button" data-hotspot="A4" aria-label="Cell A4"><span data-cell-value>Wed</span></button></td><td data-cell="B4"><button type="button" data-hotspot="B4" aria-label="Cell B4"><span data-cell-value>7.5</span></button></td><td data-cell="C4"><button type="button" data-hotspot="C4" aria-label="Cell C4"><span data-cell-value></span></button></td><td data-cell="D4"><button type="button" data-hotspot="D4" aria-label="Cell D4"><span data-cell-value></span></button></td><td data-cell="E4"><button type="button" data-hotspot="E4" aria-label="Cell E4"><span data-cell-value></span></button></td></tr><tr><th>5</th><td data-cell="A5"><button type="button" data-hotspot="A5" aria-label="Cell A5"><span data-cell-value>Thu</span></button></td><td data-cell="B5"><button type="button" data-hotspot="B5" aria-label="Cell B5"><span data-cell-value>0</span></button></td><td data-cell="C5"><button type="button" data-hotspot="C5" aria-label="Cell C5"><span data-cell-value></span></button></td><td data-cell="D5"><button type="button" data-hotspot="D5" aria-label="Cell D5"><span data-cell-value></span></button></td><td data-cell="E5"><button type="button" data-hotspot="E5" aria-label="Cell E5"><span data-cell-value></span></button></td></tr><tr><th>6</th><td data-cell="A6"><button type="button" data-hotspot="A6" aria-label="Cell A6"><span data-cell-value>Fri</span></button></td><td data-cell="B6"><button type="button" data-hotspot="B6" aria-label="Cell B6"><span data-cell-value>5</span></button></td><td data-cell="C6"><button type="button" data-hotspot="C6" aria-label="Cell C6"><span data-cell-value></span></button></td><td data-cell="D6"><button type="button" data-hotspot="D6" aria-label="Cell D6"><span data-cell-value></span></button></td><td data-cell="E6"><button type="button" data-hotspot="E6" aria-label="Cell E6"><span data-cell-value></span></button></td></tr><tr><th>7</th><td data-cell="A7"><button type="button" data-hotspot="A7" aria-label="Cell A7"><span data-cell-value>Sat</span></button></td><td data-cell="B7"><button type="button" data-hotspot="B7" aria-label="Cell B7"><span data-cell-value>3</span></button></td><td data-cell="C7"><button type="button" data-hotspot="C7" aria-label="Cell C7"><span data-cell-value></span></button></td><td data-cell="D7"><button type="button" data-hotspot="D7" aria-label="Cell D7"><span data-cell-value></span></button></td><td data-cell="E7"><button type="button" data-hotspot="E7" aria-label="Cell E7"><span data-cell-value></span></button></td></tr><tr><th>8</th><td data-cell="A8"><button type="button" data-hotspot="A8" aria-label="Cell A8"><span data-cell-value>Sun</span></button></td><td data-cell="B8"><button type="button" data-hotspot="B8" aria-label="Cell B8"><span data-cell-value>0</span></button></td><td data-cell="C8"><button type="button" data-hotspot="C8" aria-label="Cell C8"><span data-cell-value></span></button></td><td data-cell="D8"><button type="button" data-hotspot="D8" aria-label="Cell D8"><span data-cell-value></span></button></td><td data-cell="E8"><button type="button" data-hotspot="E8" aria-label="Cell E8"><span data-cell-value></span></button></td></tr><tr><th>9</th><td data-cell="A9"><button type="button" data-hotspot="A9" aria-label="Cell A9"><span data-cell-value>Total</span></button></td><td data-cell="B9"><button type="button" data-hotspot="B9" aria-label="Cell B9"><span data-cell-value></span></button></td><td data-cell="C9"><button type="button" data-hotspot="C9" aria-label="Cell C9"><span data-cell-value></span></button></td><td data-cell="D9"><button type="button" data-hotspot="D9" aria-label="Cell D9"><span data-cell-value></span></button></td><td data-cell="E9"><button type="button" data-hotspot="E9" aria-label="Cell E9"><span data-cell-value></span></button></td></tr></table></div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="equals">=</button><button type="button" class="btn btn-secondary" data-hotspot="plus">+</button><button type="button" class="btn btn-secondary" data-hotspot="enter">Enter</button></div>
+      <p class="pw-status" data-sim-status></p>
+    </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
-  <div data-sim-fallback></div>
-  <script type="application/json" class="sim-key">{"id":"excel-first-formula","steps":[{"id":"s1","prompt":"Tap cell E2, where the formula will go.","hotspots":[{"id":"E2","x":0.72,"y":0.38,"w":0.14,"h":0.08,"label":"Cell E2"}],"correct":["E2"],"pass":"E2 is active.","fail":"E2 is an empty cell to the right of the hours list."},{"id":"s2","prompt":"Type an equal sign (=). Every simple formula starts this way.","hotspots":[{"id":"equals","x":0.2,"y":0.84,"w":0.1,"h":0.08,"label":"Equals key"}],"correct":["equals"],"pass":"E2 and the formula bar show = and Excel is waiting for the rest.","fail":"Type = first. Without it, Excel will not treat this as a formula."},{"id":"s3","prompt":"Tap cell B2 (Monday’s hours).","hotspots":[{"id":"B2","x":0.28,"y":0.38,"w":0.14,"h":0.08,"label":"Cell B2"}],"correct":["B2"],"pass":"The formula becomes =B2.","fail":"B2 is Monday’s hours (6 in the sample). Tap that cell rather than retyping 6."},{"id":"s4","prompt":"Type +, tap B3, type +, tap B4, then tap Enter.","hotspots":[{"id":"B4","x":0.28,"y":0.52,"w":0.14,"h":0.08,"label":"Cell B4"},{"id":"enter","x":0.72,"y":0.84,"w":0.22,"h":0.08,"label":"Enter key"}],"correct":["B4","enter"],"pass":"E2 displays 17.5 with the sample data (6+4+7.5). The formula bar shows =B2+B3+B4 when E2 is selected again.","fail":"Build =B2+B3+B4 by tapping the hour cells and typing + between them, then Enter."}]}</script>
+  <script type="application/json" class="sim-key">{"id":"excel-first-formula","kind":"sheet","steps":[{"id":"s1","prompt":"Tap cell E2, where the formula will go.","pass":"E2 is active.","fail":"E2 is an empty cell to the right of the hours list.","correct":["E2"]},{"id":"s2","prompt":"Type an equal sign (=). Every simple formula starts this way.","pass":"E2 and the formula bar show = and Excel is waiting for the rest.","fail":"Type = first. Without it, Excel will not treat this as a formula.","correct":["equals"]},{"id":"s3","prompt":"Tap cell B2 (Monday’s hours).","pass":"The formula becomes =B2.","fail":"B2 is Monday’s hours (6 in the sample). Tap that cell rather than retyping 6.","correct":["B2"]},{"id":"s4","prompt":"Type +, tap B3, type +, tap B4, then tap Enter.","pass":"E2 displays 17.5 with the sample data (6+4+7.5). The formula bar shows =B2+B3+B4 when E2 is selected again.","fail":"Build =B2+B3+B4 by tapping the hour cells and typing + between them, then Enter.","correct":["B4","enter"],"sequence":["plus","B3","plus","B4","enter"]}],"values":{"A1":"Day","B1":"Hours","A2":"Mon","B2":"6","A3":"Tue","B3":"4","A4":"Wed","B4":"7.5","A5":"Thu","B5":"0","A6":"Fri","B6":"5","A7":"Sat","B7":"3","A8":"Sun","B8":"0","A9":"Total"},"start":"A1","finish":{"cell":"E2","value":"17.5","formula":"=B2+B3+B4"}}</script>
 </section>
-<div class="block" data-block="prose"><p><strong>Progress:</strong> Lesson 5, part 3 of 3.</p></div>
+<div class="block" data-block="prose"></div>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-1-a-formula-always-starts-with">Previous section</a>
     <button type="button" class="btn" data-read-section="chapter-2-point-the-formula-at-other-cells" data-lesson="5">Mark this section as read</button>
@@ -94,7 +105,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-3-multiply-and-divide-before-you-add-and">
   <h2>Multiply and divide before you add and subtract</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Excel follows the standard order of mathematical operations. Microsoft's simple-formula page states that multiplication and division are performed before addition and subtraction. Their example is to type <code>=5+2*3</code> and press Enter. Excel multiplies the last two numbers (2 × 3 = 6) and then adds the first number (5 + 6). The result is 11, not 21.</p>
 <p>This matters in real lists. Suppose you want to add two hour totals and then multiply by a sample extra rate later in the course. If you write the operators in a long line, Excel will not always go left to right. Read the formula bar and do a rough check in your head: “Which part happens first?” If the on-screen answer is far from your estimate, look at the operators before you trust the cell.</p>
@@ -115,20 +126,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-1-four-tiny-formulas-on-the-pract">
   <h2>Worked example 1. Four tiny formulas on the Practice sheet</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <aside class="block block-example" data-block="example">
-  <h3>Worked example 1. Four tiny formulas on the Practice sheet</h3>
-  <p class="block-label">Problem</p>
-  <p></p>
-  <p class="block-label">Steps</p>
-  <ol></ol>
-  <p class="block-label">Result</p>
-  <p></p>
-</aside>
-<div class="block" data-block="prose"><p>On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:</p>
-<ul><li><code>=2+4</code> — the cell should show 6</li><li><code>=4-2</code> — the cell should show 2</li><li><code>=2*4</code> — the cell should show 8</li><li><code>=4/2</code> — the cell should show 2</li></ul>
-<p>These match Microsoft's starter set. If a cell shows the characters <code>=2+4</code> instead of 6, the equal sign may be missing or the cell may be formatted as text. Click it, type the formula again starting with <code>=</code>, and press Enter.</p></div>
+  <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Four tiny formulas on the Practice sheet</h3>
+      <p class="block-label">Problem</p><div class="block-body"><p>On the Practice sheet, starting in A10, type these four formulas in separate cells and press Enter after each one:</p></div>
+      <p class="block-label">Steps</p><ol><li><code>=2+4</code> — the cell should show 6</li><li><code>=4-2</code> — the cell should show 2</li><li><code>=2*4</code> — the cell should show 8</li><li><code>=4/2</code> — the cell should show 2</li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>These match Microsoft's starter set. If a cell shows the characters <code>=2+4</code> instead of 6, the equal sign may be missing or the cell may be formatted as text. Click it, type the formula again starting with <code>=</code>, and press Enter.</p></div>
+    </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-multiply-and-divide-before-you-add-and">Previous section</a>
     <button type="button" class="btn" data-read-section="worked-example-1-four-tiny-formulas-on-the-pract" data-lesson="5">Mark this section as read</button>
@@ -138,19 +142,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-2-add-three-days-then-test-5-2-3">
   <h2>Worked example 2. Add three days, then test =5+2*3</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <aside class="block block-example" data-block="example">
-  <h3>Worked example 2. Add three days, then test =5+2*3</h3>
-  <p class="block-label">Problem</p>
-  <p></p>
-  <p class="block-label">Steps</p>
-  <ol></ol>
-  <p class="block-label">Result</p>
-  <p></p>
-</aside>
-<div class="block" data-block="prose"><p>On the Hours sheet, in E2 enter <code>=B2+B3+B4</code>. With the sample data, the result is 17.5. Change B3 from 4 to 5 temporarily: E2 should become 18.5. Then put B3 back to 4 so the sample file stays correct.</p>
-<p>On the Practice sheet, in a spare cell type <code>=5+2*3</code> and press Enter. Confirm that the result is 11. That single check is the reminder: multiplication happens before addition.</p></div>
+  <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Add three days, then test =5+2*3</h3>
+      <p class="block-label">Problem</p><div class="block-body"><p>On the Hours sheet, in E2 enter <code>=B2+B3+B4</code>. With the sample data, the result is 17.5. Change B3 from 4 to 5 temporarily: E2 should become 18.5. Then put B3 back to 4 so the sample file stays correct.</p></div>
+      
+      <p class="block-label">Result</p><div class="block-body"><p>On the Practice sheet, in a spare cell type <code>=5+2*3</code> and press Enter. Confirm that the result is 11. That single check is the reminder: multiplication happens before addition.</p></div>
+    </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-four-tiny-formulas-on-the-pract">Previous section</a>
     <button type="button" class="btn" data-read-section="worked-example-2-add-three-days-then-test-5-2-3" data-lesson="5">Mark this section as read</button>
@@ -160,7 +158,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-try-it">
   <h2>Try it</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><ol><li>On the Practice sheet, type <code>=2+4</code> and confirm you see 6.</li><li>On the Hours sheet, in E2 type <code>=B2+B3+B4</code> (by typing or by clicking the cells) and confirm 17.5.</li><li>In another Practice cell, type <code>=5+2*3</code> and confirm 11.</li><li>Click each formula cell and read the formula bar so you see the instruction, not only the result.</li></ol></div>
   <p class="actions">
@@ -172,7 +170,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-optional-discussion-council-study-group">
   <h2>Optional discussion (council study group)</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>When would you rather click cells to build a formula than type addresses such as B2? When might typing the address be easier?</p></div>
 <aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l5-sheet"><h2>Simple formulas — take-home steps</h2><ul><li>A simple formula starts with =</li><li>Add with +, subtract with -, multiply with *, divide with /</li><li>You can tap cells instead of typing their addresses</li><li>Multiplication and division happen before addition and subtraction</li><li>Microsoft’s example =5+2*3 gives 11, not 21</li><li>Read the formula bar to see the instruction, not only the result</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
@@ -220,7 +218,13 @@
     </div>
   </footer>
   <script src="../../../assets/brand.js"></script>
-  <script src="../../../assets/demo-seed.js"></script>
+  <script>
+    (function () {
+      var demo = /(?:\?|&)demo=1(?:&|$)/.test(location.search);
+      var staff = /\/admin\//.test(location.pathname);
+      if (demo || staff) document.write('<script src="../../../assets/demo-seed.js"><\/script>');
+    })();
+  </script>
   <script src="../../../assets/billing.js"></script>
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>

@@ -112,6 +112,7 @@
     var row = lessonRow(data, id, item.n);
     var sections = item.sections || [];
     for (var i = 0; i < sections.length; i++) {
+      if (sections[i] && sections[i].optional) continue;
       if (!sectionRead(row, sections[i])) return false;
     }
     if (item.quiz && !row.done) return false;
@@ -153,6 +154,7 @@
       plan.lessons.forEach(function (item) {
         var row = lessonRow(data, id, item.n);
         (item.sections || []).forEach(function (section) {
+          if (section && section.optional) return;
           total += 1;
           if (sectionRead(row, section)) done += 1;
         });
@@ -191,6 +193,7 @@
         var row = lessonRow(data, id, item.n);
         var sections = item.sections || [];
         for (var s = 0; s < sections.length; s++) {
+          if (sections[s] && sections[s].optional) continue;
           if (!sectionRead(row, sections[s])) return base + "lesson-" + item.n + "/#section-" + sectionIdOf(sections[s]);
         }
         if (item.quiz && !row.done) return base + "lesson-" + item.n + "/quiz/";
@@ -291,14 +294,14 @@
         var id = item.id || item;
         var shortTitle = item.shortTitle || id;
         sum += coursePercent(data, id);
-        steps += (item.lessons || lessonCount(id)) + 1;
+        steps += item.lessons || lessonCount(id);
         if (target) return;
         var href = nextHref(data, id, id + "/");
         if (href.indexOf("certificate") === -1) target = { href: href, id: id, shortTitle: shortTitle };
       });
       var summary = document.querySelector("#continue-summary");
       if (summary && order.length) {
-        summary.textContent = Math.round(sum / order.length) + "% of the catalogue finished on this device (" + steps + " lessons and quizzes).";
+        summary.textContent = Math.round(sum / order.length) + "% of the catalogue finished on this device (" + steps + " lessons).";
       }
       if (!target) {
         var firstId = order[0].id || order[0];
@@ -777,6 +780,10 @@
   }
 
   function setupRoleSwitcher() {
+    document.querySelectorAll('a[href$="admin/"]').forEach(function (link) {
+      if (!demoOn()) link.hidden = true;
+    });
+    if (!demoOn()) return;
     var api = store();
     var footer = document.querySelector("footer.site .wrap, footer.site .wrap-wide");
     if (!api || !footer || document.getElementById("demo-controls")) return;
@@ -926,6 +933,85 @@
     }
   }
 
+  function setupExamPager(form) {
+    var questions = Array.prototype.slice.call(form.querySelectorAll("[data-exam-q]"));
+    if (!questions.length) return;
+    var progress = form.querySelector("[data-exam-progress]");
+    var back = form.querySelector("[data-exam-back]");
+    var next = form.querySelector("[data-exam-next]");
+    var review = form.querySelector("[data-exam-review]");
+    var submit = form.querySelector("[data-exam-submit]");
+    var at = 0;
+    var reviewing = false;
+    function paint() {
+      questions.forEach(function (question, index) { question.hidden = reviewing || index !== at; });
+      if (review) review.hidden = !reviewing;
+      if (progress) progress.textContent = reviewing ? "Review your answers" : "Question " + (at + 1) + " of " + questions.length;
+      if (back) back.hidden = !reviewing && at === 0;
+      if (next) {
+        next.hidden = reviewing;
+        next.textContent = at === questions.length - 1 ? "Review answers" : "Next";
+      }
+      if (submit) submit.hidden = !reviewing;
+      if (reviewing && review) {
+        review.textContent = "";
+        var list = document.createElement("ol");
+        questions.forEach(function (question, index) {
+          var chosen = question.querySelector("input:checked");
+          var legend = question.querySelector("legend");
+          var li = document.createElement("li");
+          li.textContent = (legend ? legend.textContent : "Question " + (index + 1)) + " — " + (chosen ? chosen.value : "Not answered");
+          list.appendChild(li);
+        });
+        review.appendChild(list);
+      }
+    }
+    if (back) back.addEventListener("click", function () {
+      if (reviewing) { reviewing = false; at = questions.length - 1; }
+      else if (at > 0) at -= 1;
+      paint();
+    });
+    if (next) next.addEventListener("click", function () {
+      if (at < questions.length - 1) at += 1;
+      else reviewing = true;
+      paint();
+    });
+    paint();
+  }
+
+  function setupSectionPicker() {
+    var picker = document.querySelector(".section-picker");
+    if (!picker) return;
+    var links = Array.prototype.slice.call(document.querySelectorAll("[data-section-link]"));
+    var sections = Array.prototype.slice.call(document.querySelectorAll(".lesson-section"));
+    var now = picker.querySelector("[data-section-now]");
+    var prev = picker.querySelector("[data-section-prev]");
+    var next = picker.querySelector("[data-section-next]");
+    function show(index) {
+      if (!sections.length) return;
+      if (index < 0) index = 0;
+      if (index >= sections.length) index = sections.length - 1;
+      if (now) now.textContent = String(index + 1);
+      links.forEach(function (link, i) {
+        if (i === index) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+      if (prev) prev.setAttribute("href", "#" + sections[Math.max(0, index - 1)].id);
+      if (next) next.setAttribute("href", "#" + sections[Math.min(sections.length - 1, index + 1)].id);
+    }
+    function current() {
+      var found = 0;
+      sections.forEach(function (section, index) {
+        var box = section.getBoundingClientRect();
+        if (box.top < 160) found = index;
+      });
+      return found;
+    }
+    show(current());
+    window.addEventListener("scroll", function () { show(current()); }, { passive: true });
+    window.addEventListener("hashchange", function () { show(current()); });
+  }
+
   function setupExam() {
     var form = document.querySelector("[data-exam]");
     if (!form) return;
@@ -941,26 +1027,54 @@
       plan.lessons.forEach(function (item) {
         var row = lessonRow(data, id, item.n);
         (item.sections || []).forEach(function (section) {
+          if (section && section.optional) return;
           if (!sectionRead(row, section)) {
-            missing.push({ href: "../lesson-" + item.n + "/#section-" + sectionIdOf(section), text: "Lesson " + item.n + ": mark “" + (section.title || sectionIdOf(section)) + "” as read" });
+            missing.push({ lesson: item.n, href: "../lesson-" + item.n + "/#section-" + sectionIdOf(section), text: "Mark “" + (section.title || sectionIdOf(section)) + "” as read" });
           }
         });
-        if (item.quiz && !row.done) missing.push({ href: "../lesson-" + item.n + "/quiz/", text: "Lesson " + item.n + ": finish the quiz" });
-        if (item.assignment && !row.assignment) missing.push({ href: "../lesson-" + item.n + "/#" + item.assignment, text: "Lesson " + item.n + ": tick I tried this on the practice" });
+        if (item.quiz && !row.done) missing.push({ lesson: item.n, href: "../lesson-" + item.n + "/quiz/", text: "Finish the quiz" });
+        if (item.assignment && !row.assignment) missing.push({ lesson: item.n, href: "../lesson-" + item.n + "/#" + item.assignment, text: "Tick I tried this on the practice" });
       });
     }
+    var attemptNoteEarly = document.getElementById("exam-attempts");
     if (missing.length) {
       if (open) open.hidden = true;
       if (locked) locked.hidden = false;
+      if (attemptNoteEarly) attemptNoteEarly.hidden = true;
       if (remaining) {
         remaining.textContent = "";
+        var count = document.createElement("p");
+        count.textContent = missing.length + (missing.length === 1 ? " required item is" : " required items are") + " left before the exam.";
+        remaining.appendChild(count);
+        var next = document.createElement("p");
+        next.className = "actions";
+        var nextLink = document.createElement("a");
+        nextLink.className = "btn";
+        nextLink.href = missing[0].href;
+        nextLink.textContent = "Next thing to do";
+        next.appendChild(nextLink);
+        remaining.appendChild(next);
+        var groups = {};
         missing.forEach(function (item) {
-          var li = document.createElement("li");
-          var link = document.createElement("a");
-          link.href = item.href;
-          link.textContent = item.text;
-          li.appendChild(link);
-          remaining.appendChild(li);
+          groups[item.lesson] = groups[item.lesson] || [];
+          groups[item.lesson].push(item);
+        });
+        Object.keys(groups).forEach(function (lesson) {
+          var details = document.createElement("details");
+          var summary = document.createElement("summary");
+          summary.textContent = "Lesson " + lesson + ": " + groups[lesson].length + (groups[lesson].length === 1 ? " thing" : " things");
+          details.appendChild(summary);
+          var list = document.createElement("ul");
+          groups[lesson].forEach(function (item) {
+            var li = document.createElement("li");
+            var link = document.createElement("a");
+            link.href = item.href;
+            link.textContent = item.text;
+            li.appendChild(link);
+            list.appendChild(li);
+          });
+          details.appendChild(list);
+          remaining.appendChild(details);
         });
       }
       return;
@@ -992,6 +1106,8 @@
     }
     if (locked) locked.hidden = true;
     if (open) open.hidden = false;
+    if (attemptNoteEarly) attemptNoteEarly.hidden = false;
+    setupExamPager(form);
     var keyNode = document.getElementById("exam-key");
     var key = [];
     try { key = JSON.parse(keyNode.textContent); } catch (err) { key = []; }
@@ -1152,6 +1268,15 @@
       one_time: "One-time activity",
       undecided: "Not decided yet",
       prefer_not_to_say: "Prefer not to say",
+      gender: "Gender",
+      ageGroup: "Age group",
+      previousSchooling: "Previous schooling",
+      learnerProfile: "Learner profile",
+      pulseSkillsUsedInDailyLife: "Uses the skills in daily life",
+      pulseProgressTowardGoal: "Progress toward a goal",
+      pulseIncreasedConfidence: "Increased confidence",
+      pulseProgramRelevant: "Program felt relevant",
+      pulseFeltWelcome: "Felt welcome",
       yes: "Yes",
       no: "No",
       "not collected": "Not collected"
@@ -1189,7 +1314,7 @@
       var item = report.pulseTotals[key];
       Object.keys(item.counts || {}).forEach(function (value) {
         if (!value) return;
-        lines.push([key, humanEnum(value), item.counts[value]].map(csvCell).join(","));
+        lines.push([humanEnum(key), humanEnum(value), item.counts[value]].map(csvCell).join(","));
       });
     });
     lines.push([]);
@@ -1456,6 +1581,7 @@
   gateCourse();
   setupNav();
   setupPlayer();
+  setupSectionPicker();
   setupExam();
   setupQuiz();
   setupWalkthrough();

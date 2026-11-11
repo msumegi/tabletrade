@@ -44,11 +44,18 @@
 <p class="step-label">Lesson 3 of 10 · about 7 min to read</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="3" aria-label="Lesson 3 of 10"><span style="width:30%"></span></div>
 <h1>Enter text, numbers, and dates</h1>
-<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-chapter-1-type-text-and-move-to-the-next-cell">Type text and move to the next cell · 4 min</a><a href="#section-chapter-2-type-numbers-and-keep-units-in-the-hea">Type numbers — and keep units in the header · 4 min</a><a href="#section-chapter-3-type-a-date-and-fix-a-mistake">Type a date and fix a mistake · 4 min</a><a href="#section-worked-example-1-type-the-first-hours-row-on-the">Worked example 1. Type the first Hours row on the Practice sheet · 4 min</a><a href="#section-worked-example-2-a-sample-date-and-a-cad-amount">Worked example 2. A sample date and a CAD amount · 4 min</a><a href="#section-try-it">Try it · 4 min</a><a href="#section-optional-discussion-council-study-group">Optional discussion (council study group) · 4 min</a></nav>
+<div class="section-picker">
+  <p class="section-now">Section <span data-section-now>1</span> of 7</p>
+  <p class="actions"><a class="btn btn-secondary" data-section-prev href="#section-chapter-1-type-text-and-move-to-the-next-cell">Previous section</a> <a class="btn" data-section-next href="#section-chapter-2-type-numbers-and-keep-units-in-the-hea">Next section</a></p>
+  <details>
+    <summary>Sections in this lesson</summary>
+    <ol><li><a href="#section-chapter-1-type-text-and-move-to-the-next-cell" data-section-link="1">Type text and move to the next cell</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-2-type-numbers-and-keep-units-in-the-hea" data-section-link="2">Type numbers — and keep units in the header</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-3-type-a-date-and-fix-a-mistake" data-section-link="3">Type a date and fix a mistake</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-1-type-the-first-hours-row-on-the" data-section-link="4">Worked example 1. Type the first Hours row on the Practice sheet</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-2-a-sample-date-and-a-cad-amount" data-section-link="5">Worked example 2. A sample date and a CAD amount</a> <span class="meta">1 min</span></li><li><a href="#section-try-it" data-section-link="6">Try it</a> <span class="meta">1 min</span></li><li><a href="#section-optional-discussion-council-study-group" data-section-link="7">Optional discussion (council study group)</a> <span class="meta">1 min</span></li></ol>
+  </details>
+</div>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
 <section class="lesson-section longform reading" id="section-chapter-1-type-text-and-move-to-the-next-cell">
   <h2>Type text and move to the next cell</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Microsoft's basic-tasks page gives three steps for entering data:</p>
 <ol><li>Click an empty cell. For example, click A1 on a new sheet.</li><li>Type text or a number in the cell.</li><li>Press Enter or Tab to move to the next cell.</li></ol>
@@ -59,15 +66,19 @@
 <section class="block block-sim" data-block="simulation" data-sim="excel-enter-text" id="excel-enter-text">
   <h3>Type a header and confirm with Enter</h3>
   <p class="caption">Practice screen — not the real Excel.</p>
-  <p class="meta">Blank worksheet, A1 selected.</p>
-  <div class="stage"><div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="A1" aria-label="Cell A1">Cell A1</button><button type="button" class="btn btn-secondary" data-hotspot="enter" aria-label="Enter key">Enter key</button></div><p class="caption" data-sim-result></p></div>
+  <div class="practice-window">
+      <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="formula-bar"><span data-name-box>A1</span><span data-formula-input></span></div>
+      <div class="sheet-scroll"><table class="sheet"><tr><th></th><th>A</th><th>B</th><th>C</th></tr><tr><th>1</th><td data-cell="A1"><button type="button" data-hotspot="A1" aria-label="Cell A1"><span data-cell-value></span></button></td><td data-cell="B1"><button type="button" data-hotspot="B1" aria-label="Cell B1"><span data-cell-value></span></button></td><td data-cell="C1"><button type="button" data-hotspot="C1" aria-label="Cell C1"><span data-cell-value></span></button></td></tr><tr><th>2</th><td data-cell="A2"><button type="button" data-hotspot="A2" aria-label="Cell A2"><span data-cell-value></span></button></td><td data-cell="B2"><button type="button" data-hotspot="B2" aria-label="Cell B2"><span data-cell-value></span></button></td><td data-cell="C2"><button type="button" data-hotspot="C2" aria-label="Cell C2"><span data-cell-value></span></button></td></tr><tr><th>3</th><td data-cell="A3"><button type="button" data-hotspot="A3" aria-label="Cell A3"><span data-cell-value></span></button></td><td data-cell="B3"><button type="button" data-hotspot="B3" aria-label="Cell B3"><span data-cell-value></span></button></td><td data-cell="C3"><button type="button" data-hotspot="C3" aria-label="Cell C3"><span data-cell-value></span></button></td></tr><tr><th>4</th><td data-cell="A4"><button type="button" data-hotspot="A4" aria-label="Cell A4"><span data-cell-value></span></button></td><td data-cell="B4"><button type="button" data-hotspot="B4" aria-label="Cell B4"><span data-cell-value></span></button></td><td data-cell="C4"><button type="button" data-hotspot="C4" aria-label="Cell C4"><span data-cell-value></span></button></td></tr></table></div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="enter">Enter</button></div>
+      <p class="pw-status" data-sim-status></p>
+    </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
-  <div data-sim-fallback></div>
-  <script type="application/json" class="sim-key">{"id":"excel-enter-text","steps":[{"id":"s1","prompt":"Tap cell A1.","hotspots":[{"id":"A1","x":0.12,"y":0.32,"w":0.14,"h":0.08,"label":"Cell A1"}],"correct":["A1"],"pass":"A1 is active. The next thing you type will go here.","fail":"Tap the top-left cell, A1."},{"id":"s2","prompt":"Type Day, then tap Enter.","hotspots":[{"id":"enter","x":0.72,"y":0.82,"w":0.22,"h":0.1,"label":"Enter key"}],"correct":["enter"],"pass":"A1 contains Day and the selection has moved down to A2. Click the cell first, then type, then finish with Enter.","fail":"Type Day in A1, then tap Enter so Excel knows you are done."}]}</script>
+  <script type="application/json" class="sim-key">{"id":"excel-enter-text","kind":"sheet","steps":[{"id":"s1","prompt":"Tap cell A1.","pass":"A1 is active. The next thing you type will go here.","fail":"Tap the top-left cell, A1.","correct":["A1"]},{"id":"s2","prompt":"Type Day, then tap Enter.","pass":"A1 contains Day and the selection has moved down to A2. Click the cell first, then type, then finish with Enter.","fail":"Type Day in A1, then tap Enter so Excel knows you are done.","correct":["enter"]}],"values":{},"start":"A1"}</script>
 </section>
-<div class="block" data-block="prose"><p><strong>Progress:</strong> Lesson 3, part 2 of 3.</p></div>
+<div class="block" data-block="prose"></div>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="chapter-1-type-text-and-move-to-the-next-cell" data-lesson="3">Mark this section as read</button>
@@ -77,13 +88,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-2-type-numbers-and-keep-units-in-the-hea">
   <h2>Type numbers — and keep units in the header</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Numbers are values Excel can calculate later: <code>6</code>, <code>7.5</code>, <code>5.49</code>, <code>80</code>, <code>0</code>. Type them without extra words in the same cell. Put the unit in the header instead. Write <code>Hours worked</code> in B1 and <code>6</code> in B2, not <code>6 hours</code> in B2. Write <code>Amount (CAD)</code> in C1 and <code>5.49</code> in C2, not <code>five dollars forty-nine</code> and not <code>$5.49 CAD</code> mixed with words. You will learn number formats (including a currency look) in Lesson 4. A clean number is easier for AutoSum to add.</p>
 <p>Use a decimal point for parts of an hour or parts of a dollar, as in <code>7.5</code> and <code>5.49</code>. Do not type a space in the middle of a number. If you type <code>7,5</code> Excel may treat that as text or as a thousands style, depending on the computer's region settings. On most Canadian English computers, <code>7.5</code> is the safe way to type seven and a half.</p>
 <p>A <strong>zero</strong> and a <strong>blank</strong> are not the same. On the Hours sheet, Thursday is <code>0</code> because that day was off — you recorded “no hours.” A blank cell means nothing has been entered yet. When you total a column later, you will want recorded days off to stay as 0 so the row is not mistaken for missing data.</p>
 <p>If a number looks left-aligned like a word, Excel may have stored it as text (for example if you typed <code>6 hours</code>). Lesson 6 will ask you to check that a total makes sense. A first defence is to keep numbers as numbers from the start.</p>
-<p><strong>Progress:</strong> Lesson 3, part 3 of 3.</p></div>
+</div>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-1-type-text-and-move-to-the-next-cell">Previous section</a>
     <button type="button" class="btn" data-read-section="chapter-2-type-numbers-and-keep-units-in-the-hea" data-lesson="3">Mark this section as read</button>
@@ -93,7 +104,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-3-type-a-date-and-fix-a-mistake">
   <h2>Type a date and fix a mistake</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Excel can store a date as a date, not just as decoration. When it does, you can format how the date looks without typing it again. Microsoft's number-format help says you apply a format from the <strong>Home</strong> tab: select the cell, then choose a format from the Number drop-down (the box that often starts as <strong>General</strong>). Microsoft's basic-tasks page describes the same idea: click the arrow in the General box and pick a format, or choose <strong>More Number Formats</strong> if you do not see the one you want. Date is one of the formats in that list.</p>
 <p>How a date looks depends on the format you pick and on your computer's region settings. Microsoft notes that some date formats follow the regional date settings on the computer. That is why the same day might show as 2026-11-10 on one machine and as 10/11/2026 or 11/10/2026 on another. If the day and month look swapped, do not guess — pick a Date format you can read clearly, or type the date with a four-digit year and check it against a calendar.</p>
@@ -102,13 +113,18 @@
 <section class="block block-sim" data-block="simulation" data-sim="excel-date-format" id="excel-date-format">
   <h3>Apply a Date format</h3>
   <p class="caption">Practice screen — not the real Excel.</p>
-  <p class="meta">A worksheet with the sample date 2026-11-10 already typed in A1. Home tab visible, including the Number group and a box that says General.</p>
-  <div class="stage"><div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="A1" aria-label="Cell A1">Cell A1</button><button type="button" class="btn btn-secondary" data-hotspot="home" aria-label="Home tab">Home tab</button><button type="button" class="btn btn-secondary" data-hotspot="general" aria-label="General arrow">General arrow</button><button type="button" class="btn btn-secondary" data-hotspot="date" aria-label="Date">Date</button><button type="button" class="btn btn-secondary" data-hotspot="more" aria-label="More Number Formats">More Number Formats</button></div><p class="caption" data-sim-result></p></div>
+  <div class="practice-window">
+      <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="pw-scroll">
+        <p class="pw-status" data-sim-status></p>
+        <div class="pw-menu" data-sim-menu><button type="button" class="btn btn-secondary" data-hotspot="A1">Cell A1</button><button type="button" class="btn btn-secondary" data-hotspot="home">Home tab</button><button type="button" class="btn btn-secondary" data-hotspot="general">General arrow</button><button type="button" class="btn btn-secondary" data-hotspot="date">Date</button><button type="button" class="btn btn-secondary" data-hotspot="more">More Number Formats</button></div>
+        
+      </div>
+    </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
-  <div data-sim-fallback></div>
-  <script type="application/json" class="sim-key">{"id":"excel-date-format","steps":[{"id":"s1","prompt":"Tap cell A1, which holds the sample date.","hotspots":[{"id":"A1","x":0.12,"y":0.32,"w":0.18,"h":0.08,"label":"Cell A1"}],"correct":["A1"],"pass":"A1 is selected. Sample date only.","fail":"Tap A1 — the cell that already shows 2026-11-10."},{"id":"s2","prompt":"If you are not already there, tap the Home tab.","hotspots":[{"id":"home","x":0.16,"y":0.08,"w":0.1,"h":0.08,"label":"Home tab"}],"correct":["home"],"pass":"The Home ribbon is visible, including the Number group.","fail":"Home is on the ribbon, near File. You need it for number formats."},{"id":"s3","prompt":"Tap the arrow on the General box (the Number Format list).","hotspots":[{"id":"general","x":0.62,"y":0.16,"w":0.16,"h":0.08,"label":"General arrow"}],"correct":["general"],"pass":"A list of formats appears, such as General, Number, Currency, Date, and Percentage.","fail":"The small arrow sits on the box that often says General, in the Number group."},{"id":"s4","prompt":"Tap Date. If you do not see Date, tap More Number Formats and choose a Date type.","hotspots":[{"id":"date","x":0.64,"y":0.48,"w":0.2,"h":0.08,"label":"Date"},{"id":"more","x":0.64,"y":0.64,"w":0.28,"h":0.08,"label":"More Number Formats"}],"correct":["date","more"],"pass":"The cell still holds the same day, but it looks like a date. How it looks can depend on regional settings.","fail":"Choose Date from the list, or More Number Formats and then a Date type."}]}</script>
+  <script type="application/json" class="sim-key">{"id":"excel-date-format","kind":"excel","steps":[{"id":"s1","prompt":"Tap cell A1, which holds the sample date.","pass":"A1 is selected. Sample date only.","fail":"Tap A1 — the cell that already shows 2026-11-10.","correct":["A1"]},{"id":"s2","prompt":"If you are not already there, tap the Home tab.","pass":"The Home ribbon is visible, including the Number group.","fail":"Home is on the ribbon, near File. You need it for number formats.","correct":["home"]},{"id":"s3","prompt":"Tap the arrow on the General box (the Number Format list).","pass":"A list of formats appears, such as General, Number, Currency, Date, and Percentage.","fail":"The small arrow sits on the box that often says General, in the Number group.","correct":["general"]},{"id":"s4","prompt":"Tap Date. If you do not see Date, tap More Number Formats and choose a Date type.","pass":"The cell still holds the same day, but it looks like a date. How it looks can depend on regional settings.","fail":"Choose Date from the list, or More Number Formats and then a Date type.","correct":["date","more"]}],"values":{},"start":"A1"}</script>
 </section>
 <p class="block file-list" data-block="download"><a class="btn" href="../../../media/practice/Excel-Basics-Practice-Sample-Only.xlsx" download>Excel Basics practice workbook (Excel file)</a> <span class="meta">Sample data only. Three sheets: Hours, Household, and Practice. Do not put anyone else’s private figures in this file.</span></p>
 <form class="block block-instant" data-block="check" data-check="excel-one-kind-per-column" id="excel-one-kind-per-column">
@@ -126,20 +142,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-1-type-the-first-hours-row-on-the">
   <h2>Worked example 1. Type the first Hours row on the Practice sheet</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <aside class="block block-example" data-block="example">
-  <h3>Worked example 1. Type the first Hours row on the Practice sheet</h3>
-  <p class="block-label">Problem</p>
-  <p></p>
-  <p class="block-label">Steps</p>
-  <ol></ol>
-  <p class="block-label">Result</p>
-  <p></p>
-</aside>
-<div class="block" data-block="prose"><p>On the <strong>Practice</strong> sheet, click A3 (leave the note in A1 as it is). Type these headers across row 3, using Tab between them:</p>
-<ul><li>A3: <code>Day</code></li><li>B3: <code>Hours worked</code></li><li>C3: <code>Notes</code></li></ul>
-<p>Press Enter after Notes, then click A4. Type <code>Mon</code>, press Tab, type <code>6</code>, press Tab, type <code>Community hall setup</code>, and press Enter. You now have one complete row: text in A, a number in B, and a longer text note in C. The number 6 has no word <code>hours</code> beside it, because the header already says Hours worked.</p></div>
+  <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Type the first Hours row on the Practice sheet</h3>
+      <p class="block-label">Problem</p><div class="block-body"><p>On the <strong>Practice</strong> sheet, click A3 (leave the note in A1 as it is). Type these headers across row 3, using Tab between them:</p></div>
+      <p class="block-label">Steps</p><ol><li>A3: <code>Day</code></li><li>B3: <code>Hours worked</code></li><li>C3: <code>Notes</code></li></ol>
+      <p class="block-label">Result</p><div class="block-body"><p>Press Enter after Notes, then click A4. Type <code>Mon</code>, press Tab, type <code>6</code>, press Tab, type <code>Community hall setup</code>, and press Enter. You now have one complete row: text in A, a number in B, and a longer text note in C. The number 6 has no word <code>hours</code> beside it, because the header already says Hours worked.</p></div>
+    </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-type-a-date-and-fix-a-mistake">Previous section</a>
     <button type="button" class="btn" data-read-section="worked-example-1-type-the-first-hours-row-on-the" data-lesson="3">Mark this section as read</button>
@@ -149,19 +158,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-2-a-sample-date-and-a-cad-amount">
   <h2>Worked example 2. A sample date and a CAD amount</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <aside class="block block-example" data-block="example">
-  <h3>Worked example 2. A sample date and a CAD amount</h3>
-  <p class="block-label">Problem</p>
-  <p></p>
-  <p class="block-label">Steps</p>
-  <ol></ol>
-  <p class="block-label">Result</p>
-  <p></p>
-</aside>
-<div class="block" data-block="prose"><p>Still on the Practice sheet, click E3 and type <code>Sample date</code> (this is not a real appointment). In E4 type <code>2026-11-10</code>. Select E4, go to the Home tab, click the arrow on the General box, and choose a Date format you can read. The day should still be 10 November 2026 even if the style changes.</p>
-<p>Then click F3 and type <code>Amount (CAD)</code>. In F4 type <code>5.49</code> — digits and a decimal point only. Do not type the word dollars in F4. You will make amounts look like money in Lesson 4. If 5.49 looks left-aligned, you may have typed an extra space or character; click F4 and type <code>5.49</code> again.</p></div>
+  <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. A sample date and a CAD amount</h3>
+      <p class="block-label">Problem</p><div class="block-body"><p>Still on the Practice sheet, click E3 and type <code>Sample date</code> (this is not a real appointment). In E4 type <code>2026-11-10</code>. Select E4, go to the Home tab, click the arrow on the General box, and choose a Date format you can read. The day should still be 10 November 2026 even if the style changes.</p></div>
+      
+      <p class="block-label">Result</p><div class="block-body"><p>Then click F3 and type <code>Amount (CAD)</code>. In F4 type <code>5.49</code> — digits and a decimal point only. Do not type the word dollars in F4. You will make amounts look like money in Lesson 4. If 5.49 looks left-aligned, you may have typed an extra space or character; click F4 and type <code>5.49</code> again.</p></div>
+    </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-type-the-first-hours-row-on-the">Previous section</a>
     <button type="button" class="btn" data-read-section="worked-example-2-a-sample-date-and-a-cad-amount" data-lesson="3">Mark this section as read</button>
@@ -171,7 +174,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-try-it">
   <h2>Try it</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>On the Practice sheet (or a blank workbook):</p>
 <ol><li>In row 3, type the headers <code>Day</code>, <code>Hours worked</code>, and <code>Notes</code> if they are not there yet.</li><li>Type the Tuesday sample row: <code>Tue</code>, <code>4</code>, <code>Office desk</code>.</li><li>Type the Wednesday sample row: <code>Wed</code>, <code>7.5</code>, <code>Market stall</code>.</li><li>In an unused cell, type the sample date <code>2026-11-10</code> and apply a Date format from Home &gt; the General arrow.</li><li>Check each number cell: B should contain only numbers (4 and 7.5), not the word hours.</li></ol></div>
@@ -184,7 +187,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-optional-discussion-council-study-group">
   <h2>Optional discussion (council study group)</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>When you write dates on paper in this community, do you write day-month-year or year-month-day? How will you double-check that Excel did not swap the day and the month?</p></div>
 <aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l3-sheet"><h2>Enter text, numbers, and dates — take-home steps</h2><ul><li>Click a cell, type, then press Enter or Tab</li><li>Keep one kind of information in each column</li><li>Type numbers without extra words (put hours or CAD in the header)</li><li>Do not leave a trailing space after a number</li><li>A typed 0 is not the same as a blank cell</li><li>Home &gt; arrow on General &gt; Date (or More Number Formats) changes how a date looks</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
@@ -231,7 +234,13 @@
     </div>
   </footer>
   <script src="../../../assets/brand.js"></script>
-  <script src="../../../assets/demo-seed.js"></script>
+  <script>
+    (function () {
+      var demo = /(?:\?|&)demo=1(?:&|$)/.test(location.search);
+      var staff = /\/admin\//.test(location.pathname);
+      if (demo || staff) document.write('<script src="../../../assets/demo-seed.js"><\/script>');
+    })();
+  </script>
   <script src="../../../assets/billing.js"></script>
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>

@@ -44,11 +44,18 @@
 <p class="step-label">Lesson 6 of 10 · about 7 min to read</p>
 <div class="bar" role="progressbar" aria-valuemin="1" aria-valuemax="10" aria-valuenow="6" aria-label="Lesson 6 of 10"><span style="width:60%"></span></div>
 <h1>AutoSum, AVERAGE, and checking that the answer makes sense</h1>
-<nav class="section-chips" aria-label="Sections in this lesson"><a href="#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-">AutoSum — a fast way to add a column or row · 4 min</a><a href="#section-chapter-2-average-typical-value-of-a-group-of-nu">AVERAGE — typical value of a group of numbers · 4 min</a><a href="#section-chapter-3-check-that-the-answer-makes-sense">Check that the answer makes sense · 4 min</a><a href="#section-worked-example-1-total-the-sample-week">Worked example 1. Total the sample week · 4 min</a><a href="#section-worked-example-2-average-the-sample-week-includi">Worked example 2. Average the sample week — including days off · 4 min</a><a href="#section-try-it">Try it · 4 min</a><a href="#section-optional-discussion-council-study-group">Optional discussion (council study group) · 4 min</a></nav>
+<div class="section-picker">
+  <p class="section-now">Section <span data-section-now>1</span> of 7</p>
+  <p class="actions"><a class="btn btn-secondary" data-section-prev href="#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-">Previous section</a> <a class="btn" data-section-next href="#section-chapter-2-average-typical-value-of-a-group-of-nu">Next section</a></p>
+  <details>
+    <summary>Sections in this lesson</summary>
+    <ol><li><a href="#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-" data-section-link="1">AutoSum — a fast way to add a column or row</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-2-average-typical-value-of-a-group-of-nu" data-section-link="2">AVERAGE — typical value of a group of numbers</a> <span class="meta">1 min</span></li><li><a href="#section-chapter-3-check-that-the-answer-makes-sense" data-section-link="3">Check that the answer makes sense</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-1-total-the-sample-week" data-section-link="4">Worked example 1. Total the sample week</a> <span class="meta">1 min</span></li><li><a href="#section-worked-example-2-average-the-sample-week-includi" data-section-link="5">Worked example 2. Average the sample week — including days off</a> <span class="meta">1 min</span></li><li><a href="#section-try-it" data-section-link="6">Try it</a> <span class="meta">1 min</span></li><li><a href="#section-optional-discussion-council-study-group" data-section-link="7">Optional discussion (council study group)</a> <span class="meta">1 min</span></li></ol>
+  </details>
+</div>
 <p>This lesson is split into short sections. Read a section, mark it as read, then go to the next one. Your place is saved on this device.</p>
 <section class="lesson-section longform reading" id="section-chapter-1-autosum-a-fast-way-to-add-a-column-or-">
   <h2>AutoSum — a fast way to add a column or row</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>When numbers are already in a column or a row, Microsoft offers AutoSum so you do not have to type <code>=B2+B3+B4+...</code> by hand. The basic-tasks page says:</p>
 <ol><li>Select the cell to the right of, or below, the numbers you want to add.</li><li>Click the <strong>Home</strong> tab, and then click <strong>AutoSum</strong> in the Editing group.</li><li>AutoSum adds the numbers and shows the result in the cell you selected.</li></ol>
@@ -58,15 +65,19 @@
 <section class="block block-sim" data-block="simulation" data-sim="excel-autosum" id="excel-autosum">
   <h3>Add a column with AutoSum</h3>
   <p class="caption">Practice screen — not the real Excel.</p>
-  <p class="meta">Hours sheet; B2:B8 filled with the sample hours; B9 empty. Home tab showing AutoSum in the Editing group.</p>
-  <div class="stage"><div class="ribbon"><button type="button" class="btn btn-secondary" data-hotspot="B9" aria-label="Cell B9">Cell B9</button><button type="button" class="btn btn-secondary" data-hotspot="autosum" aria-label="AutoSum">AutoSum</button><button type="button" class="btn btn-secondary" data-hotspot="enter" aria-label="Enter key">Enter key</button></div><p class="caption" data-sim-result></p></div>
+  <div class="practice-window">
+      <div class="pw-bar"><strong>Excel</strong></div>
+      <div class="formula-bar"><span data-name-box>A1</span><span data-formula-input></span></div>
+      <div class="sheet-scroll"><table class="sheet"><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr><tr><th>1</th><td data-cell="A1"><button type="button" data-hotspot="A1" aria-label="Cell A1"><span data-cell-value>Day</span></button></td><td data-cell="B1"><button type="button" data-hotspot="B1" aria-label="Cell B1"><span data-cell-value>Hours</span></button></td><td data-cell="C1"><button type="button" data-hotspot="C1" aria-label="Cell C1"><span data-cell-value></span></button></td><td data-cell="D1"><button type="button" data-hotspot="D1" aria-label="Cell D1"><span data-cell-value></span></button></td><td data-cell="E1"><button type="button" data-hotspot="E1" aria-label="Cell E1"><span data-cell-value></span></button></td></tr><tr><th>2</th><td data-cell="A2"><button type="button" data-hotspot="A2" aria-label="Cell A2"><span data-cell-value>Mon</span></button></td><td data-cell="B2"><button type="button" data-hotspot="B2" aria-label="Cell B2"><span data-cell-value>6</span></button></td><td data-cell="C2"><button type="button" data-hotspot="C2" aria-label="Cell C2"><span data-cell-value></span></button></td><td data-cell="D2"><button type="button" data-hotspot="D2" aria-label="Cell D2"><span data-cell-value></span></button></td><td data-cell="E2"><button type="button" data-hotspot="E2" aria-label="Cell E2"><span data-cell-value></span></button></td></tr><tr><th>3</th><td data-cell="A3"><button type="button" data-hotspot="A3" aria-label="Cell A3"><span data-cell-value>Tue</span></button></td><td data-cell="B3"><button type="button" data-hotspot="B3" aria-label="Cell B3"><span data-cell-value>4</span></button></td><td data-cell="C3"><button type="button" data-hotspot="C3" aria-label="Cell C3"><span data-cell-value></span></button></td><td data-cell="D3"><button type="button" data-hotspot="D3" aria-label="Cell D3"><span data-cell-value></span></button></td><td data-cell="E3"><button type="button" data-hotspot="E3" aria-label="Cell E3"><span data-cell-value></span></button></td></tr><tr><th>4</th><td data-cell="A4"><button type="button" data-hotspot="A4" aria-label="Cell A4"><span data-cell-value>Wed</span></button></td><td data-cell="B4"><button type="button" data-hotspot="B4" aria-label="Cell B4"><span data-cell-value>7.5</span></button></td><td data-cell="C4"><button type="button" data-hotspot="C4" aria-label="Cell C4"><span data-cell-value></span></button></td><td data-cell="D4"><button type="button" data-hotspot="D4" aria-label="Cell D4"><span data-cell-value></span></button></td><td data-cell="E4"><button type="button" data-hotspot="E4" aria-label="Cell E4"><span data-cell-value></span></button></td></tr><tr><th>5</th><td data-cell="A5"><button type="button" data-hotspot="A5" aria-label="Cell A5"><span data-cell-value>Thu</span></button></td><td data-cell="B5"><button type="button" data-hotspot="B5" aria-label="Cell B5"><span data-cell-value>0</span></button></td><td data-cell="C5"><button type="button" data-hotspot="C5" aria-label="Cell C5"><span data-cell-value></span></button></td><td data-cell="D5"><button type="button" data-hotspot="D5" aria-label="Cell D5"><span data-cell-value></span></button></td><td data-cell="E5"><button type="button" data-hotspot="E5" aria-label="Cell E5"><span data-cell-value></span></button></td></tr><tr><th>6</th><td data-cell="A6"><button type="button" data-hotspot="A6" aria-label="Cell A6"><span data-cell-value>Fri</span></button></td><td data-cell="B6"><button type="button" data-hotspot="B6" aria-label="Cell B6"><span data-cell-value>5</span></button></td><td data-cell="C6"><button type="button" data-hotspot="C6" aria-label="Cell C6"><span data-cell-value></span></button></td><td data-cell="D6"><button type="button" data-hotspot="D6" aria-label="Cell D6"><span data-cell-value></span></button></td><td data-cell="E6"><button type="button" data-hotspot="E6" aria-label="Cell E6"><span data-cell-value></span></button></td></tr><tr><th>7</th><td data-cell="A7"><button type="button" data-hotspot="A7" aria-label="Cell A7"><span data-cell-value>Sat</span></button></td><td data-cell="B7"><button type="button" data-hotspot="B7" aria-label="Cell B7"><span data-cell-value>3</span></button></td><td data-cell="C7"><button type="button" data-hotspot="C7" aria-label="Cell C7"><span data-cell-value></span></button></td><td data-cell="D7"><button type="button" data-hotspot="D7" aria-label="Cell D7"><span data-cell-value></span></button></td><td data-cell="E7"><button type="button" data-hotspot="E7" aria-label="Cell E7"><span data-cell-value></span></button></td></tr><tr><th>8</th><td data-cell="A8"><button type="button" data-hotspot="A8" aria-label="Cell A8"><span data-cell-value>Sun</span></button></td><td data-cell="B8"><button type="button" data-hotspot="B8" aria-label="Cell B8"><span data-cell-value>0</span></button></td><td data-cell="C8"><button type="button" data-hotspot="C8" aria-label="Cell C8"><span data-cell-value></span></button></td><td data-cell="D8"><button type="button" data-hotspot="D8" aria-label="Cell D8"><span data-cell-value></span></button></td><td data-cell="E8"><button type="button" data-hotspot="E8" aria-label="Cell E8"><span data-cell-value></span></button></td></tr><tr><th>9</th><td data-cell="A9"><button type="button" data-hotspot="A9" aria-label="Cell A9"><span data-cell-value>Total</span></button></td><td data-cell="B9"><button type="button" data-hotspot="B9" aria-label="Cell B9"><span data-cell-value></span></button></td><td data-cell="C9"><button type="button" data-hotspot="C9" aria-label="Cell C9"><span data-cell-value></span></button></td><td data-cell="D9"><button type="button" data-hotspot="D9" aria-label="Cell D9"><span data-cell-value></span></button></td><td data-cell="E9"><button type="button" data-hotspot="E9" aria-label="Cell E9"><span data-cell-value></span></button></td></tr></table></div>
+      <div class="sheet-keys"><button type="button" class="btn btn-secondary" data-hotspot="enter">Enter</button><button type="button" class="btn btn-secondary" data-hotspot="autosum">AutoSum</button></div>
+      <p class="pw-status" data-sim-status></p>
+    </div>
   <p data-sim-prompt></p>
   <p class="feedback" data-sim-feedback role="status"></p>
   <p class="actions"><button type="button" class="btn btn-secondary" data-sim-show>Show me where</button></p>
-  <div data-sim-fallback></div>
-  <script type="application/json" class="sim-key">{"id":"excel-autosum","steps":[{"id":"s1","prompt":"Tap cell B9, just under Sunday’s hours.","hotspots":[{"id":"B9","x":0.28,"y":0.78,"w":0.16,"h":0.08,"label":"Cell B9"}],"correct":["B9"],"pass":"Good. AutoSum usually sits on the cell under a column of numbers.","fail":"That is not B9. B9 is the empty total cell under the seven day rows."},{"id":"s2","prompt":"On the Home tab, tap AutoSum in the Editing group (Formulas > AutoSum is another official path).","hotspots":[{"id":"autosum","x":0.82,"y":0.16,"w":0.14,"h":0.08,"label":"AutoSum"}],"correct":["autosum"],"pass":"Excel inserts =SUM(B2:B8) and highlights B2:B8.","fail":"AutoSum is on the Home tab, in the Editing group — usually toward the right of the ribbon."},{"id":"s3","prompt":"Check that the highlight covers B2:B8, not the header in B1, then tap Enter.","hotspots":[{"id":"enter","x":0.72,"y":0.86,"w":0.22,"h":0.08,"label":"Enter key"}],"correct":["enter"],"pass":"B9 displays 25.5 and the formula bar shows =SUM(B2:B8). This is a formula, not a hand-typed 25.5. On Windows, Alt+= also inserts SUM.","fail":"Look at the highlighted range, then tap Enter to accept AutoSum."}]}</script>
+  <script type="application/json" class="sim-key">{"id":"excel-autosum","kind":"sheet","steps":[{"id":"s1","prompt":"Tap cell B9, just under Sunday’s hours.","pass":"Good. AutoSum usually sits on the cell under a column of numbers.","fail":"That is not B9. B9 is the empty total cell under the seven day rows.","correct":["B9"]},{"id":"s2","prompt":"On the Home tab, tap AutoSum in the Editing group (Formulas > AutoSum is another official path).","pass":"Excel inserts =SUM(B2:B8) and highlights B2:B8.","fail":"AutoSum is on the Home tab, in the Editing group — usually toward the right of the ribbon.","correct":["autosum"]},{"id":"s3","prompt":"Check that the highlight covers B2:B8, not the header in B1, then tap Enter.","pass":"B9 displays 25.5 and the formula bar shows =SUM(B2:B8). This is a formula, not a hand-typed 25.5. On Windows, Alt+= also inserts SUM.","fail":"Look at the highlighted range, then tap Enter to accept AutoSum.","correct":["enter"]}],"values":{"A1":"Day","B1":"Hours","A2":"Mon","B2":"6","A3":"Tue","B3":"4","A4":"Wed","B4":"7.5","A5":"Thu","B5":"0","A6":"Fri","B6":"5","A7":"Sat","B7":"3","A8":"Sun","B8":"0","A9":"Total"},"start":"A1","finish":{"cell":"B9","value":"25.5","formula":"=SUM(B2:B8)"}}</script>
 </section>
-<div class="block" data-block="prose"><p><strong>Progress:</strong> Lesson 6, part 2 of 3.</p></div>
+<div class="block" data-block="prose"></div>
   <p class="actions">
     
     <button type="button" class="btn" data-read-section="chapter-1-autosum-a-fast-way-to-add-a-column-or-" data-lesson="6">Mark this section as read</button>
@@ -76,14 +87,14 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-2-average-typical-value-of-a-group-of-nu">
   <h2>AVERAGE — typical value of a group of numbers</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>Excel can also calculate an average (the mean): add the numbers, then divide by how many numbers were included. Microsoft's “Calculate an average” page shows this path:</p>
 <ol><li>Select the cells you want to average, *or* select the cell where the average should appear.</li><li>On the <strong>Formulas</strong> tab, select the arrow next to <strong>AutoSum</strong>, and then select <strong>Average</strong>.</li></ol>
 <p>When you create the average in its own cell, the formula bar shows a function that looks like <code>=AVERAGE(A2:A7)</code> in Microsoft's sample. On the Hours sheet, click B11 (leaving a blank row under the total is fine) or another empty cell, choose Formulas &gt; AutoSum arrow &gt; Average, and check that the range points at the hours, <code>B2:B8</code>, not at the total in B9. If AutoSum's average includes the total, the answer will be too high. Edit the range so it covers only the days.</p>
 <p>With the sample hours 6, 4, 7.5, 0, 5, 3, and 0, the average is 25.5 ÷ 7, which is about 3.64 hours per day if every listed day counts — including Thursday and Sunday as zeros. That is mathematically correct for “average of the seven recorded days.” It is not the same as “average of only the days I worked.” If you need the second meaning, you would average only the working days (or leave days off out of the sheet). This course does not teach extra functions that ignore certain values. What it teaches is to read the range inside AVERAGE and know which cells are included.</p>
 <p>You can also type <code>=AVERAGE(B2:B8)</code> yourself, the same way you typed <code>=SUM(B2:B8)</code>. Starting with <code>=</code> and using a colon range is the same habit as Lesson 5, with a function name added. Microsoft's overview of formulas shows that pattern: type <code>=</code>, a function name, <code>(</code>, the range, then <code>)</code>.</p>
-<p><strong>Progress:</strong> Lesson 6, part 3 of 3.</p></div>
+</div>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-1-autosum-a-fast-way-to-add-a-column-or-">Previous section</a>
     <button type="button" class="btn" data-read-section="chapter-2-average-typical-value-of-a-group-of-nu" data-lesson="6">Mark this section as read</button>
@@ -93,7 +104,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-chapter-3-check-that-the-answer-makes-sense">
   <h2>Check that the answer makes sense</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>A formula will calculate exactly what you asked — even if you asked for the wrong range. Skills for Success describe Numeracy as including interpreting and evaluating information, and they give this kind of check: see whether the answer is of the expected size. That habit belongs beside AutoSum and AVERAGE, not after a mistake has already been shared.</p>
 <p>Before you accept 25.5 as the week's hours, estimate. Monday through Saturday without a calculator is roughly 6 + 4 + 8 + 0 + 5 + 3 + 0, which is about 26. 25.5 is close, so it is plausible. If AutoSum showed 255 or 7.5, something would be wrong: a decimal in the wrong place, a range that grabbed the wrong cells, or a number typed as text.</p>
@@ -101,7 +112,15 @@
 <ul><li>Read the formula bar. Does <code>=SUM(B2:B8)</code> start at the first day and stop before the total cell?</li><li>Compare SUM to a rough mental total.</li><li>Remember that zeros count in both SUM and AVERAGE. They do not change the sum, but they do pull an average down.</li><li>If a total looks like a date, the cell may have the wrong number format (Lesson 4). Set it back to Number or General.</li><li>If SUM ignores a number, that number may have been typed as text (<code>6 hours</code>). Type a plain number instead.</li></ul>
 <p>Do not type over a formula result with a number you calculated by hand unless you intend to remove the formula. If you type <code>25.5</code> into B9, the cell will no longer update when Friday's hours change.</p></div>
 <figure class="block block-figure" data-block="annotatedImage" id="excel-sum-formula-bar">
-  <div class="stage"><svg viewBox="0 0 320 160" role="img" width="100%"><rect width="320" height="160" fill="#fffdf8"/><text x="16" y="28" fill="#1b1914" font-size="14">=SUM(B2:B8)</text><text x="16" y="56" font-size="13" fill="#1b1914">Mon 6</text><text x="16" y="80" font-size="13" fill="#1b1914">Tue 4</text><text x="16" y="104" font-size="13" fill="#1b1914">Wed 7.5</text><text x="16" y="128" font-size="13" fill="#1b1914">Sample hours only</text><circle cx="250" cy="28" r="12" fill="#123c2e"/><text x="246" y="33" fill="#fff" font-size="12">1</text></svg></div>
+  <div class="stage"><svg viewBox="0 0 360 220" role="img" width="100%"><rect width="360" height="220" fill="#fffdf8"/>
+      <rect x="16" y="12" width="328" height="28" fill="#fff" stroke="#123c2e"/>
+      <text x="28" y="31" font-size="14" fill="#1b1914">=SUM(B2:B8)</text>
+      <text x="40" y="64" font-size="13" fill="#1b1914">A</text><text x="110" y="64" font-size="13" fill="#1b1914">B</text>
+      <text x="24" y="88" font-size="13" fill="#1b1914">2 Mon</text><text x="110" y="88" font-size="13" fill="#1b1914">6</text>
+      <text x="24" y="110" font-size="13" fill="#1b1914">3 Tue</text><text x="110" y="110" font-size="13" fill="#1b1914">4</text>
+      <text x="24" y="132" font-size="13" fill="#1b1914">4 Wed</text><text x="110" y="132" font-size="13" fill="#1b1914">7.5</text>
+      <text x="24" y="176" font-size="13" fill="#1b1914">9 Total</text><text x="100" y="176" font-size="13" fill="#1b1914">25.5</text>
+      <circle cx="330" cy="26" r="11" fill="#123c2e"/><text x="330" y="30" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">1</text><circle cx="160" cy="176" r="11" fill="#123c2e"/><text x="160" y="180" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">2</text><circle cx="200" cy="110" r="11" fill="#123c2e"/><text x="200" y="114" text-anchor="middle" fill="#fff" font-size="12" font-family="Georgia, serif">3</text></svg></div>
   <p class="caption">A practice Hours sheet. Cell B9 is selected. The formula bar shows =SUM(B2:B8). The grid shows 25.5.</p>
   <figcaption><ol class="callouts"><li>Formula bar shows =SUM(B2:B8)</li><li>B9 sits under the column of hours</li><li>The colon means from B2 through B8</li></ol></figcaption>
 </figure>
@@ -120,19 +139,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-1-total-the-sample-week">
   <h2>Worked example 1. Total the sample week</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <aside class="block block-example" data-block="example">
-  <h3>Worked example 1. Total the sample week</h3>
-  <p class="block-label">Problem</p>
-  <p></p>
-  <p class="block-label">Steps</p>
-  <ol></ol>
-  <p class="block-label">Result</p>
-  <p></p>
-</aside>
-<div class="block" data-block="prose"><p>On the Hours sheet, click B9. Use Home &gt; AutoSum (or Formulas &gt; AutoSum). Confirm <code>=SUM(B2:B8)</code> and press Enter. The sample total is <strong>25.5</strong>. Check: 6+4=10, plus 7.5 is 17.5, plus 0 is 17.5, plus 5 is 22.5, plus 3 is 25.5, plus 0 is 25.5. The formula and the hand check agree.</p>
-<p>On the Household sheet, click C7 (Total row) and AutoSum the amounts C2:C6. The sample total is <strong>158.78</strong> (5.49+3.29+80+45+25). If Currency format is on, the total should look like money as well.</p></div>
+  <aside class="block block-example" data-block="workedExample"><h3>Worked example 1. Total the sample week</h3>
+      <p class="block-label">Problem</p><div class="block-body"><p>On the Hours sheet, click B9. Use Home &gt; AutoSum (or Formulas &gt; AutoSum). Confirm <code>=SUM(B2:B8)</code> and press Enter. The sample total is <strong>25.5</strong>. Check: 6+4=10, plus 7.5 is 17.5, plus 0 is 17.5, plus 5 is 22.5, plus 3 is 25.5, plus 0 is 25.5. The formula and the hand check agree.</p></div>
+      
+      <p class="block-label">Result</p><div class="block-body"><p>On the Household sheet, click C7 (Total row) and AutoSum the amounts C2:C6. The sample total is <strong>158.78</strong> (5.49+3.29+80+45+25). If Currency format is on, the total should look like money as well.</p></div>
+    </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-chapter-3-check-that-the-answer-makes-sense">Previous section</a>
     <button type="button" class="btn" data-read-section="worked-example-1-total-the-sample-week" data-lesson="6">Mark this section as read</button>
@@ -142,19 +155,13 @@
 </section>
 <section class="lesson-section longform reading" id="section-worked-example-2-average-the-sample-week-includi">
   <h2>Worked example 2. Average the sample week — including days off</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
-  <aside class="block block-example" data-block="example">
-  <h3>Worked example 2. Average the sample week — including days off</h3>
-  <p class="block-label">Problem</p>
-  <p></p>
-  <p class="block-label">Steps</p>
-  <ol></ol>
-  <p class="block-label">Result</p>
-  <p></p>
-</aside>
-<div class="block" data-block="prose"><p>Click an empty cell under the Hours sheet (for example B11) and choose Formulas &gt; the arrow next to AutoSum &gt; Average. Set the range to <code>B2:B8</code> if Excel did not. The sample average is 25.5 ÷ 7 ≈ <strong>3.64</strong>.</p>
-<p>Now ask the sense-check question: “Does about three and a half hours a day sound right for a week that includes two days off and a 7.5-hour market day?” Yes, as an average of seven calendar days. If someone asked “What is a typical working day this week?”, you would look at Mon, Tue, Wed, Fri, and Sat only (6, 4, 7.5, 5, 3), whose total is 25.5 and whose average is 25.5 ÷ 5 = 5.1. Same SUM, different story, because the range changed. Always read the range.</p></div>
+  <aside class="block block-example" data-block="workedExample"><h3>Worked example 2. Average the sample week — including days off</h3>
+      <p class="block-label">Problem</p><div class="block-body"><p>Click an empty cell under the Hours sheet (for example B11) and choose Formulas &gt; the arrow next to AutoSum &gt; Average. Set the range to <code>B2:B8</code> if Excel did not. The sample average is 25.5 ÷ 7 ≈ <strong>3.64</strong>.</p></div>
+      
+      <p class="block-label">Result</p><div class="block-body"><p>Now ask the sense-check question: “Does about three and a half hours a day sound right for a week that includes two days off and a 7.5-hour market day?” Yes, as an average of seven calendar days. If someone asked “What is a typical working day this week?”, you would look at Mon, Tue, Wed, Fri, and Sat only (6, 4, 7.5, 5, 3), whose total is 25.5 and whose average is 25.5 ÷ 5 = 5.1. Same SUM, different story, because the range changed. Always read the range.</p></div>
+    </aside>
   <p class="actions">
     <a class="btn btn-secondary" href="#section-worked-example-1-total-the-sample-week">Previous section</a>
     <button type="button" class="btn" data-read-section="worked-example-2-average-the-sample-week-includi" data-lesson="6">Mark this section as read</button>
@@ -164,7 +171,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-try-it">
   <h2>Try it</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><ol><li>Put <code>=SUM(B2:B8)</code> in Hours B9 (AutoSum is the fastest path) and confirm 25.5.</li><li>Put <code>=SUM(C2:C6)</code> in Household C7 and confirm 158.78.</li><li>Put <code>=AVERAGE(B2:B8)</code> in an empty Hours cell and confirm a value near 3.64.</li><li>Change Friday (B6) from 5 to 5.5 and watch the total update to 26. Then put B6 back to 5 so the sample file stays correct.</li><li>Read each formula in the formula bar and say out loud which cells it includes.</li></ol></div>
   <p class="actions">
@@ -176,7 +183,7 @@
 </section>
 <section class="lesson-section longform reading" id="section-optional-discussion-council-study-group">
   <h2>Optional discussion (council study group)</h2>
-  <p class="meta">About 4 minutes to read, plus a short practice.</p>
+  <p class="meta">About 1 minute to read, plus a short practice.</p>
   <p class="actions no-print"><button type="button" class="btn btn-secondary" data-listen hidden>Listen to this section</button></p>
   <div class="block" data-block="prose"><p>When would you report a week's average including days off, and when would that number be misleading? Who needs to know which days you included?</p></div>
 <aside class="cheat-sheet block" data-block="cheatSheet" id="excel-l6-sheet"><h2>AutoSum and AVERAGE — take-home steps</h2><ul><li>AutoSum usually goes in the cell under a column of numbers</li><li>Home &gt; AutoSum (Editing group), or Formulas &gt; AutoSum</li><li>AutoSum writes a SUM formula such as =SUM(B2:B8)</li><li>Formulas tab &gt; arrow next to AutoSum &gt; Average writes AVERAGE</li><li>Check the highlighted range before you press Enter</li><li>Zeros do not change a sum, but they pull an average down</li><li>Compare the result with a rough mental estimate</li></ul><p class="actions no-print"><button type="button" class="btn btn-secondary" data-print-cheat>Print this cheat sheet</button></p></aside>
@@ -226,7 +233,13 @@
     </div>
   </footer>
   <script src="../../../assets/brand.js"></script>
-  <script src="../../../assets/demo-seed.js"></script>
+  <script>
+    (function () {
+      var demo = /(?:\?|&)demo=1(?:&|$)/.test(location.search);
+      var staff = /\/admin\//.test(location.pathname);
+      if (demo || staff) document.write('<script src="../../../assets/demo-seed.js"><\/script>');
+    })();
+  </script>
   <script src="../../../assets/billing.js"></script>
   <script src="../../../assets/data.js"></script>
   <script src="../../../assets/report-fields.js"></script>
