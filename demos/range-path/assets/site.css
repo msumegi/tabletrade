@@ -605,156 +605,166 @@ dialog {
 }
 dialog::backdrop { background: rgba(27, 25, 20, 0.55); }
 
+.cert-page-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.cert-print-bar { margin: 0 0 0.5rem; }
+.cert-scale {
+  width: min(100%, calc((100dvh - 16.5rem) * 11 / 8.5));
+  margin: 0 auto 0.75rem;
+  container-type: inline-size;
+}
 .certificate {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto 1rem;
-  padding: clamp(0.55rem, 2vw, 1.35rem) clamp(0.65rem, 2.4vw, 1.7rem) clamp(0.5rem, 1.6vw, 1rem);
+  aspect-ratio: 11 / 8.5;
+  margin: 0;
+  padding: 3.2cqw 4cqw 2.4cqw;
   background: var(--paper);
   color: var(--ink);
   border: 1.5px solid var(--spruce);
-  box-shadow: inset 0 0 0 1px #c4a36a, inset 0 0 0 6px var(--paper), inset 0 0 0 7px var(--spruce);
+  box-shadow: inset 0 0 0 0.55cqw var(--paper), inset 0 0 0 0.72cqw #c4a36a;
   overflow: hidden;
-  aspect-ratio: 11 / 8.5;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  align-content: stretch;
 }
-.certificate.is-sample::before {
-  content: "Sample";
+.cert-corner {
   position: absolute;
-  left: 50%;
-  top: 46%;
-  transform: translate(-50%, -50%) rotate(-16deg);
+  width: 1.1cqw;
+  height: 1.1cqw;
+  border: 1px solid #c4a36a;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+.cert-corner-nw { top: 1.6cqw; left: 1.6cqw; }
+.cert-corner-ne { top: 1.6cqw; right: 1.6cqw; }
+.cert-corner-sw { bottom: 1.6cqw; left: 1.6cqw; }
+.cert-corner-se { bottom: 1.6cqw; right: 1.6cqw; }
+.cert-watermark {
+  position: absolute;
+  left: 5%;
+  bottom: 16%;
+  top: auto;
+  margin: 0;
+  transform: rotate(-16deg);
+  transform-origin: left center;
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 12vw, 5.5rem);
-  letter-spacing: 0.12em;
-  color: rgba(18, 60, 46, 0.08);
+  font-size: 4.2cqw;
+  letter-spacing: 0.08em;
+  color: rgba(18, 60, 46, 0.055);
   pointer-events: none;
+  z-index: 0;
   white-space: nowrap;
 }
 .sample-flag {
   position: absolute;
-  top: 0.7rem;
-  right: 0.85rem;
-  z-index: 1;
+  top: 2.2cqw;
+  right: 3.2cqw;
+  z-index: 2;
   margin: 0;
   background: #5c3b08;
   color: #fff8ea;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 0.72rem;
+  font-size: 1.5cqw;
   border-radius: 999px;
-  padding: 0.2rem 0.55rem;
+  padding: 0.25cqw 1.1cqw;
 }
+.cert-top, .cert-centre, .cert-band, .cert-footer { position: relative; z-index: 1; }
 .cert-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 1cqw;
+  padding-right: 12cqw;
 }
 .cert-brand {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.8cqw;
   margin: 0;
   color: var(--spruce);
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  font-size: 3.2cqw;
 }
-.cert-seal { width: clamp(3.4rem, 14vw, 5.6rem); height: auto; flex: 0 0 auto; }
+.cert-brand .mark { width: 4.2cqw; height: 4.2cqw; }
 .cert-kicker {
-  margin: 0.15rem 0 0;
-  text-align: center;
+  margin: 0;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-size: clamp(0.68rem, 1.6vw, 0.82rem);
+  font-size: 1.7cqw;
   color: var(--spruce);
 }
+.cert-centre { text-align: center; align-self: center; }
 .cert-name {
-  margin: 0.15rem 0 0;
-  text-align: center;
+  margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1.45rem, 4.6vw, 2.7rem);
-  line-height: 1.12;
+  font-size: 6.2cqw;
+  line-height: 1.05;
   overflow-wrap: anywhere;
 }
 .cert-has, .cert-when, .cert-org {
-  margin: 0.1rem 0 0;
-  text-align: center;
+  margin: 0.35cqw auto 0;
+  font-size: 1.9cqw;
+  line-height: 1.25;
+  width: max-content;
+  max-width: 100%;
 }
 .cert-course {
-  margin: 0.1rem 0 0;
-  text-align: center;
+  margin: 0.4cqw 0 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(1rem, 2.5vw, 1.45rem);
-  line-height: 1.25;
+  font-size: 3.3cqw;
+  line-height: 1.15;
   overflow-wrap: anywhere;
 }
-.cert-foot {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-top: 0.7rem;
+.cert-band {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: end;
+  gap: 1.5cqw;
+  margin-top: 1cqw;
 }
-.cert-logo {
-  width: clamp(4.5rem, 18vw, 7rem);
-  min-height: 2.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cert-logo img { max-width: 100%; max-height: 3.2rem; object-fit: contain; }
-.cert-logo-empty {
+.cert-logo { min-height: 8cqw; display: flex; align-items: flex-end; }
+.cert-logo img { max-width: 16cqw; max-height: 8cqw; object-fit: contain; }
+.cert-seal { width: 14.7cqw; height: auto; justify-self: center; }
+.cert-sign { justify-self: end; text-align: right; min-width: 18cqw; }
+.cert-sign-space { height: 3.2cqw; }
+.cert-sign-name {
   margin: 0;
-  padding: 0.35rem 0.4rem;
-  border: 1px dashed var(--line);
-  color: var(--muted);
-  font-size: 0.75rem;
-  line-height: 1.3;
-  text-align: center;
+  border-top: 1px solid var(--spruce);
+  padding-top: 0.4cqw;
+  font-family: var(--font-display);
+  font-size: 2.2cqw;
 }
-.cert-sign { text-align: right; min-width: 0; }
+.cert-sign-title, .cert-sign-label { margin: 0.15cqw 0 0; font-size: 1.5cqw; }
 .cert-sign-label {
-  margin: 0;
-  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--spruce);
 }
-.cert-sign-name {
-  margin: 0.1rem 0 0;
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 2.2vw, 1.25rem);
-  border-top: 1px solid var(--spruce);
-  padding-top: 0.15rem;
-}
-.cert-sign-title { margin: 0; font-size: 0.85rem; }
-.cert-id {
-  margin: auto 0 0;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-}
-@media (max-width: 720px) {
-  .certificate { aspect-ratio: auto; padding: 0.55rem 0.6rem 0.5rem; overflow: visible; }
-  .cert-seal { width: 3.1rem; }
-  .cert-name { font-size: 1.35rem; }
-  .cert-course { font-size: 0.95rem; }
-  .cert-honest { font-size: 0.72rem; }
-  .cert-foot { margin-top: 0.45rem; }
-  .cert-id { margin-top: 0.45rem; }
-  .sample-flag { position: static; align-self: flex-start; margin: 0 0 0.25rem; }
-}
+.cert-footer { margin-top: 1.2cqw; }
+.cert-id { margin: 0; font-size: 1.45cqw; letter-spacing: 0.04em; }
 .cert-honest {
-  margin: 0.25rem 0 0;
-  font-size: clamp(0.72rem, 1.7vw, 0.82rem);
-  line-height: 1.35;
+  margin: 0.3cqw 0 0;
+  font-size: 1.35cqw;
+  font-weight: 400;
+  line-height: 1.3;
 }
-.cert-fields { margin-bottom: 1rem; }
+.cert-staff { margin: 0.5rem 0 1rem; }
+.cert-staff summary { min-height: 44px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
+.cert-fields { margin: 0.5rem 0 1rem; }
 .cert-fields input[type="file"] { max-width: 100%; }
 
 footer.site {
@@ -1103,15 +1113,12 @@ footer.site {
     margin: 0;
     padding: 0;
   }
+  body:has(#certificate) .cert-scale { width: 10.2in; margin: 0; container-type: inline-size; }
   body:has(#certificate) .certificate {
     width: 10.2in;
     height: 7.55in;
     max-width: none;
     margin: 0;
-    padding: 0.38in 0.48in 0.32in;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     aspect-ratio: auto;
     break-inside: avoid;
     page-break-inside: avoid;
@@ -1121,9 +1128,15 @@ footer.site {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }
-  body:has(#certificate) .cert-logo-empty { display: none !important; }
-  body:has(#certificate) .cert-name { font-size: 32pt; }
-  body:has(#certificate) .cert-course { font-size: 16pt; }
-  body:has(#certificate) .cert-seal { width: 0.95in; }
-  body:has(#certificate) .cert-honest { font-size: 8.5pt; }
+  body:has(#certificate) .cert-name { font-size: 48pt; }
+  body:has(#certificate) .cert-has,
+  body:has(#certificate) .cert-when,
+  body:has(#certificate) .cert-org { font-size: 13pt; }
+  body:has(#certificate) .cert-course { font-size: 24pt; }
+  body:has(#certificate) .cert-seal { width: 1.5in; }
+  body:has(#certificate) .cert-honest,
+  body:has(#certificate) .cert-id { font-size: 8pt; font-weight: 400; }
+  body:has(#certificate) .cert-staff,
+  body:has(#certificate) .cert-print-bar,
+  body:has(#certificate) #cert-state { display: none !important; }
 }

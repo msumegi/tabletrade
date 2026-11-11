@@ -601,12 +601,18 @@
         });
       }
     } else {
-      order = ["email-online-safety", "sin-cra-getting-paid", "winter-safety-rural-alberta"];
+      order = ["excel-basics-canada"];
       titles = {
-        "email-online-safety": "Email & Online Safety Basics in Canada",
-        "sin-cra-getting-paid": "Your SIN, CRA My Account & Getting Paid in Canada",
-        "winter-safety-rural-alberta": "Winter Safety & Driving in Rural Alberta"
+        "excel-basics-canada": "Microsoft Excel Basics (Canada)"
       };
+      if (coursePick) {
+        var fallback = document.createElement("option");
+        fallback.value = "excel-basics-canada";
+        fallback.textContent = "Microsoft Excel Basics (Canada)";
+        fallback.setAttribute("data-note", "It is not a college diploma, degree, trade ticket, professional licence, Microsoft Office Specialist certification, or tax, payroll, or financial advice.");
+        coursePick.textContent = "";
+        coursePick.appendChild(fallback);
+      }
     }
 
     function passedFinal(id) {
@@ -660,7 +666,7 @@
       var month = months[Number(parts[1]) - 1];
       var day = Number(parts[2]);
       if (!month || !day) return iso;
-      return day + " " + month + " " + parts[0];
+      return month + " " + day + ", " + parts[0];
     }
 
     function certCode(learnerCode, courseId, iso) {
@@ -681,18 +687,23 @@
     }
 
     function showLogo(src) {
-      if (!logoImg || !logoEmpty) return;
+      if (!logoImg) return;
       if (src) {
         logoImg.src = src;
         logoImg.hidden = false;
         logoImg.alt = "Council logo";
-        logoEmpty.hidden = true;
       } else {
         logoImg.removeAttribute("src");
         logoImg.hidden = true;
         logoImg.alt = "";
-        logoEmpty.hidden = false;
       }
+    }
+
+    function logoError(message) {
+      var live = document.querySelector("#logo-error");
+      if (!live) return;
+      live.hidden = !message;
+      live.textContent = message || "";
     }
 
     function paint() {
@@ -722,6 +733,13 @@
       var demo = /(?:\?|&)demo=1(?:&|$)/.test(window.location.search) || Boolean(data.example);
       if (sheet) sheet.classList.toggle("is-sample", demo);
       if (sampleFlag) sampleFlag.hidden = !demo;
+      var watermark = document.querySelector("#cert-watermark");
+      if (watermark) watermark.hidden = !demo;
+      var pageTitle = (title || "Course") + " certificate · LearnHere";
+      if (demo) pageTitle = "Sample · " + pageTitle;
+      document.title = pageTitle;
+      var heading = document.querySelector("#cert-page-title");
+      if (heading) heading.textContent = demo ? "Sample certificate" : (title || "Course") + " certificate";
       showLogo(data.councilLogo || "");
       if (state && fin) state.textContent = "Recorded on this device after a final quiz of " + fin.percent + "%. Still a sample. Not accredited.";
       if (learner) data.learnerName = learner.value.trim();
@@ -741,8 +759,24 @@
       logoInput.addEventListener("change", function () {
         var file = logoInput.files && logoInput.files[0];
         if (!file) return;
+        var allowed = /^(image\/png|image\/jpeg|image\/webp|image\/svg\+xml)$/.test(file.type) || /\.(png|jpe?g|webp|svg)$/i.test(file.name);
+        if (!allowed) {
+          logoInput.value = "";
+          logoError("Use a PNG, JPG, SVG, or WebP logo. Nothing was saved.");
+          return;
+        }
+        if (file.size > 2 * 1024 * 1024) {
+          logoInput.value = "";
+          logoError("That file is over 2 MB. Choose a smaller logo. Nothing was saved.");
+          return;
+        }
+        logoError("");
         var reader = new FileReader();
         reader.onload = function () {
+          if (/svg/i.test(file.type) || /\.svg$/i.test(file.name)) {
+            storeLogo(reader.result);
+            return;
+          }
           var img = new Image();
           img.onload = function () {
             var max = 240;
@@ -751,12 +785,10 @@
             canvas.width = Math.max(1, Math.round(img.width * scale));
             canvas.height = Math.max(1, Math.round(img.height * scale));
             canvas.getContext("2d").drawImage(img, 0, 0, canvas.width, canvas.height);
-            var url = canvas.toDataURL("image/jpeg", 0.72);
-            if (url.length > 120000) {
-              if (state) state.textContent = "That logo is too large for this device. Try a smaller image. Nothing was sent.";
-              return;
-            }
-            storeLogo(url);
+            storeLogo(canvas.toDataURL("image/jpeg", 0.72));
+          };
+          img.onerror = function () {
+            logoError("That image could not be read. Nothing was saved.");
           };
           img.src = reader.result;
         };
