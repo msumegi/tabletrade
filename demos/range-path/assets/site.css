@@ -768,6 +768,27 @@ dialog::backdrop { background: rgba(27, 25, 20, 0.55); }
 .cert-staff summary { min-height: 44px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
 .cert-fields { margin: 0.5rem 0 1rem; }
 .cert-fields input[type="file"] { max-width: 100%; }
+@media (max-width: 400px) {
+  .cert-scale { width: 100%; max-width: 100%; }
+  .certificate {
+    aspect-ratio: auto;
+    height: auto;
+    overflow: visible;
+    max-width: 100%;
+    min-width: 0;
+    grid-template-rows: auto auto auto auto;
+  }
+  .cert-top, .cert-centre, .cert-band, .cert-footer { min-width: 0; max-width: 100%; }
+  .cert-name, .cert-has, .cert-when, .cert-org, .cert-hours, .cert-exam, .cert-course,
+  .cert-id, .cert-honest, .cert-credit {
+    width: auto;
+    max-width: 100%;
+  }
+  .cert-band { grid-template-columns: 2.25rem 3.25rem minmax(0, 1fr); }
+  .cert-seal { width: 3.25rem; min-width: 0; }
+  .cert-sign { min-width: 0; max-width: 100%; justify-self: end; }
+  .cert-sign-label, .cert-sign-name, .cert-sign-title { overflow-wrap: anywhere; }
+}
 @media (max-width: 360px) {
   .cert-when, .cert-org, .cert-hours, .cert-exam, .cert-sign-name, .cert-sign-title, .cert-sign-label { font-size: 10px; }
   .cert-course { font-size: max(3.3cqw, 12px); }
@@ -1082,7 +1103,13 @@ footer.site {
   body:has(.funder-print) .funder-print,
   body:has(.funder-print) .funder-print .sample-banner,
   body:has(.funder-print) .funder-print h1 { display: block !important; }
-  body:has(.funder-print) .report-logo { display: flex; align-items: center; gap: 0.4rem; font-weight: 700; margin: 0 0 0.2rem; }
+  body:has(.funder-print) .report-logo { display: flex; align-items: center; gap: 0.3rem; font-weight: 700; margin: 0.06in 0 0; font-size: 9pt; }
+  body:has(.funder-print) .funder-print h1 { font-size: 14pt; margin: 0.04in 0 0; }
+  body:has(.funder-print) .funder-print h2 { font-size: 11pt; margin: 0.1in 0 0.03in; }
+  body:has(.funder-print) .funder-print p,
+  body:has(.funder-print) .funder-print li { margin: 0; font-size: 9pt; line-height: 1.25; }
+  body:has(.funder-print) .funder-print ul { margin: 0; padding-left: 1.1em; }
+  body:has(.funder-print) .funder-print .sample-banner { margin: 0 0 0.06in; padding: 0.03in 0.08in; }
   body:has(.funder-print) .report-table,
   body:has(.funder-print) .report-table th,
   body:has(.funder-print) .report-table td {
@@ -1090,11 +1117,13 @@ footer.site {
     word-break: normal;
     hyphens: none;
     font-size: 9pt;
+    line-height: 1.2;
+    padding: 0.03in 0.05in;
   }
   .sample-banner { background: #fff; color: #000; border: 2px solid #000; }
   .report-table { break-inside: auto; }
   .report-table tr { break-inside: avoid; }
-  .funder-print h1 { font-size: 18pt; }
+  .funder-print h1 { font-size: 14pt; margin: 0; }
   .table-scroll { overflow: visible; }
   body { background: #fff; font-size: 12pt; }
   .wrap, .wrap-wide { width: auto; }
@@ -1109,7 +1138,7 @@ footer.site {
 }
 @page funder-sheet {
   size: letter landscape;
-  margin: 0.45in;
+  margin: 0.4in;
 }
 
 @media print {
@@ -1170,6 +1199,7 @@ footer.site {
   body:has(#certificate) .cert-credit,
   body:has(#certificate) .cert-id,
   body:has(#certificate) .cert-watermark { font-size: 8pt; font-weight: 400; }
+  body:has(#certificate) .cert-watermark { color: rgba(18, 60, 46, 0.14); }
   body:has(#certificate) .crumbs,
   body:has(#certificate) h1,
   body:has(#certificate) #cert-state,
