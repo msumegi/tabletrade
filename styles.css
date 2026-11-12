@@ -1092,15 +1092,30 @@ html.from-app .close {
   margin: 22px 0 8px;
 }
 
-.legal p {
+.legal p,
+.legal li {
   max-width: 40rem;
   margin: 0 0 12px;
   color: rgba(244, 234, 214, 0.82);
+  overflow-wrap: anywhere;
+}
+
+.legal ul,
+.legal ol {
+  max-width: 40rem;
+  margin: 0 0 12px;
+  padding-left: 1.25rem;
 }
 
 .legal .note {
   font-size: 0.88rem;
   color: var(--muted);
+}
+
+body.page-delete .lamp {
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 @keyframes ping {
