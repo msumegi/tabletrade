@@ -34,6 +34,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   background: var(--night);
+  overflow-x: clip;
 }
 
 html,
@@ -82,7 +83,10 @@ a {
 .lamp {
   pointer-events: none;
   position: absolute;
-  inset: -12% -20% auto;
+  left: 0;
+  right: 0;
+  top: -12%;
+  width: 100%;
   height: 54vh;
   background:
     radial-gradient(ellipse at 50% 0%, rgba(246, 207, 150, 0.28), transparent 58%),
@@ -124,6 +128,12 @@ a {
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 8px;
 }
 
 .nav a[aria-current="page"] {
@@ -145,6 +155,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  min-height: 44px;
 }
 
 .wordmark img {
@@ -1071,6 +1082,13 @@ html.from-app .close {
   color: var(--lamp);
 }
 
+.foot-credit a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 12px 4px;
+  line-height: 20px;
+}
+
 .legal {
   padding: 28px 0 48px;
 }
@@ -1092,10 +1110,19 @@ html.from-app .close {
   margin: 22px 0 8px;
 }
 
-.legal p {
+.legal p,
+.legal li {
   max-width: 40rem;
   margin: 0 0 12px;
   color: rgba(244, 234, 214, 0.82);
+  overflow-wrap: anywhere;
+}
+
+.legal ul,
+.legal ol {
+  max-width: 40rem;
+  margin: 0 0 12px;
+  padding-left: 1.25rem;
 }
 
 .legal .note {
