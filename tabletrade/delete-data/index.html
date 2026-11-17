@@ -8,13 +8,13 @@
     <meta name="color-scheme" content="dark" />
     <meta
       name="description"
-      content="How to delete TableTrade data on your Android phone. Lists and photos are saved on the phone, not on a Range Road Technologies server."
+      content="How to delete TableTrade data on your Android phone. Lists are saved on the phone, not on a Range Road Technologies server."
     />
     <meta name="author" content="Range Road Technologies" />
     <meta property="og:title" content="Delete your data — TableTrade" />
     <meta
       property="og:description"
-      content="How to delete TableTrade data on your Android phone. Lists and photos are saved on the phone, not on a Range Road Technologies server."
+      content="How to delete TableTrade data on your Android phone. Lists are saved on the phone, not on a Range Road Technologies server."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rangeroadtech.com/tabletrade/delete-data/" />
@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Delete your data — TableTrade" />
     <meta
       name="twitter:description"
-      content="How to delete TableTrade data on your Android phone. Lists and photos are saved on the phone, not on a Range Road Technologies server."
+      content="How to delete TableTrade data on your Android phone. Lists are saved on the phone, not on a Range Road Technologies server."
     />
     <link rel="canonical" href="https://rangeroadtech.com/tabletrade/delete-data/" />
     <link rel="icon" href="../../favicon.png" type="image/png" />
@@ -57,9 +57,10 @@
       <p class="lede">
         TableTrade is an Android app from Range Road Technologies
         (<span class="note">com.rangeroadtech.tabletrade</span>).
-        Your lists and photo are saved only on your phone. We do not keep a copy on a Range Road Technologies server. When you tap I’m looking, your name, note and card lists are shared over encrypted Bluetooth with phones nearby. Your photo is never shared.
+        Your lists stay on your phone. We do not keep a copy on a Range Road Technologies server.
+        When you press Check in, your name, your note, and your card lists are shared over Bluetooth with phones nearby.
       </p>
-      <p class="note">Last updated 12 November 2026. This page describes the app as built. It is not legal advice. <a href="../../privacy/">Privacy</a>.</p>
+      <p class="note">Last updated 17 November 2026. This page describes the app as built. It is not legal advice. <a href="../../privacy/">Privacy</a>.</p>
 
       <h2>On this phone</h2>
       <p>There is no account and no password. These are the controls the app actually has.</p>
@@ -71,21 +72,14 @@
           That card leaves that list.
         </li>
         <li>
-          <strong>Clear the face photo.</strong>
-          Open <strong>You</strong>.
-          If a photo is there, tap <strong>Remove</strong>.
-          To use a different photo, tap <strong>Change photo</strong>.
-          The photo is not sent while you are looking.
-        </li>
-        <li>
           <strong>Clear your name and note.</strong>
-          On <strong>You</strong>, erase <strong>Display name</strong> and <strong>I’m over here</strong>.
+          On <strong>You</strong>, erase <strong>Display name</strong> and <strong>How to find you</strong>.
           If the name is blank the next time the app opens, it shows Trainer.
-          The random ID the app made for this phone stays until you clear app data or uninstall.
+          The random ID the app made for this install stays until you clear app data or uninstall.
         </li>
         <li>
           <strong>Stop sharing.</strong>
-          On <strong>Nearby</strong>, tap <strong>Done looking</strong>.
+          On <strong>Nearby</strong>, tap <strong>Done</strong>.
           This phone stops offering your name and lists over Bluetooth.
           Closing TableTrade also stops it. Switching to another app may not.
         </li>
@@ -122,19 +116,19 @@
       <p>Clear data or uninstall removes everything TableTrade saved on this phone, including:</p>
       <ul>
         <li>Have list and want list.</li>
-        <li>Display name, the I’m over here note (up to 40 characters), and the random user ID.</li>
-        <li>The optional face photo. It is a small picture stored only on this phone.</li>
+        <li>Display name, the how-to-find-you note (up to 40 characters), and the random ID for this install.</li>
+        <li>Any face photo saved by an older version. Updating the app deletes it. There is no photo control now.</li>
         <li>The yes or no that you are 13 or older.</li>
         <li>IDs of people you chose with Don’t show this person.</li>
         <li>The last 80 match codes, so the same ping is not shown again.</li>
         <li>The last 80 card-name searches saved on the phone so a search can be shown again without the network.</li>
         <li>Saved card pictures and scan files.</li>
       </ul>
-      <p>Removing one card does not clear the photo, the name, or the search cache. Remove on You clears only the photo.</p>
+      <p>Removing one card does not clear your name or the search cache.</p>
 
       <h2>What we do not have</h2>
       <p>
-        Range Road Technologies does not keep a server copy of your lists, photo, name, or looking data.
+        Range Road Technologies does not keep a server copy of your lists, name, or check-in.
         There is no account to delete.
         The app does not use analytics, ads, or a crash reporter.
       </p>
@@ -142,28 +136,31 @@
         Card search sends the name you type, or the name read from a card on the phone, to the Pokémon TCG API
         at api.pokemontcg.io. Card pictures load from images.pokemontcg.io.
         That is their service, not ours. We cannot delete their logs.
-        Scanning a card uses the camera on the phone. Those frames are not saved as photos.
+        The camera is used on this phone only, to scan a card. The image is not stored and is not shared.
         The scan tool may download its language files from cdn.jsdelivr.net and tessdata.projectnaptha.com.
-        Your lists and photo are not uploaded there.
-        The app loads its fonts from Google when it starts, which sends your phone’s IP address. No lists or photos.
+        Your lists are not uploaded there.
+        The app loads its fonts from Google when it starts, which sends your phone’s IP address. No lists or names go with that.
       </p>
 
       <h2>What other phones already have</h2>
       <p>
-        While you are looking, your phone offers this over encrypted Bluetooth to phones nearby (usually the same room, sometimes a little farther). A device that only listens cannot read it. Any phone running TableTrade nearby can, because that is how matching works, and so could a tool built to talk like TableTrade. The Bluetooth signal itself still shows that a TableTrade phone is nearby.
-        What is offered: your user ID, display name (up to 24 characters), the I’m over here note if you wrote one,
-        have and want card IDs (up to 12 each), and a time.
-        The face photo is not included.
+        When you press Check in, your phone shares this over Bluetooth with phones nearby:
+        your display name (up to 24 characters),
+        an optional note for how to find you (up to 40 characters),
+        up to 12 card IDs from your have list and 12 from your want list,
+        a random ID created for this install,
+        and the time.
+        Tap Done to stop sharing.
       </p>
       <p>
         We cannot recall that from their phones.
-        <strong>Done looking</strong> stops this phone from sharing more.
+        <strong>Done</strong> stops this phone from sharing more.
         A phone that already received it keeps the name, note, and card IDs only in memory, and only while TableTrade stays open
         (the newest 20 matches on screen).
         Closing TableTrade on that phone drops the name, note, and full lists.
       </p>
       <p>
-        That phone also saves a short match code so it does not ping you twice: your random TableTrade ID, the kind of match, and the card IDs that matched. It does not save your name, note, or photo. It keeps its last 80 codes until that person taps <strong>Hear pings again</strong> (on Nearby, once a ping is on screen), clears TableTrade’s data, or uninstalls. If they tapped <strong>Don’t show this person</strong>, your ID stays on their phone until they clear TableTrade’s data.
+        That phone also saves a short match code so it does not ping you twice: your random TableTrade ID, the kind of match, and the card IDs that matched. It does not save your name or note. It keeps its last 80 codes until that person taps <strong>Hear pings again</strong> (on Nearby, once a ping is on screen), clears TableTrade’s data, or uninstalls. If they tapped <strong>Don’t show this person</strong>, your ID stays on their phone until they clear TableTrade’s data.
       </p>
     </main>
 
