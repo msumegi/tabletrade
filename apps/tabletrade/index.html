@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-CA">
   <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex" />
@@ -8,13 +8,13 @@
     <meta name="color-scheme" content="dark" />
     <meta
       name="description"
-      content="Trade Pokémon cards with someone nearby. Have-list, want-list, tap I’m looking, ping. An unofficial fan tool by Range Road Technologies."
+      content="Trade Pokémon cards with someone nearby. Have-list, want-list, press Check in, ping. An unofficial fan tool by Range Road Technologies."
     />
     <meta name="author" content="Range Road Technologies" />
     <meta property="og:title" content="TableTrade. Trade Pokémon cards with someone nearby." />
     <meta
       property="og:description"
-      content="Have-list. Want-list. Tap I’m looking. Ping when someone close by is a match."
+      content="Have-list. Want-list. Press Check in. Ping when someone nearby is a match."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rangeroadtech.com/apps/tabletrade/" />
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="TableTrade. Trade Pokémon cards with someone nearby." />
     <meta
       name="twitter:description"
-      content="Have-list. Want-list. Tap I’m looking. Ping when someone close by is a match."
+      content="Have-list. Want-list. Press Check in. Ping when someone nearby is a match."
     />
     <meta name="twitter:image" content="https://rangeroadtech.com/media/og-share.png" />
     <link rel="canonical" href="https://rangeroadtech.com/apps/tabletrade/" />
@@ -48,7 +48,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../styles.css?v=earth25" />
+    <link rel="stylesheet" href="../../styles.css?v=earth29" />
     <title>TableTrade. Trade Pokémon cards with someone nearby.</title>
   </head>
   <body>
@@ -58,7 +58,7 @@
     <div class="felt-grain" aria-hidden="true"></div>
 
     <header class="top">
-      <a class="wordmark" href="./"><img src="../../favicon.png" alt="" width="28" height="28" />Table<span>Trade</span></a>
+      <a class="wordmark" href="./"><img src="../../favicon.png" alt="" width="28" height="28" /><span class="wordmark-name">Table<span>Trade</span></span></a>
       <nav class="nav" aria-label="Site">
         <a href="../../">Home</a>
       </nav>
@@ -73,8 +73,8 @@
         </div>
         <p class="pitch">
           TableTrade is the app for trading Pokémon cards with people near you.
-          You keep a have-list and a want-list on your phone. Tap I’m looking.
-          If someone in the room is a match, both phones ping. Then you talk.
+          You keep a have-list and a want-list on your phone. Press Check in.
+          If someone nearby is a match, both phones ping. Then meet up and trade.
         </p>
 
         <div class="cta-row" id="get">
@@ -100,13 +100,13 @@
                   <header class="mock-top">
                     <div>
                       <p class="mock-brand">Table<span>Trade</span></p>
-                      <p class="mock-tag">Pokémon trades here, now. Close by.</p>
+                      <p class="mock-tag">Trade Pokémon cards easily.</p>
                     </div>
                     <span class="mock-pill">Trainer</span>
                   </header>
                   <div class="mock-screen">
                     <h3 class="mock-title">Have list</h3>
-                    <p class="mock-lede">Cards you’d trade here, now.</p>
+                    <p class="mock-lede">Cards you want to trade away.</p>
                     <div class="mock-grid">
                       <article class="mock-tile">
                         <img src="https://images.pokemontcg.io/base1/58.png" alt="" width="63" height="88" />
@@ -136,13 +136,13 @@
               </div>
             </div>
 
-            <div class="phone phone-ping" role="img" aria-label="TableTrade match ping: Kai is close by. You can give Pikachu and get Charizard.">
+            <div class="phone phone-ping" role="img" aria-label="TableTrade match ping: Kai is nearby. You can give Pikachu and get Charizard.">
               <div class="bezel">
                 <div class="mock mock-dim">
                   <header class="mock-top">
                     <div>
                       <p class="mock-brand">Table<span>Trade</span></p>
-                      <p class="mock-tag">Pokémon trades here, now. Close by.</p>
+                      <p class="mock-tag">Trade Pokémon cards easily.</p>
                     </div>
                     <span class="mock-pill ok">Ping</span>
                   </header>
@@ -152,8 +152,9 @@
                   <div class="mock-overlay">
                     <div class="mock-sheet">
                       <div class="mock-grab"></div>
-                      <p class="mock-kicker">Here, now</p>
-                      <p class="mock-ping-title">Kai is close by</p>
+                      <p class="mock-kicker">Match</p>
+                      <p class="mock-ping-title">Kai is nearby</p>
+                      <p class="mock-meta talk">Red hoodie, table 4</p>
                       <p class="mock-lede">You can trade both ways</p>
                       <div class="mock-pair">
                         <div>
@@ -168,7 +169,6 @@
                           <strong>Charizard</strong>
                         </div>
                       </div>
-                      <p class="mock-meta talk">Red hoodie. Back table. Go talk.</p>
                       <div class="mock-btn mock-btn-ember">Go talk</div>
                     </div>
                   </div>
@@ -194,11 +194,11 @@
           </li>
           <li>
             <h3>Check in</h3>
-            <p>Tap I’m looking. Bluetooth finds phones in the same room. Keep Bluetooth on and the app open.</p>
+            <p>Press Check in. Bluetooth finds phones nearby. Keep Bluetooth on and the app open.</p>
           </li>
           <li>
             <h3>Get the ping</h3>
-            <p>Name, the cards, and an optional I’m over here line. Then you talk.</p>
+            <p>You see their name, the cards, and an optional note for how to find them. Then meet up and trade.</p>
           </li>
         </ol>
       </section>
@@ -213,9 +213,9 @@
           <div>
             <dt>What is private?</dt>
             <dd>
-              Have-lists and want-lists stay on the device until you tap I’m looking.
-              Then your display name and those cards go over Bluetooth to phones close by.
-              Camera is for scanning a card. Face photo stays on the phone.
+              Have-lists and want-lists stay on the phone until you press Check in.
+              Then your display name, your note, and those card IDs go over Bluetooth to phones nearby.
+              The camera scans a card on the phone and does not keep the image.
               You must be 13 or older.
               <a href="../../privacy/">Short privacy note</a>.
             </dd>
@@ -244,8 +244,10 @@
         The Pokémon Company, and their partners. Not affiliated, not endorsed.
       </p>
       <p class="foot-credit">
-        Range Road Technologies ·
+        A product of Range Road Technologies. ·
         <a href="mailto:help@rangeroadtech.com">help@rangeroadtech.com</a> ·
+        <a href="../../">Home</a> ·
+        <a href="./">TableTrade</a> ·
         <a href="../../privacy/">Privacy</a>
       </p>
     </footer>

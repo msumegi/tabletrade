@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-CA">
   <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex" />
@@ -8,13 +8,13 @@
     <meta name="color-scheme" content="dark" />
     <meta
       name="description"
-      content="Short privacy note for TableTrade: lists on the device, camera for cards, Bluetooth while you look. Not legal advice."
+      content="Short privacy note for TableTrade: lists on the device, camera for cards, Bluetooth while you are checked in. Not legal advice."
     />
     <meta name="author" content="Range Road Technologies" />
     <meta property="og:title" content="Privacy — TableTrade" />
     <meta
       property="og:description"
-      content="Lists live on the phone. Camera is for cards. Bluetooth is only while you are looking."
+      content="Lists live on the phone. Camera is for cards. Bluetooth is only while you are checked in."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rangeroadtech.com/privacy/" />
@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Privacy — TableTrade" />
     <meta
       name="twitter:description"
-      content="Lists live on the phone. Camera is for cards. Bluetooth is only while you are looking."
+      content="Lists live on the phone. Camera is for cards. Bluetooth is only while you are checked in."
     />
     <link rel="canonical" href="https://rangeroadtech.com/privacy/" />
     <link rel="icon" href="../favicon.png" type="image/png" />
@@ -34,7 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles.css?v=earth25" />
+    <link rel="stylesheet" href="../styles.css?v=earth29" />
     <title>Privacy — TableTrade</title>
   </head>
   <body>
@@ -44,7 +44,7 @@
     <div class="felt-grain" aria-hidden="true"></div>
 
     <header class="top">
-      <a class="wordmark" href="../apps/tabletrade/">Table<span>Trade</span></a>
+      <a class="wordmark" href="../apps/tabletrade/"><img src="../favicon.png" alt="" width="28" height="28" /><span class="wordmark-name">Table<span>Trade</span></span></a>
       <nav class="nav" aria-label="Site">
         <a href="../">Home</a>
       </nav>
@@ -58,35 +58,55 @@
         A short note on what the app uses. This is not a legal document
         and is not legal advice.
       </p>
+      <p class="note">Last updated 17 November 2026.</p>
 
       <h2>Lists</h2>
       <p>
-        Have-lists and want-lists live on the device until you tap I’m looking.
+        Have-lists and want-lists stay on this phone until you press Check in.
         There is no account and no password.
-        While you are looking, your display name and those cards go over Bluetooth
-        to other phones close by so they can ping. Face photos stay on this phone.
-        This phone does not keep a history of who you met.
+        Nothing from those lists is sent to a Range Road Technologies server.
+      </p>
+      <p>
+        To skip a repeat ping, this phone keeps the last 80 match IDs, and the IDs of people you hid with Don’t show this person. Names are not stored with them. Hear pings again (on Nearby, once a ping is on screen) clears the match IDs. Clear data clears the match IDs and the hidden people. Both stay on this phone only.
       </p>
 
       <h2>Camera</h2>
       <p>
-        The camera is for scanning one Pokémon card.
-        The feed is for that moment. It is not stored as the product.
+        The camera is used on this phone only, to scan a card.
+        The image is not stored and is not shared.
       </p>
 
       <h2>Bluetooth</h2>
       <p>
-        I’m looking uses Bluetooth to find phones in the same room.
-        Keep Bluetooth on while you look. Keep the app open.
+        When you press Check in, your phone shares this over Bluetooth with phones nearby:
+        your display name (up to 24 characters),
+        an optional note for how to find you (up to 40 characters),
+        up to 12 card IDs from your have list and 12 from your want list,
+        a random ID created for this install,
+        and the time.
+        Tap Done on Nearby to stop sharing.
+        Closing TableTrade also stops it. Switching to another app may not.
       </p>
+
+      <h2>Card search</h2>
+      <p>
+        Card search sends the name you type, or the name read from a card on the phone, to the Pokémon TCG API
+        at api.pokemontcg.io. Card pictures load from images.pokemontcg.io.
+        That is their service, not ours. We cannot delete their logs.
+        The scan tool may download its language files from cdn.jsdelivr.net and tessdata.projectnaptha.com.
+        Your lists are not uploaded there.
+      </p>
+
+      <h2>Backup</h2>
+      <p>Android cloud backup is off for this app. On some phones, a direct phone-to-phone transfer may still copy TableTrade’s data to a new phone.</p>
 
       <h2>Age</h2>
       <p>You must be 13 or older to use TableTrade.</p>
 
-      <h2>Unofficial</h2>
+      <h2>Delete your data</h2>
       <p>
-        TableTrade is an unofficial fan tool. Not affiliated with or endorsed by
-        Nintendo or The Pokémon Company.
+        <a href="../tabletrade/delete-data/">How to delete TableTrade data</a>
+        on your phone, and what nearby phones may already have.
       </p>
       <p class="note">This page describes the product as built. It is not legal advice.</p>
     </main>
@@ -97,10 +117,11 @@
         The Pokémon Company, and their partners. Not affiliated, not endorsed.
       </p>
       <p class="foot-credit">
-        Range Road Technologies ·
+        A product of Range Road Technologies. ·
         <a href="mailto:help@rangeroadtech.com">help@rangeroadtech.com</a> ·
         <a href="../">Home</a> ·
-        <a href="../apps/tabletrade/">TableTrade</a>
+        <a href="../apps/tabletrade/">TableTrade</a> ·
+        <a href="./">Privacy</a>
       </p>
     </footer>
   </body>
