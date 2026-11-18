@@ -454,11 +454,15 @@ html.from-app .close {
 }
 
 .share-hero {
-  margin: 28px 0 0;
-  border-radius: 18px;
+  margin: 28px auto 0;
+  width: min(100%, 280px);
+  border-radius: 2rem;
   overflow: hidden;
-  border: 1px solid rgba(244, 234, 214, 0.12);
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.45),
+    0 18px 40px rgba(0, 0, 0, 0.32);
+  background: #12100e;
 }
 
 .share-hero img {
@@ -1089,7 +1093,7 @@ html.from-app .close {
 .foot-credit a {
   display: inline-block;
   min-height: 44px;
-  padding: 12px 4px;
+  padding: 12px 0;
   line-height: 20px;
 }
 
@@ -1168,8 +1172,9 @@ html.from-app .close {
   .studio { grid-area: studio; }
   .share-hero {
     grid-area: art;
-    margin: 0;
+    margin: 0 auto;
     align-self: start;
+    justify-self: center;
   }
   .share-hero img {
     width: 100%;

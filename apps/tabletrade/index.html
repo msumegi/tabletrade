@@ -31,7 +31,8 @@
     />
     <meta name="twitter:image" content="https://rangeroadtech.com/media/og-share.png" />
     <link rel="canonical" href="https://rangeroadtech.com/apps/tabletrade/" />
-    <link rel="icon" href="../../favicon.png" type="image/png" />
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icon.png" />
     <script>
       if (new URLSearchParams(location.search).get("from") === "app") document.documentElement.classList.add("from-app");
     </script>
@@ -48,7 +49,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../styles.css?v=earth29" />
+    <link rel="stylesheet" href="../../styles.css?v=earth31" />
     <title>TableTrade. Trade Pokémon cards with someone nearby.</title>
   </head>
   <body>
@@ -58,7 +59,7 @@
     <div class="felt-grain" aria-hidden="true"></div>
 
     <header class="top">
-      <a class="wordmark" href="./"><img src="../../favicon.png" alt="" width="28" height="28" /><span class="wordmark-name">Table<span>Trade</span></span></a>
+      <a class="wordmark" href="./"><img src="icon.png" alt="" width="28" height="28" /><span class="wordmark-name">Table<span>Trade</span></span></a>
       <nav class="nav" aria-label="Site">
         <a href="../../">Home</a>
       </nav>
@@ -83,12 +84,21 @@
         </div>
 
         <figure class="share-hero">
-          <img
-            src="../../media/tabletrade-hero.svg"
-            width="640"
-            height="400"
-            alt="Two people trading blank cards at a table. TableTrade."
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="hero/hero-360.webp 360w, hero/hero-720.webp 720w"
+              sizes="min(280px, calc(100vw - 40px))"
+            />
+            <img
+              src="hero/hero-720.png"
+              srcset="hero/hero-360.png 360w, hero/hero-720.png 720w"
+              sizes="min(280px, calc(100vw - 40px))"
+              width="1080"
+              height="2340"
+              alt="TableTrade on a phone: the Have list with Charizard, Blastoise, Venusaur and Pikachu, and an Add a Pokémon card button."
+            />
+          </picture>
         </figure>
       </section>
 
@@ -136,7 +146,7 @@
               </div>
             </div>
 
-            <div class="phone phone-ping" role="img" aria-label="TableTrade match ping: Kai is nearby. You can give Pikachu and get Charizard.">
+            <div class="phone phone-ping" role="img" aria-label="TableTrade match ping: Kai is nearby. You can give Pikachu and get Charizard. Got it.">
               <div class="bezel">
                 <div class="mock mock-dim">
                   <header class="mock-top">
@@ -169,7 +179,7 @@
                           <strong>Charizard</strong>
                         </div>
                       </div>
-                      <div class="mock-btn mock-btn-ember">Go talk</div>
+                      <div class="mock-btn mock-btn-ember">Got it</div>
                     </div>
                   </div>
                   <nav class="mock-tabs" aria-hidden="true">
