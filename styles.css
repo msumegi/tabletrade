@@ -1089,7 +1089,7 @@ html.from-app .close {
 .foot-credit a {
   display: inline-block;
   min-height: 44px;
-  padding: 12px 4px;
+  padding: 12px 0;
   line-height: 20px;
 }
 
